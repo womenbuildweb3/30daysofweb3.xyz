@@ -3,6 +3,8 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Navbar from '../components/Navbar'
 import Icon from '../components/Icon'
+import TikTok from '../components/TikTok'
+import ScrollSnap from '../components/scrollsnap'
 
 export default function Home() {
   return (
@@ -23,12 +25,12 @@ export default function Home() {
             </h1>
             {/* <p className="text-white text-xs">@camiinthisthang</p> */}
             <h2 className="text-gray-700 dark:text-gray-200 mb-4">
-              Developer Advocate at{' '}
-              <span className="font-semibold">PlanetScale.</span>
-              <br></br>Founder at <span className="font-semibold">STEMTank + Calibaba.</span>
+              Developer Advocate // Founder
+              {/* <span className="font-semibold">PlanetScale.</span>
+              <br></br>Founder at <span className="font-semibold">STEMTank + Calibaba.</span> */}
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-16">
-              An engineer passionate about making technology education accessible to all. Free content on topics ranging from the basics of programming to the latest technologies.
+              I'm a software engineer who has spent the last 5 years teaching children how to code. As part of my passionate for making technology education accessible to all, I create free content on topics ranging from the basics of programming to the latest technologies.
             </p>
           </div>
           <div className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto">
@@ -42,11 +44,21 @@ export default function Home() {
           </div>
         </div>
         <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white">
-          Featured Posts
+          Featured Tik Toks
         </h3>
+        <div className="flex flex-row space-x-12">
+          <div>
+          <TikTok vidLink="https://www.tiktok.com/@camiinthisthang/video/6999680054053637382" videoID="6999680054053637382"></TikTok>
+          </div>
+          <div>
+          <TikTok vidLink="https://www.tiktok.com/@camiinthisthang/video/7042774240483052846" videoID="7042774240483052846"></TikTok>
+          </div>
+        </div>
+        <div>
         <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white">
           Upcoming Events
         </h3>
+        </div>
       </div>
 
         {/* <h1 className={styles.title}>
