@@ -6,7 +6,7 @@ import Icon from "../components/Icon";
 import TikTok from "../components/TikTok";
 import ScrollSnap from "../components/scrollsnap";
 import Link from "next/link";
-import Sparkle from "../components/Sparkle";
+import { SparklesIcon } from '@heroicons/react/outline'
 
 export default function Home() {
     return (
@@ -41,7 +41,7 @@ export default function Home() {
                                 {/* <p className='text-teal-400 font-bold pr-2'>
                                     l
                                 </p> */}
-                                <Sparkle></Sparkle>
+                                <SparklesIcon className="h-5 w-5 text-teal-400 mt-1"></SparklesIcon>
                                 <Link href='/about'>
                                     <p className='text-white mb-16 hover:text-black hover:bg-teal-400 rounded-lg p-1'>
                                         About Me
@@ -62,11 +62,18 @@ export default function Home() {
                     <h3 className='font-bold text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white'>
                         Featured Content
                     </h3>
-                    <div className='flex flex-row flex-wrap justify-between w-full'>
+                    {/* <div className='flex flex-row flex-wrap justify-between w-full'> */}
+                    <div className='flex flex-row w-full overflow-auto'>
                         <div className=''>
                             <TikTok
                                 vidLink='https://www.tiktok.com/@camiinthisthang/video/6999680054053637382'
                                 videoID='6999680054053637382'
+                            ></TikTok>
+                        </div>
+                        <div className=''>
+                            <TikTok
+                                vidLink='https://www.tiktok.com/@camiinthisthang/video/7000052712595279109'
+                                videoID='7000052712595279109'
                             ></TikTok>
                         </div>
                         <div className=''>
@@ -79,6 +86,12 @@ export default function Home() {
                             <TikTok
                                 vidLink='https://www.tiktok.com/@camiinthisthang/video/7042711433603419439'
                                 videoID='7042711433603419439'
+                            ></TikTok>
+                        </div>
+                        <div className=''>
+                            <TikTok
+                                vidLink='https://www.tiktok.com/@camiinthisthang/video/7031254881944030470'
+                                videoID='7031254881944030470'
                             ></TikTok>
                         </div>
                     </div>
