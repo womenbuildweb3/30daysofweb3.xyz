@@ -6,6 +6,7 @@ import Icon from "../components/Icon";
 import TikTok from "../components/TikTok";
 import ScrollSnap from "../components/scrollsnap";
 import Link from "next/link";
+import Sparkle from "../components/Sparkle";
 
 export default function Home() {
     return (
@@ -18,9 +19,9 @@ export default function Home() {
       </Head> */}
 
             <main className='mt-11'>
-                <div className='border-4 flex flex-col justify-center items-start max-w-5xl border-gray-200 dark:border-gray-700 mx-auto pb-16'>
+                <div className='flex flex-col justify-center items-start max-w-5xl border-gray-200 dark:border-gray-700 mx-auto pb-16'>
                     <div className='flex flex-col-reverse sm:flex-row items-start'>
-                        <div className='flex flex-col pr-8 border-4 border-red-400'>
+                        <div className='flex flex-col pr-8'>
                             <h1 className='font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white'>
                                 Camila Ramos Garzon
                             </h1>
@@ -37,11 +38,12 @@ export default function Home() {
                                 into easy-to-understand videos and blog posts.
                             </p>
                             <div className='flex flex-row'>
-                                <p className='text-teal-400 font-bold pr-2'>
+                                {/* <p className='text-teal-400 font-bold pr-2'>
                                     l
-                                </p>
+                                </p> */}
+                                <Sparkle></Sparkle>
                                 <Link href='/about'>
-                                    <p className='text-white mb-16 hover:bg-teal-400 rounded-lg p-1'>
+                                    <p className='text-white mb-16 hover:text-black hover:bg-teal-400 rounded-lg p-1'>
                                         About Me
                                     </p>
                                 </Link>
@@ -60,20 +62,20 @@ export default function Home() {
                     <h3 className='font-bold text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white'>
                         Featured Content
                     </h3>
-                    <div className='flex flex-row flex-wrap border justify-between w-full'>
-                        <div className='border-4 border-rose-500'>
+                    <div className='flex flex-row flex-wrap justify-between w-full'>
+                        <div className=''>
                             <TikTok
                                 vidLink='https://www.tiktok.com/@camiinthisthang/video/6999680054053637382'
                                 videoID='6999680054053637382'
                             ></TikTok>
                         </div>
-                        <div className='border-4 border-green-500'>
+                        <div className=''>
                             <TikTok
                                 vidLink='https://www.tiktok.com/@camiinthisthang/video/7042774240483052846'
                                 videoID='7042774240483052846'
                             ></TikTok>
                         </div>
-                        <div className='border-4 border-green-500'>
+                        <div className=''>
                             <TikTok
                                 vidLink='https://www.tiktok.com/@camiinthisthang/video/7042711433603419439'
                                 videoID='7042711433603419439'
@@ -142,3 +144,4 @@ export default function Home() {
         </div>
     );
 }
+ 
