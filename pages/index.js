@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar'
 import Icon from '../components/Icon'
 import TikTok from '../components/TikTok'
 import ScrollSnap from '../components/scrollsnap'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -17,9 +18,9 @@ export default function Home() {
       </Head> */}
 
       <main className="mt-11">
-      <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pb-16">
+      <div className="border-4 flex flex-col justify-center items-start max-w-5xl border-gray-200 dark:border-gray-700 mx-auto pb-16">
         <div className="flex flex-col-reverse sm:flex-row items-start">
-          <div className="flex flex-col pr-8">
+          <div className="flex flex-col pr-8 border-4 border-red-400">
             <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white">
               Camila Ramos Garzon
             </h1>
@@ -29,29 +30,38 @@ export default function Home() {
               {/* <span className="font-semibold">PlanetScale.</span>
               <br></br>Founder at <span className="font-semibold">STEMTank + Calibaba.</span> */}
             </h2>
-            <p className="text-gray-600 dark:text-gray-400 mb-16">
-              I'm a software engineer who has spent the last 5 years teaching children how to code. As part of my passionate for making technology education accessible to all, I create free content on topics ranging from the basics of programming to the latest technologies.
+            <p className="text-gray-600 dark:text-gray-400 mb-2">
+              I'm a software engineer who loves to teach. I breakdown technical concepts ranging from the basics of programming to the latest technologies into easy-to-understand videos and blog posts.
             </p>
+            <div className="flex flex-row">
+            <p className="text-teal-400 font-bold pr-2">l</p>
+            <Link href="/about">
+            <p className="text-white mb-16 hover:bg-teal-400 rounded-lg p-1">About Me</p>
+            </Link>
+            </div>
           </div>
           <div className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto">
             <Image
               alt="Camila Ramos Garzon Headshot"
               height={176}
               width={176}
-              src="/./headshot.jpg"
+              src="/public/pngHeadshot.png"
               className="rounded-full filter grayscale"
             />
           </div>
         </div>
         <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white">
-          Featured Tik Toks
+          Featured Content
         </h3>
-        <div className="flex flex-row space-x-12">
-          <div>
+        <div className="flex flex-row flex-wrap space-x-2">
+          <div className="border-4 border-rose-500">
           <TikTok vidLink="https://www.tiktok.com/@camiinthisthang/video/6999680054053637382" videoID="6999680054053637382"></TikTok>
           </div>
-          <div>
+          <div className="border-4 border-green-500">
           <TikTok vidLink="https://www.tiktok.com/@camiinthisthang/video/7042774240483052846" videoID="7042774240483052846"></TikTok>
+          </div>
+          <div className="border-4 border-green-500">
+          <TikTok vidLink="https://www.tiktok.com/@camiinthisthang/video/7042711433603419439" videoID="7042711433603419439"></TikTok>
           </div>
         </div>
         <div>

@@ -1,5 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */ 
-import headshot from './headshot.jpg'
+//import Headshot from './Headshot.jpg';
 export default function Icon() {
     return (
       <>
@@ -25,7 +25,7 @@ export default function Icon() {
         /> */}
         <img
           className="inline-block h-14 w-14 rounded-full"
-          src={headshot}
+          src="/public/pngHeadshot.png"
           // src="../assets/headshot.jpg"
           alt=""
         />

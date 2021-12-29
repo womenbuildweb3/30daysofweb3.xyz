@@ -2,7 +2,7 @@ import react from 'react';
 
 export default function TikTok({vidLink, videoID}){
     return (
-        <div>
+        <div className="min-w-full">
             <blockquote
             class="tiktok-embed" 
             cite={vidLink}
