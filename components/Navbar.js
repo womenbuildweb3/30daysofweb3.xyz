@@ -34,17 +34,17 @@ export default function Navbar() {
                       About
                     </a>
                     <a
-                      href="/about"
+                      href="/contact"
                       className="text-gray-300 hover:bg-gray-700  active:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium "
                     >
-                      Blog
+                      Contact
                     </a>
-                    <a
+                    {/* <a
                       href="#" 
                       className="text-gray-300 hover:bg-gray-700  active:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium " 
                     >
                       Calendar
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
@@ -83,15 +83,15 @@ export default function Navbar() {
                 href="#"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
-                Blog
+                Contact
               </Disclosure.Button>
-              <Disclosure.Button
+              {/* <Disclosure.Button
                 as="a"
                 href="#"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 Calendar
-              </Disclosure.Button>
+              </Disclosure.Button> */}
             </div>
             <div className="pt-4 pb-3 border-t border-gray-700">
             </div>

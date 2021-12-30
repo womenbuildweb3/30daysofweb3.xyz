@@ -3,7 +3,7 @@ import react from "react";
 export default function TikTok({ vidLink, videoID }) {
     return (
         <div className="rounded-lg px-1 ">
-            <blockquote
+            {/* <blockquote
                 class='tiktok-embed'
                 cite={vidLink}
                 data-video-id={videoID}
@@ -20,7 +20,13 @@ export default function TikTok({ vidLink, videoID }) {
                     </a>
                 </section>
             </blockquote>
-            <script async src='https://www.tiktok.com/embed.js'></script>
+            <script async src='https://www.tiktok.com/embed.js'></script> */}
+            <iframe
+        height={760}
+        width={325}
+        src={`https://tiktok.com/embed/v2/${videoID}`}
+        videoID={videoID}
+      />
         </div>
     );
 }
