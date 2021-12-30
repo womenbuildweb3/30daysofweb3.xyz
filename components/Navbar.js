@@ -2,12 +2,18 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
+import { useState } from 'react'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
 export default function Navbar() {
+  const [active, setActive] = useState("");
+
+  function updateSelected(e){
+    console.log("this is the target: ", e.target.value);
+  }
   return (
     <Disclosure as="nav" className="bg-black">
       {({ open }) => (
@@ -16,26 +22,26 @@ export default function Navbar() {
             <div className="flex items-center justify-between h-16">
               <div className="flex items-center">
                 <div className="hidden sm:block sm:ml-6">
-                  <div className="flex space-x-4">
+                  <div onClick={updateSelected} className="flex space-x-4">
                     {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
-                    <a href="/" className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700" >
+                    <a href="/" className="active:bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700" >
                       Home
                     </a>
                     <a
                       href="/about"
-                      className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium "
+                      className="text-gray-300 hover:bg-gray-700 active:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium "
                     >
                       About
                     </a>
                     <a
                       href="/about"
-                      className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium "
+                      className="text-gray-300 hover:bg-gray-700  active:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium "
                     >
                       Blog
                     </a>
                     <a
                       href="#" 
-                      className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium " 
+                      className="text-gray-300 hover:bg-gray-700  active:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium " 
                     >
                       Calendar
                     </a>
@@ -63,21 +69,21 @@ export default function Navbar() {
                 href="#"
                 className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
               >
-                Dashboard
+                Home
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 href="#"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
-                Team
+                About
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 href="#"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
-                Projects
+                Blog
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"

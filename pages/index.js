@@ -41,9 +41,9 @@ export default function Home() {
                                 {/* <p className='text-teal-400 font-bold pr-2'>
                                     l
                                 </p> */}
-                                <SparklesIcon className="h-5 w-5 text-teal-400 mt-1"></SparklesIcon>
+                                <SparklesIcon className="h-5 w-5 text-indigo-400 mt-1"></SparklesIcon>
                                 <Link href='/about'>
-                                    <p className='text-white mb-16 hover:text-black hover:bg-teal-400 rounded-lg p-1'>
+                                    <p className='text-white mb-16 hover:text-black hover:bg-indigo-400 rounded-lg p-1'>
                                         About Me
                                     </p>
                                 </Link>
@@ -59,7 +59,7 @@ export default function Home() {
                             />
                         </div>
                     </div>
-                    <h3 className='font-bold text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white'>
+                    <h3 className='font-bold text-2xl md:text-4xl tracking-tight mb-6 bg-gradient-to-r from-indigo-500  via-purple-500 to-pink-500 bg-clip-text text-transparent'>
                         Featured Content
                     </h3>
                     {/* <div className='flex flex-row flex-wrap justify-between w-full'> */}
