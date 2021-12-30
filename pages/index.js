@@ -7,6 +7,7 @@ import TikTok from "../components/TikTok";
 import ScrollSnap from "../components/scrollsnap";
 import Link from "next/link";
 import { SparklesIcon } from '@heroicons/react/outline'
+import { SocialIcon } from 'react-social-icons';
 
 export default function Home() {
     return (
@@ -48,6 +49,7 @@ export default function Home() {
                                     </p>
                                 </Link>
                             </div>
+                                           
                         </div>
                         <div className='w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto'>
                             <Image
@@ -59,9 +61,21 @@ export default function Home() {
                             />
                         </div>
                     </div>
+                    <div className="flex flex-row flex-wrap space-x-4">
                     <h3 className='font-bold text-2xl md:text-4xl tracking-tight mb-6 bg-gradient-to-r from-indigo-500  via-purple-500 to-pink-500 bg-clip-text text-transparent'>
                         Featured Content
                     </h3>
+                    <div>
+                        <SocialIcon target="_blank" url="https://twitter.com/camiinthisthang" bgColor="#7f7f7f" fgColor="#fff" style={{ height: 40, width: 40 }} />
+                    </div>
+                    <div>
+                    <SocialIcon target="_blank" url="https://www.tiktok.com/@camiinthisthang?" bgColor="#7f7f7f" fgColor="#fff" style={{ height: 40, width: 40 }} />
+                    </div>
+                    <div>
+                    <SocialIcon target="_blank" url="https://www.youtube.com/channel/UCyEnr-lcCUavJzh0uodvG3w" bgColor="#7f7f7f" fgColor="#fff" style={{ height: 40, width: 40 }} />
+                    </div>
+                </div>
+                    
                     {/* <div className='flex flex-row flex-wrap justify-between w-full'> */}
                     <div className='flex flex-row w-full overflow-auto'>
                         <div className=''>

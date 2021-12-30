@@ -1,5 +1,6 @@
 import styles from "../styles/Home.module.css";
 import Navbar from "../components/Navbar";
+import { SocialIcon } from 'react-social-icons';
 export default function About() {
   return (
     <div className={styles.container}>
@@ -14,6 +15,15 @@ export default function About() {
               </h1>
               <h1>If you can read this, shh</h1>
                 </div>
+
+                {/* <div className="flex flex-row flex-wrap space-x-4">
+                    <div>
+                        <SocialIcon url="https://twitter.com/camiinthisthang" bgColor="#7f7f7f" fgColor="#fff" style={{ height: 40, width: 40 }} />
+                    </div>
+                    <div>
+                    <SocialIcon url="https://www.tiktok.com/@camiinthisthang?" bgColor="#7f7f7f" fgColor="#fff" style={{ height: 40, width: 40 }} />
+                    </div>
+                </div> */}
             
               <div className="mb-4">
                 <p className="text-gray-600 dark:text-gray-400 mb-2 text-lg">
