@@ -2,7 +2,8 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
-import { useState } from 'react'
+import { useState } from 'react' 
+import Link from "next/link";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -24,21 +25,25 @@ export default function Navbar() {
                 <div className="hidden sm:block sm:ml-6">
                   <div onClick={updateSelected} className="flex space-x-4">
                     {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
-                    <a href="/" className="active:bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700" >
+                    <Link href="/">
+                    <p className="active:bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700" >
                       Home
-                    </a>
-                    <a
-                      href="/about"
+                    </p>
+                    </Link>
+                    <Link href="/about">
+                    <p
                       className="text-gray-300 hover:bg-gray-700 active:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium "
                     >
                       About
-                    </a>
-                    <a
-                      href="/contact"
+                    </p>
+                    </Link>
+                    <Link href="/contact">
+                    <p
                       className="text-gray-300 hover:bg-gray-700  active:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium "
                     >
                       Contact
-                    </a>
+                    </p>
+                    </Link>
                     {/* <a
                       href="#" 
                       className="text-gray-300 hover:bg-gray-700  active:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium " 

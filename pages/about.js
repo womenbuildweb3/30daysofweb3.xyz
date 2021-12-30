@@ -80,7 +80,9 @@ export default function About() {
               <div className="mb-4">
                 <p className="text-gray-600 dark:text-gray-400 mb-2 text-lg">
                   In 2018 I founded what has now come to be known as 
-                  <a target="_blank" href="https://www.stemtank.org/">
+                  <a target="_blank" 
+                  rel="noreferrer"
+                  href="https://www.stemtank.org/">
                   <span className="pl-1 font-semibold underline decoration-indigo-500"> STEMTank</span>
                   </a>
                    , a

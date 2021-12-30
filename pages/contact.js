@@ -184,6 +184,7 @@ export default function Contact() {
                     <div>
               <SocialIcon
                 target="_blank"
+                rel="noreferrer"
                 url="https://twitter.com/camiinthisthang"
                 bgColor="#7f7f7f"
                 fgColor="#fff"
@@ -193,6 +194,7 @@ export default function Contact() {
             <div>
               <SocialIcon
                 target="_blank"
+                rel="noreferrer"
                 url="https://www.tiktok.com/@camiinthisthang?"
                 bgColor="#7f7f7f"
                 fgColor="#fff"
@@ -202,6 +204,7 @@ export default function Contact() {
             <div>
               <SocialIcon
                 target="_blank"
+                rel="noreferrer"
                 url="https://www.youtube.com/channel/UCyEnr-lcCUavJzh0uodvG3w"
                 bgColor="#7f7f7f"
                 fgColor="#fff"

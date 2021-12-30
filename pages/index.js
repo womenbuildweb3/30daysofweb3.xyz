@@ -2,9 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Navbar from "../components/Navbar";
-import Icon from "../components/Icon";
 import TikTok from "../components/TikTok";
-import ScrollSnap from "../components/scrollsnap";
 import Link from "next/link";
 import { SparklesIcon } from "@heroicons/react/outline";
 import { SocialIcon } from "react-social-icons";
@@ -34,7 +32,7 @@ export default function Home() {
               <br></br>Founder at <span className="font-semibold">STEMTank + Calibaba.</span> */}
               </h2>
               <p className="text-gray-600 dark:text-gray-400 mb-2">
-                I'm a software engineer who loves to teach. I breakdown
+                I&apos;m a software engineer who loves to teach. I breakdown
                 technical concepts ranging from the basics of programming to the
                 latest technologies into easy-to-understand videos and blog
                 posts.
@@ -68,6 +66,7 @@ export default function Home() {
             <div>
               <SocialIcon
                 target="_blank"
+                rel="noreferrer"
                 url="https://twitter.com/camiinthisthang"
                 bgColor="#7f7f7f"
                 fgColor="#fff"
@@ -77,6 +76,7 @@ export default function Home() {
             <div>
               <SocialIcon
                 target="_blank"
+                rel="noreferrer"
                 url="https://www.tiktok.com/@camiinthisthang?"
                 bgColor="#7f7f7f"
                 fgColor="#fff"
@@ -86,6 +86,7 @@ export default function Home() {
             <div>
               <SocialIcon
                 target="_blank"
+                rel="noreferrer"
                 url="https://www.youtube.com/channel/UCyEnr-lcCUavJzh0uodvG3w"
                 bgColor="#7f7f7f"
                 fgColor="#fff"
@@ -130,13 +131,13 @@ export default function Home() {
           </div>
           <div className="flex flex-row w-full overflow-auto space-x-2">
             <div className="">
-              <ReactPlayer url="https://www.youtube.com/watch?v=DYsJUEjpK_I" />
-            </div>
-            <div className="">
               <ReactPlayer url="https://www.youtube.com/watch?v=tq5fJmoYod4" />
             </div>
             <div className="">
               <ReactPlayer url="https://www.youtube.com/watch?v=ZE32RZJGSXU" />
+            </div>
+            <div className="">
+              <ReactPlayer url="https://www.youtube.com/watch?v=DYsJUEjpK_I" />
             </div>
           </div>
         </div>
