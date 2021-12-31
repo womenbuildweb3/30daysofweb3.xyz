@@ -1,4 +1,8 @@
-export default function Example() {
+import STEMTank from "./STEMTank.png";
+import Calibaba from "./Calibaba.png";
+import planetscale from "./planetscale.png"
+
+export default function Companies() {
     return (
       <div className="bg-gray-300">
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
@@ -9,15 +13,15 @@ export default function Example() {
             <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
               <img
                 className="max-h-12"
-                src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg"
-                alt="Workcation"
+                src={STEMTank}
+                alt="STEMTank"
               />
             </div>
             <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
-              <img className="max-h-12" src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg" alt="Mirage" />
+              <img className="max-h-12" src={Calibaba} alt="Calibaba" />
             </div>
             <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
-              <img className="max-h-12" src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg" alt="Tuple" />
+              <img className="max-h-12" src={planetscale} alt="PlanetScale" />
             </div>
           </div>
         </div>

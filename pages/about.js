@@ -4,6 +4,7 @@ import { SocialIcon } from "react-social-icons";
 import Link from "next/link";
 import Companies from "../components/Companies";
 
+
 export default function About() {
   return (
     <div className={styles.container}>
@@ -36,7 +37,7 @@ export default function About() {
                   of wanting to work for social good. At the time, it felt like
                   these tech and social justice issues were mutually exclusive.
                   As a Bay Area native, I saw the devastating effects of
-                  gentrifcation as a result of the tech industry. After learning
+                  gentrification as a result of the tech industry. After learning
                   about the gender and racial equity issues in tech, and the
                   dangerous technology that gets created as a result, I realized
                   that being a woman, and being an immigrant, and being a
