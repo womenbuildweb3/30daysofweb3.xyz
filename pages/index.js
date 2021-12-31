@@ -118,7 +118,7 @@ export default function Home() {
               <ReactPlayer width="480px" height="260px"  url="https://www.youtube.com/watch?v=ZE32RZJGSXU" />
             </div>
             <div className="">
-              <ReactPlayer width="480" height="260px"  url="https://www.youtube.com/watch?v=DYsJUEjpK_I" />
+              <ReactPlayer width="480px" height="260px"  url="https://www.youtube.com/watch?v=DYsJUEjpK_I" />
             </div>
           </div>
         </div>

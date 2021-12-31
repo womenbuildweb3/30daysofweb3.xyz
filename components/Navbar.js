@@ -69,20 +69,30 @@ export default function Navbar() {
           <Disclosure.Panel className="sm:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
+              <Link href="/"> 
               <Disclosure.Button
                 as="a"
-                href="#"
                 className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 Home
               </Disclosure.Button>
-              <Disclosure.Button
+              </Link>
+              {/* <Disclosure.Button
                 as="a"
                 href="#"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 About
+              </Disclosure.Button> */}
+              <Link href="/blog">
+                <Disclosure.Button
+                as="a"
+                className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >
+                Blog
               </Disclosure.Button>
+              </Link>
+              <Link href="/contact">
               <Disclosure.Button
                 as="a"
                 href="#"
@@ -90,6 +100,7 @@ export default function Navbar() {
               >
                 Contact
               </Disclosure.Button>
+              </Link>
               {/* <Disclosure.Button
                 as="a"
                 href="#"
