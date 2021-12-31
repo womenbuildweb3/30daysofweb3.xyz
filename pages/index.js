@@ -122,13 +122,13 @@ export default function Home() {
           </div>
           <div className="flex flex-row w-full overflow-auto space-x-2">
             <div className="">
-              <ReactPlayer className="lg:max-w-screen-sm max-w-min border-4 border-red-400" url="https://www.youtube.com/watch?v=tq5fJmoYod4" />
+              <ReactPlayer className="lg:max-w-screen-sm max-w-min" url="https://www.youtube.com/watch?v=tq5fJmoYod4" />
             </div>
             <div className="">
               <ReactPlayer url="https://www.youtube.com/watch?v=ZE32RZJGSXU" />
             </div>
             <div className="">
-              <ReactPlayer className="border-4 border-red-400" url="https://www.youtube.com/watch?v=DYsJUEjpK_I" />
+              <ReactPlayer className="" url="https://www.youtube.com/watch?v=DYsJUEjpK_I" />
             </div>
           </div>
         </div>

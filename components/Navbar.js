@@ -30,13 +30,13 @@ export default function Navbar() {
                       Home
                     </p>
                     </Link>
-                    <Link href="/about">
+                    {/* <Link href="/about">
                     <p
                       className="text-gray-300 hover:bg-gray-700 active:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium "
                     >
                       About
                     </p>
-                    </Link>
+                    </Link> */}
                     <Link href="/contact">
                     <p
                       className="text-gray-300 hover:bg-gray-700  active:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium "

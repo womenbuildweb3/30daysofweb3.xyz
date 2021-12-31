@@ -19,7 +19,7 @@ export default function About() {
                   all of my teddy bears down facing a whiteboard, and would
                   stand up there and teach them. I never considered another
                   career, much less a career in STEM. While I was in high
-                  school, my history class participated in Code.org’s Hour of
+                  school, my history class participated in Code.org&apos;s Hour of
                   Code. This was my first experience ever hearing the term
                   “coding” and I was so impacted that I left the event
                   interested in computer science. Before I was able to write my
@@ -96,7 +96,7 @@ export default function About() {
 
               <div>
                 <p className="text-gray-600 dark:text-gray-400 mb-2 text-sm md:text-lg">
-                  This endeavor has been nothing short of amazing. I've learned so much
+                  This endeavor has been nothing short of amazing. I&apos;ve learned so much
                   about technology, education, and the impact of technology on our young people.
                   My journey has forced me to wear many hats- teacher, founder, hiring manager, mentor,
                   salesperson, but most importantly it taught me what it
