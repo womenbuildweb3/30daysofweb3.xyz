@@ -49,48 +49,39 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto">
-              <Image
-                alt="Camila Ramos Garzon Headshot"
-                height={176}
-                width={176}
-                src="/public/pngHeadshot.png"
-                className="rounded-full filter grayscale"
-              />
-            </div>
           </div>
           <div className="flex flex-row flex-wrap space-x-4">
             <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 bg-gradient-to-r from-indigo-500  via-purple-500 to-pink-500 bg-clip-text text-transparent">
               Featured Content
             </h3>
-            <div>
+            <div className="mt-1">
               <SocialIcon
                 target="_blank"
                 rel="noreferrer"
                 url="https://twitter.com/camiinthisthang"
                 bgColor="#7f7f7f"
                 fgColor="#fff"
-                style={{ height: 40, width: 40 }}
+                style={{ height: 35, width: 35 }}
               />
             </div>
-            <div>
+            <div className=" mt-1">
               <SocialIcon
                 target="_blank"
                 rel="noreferrer"
                 url="https://www.tiktok.com/@camiinthisthang?"
                 bgColor="#7f7f7f"
                 fgColor="#fff"
-                style={{ height: 40, width: 40 }}
+                style={{ height: 35, width: 35 }}
               />
             </div>
-            <div>
+            <div className="mt-1">
               <SocialIcon
                 target="_blank"
                 rel="noreferrer"
                 url="https://www.youtube.com/channel/UCyEnr-lcCUavJzh0uodvG3w"
                 bgColor="#7f7f7f"
                 fgColor="#fff"
-                style={{ height: 40, width: 40 }}
+                style={{ height: 35, width: 35 }}
               />
             </div>
           </div>
@@ -131,13 +122,13 @@ export default function Home() {
           </div>
           <div className="flex flex-row w-full overflow-auto space-x-2">
             <div className="">
-              <ReactPlayer url="https://www.youtube.com/watch?v=tq5fJmoYod4" />
+              <ReactPlayer className="lg:max-w-screen-sm max-w-min border-4 border-red-400" url="https://www.youtube.com/watch?v=tq5fJmoYod4" />
             </div>
             <div className="">
               <ReactPlayer url="https://www.youtube.com/watch?v=ZE32RZJGSXU" />
             </div>
             <div className="">
-              <ReactPlayer url="https://www.youtube.com/watch?v=DYsJUEjpK_I" />
+              <ReactPlayer className="border-4 border-red-400" url="https://www.youtube.com/watch?v=DYsJUEjpK_I" />
             </div>
           </div>
         </div>
@@ -214,31 +205,3 @@ export default function Home() {
 //     },
 //   }
 // }
-
-export async function getServerSideProps() {
-  const [video1Res, video2Res, video3Res, video4Res] = await Promise.all([
-    fetch(
-      "https://www.tiktok.com/oembed?url=https://www.tiktok.com/@camiinthisthang/video/6999680054053637382"
-    ),
-    fetch(
-      "https://www.tiktok.com/oembed?url=https://www.tiktok.com/@camiinthisthang/video/7000052712595279109"
-    ),
-    fetch(
-      "https://www.tiktok.com/oembed?url=https://www.tiktok.com/@camiinthisthang/video/7042774240483052846"
-    ),
-    fetch(
-      "https://www.tiktok.com/oembed?url=https://www.tiktok.com/@camiinthisthang/video/7031254881944030470"
-    ),
-  ]);
-  const [video1, video2, video3, video4] = await Promise.all([
-    video1Res.json(),
-    video2Res.json(),
-    video3Res.json(),
-    video4Res.json(),
-  ]);
-  console.log("this is video1!!!!!!!!!", video1);
-  console.log("this is video2!!!!!!!!!", video2);
-  console.log("this is video3!!!!!!!!!", video3);
-  console.log("this is video4!!!!!!!!!", video4);
-  return { props: { video1, video2, video3, video4 } };
-}
