@@ -110,15 +110,15 @@ export default function Home() {
               ></TikTok>
             </div>
           </div>
-          <div className="flex flex-row w-full overflow-auto space-x-2">
+          <div className="mt-8 flex flex-row w-full overflow-auto space-x-2">
             <div className="">
-              <ReactPlayer url="https://www.youtube.com/watch?v=tq5fJmoYod4" />
+              <ReactPlayer width="480px" height="260px" url="https://www.youtube.com/watch?v=tq5fJmoYod4" />
             </div>
             <div className="">
-              <ReactPlayer url="https://www.youtube.com/watch?v=ZE32RZJGSXU" />
+              <ReactPlayer width="480px" height="260px"  url="https://www.youtube.com/watch?v=ZE32RZJGSXU" />
             </div>
             <div className="">
-              <ReactPlayer className="" url="https://www.youtube.com/watch?v=DYsJUEjpK_I" />
+              <ReactPlayer width="480" height="260px"  url="https://www.youtube.com/watch?v=DYsJUEjpK_I" />
             </div>
           </div>
         </div>
