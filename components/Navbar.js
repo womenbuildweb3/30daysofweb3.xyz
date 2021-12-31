@@ -37,18 +37,18 @@ export default function Navbar() {
                       About
                     </p>
                     </Link> */}
-                    <Link href="/contact">
-                    <p
-                      className="text-gray-300 hover:bg-gray-700  active:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium "
-                    >
-                      Contact
-                    </p>
-                    </Link>
                     <Link href="/blog">
                     <p
                       className="text-gray-300 hover:bg-gray-700  active:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium "
                     >
                       Blog
+                    </p>
+                    </Link>
+                    <Link href="/contact">
+                    <p
+                      className="text-gray-300 hover:bg-gray-700  active:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium "
+                    >
+                      Contact
                     </p>
                     </Link>
                   </div>
