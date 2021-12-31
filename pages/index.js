@@ -110,7 +110,7 @@ export default function Home() {
               ></TikTok>
             </div>
           </div>
-          <div className="mt-8 flex flex-row w-full overflow-auto space-x-2">
+          {/* <div className="mt-8 flex flex-row w-full overflow-auto space-x-2">
             <div className="">
               <ReactPlayer width="480px" height="260px" url="https://www.youtube.com/watch?v=tq5fJmoYod4" />
             </div>
@@ -120,7 +120,7 @@ export default function Home() {
             <div className="">
               <ReactPlayer width="480px" height="260px"  url="https://www.youtube.com/watch?v=DYsJUEjpK_I" />
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* <h1 className={styles.title}>
