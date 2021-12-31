@@ -54,16 +54,6 @@ export default function Home() {
             <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 bg-gradient-to-r from-indigo-500  via-purple-500 to-pink-500 bg-clip-text text-transparent">
               Featured Content
             </h3>
-            <div className="mt-1">
-              <SocialIcon
-                target="_blank"
-                rel="noreferrer"
-                url="https://twitter.com/camiinthisthang"
-                bgColor="#7f7f7f"
-                fgColor="#fff"
-                style={{ height: 35, width: 35 }}
-              />
-            </div>
             <div className=" mt-1">
               <SocialIcon
                 target="_blank"
@@ -122,7 +112,7 @@ export default function Home() {
           </div>
           <div className="flex flex-row w-full overflow-auto space-x-2">
             <div className="">
-              <ReactPlayer className="lg:max-w-screen-sm max-w-min" url="https://www.youtube.com/watch?v=tq5fJmoYod4" />
+              <ReactPlayer url="https://www.youtube.com/watch?v=tq5fJmoYod4" />
             </div>
             <div className="">
               <ReactPlayer url="https://www.youtube.com/watch?v=ZE32RZJGSXU" />

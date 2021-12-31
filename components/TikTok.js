@@ -22,7 +22,7 @@ export default function TikTok({ vidLink, videoID }) {
             </blockquote>
             <script async src='https://www.tiktok.com/embed.js'></script> */}
             <iframe
-        height={760}
+        height={575}
         width={325}
         src={`https://tiktok.com/embed/v2/${videoID}`}
         videoID={videoID}
