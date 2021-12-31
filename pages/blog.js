@@ -57,7 +57,7 @@ export default function Blog({ myData }) {
             Fresh Off The Press
           </h1>
           {myData.publication.posts.map((post, key) => (
-            <div className="flex flex-col text-gray-500">
+            <div key={post.slug} className="flex flex-col text-gray-500">
                 <Link href="https://camiinthisthang.hashnode.dev/">
               <h1 className="w-full mb-2 text-lg font-medium text-gray-900 md:text-xl dark:text-gray-100 select-none">
                 {post.title}
