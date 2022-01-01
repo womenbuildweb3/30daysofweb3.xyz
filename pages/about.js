@@ -18,9 +18,9 @@ export default function About() {
               </h1>
               <div className="mb-4">
                 <p className="text-gray-600 dark:text-gray-400 mb-2 text-sm md:text-lg display: inline-block">
-                  Hi there! My name is Camila Ramos, and I go by Cami. I'm 23 years old and originally from
+                  Hi there! My name is Camila Ramos, and I go by Cami. I&apos;m 23 years old and originally from
                   Bogota, Colombia. I have been living in The Bay Area for more than 20
-                  years and I currently reside in Oakland, CA. I'm a surfer and traveler, and have been to 12 countries so far. 
+                  years and I currently reside in Oakland, CA. I&apos;m a surfer and traveler, and have been to 12 countries so far. 
                   I studied computer science at a community college before
                   transferring to Cal State East Bay. I graduated from CSUEB Decmeber 2021 
                   with a B.S. in Computer Science. 
@@ -28,9 +28,9 @@ export default function About() {
               </div>
               <div className="mb-4">
                 <p className="text-gray-600 dark:text-gray-400 mb-2 text-sm md:text-lg display: inline-block">
-                  I'm a software engineer, founder, and educator. I wear a lot
+                  I&apos;m a software engineer, founder, and educator. I wear a lot
                   of hats as a professional, but my passion for equity and
-                  access is what ties them all together. I'm the technical cofounder of 
+                  access is what ties them all together. I&apos;m the technical cofounder of 
                   <a
                     target="_blank"
                     rel="noreferrer"
