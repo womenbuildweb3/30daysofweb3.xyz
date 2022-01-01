@@ -32,7 +32,7 @@ export default function Home() {
               <br></br>Founder at <span className="font-semibold">STEMTank + Calibaba.</span> */}
               </h2>
               <p className="text-gray-600 dark:text-gray-400 mb-2">
-                I&apos;m a software engineer who loves to teach. I breakdown
+                I&apos;m a software engineer who loves to teach. I break down
                 technical concepts ranging from the basics of programming to the
                 latest technologies into easy-to-understand videos and blog
                 posts.
