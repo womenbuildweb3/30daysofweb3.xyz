@@ -30,13 +30,13 @@ export default function Navbar() {
                       Home
                     </p>
                     </Link>
-                    {/* <Link href="/about">
+                    <Link href="/about">
                     <p
                       className="text-gray-300 hover:bg-gray-700 active:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium "
                     >
                       About
                     </p>
-                    </Link> */}
+                    </Link>
                     <Link href="/blog">
                     <p
                       className="text-gray-300 hover:bg-gray-700  active:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium "
@@ -77,13 +77,13 @@ export default function Navbar() {
               >
                 Home
               </Disclosure.Button>
-              {/* <Disclosure.Button
+              <Disclosure.Button
                 as="a"
-                href="#"
+                href="/about"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 About
-              </Disclosure.Button> */}
+              </Disclosure.Button>
                 <Disclosure.Button
                 href="/blog"
                 as="a"

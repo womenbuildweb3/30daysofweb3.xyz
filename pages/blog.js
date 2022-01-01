@@ -49,8 +49,6 @@ export default function Blog({ myData }) {
             <div className="">
                 <h2 className="font-semibold rounded-lg px-2 bg-indigo-500 text-gray-200 mb-4"> Career </h2>
             </div>
-            
-
         </div>
         <div className="max-w-3xl mx-auto">
           <h1 className="pb-6 text-white font-bold text-xl md:text-3xl tracking-tight">
