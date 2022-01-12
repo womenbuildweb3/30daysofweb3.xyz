@@ -16,16 +16,16 @@ export default function Contact() {
           <div className="bg-warm-gray-50">
             <div className="py-12 bg-black">
               <div className="relative z-10 max-w-7xl mx-auto pl-4 pr-8 sm:px-6 lg:px-8">
-                <h1 className="text-4xl font-extrabold tracking-tight dark:text-white sm:text-5xl lg:text-6xl">
+                <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
                   Get in touch
                 </h1>
-                <p className="dark:text-gray-200 mt-6 text-xl text-warm-gray-500 max-w-3xl">
+                <p className=" mt-6 text-xl text-white max-w-3xl">
                   Please reach out to me with any questions, comments, or opportunities here. In 2022 I am especially interested in the following:
                   </p>
                   {/* <p className="dark:text-gray-200 mt-6 text-xl text-warm-gray-500 max-w-3xl"> 
                   In 2022 I am especially interested in the following:
                   </p> */}
-                 <ul className="dark:text-gray-200 mt-6 text-xl text-warm-gray-500 max-w-3xl">
+                 <ul className="text-gray-200 mt-6 text-xl max-w-3xl">
                      <div className="flex flex-row"> 
                      <SparklesIcon className="h-5 w-5 text-indigo-400 mt-1"></SparklesIcon>
                      <li className="pl-2"> Speaking at conferences </li>
@@ -220,7 +220,7 @@ export default function Contact() {
                     <form action="#" method="POST" className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                       <div>
                         <label htmlFor="first-name" className="block text-sm font-medium text-gray-400">
-                          First name
+                          Name
                         </label>
                         <div className="mt-1">
                           <input
