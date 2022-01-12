@@ -1,12 +1,65 @@
 import Navbar from "../components/Navbar";
-import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MailIcon, MenuIcon, PhoneIcon, XIcon } from '@heroicons/react/outline'
 import styles from "../styles/Home.module.css";
 import { SparklesIcon } from "@heroicons/react/outline";
 import { SocialIcon } from "react-social-icons";
+import { useState } from "react";
+import { useEffect } from "react";
 
 export default function Contact() {
+  const [firstName, setFirstName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
+  useEffect(() => {
+    console.log("firstName", firstName);
+    console.log("email", email);
+    console.log("subject", subject);
+    console.log("message", message);
+  },[firstName, email, subject, message])
+
+  function handleCheckout(e){
+    e.preventDefault();
+    console.log("this function is being called")
+  } 
+
+  const handleSubmit = async(e) => {
+    console.log("first line in handlesubmit")
+    e.preventDefault();
+    const body = {firstName, email, subject, message}
+    console.log("this is the body Im sending in", body);
+    const stringified = JSON.stringify(body);
+    console.log("stringified???", stringified);
+    try {
+      console.log("inside the try");
+      const response = await fetch("/api/inquiry", {
+        method: "POST",
+        body: JSON.stringify(body),
+    });
+    console.log("what is response", response);
+    if (response.status !== 200){
+      console.log("something went wrong");
+      //set an error banner here
+    } else {
+      resetForm();
+      console.log("form submitted successfully !!!")
+      //set a success banner here
+    }
+    //check response, if success is false, dont take them to success page
+    } catch (error) {
+      console.log("there was an error submitting", error);
+
+    }
+  }
+
+  const resetForm = () => {
+    setFirstName("");
+    setEmail("");
+    setSubject("");
+    setMessage("");
+}
     return (
       <div className="">
           <Navbar />
@@ -217,7 +270,7 @@ export default function Contact() {
                   {/* Contact form */}
                   <div className="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12 ">
                     <h3 className="text-lg font-medium text-gray-400">Send me a message</h3>
-                    <form action="#" method="POST" className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+                    <form action="#" method="POST" onSubmit={(e) => handleSubmit(e)} className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                       <div>
                         <label htmlFor="first-name" className="block text-sm font-medium text-gray-400">
                           Name
@@ -228,6 +281,8 @@ export default function Contact() {
                             name="first-name"
                             id="first-name"
                             autoComplete="given-name"
+                            onChange={(e) => setFirstName(e.target.value)} 
+                            value={firstName}
                             className="bg-zinc-500 py-3 px-4 block w-full shadow-sm text-gray-400-900 focus:ring-indigo-400 focus:border-indigo-400 border-warm-gray-300 rounded-md"
                           />
                         </div>
@@ -242,6 +297,7 @@ export default function Contact() {
                             name="email"
                             type="email"
                             autoComplete="email"
+                            onChange={(e) => setEmail(e.target.value)} value={email}
                             className="py-3 px-4 block w-full shadow-sm text-gray-400-900 focus:ring-indigo-400 border-indigo-400 border-warm-gray-300 rounded-md bg-zinc-500"
                           />
                         </div>
@@ -269,6 +325,7 @@ export default function Contact() {
                             type="text"
                             name="subject"
                             id="subject"
+                            onChange={(e) => setSubject(e.target.value)} value={subject}
                             className="bg-zinc-500 py-3 px-4 block w-full shadow-sm text-gray-400 focus:ring-indigo-400 border-indigo-400 border-warm-gray-300 rounded-md"
                           />
                         </div>
@@ -287,15 +344,17 @@ export default function Contact() {
                             id="message"
                             name="message"
                             rows={4}
+                            onChange={(e) => setMessage(e.target.value)} 
+                            value={message}
                             className="bg-zinc-500 py-3 px-4 block w-full shadow-sm text-gray-400 focus:ring-indigo-400 border-indigo-400 border border-warm-gray-300 rounded-md"
                             aria-describedby="message-max"
-                            defaultValue={''}
                           />
                         </div>
                       </div>
                       <div className="sm:col-span-2 sm:flex sm:justify-end">
                         <button
                           type="submit"
+                          // onClick={() => handleCheckout}
                           className="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-400 hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2  sm:w-auto"
                         >
                           Submit
