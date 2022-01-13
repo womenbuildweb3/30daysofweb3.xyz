@@ -26,18 +26,14 @@ export default function Contact() {
   } 
 
   const handleSubmit = async(e) => {
-    console.log("first line in handlesubmit")
     e.preventDefault();
     const body = {firstName, email, subject, message}
-    console.log("this is the body Im sending in", body);
     try {
-      console.log("inside the try");
       const response = await fetch("/api/inquiry", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify(body),
     });
-    console.log("what is response", response);
     if (response.status !== 200){
       console.log("something went wrong");
       //set an error banner here
