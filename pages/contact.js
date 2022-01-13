@@ -1,12 +1,60 @@
 import Navbar from "../components/Navbar";
-import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MailIcon, MenuIcon, PhoneIcon, XIcon } from '@heroicons/react/outline'
 import styles from "../styles/Home.module.css";
 import { SparklesIcon } from "@heroicons/react/outline";
 import { SocialIcon } from "react-social-icons";
+import { useState } from "react";
+import { useEffect } from "react";
 
 export default function Contact() {
+  const [firstName, setFirstName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
+  useEffect(() => {
+    console.log("firstName", firstName);
+    console.log("email", email);
+    console.log("subject", subject);
+    console.log("message", message);
+  },[firstName, email, subject, message])
+
+  function handleCheckout(e){
+    e.preventDefault();
+    console.log("this function is being called")
+  } 
+
+  const handleSubmit = async(e) => {
+    e.preventDefault();
+    const body = {firstName, email, subject, message}
+    try {
+      const response = await fetch("/api/inquiry", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify(body),
+    });
+    if (response.status !== 200){
+      console.log("something went wrong");
+      //set an error banner here
+    } else {
+      resetForm();
+      console.log("form submitted successfully !!!")
+      //set a success banner here
+    }
+    //check response, if success is false, dont take them to success page
+    } catch (error) {
+      console.log("there was an error submitting", error);
+
+    }
+  }
+
+  const resetForm = () => {
+    setFirstName("");
+    setEmail("");
+    setSubject("");
+    setMessage("");
+}
     return (
       <div className="">
           <Navbar />
@@ -16,16 +64,16 @@ export default function Contact() {
           <div className="bg-warm-gray-50">
             <div className="py-12 bg-black">
               <div className="relative z-10 max-w-7xl mx-auto pl-4 pr-8 sm:px-6 lg:px-8">
-                <h1 className="text-4xl font-extrabold tracking-tight dark:text-white sm:text-5xl lg:text-6xl">
+                <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
                   Get in touch
                 </h1>
-                <p className="dark:text-gray-200 mt-6 text-xl text-warm-gray-500 max-w-3xl">
+                <p className=" mt-6 text-xl text-white max-w-3xl">
                   Please reach out to me with any questions, comments, or opportunities here. In 2022 I am especially interested in the following:
                   </p>
                   {/* <p className="dark:text-gray-200 mt-6 text-xl text-warm-gray-500 max-w-3xl"> 
                   In 2022 I am especially interested in the following:
                   </p> */}
-                 <ul className="dark:text-gray-200 mt-6 text-xl text-warm-gray-500 max-w-3xl">
+                 <ul className="text-gray-200 mt-6 text-xl max-w-3xl">
                      <div className="flex flex-row"> 
                      <SparklesIcon className="h-5 w-5 text-indigo-400 mt-1"></SparklesIcon>
                      <li className="pl-2"> Speaking at conferences </li>
@@ -217,10 +265,10 @@ export default function Contact() {
                   {/* Contact form */}
                   <div className="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12 ">
                     <h3 className="text-lg font-medium text-gray-400">Send me a message</h3>
-                    <form action="#" method="POST" className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+                    <form action="#" method="POST" onSubmit={(e) => handleSubmit(e)} className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                       <div>
                         <label htmlFor="first-name" className="block text-sm font-medium text-gray-400">
-                          First name
+                          Name
                         </label>
                         <div className="mt-1">
                           <input
@@ -228,6 +276,8 @@ export default function Contact() {
                             name="first-name"
                             id="first-name"
                             autoComplete="given-name"
+                            onChange={(e) => setFirstName(e.target.value)} 
+                            value={firstName}
                             className="bg-zinc-500 py-3 px-4 block w-full shadow-sm text-gray-400-900 focus:ring-indigo-400 focus:border-indigo-400 border-warm-gray-300 rounded-md"
                           />
                         </div>
@@ -242,6 +292,7 @@ export default function Contact() {
                             name="email"
                             type="email"
                             autoComplete="email"
+                            onChange={(e) => setEmail(e.target.value)} value={email}
                             className="py-3 px-4 block w-full shadow-sm text-gray-400-900 focus:ring-indigo-400 border-indigo-400 border-warm-gray-300 rounded-md bg-zinc-500"
                           />
                         </div>
@@ -269,6 +320,7 @@ export default function Contact() {
                             type="text"
                             name="subject"
                             id="subject"
+                            onChange={(e) => setSubject(e.target.value)} value={subject}
                             className="bg-zinc-500 py-3 px-4 block w-full shadow-sm text-gray-400 focus:ring-indigo-400 border-indigo-400 border-warm-gray-300 rounded-md"
                           />
                         </div>
@@ -287,15 +339,17 @@ export default function Contact() {
                             id="message"
                             name="message"
                             rows={4}
+                            onChange={(e) => setMessage(e.target.value)} 
+                            value={message}
                             className="bg-zinc-500 py-3 px-4 block w-full shadow-sm text-gray-400 focus:ring-indigo-400 border-indigo-400 border border-warm-gray-300 rounded-md"
                             aria-describedby="message-max"
-                            defaultValue={''}
                           />
                         </div>
                       </div>
                       <div className="sm:col-span-2 sm:flex sm:justify-end">
                         <button
                           type="submit"
+                          // onClick={() => handleCheckout}
                           className="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-400 hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2  sm:w-auto"
                         >
                           Submit
