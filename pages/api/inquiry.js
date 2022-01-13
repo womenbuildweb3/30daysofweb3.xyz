@@ -5,7 +5,6 @@ const prisma = new PrismaClient();
 
 
 export default async function handler(req, res) {
-    console.log("am i even getting to this handler function");
     if (req.method === 'POST') {
         return await createInquiry(req, res);
     }
@@ -15,9 +14,7 @@ export default async function handler(req, res) {
 }
 
 async function createInquiry(req, res) {
-    console.log("inside createInqury");
     const body = req.body;
-    console.log("here's whats in the body", body, typeof body);
     try {
         const newEntry = await prisma.inquiry.create({
             data: {
