@@ -17,7 +17,7 @@ export default async function handler(req, res) {
 async function createInquiry(req, res) {
     console.log("inside createInqury");
     const body = req.body;
-    console.log("here's whats in the body", body);
+    console.log("here's whats in the body", body, typeof body);
     try {
         const newEntry = await prisma.inquiry.create({
             data: {

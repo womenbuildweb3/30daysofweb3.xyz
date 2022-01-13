@@ -30,12 +30,11 @@ export default function Contact() {
     e.preventDefault();
     const body = {firstName, email, subject, message}
     console.log("this is the body Im sending in", body);
-    const stringified = JSON.stringify(body);
-    console.log("stringified???", stringified);
     try {
       console.log("inside the try");
       const response = await fetch("/api/inquiry", {
         method: "POST",
+        headers: {"Content-Type": "application/json"},
         body: JSON.stringify(body),
     });
     console.log("what is response", response);
