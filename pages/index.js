@@ -26,12 +26,12 @@ export default function Home() {
                 Camila Ramos Garzon
               </h1>
               {/* <p className="text-white text-xs">@camiinthisthang</p> */}
-              <h2 className="text-gray-700 dark:text-gray-200 mb-4">
+              <h2 className="text-gray-200 dark:text-gray-200 mb-4">
                 Developer Advocate // Founder
                 {/* <span className="font-semibold">PlanetScale.</span>
               <br></br>Founder at <span className="font-semibold">STEMTank + Calibaba.</span> */}
               </h2>
-              <p className="text-gray-600 dark:text-gray-400 mb-2">
+              <p className="text-gray-200 mb-2">
                 I&apos;m a software engineer who loves to teach. I break down
                 technical concepts ranging from the basics of programming to the
                 latest technologies into easy-to-understand videos and blog
