@@ -234,8 +234,8 @@ export default function Contact() {
                 target="_blank"
                 rel="noreferrer"
                 url="https://twitter.com/camiinthisthang"
-                bgColor="#7f7f7f"
-                fgColor="#fff"
+                bgColor="#d4d4d8"
+                fgColor="#000000"
                 style={{ height: 40, width: 40 }}
               />
             </div>
@@ -244,8 +244,8 @@ export default function Contact() {
                 target="_blank"
                 rel="noreferrer"
                 url="https://www.tiktok.com/@camiinthisthang?"
-                bgColor="#7f7f7f"
-                fgColor="#fff"
+                bgColor="#d4d4d8"
+                fgColor="#000000"
                 style={{ height: 40, width: 40 }}
               />
             </div>
@@ -254,8 +254,8 @@ export default function Contact() {
                 target="_blank"
                 rel="noreferrer"
                 url="https://www.youtube.com/channel/UCyEnr-lcCUavJzh0uodvG3w"
-                bgColor="#7f7f7f"
-                fgColor="#fff"
+                bgColor="#d4d4d8"
+                fgColor="#000000"
                 style={{ height: 40, width: 40 }}
               />
             </div>
@@ -264,10 +264,10 @@ export default function Contact() {
   
                   {/* Contact form */}
                   <div className="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12 ">
-                    <h3 className="text-lg font-medium text-gray-400">Send me a message</h3>
+                    <h3 className="text-lg font-medium text-gray-200">Send me a message</h3>
                     <form action="#" method="POST" onSubmit={(e) => handleSubmit(e)} className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                       <div>
-                        <label htmlFor="first-name" className="block text-sm font-medium text-gray-400">
+                        <label htmlFor="first-name" className="block text-sm font-medium text-gray-200">
                           Name
                         </label>
                         <div className="mt-1">
@@ -278,12 +278,12 @@ export default function Contact() {
                             autoComplete="given-name"
                             onChange={(e) => setFirstName(e.target.value)} 
                             value={firstName}
-                            className="bg-zinc-500 py-3 px-4 block w-full shadow-sm text-gray-400-900 focus:ring-indigo-400 focus:border-indigo-400 border-warm-gray-300 rounded-md"
+                            className="bg-zinc-300 py-3 px-4 block w-full shadow-sm text-gray-200-900 focus:ring-indigo-400 focus:border-indigo-400 border-warm-gray-300 rounded-md"
                           />
                         </div>
                       </div>
                       <div>
-                        <label htmlFor="email" className="block text-sm font-medium text-gray-400">
+                        <label htmlFor="email" className="block text-sm font-medium text-gray-200">
                           Email
                         </label>
                         <div className="mt-1">
@@ -293,12 +293,12 @@ export default function Contact() {
                             type="email"
                             autoComplete="email"
                             onChange={(e) => setEmail(e.target.value)} value={email}
-                            className="py-3 px-4 block w-full shadow-sm text-gray-400-900 focus:ring-indigo-400 border-indigo-400 border-warm-gray-300 rounded-md bg-zinc-500"
+                            className="py-3 px-4 block w-full shadow-sm text-gray-200-900 focus:ring-indigo-400 border-indigo-400 border-warm-gray-300 rounded-md bg-zinc-300"
                           />
                         </div>
                       </div>
                       {/* <div>
-                        <label htmlFor="email" className="block text-sm font-medium text-gray-400">
+                        <label htmlFor="email" className="block text-sm font-medium text-gray-200">
                           Email
                         </label>
                         <div className="mt-1">
@@ -307,12 +307,12 @@ export default function Contact() {
                             name="email"
                             type="email"
                             autoComplete="email"
-                            className="py-3 px-4 block w-full shadow-sm text-gray-400-900 focus:ring-indigo-400 border-indigo-400 border-warm-gray-300 rounded-md"
+                            className="py-3 px-4 block w-full shadow-sm text-gray-200-900 focus:ring-indigo-400 border-indigo-400 border-warm-gray-300 rounded-md"
                           />
                         </div>
                       </div> */}
                       <div className="sm:col-span-2">
-                        <label htmlFor="subject" className="block text-sm font-medium text-gray-400">
+                        <label htmlFor="subject" className="block text-sm font-medium text-gray-200">
                           Subject
                         </label>
                         <div className="mt-1">
@@ -321,13 +321,13 @@ export default function Contact() {
                             name="subject"
                             id="subject"
                             onChange={(e) => setSubject(e.target.value)} value={subject}
-                            className="bg-zinc-500 py-3 px-4 block w-full shadow-sm text-gray-400 focus:ring-indigo-400 border-indigo-400 border-warm-gray-300 rounded-md"
+                            className="bg-zinc-300 py-3 px-4 block w-full shadow-sm text-gray-200 focus:ring-indigo-400 border-indigo-400 border-warm-gray-300 rounded-md"
                           />
                         </div>
                       </div>
                       <div className="sm:col-span-2">
                         <div className="flex justify-between">
-                          <label htmlFor="message" className="block text-sm font-medium text-gray-400">
+                          <label htmlFor="message" className="block text-sm font-medium text-gray-200">
                             Message
                           </label>
                           <span id="message-max" className="text-sm text-warm-gray-500">
@@ -341,7 +341,7 @@ export default function Contact() {
                             rows={4}
                             onChange={(e) => setMessage(e.target.value)} 
                             value={message}
-                            className="bg-zinc-500 py-3 px-4 block w-full shadow-sm text-gray-400 focus:ring-indigo-400 border-indigo-400 border border-warm-gray-300 rounded-md"
+                            className="bg-zinc-300 py-3 px-4 block w-full shadow-sm text-gray-200 focus:ring-indigo-400 border-indigo-400 border border-warm-gray-300 rounded-md"
                             aria-describedby="message-max"
                           />
                         </div>

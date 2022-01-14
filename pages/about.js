@@ -17,7 +17,7 @@ export default function About() {
                 About Me
               </h1>
               <div className="mb-4">
-                <p className="text-gray-600 dark:text-gray-400 mb-2 text-sm md:text-lg display: inline-block">
+                <p className="text-gray-200 mb-2 text-sm md:text-lg display: inline-block">
                   Hi there! My name is Camila Ramos, and I go by Cami. I&apos;m 23 years old and originally from
                   Bogota, Colombia. I have been living in The Bay Area for more than 20
                   years and I currently reside in Oakland, CA. I&apos;m a surfer and traveler, and have been to 12 countries so far. 
@@ -27,7 +27,7 @@ export default function About() {
                 </p>
               </div>
               <div className="mb-4">
-                <p className="text-gray-600 dark:text-gray-400 mb-2 text-sm md:text-lg display: inline-block">
+                <p className="text-gray-200 mb-2 text-sm md:text-lg display: inline-block">
                   I&apos;m a software engineer, founder, and educator. I wear a lot
                   of hats as a professional, but my passion for equity and
                   access is what ties them all together. I&apos;m the technical cofounder of 
@@ -56,7 +56,7 @@ export default function About() {
                 </p>
               </div>
               <div className="mb-4">
-                <p className="text-gray-600 dark:text-gray-400 mb-2 text-sm md:text-lg display: inline-block">
+                <p className="text-gray-200 mb-2 text-sm md:text-lg display: inline-block">
                   Growing up, I always wanted to be a teacher or a social
                   worker, or something along those lines. I wanted to work in a field where I could
                   help disadvantaged people through education and support services. I first learned about
@@ -69,7 +69,7 @@ export default function About() {
                 </p>
               </div>
               <div className="mb-4">
-                <p className="text-gray-600 dark:text-gray-400 mb-2 text-sm md:text-lg display: inline-block">
+                <p className="text-gray-200 mb-2 text-sm md:text-lg display: inline-block">
                   After learning about the gender and racial equity issues in tech, and the
                   dangerous technology that gets created as a result, I realized
                   that being a woman, an immigrant, a
@@ -97,7 +97,7 @@ export default function About() {
                 </p>
               </div>
               <div className="mb-4">
-                <p className="text-gray-600 dark:text-gray-400 mb-2 text-sm md:text-lg display: inline-block">
+                <p className="text-gray-200 mb-2 text-sm md:text-lg display: inline-block">
                   I work as a developer advocate at 
                   <a
                     target="_blank"
