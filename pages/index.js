@@ -42,7 +42,7 @@ export default function Home() {
                 <SparklesIcon className="h-5 w-5 text-indigo-400 mt-1"></SparklesIcon>
                 <Link href="/about">
                   <p className="text-white mb-16 hover:text-black hover:bg-indigo-400 rounded-lg p-1">
-                    About Me
+                    About Us
                   </p>
                 </Link>
               </div>
@@ -77,11 +77,7 @@ export default function Home() {
           {/* <div className='flex flex-row flex-wrap justify-between w-full'> */}
           <div className="flex flex-row w-full overflow-auto pb-4">
             <div className="">
-              <TikTok videoID="6999680054053637382"> </TikTok>
-              {/* <TikTok
-                                vidLink='https://www.tiktok.com/@camiinthisthang/video/6999680054053637382'
-                                videoID='6999680054053637382'
-                            ></TikTok> */}
+             <blockquote class="twitter-tweet"><p lang="en" dir="ltr">could not be more stoked to be part of <a href="https://twitter.com/womenbuildweb3?ref_src=twsrc%5Etfw">@womenbuildweb3</a>. it started with a zoom call to form 5 hackathon teams of women for <a href="https://twitter.com/hashtag/web3con?src=hash&amp;ref_src=twsrc%5Etfw">#web3con</a>, and now we&#39;re organizing a full on community of builders. 👯‍♀️🚀</p>&mdash; steph • ᴗ • oceans404.eth (@0ceans404) <a href="https://twitter.com/0ceans404/status/1505969458715639808?ref_src=twsrc%5Etfw">March 21, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
             <div className="">
               <TikTok
