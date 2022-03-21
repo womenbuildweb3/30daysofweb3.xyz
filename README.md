@@ -1,4 +1,4 @@
-## Cami's Personal Site
+## WomenBuildWeb3 Official Website
 To clone and work with tis repo:
 First, run the development server:
 
