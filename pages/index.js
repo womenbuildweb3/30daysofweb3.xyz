@@ -23,19 +23,17 @@ export default function Home() {
           <div className="flex flex-col-reverse sm:flex-row items-start">
             <div className="flex flex-col pr-8">
               <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-white">
-                Camila Ramos Garzon
+                Women Builders Collective
               </h1>
               {/* <p className="text-white text-xs">@camiinthisthang</p> */}
               <h2 className="text-gray-200 dark:text-gray-200 mb-4">
-                Developer Advocate // Founder
+                 WomenBuildWeb3
                 {/* <span className="font-semibold">PlanetScale.</span>
               <br></br>Founder at <span className="font-semibold">STEMTank + Calibaba.</span> */}
               </h2>
               <p className="text-gray-200 mb-2">
-                I&apos;m a software engineer who loves to teach. I break down
-                technical concepts ranging from the basics of programming to the
-                latest technologies into easy-to-understand videos and blog
-                posts.
+                A global collection of women | Educarion + opportunities
+                  + funding to tap into a new wave of builders.
               </p>
               <div className="flex flex-row">
                 {/* <p className='text-teal-400 font-bold pr-2'>
