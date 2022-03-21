@@ -16,12 +16,12 @@ location: ""
 ---
 
 
-### About me
-##### **HEADLINE DATA**
+## About me
+## **HEADLINE DATA**
 
 # REMOVE THIS LINE The above is called front matter - please delete the irrelevent info and remove the 'draft: true'
 
-# ADD TAGS TO THE TAG ARRAY ABOVE - TAGS ARE FOUND HERE: https://github.com/Layla-P/WomenOfDotNet/blob/main/content/profiles/_index.md  - IF YOU WANT TO ADD A TAG, MAKE A pr TO THIS FILE :-)
+# ADD TAGS TO THE TAG ARRAY ABOVE - TAGS ARE FOUND HERE: https://github.com/womenbuildweb3/official-website/blob/main/pages/contents/profiles/_index.md  - IF YOU WANT TO ADD A TAG, MAKE A pr TO THIS FILE :-)
 
 Info on you - please change the tags above to suit you!!
 
