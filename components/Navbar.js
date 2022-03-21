@@ -26,27 +26,27 @@ export default function Navbar() {
                   <div onClick={updateSelected} className="flex space-x-4">
                     {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
                     <Link href="/">
-                    <p className="active:bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700" >
+                    <p className="link active:bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700" >
                       Home
                     </p>
                     </Link>
                     <Link href="/about">
                     <p
-                      className="text-gray-300 hover:bg-gray-700 active:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium "
+                      className="link text-gray-300 hover:bg-gray-700 active:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium "
                     >
                       About
                     </p>
                     </Link>
                     <Link href="/blog">
                     <p
-                      className="text-gray-300 hover:bg-gray-700  active:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium "
+                      className="link text-gray-300 hover:bg-gray-700  active:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium "
                     >
                       Blog
                     </p>
                     </Link>
                     <Link href="/contact">
                     <p
-                      className="text-gray-300 hover:bg-gray-700  active:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium "
+                      className="link text-gray-300 hover:bg-gray-700  active:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium "
                     >
                       Contact
                     </p>
@@ -56,7 +56,7 @@ export default function Navbar() {
               </div>
               <div className="-mr-2 flex sm:hidden">
                 {/* Mobile menu button */}
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="link inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XIcon className="block h-6 w-6" aria-hidden="true" />
@@ -73,38 +73,32 @@ export default function Navbar() {
               <Disclosure.Button
                 as="a"
                 href="/"
-                className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+                className="link bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 Home
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 href="/about"
-                className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                className="link text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 About
               </Disclosure.Button>
                 <Disclosure.Button
                 href="/blog"
                 as="a"
-                className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                className="link text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 Blog
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 href="/contact"
-                className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                className="link text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 Contact
               </Disclosure.Button>
-              {/* <Disclosure.Button
-                as="a"
-                href="#"
-                className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-              >
-                Calendar
-              </Disclosure.Button> */}
+
             </div>
             <div className="pt-4 pb-3 border-t border-gray-700">
             </div>
