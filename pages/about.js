@@ -1,9 +1,9 @@
 import styles from "../styles/Home.module.css";
 import Navbar from "../components/Navbar";
-import { SocialIcon } from "react-social-icons";
-import Link from "next/link";
+// import { SocialIcon } from "react-social-icons";
+// import Link from "next/link";
 import Head from "next/head";
-import Companies from "../components/Companies";
+import Footer from "../components/Footer";
 
 
 export default function About() {
@@ -23,6 +23,7 @@ export default function About() {
           Who we are
         </p>
       </main>
+      <Footer/>
     </div>
   );
 }

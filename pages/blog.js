@@ -3,6 +3,7 @@
 // import Image from "next/image";
 import styles from "../styles/Blog.module.css";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer"
 import Link from "next/link";
 import Head from "next/head";
 
@@ -76,6 +77,7 @@ export default function Blog({ myData }) {
           ))} */}
           </section>
       </main>
+      <Footer/>
     </div>
   );
 }
