@@ -1,12 +1,12 @@
 import Navbar from "../components/Navbar";
-import { Popover, Transition } from "@headlessui/react";
-import { MailIcon, MenuIcon, PhoneIcon, XIcon } from "@heroicons/react/outline";
+// import { Popover, Transition } from "@headlessui/react";
+// import { MailIcon, MenuIcon, PhoneIcon, XIcon } from "@heroicons/react/outline";
 import styles from "../styles/Home.module.css";
 import { SparklesIcon } from "@heroicons/react/outline";
-import { SocialIcon } from "react-social-icons";
 import { useState } from "react";
 import { useEffect } from "react";
 import Head from "next/head";
+import Footer from "../components/Footer";
 
 export default function Contact() {
   const [firstName, setFirstName] = useState("");
@@ -189,8 +189,8 @@ export default function Contact() {
               </button>
             </div>
           </form>
-
       </main>
+      <Footer/>
     </div>
   );
 }

@@ -10,6 +10,7 @@
 body{
     background: linear-gradient(to left, #f2d2d7, #e09197);
     font-family: 'Montserrat', sans-serif;
+    overscroll-behavior: none;
 }
 
 h1{
@@ -19,6 +20,13 @@ h1{
 
 main {
     margin: 2rem 10vw;
+    min-height: 100vh;
+}
+
+footer{
+    display: grid;
+    place-items: center;
+    padding: 100px 0 50px 0;
 }
 
 .link {
@@ -43,4 +51,10 @@ main {
 .nav-link-mobile{
     display: block;
     border-radius: 4px
+}
+
+@media screen and (max-width: 480px){
+    h1{
+        font-size: 60px;
+    }
 }

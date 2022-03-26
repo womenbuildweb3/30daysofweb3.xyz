@@ -1,12 +1,7 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Navbar from "../components/Navbar";
-import TikTok from "../components/TikTok";
-import Link from "next/link";
-import { SparklesIcon } from "@heroicons/react/outline";
-import { SocialIcon } from "react-social-icons";
-import ReactPlayer from "react-player";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -28,10 +23,8 @@ export default function Home() {
                 Unlocking a new wave of builders around the globe by providing education, funding and opportunities.
               </p>
         </header>
-
-        
-
       </main>
+      <Footer/>
     </div>
   );
 }
