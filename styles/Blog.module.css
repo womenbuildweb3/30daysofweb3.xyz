@@ -1,0 +1,22 @@
+.description{
+    font-size: 18px;
+    font-variation-settings: 'wght' 500;
+}
+
+.blogPostsContainer{
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.blogPostCard{
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.blogPostTitle{
+    font-size: 24px;
+    font-variation-settings: 'wght' 500;
+}

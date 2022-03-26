@@ -1,61 +1,71 @@
-import { gql } from "@apollo/client";
-import client from "../apollo-client";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
+// import { gql } from "@apollo/client";
+// import client from "../apollo-client";
+// import Image from "next/image";
+import styles from "../styles/Blog.module.css";
 import Navbar from "../components/Navbar";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function Blog({ myData }) {
   return (
-    // <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-black">
     <div className={styles.container}>
       <Navbar />
-      <div className="max-w-3xl mx-auto pt-6 flex flex-col justify-center items-start max-w-5xl border-gray-200 dark:border-gray-700 mx-auto pb-80">
-        {/* We've used 3xl here, but feel free to try other max-widths based on your needs */}
-        <h1 className="pb-6 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent font-bold text-3xl md:text-5xl tracking-tight">
-          Blog
-        </h1>
-        <p className="mb-4 text-lg text-gray-400">
-          {" "}
-          One of my 2022 goals is to put out more written content! You can
-          expect blogs on the following topics:{" "}
-        </p>
-        <div className="flex flex-row space-x-2 mb-8 flex-wrap">
-            <div className="">
-                <h2 className="font-medium rounded-lg px-2 bg-indigo-500 text-gray-200 mb-4"> Databases </h2>
-            </div>
-            <div className="">
-                <h2 className="font-medium rounded-lg px-2 bg-indigo-500 text-gray-200 mb-4"> NextJS </h2>
-            </div>
-            <div className="">
-                <h2 className="font-medium rounded-lg px-2 bg-indigo-500 text-gray-200 mb-4"> GraphQL </h2>
-            </div>
-            <div className="">
-                <h2 className="font-medium rounded-lg px-2 bg-indigo-500 text-gray-200 mb-4"> Web3 </h2>
-            </div>
-            <div className="">
-                <h2 className="font-medium rounded-lg px-2 bg-indigo-500 text-gray-200 mb-4"> React </h2>
-            </div>
-            <div className="">
-                <h2 className="font-medium rounded-lg px-2 bg-indigo-500 text-gray-200 mb-4"> Javascript </h2>
-            </div>
-            <div className="">
-                <h2 className="font-medium rounded-lg px-2 bg-indigo-500 text-gray-200 mb-4"> Solidity </h2>
-            </div>
-            <div className="">
-                <h2 className="font-medium rounded-lg px-2 bg-indigo-500 text-gray-200 mb-4"> TailwindCSS </h2>
-            </div>
-            
-            <div className="">
-                <h2 className="font-semibold rounded-lg px-2 bg-indigo-500 text-gray-200 mb-4"> Career </h2>
-            </div>
-        </div>
-        <div className="max-w-3xl mx-auto">
-          <h1 className="pb-6 text-white font-bold text-xl md:text-3xl tracking-tight">
-            Fresh Off The Press
-          </h1>
-          {myData.publication.posts.map((post, key) => (
-            <div key={post.slug} className="flex flex-col text-gray-500">
+      <Head>
+        <title>Blog | Women Builders Collective</title>
+        <meta
+          name="description"
+          content="Providing education, oppportunities, and funding to a new wave of web3 builders"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <main>
+            <header>
+              <h1>
+                Blog
+              </h1>
+              <p className={styles.description}>
+                Learn about web3 from our members.
+              </p>
+            </header>
+
+            <section className={styles.blogPostsContainer}>
+              <div className={styles.blogPostCard}>
+                <Link href="/blog">
+                  <h3 className={styles.blogPostTitle + " link"}>
+                    Blog Post Title
+                  </h3>
+                </Link>
+                <p className={styles.blogPostDescription}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+                </p>
+          </div>
+          
+          <div className={styles.blogPostCard}>
+                <Link href="/blog">
+                  <h3 className={styles.blogPostTitle + " link"}>
+                    Blog Post Title
+                  </h3>
+                </Link>
+                <p className={styles.blogPostDescription}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+                </p>
+              </div>
+              {/* {myData.publication.posts.map((post, key) => (
+            <div key={post.slug} className="link flex flex-col text-gray-500">
                 <Link href="https://camiinthisthang.hashnode.dev/">
               <h1 className="w-full mb-2 text-lg font-medium text-gray-200 md:text-xl dark:text-gray-100 select-none">
                 {post.title}
@@ -63,40 +73,21 @@ export default function Blog({ myData }) {
               </Link>
               <p className="text-gray-400 pb-4">{post.brief}</p>
             </div>
-          ))}
-        </div>
-      </div>
+          ))} */}
+          </section>
+      </main>
     </div>
   );
 }
-export async function getStaticProps() {
-  const { data } = await client.query({
-    query: gql`
-      query myPosts {
-        user(username: "camiinthisthang") {
-          photo
-          blogHandle
-          publication {
-            posts(page: 0) {
-              title
-              brief
-              coverImage
-              slug
-              totalReactions
-              author {
-                username
-              }
-              dateAdded
-            }
-          }
-        }
-      }
-    `,
-  });
-  console.log("this is posts inside blog!!!", data.user.publication.posts);
-  return {
-    props: {
-      myData: data.user,
-    },
-  };
-}
+// export async function getStaticProps() {
+//   const { data } = await client.query({
+//     query: gql`
+
+//     `,
+//   });
+//   return {
+//     props: {
+//       myData: data.user,
+//     },
+//   };
+// }

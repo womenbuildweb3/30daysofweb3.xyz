@@ -2,6 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "Montserrat";
+    src: url("../public/Montserrat-VariableFont_wght.ttf");
+}
+
+body{
+    background: linear-gradient(to left, #f2d2d7, #e09197);
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-size: 72px;
+    color: #efefef;
+}
+
+main {
+    margin: 2rem 10vw;
+}
+
 .link {
     cursor: pointer;
+}
+
+.nav-bar{
+    background: black;
+}
+
+.nav-link{
+    color: #efefef;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 10%;
+}
+
+.nav-link:hover{
+    background: #e09197;
+}
+
+.nav-link-mobile{
+    display: block;
+    border-radius: 4px
 }

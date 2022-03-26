@@ -16,37 +16,37 @@ export default function Navbar() {
     console.log("this is the target: ", e.target.value);
   }
   return (
-    <Disclosure as="nav" className="bg-black">
+    <Disclosure as="nav" className="nav-bar">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ml-24">
             <div className="flex items-center justify-between h-16 ">
               <div className="flex items-center">
                 <div className="hidden sm:block sm:ml-6">
-                  <div onClick={updateSelected} className="flex space-x-4">
+                  <div onClick={updateSelected} className="flex">
                     {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
                     <Link href="/">
-                    <p className="link active:bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700" >
+                    <p className="link nav-link" >
                       Home
                     </p>
                     </Link>
                     <Link href="/about">
                     <p
-                      className="link text-gray-300 hover:bg-gray-700 active:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium "
+                      className="link nav-link"
                     >
                       About
                     </p>
                     </Link>
                     <Link href="/blog">
                     <p
-                      className="link text-gray-300 hover:bg-gray-700  active:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium "
+                      className="link nav-link"
                     >
                       Blog
                     </p>
                     </Link>
                     <Link href="/contact">
                     <p
-                      className="link text-gray-300 hover:bg-gray-700  active:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium "
+                      className="link nav-link"
                     >
                       Contact
                     </p>
@@ -69,32 +69,31 @@ export default function Navbar() {
           </div>
           <Disclosure.Panel className="sm:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
               <Disclosure.Button
                 as="a"
                 href="/"
-                className="link bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+                className="link nav-link nav-link-mobile"
               >
                 Home
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 href="/about"
-                className="link text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                className="link nav-link nav-link-mobile"
               >
                 About
               </Disclosure.Button>
                 <Disclosure.Button
                 href="/blog"
                 as="a"
-                className="link text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                className="link nav-link nav-link-mobile"
               >
                 Blog
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 href="/contact"
-                className="link text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                className="link nav-link nav-link-mobile"
               >
                 Contact
               </Disclosure.Button>
