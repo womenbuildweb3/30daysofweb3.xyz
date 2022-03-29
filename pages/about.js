@@ -10,7 +10,7 @@ export default function About() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>About | Women Builders Collective</title>
+        <title>About | Women Build Web3</title>
         <meta name="description" content="Providing education, oppportunities, and funding to a new wave of web3 builders" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

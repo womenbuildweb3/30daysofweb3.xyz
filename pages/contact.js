@@ -58,10 +58,10 @@ export default function Contact() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Contact | Women Builders Collective</title>
+        <title>Contact | Women Build Web3</title>
         <meta
           name="description"
-          content="Contact Women Builders Collective. Providing education, oppportunities, and funding to a new wave of web3 builders"
+          content="Contact WBW3. Providing education, oppportunities, and funding to a new wave of web3 builders"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
