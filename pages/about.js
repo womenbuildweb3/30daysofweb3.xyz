@@ -10,17 +10,22 @@ export default function About() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>About | Women Builders Collective</title>
+        <title>About | Women Build Web3</title>
         <meta name="description" content="Providing education, oppportunities, and funding to a new wave of web3 builders" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <main className="">
+      <main>
         <h1 className="lt-pink-text">
           About
         </h1>
-        <p className="">
-          Who we are
+        <p>
+          We are a global collective of women and non-binary developers learning about and working in web3.
+          We are frontend, backend, and full-stack engineers, designers, content creators, and more.
+        </p>
+        <br/>
+        <p>
+          Our focus is on finding and creating opportunities for women and non-binary people to master their craft, advance their careers, and shape the web3 ecosystem.
         </p>
       </main>
       <Footer/>

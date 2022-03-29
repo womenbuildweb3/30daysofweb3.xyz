@@ -8,7 +8,8 @@
 }
 
 body{
-    background: linear-gradient(to left, #f2d2d7, #e09197);
+    background: #e09197;
+    /* background: linear-gradient(to left, #f2d2d7, #e09197); */
     font-family: 'Montserrat', sans-serif;
     overscroll-behavior: none;
 }
@@ -16,6 +17,14 @@ body{
 h1{
     font-size: 72px;
     color: #efefef;
+}
+
+h2{
+    text-align: center;
+    font-size: 2rem;
+    color: #efefef;
+    font-variation-settings: 'wght' 600;
+    margin-bottom: 2rem;
 }
 
 main {

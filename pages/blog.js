@@ -12,7 +12,7 @@ export default function Blog({ myData }) {
     <div className={styles.container}>
       <Navbar />
       <Head>
-        <title>Blog | Women Builders Collective</title>
+        <title>Blog | Women Build Web3</title>
         <meta
           name="description"
           content="Providing education, oppportunities, and funding to a new wave of web3 builders"
