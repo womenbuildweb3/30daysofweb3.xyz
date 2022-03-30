@@ -1,34 +1,51 @@
 import Navbar from "../components/Navbar";
-// import { Popover, Transition } from "@headlessui/react";
-// import { MailIcon, MenuIcon, PhoneIcon, XIcon } from "@heroicons/react/outline";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Contact.module.css";
 import { SparklesIcon } from "@heroicons/react/outline";
 import { useState } from "react";
-import { useEffect } from "react";
 import Head from "next/head";
 import Footer from "../components/Footer";
 
 export default function Contact() {
   const [firstName, setFirstName] = useState("");
-  const [email, setEmail] = useState("");
+  const [discordHandle, setDiscordHandle] = useState("");
+  const [twitterHandle, setTwitterHandle] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
-  useEffect(() => {
-    console.log("firstName", firstName);
-    console.log("email", email);
-    console.log("subject", subject);
-    console.log("message", message);
-  }, [firstName, email, subject, message]);
-
-  function handleCheckout(e) {
-    e.preventDefault();
-    console.log("this function is being called");
-  }
-
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const body = { firstName, email, subject, message };
+
+    const body = {
+      embeds: [
+        {
+          title: "New Form Submission",
+          description: "Please be careful opening links.",
+          color: null,
+          fields: [
+            {
+              name: "Name",
+              value: firstName
+            },
+            {
+              name: "Discord Handle",
+              value: discordHandle
+            },
+            {
+              name: "Social Handle",
+              value: twitterHandle
+            },
+            {
+              name: "Subject",
+              value: subject
+            },
+            {
+              name: "Message",
+              value: message
+            }
+          ]
+        }
+      ]
+    }
     try {
       const response = await fetch("/api/inquiry", {
         method: "POST",
@@ -43,7 +60,7 @@ export default function Contact() {
         console.log("form submitted successfully !!!");
         //set a success banner here
       }
-      //check response, if success is false, dont take them to success page
+      // check response, if success is false, dont take them to success page
     } catch (error) {
       console.log("there was an error submitting", error);
     }
@@ -51,7 +68,8 @@ export default function Contact() {
 
   const resetForm = () => {
     setFirstName("");
-    setEmail("");
+    setTwitterHandle("");
+    setDiscordHandle("");
     setSubject("");
     setMessage("");
   };
@@ -96,94 +114,114 @@ export default function Contact() {
             action="#"
             method="POST"
             onSubmit={(e) => handleSubmit(e)}
-            className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
+            className={styles.contactForm}
           >
-            <div>
+            <div >
               <label
                 htmlFor="first-name"
-                className="block text-sm font-medium"
               >
-                Name
+                Name (or nickname)
               </label>
-              <div className="mt-1">
+              <div>
                 <input
                   type="text"
                   name="first-name"
                   id="first-name"
-                  autoComplete="given-name"
                   onChange={(e) => setFirstName(e.target.value)}
                   value={firstName}
-                  className="bg-zinc-300 py-3 px-4 block w-full shadow-sm focus:ring-indigo-400 focus:border-indigo-400 border-warm-gray-300 rounded-md"
+                className={styles.contactFormInput}
+                required
                 />
               </div>
-            </div>
+          </div>
+        
+          <div>
+              <label
+                htmlFor="discordHandle"
+              >
+                Discord Handle
+              </label>
+              <div>
+                <input
+                  id="discordHandle"
+                  name="discordHandle"
+                  type="text"
+                  onChange={(e) => setDiscordHandle(e.target.value)}
+                value={discordHandle}
+                className={styles.contactFormInput}
+                required
+                />
+              </div>
+          </div>
+
+          <div>
+          <div className={styles.labelContainer}>
+              <label
+                htmlFor="twitterHandle"
+              >
+                Social Handle (Twitter, Github, etc.)
+              </label>
+              <div>(optional)</div>
+              </div>
+              <div>
+                <input
+                  id="twitterHandle"
+                  name="twitterHandle"
+                  type="text"
+                  onChange={(e) => setTwitterHandle(e.target.value)}
+                value={twitterHandle}
+                className={styles.contactFormInput}
+                />
+              </div>
+          </div>
+
             <div>
               <label
-                htmlFor="email"
-                className="block text-sm font-medium"
-              >
-                Email
-              </label>
-              <div className="mt-1">
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  autoComplete="email"
-                  onChange={(e) => setEmail(e.target.value)}
-                  value={email}
-                  className="py-3 px-4 block w-full shadow-sm focus:ring-indigo-400 border-indigo-400 border-warm-gray-300 rounded-md bg-zinc-300"
-                />
-              </div>
-            </div>
-
-            <div className="sm:col-span-2">
-              <label
                 htmlFor="subject"
-                className="block text-sm font-medium"
               >
                 Subject
               </label>
-              <div className="mt-1">
+              <div>
                 <input
                   type="text"
                   name="subject"
                   id="subject"
                   onChange={(e) => setSubject(e.target.value)}
-                  value={subject}
-                  className="bg-zinc-300 py-3 px-4 block w-full shadow-sm focus:ring-indigo-400 border-indigo-400 border-warm-gray-300 rounded-md"
+                value={subject}
+                className={styles.contactFormInput}
+                required
                 />
               </div>
             </div>
-            <div className="sm:col-span-2">
-              <div className="flex justify-between">
+            <div>
+              <div className={styles.labelContainer}>
                 <label
                   htmlFor="message"
-                  className="block text-sm font-medium"
                 >
                   Message
                 </label>
-                <span id="message-max" className="text-sm">
+              <div className={styles.messageMax}>
                   Max. 500 characters
-                </span>
+                </div>
               </div>
-              <div className="mt-1">
+              <div>
                 <textarea
                   id="message"
                   name="message"
                   rows={4}
                   onChange={(e) => setMessage(e.target.value)}
-                  value={message}
-                  className="bg-zinc-300 py-3 px-4 block w-full shadow-sm focus:ring-indigo-400 border-indigo-400 border border-warm-gray-300 rounded-md"
-                  aria-describedby="message-max"
+                value={message}
+                className={styles.contactFormInput}
+                aria-describedby="message-max"
+                placeholder="Please tell us a little about who you are"
+                required
                 />
               </div>
             </div>
-            <div className="sm:col-span-2 sm:flex sm:justify-end">
+            <div className={styles.submitButtonContainer}>
               <button
-                type="submit"
-                // onClick={() => handleCheckout}
-                className="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 sm:w-auto"
+              type="submit"
+              className={styles.submitButton}
               >
                 Submit
               </button>

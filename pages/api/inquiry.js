@@ -1,9 +1,3 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import { PrismaClient } from '@prisma/client';
-
-const prisma = new PrismaClient();
-
-
 export default async function handler(req, res) {
     if (req.method === 'POST') {
         return await createInquiry(req, res);
@@ -15,16 +9,14 @@ export default async function handler(req, res) {
 
 async function createInquiry(req, res) {
     const body = req.body;
+    const discordWebook = process.env.DISCORD_WEBHOOK
     try {
-        const newEntry = await prisma.inquiry.create({
-            data: {
-                name: body.firstName,
-                email: body.email,
-                subject: body.subject,
-                message: body.message
-            }
-        });
-        return res.status(200).json(newEntry, {success: true});
+        const response = await fetch(discordWebook, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(body),
+          });
+        return res.status(200).json({success: true});
     } catch (error) {
         console.error("Request error", error);
         res.status(500).json({ error: "Error creating question", success:false });
