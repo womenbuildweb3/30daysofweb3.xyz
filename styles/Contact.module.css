@@ -1,0 +1,40 @@
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 50px auto 0 auto;
+}
+
+.contactFormInput{
+    color: black;
+    transition: all 0.3s;
+    padding: 15px;
+    margin-bottom: 25px;
+    width:100%;
+    border-radius: 5px;
+    background: #ddd;
+}
+
+.labelContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.messageMax{
+    font-size: 0.9rem;
+}
+
+.submitButtonContainer{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submitButton{
+    border: 1px solid #efefef;
+    padding: 15px 60px;
+    color: black;
+}
+
+.submitButton:hover{
+    color: #efefef;
+}
