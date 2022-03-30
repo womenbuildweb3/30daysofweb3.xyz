@@ -43,18 +43,23 @@ footer{
 }
 
 .nav-bar{
-    background: black;
+    width: 100vw;
+}
+
+.nav-logo{
+    color: #d06763;
+    font-size: 1.2rem;
 }
 
 .nav-link{
     color: #efefef;
     font-size: 14px;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 10%;
 }
 
 .nav-link:hover{
-    background: #e09197;
+    background: #555;
 }
 
 .nav-link-mobile{
@@ -62,8 +67,16 @@ footer{
     border-radius: 4px
 }
 
+.mobile-menu-button{
+    stroke: #efefef;
+}
+
 @media screen and (max-width: 480px){
     h1{
         font-size: 60px;
+    }
+
+    .nav-logo{
+        color: #efefef;
     }
 }

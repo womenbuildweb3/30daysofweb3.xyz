@@ -9,22 +9,28 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Navbar() {
+export default function Navbar({absolute}) {
   const [active, setActive] = useState("");
+  let navPosition
+  if (absolute) {
+    navPosition = "absolute"
+  } else {
+    navPosition = "static"
+  }
 
   function updateSelected(e){
     console.log("this is the target: ", e.target.value);
   }
   return (
-    <Disclosure as="nav" className="nav-bar">
+    <Disclosure as="nav" className="nav-bar" style={{position: navPosition}}>
       {({ open }) => (
         <>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ml-24">
+          <div className="mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between h-16 ">
+              <div className="nav-logo">WBW3</div>
               <div className="flex items-center">
                 <div className="hidden sm:block sm:ml-6">
                   <div onClick={updateSelected} className="flex">
-                    {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
                     <Link href="/">
                     <p className="link nav-link" >
                       Home
@@ -48,7 +54,7 @@ export default function Navbar() {
                     <p
                       className="link nav-link"
                     >
-                      Contact
+                      Contact Us
                     </p>
                     </Link>
                   </div>
@@ -59,9 +65,9 @@ export default function Navbar() {
                 <Disclosure.Button className="link inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
-                    <XIcon className="block h-6 w-6" aria-hidden="true" />
+                    <XIcon className="block h-6 w-6 mobile-menu-button" aria-hidden="true" />
                   ) : (
-                    <MenuIcon className="block h-6 w-6" aria-hidden="true" />
+                    <MenuIcon className="block h-6 w-6 mobile-menu-button" aria-hidden="true" />
                   )}
                 </Disclosure.Button>
               </div>

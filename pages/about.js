@@ -20,7 +20,7 @@ export default function About() {
           About
         </h1>
         <p>
-          We are a global collective of women and non-binary developers learning about and working in web3.
+          Women Build Web3 (WBW3) is a global collective of women and non-binary developers learning about and working in web3.
           We are frontend, backend, and full-stack engineers, designers, content creators, and more.
         </p>
         <br/>
