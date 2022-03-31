@@ -1,43 +1,29 @@
 .homeHeroContainer{
   text-align: center;
-  margin-top: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 280px;
 }
 
 .homeHeroTitle{
   font-size: 5rem;
-  margin: 20px 0;
   font-variation-settings: 'wght' 800;
   line-height: 100%;
+  color: #f6bf41;
+}
+
+.nav-bar{
+  position: absolute;
 }
 
 .contactButton{
   margin-top: 20px;
-  background: #f6bf41;
-  color: #d06763;
-  /* background: #d06763;
-  color: #efefef; */
-  padding: 10px 0;
-  width: 100%;
-  max-width: 360px;
-  border-radius: 5px;
-  font-variation-settings: 'wght' 600;
-}
-
-.blogButton{
-  margin-top: 20px;
-  /* background: #f6bf41;
-  color: #d06763; */
-  /* background: #efefef; */
-  border: 3px solid #efefef;
-  /* color: #d06763; */
+  font-size: 1.2rem;
+  background: rgba(255,255,255,0.3);
   color: #efefef;
-  padding: 10px 0;
-  width: 100%;
-  max-width: 360px;
-  border-radius: 5px;
+  padding: 10px 40px;
+  border-radius: 25px;
   font-variation-settings: 'wght' 600;
 }
 
@@ -59,6 +45,37 @@
   color: #efefef;
 }
 
+.homeSVGContainer{
+  background-color: #d06763;
+  height: 800px;
+  width: 100vw;
+}
+
+.homeSVG{
+  display: none;
+}
+
+.WBW3Logo{
+  display: none !important;
+}
+
+.goalsContainer{
+  text-align: center;
+}
+
+.goalContainer{
+  margin-bottom: 5rem;
+}
+
+.goalsNumber{
+  font-size: 4rem;
+  color: #f6bf41;
+}
+
+.goalsName{
+  color: #efefef;
+  font-size: 3rem;
+}
 
 @media screen and (min-width: 700px){
   .homeSkillsList{
@@ -66,11 +83,44 @@
   }
 }
 
-@media screen and (min-width: 1000px){
-  .homeHeroTitle{
-    font-size: 7rem;
-  }
+@media screen and (min-width: 1050px){
   .homeSkillsList{
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .yellowCircle{
+    display: flex;
+    justify-content: center;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    box-shadow: 10px 15px 8px 2px rgba(0,0,0,0.25);
+    left: 10vw;
+    top: 7vw;
+    background-color: #f6bf41;
+    position: absolute;
+  }
+
+  .WBW3Logo{
+    margin-top: 10px !important;
+    display: block !important;
+  }
+
+  .homeSVG{
+    max-width: 850px;
+    width: 60vw;
+    position: absolute;
+    display: block;
+  }
+
+  .homeHeroContainer{
+    align-items: flex-end;
+    padding-top: 300px;
+    padding-right: 60px;
+  }
+
+  .goalsContainer{
+    display: grid;
+    grid-template-columns: auto auto;
   }
 }
