@@ -22,17 +22,15 @@ export default function Home() {
         <Navbar absolute="true" />
         <header className={styles.homeHeroContainer}>
           <div className={styles.homeHeroText}>
-            <h1 className={styles.homeHeroTitle}>
+            <h1 className="font-work-sans text-primary font-[600] text-[72px]">
               LEARN.
             </h1>
-            <h1 className={styles.homeHeroTitle}>
+            <h1 className="font-work-sans mb-4 px-4 pt-4 pb-7 text-primary font-[600] text-[72px]">
               BUILD. EARN.
             </h1>
           
           <Link href="/contact" passHref>
-            <button className={styles.contactButton}>
-              Contact Us
-            </button>
+          <button className="font-black mx-11 py-6 font-work-sans text-xl px-14 w-60 border border-primary text-primary rounded-lg bg-secondaryText hover:bg-primary hover:text-secondaryText ">Contact Us</button>
           </Link>
           </div>
         </header>
@@ -44,33 +42,33 @@ export default function Home() {
         <section className={styles.homeSection}>
           <ul className={styles.goalsContainer}>
             <li className={styles.goalContainer}>
-              <div className={styles.goalsNumber}>1</div>
-              <div className={styles.goalsName}>DAO</div>
+              <div className="font-black font-work-sans p-4 m-4 text-5xl text-primary">1</div>
+              <div className="font-black font-work-sans p-4 m-4 text-5xl text-white ">DAO</div>
             </li>
             <li className={styles.goalContainer}>
-              <div className={styles.goalsNumber}>10</div>
-              <div className={styles.goalsName}>Hackathons</div>
+              <div className="font-black font-work-sans p-4 m-4 text-5xl text-primary">10</div>
+              <div className="font-black font-work-sans p-4 m-4 text-5xl text-white">Hackathons</div>
             </li>
             <li className={styles.goalContainer}>
-              <div className={styles.goalsNumber}>100</div>
-              <div className={styles.goalsName}>Projects</div>
+              <div className="font-black font-work-sans p-4 m-4 text-5xl text-primary">100</div>
+              <div className="font-black font-work-sans p-4 m-4 text-5xl text-white">Projects</div>
             </li>
             <li className={styles.goalContainer}>
-              <div className={styles.goalsNumber}>1000</div>
-              <div className={styles.goalsName}>Devs</div>
+              <div className="font-black font-work-sans p-4 m-4 text-5xl text-primary">1000</div>
+              <div className="font-black font-work-sans p-4 m-4 text-5xl text-white">Devs</div>
             </li>
           </ul>
         </section>
 
         <section className={styles.homeSection}>
-          <h2>What We Do</h2>
+          <h2 className="font-black font-work-sans p-4 m-4 text-5xl text-primary">What We Do</h2>
           <ul className={styles.homeSkillsList}>
-            <li className={styles.homeSkill}>Developer Relations</li>
-            <li className={styles.homeSkill}>Smart Contracts</li>
-            <li className={styles.homeSkill}>Frontend Development</li>
-            <li className={styles.homeSkill}>Content Creation</li>
-            <li className={styles.homeSkill}>Hackathons</li>
-            <li className={styles.homeSkill}>Public Goods</li>
+            <li className="font-black font-work-sans p-4 m-4 text-2xl text-white">Developer Relations</li>
+            <li className="font-black font-work-sans p-4 m-4 text-2xl text-white">Smart Contracts</li>
+            <li className="font-black font-work-sans p-4 m-4 text-2xl text-white">Frontend Development</li>
+            <li className="font-black font-work-sans p-4 m-4 text-2xl text-white">Content Creation</li>
+            <li className="font-black font-work-sans p-4 m-4 text-2xl text-white">Hackathons</li>
+            <li className="font-black font-work-sans p-4 m-4 text-2xl text-white">Public Goods</li>
           </ul>
         </section>
 
