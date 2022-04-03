@@ -8,21 +8,20 @@
 }
 
 body{
-    background: #e09197;
-    /* background: linear-gradient(to left, #f2d2d7, #e09197); */
+    background: #333;
     font-family: 'Montserrat', sans-serif;
     overscroll-behavior: none;
+    color: #efefef;
 }
 
 h1{
     font-size: 72px;
-    color: #efefef;
+    color: #d06763;
 }
 
 h2{
     text-align: center;
     font-size: 2rem;
-    color: #efefef;
     font-variation-settings: 'wght' 600;
     margin-bottom: 2rem;
 }

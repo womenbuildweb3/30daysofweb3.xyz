@@ -43,23 +43,37 @@ export default function Home() {
        
         <section className={styles.homeSection}>
           <ul className={styles.goalsContainer}>
-            <li className={styles.goalContainer}>
+            <li style={{marginBottom: "5rem"}}>
               <div className={styles.goalsNumber}>1</div>
               <div className={styles.goalsName}>DAO</div>
             </li>
-            <li className={styles.goalContainer}>
+            <li style={{marginBottom: "5rem"}}>
               <div className={styles.goalsNumber}>10</div>
               <div className={styles.goalsName}>Hackathons</div>
             </li>
-            <li className={styles.goalContainer}>
+            <li>
               <div className={styles.goalsNumber}>100</div>
               <div className={styles.goalsName}>Projects</div>
             </li>
-            <li className={styles.goalContainer}>
+            <li>
               <div className={styles.goalsNumber}>1000</div>
               <div className={styles.goalsName}>Devs</div>
             </li>
           </ul>
+        </section>
+
+        <section className={styles.homeSection}>
+          <h2 className={styles.homeCallout}>Unlocking the potential of women and non-binary builders in web3</h2>
+        </section>
+
+        <section className={styles.homeSection}>
+          <h2>#30daysofweb3</h2>
+          <div className={styles.homeInfoContainer}>
+            <p>Want to participate? Join our 30 days of web3 challenge on Twitter using the #30daysofweb3 hashtag.</p>
+            <Link href="/blog" passHref>
+              <button className={styles.blogButton}>Read Our Blog</button>
+            </Link>
+          </div>
         </section>
 
         <section className={styles.homeSection}>
@@ -72,6 +86,25 @@ export default function Home() {
             <li className={styles.homeSkill}>Hackathons</li>
             <li className={styles.homeSkill}>Public Goods</li>
           </ul>
+        </section>
+
+        <section className={styles.homeSection}>
+          <h2>Sponsors</h2>
+          <div className={styles.sponsorsContainer}>
+            <div className={styles.sponsor}></div>
+            <div className={styles.sponsor}></div>
+            <div className={styles.sponsor}></div>
+          </div>
+        </section>
+
+        <section className={styles.homeSection}>
+          <h2>Work With Us</h2>
+          <div className={styles.homeInfoContainer}>
+            <p>Hire from a growing team of top women and non-binary developers and engineers passionate about web3.</p>
+            <Link href="/contact" passHref>
+              <button className={styles.blogButton}>Contact Us</button>
+            </Link>
+          </div>
         </section>
 
       </main>
