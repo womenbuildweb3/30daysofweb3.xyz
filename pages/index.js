@@ -15,6 +15,7 @@ export default function Home() {
       </Head>
 
       <div className={styles.homeSVGContainer}>
+        <object type="image/svg+xml" data="network.svg" className={styles.networkSVG}/>
         <object type="image/svg+xml" data="woman.svg" className={styles.homeSVG} />
         <div className={styles.yellowCircle}>
           <Image alt="WBW3 Logo" src="/WBW3-logo.png" layout="fill" className={styles.WBW3Logo}/>
@@ -40,7 +41,6 @@ export default function Home() {
      
 
       <main>
-       
         <section className={styles.homeSection}>
           <ul className={styles.goalsContainer}>
             <li style={{marginBottom: "5rem"}}>
@@ -51,7 +51,7 @@ export default function Home() {
               <div className={styles.goalsNumber}>10</div>
               <div className={styles.goalsName}>Hackathons</div>
             </li>
-            <li>
+            <li className={styles.goalContainer}>
               <div className={styles.goalsNumber}>100</div>
               <div className={styles.goalsName}>Projects</div>
             </li>
@@ -106,7 +106,6 @@ export default function Home() {
             </Link>
           </div>
         </section>
-
       </main>
       <Footer/>
     </div>

@@ -80,7 +80,7 @@
   width: 100vw;
 }
 
-.homeSVG{
+.networkSVG, .homeSVG{
   display: none;
 }
 
@@ -90,6 +90,10 @@
 
 .goalsContainer{
   text-align: center;
+}
+
+.goalContainer{
+  margin-bottom: 5rem;
 }
 
 .goalsNumber{
@@ -154,6 +158,21 @@
     display: block;
   }
 
+  .homeSVGContainer{
+    position: relative;
+    height: 650px;
+    overflow: hidden;
+  }
+
+  .networkSVG{
+    display: block;
+    max-width: 850px;
+    width: 60vw;
+    position: absolute;
+    opacity: 0.1;
+    right: 0;
+  }
+
   .homeHeroContainer{
     align-items: flex-end;
     padding-top: 300px;
@@ -163,5 +182,9 @@
   .goalsContainer{
     display: grid;
     grid-template-columns: auto auto;
+  }
+
+  .goalContainer{
+    margin-bottom: 0;
   }
 }
