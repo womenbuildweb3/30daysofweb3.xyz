@@ -15,6 +15,7 @@ export default function Home() {
       </Head>
 
       <div className={styles.homeSVGContainer}>
+        <object type="image/svg+xml" data="network.svg" className={styles.networkSVG}/>
         <object type="image/svg+xml" data="woman.svg" className={styles.homeSVG} />
         <div className={styles.yellowCircle}>
           <Image alt="WBW3 Logo" src="/WBW3-logo.png" layout="fill" className={styles.WBW3Logo}/>
@@ -36,11 +37,10 @@ export default function Home() {
         </header>
       </div>
      
-
       <main>
-       
         <section className={styles.homeSection}>
           <ul className={styles.goalsContainer}>
+
             <li className={styles.goalContainer}>
               <div className="font-black font-work-sans p-4 m-4 text-5xl text-primary">1</div>
               <div className="font-black font-work-sans p-4 m-4 text-5xl text-white ">DAO</div>
@@ -48,20 +48,25 @@ export default function Home() {
             <li className={styles.goalContainer}>
               <div className="font-black font-work-sans p-4 m-4 text-5xl text-primary">10</div>
               <div className="font-black font-work-sans p-4 m-4 text-5xl text-white">Hackathons</div>
+
             </li>
             <li className={styles.goalContainer}>
               <div className="font-black font-work-sans p-4 m-4 text-5xl text-primary">100</div>
               <div className="font-black font-work-sans p-4 m-4 text-5xl text-white">Projects</div>
             </li>
+
             <li className={styles.goalContainer}>
               <div className="font-black font-work-sans p-4 m-4 text-5xl text-primary">1000</div>
               <div className="font-black font-work-sans p-4 m-4 text-5xl text-white">Devs</div>
+
             </li>
           </ul>
         </section>
 
         <section className={styles.homeSection}>
+
           <h2 className="font-black font-work-sans p-4 m-4 text-5xl text-primary">What We Do</h2>
+
           <ul className={styles.homeSkillsList}>
             <li className="font-black font-work-sans p-4 m-4 text-2xl text-white">Developer Relations</li>
             <li className="font-black font-work-sans p-4 m-4 text-2xl text-white">Smart Contracts</li>
@@ -72,6 +77,24 @@ export default function Home() {
           </ul>
         </section>
 
+        <section className={styles.homeSection}>
+          <h2>Sponsors</h2>
+          <div className={styles.sponsorsContainer}>
+            <div className={styles.sponsor}></div>
+            <div className={styles.sponsor}></div>
+            <div className={styles.sponsor}></div>
+          </div>
+        </section>
+
+        <section className={styles.homeSection}>
+          <h2>Work With Us</h2>
+          <div className={styles.homeInfoContainer}>
+            <p>Hire from a growing team of top women and non-binary developers and engineers passionate about web3.</p>
+            <Link href="/contact" passHref>
+              <button className={styles.blogButton}>Contact Us</button>
+            </Link>
+          </div>
+        </section>
       </main>
       <Footer/>
     </div>

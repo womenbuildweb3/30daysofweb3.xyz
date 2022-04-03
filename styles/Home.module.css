@@ -28,8 +28,19 @@
 }
 
 .homeSection{
-  margin: 100px 0;
+  margin: 150px 0;
   display: grid;
+  color: #d06763;
+}
+
+.homeInfoContainer{
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+  font-size: 24px;
 }
 
 .homeSkillsList{
@@ -37,12 +48,30 @@
   gap: 10px;
 }
 
+.sponsorsContainer{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.sponsor{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #e5e5e5;
+}
+
+.blogButton{
+  border: 3px solid #d06763;
+  border-radius: 12px;
+  padding: 15px 60px;
+}
+
 .homeSkill{
   padding: 20px 40px;
   text-align: center;
   font-variation-settings: 'wght' 600;
   font-size: 1.2rem;
-  color: #efefef;
 }
 
 .homeSVGContainer{
@@ -51,7 +80,7 @@
   width: 100vw;
 }
 
-.homeSVG{
+.networkSVG, .homeSVG{
   display: none;
 }
 
@@ -69,17 +98,33 @@
 
 .goalsNumber{
   font-size: 4rem;
-  color: #f6bf41;
 }
 
 .goalsName{
-  color: #efefef;
+  color: #4a4a4a;
   font-size: 3rem;
+}
+
+.homeCallout{
+  font-size: 42px;
+  margin: 0 auto;
+  font-variation-settings: 'wght' 400;
 }
 
 @media screen and (min-width: 700px){
   .homeSkillsList{
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .homeCallout{
+    font-size: 62px;
+    width: 80%;
+    max-width: 800px;
+  }
+
+  .sponsor{
+    width: 120px;
+    height: 120px;
   }
 }
 
@@ -113,6 +158,21 @@
     display: block;
   }
 
+  .homeSVGContainer{
+    position: relative;
+    height: 650px;
+    overflow: hidden;
+  }
+
+  .networkSVG{
+    display: block;
+    max-width: 850px;
+    width: 60vw;
+    position: absolute;
+    opacity: 0.1;
+    right: 0;
+  }
+
   .homeHeroContainer{
     align-items: flex-end;
     padding-top: 300px;
@@ -122,5 +182,9 @@
   .goalsContainer{
     display: grid;
     grid-template-columns: auto auto;
+  }
+
+  .goalContainer{
+    margin-bottom: 0;
   }
 }

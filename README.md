@@ -28,6 +28,12 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
+
+
+### Contributing to the website
+
+Kindly go through [CONTRIBUTING.md](https://github.com/womenbuildweb3/official-website/blob/main/CONTRIBUTING.md)
+
 ### Learn More
 
 To learn more about Next.js, take a look at the following resources:
