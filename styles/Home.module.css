@@ -17,6 +17,22 @@
   position: absolute;
 }
 
+.contactUs{
+  width: auto;
+  font-weight: 900;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: 11px;
+  margin-right: 11px;
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.75rem; /* 28px */
+  font-family: sans-serif;
+  color: #f6bf41;
+  border: 2px solid #f6bf41;
+  border-radius: 0.5rem; /* 8px */
+}
 .contactButton{
   margin-top: 20px;
   font-size: 1.2rem;

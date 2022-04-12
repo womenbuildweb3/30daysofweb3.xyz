@@ -29,10 +29,11 @@ export default function Home() {
             <h1 className="font-work-sans mb-4 px-4 pt-4 pb-7 text-primary font-[600] text-[72px]">
               BUILD. EARN.
             </h1>
-          
-          <Link href="/contact" passHref>
-          <button className="font-black mx-11 py-6 font-work-sans text-xl px-14 w-60 border border-primary text-primary rounded-lg bg-secondaryText hover:bg-primary hover:text-secondaryText ">Contact Us</button>
-          </Link>
+
+            <Link href="/contact" passHref>            
+              <button className={styles.contactUs}>Contact Us</button>
+            </Link>
+
           </div>
         </header>
       </div>
