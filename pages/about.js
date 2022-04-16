@@ -48,14 +48,12 @@ export default function About() {
           talent incubator and network of women and non-binary people who will
           build together at new frontiers of technology.
         </p>
-        <Link
+        <a
           href="https://womenbuildweb3.hashnode.dev/whitepaper"
-          passHref={true}
+          className="font-black mx-11 py-3 font-work-sans text-xl px-14 w-60 border border-primary text-primary rounded-lg bg-secondaryText hover:bg-primary hover:text-secondaryText "
         >
-          <button className="font-black mx-11 py-3 font-work-sans text-xl px-14 w-60 border border-primary text-primary rounded-lg bg-secondaryText hover:bg-primary hover:text-secondaryText ">
-            View WhitePaper
-          </button>
-        </Link>
+          View WhitePaper
+        </a>
       </main>
       <Footer />
     </>
