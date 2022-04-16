@@ -11,6 +11,7 @@ export default function Contact() {
   const [twitterHandle, setTwitterHandle] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
+  const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -53,26 +54,18 @@ export default function Contact() {
         body: JSON.stringify(body),
       });
       if (response.status !== 200) {
-        console.log("something went wrong");
-        //set an error banner here
+        alert("Oops! Something went wrong. Please refresh and try again.");
       } else {
-        resetForm();
+        // resetForm();
         console.log("form submitted successfully !!!");
-        //set a success banner here
+        setSubmitted(true);
       }
       // check response, if success is false, dont take them to success page
     } catch (error) {
-      console.log("there was an error submitting", error);
+      alert(`Oops! Something went wrong. Please refresh and try again. Error ${error}`);
     }
   };
 
-  const resetForm = () => {
-    setFirstName("");
-    setTwitterHandle("");
-    setDiscordHandle("");
-    setSubject("");
-    setMessage("");
-  };
   return (
     <div className={styles.container}>
       <Head>
@@ -110,7 +103,7 @@ export default function Contact() {
           </ul>
         </header>
 
-          <form
+          {!submitted && <form
             action="#"
             method="POST"
             onSubmit={(e) => handleSubmit(e)}
@@ -223,10 +216,16 @@ export default function Contact() {
               type="submit"
               className={styles.submitButton}
               >
-                Submit
+                Send Message
               </button>
             </div>
-          </form>
+          </form> }
+
+          {submitted && 
+            <div className="mt-20 text-center">
+              Your message was succesflly sent! We will do our best to get back to you soon.
+            </div>
+          }
       </main>
       <Footer/>
     </div>
