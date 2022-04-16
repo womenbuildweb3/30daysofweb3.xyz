@@ -53,7 +53,7 @@ export default function About() {
           href="https://womenbuildweb3.hashnode.dev/whitepaper"
           passHref={true}
         >
-          <button className="font-black mx-11 py-3 font-work-sans text-xl px-14 w-100 border border-primary text-primary rounded-lg bg-secondaryText hover:bg-primary hover:text-secondaryText ">
+          <button className="font-black mx-1 py-3 font-work-sans text-xl px-14 w-100 border border-primary text-primary rounded-lg bg-secondaryText hover:bg-primary hover:text-secondaryText ">
             View WhitePaper
           </button>
         </Link>
