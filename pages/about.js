@@ -1,7 +1,7 @@
 // import styles from "../styles/About.module.css";
 import Navbar from "../components/Navbar";
 // import { SocialIcon } from "react-social-icons";
-// import Link from "next/link";
+import Link from "next/link";
 import Head from "next/head";
 import Footer from "../components/Footer";
 
@@ -33,6 +33,7 @@ export default function About() {
           founders with wide-ranging experiences in tech and web3. We span 8
           countries, 16 cities, and 9 timezones and counting.
         </p>
+        <br />
         <p>
           Our focus is on finding and creating opportunities for women and
           non-binary people to master their craft, advance their careers, and
@@ -47,6 +48,14 @@ export default function About() {
           talent incubator and network of women and non-binary people who will
           build together at new frontiers of technology.
         </p>
+        <Link
+          href="https://womenbuildweb3.hashnode.dev/whitepaper"
+          passHref={true}
+        >
+          <button className="font-black mx-11 py-3 font-work-sans text-xl px-14 w-60 border border-primary text-primary rounded-lg bg-secondaryText hover:bg-primary hover:text-secondaryText ">
+            View WhitePaper
+          </button>
+        </Link>
       </main>
       <Footer />
     </>
