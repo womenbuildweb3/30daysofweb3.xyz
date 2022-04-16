@@ -26,14 +26,13 @@ export default function About() {
           more. Women Build Web3 (WBW3) is a global collective of women and
           non-binary developers learning and building in web3 that was born from
           Developer Dao. We continue to collaborate closely with Developer DAO
-          as a "sister" DAO and work cross-team on all initiatives. Our
-          community today is composed of software engineers (frontend, backend,
+          as a sister DAO and work cross-team on all initiatives. Our community
+          today is composed of software engineers (frontend, backend,
           full-stack, and blockchain), designers (visual, UX/UI, product),
           content creators, technical writers, product and project managers, and
           founders with wide-ranging experiences in tech and web3. We span 8
           countries, 16 cities, and 9 timezones and counting.
         </p>
-        <br />
         <p>
           Our focus is on finding and creating opportunities for women and
           non-binary people to master their craft, advance their careers, and
@@ -48,6 +47,11 @@ export default function About() {
           talent incubator and network of women and non-binary people who will
           build together at new frontiers of technology.
         </p>
+        <Link href="/" passHref>
+          <button className="font-black mx-11 py-3 font-work-sans text-xl px-14 w-60 border border-primary text-primary rounded-lg bg-secondaryText hover:bg-primary hover:text-secondaryText ">
+            View WhitePaper
+          </button>
+        </Link>
       </main>
       <Footer />
     </>
