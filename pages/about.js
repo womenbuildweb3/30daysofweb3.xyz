@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 
 export default function About() {
   return (
-    <>
+    <div className="mt-4 mx-4 sm:mx-16">
       <Head>
         <title>About | Women Build Web3</title>
         <meta
@@ -18,7 +18,7 @@ export default function About() {
       </Head>
       <Navbar />
       <main>
-        <h1>About</h1>
+        <h1 className="text-lg font-poppins-bold">About</h1>
         <p>
           Women Build Web3 (WBW3) is a global collective of women and non-binary
           developers learning about and working in web3. We are frontend,
@@ -59,6 +59,6 @@ export default function About() {
         </Link>
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

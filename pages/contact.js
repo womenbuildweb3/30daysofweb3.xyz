@@ -67,7 +67,7 @@ export default function Contact() {
   };
 
   return (
-    <div className={styles.container}>
+    <div className="mt-4 mx-4 sm:mx-16">
       <Head>
         <title>Contact | Women Build Web3</title>
         <meta
@@ -80,14 +80,14 @@ export default function Contact() {
 
       <main>
         <header>
-          <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl">
             Get in touch
           </h1>
-          <p className=" mt-6 text-xl text-white max-w-3xl">
+          <p className="mt-6 text-xl max-w-3xl">
             Want to hire us? We do all things Web3.
           </p>
 
-          <ul className="text-gray-200 mt-6 text-xl max-w-3xl">
+          <ul className="mt-6 text-xl max-w-3xl">
             <div className="flex flex-row">
               <SparklesIcon className="h-5 w-5 text-indigo-400 mt-1"></SparklesIcon>
               <li className="pl-2">Developer Relations</li>

@@ -1,17 +1,24 @@
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
   return (
     <Disclosure as="nav" className="nav-bar">
       {({ open }) => (
         <>
-          <div className="mx-auto md:px-6">
+          <div className="mx-auto">
             <div className="flex items-center justify-between h-16 ">
-            <Link href="/" passHref>
-              <div className="cursor-pointer font-poppins-bold text-xl">Women Build Web3</div>
+              <div className="sm:flex sm:items-center sm:gap-4">
+              <Link href="/" passHref>
+              <Image className="cursor-pointer" alt="Women Build Web3 Logo" src="/Logo-Fill.png" height="40px" width="40px" />
+            </Link>
+            <Link className="hidden sm:block" href="/" passHref>
+              <div className="hidden sm:block cursor-pointer font-poppins-bold text-xl">Women Build Web3</div>
               </Link>
+              </div>
+            
               <div className="hidden md:block md:ml-6">
                 <div className="flex">
                   <Link href="/about" passHref>
@@ -47,23 +54,35 @@ export default function Navbar() {
                   </Link>
                 </div>
               </div>
-              <div className="-mr-2 flex md:hidden">
-                {/* Mobile menu button */}
-                <Disclosure.Button className="link inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-                  <span className="sr-only">Open main menu</span>
-                  {open ? (
-                    <XIcon
-                      className="block h-6 w-6 mobile-menu-button"
-                      aria-hidden="true"
-                    />
-                  ) : (
-                    <MenuIcon
-                      className="block h-6 w-6 mobile-menu-button"
-                      aria-hidden="true"
-                    />
-                  )}
-                </Disclosure.Button>
+              <div className="flex items-center">
+                <Link href="/contact" passHref>
+                      <a className="px-4 h-8 rounded-full grid place-items-center md:hidden cursor-pointer active:bg-black border border-black border-solid text-xs hover:bg-black hover:text-white">
+                        Join us
+                      </a>
+                    </Link>
+
+                <div className="-mr-2 flex md:hidden">
+                  {/* Mobile menu button */}
+                  <Disclosure.Button className="link inline-flex items-center justify-center p-2 rounded-md hover:text-white hover:bg-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                    <span className="sr-only">Open main menu</span>
+                    {open ? (
+                      <XIcon
+                        className="block h-8 w-8 mobile-menu-button"
+                        aria-hidden="true"
+                      />
+                    ) : (
+                      <MenuIcon
+                        className="block h-8 w-8 mobile-menu-button"
+                        aria-hidden="true"
+                      />
+                    )}
+                  </Disclosure.Button>
+                </div>
+
               </div>
+
+
+
             </div>
           </div>
           <Disclosure.Panel className="md:hidden">

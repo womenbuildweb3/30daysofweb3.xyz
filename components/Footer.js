@@ -5,12 +5,12 @@ export default function Footer() {
     return (
         <footer className="my-32">
             <hr className="mb-16 border-t border-black border-solid"/>
-            <div className="grid grid-cols-2">
+            <div className="grid sm:grid-cols-2">
                 <div className="max-w-sm">
-                    <div className="mb-4 text-3xl font-poppins-bold">
+                    <div className="mb-4 text-2xl sm:text-3xl font-poppins-bold">
                         Women Build Web3
                     </div>
-                    <p className="mb-4 leading-normal text-xl">
+                    <p className="mb-4 leading-normal text-base sm:text-xl">
                         Subscribe to our newsletter to get our latest news, blog posts, events, and more.
                     </p>
                     <form>
@@ -21,48 +21,48 @@ export default function Footer() {
                     </form>
                 </div>
 
-                <div className="grid grid-cols-3">
+                <div className="grid sm:grid-cols-3">
 
-                    <div className="flex flex-col gap-4">
-                        <div className="text-lg font-poppins-bold">
+                    <div className="flex mb-8 sm:mb-0 flex-col gap-4">
+                        <div className="font-poppins-bold">
                             Explore
                         </div>
-                        <Link href="/" className="text-lg">
+                        <Link href="/">
                             Home
                         </Link>
-                        <Link href="/about" className="text-lg">
+                        <Link href="/about">
                             About
                         </Link>
-                        <Link href="/about" className="text-lg">
+                        <a target="_blank" href="https://womenbuildweb3.hashnode.dev/whitepaper" rel="noopener noreferrer">
                             Whitepaper
-                        </Link>
+                        </a>
                     </div>
 
-                    <div className="flex flex-col gap-4">
-                        <div className="text-lg font-poppins-bold">
+                    <div className="flex mb-8 sm:mb-0 flex-col gap-4">
+                        <div className="font-poppins-bold">
                             Learn {'&'} Build
                         </div>
-                        <Link href="/" className="text-lg">
+                        <Link href="/" className="">
                             30 Days of Web3
                         </Link>
-                        <Link href="/blog" className="text-lg">
+                        <Link href="/blog" className="">
                             Blog
                         </Link>
                     </div>
 
                     <div className="flex flex-col gap-4">
-                        <div className="text-lg font-poppins-bold">
+                        <div className="font-poppins-bold">
                             Get in Touch
                         </div>
-                        <Link href="/contact" className="text-lg">
+                        <Link href="/contact">
                             Contact
                         </Link>
-                        <Link href="https://twitter.com/womenbuildweb3" className="text-lg">
+                        <a target="_blank" href="https://twitter.com/womenbuildweb3" rel="noopener noreferrer">
                             Twitter
-                        </Link>
-                        <Link href="https://instagram.com/womenbuildweb3" className="text-lg">
+                        </a>
+                        <a target="_blank" href="https://instagram.com/womenbuildweb3" rel="noopener noreferrer">
                             Instagram
-                        </Link>
+                        </a>
                     </div>
 
 
