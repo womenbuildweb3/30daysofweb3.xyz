@@ -1,115 +1,106 @@
-/* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
-import { useState } from 'react' 
+import { Disclosure } from "@headlessui/react";
+import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Link from "next/link";
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
-
-export default function Navbar({absolute}) {
-  const [active, setActive] = useState("");
-  let navPosition
-  if (absolute) {
-    navPosition = "absolute"
-  } else {
-    navPosition = "static"
-  }
-
-  function updateSelected(e){
-    console.log("this is the target: ", e.target.value);
-  }
+export default function Navbar() {
   return (
-    <Disclosure as="nav" className="nav-bar" style={{position: navPosition}}>
+    <Disclosure as="nav" className="nav-bar">
       {({ open }) => (
         <>
-          <div className="mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto md:px-6">
             <div className="flex items-center justify-between h-16 ">
-              <div className="nav-logo">WBW3</div>
-              <div className="flex items-center">
-                <div className="hidden sm:block sm:ml-6">
-                  <div onClick={updateSelected} className="flex">
-                    <Link href="/">
-                    <p className="link nav-link" >
-                      Home
-                    </p>
-                    </Link>
-                    <Link href="/about">
-                    <p
-                      className="link nav-link"
-                    >
+            <Link href="/" passHref>
+              <div className="cursor-pointer font-poppins-bold text-xl">Women Build Web3</div>
+              </Link>
+              <div className="hidden md:block md:ml-6">
+                <div className="flex">
+                  <Link href="/about" passHref>
+                    <p className="cursor-pointer px-3 py-2 rounded-full text-xl">
                       About
                     </p>
-                    </Link>
-                    <Link href="/blog">
-                    <p
-                      className="link nav-link"
-                    >
+                  </Link>
+                  <Link href="/" passHref>
+                    <p className="cursor-pointer px-3 py-2 rounded-full text-xl">
+                      30 Days of Web3
+                    </p>
+                  </Link>
+
+                  <Link href="/blog" passHref>
+                    <p className="cursor-pointer px-3 py-2 rounded-full text-xl">
                       Blog
                     </p>
-                    </Link>
-                    <Link href="/contact">
-                    <p
-                      className="link nav-link"
-                    >
-                      Contact Us
-                    </p>
-                    </Link>
-                  </div>
+                  </Link>
                 </div>
               </div>
-              <div className="-mr-2 flex sm:hidden">
+                <div className="hidden md:block md:ml-6">
+                <div className="flex">
+                  <Link href="/contact" passHref>
+                    <p className="cursor-pointer px-3 py-2 rounded-full text-xl font-medium">
+                      Contact
+                    </p>
+                  </Link>
+
+                  <Link href="/contact" passHref>
+                    <a className="cursor-pointer active:bg-black border border-black border-solid rounded-full text-xl px-3 py-2 hover:bg-black hover:text-white">
+                      Join us
+                    </a>
+                  </Link>
+                </div>
+              </div>
+              <div className="-mr-2 flex md:hidden">
                 {/* Mobile menu button */}
-                <Disclosure.Button className="link inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="link inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
-                    <XIcon className="block h-6 w-6 mobile-menu-button" aria-hidden="true" />
+                    <XIcon
+                      className="block h-6 w-6 mobile-menu-button"
+                      aria-hidden="true"
+                    />
                   ) : (
-                    <MenuIcon className="block h-6 w-6 mobile-menu-button" aria-hidden="true" />
+                    <MenuIcon
+                      className="block h-6 w-6 mobile-menu-button"
+                      aria-hidden="true"
+                    />
                   )}
                 </Disclosure.Button>
               </div>
             </div>
           </div>
-          <Disclosure.Panel className="sm:hidden">
+          <Disclosure.Panel className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
               <Disclosure.Button
                 as="a"
                 href="/"
-                className="link nav-link nav-link-mobile"
+                className="cursor-pointer active:bg-black px-3 py-2 rounded-md text-sm font-medium hover:bg-black hover:text-white"
               >
                 Home
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 href="/about"
-                className="link nav-link nav-link-mobile"
+                className="cursor-pointer active:bg-black px-3 py-2 rounded-md text-sm font-medium hover:bg-black hover:text-white"
               >
                 About
               </Disclosure.Button>
-                <Disclosure.Button
+              <Disclosure.Button
                 href="/blog"
                 as="a"
-                className="link nav-link nav-link-mobile"
+                className="cursor-pointer active:bg-black px-3 py-2 rounded-md text-sm font-medium hover:bg-black hover:text-white"
               >
                 Blog
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 href="/contact"
-                className="link nav-link nav-link-mobile"
+                className="cursor-pointer active:bg-black px-3 py-2 rounded-md text-sm font-medium hover:bg-black hover:text-white"
               >
                 Contact
               </Disclosure.Button>
-
             </div>
-            <div className="pt-4 pb-3 border-t border-gray-700">
-            </div>
+            <div className="pt-4 pb-3 border-t border-gray-700"></div>
           </Disclosure.Panel>
         </>
       )}
     </Disclosure>
-  )
+  );
 }
