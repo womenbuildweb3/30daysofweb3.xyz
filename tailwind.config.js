@@ -7,22 +7,20 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        "work-sans": ["Work Sans", ...defaultTheme.fontFamily.sans],
-        
+      screens: {
+        'md': '975px',
       },
-      colors: {
-       
-        primary: {
-          DEFAULT: "#ffce4e",
-        },
-        secondary: {
-          DEFAULT: "#3d2942",
-        },
-        secondaryText: {
-          DEFAULT: "#d06763",
-        },
-
+      maxWidth: {
+        '2xl': '40rem',
+      },
+      fontSize: {
+        'lg': '1.25rem',
+        '3xl': '2rem',
+        '6xl': '4rem',
+      },
+      fontFamily: {
+        "poppins-bold": ["Poppins Bold", ...defaultTheme.fontFamily.sans],
+        "poppins-semi-bold": ["Poppins SemiBold", ...defaultTheme.fontFamily.sans],
       },
     },
   },

@@ -3,79 +3,24 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "Montserrat";
-    src: url("../public/Montserrat-VariableFont_wght.ttf");
+    font-family: "Poppins Regular";
+    src: url("../public/Poppins-Light.ttf");
+}
+
+@font-face {
+    font-family: "Poppins Bold";
+    src: url("../public/Poppins-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Poppins SemiBold";
+    src: url("../public/Poppins-SemiBold.ttf");
 }
 
 body{
-    background: #333;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Poppins Regular", sans-serif;
     overscroll-behavior: none;
-    color: #efefef;
-}
-
-h1{
-    font-size: 72px;
-    color: #d06763;
-}
-
-h2{
-    text-align: center;
-    font-size: 2rem;
-    font-variation-settings: 'wght' 600;
-    margin-bottom: 2rem;
-}
-
-main {
-    margin: 2rem 10vw;
-    min-height: 100vh;
-}
-
-footer{
-    display: grid;
-    place-items: center;
-    padding: 100px 0 50px 0;
-}
-
-.link {
-    cursor: pointer;
-}
-
-.nav-bar{
-    width: 100vw;
-}
-
-.nav-logo{
-    color: #d06763;
-    font-size: 1.2rem;
-}
-
-.nav-link{
-    color: #efefef;
-    font-size: 14px;
-    padding: 10px 20px;
-    border-radius: 10%;
-}
-
-.nav-link:hover{
-    background: #555;
-}
-
-.nav-link-mobile{
-    display: block;
-    border-radius: 4px
-}
-
-.mobile-menu-button{
-    stroke: #efefef;
-}
-
-@media screen and (max-width: 480px){
-    h1{
-        font-size: 60px;
-    }
-
-    .nav-logo{
-        color: #efefef;
-    }
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
 }
