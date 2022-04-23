@@ -5,7 +5,7 @@ export default function Footer() {
     return (
         <footer className="my-32">
             <hr className="mb-16 border-t border-black border-solid"/>
-            <div className="grid sm:grid-cols-2">
+            <div className="grid md:grid-cols-2">
                 <div className="max-w-sm">
                     <div className="mb-4 text-2xl sm:text-3xl font-poppins-bold">
                         Women Build Web3
