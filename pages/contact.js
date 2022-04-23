@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar";
 import styles from "../styles/Contact.module.css";
 import { SparklesIcon } from "@heroicons/react/outline";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Head from "next/head";
 import Footer from "../components/Footer";
 
@@ -12,6 +12,16 @@ export default function Contact() {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [preferedColorScheme, setPreferedColorScheme] = useState("light");
+
+  useEffect(() => {
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      setPreferedColorScheme("dark");
+    }
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -76,7 +86,7 @@ export default function Contact() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
+      <Navbar preferedColorScheme={preferedColorScheme}/>
 
       <main>
         <header>

@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -5,6 +6,17 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function Home() {
+  const [preferedColorScheme, setPreferedColorScheme] = useState("light");
+
+  useEffect(() => {
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      setPreferedColorScheme("dark");
+    }
+  }, []);
+
   return (
     <div className="">
       
@@ -15,12 +27,17 @@ export default function Home() {
             name="description"
             content="Providing education, oppportunities, and funding to a new wave of web3 builders"
           />
+          {preferedColorScheme === "light" && 
           <link rel="icon" href="/favicon.ico" />
+          }
+          {preferedColorScheme === "dark" && 
+          <link rel="icon" href="/favicon-white.ico" />
+          }
         </Head>
 
-        <Navbar className="" />
+        <Navbar preferedColorScheme={preferedColorScheme}/>
 
-        <header className="mt-32 sm:mt-8 mb-44 grid gap-4 sm:gap-8">
+        <header className="mt-24 min-w-[300px] sm:mt-8 mb-44 grid gap-4 sm:gap-8">
           <div className="grid font-poppins-bold text-3xl sm:text-6xl leading-tight">
             <div>1 DAO</div>
             <div>10 Hackathons</div>
@@ -34,7 +51,7 @@ export default function Home() {
                 opportunities, and funding.
               </p>
               <Link href="/contact" passHref>
-                <a className="hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-xs sm:text-2xl px-4 py-3">
+                <a className="cursor-pointer dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-xs sm:text-2xl px-4 py-3">
                   Join us
                 </a>
               </Link>
@@ -54,7 +71,7 @@ export default function Home() {
               them with a network of peers.
             </p>
             <Link href="/contact" passHref>
-              <a className="hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-xs sm:text-lg px-4 py-3">
+              <a className="cursor-pointer dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-xs sm:text-lg px-4 py-3">
                 Join us
               </a>
             </Link>
@@ -129,7 +146,7 @@ export default function Home() {
               protocols, and frameworks.
             </p>
             <Link href="/" passHref>
-              <a className="hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-xs sm:text-lg px-4 py-3">
+              <a className="cursor-pointer dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-xs sm:text-lg px-4 py-3">
                 Learn More
               </a>
             </Link>
@@ -147,7 +164,7 @@ export default function Home() {
               to stay tuned to our ventures.
             </p>
             <Link href="/blog" passHref>
-              <a className="hover:text-white hover:bg-black mx-auto border border-black dark:border-white border-solid rounded-full text-xs sm:text-lg px-4 py-3">
+              <a className="mx-auto cursor-pointer dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-xs sm:text-lg px-4 py-3">
                 View our blog
               </a>
             </Link>
@@ -214,8 +231,9 @@ export default function Home() {
 
         <Footer />
       </div>
-      <div className="-z-10 bg-cover top-0 bg-no-repeat absolute w-screen h-[48rem] bg-[url('/blurry-gradient.png')]" />
-      <div className="-z-10 bg-cover top-0 bg-no-repeat absolute w-screen h-[48rem] bg-[url('/Texture.png')]" />
+      <div className="light:hidden hidden sm:block -z-10 bg-cover top-0 bg-no-repeat sm:absolute w-screen h-[36rem] sm:h-[48rem] dark:bg-[url('/images/blurry-gradient.png')]" />
+      <div className="light:hidden sm:hidden -z-10 bg-cover top-0 bg-no-repeat absolute w-screen h-[36rem] sm:h-[48rem] dark:bg-[url('/images/blurry-gradient-mobile.png')]" />
+      <div className="light:hidden hidden sm:block -z-10 bg-cover top-0 bg-no-repeat sm:absolute w-screen h-[36rem] sm:h-[48rem] dark:bg-[url('/images/Texture.png')]" />
     </div>
   );
 }
