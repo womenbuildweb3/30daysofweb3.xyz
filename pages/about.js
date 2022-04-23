@@ -1,4 +1,4 @@
-// import styles from "../styles/About.module.css";
+import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 // import { SocialIcon } from "react-social-icons";
 import Link from "next/link";
@@ -7,7 +7,19 @@ import Head from "next/head";
 import Footer from "../components/Footer";
 
 export default function About() {
+  const [preferedColorScheme, setPreferedColorScheme] = useState("light");
+
+  useEffect(() => {
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      setPreferedColorScheme("dark");
+    }
+  }, []);
+
   return (
+    <div>
     <div className="mt-4 mx-4 sm:mx-16">
       <Head>
         <title>About | Women Build Web3</title>
@@ -17,8 +29,8 @@ export default function About() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
-      <header className="my-44 max-w-3xl">
+      <Navbar preferedColorScheme={preferedColorScheme} />
+      <header className="my-40 sm:my-44 max-w-3xl">
         <h1 className="font-poppins-bold text-3xl sm:text-6xl sm:mb-2">
           Unlocking the next wave of web3 builders
         </h1>
@@ -26,13 +38,13 @@ export default function About() {
           We’re onboarding and retaining talented, diverse developers in web3.
         </p>
         <Link href="/contact" passHref>
-          <a className="hover:text-white hover:bg-black border border-black border-solid rounded-full text-xs sm:text-2xl px-4 py-3">
+          <a className="cursor-pointer dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-xs sm:text-2xl px-4 py-3">
             Sponsor us
           </a>
         </Link>
       </header>
 
-      <section className="mb-44">
+      <section className="pt-8 mb-44">
         <div className="sm:w-1/2">
           <p className="mb-16 sm:text-xl">
             Our collective is composed of software engineers, designers, content
@@ -47,20 +59,19 @@ export default function About() {
           <div className="sm:w-1/2">
             <p className="mb-8 sm:text-xl">
               We aim to support underrepresented women and non-binary developers
-              in web3 with education, opportunities, and funding. We want at least
-              70% of our initial cohort to transition into web3 full-time within a
-              year. Learn more about our goals in our whitepaper.
+              in web3 with education, opportunities, and funding. We want at
+              least 70% of our initial cohort to transition into web3 full-time
+              within a year. Learn more about our goals in our whitepaper.
             </p>
 
             <a
               target="_blank"
               href="https://womenbuildweb3.hashnode.dev/whitepaper"
               rel="noopener noreferrer"
-              className="hover:text-white hover:bg-black border border-black border-solid rounded-full text-xs sm:text-xl px-4 py-3"
+              className="cursor-pointer dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-xs sm:text-xl px-4 py-3"
             >
               View our whitepaper
             </a>
-
           </div>
         </div>
       </section>
@@ -86,7 +97,8 @@ export default function About() {
               &#129309; Curiosity & Collaboration
             </div>
             <p>
-            We learn from one another, teach each other, build together, and lift everyone up.
+              We learn from one another, teach each other, build together, and
+              lift everyone up.
             </p>
           </div>
           <div className="mb-8 sm:max-w-xs">
@@ -109,51 +121,98 @@ export default function About() {
         </p>
 
         <Link href="/contact" passHref>
-          <a className="mx-auto hover:text-white hover:bg-black border border-black border-solid rounded-full text-xs sm:text-lg px-4 py-3">
+          <a className="mx-auto cursor-pointer dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-xs sm:text-lg px-4 py-3">
             Sponsor us
           </a>
         </Link>
 
-        <div className="mt-8 flex flex-wrap gap-4 sm:justify-center">
-          <div className="relative w-32 h-8 sm:w-60 sm:h-24">
-            <Image
-              alt="Developer Dao Logo"
-              src="/D_D-Logo.png"
-              objectFit="contain"
-              layout="fill"
-            />
-          </div>
+        {preferedColorScheme === "light" && (
+          <div className="mt-8 flex flex-wrap gap-4 justify-center">
+            <div className="relative w-32 h-8 sm:w-60 sm:h-24">
+              <Image
+                alt="Developer Dao Logo"
+                src="/logos/D_D-Logo.png"
+                objectFit="contain"
+                layout="fill"
+              />
+            </div>
 
-          <div className="relative w-32 h-8 sm:w-60 sm:h-24">
-            <Image
-              alt="Filecoin Logo"
-              src="/Filecoin-Logo.png"
-              objectFit="contain"
-              layout="fill"
-            />
-          </div>
+            <div className="relative w-32 h-8 sm:w-60 sm:h-24">
+              <Image
+                alt="Filecoin Logo"
+                src="/logos/Filecoin-Logo.png"
+                objectFit="contain"
+                layout="fill"
+              />
+            </div>
 
-          <div className="relative w-32 h-8 sm:w-60 sm:h-24">
-            <Image
-              alt="Livepeer Logo"
-              src="/Livepeer-Logo.png"
-              objectFit="contain"
-              layout="fill"
-            />
-          </div>
+            <div className="relative w-32 h-8 sm:w-60 sm:h-24">
+              <Image
+                alt="Livepeer Logo"
+                src="/logos/Livepeer-Logo.png"
+                objectFit="contain"
+                layout="fill"
+              />
+            </div>
 
-          <div className="relative w-32 h-8 sm:w-60 sm:h-24">
-            <Image
-              alt="The Graph Logo"
-              src="/The-Graph-Logo.png"
-              objectFit="contain"
-              layout="fill"
-            />
+            <div className="relative w-32 h-8 sm:w-60 sm:h-24">
+              <Image
+                alt="The Graph Logo"
+                src="/logos/The-Graph-Logo.png"
+                objectFit="contain"
+                layout="fill"
+              />
+            </div>
           </div>
-        </div>
+        )}
+
+{preferedColorScheme === "dark" && (
+          <div className="mt-8 flex flex-wrap gap-4 justify-center">
+            <div className="relative w-32 h-8 sm:w-60 sm:h-24">
+              <Image
+                alt="Developer Dao Logo"
+                src="/logos/D_D-logo-white.png"
+                objectFit="contain"
+                layout="fill"
+              />
+            </div>
+            
+            <div className="relative w-32 h-8 sm:w-60 sm:h-24">
+              <Image
+                alt="Filecoin Logo"
+                src="/logos/Filecoin-logo-white.png"
+                objectFit="contain"
+                layout="fill"
+              />
+            </div>
+
+            <div className="relative w-32 h-8 sm:w-60 sm:h-24">
+              <Image
+                alt="Livepeer Logo"
+                src="/logos/Livepeer-logo-white.png"
+                objectFit="contain"
+                layout="fill"
+              />
+            </div>
+
+            <div className="relative w-32 h-8 sm:w-60 sm:h-24">
+              <Image
+                alt="The Graph Logo"
+                src="/logos/The-Graph-logo-white.png"
+                objectFit="contain"
+                layout="fill"
+              />
+            </div>
+          </div>
+        )}
+
       </section>
 
       <Footer />
+    </div>
+    <div className="light:hidden hidden sm:block -z-10 bg-cover top-0 bg-no-repeat sm:absolute w-screen h-[36rem] sm:h-[48rem] dark:bg-[url('/images/blurry-gradient.png')]" />
+      <div className="light:hidden sm:hidden -z-10 bg-cover top-0 bg-no-repeat absolute w-screen h-[36rem] sm:h-[48rem] dark:bg-[url('/images/blurry-gradient-mobile.png')]" />
+      <div className="light:hidden hidden sm:block -z-10 bg-cover top-0 bg-no-repeat sm:absolute w-screen h-[36rem] sm:h-[48rem] dark:bg-[url('/images/Texture.png')]" />
     </div>
   );
 }
