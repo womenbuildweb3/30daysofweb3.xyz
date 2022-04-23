@@ -19,6 +19,7 @@ export default function About() {
   }, []);
 
   return (
+    <div>
     <div className="mt-4 mx-4 sm:mx-16">
       <Head>
         <title>About | Women Build Web3</title>
@@ -29,7 +30,7 @@ export default function About() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar preferedColorScheme={preferedColorScheme} />
-      <header className="my-44 max-w-3xl">
+      <header className="my-40 sm:my-44 max-w-3xl">
         <h1 className="font-poppins-bold text-3xl sm:text-6xl sm:mb-2">
           Unlocking the next wave of web3 builders
         </h1>
@@ -43,7 +44,7 @@ export default function About() {
         </Link>
       </header>
 
-      <section className="mb-44">
+      <section className="pt-8 mb-44">
         <div className="sm:w-1/2">
           <p className="mb-16 sm:text-xl">
             Our collective is composed of software engineers, designers, content
@@ -208,6 +209,10 @@ export default function About() {
       </section>
 
       <Footer />
+    </div>
+    <div className="light:hidden hidden sm:block -z-10 bg-cover top-0 bg-no-repeat sm:absolute w-screen h-[36rem] sm:h-[48rem] dark:bg-[url('/images/blurry-gradient.png')]" />
+      <div className="light:hidden sm:hidden -z-10 bg-cover top-0 bg-no-repeat absolute w-screen h-[36rem] sm:h-[48rem] dark:bg-[url('/images/blurry-gradient-mobile.png')]" />
+      <div className="light:hidden hidden sm:block -z-10 bg-cover top-0 bg-no-repeat sm:absolute w-screen h-[36rem] sm:h-[48rem] dark:bg-[url('/images/Texture.png')]" />
     </div>
   );
 }
