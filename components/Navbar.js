@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="nav-bar">
+    <Disclosure as="nav" className="">
       {({ open }) => (
         <>
           <div className="mx-auto">
@@ -48,7 +48,7 @@ export default function Navbar() {
                   </Link>
 
                   <Link href="/contact" passHref>
-                    <a className="cursor-pointer active:bg-black border border-black border-solid rounded-full text-xl px-3 py-2 hover:bg-black hover:text-white">
+                    <a className="cursor-pointer active:bg-black border border-black dark:border-white border-solid rounded-full text-xl px-3 py-2 hover:bg-black hover:text-white">
                       Join us
                     </a>
                   </Link>
@@ -56,7 +56,7 @@ export default function Navbar() {
               </div>
               <div className="flex items-center">
                 <Link href="/contact" passHref>
-                      <a className="px-4 h-8 rounded-full grid place-items-center md:hidden cursor-pointer active:bg-black border border-black border-solid text-xs hover:bg-black hover:text-white">
+                      <a className="px-4 h-8 rounded-full grid place-items-center md:hidden cursor-pointer active:bg-black border border-black dark:border-white border-solid text-xs hover:bg-black hover:text-white">
                         Join us
                       </a>
                     </Link>

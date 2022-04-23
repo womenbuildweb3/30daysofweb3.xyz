@@ -3,8 +3,8 @@
 
 export default function Footer() {
     return (
-        <footer className="my-32">
-            <hr className="mb-16 border-t border-black border-solid"/>
+        <footer className="py-32">
+            <hr className="mb-16 border-t border-black dark:border-white border-solid"/>
             <div className="grid md:grid-cols-2">
                 <div className="max-w-sm">
                     <div className="mb-4 text-2xl sm:text-3xl font-poppins-bold">
@@ -14,9 +14,9 @@ export default function Footer() {
                         Subscribe to our newsletter to get our latest news, blog posts, events, and more.
                     </p>
                     <form>
-                        <input type="email" className="rounded-md p-4 w-full border border-solid border-black" placeholder="Email"/>
+                        <input type="email" className="rounded-md p-4 w-full border border-solid border-black dark:border-white" placeholder="Email"/>
                         <div className="mr-4 flex justify-end relative bottom-10">
-                            <button>X</button>
+                            <button className="text-black">X</button>
                         </div>
                     </form>
                 </div>
