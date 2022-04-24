@@ -19,7 +19,6 @@ export default function Home() {
 
   return (
     <div className="relative">
-      
       <div className="pt-4 px-4 sm:px-16">
         <Head>
           <title>Women Build Web3</title>
@@ -27,15 +26,15 @@ export default function Home() {
             name="description"
             content="Providing education, oppportunities, and funding to a new wave of web3 builders"
           />
-          {preferedColorScheme === "light" && 
-          <link rel="icon" href="/favicon.ico" />
-          }
-          {preferedColorScheme === "dark" && 
-          <link rel="icon" href="/favicon-white.ico" />
-          }
+          {preferedColorScheme === "light" && (
+            <link rel="icon" href="/favicon.ico" />
+          )}
+          {preferedColorScheme === "dark" && (
+            <link rel="icon" href="/favicon-white.ico" />
+          )}
         </Head>
 
-        <Navbar preferedColorScheme={preferedColorScheme}/>
+        <Navbar preferedColorScheme={preferedColorScheme} />
 
         <header className="mt-24 min-w-[300px] sm:mt-8 mb-44 grid gap-4 sm:gap-8">
           <div className="grid font-poppins-bold text-3xl sm:text-6xl leading-tight">
@@ -229,11 +228,11 @@ export default function Home() {
           </div>
         </section>
 
-        <Footer />
+        <Footer preferedColorScheme={preferedColorScheme} />
       </div>
-      <div className="light:hidden hidden sm:block fixed top-0 -z-10 bg-cover bg-no-repeat w-screen h-[36rem] sm:h-[48rem] dark:bg-[url('/images/blurry-gradient.png')]" />
-      <div className="light:hidden block sm:hidden fixed top-0 -z-10 bg-cover bg-no-repeat w-screen h-[36rem] sm:h-[48rem] dark:bg-[url('/images/blurry-gradient-mobile.png')]" />
-      <div className="light:hidden fixed top-0 -z-10 bg-cover bg-no-repeat w-screen h-[36rem] sm:h-[48rem] dark:bg-[url('/images/Texture.png')]" />
+      <div className="light:hidden hidden sm:block fixed top-0 -z-10 bg-cover bg-no-repeat w-screen h-screen dark:bg-[url('/images/blurry-gradient.png')]" />
+      <div className="light:hidden block sm:hidden fixed top-0 -z-10 bg-cover bg-no-repeat w-screen h-screen dark:bg-[url('/images/blurry-gradient-mobile.png')]" />
+      <div className="light:hidden fixed top-0 -z-10 bg-cover bg-no-repeat w-screen h-screen dark:bg-[url('/images/Texture.png')]" />
     </div>
   );
 }
