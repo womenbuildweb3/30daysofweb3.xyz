@@ -75,14 +75,14 @@ export default function Navbar({preferedColorScheme}) {
                   </Link>
                 </div>
               </div>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 md:hidden">
                 <Link href="/contact" passHref>
-                  <a className="px-4 h-8 grid place-items-center md:hidden cursor-pointer dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full">
+                  <a className="px-4 h-8 grid place-items-center cursor-pointer dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full">
                     Join us
                   </a>
                 </Link>
 
-                <div className="-mr-2 flex md:hidden">
+                <div className="-mr-2 flex">
                   {/* Mobile menu button */}
                   <Disclosure.Button className="link inline-flex items-center justify-center p-2 rounded-md hover:text-white hover:bg-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                     <span className="sr-only">Open main menu</span>

@@ -18,7 +18,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="">
+    <div className="relative">
       
       <div className="pt-4 px-4 sm:px-16">
         <Head>
@@ -231,9 +231,9 @@ export default function Home() {
 
         <Footer />
       </div>
-      <div className="light:hidden hidden sm:block -z-10 bg-cover top-0 bg-no-repeat sm:absolute w-screen h-[36rem] sm:h-[48rem] dark:bg-[url('/images/blurry-gradient.png')]" />
-      <div className="light:hidden sm:hidden -z-10 bg-cover top-0 bg-no-repeat absolute w-screen h-[36rem] sm:h-[48rem] dark:bg-[url('/images/blurry-gradient-mobile.png')]" />
-      <div className="light:hidden hidden sm:block -z-10 bg-cover top-0 bg-no-repeat sm:absolute w-screen h-[36rem] sm:h-[48rem] dark:bg-[url('/images/Texture.png')]" />
+      <div className="light:hidden hidden sm:block fixed top-0 -z-10 bg-cover bg-no-repeat w-screen h-[36rem] sm:h-[48rem] dark:bg-[url('/images/blurry-gradient.png')]" />
+      <div className="light:hidden block sm:hidden fixed top-0 -z-10 bg-cover bg-no-repeat w-screen h-[36rem] sm:h-[48rem] dark:bg-[url('/images/blurry-gradient-mobile.png')]" />
+      <div className="light:hidden fixed top-0 -z-10 bg-cover bg-no-repeat w-screen h-[36rem] sm:h-[48rem] dark:bg-[url('/images/Texture.png')]" />
     </div>
   );
 }
