@@ -26,41 +26,80 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    // const body = {
+    //   content: "",
+    //   embeds: [
+    //     {
+    //       title: "New Form Submission",
+    //       description: "Please be careful opening links.",
+    //       color: null,
+    //       fields: [
+    //         {
+    //           name: "Name",
+    //           value: firstName
+    //         },
+    //         {
+    //           name: "Email",
+    //           value: email
+    //         },
+    //         {
+    //           name: "Discord Handle",
+    //           value: discordHandle
+    //         },
+    //         {
+    //           name: "Social Handle",
+    //           value: twitterHandle
+    //         },
+    //         {
+    //           name: "Subject",
+    //           value: subject
+    //         },
+    //         {
+    //           name: "Message",
+    //           value: message
+    //         }
+    //       ]
+    //     }
+    //   ]
+    // };
+
     const body = {
+      content: "",
       embeds: [
         {
           title: "New Form Submission",
-          description: "Please be careful opening links.",
+          description: "Please be careful opening links",
           color: null,
           fields: [
             {
               name: "Name",
-              value: firstName,
+              value: firstName
             },
             {
               name: "Email",
-              value: email,
+              value: email ? email : "-"
             },
             {
               name: "Discord Handle",
-              value: discordHandle,
+              value: discordHandle ? discordHandle : "-"
             },
             {
               name: "Social Handle",
-              value: twitterHandle,
+              value: twitterHandle ? twitterHandle : "-"
             },
             {
               name: "Subject",
-              value: subject,
+              value: subject
             },
             {
               name: "Message",
-              value: message,
-            },
-          ],
-        },
-      ],
-    };
+              value: message
+            }
+          ]
+        }
+      ]
+    }
+
     try {
       const response = await fetch("/api/inquiry", {
         method: "POST",
