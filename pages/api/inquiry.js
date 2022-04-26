@@ -16,7 +16,6 @@ async function createInquiry(req, res) {
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(body),
           });
-          console.log(response)
         if(response.status == 204){
             return res.status(200).json({success: true});
         } else {

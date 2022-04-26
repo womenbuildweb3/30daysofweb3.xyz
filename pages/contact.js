@@ -26,43 +26,6 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // const body = {
-    //   content: "",
-    //   embeds: [
-    //     {
-    //       title: "New Form Submission",
-    //       description: "Please be careful opening links.",
-    //       color: null,
-    //       fields: [
-    //         {
-    //           name: "Name",
-    //           value: firstName
-    //         },
-    //         {
-    //           name: "Email",
-    //           value: email
-    //         },
-    //         {
-    //           name: "Discord Handle",
-    //           value: discordHandle
-    //         },
-    //         {
-    //           name: "Social Handle",
-    //           value: twitterHandle
-    //         },
-    //         {
-    //           name: "Subject",
-    //           value: subject
-    //         },
-    //         {
-    //           name: "Message",
-    //           value: message
-    //         }
-    //       ]
-    //     }
-    //   ]
-    // };
-
     const body = {
       content: "",
       embeds: [
@@ -109,7 +72,6 @@ export default function Contact() {
       if (response.status !== 200) {
         alert("Oops! Something went wrong. Please refresh and try again.");
       } else {
-        // resetForm();
         console.log("form submitted successfully !!!");
         setSubmitted(true);
       }
