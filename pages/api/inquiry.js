@@ -16,7 +16,11 @@ async function createInquiry(req, res) {
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(body),
           });
-        return res.status(200).json({success: true});
+        if(response.status == 204){
+            return res.status(200).json({success: true});
+        } else {
+            res.status(500).json({ error: "Error creating question", success:false });
+        }
     } catch (error) {
         console.error("Request error", error);
         res.status(500).json({ error: "Error creating question", success:false });
