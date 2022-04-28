@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Layout from "../components/Layout";
 import Link from "next/link";
 import Head from "next/head";
 
@@ -20,29 +21,24 @@ export default function Blog({ myData }) {
   }, []);
 
   return (
-    <div className="relative">
-      <div className="mt-4 mx-4 sm:mx-16">
-        <Navbar preferedColorScheme={preferedColorScheme} />
-        <Head>
-          <title>Blog | Women Build Web3</title>
-          <meta
-            name="description"
-            content="Providing education, oppportunities, and funding to a new wave of web3 builders"
-          />
-          {preferedColorScheme === "light" && (
-            <link rel="icon" href="/favicon.ico" />
-          )}
-          {preferedColorScheme === "dark" && (
-            <link rel="icon" href="/favicon-white.ico" />
-          )}
-        </Head>
+    <Layout>
+      <Navbar preferedColorScheme={preferedColorScheme} />
+      <Head>
+        <title>Blog | Women Build Web3</title>
+        <meta
+          name="description"
+          content="Providing education, oppportunities, and funding to a new wave of web3 builders"
+        />
+        {preferedColorScheme === "light" && (
+          <link rel="icon" href="/favicon.ico" />
+        )}
+        {preferedColorScheme === "dark" && (
+          <link rel="icon" href="/favicon-white.ico" />
+        )}
+      </Head>
 
-        <Footer preferedColorScheme={preferedColorScheme} />
-      </div>
-      <div className="light:hidden hidden sm:block fixed top-0 -z-10 bg-cover bg-no-repeat w-screen h-screen dark:bg-[url('/images/blurry-gradient.png')]" />
-      <div className="light:hidden block sm:hidden fixed top-0 -z-10 bg-cover bg-no-repeat w-screen h-screen dark:bg-[url('/images/blurry-gradient-mobile.png')]" />
-      <div className="light:hidden fixed top-0 -z-10 bg-cover bg-no-repeat w-screen h-screen dark:bg-[url('/images/Texture.png')]" />
-    </div>
+      <Footer preferedColorScheme={preferedColorScheme} />
+    </Layout>
   );
 }
 // export async function getStaticProps() {
