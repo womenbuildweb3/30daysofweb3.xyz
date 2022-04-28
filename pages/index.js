@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Layout from '../components/Layout'
 import Link from "next/link";
 import Image from "next/image";
 
@@ -18,8 +19,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="relative">
-      <div className="pt-4 px-4 sm:px-16">
+    <Layout>
         <Head>
           <title>Women Build Web3</title>
           <meta
@@ -229,10 +229,6 @@ export default function Home() {
         </section>
 
         <Footer preferedColorScheme={preferedColorScheme} />
-      </div>
-      <div className="light:hidden hidden sm:block fixed top-0 -z-10 bg-cover bg-no-repeat w-screen h-screen dark:bg-[url('/images/blurry-gradient.png')]" />
-      <div className="light:hidden block sm:hidden fixed top-0 -z-10 bg-cover bg-no-repeat w-screen h-screen dark:bg-[url('/images/blurry-gradient-mobile.png')]" />
-      <div className="light:hidden fixed top-0 -z-10 bg-cover bg-no-repeat w-screen h-screen dark:bg-[url('/images/Texture.png')]" />
-    </div>
+    </Layout>
   );
 }
