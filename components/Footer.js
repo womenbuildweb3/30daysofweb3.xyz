@@ -31,7 +31,7 @@ export default function Footer({ preferedColorScheme }) {
               >
                 <path
                   d="M8 6H18V16M18 6L6 18L18 6Z"
-                  stroke={preferedColorScheme==="dark" ? "white" : "black"}
+                  stroke={preferedColorScheme === "dark" ? "white" : "black"}
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"

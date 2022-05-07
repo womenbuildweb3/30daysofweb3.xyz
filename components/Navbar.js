@@ -3,7 +3,7 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Navbar({preferedColorScheme}) {
+export default function Navbar({ preferedColorScheme }) {
   return (
     <Disclosure as="nav" className="">
       {({ open }) => (
@@ -53,13 +53,13 @@ export default function Navbar({preferedColorScheme}) {
                     </p>
                   </Link>
                   <a
-              className="cursor-pointer px-3 py-2 rounded-full text-xl"
-              target="_blank"
-              href="https://womenbuildweb3.hashnode.dev/"
-              rel="noopener noreferrer"
-            >
-              Blog
-            </a>
+                    className="cursor-pointer px-3 py-2 rounded-full text-xl"
+                    target="_blank"
+                    href="https://womenbuildweb3.hashnode.dev/"
+                    rel="noopener noreferrer"
+                  >
+                    Blog
+                  </a>
                 </div>
               </div>
               <div className="hidden md:block md:ml-6">
