@@ -52,12 +52,14 @@ export default function Navbar({preferedColorScheme}) {
                       30 Days of Web3
                     </p>
                   </Link>
-
-                  <Link href="/blog" passHref>
-                    <p className="cursor-pointer px-3 py-2 rounded-full text-xl">
-                      Blog
-                    </p>
-                  </Link>
+                  <a
+              className="cursor-pointer px-3 py-2 rounded-full text-xl"
+              target="_blank"
+              href="https://womenbuildweb3.hashnode.dev/"
+              rel="noopener noreferrer"
+            >
+              Blog
+            </a>
                 </div>
               </div>
               <div className="hidden md:block md:ml-6">
@@ -119,7 +121,9 @@ export default function Navbar({preferedColorScheme}) {
                 About
               </Disclosure.Button>
               <Disclosure.Button
-                href="/blog"
+                target="_blank"
+                href="https://womenbuildweb3.hashnode.dev/"
+                rel="noopener noreferrer"
                 as="a"
                 className="cursor-pointer active:bg-black px-3 py-2 rounded-md text-sm font-medium hover:bg-black hover:text-white"
               >

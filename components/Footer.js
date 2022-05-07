@@ -67,9 +67,14 @@ export default function Footer({ preferedColorScheme }) {
                 30 Days of Web3
               </div>
             </Link>
-            <Link href="/blog" passHref>
-              <div className="cursor-pointer max-w-[160px]">Blog</div>
-            </Link>
+            <a
+              className="max-w-[160px]"
+              target="_blank"
+              href="https://womenbuildweb3.hashnode.dev/"
+              rel="noopener noreferrer"
+            >
+              Blog
+            </a>
           </div>
 
           <div className="flex flex-col gap-4">
@@ -79,7 +84,7 @@ export default function Footer({ preferedColorScheme }) {
             </Link>
             <a
               className="max-w-[160px]"
-              arget="_blank"
+              target="_blank"
               href="https://twitter.com/womenbuildweb3"
               rel="noopener noreferrer"
             >
