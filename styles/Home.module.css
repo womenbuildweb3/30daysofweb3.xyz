@@ -1,4 +1,4 @@
-.homeHeroContainer{
+.homeHeroContainer {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -6,34 +6,34 @@
   padding-top: 280px;
 }
 
-.homeHeroTitle{
+.homeHeroTitle {
   font-size: 5rem;
-  font-variation-settings: 'wght' 800;
+  font-variation-settings: "wght" 800;
   line-height: 100%;
   color: #f6bf41;
 }
 
-.nav-bar{
+.nav-bar {
   position: absolute;
 }
 
-.contactButton{
+.contactButton {
   margin-top: 20px;
   font-size: 1.2rem;
-  background: rgba(255,255,255,0.3);
+  background: rgba(255, 255, 255, 0.3);
   color: #efefef;
   padding: 10px 40px;
   border-radius: 25px;
-  font-variation-settings: 'wght' 600;
+  font-variation-settings: "wght" 600;
 }
 
-.homeSection{
+.homeSection {
   margin: 150px 0;
   display: grid;
   color: #d06763;
 }
 
-.homeInfoContainer{
+.homeInfoContainer {
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -43,128 +43,129 @@
   font-size: 24px;
 }
 
-.homeSkillsList{
+.homeSkillsList {
   display: grid;
   gap: 10px;
 }
 
-.sponsorsContainer{
+.sponsorsContainer {
   display: flex;
   justify-content: space-around;
   margin-top: 15px;
 }
 
-.sponsor{
+.sponsor {
   width: 80px;
   height: 80px;
   border-radius: 50%;
   background: #e5e5e5;
 }
 
-.blogButton{
+.blogButton {
   border: 3px solid #d06763;
   border-radius: 12px;
   padding: 15px 60px;
 }
 
-.homeSkill{
+.homeSkill {
   padding: 20px 40px;
   text-align: center;
-  font-variation-settings: 'wght' 600;
+  font-variation-settings: "wght" 600;
   font-size: 1.2rem;
 }
 
-.homeSVGContainer{
+.homeSVGContainer {
   background-color: #d06763;
   height: 800px;
   width: 100vw;
 }
 
-.networkSVG, .homeSVG{
+.networkSVG,
+.homeSVG {
   display: none;
 }
 
-.WBW3Logo{
+.WBW3Logo {
   display: none !important;
 }
 
-.goalsContainer{
+.goalsContainer {
   text-align: center;
 }
 
-.goalContainer{
+.goalContainer {
   margin-bottom: 5rem;
 }
 
-.goalsNumber{
+.goalsNumber {
   font-size: 4rem;
 }
 
-.goalsName{
+.goalsName {
   color: #4a4a4a;
   font-size: 3rem;
 }
 
-.homeCallout{
+.homeCallout {
   font-size: 42px;
   margin: 0 auto;
-  font-variation-settings: 'wght' 400;
+  font-variation-settings: "wght" 400;
 }
 
-@media screen and (min-width: 700px){
-  .homeSkillsList{
+@media screen and (min-width: 700px) {
+  .homeSkillsList {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .homeCallout{
+  .homeCallout {
     font-size: 62px;
     width: 80%;
     max-width: 800px;
   }
 
-  .sponsor{
+  .sponsor {
     width: 120px;
     height: 120px;
   }
 }
 
-@media screen and (min-width: 1050px){
-  .homeSkillsList{
+@media screen and (min-width: 1050px) {
+  .homeSkillsList {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .yellowCircle{
+  .yellowCircle {
     display: flex;
     justify-content: center;
     width: 260px;
     height: 260px;
     border-radius: 50%;
-    box-shadow: 10px 15px 8px 2px rgba(0,0,0,0.25);
+    box-shadow: 10px 15px 8px 2px rgba(0, 0, 0, 0.25);
     left: 10vw;
     top: 7vw;
     background-color: #f6bf41;
     position: absolute;
   }
 
-  .WBW3Logo{
+  .WBW3Logo {
     margin-top: 10px !important;
     display: block !important;
   }
 
-  .homeSVG{
+  .homeSVG {
     max-width: 850px;
     width: 60vw;
     position: absolute;
     display: block;
   }
 
-  .homeSVGContainer{
+  .homeSVGContainer {
     position: relative;
     height: 650px;
     overflow: hidden;
   }
 
-  .networkSVG{
+  .networkSVG {
     display: block;
     max-width: 850px;
     width: 60vw;
@@ -173,18 +174,18 @@
     right: 0;
   }
 
-  .homeHeroContainer{
+  .homeHeroContainer {
     align-items: flex-end;
     padding-top: 300px;
     padding-right: 60px;
   }
 
-  .goalsContainer{
+  .goalsContainer {
     display: grid;
     grid-template-columns: auto auto;
   }
 
-  .goalContainer{
+  .goalContainer {
     margin-bottom: 0;
   }
 }
