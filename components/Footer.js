@@ -4,13 +4,11 @@ import Link from "next/link";
 export default function Footer({ preferedColorScheme }) {
   return (
     <footer className="py-32">
-      <hr className="mb-16 border-t border-black dark:border-white border-solid" />
+      <hr className="mb-12 sm:mb-16 border-t border-black dark:border-white border-solid" />
       <div className="grid md:grid-cols-2">
-        <div className="max-w-sm">
-          <div className="mb-4 text-2xl sm:text-3xl font-poppins-bold">
-            Women Build Web3
-          </div>
-          <p className="mb-4 leading-normal text-base sm:text-xl">
+        <div className="mb-8 max-w-sm">
+          <h5 className="mb-2 text-2xl font-poppins-bold">Women Build Web3</h5>
+          <p className="mb-6 text-base leading-relaxed">
             Subscribe to our newsletter to get our latest news, blog posts,
             events, and more.
           </p>
@@ -43,15 +41,19 @@ export default function Footer({ preferedColorScheme }) {
 
         <div className="grid sm:grid-cols-3">
           <div className="flex mb-8 sm:mb-0 flex-col gap-4">
-            <div className="font-poppins-bold">Explore</div>
-            <Link href="/" passHref>
-              <div className="cursor-pointer max-w-[160px]">Home</div>
+            <h6 className="font-poppins-bold">Explore</h6>
+            <Link href="/">
+              <a className="max-w-[160px] hover:underline hover:decoration-wavy">
+                Home
+              </a>
             </Link>
-            <Link href="/about" passHref>
-              <div className="cursor-pointer max-w-[160px]">About</div>
+            <Link href="/about">
+              <a className="max-w-[160px] hover:underline hover:decoration-wavy">
+                About
+              </a>
             </Link>
             <a
-              className="max-w-[160px]"
+              className="max-w-[160px] hover:underline hover:decoration-wavy"
               target="_blank"
               href="https://womenbuildweb3.hashnode.dev/whitepaper"
               rel="noopener noreferrer"
@@ -61,14 +63,14 @@ export default function Footer({ preferedColorScheme }) {
           </div>
 
           <div className="flex mb-8 sm:mb-0 flex-col gap-4">
-            <div className="font-poppins-bold">Learn {"&"} Build</div>
-            <Link href="/" passHref>
-              <div className="cursor-pointer max-w-[160px]">
+            <h6 className="font-poppins-bold">Learn {"&"} Build</h6>
+            <Link href="/#30dw3">
+              <a className="max-w-[160px] hover:underline hover:decoration-wavy">
                 30 Days of Web3
-              </div>
+              </a>
             </Link>
             <a
-              className="max-w-[160px]"
+              className="max-w-[160px] hover:underline hover:decoration-wavy"
               target="_blank"
               href="https://womenbuildweb3.hashnode.dev/"
               rel="noopener noreferrer"
@@ -76,14 +78,15 @@ export default function Footer({ preferedColorScheme }) {
               Blog
             </a>
           </div>
-
           <div className="flex flex-col gap-4">
-            <div className="font-poppins-bold">Get in Touch</div>
-            <Link href="/contact" passHref>
-              <div className="cursor-pointer max-w-[160px]"> Contact </div>
+            <h6 className="font-poppins-bold">Get in Touch</h6>
+            <Link href="/contact">
+              <a className="max-w-[160px] hover:underline hover:decoration-wavy">
+                Contact
+              </a>
             </Link>
             <a
-              className="max-w-[160px]"
+              className="max-w-[160px] hover:underline hover:decoration-wavy"
               target="_blank"
               href="https://twitter.com/womenbuildweb3"
               rel="noopener noreferrer"
@@ -91,7 +94,7 @@ export default function Footer({ preferedColorScheme }) {
               Twitter
             </a>
             <a
-              className="max-w-[160px]"
+              className="max-w-[160px] hover:underline hover:decoration-wavy"
               target="_blank"
               href="https://instagram.com/womenbuildweb3"
               rel="noopener noreferrer"

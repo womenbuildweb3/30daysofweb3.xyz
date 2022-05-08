@@ -44,17 +44,17 @@ export default function Navbar({ preferedColorScheme }) {
               )}
               <div className="hidden md:flex items-center">
                 <Link href="/about">
-                  <a className="cursor-pointer px-3 py-2 rounded-full text-xl hover:underline hover:decoration-wavy">
+                  <a className="px-3 py-2 rounded-full text-xl hover:underline hover:decoration-wavy">
                     About
                   </a>
                 </Link>
                 <Link href="/#30dw3">
-                  <a className="cursor-pointer px-3 py-2 rounded-full text-xl hover:underline hover:decoration-wavy">
+                  <a className="px-3 py-2 rounded-full text-xl hover:underline hover:decoration-wavy">
                     30 Days of Web3
                   </a>
                 </Link>
                 <a
-                  className="cursor-pointer px-3 py-2 rounded-full text-xl hover:underline hover:decoration-wavy"
+                  className="px-3 py-2 rounded-full text-xl hover:underline hover:decoration-wavy"
                   target="_blank"
                   href="https://womenbuildweb3.hashnode.dev/"
                   rel="noopener noreferrer"
@@ -64,12 +64,12 @@ export default function Navbar({ preferedColorScheme }) {
               </div>
               <div className="hidden md:flex items-center">
                 <Link href="/contact">
-                  <a className="cursor-pointer px-3 py-2 mr-2 rounded-full text-xl font-medium hover:underline hover:decoration-wavy">
+                  <a className="px-3 py-2 mr-2 rounded-full text-xl font-medium hover:underline hover:decoration-wavy">
                     Contact
                   </a>
                 </Link>
                 <a
-                  className="cursor-pointer dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-xl px-4 py-2"
+                  className="dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-xl px-4 py-2"
                   target="_blank"
                   href="https://discord.gg/z63rfurXMD"
                   rel="noopener noreferrer"
@@ -79,14 +79,13 @@ export default function Navbar({ preferedColorScheme }) {
               </div>
               <div className="flex items-center gap-2 md:hidden">
                 <a
-                  className="px-4 h-8 grid place-items-center cursor-pointer dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full"
+                  className="px-4 h-8 grid place-items-center dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full"
                   target="_blank"
                   href="https://discord.gg/z63rfurXMD"
                   rel="noopener noreferrer"
                 >
                   Join us
                 </a>
-
                 <div className="-mr-2 flex">
                   {/* Mobile menu button */}
                   <Disclosure.Button className="link inline-flex items-center justify-center p-2 rounded-md hover:text-white hover:bg-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
@@ -112,14 +111,14 @@ export default function Navbar({ preferedColorScheme }) {
               <Disclosure.Button
                 as="a"
                 href="/"
-                className="cursor-pointer active:bg-black px-3 py-2 rounded-md text-sm font-medium hover:bg-black hover:text-white"
+                className="active:bg-black px-3 py-2 rounded-md text-sm font-medium hover:bg-black hover:text-white"
               >
                 Home
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 href="/about"
-                className="cursor-pointer active:bg-black px-3 py-2 rounded-md text-sm font-medium hover:bg-black hover:text-white"
+                className="active:bg-black px-3 py-2 rounded-md text-sm font-medium hover:bg-black hover:text-white"
               >
                 About
               </Disclosure.Button>
@@ -128,14 +127,14 @@ export default function Navbar({ preferedColorScheme }) {
                 href="https://womenbuildweb3.hashnode.dev/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="cursor-pointer active:bg-black px-3 py-2 rounded-md text-sm font-medium hover:bg-black hover:text-white"
+                className="active:bg-black px-3 py-2 rounded-md text-sm font-medium hover:bg-black hover:text-white"
               >
                 Blog
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 href="/contact"
-                className="cursor-pointer active:bg-black px-3 py-2 rounded-md text-sm font-medium hover:bg-black hover:text-white"
+                className="active:bg-black px-3 py-2 rounded-md text-sm font-medium hover:bg-black hover:text-white"
               >
                 Contact
               </Disclosure.Button>
