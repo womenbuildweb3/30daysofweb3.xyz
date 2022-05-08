@@ -10,9 +10,9 @@ export default function Navbar({ preferedColorScheme }) {
         <>
           <div className="mx-auto">
             <div className="flex items-center justify-between h-16 ">
-              <div className="sm:flex sm:items-center sm:gap-4">
-                {preferedColorScheme === "light" && (
-                  <Link href="/" passHref>
+              {preferedColorScheme === "light" && (
+                <Link href="/">
+                  <a className="flex items-center sm:gap-4">
                     <Image
                       className="cursor-pointer"
                       alt="Women Build Web3 Logo"
@@ -20,10 +20,15 @@ export default function Navbar({ preferedColorScheme }) {
                       height="40px"
                       width="40px"
                     />
-                  </Link>
-                )}
-                {preferedColorScheme === "dark" && (
-                  <Link href="/" passHref>
+                    <span className="hidden sm:block cursor-pointer font-poppins-bold text-xl">
+                      Women Build Web3
+                    </span>
+                  </a>
+                </Link>
+              )}
+              {preferedColorScheme === "dark" && (
+                <Link href="/">
+                  <a className="flex items-center sm:gap-4">
                     <Image
                       className="cursor-pointer"
                       alt="Women Build Web3 Logo"
@@ -31,58 +36,56 @@ export default function Navbar({ preferedColorScheme }) {
                       height="40px"
                       width="40px"
                     />
-                  </Link>
-                )}
-                <Link className="hidden sm:block" href="/" passHref>
-                  <div className="hidden sm:block cursor-pointer font-poppins-bold text-xl">
-                    Women Build Web3
-                  </div>
-                </Link>
-              </div>
-
-              <div className="hidden md:block md:ml-6">
-                <div className="flex">
-                  <Link href="/about" passHref>
-                    <p className="cursor-pointer px-3 py-2 rounded-full text-xl">
-                      About
-                    </p>
-                  </Link>
-                  <Link href="/" passHref>
-                    <p className="cursor-pointer px-3 py-2 rounded-full text-xl">
-                      30 Days of Web3
-                    </p>
-                  </Link>
-                  <a
-                    className="cursor-pointer px-3 py-2 rounded-full text-xl"
-                    target="_blank"
-                    href="https://womenbuildweb3.hashnode.dev/"
-                    rel="noopener noreferrer"
-                  >
-                    Blog
-                  </a>
-                </div>
-              </div>
-              <div className="hidden md:block md:ml-6">
-                <div className="flex">
-                  <Link href="/contact" passHref>
-                    <p className="cursor-pointer px-3 py-2 rounded-full text-xl font-medium">
-                      Contact
-                    </p>
-                  </Link>
-
-                  <Link href="/contact" passHref>
-                    <a className="cursor-pointer dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-xl px-3 py-2">
-                      Join us
-                    </a>
-                  </Link>
-                </div>
-              </div>
-              <div className="flex items-center gap-4 md:hidden">
-                <Link href="/contact" passHref>
-                  <a className="px-4 h-8 grid place-items-center cursor-pointer dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full">
-                    Join us
+                    <span className="hidden sm:block cursor-pointer font-poppins-bold text-xl">
+                      Women Build Web3
+                    </span>
                   </a>
                 </Link>
+              )}
+              <div className="hidden md:flex items-center">
+                <Link href="/about">
+                  <a className="cursor-pointer px-3 py-2 rounded-full text-xl hover:underline hover:decoration-wavy">
+                    About
+                  </a>
+                </Link>
+                <Link href="/#30dw3">
+                  <a className="cursor-pointer px-3 py-2 rounded-full text-xl hover:underline hover:decoration-wavy">
+                    30 Days of Web3
+                  </a>
+                </Link>
+                <a
+                  className="cursor-pointer px-3 py-2 rounded-full text-xl hover:underline hover:decoration-wavy"
+                  target="_blank"
+                  href="https://womenbuildweb3.hashnode.dev/"
+                  rel="noopener noreferrer"
+                >
+                  Blog
+                </a>
+              </div>
+              <div className="hidden md:flex items-center">
+                <Link href="/contact">
+                  <a className="cursor-pointer px-3 py-2 mr-2 rounded-full text-xl font-medium hover:underline hover:decoration-wavy">
+                    Contact
+                  </a>
+                </Link>
+                <a
+                  className="cursor-pointer dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-xl px-4 py-2"
+                  target="_blank"
+                  href="https://discord.gg/z63rfurXMD"
+                  rel="noopener noreferrer"
+                >
+                  Join us
+                </a>
+              </div>
+              <div className="flex items-center gap-2 md:hidden">
+                <a
+                  className="px-4 h-8 grid place-items-center cursor-pointer dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full"
+                  target="_blank"
+                  href="https://discord.gg/z63rfurXMD"
+                  rel="noopener noreferrer"
+                >
+                  Join us
+                </a>
 
                 <div className="-mr-2 flex">
                   {/* Mobile menu button */}
@@ -121,10 +124,10 @@ export default function Navbar({ preferedColorScheme }) {
                 About
               </Disclosure.Button>
               <Disclosure.Button
-                target="_blank"
-                href="https://womenbuildweb3.hashnode.dev/"
-                rel="noopener noreferrer"
                 as="a"
+                href="https://womenbuildweb3.hashnode.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="cursor-pointer active:bg-black px-3 py-2 rounded-md text-sm font-medium hover:bg-black hover:text-white"
               >
                 Blog
