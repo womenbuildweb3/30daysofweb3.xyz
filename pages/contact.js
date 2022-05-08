@@ -72,7 +72,7 @@ export default function Contact() {
       if (response.status !== 200) {
         alert("Oops! Something went wrong. Please refresh and try again.");
       } else {
-        console.log("form submitted successfully !!!");
+        // console.log("form submitted successfully !!!");
         setSubmitted(true);
       }
       // check response, if success is false, dont take them to success page
@@ -100,7 +100,7 @@ export default function Contact() {
       </Head>
       <Navbar preferedColorScheme={preferedColorScheme} />
 
-      <main className="md:grid md:grid-cols-2 md:gap-8 md:mx-auto md:max-w-4xl">
+      <main className="md:grid md:grid-cols-2 md:gap-12 md:mx-auto md:max-w-5xl">
         <header className="mb-8">
           <h1 className="mt-8 mb-4 font-poppins-bold text-3xl sm:text-5xl">
             Get in touch
@@ -209,7 +209,7 @@ export default function Contact() {
             <div className="flex justify-end">
               <button
                 type="submit"
-                className="cursor-pointer dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-xs sm:text-xl px-4 py-3"
+                className="cursor-pointer dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-base md:text-lg lg:text-xl px-4 py-2"
               >
                 Submit
               </button>

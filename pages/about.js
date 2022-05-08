@@ -35,14 +35,14 @@ export default function About() {
       </Head>
       <Navbar preferedColorScheme={preferedColorScheme} />
       <header className="my-40 sm:my-44 max-w-3xl">
-        <h1 className="font-poppins-bold text-3xl sm:text-6xl sm:mb-2">
+        <h1 className="font-poppins-bold text-3xl sm:text-5xl lg:text-6xl leading-tight mb-4">
           Unlocking the next wave of web3 builders
         </h1>
-        <p className="mb-4 sm:text-3xl sm:mb-8">
+        <p className="text-lg md:text-xl lg:text-2xl xl:text-3xl leading-normal xl:leading-normal mb-6 md:mb-8">
           We’re onboarding and retaining talented, diverse developers in web3.
         </p>
         <Link href="/contact" passHref>
-          <a className="cursor-pointer dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-xs sm:text-2xl px-4 py-3">
+          <a className="dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-base md:text-lg lg:text-xl px-4 py-2">
             Sponsor us
           </a>
         </Link>
@@ -50,7 +50,7 @@ export default function About() {
 
       <section className="pt-8 mb-44">
         <div className="sm:w-1/2">
-          <p className="mb-16 sm:text-xl">
+          <p className="mb-16 text-base md:text-lg lg:text-xl leading-relaxed md:leading-relaxed lg:leading-relaxed">
             Our collective is composed of software engineers, designers, content
             creators, technical writers, managers, and founders with
             wide-ranging experiences in tech. We span across 8 countries, 16
@@ -61,7 +61,7 @@ export default function About() {
         </div>
         <div className="flex justify-end">
           <div className="sm:w-1/2">
-            <p className="mb-8 sm:text-xl">
+            <p className="mb-8 text-base md:text-lg lg:text-xl leading-relaxed md:leading-relaxed lg:leading-relaxed">
               We aim to support underrepresented women and non-binary developers
               in web3 with education, opportunities, and funding. We want at
               least 70% of our initial cohort to transition into web3 full-time
@@ -72,7 +72,7 @@ export default function About() {
               target="_blank"
               href="https://womenbuildweb3.hashnode.dev/whitepaper"
               rel="noopener noreferrer"
-              className="cursor-pointer dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-xs sm:text-xl px-4 py-3"
+              className="dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-base md:text-lg lg:text-xl px-4 py-2"
             >
               View our whitepaper
             </a>
@@ -81,58 +81,67 @@ export default function About() {
       </section>
 
       <section className="mb-44 mx-auto">
-        <h2 className="mb-4 sm:text-5xl text-2xl text-center font-poppins-bold">
+        <h2 className="mb-4 text-2xl sm:text-3xl md:text-4xl xl:text-5xl text-center font-poppins-bold">
           Our Values
         </h2>
-        <p className="w-4/5 mx-auto mb-8 text-center sm:max-w-2xl sm:text-xl">
+        <p className="w-full sm:w-4/5 mx-auto mb-8 md:mb-12 text-center sm:max-w-2xl text-base md:text-lg lg:text-xl leading-relaxed md:leading-relaxed lg:leading-relaxed">
           We are actively shaping our community to be a space where women and
           non-binary developers can thrive and innovate in.
         </p>
-
-        <div className="sm:text-xl sm:grid sm:grid-cols-3 sm:gap-4">
-          <div className="mb-8 sm:max-w-xs">
-            <div className="font-poppins-bold">
-              &#127760; Diversity & Inclusion
+        <div className="md:grid md:grid-cols-3 gap-4">
+          <div className="mb-8 flex justify-center">
+            <div className="max-w-sm">
+              <h3 className="mb-2 md:mb-4 text-xl md:text-2xl font-poppins-bold">
+                &#127760; Diversity & Inclusion
+              </h3>
+              <p className="text-base md:text-lg lg:text-xl leading-relaxed md:leading-relaxed lg:leading-relaxed">
+                We are inclusive, intersectional, and accessible.
+              </p>
             </div>
-            <p>We are inclusive, intersectional, and accessible.</p>
           </div>
-          <div className="mb-8 sm:max-w-xs">
-            <div className="font-poppins-bold">
-              &#129309; Curiosity & Collaboration
+          <div className="mb-8 flex justify-center">
+            <div className="max-w-sm">
+              <h3 className="mb-2 md:mb-4 text-xl md:text-2xl font-poppins-bold">
+                &#129309; Curiosity & Collaboration
+              </h3>
+              <p className="text-base md:text-lg lg:text-xl leading-relaxed md:leading-relaxed lg:leading-relaxed">
+                We learn from one another, teach each other, build together, and
+                lift everyone up.
+              </p>
             </div>
-            <p>
-              We learn from one another, teach each other, build together, and
-              lift everyone up.
-            </p>
           </div>
-          <div className="mb-8 sm:max-w-xs">
-            <div className="font-poppins-bold">
-              &#128205; Courage & Leadership
+          <div className="mb-8 flex justify-center">
+            <div className="max-w-sm">
+              <h3 className="mb-2 md:mb-4 text-xl md:text-2xl font-poppins-bold">
+                &#128205; Courage & Leadership
+              </h3>
+              <p className="text-base md:text-lg lg:text-xl leading-relaxed md:leading-relaxed lg:leading-relaxed">
+                We are boldly paving paths and setting examples for others.
+              </p>
             </div>
-            <p>We are boldly paving paths and setting examples for others.</p>
           </div>
         </div>
       </section>
 
-      <section className="mb-44 flex flex-col flex-center w-4/5 mx-auto">
-        <h2 className="mb-4 text-2xl text-center font-poppins-bold">
+      <section className="flex flex-col flex-center w-4/5 mx-auto">
+        <h2 className="mb-4 text-2xl sm:text-3xl md:text-4xl xl:text-5xl text-center font-poppins-bold">
           Our Partners
         </h2>
-        <p className="mb-8 text-center sm:text-lg">
+        <p className="w-full sm:w-4/5 mx-auto mb-4 md:mb-6 text-center sm:max-w-2xl text-base md:text-lg lg:text-xl leading-relaxed md:leading-relaxed lg:leading-relaxed">
           We are working with web3 organizations to support our members and
           initiatives. Together, we will close gaps in diversity, equity, and
           inclusion in web3.
         </p>
 
         <Link href="/contact" passHref>
-          <a className="mx-auto cursor-pointer dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-xs sm:text-lg px-4 py-3">
+          <a className="mx-auto dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-base md:text-lg lg:text-xl px-4 py-2">
             Sponsor us
           </a>
         </Link>
 
         {preferedColorScheme === "light" && (
-          <div className="mt-8 flex flex-wrap gap-4 justify-center">
-            <div className="relative w-32 h-8 sm:w-60 sm:h-24">
+          <div className="mt-8 flex flex-wrap gap-8 justify-center">
+            <div className="relative w-60 h-24">
               <Image
                 alt="Developer Dao Logo"
                 src="/logos/D_D-Logo.png"
@@ -141,7 +150,7 @@ export default function About() {
               />
             </div>
 
-            <div className="relative w-32 h-8 sm:w-60 sm:h-24">
+            <div className="relative w-60 h-24">
               <Image
                 alt="Filecoin Logo"
                 src="/logos/Filecoin-Logo.png"
@@ -150,16 +159,7 @@ export default function About() {
               />
             </div>
 
-            <div className="relative w-32 h-8 sm:w-60 sm:h-24">
-              <Image
-                alt="Livepeer Logo"
-                src="/logos/Livepeer-Logo.png"
-                objectFit="contain"
-                layout="fill"
-              />
-            </div>
-
-            <div className="relative w-32 h-8 sm:w-60 sm:h-24">
+            <div className="relative w-60 h-24">
               <Image
                 alt="The Graph Logo"
                 src="/logos/The-Graph-Logo.png"
@@ -171,8 +171,8 @@ export default function About() {
         )}
 
         {preferedColorScheme === "dark" && (
-          <div className="mt-8 flex flex-wrap gap-4 justify-center">
-            <div className="relative w-32 h-8 sm:w-60 sm:h-24">
+          <div className="mt-8 flex flex-wrap gap-8 justify-center">
+            <div className="relative w-60 h-24">
               <Image
                 alt="Developer Dao Logo"
                 src="/logos/D_D-logo-white.png"
@@ -181,7 +181,7 @@ export default function About() {
               />
             </div>
 
-            <div className="relative w-32 h-8 sm:w-60 sm:h-24">
+            <div className="relative w-60 h-24">
               <Image
                 alt="Filecoin Logo"
                 src="/logos/Filecoin-logo-white.png"
@@ -190,16 +190,7 @@ export default function About() {
               />
             </div>
 
-            <div className="relative w-32 h-8 sm:w-60 sm:h-24">
-              <Image
-                alt="Livepeer Logo"
-                src="/logos/Livepeer-logo-white.png"
-                objectFit="contain"
-                layout="fill"
-              />
-            </div>
-
-            <div className="relative w-32 h-8 sm:w-60 sm:h-24">
+            <div className="relative w-60 h-24">
               <Image
                 alt="The Graph Logo"
                 src="/logos/The-Graph-logo-white.png"

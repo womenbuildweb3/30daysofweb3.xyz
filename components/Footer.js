@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer({ preferedColorScheme }) {
   return (
-    <footer className="py-32">
+    <footer className="pt-32 pb-16">
       <hr className="mb-12 sm:mb-16 border-t border-black dark:border-white border-solid" />
       <div className="grid md:grid-cols-2">
         <div className="mb-8 max-w-sm">

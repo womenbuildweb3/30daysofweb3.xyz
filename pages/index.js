@@ -3,8 +3,6 @@ import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Layout from "../components/Layout";
-import Link from "next/link";
-import Image from "next/image";
 
 export default function Home() {
   const [preferedColorScheme, setPreferedColorScheme] = useState("light");
@@ -53,12 +51,12 @@ export default function Home() {
         <div className="flex justify-start md:justify-end">
           <div className="w-full sm:w-8/12 md:w-1/2 flex">
             <div className="block max-w-xl">
-              <p className="text-base md:text-xl lg:text-2xl xl:text-3xl leading-normal xl:leading-normal mb-6 md:mb-8">
+              <p className="text-lg md:text-xl lg:text-2xl xl:text-3xl leading-normal xl:leading-normal mb-6 md:mb-8">
                 Unlocking the next wave of web3 builders through education,
                 opportunities, and funding.
               </p>
               <a
-                className="cursor-pointer dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-base md:text-lg lg:text-xl px-4 py-2"
+                className="dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-base md:text-lg lg:text-xl px-4 py-2"
                 target="_blank"
                 href="https://discord.gg/z63rfurXMD"
                 rel="noopener noreferrer"
@@ -80,7 +78,7 @@ export default function Home() {
             with a network of peers.
           </p>
           <a
-            className="cursor-pointer dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-base md:text-lg lg:text-xl px-4 py-2"
+            className="dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-base md:text-lg lg:text-xl px-4 py-2"
             target="_blank"
             href="https://discord.gg/z63rfurXMD"
             rel="noopener noreferrer"
@@ -90,11 +88,11 @@ export default function Home() {
         </div>
 
         <div>
-          <h2 className="mt-8 sm:mt-0 text-xl md:text-2xl font-poppins-semi-bold">
+          <h2 className="mt-8 sm:mt-0 text-xl md:text-2xl font-poppins-bold">
             Our Core Intiatives
           </h2>
           <hr className="my-8 border-t border-black dark:border-white border-solid" />
-          <h3 className="mb-4 text-xl md:text-2xl font-poppins-semi-bold">
+          <h3 className="mb-4 text-xl md:text-2xl font-poppins-bold">
             &#128218; Education
           </h3>
           <p className="text-base md:text-lg lg:text-xl leading-relaxed md:leading-relaxed lg:leading-relaxed">
@@ -102,7 +100,7 @@ export default function Home() {
             and blockchain technology
           </p>
           <hr className="my-8 border-t border-black dark:border-white border-solid" />
-          <h3 className="mb-4 text-xl md:text-2xl font-poppins-semi-bold">
+          <h3 className="mb-4 text-xl md:text-2xl font-poppins-bold">
             &#128736; Opportunities
           </h3>
           <p className="text-base md:text-lg lg:text-xl leading-relaxed md:leading-relaxed lg:leading-relaxed">
@@ -111,7 +109,7 @@ export default function Home() {
             ecosystem partners
           </p>
           <hr className="my-8 border-t border-black dark:border-white border-solid" />
-          <h3 className="mb-4 text-xl md:text-2xl font-poppins-semi-bold">
+          <h3 className="mb-4 text-xl md:text-2xl font-poppins-bold">
             &#127793; Funding
           </h3>
           <p className="text-base md:text-lg lg:text-xl leading-relaxed md:leading-relaxed lg:leading-relaxed">
@@ -136,7 +134,7 @@ export default function Home() {
             </li>
             <div className="h-10 w-20 border-l border-black dark:border-white border-dashed" />
             <li className="m-3 text-base xl:text-lg">
-              Day 22: Integrating Livepeer
+              Day 22: Hosting on Radicle
             </li>
             <div className="h-8 w-20 border-l border-black dark:border-white border-dashed" />
             <li className="m-3 text-base xl:text-lg">Day 30: Demo Day</li>
@@ -154,11 +152,14 @@ export default function Home() {
             decentralized apps and learned to use essential web3 tools,
             protocols, and frameworks.
           </p>
-          <Link href="/" passHref>
-            <a className="cursor-pointer dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-base md:text-lg lg:text-xl px-4 py-2">
-              Coming Soon
-            </a>
-          </Link>
+          <a
+            className="dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-base md:text-lg lg:text-xl px-4 py-2"
+            target="_blank"
+            href="https://discord.gg/z63rfurXMD"
+            rel="noopener noreferrer"
+          >
+            Coming Soon
+          </a>
         </div>
       </section>
       <Footer preferedColorScheme={preferedColorScheme} />
