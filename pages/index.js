@@ -36,103 +36,117 @@ export default function Home() {
 
       <Navbar preferedColorScheme={preferedColorScheme} />
 
-      <header className="mt-24 min-w-[300px] sm:mt-8 mb-44 grid gap-4 sm:gap-8">
-        <div className="grid font-poppins-bold text-3xl sm:text-6xl leading-tight">
-          <div>1 DAO</div>
-          <div>10 Hackathons</div>
-          <div>100 Projects</div>
-          <div>1000 Developers</div>
-        </div>
-        <div className="flex justify-end">
-          <div className="block max-w-xl">
-            <p className="leading-normal text-base sm:text-3xl mb-8">
-              Unlocking the next wave of web3 builders through education,
-              opportunities, and funding.
-            </p>
-            <Link href="/contact" passHref>
-              <a className="cursor-pointer dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-xs sm:text-2xl px-4 py-3">
-                Join us
-              </a>
-            </Link>
+      <section className="mt-24 sm:mt-12 mb-40">
+        <div className="flex mb-4">
+          <div className="w-full md:w-1/2">
+            <h1 className="font-poppins-bold text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight">
+              1 DAO
+              <br />
+              10 Hackathons
+              <br />
+              100 Projects
+              <br />
+              1000 Developers
+            </h1>
           </div>
         </div>
-      </header>
+        <div className="flex justify-start md:justify-end">
+          <div className="w-full sm:w-8/12 md:w-1/2 flex">
+            <div className="block max-w-xl">
+              <p className="text-base md:text-xl lg:text-2xl xl:text-3xl leading-normal xl:leading-normal mb-6 md:mb-8">
+                Unlocking the next wave of web3 builders through education,
+                opportunities, and funding.
+              </p>
+              <a
+                className="cursor-pointer dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-base md:text-lg lg:text-xl px-4 py-2"
+                target="_blank"
+                href="https://discord.gg/z63rfurXMD"
+                rel="noopener noreferrer"
+              >
+                Join us
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <section className="mb-44 grid sm:grid-cols-2 gap-8">
+      <section className="mb-44 grid md:grid-cols-2 gap-16">
         <div>
-          <p className="leading-normal mb-8 text-base sm:text-2xl">
+          <p className="text-base md:text-lg lg:text-xl leading-relaxed md:leading-relaxed lg:leading-relaxed mb-6 md:mb-8">
             <strong className="font-poppins-semi-bold">Women Build Web3</strong>{" "}
             is a global collective of women and non-binary developers learning
             and building in web3. We help developers unlock their potential by
             providing education, opportunities, and funding and connecting them
             with a network of peers.
           </p>
-          <Link href="/contact" passHref>
-            <a className="cursor-pointer dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-xs sm:text-lg px-4 py-3">
-              Join us
-            </a>
-          </Link>
+          <a
+            className="cursor-pointer dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-base md:text-lg lg:text-xl px-4 py-2"
+            target="_blank"
+            href="https://discord.gg/z63rfurXMD"
+            rel="noopener noreferrer"
+          >
+            Join us
+          </a>
         </div>
 
         <div>
-          <h3 className="mt-8 sm:mt-0 text-lg sm:text-3xl font-poppins-semi-bold">
+          <h2 className="mt-8 sm:mt-0 text-xl md:text-2xl font-poppins-semi-bold">
             Our Core Intiatives
-          </h3>
+          </h2>
           <hr className="my-8 border-t border-black dark:border-white border-solid" />
-          <h3 className="mb-4 text-xl sm:text-3xl font-poppins-semi-bold">
+          <h3 className="mb-4 text-xl md:text-2xl font-poppins-semi-bold">
             &#128218; Education
           </h3>
-          <p className="text-base sm:text-2xl">
+          <p className="text-base md:text-lg lg:text-xl leading-relaxed md:leading-relaxed lg:leading-relaxed">
             Education, mentorship, and resources focused on software development
             and blockchain technology
           </p>
           <hr className="my-8 border-t border-black dark:border-white border-solid" />
-          <h3 className="mb-4 text-xl sm:text-3xl font-poppins-semi-bold">
+          <h3 className="mb-4 text-xl md:text-2xl font-poppins-semi-bold">
             &#128736; Opportunities
           </h3>
-          <p className="text-base sm:text-2xl">
+          <p className="text-base md:text-lg lg:text-xl leading-relaxed md:leading-relaxed lg:leading-relaxed">
             Structured opportunities with predictable outcomes and end-to-end
             support from onboarding to job placement in collaboration with web3
             ecosystem partners
           </p>
           <hr className="my-8 border-t border-black dark:border-white border-solid" />
-          <h3 className="mb-4 text-xl sm:text-3xl font-poppins-semi-bold">
+          <h3 className="mb-4 text-xl md:text-2xl font-poppins-semi-bold">
             &#127793; Funding
           </h3>
-          <p className="text-base sm:text-2xl">
+          <p className="text-base md:text-lg lg:text-xl leading-relaxed md:leading-relaxed lg:leading-relaxed">
             Funding for active participation, contributions, and projects
           </p>
         </div>
       </section>
 
-      <section className="max-w-5xl mb-44 flex flex-col-reverse sm:flex-row m-auto gap-8">
-        <div className="mx-auto sm:mx-0 sm:w-1/2">
+      <section className="max-w-5xl flex flex-col-reverse items-center md:flex-row m-auto gap-8">
+        <div className="mx-auto md:mx-0 md:w-1/2">
           <ol className="list-disc last:pb-0">
-            <li className="m-3 text-base sm:text-lg">
+            <li className="m-3 text-base xl:text-lg">
               Day 1: Blockchain refresher
             </li>
             <div className="h-6 w-20 border-l border-black dark:border-white border-dashed" />
-            <li className="m-3 text-base sm:text-lg">
+            <li className="m-3 text-base xl:text-lg">
               Day 4: Intro to The Graph
             </li>
             <div className="h-12 w-20 border-l border-black dark:border-white border-dashed" />
-            <li className="m-3 text-base sm:text-lg">
+            <li className="m-3 text-base xl:text-lg">
               Day 13: Deploying with a L2
             </li>
             <div className="h-10 w-20 border-l border-black dark:border-white border-dashed" />
-            <li className="m-3 text-base sm:text-lg">
+            <li className="m-3 text-base xl:text-lg">
               Day 22: Integrating Livepeer
             </li>
             <div className="h-8 w-20 border-l border-black dark:border-white border-dashed" />
-            <li className="m-3 text-base sm:text-lg">Day 30: Demo Day</li>
+            <li className="m-3 text-base xl:text-lg">Day 30: Demo Day</li>
           </ol>
         </div>
-
-        <div className="sm:w-1/2">
-          <h2 className="text-2xl sm:text-5xl font-poppins-bold mb-8">
+        <div className="md:w-1/2 mb-8 md:mb-0">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-poppins-bold mb-6 xl:mb-8">
             Ramp up in 30 days
           </h2>
-          <p className="mb-8 leading-normal text-base sm:text-2xl">
+          <p className="mb-8 xl:mb-10 leading-normal text-base md:text-lg lg:text-xl leading-relaxed md:leading-relaxed lg:leading-relaxed">
             Get up to speed on blockchain development and start shipping
             projects through our{" "}
             <strong className="font-poppins-semi-bold">30 Days of Web3</strong>{" "}
@@ -141,7 +155,7 @@ export default function Home() {
             protocols, and frameworks.
           </p>
           <Link href="/" passHref>
-            <a className="cursor-pointer dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-xs sm:text-lg px-4 py-3">
+            <a className="cursor-pointer dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-base md:text-lg lg:text-xl px-4 py-2">
               Coming Soon
             </a>
           </Link>

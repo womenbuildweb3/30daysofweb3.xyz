@@ -44,17 +44,17 @@ export default function Navbar({ preferedColorScheme }) {
               )}
               <div className="hidden md:flex items-center">
                 <Link href="/about">
-                  <a className="px-3 py-2 rounded-full text-xl hover:underline hover:decoration-wavy">
+                  <a className="px-3 py-2 rounded-full lg:text-xl hover:underline hover:decoration-wavy">
                     About
                   </a>
                 </Link>
                 <Link href="/#30dw3">
-                  <a className="px-3 py-2 rounded-full text-xl hover:underline hover:decoration-wavy">
+                  <a className="px-3 py-2 rounded-full lg:text-xl hover:underline hover:decoration-wavy">
                     30 Days of Web3
                   </a>
                 </Link>
                 <a
-                  className="px-3 py-2 rounded-full text-xl hover:underline hover:decoration-wavy"
+                  className="px-3 py-2 rounded-full lg:text-xl hover:underline hover:decoration-wavy"
                   target="_blank"
                   href="https://womenbuildweb3.hashnode.dev/"
                   rel="noopener noreferrer"
@@ -64,12 +64,12 @@ export default function Navbar({ preferedColorScheme }) {
               </div>
               <div className="hidden md:flex items-center">
                 <Link href="/contact">
-                  <a className="px-3 py-2 mr-2 rounded-full text-xl font-medium hover:underline hover:decoration-wavy">
+                  <a className="px-3 py-2 mr-2 rounded-full lg:text-xl font-medium hover:underline hover:decoration-wavy">
                     Contact
                   </a>
                 </Link>
                 <a
-                  className="dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-xl px-4 py-2"
+                  className="dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full lg:text-xl px-4 py-2"
                   target="_blank"
                   href="https://discord.gg/z63rfurXMD"
                   rel="noopener noreferrer"
@@ -79,7 +79,7 @@ export default function Navbar({ preferedColorScheme }) {
               </div>
               <div className="flex items-center gap-2 md:hidden">
                 <a
-                  className="px-4 h-8 grid place-items-center dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full"
+                  className="text-sm sm:text-base px-4 h-8 grid place-items-center dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full"
                   target="_blank"
                   href="https://discord.gg/z63rfurXMD"
                   rel="noopener noreferrer"
