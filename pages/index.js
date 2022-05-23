@@ -38,13 +38,7 @@ export default function Home() {
         <div className="flex mb-4">
           <div className="w-full md:w-1/2">
             <h1 className="font-poppins-bold text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight">
-              1 DAO
-              <br />
-              10 Hackathons
-              <br />
-              100 Projects
-              <br />
-              1000 Developers
+             Accelerator for women-led engineering projects
             </h1>
           </div>
         </div>
@@ -122,19 +116,63 @@ export default function Home() {
         <div className="mx-auto md:mx-0 md:w-1/2">
           <ol className="list-disc last:pb-0">
             <li className="m-3 text-base xl:text-lg">
-              Day 1: Blockchain refresher
+              Day 1: Intro to building in web3 - tooling overview
             </li>
             <div className="h-6 w-20 border-l border-black dark:border-white border-dashed" />
             <li className="m-3 text-base xl:text-lg">
-              Day 4: Intro to The Graph
+              Day 2: Workshop with Austin Griffith
+            </li>
+            <div className="h-6 w-20 border-l border-black dark:border-white border-dashed" />
+            <li className="m-3 text-base xl:text-lg">
+              Day 3: Writing an Ethereum smart contract
+            </li>
+            <div className="h-6 w-20 border-l border-black dark:border-white border-dashed" />
+            <li className="m-3 text-base xl:text-lg">
+              Day 5: Workshop with Nader Dabit
+            </li>
+            <div className="h-6 w-20 border-l border-black dark:border-white border-dashed" />
+            <li className="m-3 text-base xl:text-lg">
+              Day 5: Building a subgraph
             </li>
             <div className="h-12 w-20 border-l border-black dark:border-white border-dashed" />
             <li className="m-3 text-base xl:text-lg">
-              Day 13: Deploying with a L2
+              Day 8: Workshop with Patrick Collins
+            </li>
+            <div className="h-12 w-20 border-l border-black dark:border-white border-dashed" />
+            <li className="m-3 text-base xl:text-lg">
+              Day 9: Develop your front-end with Ethers.js
             </li>
             <div className="h-10 w-20 border-l border-black dark:border-white border-dashed" />
             <li className="m-3 text-base xl:text-lg">
-              Day 22: Hosting on Radicle
+              Day 13: Workshop with Ally Haire and Dawn Kelly
+            </li>
+            <div className="h-10 w-20 border-l border-black dark:border-white border-dashed" />
+            <li className="m-3 text-base xl:text-lg">
+              Day 14: OFf-chain storage
+            </li>
+            <div className="h-10 w-20 border-l border-black dark:border-white border-dashed" />
+            <li className="m-3 text-base xl:text-lg">
+              Day 18: Workshop with Rahat
+            </li>
+            <div className="h-10 w-20 border-l border-black dark:border-white border-dashed" />
+            <li className="m-3 text-base xl:text-lg">
+              Day 19: Deploy to Polygon
+            </li>
+            <div className="h-10 w-20 border-l border-black dark:border-white border-dashed" />
+            <li className="m-3 text-base xl:text-lg">
+              Day 20: Final touches and improvements 
+            </li>
+            <div className="h-10 w-20 border-l border-black dark:border-white border-dashed" />
+            <li className="m-3 text-base xl:text-lg">
+              Day 23: Workshop with Nader Dabit 
+            </li>
+            <div className="h-10 w-20 border-l border-black dark:border-white border-dashed" />
+            <li className="m-3 text-base xl:text-lg">
+              Day 24: Demo 
+            </li>
+            <div className="h-10 w-20 border-l border-black dark:border-white border-dashed" />
+            <li className="m-3 text-base xl:text-lg">
+              Day 30: Closing ceremony
             </li>
             <div className="h-8 w-20 border-l border-black dark:border-white border-dashed" />
             <li className="m-3 text-base xl:text-lg">Day 30: Demo Day</li>
