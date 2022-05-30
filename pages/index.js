@@ -3,6 +3,13 @@ import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Layout from "../components/Layout";
+import Image from 'next/image';
+import Speakers from "../components/Speakers"
+import Sponsors from "../components/Sponsors";
+
+//todo: add cool animation to right side of column at the top of the page
+//todo: add a countdown timer that counts down to 6/27 and tell people to follow us on Twitter for updates
+//todo: beautify the sponsors and workshop sections with design help, probably reformat the sponsor logos to look more uniform?
 
 export default function Home() {
   const [preferedColorScheme, setPreferedColorScheme] = useState("light");
@@ -19,7 +26,7 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>Women Build Web3</title>
+        <title>30 Days of Web3</title>
         <meta
           name="description"
           content="Providing education, oppportunities, and funding to a new wave of web3 builders"
@@ -33,154 +40,143 @@ export default function Home() {
       </Head>
 
       <Navbar preferedColorScheme={preferedColorScheme} />
-
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> 
+        <div className="max-w-7xl mx-auto">
       <section className="mt-24 sm:mt-12 mb-40">
-        <div className="flex mb-4">
+        <div className="mt-6 lg:mt-0 relative flex flex-col lg:flex-row lg:gap-12 items-center lg:justify-items-left min-h-[60vh]">
           <div className="w-full md:w-1/2">
-            <h1 className="font-poppins-bold text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight">
-             Accelerator for women-led engineering projects
+            <h1 className="mt-12 lg:mt-0 flex flex-col text-center lg:text-left font-poppins-bold text-3xl md:text-4xl lg:text-5xl xl:text-9xl leading-tight">
+             The Ultimate Guide to Build Web3
             </h1>
-          </div>
-        </div>
-        <div className="flex justify-start md:justify-end">
-          <div className="w-full sm:w-8/12 md:w-1/2 flex">
-            <div className="block max-w-xl">
-              <p className="text-lg md:text-xl lg:text-2xl xl:text-3xl leading-normal xl:leading-normal mb-6 md:mb-8">
-                Unlocking the next wave of web3 builders through education,
-                opportunities, and funding.
-              </p>
-              <a
-                className="dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-base md:text-lg lg:text-xl px-4 py-2"
-                target="_blank"
-                href="https://discord.gg/z63rfurXMD"
-                rel="noopener noreferrer"
-              >
-                Join us
-              </a>
-            </div>
+            <p className="mx-auto max-w-xl lg:max-w-md lg:mx-0 md:text-xl lg:text-2xl leading-relaxed md:leading-relaxed my-8">
+              A full-stack, project-based curriculum created by developers to help you {" "}
+            <strong className="font-poppins-bold">start building.</strong>{" "} 
+            </p>
           </div>
         </div>
       </section>
 
-      <section className="mb-44 grid md:grid-cols-2 gap-16">
         <div>
-          <p className="text-base md:text-lg lg:text-xl leading-relaxed md:leading-relaxed lg:leading-relaxed mb-6 md:mb-8">
-            <strong className="font-poppins-semi-bold">Women Build Web3</strong>{" "}
-            is a global collective of women and non-binary developers learning
-            and building in web3. We help developers unlock their potential by
-            providing education, opportunities, and funding and connecting them
-            with a network of peers.
-          </p>
-          <a
-            className="dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-base md:text-lg lg:text-xl px-4 py-2"
-            target="_blank"
-            href="https://discord.gg/z63rfurXMD"
-            rel="noopener noreferrer"
-          >
-            Join us
-          </a>
-        </div>
-
-        <div>
-          <h2 className="mt-8 sm:mt-0 text-xl md:text-2xl font-poppins-bold">
-            Our Core Intiatives
-          </h2>
           <hr className="my-8 border-t border-black dark:border-white border-solid" />
           <h3 className="mb-4 text-xl md:text-2xl font-poppins-bold">
-            &#128218; Education
+            Phase 1: &#128218; 30 Days of Web3
           </h3>
           <p className="text-base md:text-lg lg:text-xl leading-relaxed md:leading-relaxed lg:leading-relaxed">
-            Education, mentorship, and resources focused on software development
-            and blockchain technology
+           Whethere you're a senior web2 engineer or a budding web3-native developer, this course will walk you through shipping a full-stack dapp using top web3 protocols. This course is asynchronous, self-paced and has live workshops from top developers in web3.  Get an understanding of the web3 tech stack,learn the principles of building on Ethereum, and create an architectural reference to build out your own ideas.
           </p>
           <hr className="my-8 border-t border-black dark:border-white border-solid" />
           <h3 className="mb-4 text-xl md:text-2xl font-poppins-bold">
-            &#128736; Opportunities
+          Phase 2: &#128736; BUIDL Accelerator
           </h3>
           <p className="text-base md:text-lg lg:text-xl leading-relaxed md:leading-relaxed lg:leading-relaxed">
-            Structured opportunities with predictable outcomes and end-to-end
-            support from onboarding to job placement in collaboration with web3
-            ecosystem partners
+            Women and non-binary developers who successfully complete phase 1 will be invited to join the DAO and take part in a 3-month accelerator where members can request funding to work on public goods. Get paid to work on your skills and create a dope dapp to get the attention of every web3 company hiring 👀 
           </p>
           <hr className="my-8 border-t border-black dark:border-white border-solid" />
           <h3 className="mb-4 text-xl md:text-2xl font-poppins-bold">
-            &#127793; Funding
+          Phase 3: &#127793; Job Placement
           </h3>
           <p className="text-base md:text-lg lg:text-xl leading-relaxed md:leading-relaxed lg:leading-relaxed">
-            Funding for active participation, contributions, and projects
+            Connect with sponsors and partner organizations looking for engineers, dev rels, etc. 
           </p>
         </div>
-      </section>
+      {/* </section> */}
 
-      <section className="max-w-5xl flex flex-col-reverse items-center md:flex-row m-auto gap-8">
-        <div className="mx-auto md:mx-0 md:w-1/2">
+      <section className="max-w-5xl mt-20 flex flex-col-reverse items-center md:flex-row m-auto gap-8">
+        {/* <div className="mx-auto md:mx-0 md:w-1/2">
           <ol className="list-disc last:pb-0">
             <li className="m-3 text-base xl:text-lg">
-              Day 1: Intro to building in web3 - tooling overview
+              Day 1: Welcome & Environment Set up
             </li>
             <div className="h-6 w-20 border-l border-black dark:border-white border-dashed" />
             <li className="m-3 text-base xl:text-lg">
-              Day 2: Workshop with Austin Griffith
+              Day 2: Nader Dabit - Developing on Ethereum
             </li>
             <div className="h-6 w-20 border-l border-black dark:border-white border-dashed" />
             <li className="m-3 text-base xl:text-lg">
-              Day 3: Writing an Ethereum smart contract
-            </li>
-            <div className="h-6 w-20 border-l border-black dark:border-white border-dashed" />
-            <li className="m-3 text-base xl:text-lg">
-              Day 5: Workshop with Nader Dabit
-            </li>
-            <div className="h-6 w-20 border-l border-black dark:border-white border-dashed" />
-            <li className="m-3 text-base xl:text-lg">
-              Day 5: Building a subgraph
+              Day 3: Write your smart contract
             </li>
             <div className="h-12 w-20 border-l border-black dark:border-white border-dashed" />
             <li className="m-3 text-base xl:text-lg">
-              Day 8: Workshop with Patrick Collins
+              Day 6: Patrick Collins - Chainlink VRF
+            </li>
+            <div className="h-6 w-20 border-l border-black dark:border-white border-dashed" />
+            <li className="m-3 text-base xl:text-lg">
+              Day 8: Workshop with Infura
+            </li>
+            <div className="h-6 w-20 border-l border-black dark:border-white border-dashed" />
+            <li className="m-3 text-base xl:text-lg">
+              Day 8: Rahat - Deploying on Polygon
+            </li>
+            <div className="h-6 w-20 border-l border-black dark:border-white border-dashed" />
+            <li className="m-3 text-base xl:text-lg">
+              Day 10: Testing and deploying smart contract
+            </li>
+            <div className="h-6 w-20 border-l border-black dark:border-white border-dashed" />
+            <li className="m-3 text-base xl:text-lg">
+              Day 8: Camila Ramos - Building Subgraphs
+            </li>
+            <div className="h-6 w-20 border-l border-black dark:border-white border-dashed" />
+            <li className="m-3 text-base xl:text-lg">
+              Day 9: Building your subgraph
             </li>
             <div className="h-12 w-20 border-l border-black dark:border-white border-dashed" />
             <li className="m-3 text-base xl:text-lg">
-              Day 9: Develop your front-end with Ethers.js
+              Day 10: Lee Rob - Frontend with Next.js
             </li>
             <div className="h-10 w-20 border-l border-black dark:border-white border-dashed" />
             <li className="m-3 text-base xl:text-lg">
-              Day 13: Workshop with Ally Haire and Dawn Kelly
+              Day 13: Build Your Front-end
             </li>
             <div className="h-10 w-20 border-l border-black dark:border-white border-dashed" />
             <li className="m-3 text-base xl:text-lg">
-              Day 14: OFf-chain storage
+              Day 14: Ally Haire and Dawn Kelly - Off-chain storage
             </li>
             <div className="h-10 w-20 border-l border-black dark:border-white border-dashed" />
             <li className="m-3 text-base xl:text-lg">
-              Day 18: Workshop with Rahat
+              Day 20: Dev Freestyle 
             </li>
             <div className="h-10 w-20 border-l border-black dark:border-white border-dashed" />
             <li className="m-3 text-base xl:text-lg">
-              Day 19: Deploy to Polygon
+              Day 23: Austin Griffith - What's Next?
             </li>
             <div className="h-10 w-20 border-l border-black dark:border-white border-dashed" />
             <li className="m-3 text-base xl:text-lg">
-              Day 20: Final touches and improvements 
-            </li>
-            <div className="h-10 w-20 border-l border-black dark:border-white border-dashed" />
-            <li className="m-3 text-base xl:text-lg">
-              Day 23: Workshop with Nader Dabit 
-            </li>
-            <div className="h-10 w-20 border-l border-black dark:border-white border-dashed" />
-            <li className="m-3 text-base xl:text-lg">
-              Day 24: Demo 
-            </li>
-            <div className="h-10 w-20 border-l border-black dark:border-white border-dashed" />
-            <li className="m-3 text-base xl:text-lg">
-              Day 30: Closing ceremony
+              Day 27: Demo 
             </li>
             <div className="h-8 w-20 border-l border-black dark:border-white border-dashed" />
-            <li className="m-3 text-base xl:text-lg">Day 30: Demo Day</li>
+            <li className="m-3 text-base xl:text-lg">Day 30: Closing Ceremony </li>
+          </ol>
+        </div> */}
+                <div className="mx-auto md:mx-0 md:w-1/2">
+          <ol className="list-disc last:pb-0">
+            <li className="m-3 text-base xl:text-lg">
+              Smart Contract Development
+            </li>
+            <div className="h-6 w-20 border-l border-black dark:border-white border-dashed" />
+            <li className="m-3 text-base xl:text-lg">
+              Smart Contract Utilities
+            </li>
+            <div className="h-6 w-20 border-l border-black dark:border-white border-dashed" />
+            <li className="m-3 text-base xl:text-lg">
+              L2s and Sidechains
+            </li>
+            <div className="h-6 w-20 border-l border-black dark:border-white border-dashed" />
+            <li className="m-3 text-base xl:text-lg">
+              Indexing and Query
+            </li>
+            <div className="h-6 w-20 border-l border-black dark:border-white border-dashed" />
+            <li className="m-3 text-base xl:text-lg">
+              Off-chain storage
+            </li>
+            <div className="h-6 w-20 border-l border-black dark:border-white border-dashed" />
+            <li className="m-3 text-base xl:text-lg">
+              Client application
+            </li>
           </ol>
         </div>
         <div className="md:w-1/2 mb-8 md:mb-0">
           <h2 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-poppins-bold mb-6 xl:mb-8">
-            Ramp up in 30 days
+            Full-stack dapps
           </h2>
           <p className="mb-8 xl:mb-10 leading-normal text-base md:text-lg lg:text-xl leading-relaxed md:leading-relaxed lg:leading-relaxed">
             Get up to speed on blockchain development and start shipping
@@ -198,9 +194,19 @@ export default function Home() {
           >
             Coming Soon
           </a>
-        </div>
+        </div>      
+      </section>
+      <section className="mt-20">
+        <h1 className=" text-3xl sm:text-3xl md:text-4xl xl:text-5xl font-poppins-semi-bold mb-6 xl:mb-8">
+          With Workshops From</h1>
+        <Speakers></Speakers>
+      </section>
+      <section className="mt-20">
+        <Sponsors></Sponsors>
       </section>
       <Footer preferedColorScheme={preferedColorScheme} />
+      </div>
+        </div>
     </Layout>
   );
 }
