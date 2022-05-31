@@ -45,7 +45,7 @@ export default function Home() {
       <section className="mt-24 sm:mt-12 mb-40">
         <div className="mt-6 lg:mt-0 relative flex flex-col lg:flex-row lg:gap-12 items-center lg:justify-items-left min-h-[60vh]">
           <div className="w-full md:w-1/2">
-            <h1 className="mt-12 lg:mt-0 flex flex-col text-center lg:text-left font-poppins-bold text-3xl md:text-4xl lg:text-5xl xl:text-9xl leading-tight">
+            <h1 className="mt-12 lg:mt-0 flex flex-col text-center lg:text-left font-poppins-bold text-3xl md:text-4xl lg:text-5xl xl:text-8xl leading-tight">
              The Ultimate Guide to Build Web3
             </h1>
             <p className="mx-auto max-w-xl lg:max-w-md lg:mx-0 md:text-xl lg:text-2xl leading-relaxed md:leading-relaxed my-8">
@@ -62,7 +62,7 @@ export default function Home() {
             Phase 1: &#128218; 30 Days of Web3
           </h3>
           <p className="text-base md:text-lg lg:text-xl leading-relaxed md:leading-relaxed lg:leading-relaxed">
-           Whethere you're a senior web2 engineer or a budding web3-native developer, this course will walk you through shipping a full-stack dapp using top web3 protocols. This course is asynchronous, self-paced and has live workshops from top developers in web3.  Get an understanding of the web3 tech stack,learn the principles of building on Ethereum, and create an architectural reference to build out your own ideas.
+           Whethere youre a senior web2 engineer or a budding web3-native developer, this course will walk you through shipping a full-stack dapp using top web3 protocols. This course is asynchronous, self-paced and has live workshops from top developers in web3.  Get an understanding of the web3 tech stack,learn the principles of building on Ethereum, and create an architectural reference to build out your own ideas.
           </p>
           <hr className="my-8 border-t border-black dark:border-white border-solid" />
           <h3 className="mb-4 text-xl md:text-2xl font-poppins-bold">
