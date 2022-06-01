@@ -6,6 +6,7 @@ import Layout from "../components/Layout";
 import Image from "next/image";
 import Speakers from "../components/Speakers";
 import Sponsors from "../components/Sponsors";
+import Link from "next/link";
 
 //todo: add cool animation to right side of column at the top of the page
 //todo: add a countdown timer that counts down to 6/27 and tell people to follow us on Twitter for updates
@@ -53,6 +54,11 @@ export default function Home() {
                   to help you{" "}
                   <strong className="font-poppins-bold">start building.</strong>{" "}
                 </p>
+                <Link href="/curriculum">
+                  <a className="dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full lg:text-xl px-4 py-2">
+                    Start the challenge!
+                  </a>
+                </Link>
               </div>
             </div>
           </section>
