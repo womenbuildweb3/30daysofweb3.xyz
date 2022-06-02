@@ -21,7 +21,7 @@ export default function Curriculum() {
 
   return (
     <Layout>
-      <Navbar preferedColorScheme={preferedColorScheme} />
+      {/* <Navbar preferedColorScheme={preferedColorScheme} /> */}
       <CurricSidebar />
       <Head>
         <title>30 Days of Web3 | Curriculum </title>
