@@ -7,10 +7,12 @@ import Image from "next/image";
 import Speakers from "../components/Speakers";
 import Sponsors from "../components/Sponsors";
 import Link from "next/link";
+import Countdown from "../components/Countdown";
 
 //todo: add cool animation to right side of column at the top of the page
 //todo: add a countdown timer that counts down to 6/27 and tell people to follow us on Twitter for updates
 //todo: beautify the sponsors and workshop sections with design help, probably reformat the sponsor logos to look more uniform?
+// todo: The countdown timer component currently uses the user's timezone when calculating how much time left until June 27th. Although this is functional, the countdown timer could be improved further to use a specific timezone.
 
 export default function Home() {
   const [preferedColorScheme, setPreferedColorScheme] = useState("light");
@@ -54,17 +56,22 @@ export default function Home() {
                   to help you{" "}
                   <strong className="font-poppins-bold">start building.</strong>{" "}
                 </p>
+
                 <Link href="/curriculum">
                   <a className="dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full lg:text-xl px-4 py-2">
                     Start the challenge!
                   </a>
                 </Link>
+                <h3 className="mb-4 mt-8 text-xl md:text-2xl font-poppins-bold">
+                  <Countdown /> until the challenge begins!
+                </h3>
               </div>
             </div>
           </section>
 
           <div>
             <hr className="my-8 border-t border-black dark:border-white border-solid" />
+
             <h3 className="mb-4 text-xl md:text-2xl font-poppins-bold">
               Phase 1: &#128218; 30 Days of Web3
             </h3>
