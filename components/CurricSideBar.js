@@ -26,62 +26,70 @@ import {
   MenuAlt2Icon,
   UsersIcon,
   XIcon,
+  SparklesIcon,
 } from "@heroicons/react/outline";
+import { SparklesIcon as SolidSparkles } from "@heroicons/react/solid";
 import { SearchIcon } from "@heroicons/react/solid";
 
 const navigation = [
   {
+    name: "The Curriculum",
+    href: "#",
+    icon: SolidSparkles,
+    current: true,
+  },
+  {
     name: "Lesson 1 - Introduction to Web3",
     href: "#",
-    icon: HomeIcon,
-    current: true,
+    icon: SparklesIcon,
+    current: false,
   },
   {
     name: "Lesson 2 - Introduction to Blockchain",
     href: "#",
-    icon: UsersIcon,
+    icon: SparklesIcon,
     current: false,
   },
   {
     name: "Lesson 3 - Introduction to Solidity",
     href: "#",
-    icon: FolderIcon,
+    icon: SparklesIcon,
     current: false,
   },
   {
     name: "Lesson 4 - Introduction to IPFS",
     href: "#",
-    icon: CalendarIcon,
+    icon: SparklesIcon,
     current: false,
   },
   {
     name: "Lesson 5 - Introduction to Polygon",
     href: "#",
-    icon: InboxIcon,
+    icon: SparklesIcon,
     current: false,
   },
   {
     name: "Lesson 6 - Introduction to The Graph",
     href: "#",
-    icon: ChartBarIcon,
+    icon: SparklesIcon,
     current: false,
   },
   {
     name: "Lesson 7 - Front End Tooling w/ ethers.js",
     href: "#",
-    icon: InboxIcon,
+    icon: SparklesIcon,
     current: false,
   },
   {
     name: "Lesson 8 - Introduction to Infura & RPCs",
     href: "#",
-    icon: InboxIcon,
+    icon: SparklesIcon,
     current: false,
   },
   {
     name: "The end: Closing Thoughts",
     href: "#",
-    icon: InboxIcon,
+    icon: SparklesIcon,
     current: false,
   },
 ];
