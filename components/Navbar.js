@@ -53,6 +53,11 @@ export default function Navbar({ preferedColorScheme }) {
                     30 Days of Web3
                   </a>
                 </Link>
+                <Link href="/curriculum">
+                  <a className="px-3 py-2 rounded-full lg:text-xl hover:underline hover:decoration-wavy">
+                    Curriculum
+                  </a>
+                </Link>
                 <a
                   className="px-3 py-2 rounded-full lg:text-xl hover:underline hover:decoration-wavy"
                   target="_blank"
