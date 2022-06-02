@@ -14,7 +14,7 @@
   }
   ```
 */
-import { Fragment, useState } from "react";
+import { Fragment, useState, useEffect } from "react";
 import { Dialog, Menu, Transition } from "@headlessui/react";
 import {
   BellIcon,
@@ -30,6 +30,8 @@ import {
 } from "@heroicons/react/outline";
 import { SparklesIcon as SolidSparkles } from "@heroicons/react/solid";
 import { SearchIcon } from "@heroicons/react/solid";
+import CurriculumContent from "./CurriculumContent";
+import Image from "next/image";
 
 const navigation = [
   {
@@ -324,24 +326,7 @@ export default function CurricSidebar() {
               </div> */}
         {/* </div> */}
         {/* </div> */}
-
-        <main>
-          <div className="py-6 ml-80">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-              <h1 className="text-2xl font-semibold text-white">Dashboard</h1>
-            </div>
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-              Placeholder content
-              <div className="py-4">
-                {/* <div className="border-4 border-dashed border-gray-200 rounded-lg h-96"> */}
-                <div className="border-4 border-gray-200 rounded-lg h-96">
-                  <p className="ml-5 mt-3">test</p>
-                </div>
-              </div>
-              {/* /End replace */}
-            </div>
-          </div>
-        </main>
+        <CurriculumContent />
       </div>
       {/* </div> */}
     </>
