@@ -1,0 +1,7 @@
+{
+  "files.associations": {
+    "*.rsh": "javascript"
+  },
+  "javascript.suggest.completeFunctionCalls": true,
+  "css.lint.unknownAtRules": "ignore"
+}
