@@ -6,6 +6,7 @@ import Head from "next/head";
 import Footer from "../components/Footer";
 import Layout from "../components/Layout";
 import CurricSidebar from "../components/CurricSideBar";
+import CurricLayout from "../components/CurricLayout";
 
 export default function Curriculum() {
   const [preferedColorScheme, setPreferedColorScheme] = useState("light");
@@ -20,7 +21,7 @@ export default function Curriculum() {
   }, []);
 
   return (
-    <Layout>
+    <CurricLayout>
       {/* <Navbar preferedColorScheme={preferedColorScheme} /> */}
       <CurricSidebar />
       <Head>
@@ -36,6 +37,6 @@ export default function Curriculum() {
           <link rel="icon" href="/favicon-white.ico" />
         )}
       </Head>
-    </Layout>
+    </CurricLayout>
   );
 }
