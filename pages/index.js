@@ -69,7 +69,8 @@ export default function Home() {
                 </h3>
 
                 <div className="pt-10">
-                  <Link href="/curriculum" className="z-50">
+                  {/* This link will need to redirect to the challenge page once we're ready. */}
+                  <Link href="" className="z-50">
                     <a className="z-50 px-4 py-2 border border-black border-solid rounded-full dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black dark:border-white lg:text-xl">
                       Start the challenge!
                     </a>

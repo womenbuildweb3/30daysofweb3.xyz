@@ -15,16 +15,16 @@ const CurriculumContent = () => {
   return (
     <main>
       <div className="py-6 ml-80">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+        <div className="px-4 mx-auto max-w-7xl sm:px-6 md:px-8">
           <Navbar preferedColorScheme={preferedColorScheme} />
           <h1 className="text-2xl font-semibold text-white">Content-Title</h1>
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+        <div className="px-4 mx-auto max-w-7xl sm:px-6 md:px-8">
           Content-Subtitle
           <div className="py-4">
-            {/* <div className="border-4 border-dashed border-gray-200 rounded-lg h-96"> */}
+            {/* <div className="border-4 border-gray-200 border-dashed rounded-lg h-96"> */}
             <div className="border-4 border-gray-200 rounded-lg h-96">
-              <p className=" py-5 px-5">
+              <p className="px-5 py-5 ">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
