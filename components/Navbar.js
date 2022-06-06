@@ -20,7 +20,7 @@ export default function Navbar({ preferedColorScheme }) {
                       height="40px"
                       width="40px"
                     />
-                    <span className="hidden sm:block cursor-pointer font-poppins-bold text-xl">
+                    <span className="hidden text-xl cursor-pointer sm:block font-poppins-bold">
                       Women Build Web3
                     </span>
                   </a>
@@ -36,13 +36,13 @@ export default function Navbar({ preferedColorScheme }) {
                       height="40px"
                       width="40px"
                     />
-                    <span className="hidden sm:block cursor-pointer font-poppins-bold text-xl">
+                    <span className="hidden text-xl cursor-pointer sm:block font-poppins-bold">
                       Women Build Web3
                     </span>
                   </a>
                 </Link>
               )}
-              <div className="hidden md:flex items-center">
+              <div className="items-center hidden md:flex">
                 <Link href="/about">
                   <a className="px-3 py-2 rounded-full lg:text-xl hover:underline hover:decoration-wavy">
                     About
@@ -53,9 +53,10 @@ export default function Navbar({ preferedColorScheme }) {
                     30 Days of Web3
                   </a>
                 </Link>
-                <Link href="/curriculum">
+                {/* This link below will redirect to the 30dw3 challenge when its available. */}
+                <Link href="">
                   <a className="px-3 py-2 rounded-full lg:text-xl hover:underline hover:decoration-wavy">
-                    Curriculum
+                    30DW3 Challenge
                   </a>
                 </Link>
                 <a
@@ -67,14 +68,14 @@ export default function Navbar({ preferedColorScheme }) {
                   Blog
                 </a>
               </div>
-              <div className="hidden md:flex items-center">
+              <div className="items-center hidden md:flex">
                 <Link href="/contact">
-                  <a className="px-3 py-2 mr-2 rounded-full lg:text-xl font-medium hover:underline hover:decoration-wavy">
+                  <a className="px-3 py-2 mr-2 font-medium rounded-full lg:text-xl hover:underline hover:decoration-wavy">
                     Contact
                   </a>
                 </Link>
                 <a
-                  className="dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full lg:text-xl px-4 py-2"
+                  className="px-4 py-2 border border-black border-solid rounded-full dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black dark:border-white lg:text-xl"
                   target="_blank"
                   href="https://discord.gg/z63rfurXMD"
                   rel="noopener noreferrer"
@@ -84,25 +85,25 @@ export default function Navbar({ preferedColorScheme }) {
               </div>
               <div className="flex items-center gap-2 md:hidden">
                 <a
-                  className="text-sm sm:text-base px-4 h-8 grid place-items-center dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full"
+                  className="grid h-8 px-4 text-sm border border-black border-solid rounded-full sm:text-base place-items-center dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black dark:border-white"
                   target="_blank"
                   href="https://discord.gg/z63rfurXMD"
                   rel="noopener noreferrer"
                 >
                   Join us
                 </a>
-                <div className="-mr-2 flex">
+                <div className="flex -mr-2">
                   {/* Mobile menu button */}
-                  <Disclosure.Button className="link inline-flex items-center justify-center p-2 rounded-md hover:text-white hover:bg-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                  <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md link hover:text-white hover:bg-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                     <span className="sr-only">Open main menu</span>
                     {open ? (
                       <XIcon
-                        className="block h-8 w-8 mobile-menu-button"
+                        className="block w-8 h-8 mobile-menu-button"
                         aria-hidden="true"
                       />
                     ) : (
                       <MenuIcon
-                        className="block h-8 w-8 mobile-menu-button"
+                        className="block w-8 h-8 mobile-menu-button"
                         aria-hidden="true"
                       />
                     )}
@@ -116,14 +117,14 @@ export default function Navbar({ preferedColorScheme }) {
               <Disclosure.Button
                 as="a"
                 href="/"
-                className="active:bg-black px-3 py-2 rounded-md text-sm font-medium hover:bg-black hover:text-white"
+                className="px-3 py-2 text-sm font-medium rounded-md active:bg-black hover:bg-black hover:text-white"
               >
                 Home
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 href="/about"
-                className="active:bg-black px-3 py-2 rounded-md text-sm font-medium hover:bg-black hover:text-white"
+                className="px-3 py-2 text-sm font-medium rounded-md active:bg-black hover:bg-black hover:text-white"
               >
                 About
               </Disclosure.Button>
@@ -132,14 +133,14 @@ export default function Navbar({ preferedColorScheme }) {
                 href="https://womenbuildweb3.hashnode.dev/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="active:bg-black px-3 py-2 rounded-md text-sm font-medium hover:bg-black hover:text-white"
+                className="px-3 py-2 text-sm font-medium rounded-md active:bg-black hover:bg-black hover:text-white"
               >
                 Blog
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 href="/contact"
-                className="active:bg-black px-3 py-2 rounded-md text-sm font-medium hover:bg-black hover:text-white"
+                className="px-3 py-2 text-sm font-medium rounded-md active:bg-black hover:bg-black hover:text-white"
               >
                 Contact
               </Disclosure.Button>
