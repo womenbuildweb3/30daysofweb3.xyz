@@ -59,14 +59,22 @@ export default function Home() {
                   <strong className="font-poppins-bold">start building.</strong>{" "}
                 </p>
 
-                <Link href="/curriculum">
-                  <a className="px-4 py-2 border border-black border-solid rounded-full dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black dark:border-white lg:text-xl">
+                {/* <Link href="/curriculum">
+                  <a className="z-[5000] px-4 py-2 border border-black border-solid rounded-full dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black dark:border-white lg:text-xl">
                     Start the challenge!
                   </a>
-                </Link>
+                </Link> */}
                 <h3 className="mt-8 mb-4 text-xl md:text-2xl font-poppins-bold">
                   <Countdown /> until the challenge begins!
                 </h3>
+
+                <div className="pt-10">
+                  <Link href="/curriculum" className="z-50">
+                    <a className="z-50 px-4 py-2 border border-black border-solid rounded-full dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black dark:border-white lg:text-xl">
+                      Start the challenge!
+                    </a>
+                  </Link>
+                </div>
               </div>
             </div>
           </section>
