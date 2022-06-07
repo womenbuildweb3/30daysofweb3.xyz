@@ -2,10 +2,9 @@ import { useEffect, useState } from "react";
 import Navbar from "./Navbar";
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
+import 'github-markdown-css'
 
 const CurriculumContent = ({curricData}) => {
-
-  const markdown = `Just a link: https://reactjs.com.`
   
   console.log("CURRICULUM: ", curricData)
 
@@ -20,7 +19,7 @@ const CurriculumContent = ({curricData}) => {
           {curricData.data.description}
           <div className="py-4">
             <div className="border-4 border-gray-200 rounded-lg min-h-96">
-              <p className="px-5 py-5 ">
+              <p className="px-5 py-5 markdown-body">
                 <ReactMarkdown remarkPlugins={[remarkGfm]}>{curricData.content}</ReactMarkdown>
               </p>
             </div>

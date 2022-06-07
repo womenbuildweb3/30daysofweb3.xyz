@@ -16,7 +16,7 @@ Welcome to the beginning of your decentralized adventure! Allow me to guide you 
 
 ## The Internet Over The Years...
 
-![Fun fact: Although the Internet was invented in 1970, the official birthday for the internet is January 1st, 1983. This is due to networks not having a standard way to communicate with each other prior to this date!](https://cdn.hashnode.com/res/hashnode/image/upload/v1651452115724/ckNDBDMr_.png align="left")
+![Fun fact: Although the Internet was invented in 1970, the official birthday for the internet is January 1st, 1983. This is due to networks not having a standard way to communicate with each other prior to this date!](https://cdn.hashnode.com/res/hashnode/image/upload/v1651452115724/ckNDBDMr_.png)
 
 The internet has been a global phenomenon for quite some time now. It has changed the very way in which we live our lives. Before the internet, it wasn't as easy to show a photo of your cute cat to thousands of people.
 
@@ -24,7 +24,7 @@ Now, it's thanks to the modern day advancements of the internet that we can post
 
 ## Web 1.0 - The Root of Decentralization
 
-![Fun fact: The internet started as a decentralized network of computers from across the United States. This was to keep defense systems operational in the event of an attack.](https://cdn.hashnode.com/res/hashnode/image/upload/v1651453058948/9NVmSaNKb.png align="left")
+![Fun fact: The internet started as a decentralized network of computers from across the United States. This was to keep defense systems operational in the event of an attack.](https://cdn.hashnode.com/res/hashnode/image/upload/v1651453058948/9NVmSaNKb.png)
 
 The **internet was invented during the 1970s** at the peak of the cold war between the United States and Russia. Because the US government feared an attack would disable their weapons systems, they built a decentralized system that contained a network of many computers all across the country. This way, if anything were to happen, the defense system in place would still be operational.
 
@@ -34,7 +34,7 @@ In 1989, [Tim Berners-Lee](https://www.w3.org/People/Berners-Lee/) was developin
 
 ## Web 2.0 - The Centralized Web
 
-![Fun fact: The web that most people are currently familiar with is known as Web 2.0. Web 2.0 is centralized, meaning that most sites visited are tethered to cloud services from big name companies like Amazon and Microsoft.](https://cdn.hashnode.com/res/hashnode/image/upload/v1651454253908/BsQzDoowl.png align="left")
+![Fun fact: The web that most people are currently familiar with is known as Web 2.0. Web 2.0 is centralized, meaning that most sites visited are tethered to cloud services from big name companies like Amazon and Microsoft.](https://cdn.hashnode.com/res/hashnode/image/upload/v1651454253908/BsQzDoowl.png)
 
 Around 2005, internet speeds had significantly increased compared to the prior decade. More people were connecting to the internet than ever before, with that number increasing each subsequent year.
 
@@ -52,7 +52,7 @@ It seems that 2017 was a rough year for the centralized web in general. Aside fr
 
 ## Web 3.0 - The People's Internet
 
-![Fun fact: Authentication in Web3 is a breeze. While the process in Web2 is a bit lengthy, Web3 simply allows users to login by connecting their crypto wallet!](https://cdn.hashnode.com/res/hashnode/image/upload/v1651456040136/XwMMF7_p5.png align="left")
+![Fun fact: Authentication in Web3 is a breeze. While the process in Web2 is a bit lengthy, Web3 simply allows users to login by connecting their crypto wallet!](https://cdn.hashnode.com/res/hashnode/image/upload/v1651456040136/XwMMF7_p5.png)
 
 In **Web3**, decentralization has returned! Data is encrypted and securely stored across multiple nodes (computers connected to a blockchain network). These nodes are run by individuals worldwide who are sharing their disk space for a fee. Because data is stored on multiple nodes instead of one central server like AWS, it is decentralized. This enhances data security for websites and for its users.
 
@@ -65,7 +65,7 @@ Unlike instances of misfortune that happen on the centralized web like the AWS o
 
 ## Too Long, Didn't Read (Recap)
 
-![Recap time!](https://cdn.hashnode.com/res/hashnode/image/upload/v1651456991770/OugajW9AO.png align="left")
+![Recap time!](https://cdn.hashnode.com/res/hashnode/image/upload/v1651456991770/OugajW9AO.png)
 
 - The internet was invented by the United States in the 1970s. It was originally **decentralized**, which meant that the network consisted of many computers across the country.
 - Tim Berners-Lee invented the World Wide Web in 1989. This version of the web would later come to be known as Web 1.0. There was little to no user interaction on most websites during this time, which is why **Web 1.0 is also sometimes referred to as the _"read-only" web._ **
