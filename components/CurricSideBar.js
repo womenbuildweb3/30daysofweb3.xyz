@@ -105,7 +105,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function CurricSidebar() {
+export default function CurricSidebar({curricData}) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
@@ -326,7 +326,7 @@ export default function CurricSidebar() {
               </div> */}
         {/* </div> */}
         {/* </div> */}
-        <CurriculumContent />
+        <CurriculumContent curricData={curricData} />
       </div>
       {/* </div> */}
     </>
