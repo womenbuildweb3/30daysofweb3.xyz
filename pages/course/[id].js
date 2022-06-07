@@ -10,7 +10,7 @@ import CurricLayout from "../../components/CurricLayout";
 import getCurricContent from "../../utils/curriculum";
 import getAllPostIds from "../../utils/getAllPostIds"
 
-export default function Course({curricData}) {
+export default function Course({curricData, id}) {
   const [preferedColorScheme, setPreferedColorScheme] = useState("light");
 
   useEffect(() => {
@@ -25,7 +25,7 @@ export default function Course({curricData}) {
   return (
     <CurricLayout>
       {/* <Navbar preferedColorScheme={preferedColorScheme} /> */}
-      <CurricSidebar curricData={curricData} />
+      <CurricSidebar curricData={curricData} id={id}/>
       <Head>
         <title>30 Days of Web3 | Curriculum </title>
         <meta
@@ -52,10 +52,12 @@ export async function getStaticPaths() {
   }
 
 export async function getStaticProps({params}) {
-  const curricData = getCurricContent(params.id);
+    const id = params.id
+    const curricData = getCurricContent(id);
   return {
     props: {
-      curricData,
+        id,
+        curricData
     },
   };
 }

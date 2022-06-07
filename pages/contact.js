@@ -72,7 +72,6 @@ export default function Contact() {
       if (response.status !== 200) {
         alert("Oops! Something went wrong. Please refresh and try again.");
       } else {
-        // console.log("form submitted successfully !!!");
         setSubmitted(true);
       }
       // check response, if success is false, dont take them to success page
