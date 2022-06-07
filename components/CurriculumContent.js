@@ -21,7 +21,7 @@ const CurriculumContent = ({curricData}) => {
           <div className="py-4">
             <div className="border-4 border-gray-200 rounded-lg min-h-96">
               <p className="px-5 py-5 ">
-                <ReactMarkdown children={curricData.content} remarkPlugins={[remarkGfm]} />
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>{curricData.content}</ReactMarkdown>
               </p>
             </div>
           </div>
