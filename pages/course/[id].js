@@ -1,15 +1,16 @@
 import { useEffect, useState } from "react";
-import Navbar from "../components/Navbar";
+import Navbar from "../../components/Navbar";
 import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
-import Footer from "../components/Footer";
-import Layout from "../components/Layout";
-import CurricSidebar from "../components/CurricSideBar";
-import CurricLayout from "../components/CurricLayout";
-import getCurricContent from "../utils/curriculum";
+import Footer from "../../components/Footer";
+import Layout from "../../components/Layout";
+import CurricSidebar from "../../components/CurricSideBar";
+import CurricLayout from "../../components/CurricLayout";
+import getCurricContent from "../../utils/curriculum";
+import getAllPostIds from "../../utils/getAllPostIds"
 
-export default function Curriculum({curricData}) {
+export default function Course({curricData}) {
   const [preferedColorScheme, setPreferedColorScheme] = useState("light");
 
   useEffect(() => {
@@ -42,8 +43,16 @@ export default function Curriculum({curricData}) {
   );
 }
 
-export async function getStaticProps() {
-  const curricData = getCurricContent("introduction-to-web3.md");
+export async function getStaticPaths() {
+    const paths = getAllPostIds()
+    return {
+      paths,
+      fallback: false
+    }
+  }
+
+export async function getStaticProps({params}) {
+  const curricData = getCurricContent(params.id);
   return {
     props: {
       curricData,
