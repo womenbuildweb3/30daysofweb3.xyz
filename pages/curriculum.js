@@ -7,8 +7,9 @@ import Footer from "../components/Footer";
 import Layout from "../components/Layout";
 import CurricSidebar from "../components/CurricSideBar";
 import CurricLayout from "../components/CurricLayout";
+import getCurricContent from "../utils/curriculum";
 
-export default function Curriculum() {
+export default function Curriculum({curricData}) {
   const [preferedColorScheme, setPreferedColorScheme] = useState("light");
 
   useEffect(() => {
@@ -23,7 +24,7 @@ export default function Curriculum() {
   return (
     <CurricLayout>
       {/* <Navbar preferedColorScheme={preferedColorScheme} /> */}
-      <CurricSidebar />
+      <CurricSidebar curricData={curricData} />
       <Head>
         <title>30 Days of Web3 | Curriculum </title>
         <meta
@@ -39,4 +40,13 @@ export default function Curriculum() {
       </Head>
     </CurricLayout>
   );
+}
+
+export async function getStaticProps() {
+  const curricData = getCurricContent("introduction-to-web3.md");
+  return {
+    props: {
+      curricData,
+    },
+  };
 }
