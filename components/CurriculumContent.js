@@ -6,13 +6,12 @@ import remarkGfm from "remark-gfm";
 import "github-markdown-css";
 
 const getNextLesson = (id) => {
-  console.log("THIS ID:", id);
   switch (id) {
-    case "introduction-to-web3":
-      return "get-started";
+    case "1-introduction-to-web3":
+      return "0-get-started";
       break;
     default:
-      return "introduction-to-web3";
+      return "1-introduction-to-web3";
   }
 };
 
