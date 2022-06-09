@@ -55,14 +55,14 @@ export default function Navbar({ preferedColorScheme }) {
                 </Link>
                 {/* This link below will redirect to the 30dw3 challenge when its available. */}
                 {/* <Link href="">
-                  <a className="px-3 py-2 rounded-full lg:text-xl hover:underline hover:decoration-wavy">
+                  <a className="px-3 py-2 rounded-full lg:text-xl  hover:decoration-wavy">
                     30DW3 Challenge
                   </a>
                 </Link> */}
               </div>
               <div className="items-center hidden md:flex">
                 <Link href="/contact">
-                  <a className="px-3 py-2 mr-2 font-medium rounded-full lg:text-xl hover:underline hover:decoration-wavy">
+                  <a className="px-3 py-2 mr-2 font-medium rounded-full lg:text-xl hover:decoration-wavy">
                     Register
                   </a>
                 </Link>
@@ -107,7 +107,7 @@ export default function Navbar({ preferedColorScheme }) {
           <Disclosure.Panel className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
               <Link href="/contact">
-                <a className="px-3 py-2 mr-2 font-medium rounded-full lg:text-xl hover:underline hover:decoration-wavy">
+                <a className="px-3 py-2 mr-2 font-medium rounded-full lg:text-xl  hover:decoration-wavy">
                   Register
                 </a>
               </Link>
