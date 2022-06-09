@@ -3,14 +3,14 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Layout from "../components/Layout";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Contact() {
   const [firstName, setFirstName] = useState("");
   const [email, setEmail] = useState("");
   const [discordHandle, setDiscordHandle] = useState("");
   const [twitterHandle, setTwitterHandle] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
+  const [walletAddress, setWalletAddress] = useState("")
   const [submitted, setSubmitted] = useState(false);
   const [preferedColorScheme, setPreferedColorScheme] = useState("light");
 
@@ -47,17 +47,14 @@ export default function Contact() {
               value: discordHandle ? discordHandle : "-",
             },
             {
-              name: "Social Handle",
+              name: "Twitter Handle",
               value: twitterHandle ? twitterHandle : "-",
             },
             {
-              name: "Subject",
-              value: subject,
-            },
-            {
-              name: "Message",
-              value: message,
-            },
+              name: "Wallet address (to recieve proof of knowledge tokens)",
+              value: walletAddress ? walletAddress : "-"
+            }
+
           ],
         },
       ],
@@ -100,23 +97,17 @@ export default function Contact() {
       <Navbar preferedColorScheme={preferedColorScheme} />
 
       <main className="md:grid md:grid-cols-2 md:gap-12 md:mx-auto md:max-w-5xl">
-        <header className="mb-8">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdo5HfpvWsZcG2vFuVIAULm57tXgqQQixpi9bN0EhuSnbKQSg/viewform?embedded=true" width="900" height="1525" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
+        {/* <header className="mb-8">
           <h1 className="mt-8 mb-4 font-poppins-bold text-3xl sm:text-5xl">
             Get in touch
           </h1>
           <p className="mb-4">
-            For curious developers, we are opening up memberships once we build
-            a solid foundation for our organization. In the meantime, say hi!
+            Register for 30 Days of Web3! We have lots of goodies and prizes available for builders as they progress through the curriculum.
           </p>
           <p className="mb-4">
-            For interested partners, we are looking to form long-term
-            relationships with web3 organizations. Contact us for our
-            sponsorship package.
-          </p>
-          <p className="mb-4">
-            For prospective hirers, we focus on engineering, developer
-            relations, and design in web3. Reach out to tap into our talent
-            network.
+            This challenge is open to all skill levels and is meant to be a foundational course to help developers build out an architectural reference for building a dapp.
+            For more questions, check out our <Link href="/faq"><a> FAQ section </a></Link>
           </p>
         </header>
 
@@ -182,26 +173,11 @@ export default function Contact() {
             </label>
             <input
               type="text"
-              name="subject"
-              id="subject"
-              onChange={(e) => setSubject(e.target.value)}
-              value={subject}
+              name="wallet"
+              id="wallet"
+              onChange={(e) => setWalletAddress(e.target.value)}
+              value={walletAddress}
               className="bg-transparent dark:border-white px-4 mt-4 mb-8 w-full max-w-s h-16 border border-black border-solid rounded-lg"
-              required
-              aria-required="true"
-            />
-            <label className="font-poppins-semi-bold" htmlFor="message">
-              Message*
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              maxLength="500"
-              onChange={(e) => setMessage(e.target.value)}
-              value={message}
-              className="placeholder:text-zinc-900 dark:placeholder:text-zinc-300 bg-transparent dark:border-white px-4 pt-4 mt-4 mb-8 w-full max-w-s h-72 border border-black border-solid rounded-lg"
-              aria-describedby="message-max"
-              placeholder="Kindly tell us a bit about yourself and your reason for contact"
               required
               aria-required="true"
             />
@@ -221,7 +197,7 @@ export default function Contact() {
             Your message was succesflly sent! We will do our best to get back to
             you soon.
           </div>
-        )}
+        )} */}
       </main>
       <Footer preferedColorScheme={preferedColorScheme} />
     </Layout>

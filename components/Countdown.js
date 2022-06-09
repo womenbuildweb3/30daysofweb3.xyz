@@ -44,7 +44,7 @@ function Counter() {
   });
   return (
     <div>
-      <p>{timer.length ? timer : <span>We&apos;ve launched!</span>}</p>
+      <p className="text-7xl font-bold ">{timer.length ? timer : <span>We&apos;ve launched!</span>}</p>
     </div>
   );
 }
