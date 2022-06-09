@@ -107,7 +107,7 @@ export default function Navbar({ preferedColorScheme }) {
           <Disclosure.Panel className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
               <Link href="/contact">
-                <a className="px-3 py-2 mr-2 font-medium rounded-full lg:text-xl  hover:decoration-wavy">
+                <a className="px-3 py-2 text-sm font-medium rounded-md active:bg-black hover:bg-black hover:text-white">
                   Register
                 </a>
               </Link>
