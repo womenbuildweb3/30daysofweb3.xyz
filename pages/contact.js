@@ -98,7 +98,7 @@ export default function Contact() {
       <Navbar preferedColorScheme={preferedColorScheme} />
 
       <main className="md:grid md:grid-cols-2 md:gap-12 md:mx-auto md:max-w-5xl">
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdo5HfpvWsZcG2vFuVIAULm57tXgqQQixpi9bN0EhuSnbKQSg/viewform?embedded=true" width="900" height="1525" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdo5HfpvWsZcG2vFuVIAULm57tXgqQQixpi9bN0EhuSnbKQSg/viewform?embedded=true" width="900" height="1525" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
         {/* <header className="mb-8">
           <h1 className="mt-8 mb-4 font-poppins-bold text-3xl sm:text-5xl">
             Get in touch
