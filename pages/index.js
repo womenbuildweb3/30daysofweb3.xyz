@@ -52,29 +52,19 @@ export default function Home() {
                 <h1 className="flex flex-col mt-12 text-3xl leading-tight text-center lg:mt-0 lg:text-left font-poppins-bold md:text-4xl lg:text-5xl xl:text-8xl">
                   The Ultimate Guide to Build Web3
                 </h1>
-                <BlobAnimation />
                 <p className="max-w-xl mx-auto my-8 leading-relaxed lg:max-w-md lg:mx-0 md:text-xl lg:text-2xl md:leading-relaxed">
                   A full-stack, project-based curriculum created by developers
                   to help you{" "}
                   <strong className="font-poppins-bold">start building.</strong>{" "}
                 </p>
 
-                {/* <Link href="/curriculum">
-                  <a className="z-[5000] px-4 py-2 border border-black border-solid rounded-full dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black dark:border-white lg:text-xl">
-                    Start the challenge!
-                  </a>
-                </Link> */}
-                <h3 className="mt-8 mb-4 text-xl md:text-2xl font-poppins-bold">
-                  <Countdown /> until the challenge begins!
-                </h3>
-
                 <div className="pt-10">
                   {/* This link will need to redirect to the challenge page once we're ready. */}
-                  <Link href="" className="z-50">
-                    <a className="z-50 px-4 py-2 border border-black border-solid rounded-full dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black dark:border-white lg:text-xl">
-                      Start the challenge!
+                    <Link href="/contact">
+                    <a className=" px-4 py-2 border border-black border-solid rounded-full dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black dark:border-white lg:text-xl">
+                      Register now
                     </a>
-                  </Link>
+                    </Link>
                 </div>
               </div>
             </div>
@@ -222,10 +212,15 @@ export default function Home() {
                 href="https://discord.gg/z63rfurXMD"
                 rel="noopener noreferrer"
               >
-                Coming Soon
+                Join Discord
               </a>
             </div>
           </section>
+          <div>
+                <h3 className="text-center py-8 my-8 mt-8 mb-4 text-xl md:text-2xl font-poppins-bold">
+                  <Countdown /> until the challenge kicks off!
+                </h3>
+          </div>
           <section className="mt-20">
             <h1 className="mb-6 text-3xl sm:text-3xl md:text-4xl xl:text-5xl font-poppins-semi-bold xl:mb-8">
               With Workshops From

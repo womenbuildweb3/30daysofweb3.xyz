@@ -48,30 +48,23 @@ export default function Navbar({ preferedColorScheme }) {
                     About
                   </a>
                 </Link>
-                <Link href="/#30dw3">
+                <Link href="/faq">
                   <a className="px-3 py-2 rounded-full lg:text-xl hover:underline hover:decoration-wavy">
-                    30 Days of Web3
+                    FAQ
                   </a>
                 </Link>
                 {/* This link below will redirect to the 30dw3 challenge when its available. */}
-                <Link href="">
+                {/* <Link href="">
                   <a className="px-3 py-2 rounded-full lg:text-xl hover:underline hover:decoration-wavy">
                     30DW3 Challenge
                   </a>
-                </Link>
-                <a
-                  className="px-3 py-2 rounded-full lg:text-xl hover:underline hover:decoration-wavy"
-                  target="_blank"
-                  href="https://womenbuildweb3.hashnode.dev/"
-                  rel="noopener noreferrer"
-                >
-                  Blog
-                </a>
+                </Link> */}
+                
               </div>
               <div className="items-center hidden md:flex">
                 <Link href="/contact">
                   <a className="px-3 py-2 mr-2 font-medium rounded-full lg:text-xl hover:underline hover:decoration-wavy">
-                    Contact
+                    Register
                   </a>
                 </Link>
                 <a
@@ -80,7 +73,7 @@ export default function Navbar({ preferedColorScheme }) {
                   href="https://discord.gg/z63rfurXMD"
                   rel="noopener noreferrer"
                 >
-                  Join us
+                  Discord
                 </a>
               </div>
               <div className="flex items-center gap-2 md:hidden">
