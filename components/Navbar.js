@@ -59,7 +59,6 @@ export default function Navbar({ preferedColorScheme }) {
                     30DW3 Challenge
                   </a>
                 </Link> */}
-                
               </div>
               <div className="items-center hidden md:flex">
                 <Link href="/contact">
@@ -83,7 +82,7 @@ export default function Navbar({ preferedColorScheme }) {
                   href="https://discord.gg/z63rfurXMD"
                   rel="noopener noreferrer"
                 >
-                  Join us
+                  Join us on Discord
                 </a>
                 <div className="flex -mr-2">
                   {/* Mobile menu button */}
@@ -107,36 +106,21 @@ export default function Navbar({ preferedColorScheme }) {
           </div>
           <Disclosure.Panel className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <Disclosure.Button
-                as="a"
-                href="/"
-                className="px-3 py-2 text-sm font-medium rounded-md active:bg-black hover:bg-black hover:text-white"
-              >
-                Home
-              </Disclosure.Button>
-              <Disclosure.Button
-                as="a"
-                href="/about"
-                className="px-3 py-2 text-sm font-medium rounded-md active:bg-black hover:bg-black hover:text-white"
-              >
-                About
-              </Disclosure.Button>
-              <Disclosure.Button
-                as="a"
-                href="https://womenbuildweb3.hashnode.dev/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-3 py-2 text-sm font-medium rounded-md active:bg-black hover:bg-black hover:text-white"
-              >
-                Blog
-              </Disclosure.Button>
-              <Disclosure.Button
-                as="a"
-                href="/contact"
-                className="px-3 py-2 text-sm font-medium rounded-md active:bg-black hover:bg-black hover:text-white"
-              >
-                Contact
-              </Disclosure.Button>
+              <Link href="/contact">
+                <a className="px-3 py-2 mr-2 font-medium rounded-full lg:text-xl hover:underline hover:decoration-wavy">
+                  Register
+                </a>
+              </Link>
+              <Link href="/about">
+                <a className="px-3 py-2 text-sm font-medium rounded-md active:bg-black hover:bg-black hover:text-white">
+                  About
+                </a>
+              </Link>
+              <Link href="/faq">
+                <a className="px-3 py-2 text-sm font-medium rounded-md active:bg-black hover:bg-black hover:text-white">
+                  FAQ
+                </a>
+              </Link>
             </div>
             <div className="pt-4 pb-3 border-t border-gray-700"></div>
           </Disclosure.Panel>
