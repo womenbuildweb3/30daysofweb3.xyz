@@ -27,7 +27,7 @@ function Counter() {
     setTimeout(() => {
       setRemainingTime(calcLeftoverTime());
     }, 1000);
-  });
+  }, []);
 
   const timer = [];
 
@@ -37,7 +37,7 @@ function Counter() {
     }
 
     timer.push(
-      <span>
+      <span key={interval}>
         {remainingTime[interval]} {interval}{" "}
       </span>
     );
