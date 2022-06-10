@@ -44,18 +44,18 @@ export default function Navbar({ preferedColorScheme }) {
               )}
               <div className="items-center hidden md:flex">
                 <Link href="/about">
-                  <a className="px-3 py-2 rounded-full lg:text-xl hover:underline hover:decoration-wavy">
+                  <a className="px-3 py-2 rounded-full lg:text-xl hover:decoration-wavy">
                     About
                   </a>
                 </Link>
                 <Link href="/faq">
-                  <a className="px-3 py-2 rounded-full lg:text-xl hover:underline hover:decoration-wavy">
+                  <a className="px-3 py-2 rounded-full lg:text-xl hover:decoration-wavy">
                     FAQ
                   </a>
                 </Link>
                 {/* This link below will redirect to the 30dw3 challenge when its available. */}
                 {/* <Link href="">
-                  <a className="px-3 py-2 rounded-full lg:text-xl hover:underline hover:decoration-wavy">
+                  <a className="px-3 py-2 rounded-full lg:text-xl  hover:decoration-wavy">
                     30DW3 Challenge
                   </a>
                 </Link> */}

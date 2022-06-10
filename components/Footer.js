@@ -19,9 +19,7 @@ export default function Footer({ preferedColorScheme }) {
           <div className="flex mb-8 sm:mb-0 flex-col gap-4">
             <h6 className="font-poppins-bold">30 Days of Web3</h6>
             <Link href="/">
-              <a className="max-w-[160px] hover:underline hover:decoration-wavy">
-                Home
-              </a>
+              <a className="max-w-[160px] hover:decoration-wavy">Home</a>
             </Link>
             <Link href="/faq">
               <a className="max-w-[160px] hover:underline hover:decoration-wavy">
@@ -29,7 +27,7 @@ export default function Footer({ preferedColorScheme }) {
               </a>
             </Link>
             <a
-              className="max-w-[160px] hover:underline hover:decoration-wavy"
+              className="max-w-[160px] hover:decoration-wavy"
               target="_blank"
               href="https://discord.gg/z63rfurXMD"
               rel="noopener noreferrer"
@@ -39,14 +37,21 @@ export default function Footer({ preferedColorScheme }) {
           </div>
 
           <div className="flex mb-8 sm:mb-0 flex-col gap-4">
+<<<<<<< HEAD
             <h6 className="font-poppins-bold">WBW3</h6>
             <Link href="/about">
               <a className="max-w-[160px] hover:underline hover:decoration-wavy">
                 About us
+=======
+            <h6 className="font-poppins-bold">Learn {"&"} Build</h6>
+            <Link href="/#30dw3">
+              <a className="max-w-[160px]  hover:decoration-wavy">
+                30 Days of Web3
+>>>>>>> main
               </a>
             </Link>
             <a
-              className="max-w-[160px] hover:underline hover:decoration-wavy"
+              className="max-w-[160px]  hover:decoration-wavy"
               target="_blank"
               href="https://womenbuildweb3.hashnode.dev/"
               rel="noopener noreferrer"
@@ -56,14 +61,20 @@ export default function Footer({ preferedColorScheme }) {
           </div>
           <div className="flex flex-col gap-4">
             <h6 className="font-poppins-bold">Get in Touch</h6>
+<<<<<<< HEAD
             <a
               className="max-w-[160px] hover:underline hover:decoration-wavy"
               href="mailto:info@womenbuildweb3.com"
             >
               Email
             </a>
+=======
+            <Link href="/contact">
+              <a className="max-w-[160px]  hover:decoration-wavy">Contact</a>
+            </Link>
+>>>>>>> main
             <a
-              className="max-w-[160px] hover:underline hover:decoration-wavy"
+              className="max-w-[160px]  hover:decoration-wavy"
               target="_blank"
               href="https://twitter.com/womenbuildweb3"
               rel="noopener noreferrer"
@@ -71,7 +82,7 @@ export default function Footer({ preferedColorScheme }) {
               Twitter
             </a>
             <a
-              className="max-w-[160px] hover:underline hover:decoration-wavy"
+              className="max-w-[160px]  hover:decoration-wavy"
               target="_blank"
               href="https://instagram.com/womenbuildweb3"
               rel="noopener noreferrer"
