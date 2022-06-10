@@ -9,60 +9,38 @@ export default function Footer({ preferedColorScheme }) {
         <div className="mb-8 max-w-sm">
           <h5 className="mb-2 text-2xl font-poppins-bold">Women Build Web3</h5>
           <p className="mb-6 text-base leading-relaxed">
-            Subscribe to our newsletter to get our latest news, blog posts,
-            events, and more.
+            A community of women and non-binary people unlocking the next wave
+            of developers in web3 by providing education, opportunities, and
+            funding
           </p>
-          <form>
-            <input
-              type="email"
-              className="dark:bg-transparent rounded-md p-4 w-full border border-solid border-black dark:border-white"
-              placeholder="Email"
-            />
-            <button className="relative pr-4 w-full flex justify-end">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="relative bottom-10"
-              >
-                <path
-                  d="M8 6H18V16M18 6L6 18L18 6Z"
-                  stroke={preferedColorScheme === "dark" ? "white" : "black"}
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </button>
-          </form>
         </div>
 
         <div className="grid sm:grid-cols-3">
           <div className="flex mb-8 sm:mb-0 flex-col gap-4">
-            <h6 className="font-poppins-bold">Explore</h6>
+            <h6 className="font-poppins-bold">30 Days of Web3</h6>
             <Link href="/">
               <a className="max-w-[160px] hover:decoration-wavy">Home</a>
             </Link>
-            <Link href="/about">
-              <a className="max-w-[160px] hover:decoration-wavy">About</a>
+            <Link href="/faq">
+              <a className="max-w-[160px] hover:underline hover:decoration-wavy">
+                FAQ
+              </a>
             </Link>
             <a
               className="max-w-[160px] hover:decoration-wavy"
               target="_blank"
-              href="https://womenbuildweb3.hashnode.dev/whitepaper"
+              href="https://discord.gg/z63rfurXMD"
               rel="noopener noreferrer"
             >
-              Whitepaper
+              Join Discord
             </a>
           </div>
 
           <div className="flex mb-8 sm:mb-0 flex-col gap-4">
-            <h6 className="font-poppins-bold">Learn {"&"} Build</h6>
-            <Link href="/#30dw3">
-              <a className="max-w-[160px]  hover:decoration-wavy">
-                30 Days of Web3
+            <h6 className="font-poppins-bold">WBW3</h6>
+            <Link href="/about">
+              <a className="max-w-[160px] hover:underline hover:decoration-wavy">
+                About us
               </a>
             </Link>
             <a
@@ -71,14 +49,17 @@ export default function Footer({ preferedColorScheme }) {
               href="https://womenbuildweb3.hashnode.dev/"
               rel="noopener noreferrer"
             >
-              Blog
+              Our blog
             </a>
           </div>
           <div className="flex flex-col gap-4">
             <h6 className="font-poppins-bold">Get in Touch</h6>
-            <Link href="/contact">
-              <a className="max-w-[160px]  hover:decoration-wavy">Contact</a>
-            </Link>
+            <a
+              className="max-w-[160px] hover:underline hover:decoration-wavy"
+              href="mailto:info@womenbuildweb3.com"
+            >
+              Email
+            </a>
             <a
               className="max-w-[160px]  hover:decoration-wavy"
               target="_blank"
