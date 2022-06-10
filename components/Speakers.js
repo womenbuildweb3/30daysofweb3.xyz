@@ -11,7 +11,7 @@ const people = [
   {
     name: "Patrick Collins",
     title: "Chainlink",
-    imageUrl: "/images/Patrick.jpeg",
+    imageUrl: "/images/patrick.jpeg",
   },
   {
     name: "Ally Haire",
@@ -55,15 +55,16 @@ export default function Speakers() {
       {people.map((person) => (
         <li
           key={person.name}
-          className="col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200"
+          className="col-span-1 flex flex-col flex-shrink-0 text-center bg-white rounded-lg shadow divide-y divide-gray-200"
         >
-          <div className="flex-1 flex flex-col p-8">
+          <div className="flex-1 items-center flex flex-col p-8">
             <Image
-              className="w-32 h-32 flex-shrink-0 mx-auto rounded-full"
+              className="w-48 h-48 flex-shrink-0 mx-auto rounded-full"
               src={person.imageUrl}
-              width="200px"
-              height="220px"
-              alt=""
+              width="192px"
+              height="192px"
+              alt={person.name}
+              layout="fixed"
             />
             <h3 className="mt-6 text-gray-900 text-sm font-medium">
               {person.name}
