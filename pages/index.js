@@ -60,11 +60,14 @@ export default function Home() {
 
                 <div className="pt-10">
                   {/* This link will need to redirect to the challenge page once we're ready. */}
-                    <Link href="/contact">
-                    <a className=" px-4 py-2 border border-black border-solid rounded-full dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black dark:border-white lg:text-xl">
-                      Register now
-                    </a>
-                    </Link>
+                  <a
+                    className=" px-4 py-2 border border-black border-solid rounded-full dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black dark:border-white lg:text-xl"
+                    href="https://forms.gle/XHDy3Yvasqocavas9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Register now
+                  </a>
                 </div>
               </div>
             </div>
@@ -217,9 +220,9 @@ export default function Home() {
             </div>
           </section>
           <div>
-                <h3 className="text-center py-8 my-8 mt-8 mb-4 text-xl md:text-2xl font-poppins-bold">
-                  <Countdown /> until the challenge kicks off!
-                </h3>
+            <h3 className="text-center py-8 my-8 mt-8 mb-4 text-xl md:text-2xl font-poppins-bold">
+              <Countdown /> until the challenge kicks off!
+            </h3>
           </div>
           <section className="mt-20">
             <h1 className="mb-6 text-3xl sm:text-3xl md:text-4xl xl:text-5xl font-poppins-semi-bold xl:mb-8">

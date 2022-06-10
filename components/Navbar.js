@@ -59,21 +59,24 @@ export default function Navbar({ preferedColorScheme }) {
                     30DW3 Challenge
                   </a>
                 </Link> */}
-                
               </div>
               <div className="items-center hidden md:flex">
-                <Link href="/contact">
-                  <a className="px-3 py-2 mr-2 font-medium rounded-full lg:text-xl hover:underline hover:decoration-wavy">
-                    Register
-                  </a>
-                </Link>
+                <a
+                  className="px-3 py-2 mr-2 font-medium rounded-full lg:text-xl hover:underline hover:decoration-wavy"
+                  href="https://forms.gle/XHDy3Yvasqocavas9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Register
+                </a>
+
                 <a
                   className="px-4 py-2 border border-black border-solid rounded-full dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black dark:border-white lg:text-xl"
                   target="_blank"
                   href="https://discord.gg/z63rfurXMD"
                   rel="noopener noreferrer"
                 >
-                  Discord
+                  Join our Discord
                 </a>
               </div>
               <div className="flex items-center gap-2 md:hidden">
@@ -83,7 +86,7 @@ export default function Navbar({ preferedColorScheme }) {
                   href="https://discord.gg/z63rfurXMD"
                   rel="noopener noreferrer"
                 >
-                  Join us
+                  Join our Discord
                 </a>
                 <div className="flex -mr-2">
                   {/* Mobile menu button */}
@@ -116,6 +119,15 @@ export default function Navbar({ preferedColorScheme }) {
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
+                href="https://forms.gle/XHDy3Yvasqocavas9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-3 py-2 text-sm font-medium rounded-md active:bg-black hover:bg-black hover:text-white"
+              >
+                Register
+              </Disclosure.Button>
+              <Disclosure.Button
+                as="a"
                 href="/about"
                 className="px-3 py-2 text-sm font-medium rounded-md active:bg-black hover:bg-black hover:text-white"
               >
@@ -123,22 +135,13 @@ export default function Navbar({ preferedColorScheme }) {
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
-                href="https://womenbuildweb3.hashnode.dev/"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/faq"
                 className="px-3 py-2 text-sm font-medium rounded-md active:bg-black hover:bg-black hover:text-white"
               >
-                Blog
-              </Disclosure.Button>
-              <Disclosure.Button
-                as="a"
-                href="/contact"
-                className="px-3 py-2 text-sm font-medium rounded-md active:bg-black hover:bg-black hover:text-white"
-              >
-                Contact
+                FAQ
               </Disclosure.Button>
             </div>
-            <div className="pt-4 pb-3 border-t border-gray-700"></div>
+            <div className="pt-4 pb-3 border-t border-white-100"></div>
           </Disclosure.Panel>
         </>
       )}
