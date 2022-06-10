@@ -27,7 +27,7 @@ function Counter() {
     setTimeout(() => {
       setRemainingTime(calcLeftoverTime());
     }, 1000);
-  }, []);
+  },);
 
   const timer = [];
 
