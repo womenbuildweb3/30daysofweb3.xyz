@@ -11,7 +11,7 @@ const people = [
   {
     name: "Patrick Collins",
     title: "Chainlink",
-    imageUrl: "/images/Patrick.jpeg",
+    imageUrl: "/images/patrick.jpeg",
   },
   {
     name: "Ally Haire",
