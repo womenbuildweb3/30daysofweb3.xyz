@@ -37,17 +37,10 @@ export default function Footer({ preferedColorScheme }) {
           </div>
 
           <div className="flex mb-8 sm:mb-0 flex-col gap-4">
-<<<<<<< HEAD
             <h6 className="font-poppins-bold">WBW3</h6>
             <Link href="/about">
               <a className="max-w-[160px] hover:underline hover:decoration-wavy">
                 About us
-=======
-            <h6 className="font-poppins-bold">Learn {"&"} Build</h6>
-            <Link href="/#30dw3">
-              <a className="max-w-[160px]  hover:decoration-wavy">
-                30 Days of Web3
->>>>>>> main
               </a>
             </Link>
             <a
@@ -61,18 +54,12 @@ export default function Footer({ preferedColorScheme }) {
           </div>
           <div className="flex flex-col gap-4">
             <h6 className="font-poppins-bold">Get in Touch</h6>
-<<<<<<< HEAD
             <a
               className="max-w-[160px] hover:underline hover:decoration-wavy"
               href="mailto:info@womenbuildweb3.com"
             >
               Email
             </a>
-=======
-            <Link href="/contact">
-              <a className="max-w-[160px]  hover:decoration-wavy">Contact</a>
-            </Link>
->>>>>>> main
             <a
               className="max-w-[160px]  hover:decoration-wavy"
               target="_blank"
