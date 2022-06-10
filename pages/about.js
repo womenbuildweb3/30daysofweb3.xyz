@@ -5,6 +5,7 @@ import Image from "next/image";
 import Head from "next/head";
 import Footer from "../components/Footer";
 import Layout from "../components/Layout";
+import Sponsors from "../components/Sponsors";
 
 export default function About() {
   const [preferedColorScheme, setPreferedColorScheme] = useState("light");
@@ -41,11 +42,12 @@ export default function About() {
         <p className="text-lg md:text-xl lg:text-2xl xl:text-3xl leading-normal xl:leading-normal mb-6 md:mb-8">
           We’re onboarding and retaining talented, diverse developers in web3.
         </p>
-        <Link href="/contact" passHref>
-          <a className="dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-base md:text-lg lg:text-xl px-4 py-2">
-            Sponsor us
-          </a>
-        </Link>
+        <a
+          href="mailto:info@womenbuildweb3.com"
+          className="dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-base md:text-lg lg:text-xl px-4 py-2"
+        >
+          Sponsor us
+        </a>
       </header>
 
       <section className="pt-8 mb-44">
@@ -133,73 +135,14 @@ export default function About() {
           inclusion in web3.
         </p>
 
-        <Link href="/contact" passHref>
-          <a className="mx-auto dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-base md:text-lg lg:text-xl px-4 py-2">
-            Sponsor us
-          </a>
-        </Link>
+        <a
+          href="mailto:info@womenbuildweb3.com"
+          className="mx-auto dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border border-black dark:border-white border-solid rounded-full text-base md:text-lg lg:text-xl px-4 py-2 mb-8"
+        >
+          Sponsor us
+        </a>
 
-        {preferedColorScheme === "light" && (
-          <div className="mt-8 flex flex-wrap gap-8 justify-center">
-            <div className="relative w-60 h-24">
-              <Image
-                alt="Developer Dao Logo"
-                src="/logos/D_D-Logo.png"
-                objectFit="contain"
-                layout="fill"
-              />
-            </div>
-
-            <div className="relative w-60 h-24">
-              <Image
-                alt="Filecoin Logo"
-                src="/logos/Filecoin-Logo.png"
-                objectFit="contain"
-                layout="fill"
-              />
-            </div>
-
-            <div className="relative w-60 h-24">
-              <Image
-                alt="The Graph Logo"
-                src="/logos/The-Graph-Logo.png"
-                objectFit="contain"
-                layout="fill"
-              />
-            </div>
-          </div>
-        )}
-
-        {preferedColorScheme === "dark" && (
-          <div className="mt-8 flex flex-wrap gap-8 justify-center">
-            <div className="relative w-60 h-24">
-              <Image
-                alt="Developer Dao Logo"
-                src="/logos/D_D-logo-white.png"
-                objectFit="contain"
-                layout="fill"
-              />
-            </div>
-
-            <div className="relative w-60 h-24">
-              <Image
-                alt="Filecoin Logo"
-                src="/logos/Filecoin-logo-white.png"
-                objectFit="contain"
-                layout="fill"
-              />
-            </div>
-
-            <div className="relative w-60 h-24">
-              <Image
-                alt="The Graph Logo"
-                src="/logos/The-Graph-logo-white.png"
-                objectFit="contain"
-                layout="fill"
-              />
-            </div>
-          </div>
-        )}
+        <Sponsors />
       </section>
 
       <Footer preferedColorScheme={preferedColorScheme} />
