@@ -8,8 +8,27 @@ import "github-markdown-css";
 const getNextLesson = (id) => {
   switch (id) {
     case "1-introduction-to-web3":
-      return "0-get-started";
+      return "2-intro-dev-setup";
       break;
+    case "2-intro-dev-setup":
+      return "3-intro-to-blockchain-development";
+      break;
+    case "3-intro-to-blockchain-development":
+    return "4-wallet-setup";
+      break;
+    case "4-wallet-setup":
+      return "5-intro-to-building"
+      break;
+    case "5-intro-to-building":
+      return "5.1-hello-world-solidity"
+      break;
+    case "5.1-hello-world-solidity":
+      return "6-dapp-requirements"
+      break;
+    case "6-dapp-requirements":
+      return "glossary"
+      break;
+      return 
     default:
       return "1-introduction-to-web3";
   }
