@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
 
   useEffect(() => {
     const handleRouteChange = (url) => {
-      window.gtag("config", "G-DC5Z3247BE", {
+      window.gtag("config", "G-GX5678P6MV", {
         page_path: url,
       });
     };
