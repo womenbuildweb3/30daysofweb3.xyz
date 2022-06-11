@@ -82,10 +82,10 @@ export default function Home() {
             <p className="text-base leading-relaxed md:text-lg lg:text-xl md:leading-relaxed lg:leading-relaxed">
               Whether you&apos;re a senior web2 engineer or a budding
               web3-native developer, this course will walk you through shipping
-              a full-stack dapp using top web3 protocols. This course is
+              a full-stack, fully decentralized application. This course is
               asynchronous, self-paced and has live workshops from top
               developers in web3. Get an understanding of the web3 tech
-              stack,learn the principles of building on Ethereum, and create an
+              stack, learn the principles of building on Ethereum, and create an
               architectural reference to build out your own ideas.
             </p>
             <hr className="my-8 border-t border-black border-solid dark:border-white" />
