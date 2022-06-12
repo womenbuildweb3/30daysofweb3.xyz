@@ -32,7 +32,7 @@ const CurriculumContent = ({ curricData, id, paths}) => {
         <div>
           <Link href={next}>
             <button className="flex justify-center bg-indigo-800 w-full rounded-md p-2">
-              Next Lesson
+              Next
             </button>
           </Link>
         </div>

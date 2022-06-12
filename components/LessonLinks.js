@@ -36,10 +36,10 @@ export default function LessonLinks({ paths, id }) {
             })}
           </div>
         </div>
-        <div>
+        <div className="my-4">
           <Link href={links[0].params.id}>
             <button className="flex justify-center bg-indigo-800 w-full rounded-md p-2">
-                Next Lesson
+                Start
             </button>
           </Link>
         </div>
