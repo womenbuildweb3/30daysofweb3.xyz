@@ -28,7 +28,7 @@ export default function LessonLinks({ paths, id }) {
                   key={link.params.id}
                   className="p-4 rounded-lg min-h-96"
                 >
-                  <Link href="/course/1-introduction-to-web3">
+                  <Link href={"/course/"+link.params.id}>
                     {upperCase(link.params.id.replace(/\d-/g, "").replace(/-/g, ' '))}
                   </Link>
                 </div>
