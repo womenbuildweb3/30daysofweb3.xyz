@@ -1,6 +1,6 @@
-import { useState } from "react";
+// import { useState } from "react";
 import Link from "next/link";
-import { Dialog, Menu, Transition } from "@headlessui/react";
+// import { Dialog, Menu, Transition } from "@headlessui/react";
 import { SparklesIcon } from "@heroicons/react/outline";
 import CurriculumContent from "./CurriculumContent";
 import LessonLinks from "./LessonLinks";
@@ -31,18 +31,14 @@ const NavItem = ({value, path}) => {
 }
 
 const NavList = () => {
-  const listItems = lessons.map((path, index) => (
+  const listItems = lessons.map((path) => (
     <NavItem key={path.id} value={path.value} path={path.path} />
   ));
   return <div>{listItems}</div>;
 }
 
-// function classNames(...classes) {
-//   return classes.filter(Boolean).join(" ");
-// }
-
 export default function CurricSidebar({ curricData, id, paths }) {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
+  // const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
     <>
@@ -61,7 +57,7 @@ export default function CurricSidebar({ curricData, id, paths }) {
         <CurriculumContent curricData={curricData} id={id} paths={paths} />
         }
         {!curricData && <div>
-          <LessonLinks/>
+          <LessonLinks id={id} paths={paths} />
           </div>}
       </div>
     </>

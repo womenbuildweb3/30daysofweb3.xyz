@@ -8,7 +8,7 @@ export function getAllLessons() {
     {
       id: 1,
       value: "Introduction to Web3",
-      path: "1-introduction-to-web3",
+      path: "1-introduction",
     },
     {
       id: 2,

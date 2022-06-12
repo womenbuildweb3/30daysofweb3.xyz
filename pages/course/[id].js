@@ -22,11 +22,9 @@ export default function Course({curricData, id, paths}) {
     }
   }, []);
 
-  console.log("PATHS: ", paths)
 
   return (
     <CurricLayout>
-      {/* <Navbar preferedColorScheme={preferedColorScheme} /> */}
       <CurricSidebar curricData={curricData} id={id} paths={paths}/>
       <Head>
         <title>30 Days of Web3 | Curriculum </title>

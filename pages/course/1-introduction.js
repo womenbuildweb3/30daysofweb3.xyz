@@ -2,8 +2,9 @@ import { useEffect, useState } from "react";
 import Head from "next/head";
 import CurricSidebar from "../../components/CurricSideBar";
 import CurricLayout from "../../components/CurricLayout";
+import getAllPostIds from "../../utils/getAllPostIds";
 
-export default function Introduction() {
+export default function Introduction({paths}) {
   const [preferedColorScheme, setPreferedColorScheme] = useState("light");
 
   useEffect(() => {
@@ -17,7 +18,7 @@ export default function Introduction() {
 
   return (
     <CurricLayout>
-      <CurricSidebar/>
+      <CurricSidebar paths={paths} id="1-introduction"/>
       <Head>
         <title>30 Days of Web3 | Curriculum </title>
         <meta
@@ -33,4 +34,13 @@ export default function Introduction() {
       </Head>
     </CurricLayout>
   );
+}
+
+export async function getStaticProps() {
+  const paths = getAllPostIds()
+return {
+  props: {
+      paths
+  },
+};
 }
