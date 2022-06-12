@@ -8,13 +8,15 @@ import {getAllLessons} from "../utils/lessons"
 
 const lessons = getAllLessons()
 
-const NavItem = ({value, path}) => {
+const NavItem = ({value, path, id}) => {
   let classes;
-  // if(id !== value){
+  let num = id.match(/\d/g)[0];
+  let pathNum = path.match(/\d/g)[0]
+  if(num !== pathNum){
     classes = "text-indigo-100 hover:bg-indigo-600 group flex items-center px-2 py-2 text-sm font-medium rounded-md cursor-pointer"
-  // } else {
-    // classes = "bg-indigo-800 text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md cursor-pointer"
-  // }
+  } else {
+    classes = "bg-indigo-800 text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md cursor-pointer"
+  }
 
 
   return (
@@ -30,9 +32,9 @@ const NavItem = ({value, path}) => {
   );
 }
 
-const NavList = () => {
+const NavList = ({id}) => {
   const listItems = lessons.map((path) => (
-    <NavItem key={path.id} value={path.value} path={path.path} />
+    <NavItem key={path.id} value={path.value} path={path.path} id={id}/>
   ));
   return <div>{listItems}</div>;
 }
@@ -47,7 +49,7 @@ export default function CurricSidebar({ curricData, id, paths }) {
           <div className="flex -ml-20 flex-col flex-grow pt-5 bg-[#000]   overflow-y-auto">
             <div className="mt-5 ml-3 flex-1 flex flex-col">
               <nav className="flex-1 px-2 pb-4 space-y-1">
-                <NavList/>
+                <NavList id={id}/>
               </nav>
             </div>
           </div>

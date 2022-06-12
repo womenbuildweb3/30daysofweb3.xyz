@@ -7,8 +7,7 @@ const upperCase = (string) => {
   
 
 export default function LessonLinks({ paths, id }) {
-  let num = id.match(/\d/g);
-  num = num[0];
+  let num = id.match(/\d/g)[0];
 
   const links = paths.filter((path) => {
     return num == path.params.id[0];
