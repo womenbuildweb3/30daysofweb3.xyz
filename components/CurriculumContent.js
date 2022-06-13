@@ -4,38 +4,10 @@ import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import "github-markdown-css";
+import { getNextLesson } from "../utils/lessons"
 
-const getNextLesson = (id) => {
-  switch (id) {
-    case "1-introduction-to-web3":
-      return "2-intro-dev-setup";
-      break;
-    case "2-intro-dev-setup":
-      return "3-intro-to-blockchain-development";
-      break;
-    case "3-intro-to-blockchain-development":
-    return "4-wallet-setup";
-      break;
-    case "4-wallet-setup":
-      return "5-intro-to-building"
-      break;
-    case "5-intro-to-building":
-      return "5.1-hello-world-solidity"
-      break;
-    case "5.1-hello-world-solidity":
-      return "6-dapp-requirements"
-      break;
-    case "6-dapp-requirements":
-      return "glossary"
-      break;
-      return 
-    default:
-      return "1-introduction-to-web3";
-  }
-};
-
-const CurriculumContent = ({ curricData, id }) => {
-  const next = getNextLesson(id);
+const CurriculumContent = ({ curricData, id, paths}) => {
+  const next = getNextLesson(id, paths);
   return (
     <main>
       <div className="py-6 ml-80">
@@ -60,7 +32,7 @@ const CurriculumContent = ({ curricData, id }) => {
         <div>
           <Link href={next}>
             <button className="flex justify-center bg-indigo-800 w-full rounded-md p-2">
-              Next Lesson
+              Next
             </button>
           </Link>
         </div>

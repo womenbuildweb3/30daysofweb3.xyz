@@ -21,7 +21,6 @@ export default function getAllPostIds() {
   // ]
   return fileNames.map((fileName) => {
     let file = fileName.replace(/\.md$/, "");
-    // file = file.replace(/\d-/g, "");
 
     return {
       params: {
