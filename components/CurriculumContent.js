@@ -4,10 +4,11 @@ import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import "github-markdown-css";
-import { getNextLesson } from "../utils/lessons"
+import { getNextLesson } from "../utils/lessons";
 
-const CurriculumContent = ({ curricData, id, paths}) => {
-  const next = getNextLesson(id, paths);
+const CurriculumContent = ({ curricData, id, paths }) => {
+  // const next = getNextLesson(id, paths);
+  const next = null;
   return (
     <main>
       <div className="py-6 ml-80">
@@ -30,11 +31,11 @@ const CurriculumContent = ({ curricData, id, paths}) => {
           </div>
         </div>
         <div>
-          <Link href={next}>
-            <button className="flex justify-center bg-indigo-800 w-full rounded-md p-2">
-              Next
-            </button>
-          </Link>
+          {/* <Link href={next}> */}
+          <button className="flex justify-center bg-indigo-800 w-full rounded-md p-2">
+            Next
+          </button>
+          {/* </Link> */}
         </div>
       </div>
     </main>
