@@ -16,7 +16,7 @@ export default function Home() {
         />
       </Head>
       <Navbar />
-      <div className="mt-16 mx-auto max-w-7xl px-4 sm:mt-24">
+      <div className="my-16 mx-auto max-w-7xl px-4 sm:my-24">
         <div className="text-center">
           <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
             <span className="block xl:inline">Get up to speed with</span>{" "}
@@ -26,7 +26,7 @@ export default function Home() {
           </h1>
           <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
             Through our 30 Days of Web3 curriculum, you will ship a full-stack
-            app built with must-know web3 tools, protocols, and frameworks.
+            dApp leveraging must-know web3 tools, protocols, and frameworks.
           </p>
           <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
             <div className="rounded-md shadow">
@@ -51,284 +51,80 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* <div className="relative bg-indigo-600 lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center">
-          <div
-            className="hidden absolute inset-0 overflow-hidden rounded-3xl lg:block"
-            aria-hidden="true"
-          >
-            <svg
-              className="absolute bottom-full left-full transform translate-y-1/3 -translate-x-2/3 xl:bottom-auto xl:top-0 xl:translate-y-0"
-              width={404}
-              height={384}
-              fill="none"
-              viewBox="0 0 404 384"
-              aria-hidden="true"
-            >
-              <defs>
-                <pattern
-                  id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d"
-                  x={0}
-                  y={0}
-                  width={20}
-                  height={20}
-                  patternUnits="userSpaceOnUse"
-                >
-                  <rect
-                    x={0}
-                    y={0}
-                    width={4}
-                    height={4}
-                    className="text-indigo-500"
-                    fill="currentColor"
-                  />
-                </pattern>
-              </defs>
-              <rect
-                width={404}
-                height={384}
-                fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)"
-              />
-            </svg>
-            <svg
-              className="absolute top-full transform -translate-y-1/3 -translate-x-1/3 xl:-translate-y-1/2"
-              width={404}
-              height={384}
-              fill="none"
-              viewBox="0 0 404 384"
-              aria-hidden="true"
-            >
-              <defs>
-                <pattern
-                  id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d"
-                  x={0}
-                  y={0}
-                  width={20}
-                  height={20}
-                  patternUnits="userSpaceOnUse"
-                >
-                  <rect
-                    x={0}
-                    y={0}
-                    width={4}
-                    height={4}
-                    className="text-indigo-500"
-                    fill="currentColor"
-                  />
-                </pattern>
-              </defs>
-              <rect
-                width={404}
-                height={384}
-                fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)"
-              />
-            </svg>
+        <div className="space-y-8 py-16 md:py-24">
+          <div className="bg-white rounded-lg shadow overflow-hidden">
+            <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
+              <div className="lg:self-center">
+                <span className="text-base text-gray-500 font-semibold tracking-wide uppercase">
+                  Education
+                </span>
+                <h2 className="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                  Learn by doing
+                </h2>
+                <p className="mt-4 text-lg leading-6 text-gray-500">
+                  Whether you&apos;re a curious hacker or an experienced
+                  engineer, our curriculum is for anyone who wants to ship a
+                  full-stack decentralized app. Learn at your own pace and in
+                  your own time, and join live workshops run by The curriculum
+                  is asynchronous, self-paced and has live workshops from top
+                  developers in web3. Get an understanding of the web3 tech
+                  stack, learn the principles of building on Ethereum, and
+                  create an architectural reference to build out your own ideas.
+                </p>
+              </div>
+            </div>
           </div>
-          <div className="relative max-w-md mx-auto py-12 px-4 space-y-6 sm:max-w-3xl sm:py-16 sm:px-6 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6">
-            <h2
-              className="text-3xl font-extrabold text-white"
-              id="join-heading"
-            >
-              Join our team
-            </h2>
-            <p className="text-lg text-white">
-              Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate
-              id malesuada non. Cras aliquet purus dui laoreet diam sed lacus,
-              fames.
-            </p>
-            <a
-              className="block w-full py-3 px-5 text-center bg-white border border-transparent rounded-md shadow-md text-base font-medium text-indigo-700 hover:bg-gray-50 sm:inline-block sm:w-auto"
-              href="#"
-            >
-              Explore open positions
-            </a>
+          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8">
+            <div className="bg-white rounded-lg shadow overflow-hidden">
+              <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
+                <div className="lg:self-center">
+                  <span className="text-base text-gray-500 font-semibold tracking-wide uppercase">
+                    Accelerator
+                  </span>
+                  <h2 className="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    Build your own ideas
+                  </h2>
+                  <p className="mt-4 text-lg leading-6 text-gray-500">
+                    Women and non-binary developers who successfully complete
+                    the curriculum will be invited to join{" "}
+                    <a
+                      href="https://womenbuildweb3.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline"
+                    >
+                      our DAO
+                    </a>{" "}
+                    and take part in a 3-month{" "}
+                    <span className="font-medium text-gray-900">
+                      BUIDL Accelerator
+                    </span>{" "}
+                    where members can request funding to work on web3 projects.
+                    Get paid to level up your skills, build with ambitious
+                    peers, and ship dope apps to get the attention of every web3
+                    company hungry for talent.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow overflow-hidden">
+              <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
+                <div className="lg:self-center">
+                  <span className="text-base text-gray-500 font-semibold tracking-wide uppercase">
+                    Opportunities
+                  </span>
+                  <h2 className="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    Expand your network
+                  </h2>
+                  <p className="mt-4 text-lg leading-6 text-gray-500">
+                    Connect with sponsors and partner organizations looking for
+                    engineers, dev rels, etc.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="flex gap-8">
-          <div className="relative bg-indigo-600 lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center">
-            <div
-              className="hidden absolute inset-0 overflow-hidden rounded-3xl lg:block"
-              aria-hidden="true"
-            >
-              <svg
-                className="absolute bottom-full left-full transform translate-y-1/3 -translate-x-2/3 xl:bottom-auto xl:top-0 xl:translate-y-0"
-                width={404}
-                height={384}
-                fill="none"
-                viewBox="0 0 404 384"
-                aria-hidden="true"
-              >
-                <defs>
-                  <pattern
-                    id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d"
-                    x={0}
-                    y={0}
-                    width={20}
-                    height={20}
-                    patternUnits="userSpaceOnUse"
-                  >
-                    <rect
-                      x={0}
-                      y={0}
-                      width={4}
-                      height={4}
-                      className="text-indigo-500"
-                      fill="currentColor"
-                    />
-                  </pattern>
-                </defs>
-                <rect
-                  width={404}
-                  height={384}
-                  fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)"
-                />
-              </svg>
-              <svg
-                className="absolute top-full transform -translate-y-1/3 -translate-x-1/3 xl:-translate-y-1/2"
-                width={404}
-                height={384}
-                fill="none"
-                viewBox="0 0 404 384"
-                aria-hidden="true"
-              >
-                <defs>
-                  <pattern
-                    id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d"
-                    x={0}
-                    y={0}
-                    width={20}
-                    height={20}
-                    patternUnits="userSpaceOnUse"
-                  >
-                    <rect
-                      x={0}
-                      y={0}
-                      width={4}
-                      height={4}
-                      className="text-indigo-500"
-                      fill="currentColor"
-                    />
-                  </pattern>
-                </defs>
-                <rect
-                  width={404}
-                  height={384}
-                  fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)"
-                />
-              </svg>
-            </div>
-            <div className="relative max-w-md mx-auto py-12 px-4 space-y-6 sm:max-w-3xl sm:py-16 sm:px-6 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6">
-              <h2
-                className="text-3xl font-extrabold text-white"
-                id="join-heading"
-              >
-                Join our team
-              </h2>
-              <p className="text-lg text-white">
-                Varius facilisi mauris sed sit. Non sed et duis dui leo,
-                vulputate id malesuada non. Cras aliquet purus dui laoreet diam
-                sed lacus, fames.
-              </p>
-              <a
-                className="block w-full py-3 px-5 text-center bg-white border border-transparent rounded-md shadow-md text-base font-medium text-indigo-700 hover:bg-gray-50 sm:inline-block sm:w-auto"
-                href="#"
-              >
-                Explore open positions
-              </a>
-            </div>
-          </div>
-          <div className="relative bg-indigo-600 lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center">
-            <div
-              className="hidden absolute inset-0 overflow-hidden rounded-3xl lg:block"
-              aria-hidden="true"
-            >
-              <svg
-                className="absolute bottom-full left-full transform translate-y-1/3 -translate-x-2/3 xl:bottom-auto xl:top-0 xl:translate-y-0"
-                width={404}
-                height={384}
-                fill="none"
-                viewBox="0 0 404 384"
-                aria-hidden="true"
-              >
-                <defs>
-                  <pattern
-                    id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d"
-                    x={0}
-                    y={0}
-                    width={20}
-                    height={20}
-                    patternUnits="userSpaceOnUse"
-                  >
-                    <rect
-                      x={0}
-                      y={0}
-                      width={4}
-                      height={4}
-                      className="text-indigo-500"
-                      fill="currentColor"
-                    />
-                  </pattern>
-                </defs>
-                <rect
-                  width={404}
-                  height={384}
-                  fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)"
-                />
-              </svg>
-              <svg
-                className="absolute top-full transform -translate-y-1/3 -translate-x-1/3 xl:-translate-y-1/2"
-                width={404}
-                height={384}
-                fill="none"
-                viewBox="0 0 404 384"
-                aria-hidden="true"
-              >
-                <defs>
-                  <pattern
-                    id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d"
-                    x={0}
-                    y={0}
-                    width={20}
-                    height={20}
-                    patternUnits="userSpaceOnUse"
-                  >
-                    <rect
-                      x={0}
-                      y={0}
-                      width={4}
-                      height={4}
-                      className="text-indigo-500"
-                      fill="currentColor"
-                    />
-                  </pattern>
-                </defs>
-                <rect
-                  width={404}
-                  height={384}
-                  fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)"
-                />
-              </svg>
-            </div>
-            <div className="relative max-w-md mx-auto py-12 px-4 space-y-6 sm:max-w-3xl sm:py-16 sm:px-6 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6">
-              <h2
-                className="text-3xl font-extrabold text-white"
-                id="join-heading"
-              >
-                Join our team
-              </h2>
-              <p className="text-lg text-white">
-                Varius facilisi mauris sed sit. Non sed et duis dui leo,
-                vulputate id malesuada non. Cras aliquet purus dui laoreet diam
-                sed lacus, fames.
-              </p>
-              <a
-                className="block w-full py-3 px-5 text-center bg-white border border-transparent rounded-md shadow-md text-base font-medium text-indigo-700 hover:bg-gray-50 sm:inline-block sm:w-auto"
-                href="#"
-              >
-                Explore open positions
-              </a>
-            </div>
-          </div>
-        </div> */}
         <Speakers />
         <Sponsors />
       </div>

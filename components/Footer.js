@@ -72,8 +72,8 @@ export default function Footer() {
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="max-w-7xl mx-auto pt-12 pb-8 px-4 sm:px-6 lg:px-8">
-        <div className="md:flex md:justify-between gap-8">
+      <div className="max-w-7xl mx-auto pb-8 px-4 sm:px-6 lg:px-8">
+        <div className="md:flex md:justify-between gap-8 border-t border-gray-200 pt-12">
           <div className="space-y-8 lg:col-span-1">
             <div className="relative w-16 h-16">
               <Image
@@ -146,11 +146,6 @@ export default function Footer() {
               </ul>
             </div>
           </div>
-        </div>
-        <div className="mt-12 border-t border-gray-200 pt-8">
-          <p className="text-base text-gray-400 xl:text-center">
-            &copy; 2022 Women Build Web3
-          </p>
         </div>
       </div>
     </footer>
