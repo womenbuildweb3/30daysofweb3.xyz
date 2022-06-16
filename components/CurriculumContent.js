@@ -11,7 +11,7 @@ const CurriculumContent = ({ curricData, id, paths }) => {
   const next = null;
   return (
     <main>
-      <div className="py-6 ml-80">
+      <div className="py-6">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 md:px-8">
           {/* <Navbar preferedColorScheme={preferedColorScheme} /> */}
           <h1 className="text-2xl font-semibold text-white">

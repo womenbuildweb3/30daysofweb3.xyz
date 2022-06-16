@@ -55,8 +55,5 @@ export default function getAllPostIds() {
   //     }
   //   }
   // ]
-  return {
-    navigationTree,
-    paths,
-  };
+  return paths;
 }

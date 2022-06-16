@@ -1,0 +1,28 @@
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
+
+const Logo = ({ preferedColorScheme }) => {
+  return (
+    <Link href="/">
+      <a className="flex items-center sm:gap-4">
+        <Image
+          className="cursor-pointer"
+          alt="Women Build Web3 Logo"
+          src={
+            preferedColorScheme === "light"
+              ? `/logos/Logo-Fill.png`
+              : "/logos/logo-white.png"
+          }
+          height="40px"
+          width="40px"
+        />
+        <span className="hidden text-xl cursor-pointer sm:block font-poppins-bold">
+          Women Build Web3
+        </span>
+      </a>
+    </Link>
+  );
+};
+
+export default Logo;

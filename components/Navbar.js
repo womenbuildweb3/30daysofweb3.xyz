@@ -2,6 +2,7 @@ import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Link from "next/link";
 import Image from "next/image";
+import Logo from "./Logo";
 
 export default function Navbar({ preferedColorScheme }) {
   return (
@@ -10,38 +11,7 @@ export default function Navbar({ preferedColorScheme }) {
         <>
           <div className="mx-auto">
             <div className="flex items-center justify-between h-16 ">
-              {preferedColorScheme === "light" && (
-                <Link href="/">
-                  <a className="flex items-center sm:gap-4">
-                    <Image
-                      className="cursor-pointer"
-                      alt="Women Build Web3 Logo"
-                      src="/logos/Logo-Fill.png"
-                      height="40px"
-                      width="40px"
-                    />
-                    <span className="hidden text-xl cursor-pointer sm:block font-poppins-bold">
-                      Women Build Web3
-                    </span>
-                  </a>
-                </Link>
-              )}
-              {preferedColorScheme === "dark" && (
-                <Link href="/">
-                  <a className="flex items-center sm:gap-4">
-                    <Image
-                      className="cursor-pointer"
-                      alt="Women Build Web3 Logo"
-                      src="/logos/logo-white.png"
-                      height="40px"
-                      width="40px"
-                    />
-                    <span className="hidden text-xl cursor-pointer sm:block font-poppins-bold">
-                      Women Build Web3
-                    </span>
-                  </a>
-                </Link>
-              )}
+              <Logo preferedColorScheme={preferedColorScheme} />
               <div className="items-center hidden md:flex">
                 <Link href="/about">
                   <a className="px-3 py-2 rounded-full lg:text-xl hover:decoration-wavy">
@@ -51,6 +21,11 @@ export default function Navbar({ preferedColorScheme }) {
                 <Link href="/faq">
                   <a className="px-3 py-2 rounded-full lg:text-xl hover:decoration-wavy">
                     FAQ
+                  </a>
+                </Link>
+                <Link href="/course">
+                  <a className="px-3 py-2 rounded-full lg:text-xl hover:decoration-wavy">
+                    Course
                   </a>
                 </Link>
                 {/* This link below will redirect to the 30dw3 challenge when its available. */}
@@ -139,6 +114,13 @@ export default function Navbar({ preferedColorScheme }) {
                 className="px-3 py-2 text-sm font-medium rounded-md active:bg-black hover:bg-black hover:text-white"
               >
                 FAQ
+              </Disclosure.Button>
+              <Disclosure.Button
+                as="a"
+                href="/course"
+                className="px-3 py-2 text-sm font-medium rounded-md active:bg-black hover:bg-black hover:text-white"
+              >
+                Course
               </Disclosure.Button>
             </div>
             <div className="pt-4 pb-3 border-t border-white-100"></div>

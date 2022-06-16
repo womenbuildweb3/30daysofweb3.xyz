@@ -1,12 +1,12 @@
-import React from "react";
-import CourseLayout from "../../components/CourseLayout";
+export default function Course() {
+  return <></>;
+}
 
-const index = () => {
-  return (
-    <div>
-      <CourseLayout />
-    </div>
-  );
-};
-
-export default index;
+export async function getStaticProps() {
+  return {
+    redirect: {
+      permanent: false,
+      destination: `course/0-getting-started/0-overview`,
+    },
+  };
+}

@@ -3,18 +3,16 @@ import Navbar from "../../../components/Navbar";
 import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
-import Footer from "../../../components/Footer";
-import Layout from "../../../components/Layout";
-import CurricSidebar from "../../../components/CurricSideBar";
 import CurricLayout from "../../../components/CurricLayout";
+import Sidebar from "../../../components/Sidebar";
+import CurriculumContent from "../../../components/CurriculumContent";
 import getCurricContent from "../../../utils/curriculum";
-import getAllPostIds from "../../../utils/getAllPostIds";
+import getCoursePaths from "../../../utils/getCoursePaths";
+import getCourseNavigationTree from "../../../utils/getCourseNavigationTree";
 
-export default function Course({ curricData, paths: pathValues }) {
+export default function Course({ curricData, id, paths, navigationTree }) {
   const [preferedColorScheme, setPreferedColorScheme] = useState("light");
-  console.log(pathValues);
-
-  const { paths } = pathValues;
+  console.log(navigationTree, paths);
 
   useEffect(() => {
     if (
@@ -26,8 +24,7 @@ export default function Course({ curricData, paths: pathValues }) {
   }, []);
 
   return (
-    <CurricLayout>
-      <CurricSidebar curricData={curricData} paths={paths} />
+    <>
       <Head>
         <title>30 Days of Web3 | Curriculum </title>
         <meta
@@ -41,14 +38,19 @@ export default function Course({ curricData, paths: pathValues }) {
           <link rel="icon" href="/favicon-white.ico" />
         )}
       </Head>
-    </CurricLayout>
+      <CurricLayout navigation={navigationTree?.children}>
+        {curricData && (
+          <CurriculumContent curricData={curricData} id={id} paths={paths} />
+        )}
+      </CurricLayout>
+    </>
   );
 }
 
 export async function getStaticPaths() {
-  const paths = getAllPostIds();
+  const paths = getCoursePaths();
   return {
-    paths: paths.paths,
+    paths: paths,
     fallback: true,
   };
 }
@@ -56,12 +58,15 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const category = params.category;
   const subCategory = params.subCategory;
+  console.log(category);
   const curricData = getCurricContent(category, subCategory);
-  const paths = getAllPostIds();
+  const paths = getCoursePaths();
+  const navigationTree = getCourseNavigationTree();
   return {
     props: {
       curricData,
       paths,
+      navigationTree,
     },
   };
 }

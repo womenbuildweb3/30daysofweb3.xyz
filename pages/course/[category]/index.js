@@ -9,12 +9,12 @@ import CurricSidebar from "../../../components/CurricSideBar";
 import CurricLayout from "../../../components/CurricLayout";
 import getCurricContent from "../../../utils/curriculum";
 import getAllPostIds from "../../../utils/getAllPostIds";
+// import getCoursePaths from "../../../utils/getCoursePaths";
+import getCourseNavigationTree from "../../../utils/getCourseNavigationTree";
 
-export default function Course({ curricData, id, paths: pathValues }) {
+export default function Course({ curricData, id, paths, navigationTree }) {
   const [preferedColorScheme, setPreferedColorScheme] = useState("light");
-  console.log(pathValues);
-
-  const { paths } = pathValues;
+  console.log(navigationTree, paths);
 
   useEffect(() => {
     if (
@@ -48,7 +48,7 @@ export default function Course({ curricData, id, paths: pathValues }) {
 export async function getStaticPaths() {
   const paths = getAllPostIds();
   return {
-    paths: paths.paths,
+    paths: paths,
     fallback: true,
   };
 }
@@ -56,16 +56,18 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const category = params.category;
   console.log(category);
-  const curricData = getCurricContent(category, "overview");
+  const curricData = getCurricContent(category, "0-overview");
   const paths = getAllPostIds();
+  const navigationTree = getCourseNavigationTree();
   return {
     redirect: {
       permanent: false,
-      destination: `${category}/overview`,
+      destination: `${category}/0-overview`,
     },
     props: {
       curricData,
       paths,
+      navigationTree,
     },
   };
 }
