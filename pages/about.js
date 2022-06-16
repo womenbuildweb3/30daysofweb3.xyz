@@ -8,16 +8,16 @@ import Layout from "../components/Layout";
 import Sponsors from "../components/Sponsors";
 
 export default function About() {
-  const [preferedColorScheme, setPreferedColorScheme] = useState("light");
+  // const [preferedColorScheme, setPreferedColorScheme] = useState("light");
 
-  useEffect(() => {
-    if (
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches
-    ) {
-      setPreferedColorScheme("dark");
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (
+  //     window.matchMedia &&
+  //     window.matchMedia("(prefers-color-scheme: dark)").matches
+  //   ) {
+  //     setPreferedColorScheme("dark");
+  //   }
+  // }, []);
 
   return (
     <Layout>
@@ -27,12 +27,12 @@ export default function About() {
           name="description"
           content="Providing education, oppportunities, and funding to a new wave of web3 builders"
         />
-        {preferedColorScheme === "light" && (
+        {/* {preferedColorScheme === "light" && (
           <link rel="icon" href="/favicon.ico" />
         )}
         {preferedColorScheme === "dark" && (
           <link rel="icon" href="/favicon-white.ico" />
-        )}
+        )} */}
       </Head>
       <Navbar preferedColorScheme={preferedColorScheme} />
       <header className="my-40 sm:my-44 max-w-3xl">

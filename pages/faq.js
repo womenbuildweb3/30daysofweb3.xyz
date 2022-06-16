@@ -55,16 +55,17 @@ const items = [
 ];
 
 export default function Faq() {
-  const [preferedColorScheme, setPreferedColorScheme] = useState("light");
+  // const [preferedColorScheme, setPreferedColorScheme] = useState("light");
 
-  useEffect(() => {
-    if (
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches
-    ) {
-      setPreferedColorScheme("dark");
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (
+  //     window.matchMedia &&
+  //     window.matchMedia("(prefers-color-scheme: dark)").matches
+  //   ) {
+  //     setPreferedColorScheme("dark");
+  //   }
+  // }, []);
+
   return (
     <Layout>
       <Head>
