@@ -29,7 +29,7 @@ const sponsors = [
 
 export default function Sponsors() {
   return (
-    <div className="py-12 text-center sm:px-6 lg:px-8 lg:py-24">
+    <div id="partners" className="text-center py-12 sm:py-16 sm:px-6 lg:px-8">
       <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl mb-8 sm:mb-12">
         Built with support from
       </h2>

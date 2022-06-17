@@ -7,7 +7,7 @@ const navigation = {
       href: "https://forms.gle/XHDy3Yvasqocavas9",
       newTab: true,
     },
-    { name: "FAQ", href: "/faq", newTab: false },
+    { name: "FAQs", href: "/#faqs", newTab: false },
     {
       name: "Join Discord",
       href: "https://discord.gg/z63rfurXMD",
@@ -83,7 +83,7 @@ export default function Footer() {
                 objectFit="contain"
               />
             </div>
-            <p className="text-gray-500 text-base w-80">
+            <p className="text-gray-500 text-base sm:w-80">
               Unlocking the next wave of web3 builders through education,
               opportunities, and funding
             </p>
