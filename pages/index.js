@@ -13,7 +13,7 @@ export default function Home() {
         <title>30 Days of Web3</title>
         <meta
           name="description"
-          content="Providing education, oppportunities, and funding to a new wave of web3 builders"
+          content="Ship a full-stack decentralized app leveraging must-know web3 tools, protocols, and frameworks"
         />
       </Head>
       <Navbar />
@@ -54,7 +54,7 @@ export default function Home() {
         </div>
         <div className="space-y-10 py-12 sm:py-16 sm:px-6 lg:px-8">
           <div className="bg-white rounded-lg shadow overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4">
-            <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
+            <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 xl:py-20 xl:px-20">
               <div className="lg:self-center">
                 <span className="text-base text-gray-500 font-semibold tracking-wide uppercase">
                   Education
@@ -81,7 +81,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 space-y-10 lg:space-y-0 lg:grid-cols-2 lg:gap-10">
             <div className="bg-white rounded-lg shadow overflow-hidden">
-              <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
+              <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 xl:py-20 xl:px-20">
                 <div className="lg:self-center">
                   <span className="text-base text-gray-500 font-semibold tracking-wide uppercase">
                     Accelerator
@@ -113,7 +113,7 @@ export default function Home() {
               </div>
             </div>
             <div className="bg-white rounded-lg shadow overflow-hidden">
-              <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
+              <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 xl:py-20 xl:px-20">
                 <div className="lg:self-center">
                   <span className="text-base text-gray-500 font-semibold tracking-wide uppercase">
                     Opportunities
@@ -122,8 +122,12 @@ export default function Home() {
                     Expand your network
                   </h2>
                   <p className="mt-4 text-lg leading-6 text-gray-500">
-                    Connect with sponsors and partner organizations looking for
-                    engineers, dev rels, etc.
+                    Connect with our sponsors and partner organizations looking
+                    to hire engineers, dev rels, and more. We&apos;re
+                    collaborating with web3 ecosystem leaders like The Ethereum
+                    Foundation, Filecoin/IPFS, The Graph, Infura, Polygon,
+                    Radicle, and more to connect you to awesome poeple and
+                    opportunities.
                   </p>
                 </div>
               </div>
@@ -131,7 +135,15 @@ export default function Home() {
           </div>
         </div>
         <Speakers />
-        <Sponsors />
+        <div
+          id="partners"
+          className="text-center py-12 sm:py-16 sm:px-6 lg:px-8"
+        >
+          <h2 className="text-3xl font-extrabold sm:text-4xl mb-8 sm:mb-12">
+            Built with support from
+          </h2>
+          <Sponsors />
+        </div>
         <FAQSection />
       </div>
       <Footer />
