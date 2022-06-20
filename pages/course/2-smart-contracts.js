@@ -5,16 +5,16 @@ import CurricLayout from "../../components/CurricLayout";
 import getAllPostIds from "../../utils/getAllPostIds";
 
 export default function SmartContracts({ paths }) {
-  // const [preferedColorScheme, setPreferedColorScheme] = useState("light");
+  const [preferedColorScheme, setPreferedColorScheme] = useState("light");
 
-  // useEffect(() => {
-  //   if (
-  //     window.matchMedia &&
-  //     window.matchMedia("(prefers-color-scheme: dark)").matches
-  //   ) {
-  //     setPreferedColorScheme("dark");
-  //   }
-  // }, []);
+  useEffect(() => {
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      setPreferedColorScheme("dark");
+    }
+  }, []);
 
   return (
     <CurricLayout>
@@ -25,12 +25,12 @@ export default function SmartContracts({ paths }) {
           name="description"
           content="Providing education, oppportunities, and funding to a new wave of web3 builders"
         />
-        {/* {preferedColorScheme === "light" && (
+        {preferedColorScheme === "light" && (
           <link rel="icon" href="/favicon.ico" />
         )}
         {preferedColorScheme === "dark" && (
           <link rel="icon" href="/favicon-white.ico" />
-        )} */}
+        )}
       </Head>
     </CurricLayout>
   );
