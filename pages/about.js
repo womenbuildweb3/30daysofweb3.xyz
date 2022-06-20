@@ -9,7 +9,7 @@ import Sponsors from "../components/Sponsors";
 
 export default function About() {
   return (
-    <div>
+    <Layout>
       <Head>
         <title>About WBW3 | 30 Days of Web3</title>
         <meta
@@ -17,29 +17,38 @@ export default function About() {
           content="Women Build Web3 provides education, oppportunities, and funding to a new wave of web3 builders"
         />
       </Head>
-      <Navbar />
       <div className="my-16 mx-auto max-w-7xl px-4 sm:my-24 space-y-8 lg:space-y-16">
-        <div className="sm:text-center lg:text-left">
-          <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-            <span className="md:block">Unlocking the next wave of</span>{" "}
-            <span className="md:block text-indigo-600">web3 builders</span>
+        <div className="text-center">
+          <h1 className="text-4xl tracking-tight font-extrabold text-slate-900 sm:text-5xl md:text-6xl">
+            Unlocking the next wave of{" "}
+            <span className="sm:block text-blue-600">web3 builders</span>
           </h1>
-          <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-2xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+          <p className="mt-3 max-w-md mx-auto text-base text-slate-700 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
             Women Build Web3 is empowering the next wave of web3 builders
             through education, opportunities, and funding.
           </p>
-          <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+          <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
             <div className="rounded-md shadow">
               <a
-                href="#"
-                className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
+                href="mailto:info@womenbuildweb3.com"
+                className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10"
               >
                 Sponsor us
               </a>
             </div>
+            <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+              <a
+                href="https://discord.gg/z63rfurXMD"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-slate-50 md:py-4 md:text-lg md:px-10"
+              >
+                Join our Discord
+              </a>
+            </div>
           </div>
         </div>
-        <div className="py-12 sm:py-16 mx-auto max-w-2xl text-xl text-gray-500">
+        <div className="py-12 sm:py-16 mx-auto max-w-2xl text-xl text-slate-700">
           <p className="mb-12">
             Web3 needs diverse backgrounds, experiences, and perspectives to
             drive innovation and global adoption, but the ecosystem today is
@@ -75,21 +84,20 @@ export default function About() {
           </ul>
         </div>
         <div className="py-12 sm:py-16">
-          <h2 className="text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="text-center text-3xl leading-8 font-extrabold tracking-tight text-slate-900 sm:text-4xl">
             Thank you to our early supporters
           </h2>
-          <p className="mt-4 text-center mx-auto max-w-2xl text-xl text-gray-500 mb-8 sm:mb-12">
+          <p className="mt-4 text-center mx-auto max-w-2xl text-xl text-slate-700 mb-8 sm:mb-12">
             We are grateful for the support from web3 organizations and hundreds
             of individuals. Together, we are building a more diverse, inclusive,
             and equitable web3.
           </p>
           <Sponsors />
-          <p className="mt-8 sm:mt-12 text-center mx-auto max-w-2xl text-xl text-gray-500">
+          <p className="mt-8 sm:mt-12 text-center mx-auto max-w-2xl text-xl text-slate-700">
             & our 180+ Gitcoin grant backers!
           </p>
         </div>
       </div>
-      <Footer />
-    </div>
+    </Layout>
   );
 }

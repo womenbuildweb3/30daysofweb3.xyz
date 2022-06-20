@@ -7,7 +7,7 @@ const navigation = {
       href: "https://forms.gle/XHDy3Yvasqocavas9",
       newTab: true,
     },
-    { name: "FAQs", href: "/#faqs", newTab: false },
+    { name: "FAQ", href: "/#faqs", newTab: false },
     {
       name: "Join Discord",
       href: "https://discord.gg/z63rfurXMD",
@@ -68,12 +68,12 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <footer className="bg-white" aria-labelledby="footer-heading">
+    <footer aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
       <div className="max-w-7xl mx-auto pb-8 px-4 sm:px-6 lg:px-8">
-        <div className="md:flex md:justify-between gap-8 border-t border-gray-200 pt-12">
+        <div className="md:flex md:justify-between gap-8 border-t border-slate-500 pt-12">
           <div className="space-y-8 lg:col-span-1">
             <div className="relative w-16 h-16">
               <Image
@@ -83,7 +83,7 @@ export default function Footer() {
                 objectFit="contain"
               />
             </div>
-            <p className="text-gray-500 text-base sm:w-80">
+            <p className="text-slate-900 text-base sm:w-80">
               Unlocking the next wave of web3 builders through education,
               opportunities, and funding
             </p>
@@ -94,7 +94,7 @@ export default function Footer() {
                   href={item.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-gray-500"
+                  className="text-slate-500 hover:text-slate-600"
                 >
                   <span className="sr-only">{item.name}</span>
                   <item.icon className="h-6 w-6" aria-hidden="true" />
@@ -104,7 +104,7 @@ export default function Footer() {
           </div>
           <div className="mt-12 md:grid md:grid-cols-2 md:gap-8 md:mt-0 md:col-span-2">
             <div>
-              <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+              <h3 className="text-sm font-semibold text-slate-600 tracking-wider uppercase">
                 30 Days of Web3
               </h3>
               <ul role="list" className="mt-4 space-y-4">
@@ -112,7 +112,7 @@ export default function Footer() {
                   <li key={item.name}>
                     <a
                       href={item.href}
-                      className="text-base text-gray-500 hover:text-gray-900"
+                      className="text-base text-slate-900 hover:underline hover:decoration-wavy"
                       {...(item.newTab && {
                         target: "_blank",
                         rel: "noopener noreferrer",
@@ -125,7 +125,7 @@ export default function Footer() {
               </ul>
             </div>
             <div className="mt-12 md:mt-0">
-              <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+              <h3 className="text-sm font-semibold text-slate-600 tracking-wider uppercase">
                 Women Build Web3
               </h3>
               <ul role="list" className="mt-4 space-y-4">
@@ -133,7 +133,7 @@ export default function Footer() {
                   <li key={item.name}>
                     <a
                       href={item.href}
-                      className="text-base text-gray-500 hover:text-gray-900"
+                      className="text-base text-slate-900 hover:underline hover:decoration-wavy"
                       {...(item.newTab && {
                         target: "_blank",
                         rel: "noopener noreferrer",

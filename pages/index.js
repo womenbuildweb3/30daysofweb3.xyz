@@ -5,10 +5,12 @@ import Footer from "../components/Footer";
 import Speakers from "../components/Speakers";
 import Sponsors from "../components/Sponsors";
 import FAQSection from "../components/FAQSection";
+import Layout from "../components/Layout";
+import Counter from "../components/Countdown";
 
 export default function Home() {
   return (
-    <div>
+    <Layout>
       <Head>
         <title>30 Days of Web3</title>
         <meta
@@ -16,14 +18,13 @@ export default function Home() {
           content="Ship a full-stack decentralized app leveraging must-know web3 tools, protocols, and frameworks"
         />
       </Head>
-      <Navbar />
       <div className="my-16 mx-auto max-w-7xl px-4 sm:my-24 space-y-8 lg:space-y-16">
         <div className="text-center">
-          <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+          <h1 className="text-4xl tracking-tight font-extrabold text-slate-900 sm:text-5xl md:text-6xl">
             Get up to speed with{" "}
-            <span className="text-indigo-600">web3 development</span>
+            <span className="sm:block text-blue-600">web3 development</span>
           </h1>
-          <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+          <p className="mt-3 max-w-md mx-auto text-base text-slate-700 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
             Whether you&apos;re a curious hacker or an experienced engineer, 30
             Days of Web3 is for anyone who wants to ship a full-stack
             decentralized app leveraging must-know web3 tools, protocols, and
@@ -35,7 +36,7 @@ export default function Home() {
                 href="https://forms.gle/XHDy3Yvasqocavas9"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
+                className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10"
               >
                 Register
               </a>
@@ -45,7 +46,7 @@ export default function Home() {
                 href="https://discord.gg/z63rfurXMD"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
+                className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-slate-50 md:py-4 md:text-lg md:px-10"
               >
                 Join our Discord
               </a>
@@ -56,13 +57,13 @@ export default function Home() {
           <div className="bg-white rounded-lg shadow overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4">
             <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 xl:py-20 xl:px-20">
               <div className="lg:self-center">
-                <span className="text-base text-gray-500 font-semibold tracking-wide uppercase">
+                <span className="text-base text-blue-600 font-semibold tracking-wide uppercase">
                   Education
                 </span>
-                <h2 className="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                <h2 className="mt-2 text-3xl font-extrabold text-slate-900 sm:text-4xl">
                   Learn by doing
                 </h2>
-                <p className="mt-4 text-lg leading-6 text-gray-500">
+                <p className="mt-4 text-lg leading-6 text-slate-700">
                   Get an understanding of the web3 tech stack, learn the
                   principles of building on Ethereum, and create an
                   architectural reference to build out your own ideas. Go
@@ -83,13 +84,13 @@ export default function Home() {
             <div className="bg-white rounded-lg shadow overflow-hidden">
               <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 xl:py-20 xl:px-20">
                 <div className="lg:self-center">
-                  <span className="text-base text-gray-500 font-semibold tracking-wide uppercase">
+                  <span className="text-base text-blue-600 font-semibold tracking-wide uppercase">
                     Accelerator
                   </span>
-                  <h2 className="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                  <h2 className="mt-2 text-3xl font-extrabold text-slate-900 sm:text-4xl">
                     Build your own ideas
                   </h2>
-                  <p className="mt-4 text-lg leading-6 text-gray-500">
+                  <p className="mt-4 text-lg leading-6 text-slate-700">
                     Women and non-binary devs who complete our curriculum will
                     be invited to join{" "}
                     <a
@@ -101,7 +102,7 @@ export default function Home() {
                       our DAO
                     </a>{" "}
                     and take part in a 3-month{" "}
-                    <span className="font-medium text-gray-900">
+                    <span className="font-medium text-slate-900">
                       BUIDL Accelerator
                     </span>{" "}
                     where members can request funding to work on web3 projects.
@@ -115,13 +116,13 @@ export default function Home() {
             <div className="bg-white rounded-lg shadow overflow-hidden">
               <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 xl:py-20 xl:px-20">
                 <div className="lg:self-center">
-                  <span className="text-base text-gray-500 font-semibold tracking-wide uppercase">
+                  <span className="text-base text-blue-600 font-semibold tracking-wide uppercase">
                     Opportunities
                   </span>
-                  <h2 className="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                  <h2 className="mt-2 text-3xl font-extrabold text-slate-900 sm:text-4xl">
                     Expand your network
                   </h2>
-                  <p className="mt-4 text-lg leading-6 text-gray-500">
+                  <p className="mt-4 text-lg leading-6 text-slate-700">
                     Connect with our sponsors and partner organizations looking
                     to hire engineers, dev rels, and more. We&apos;re
                     collaborating with web3 ecosystem leaders like The Ethereum
@@ -146,7 +147,6 @@ export default function Home() {
         </div>
         <FAQSection />
       </div>
-      <Footer />
-    </div>
+    </Layout>
   );
 }

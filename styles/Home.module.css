@@ -7,7 +7,7 @@
 }
 
 .gradientBG {
-  background: linear-gradient(300deg, deepskyblue, darkviolet, blue);
+  background: linear-gradient(300deg, #e7ee9a, #fed395, #fbd4e6);
   background-size: 180% 180%;
   animation: gradient-animation 18s ease infinite;
 }

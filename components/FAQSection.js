@@ -6,7 +6,7 @@ const faqs = [
     id: 1,
     question: "What is the time commitment for this curriculum?",
     answer:
-      "This course is fully-online and asynchrnous. You may participate at any pace and time commitment, but it was designed to take no more than 45mins per day.",
+      "This course is fully-online and asynchronous. You may participate at any pace and time commitment, but it was designed to take no more than 45mins per day.",
   },
   {
     id: 4,
@@ -45,9 +45,9 @@ const faqs = [
   },
   {
     id: 8,
-    question: "Why do I have to give my wallet address?",
+    question: "Why do I have to provide my email and wallet address?",
     answer:
-      "We'll be awarding on-chain, proof of knowlegde tokens and will need your wallet address to send them to you.",
+      "We'll be awarding on-chain, proof of knowledge tokens and will need your email and wallet address to notify you of and send you tokens.",
   },
   // More items...
 ];
@@ -59,18 +59,18 @@ function classNames(...classes) {
 export default function FAQSection() {
   return (
     <div id="faqs" className="py-12 sm:py-16 sm:px-6 lg:px-8">
-      <div className="max-w-3xl mx-auto divide-y-2 divide-gray-200">
-        <h2 className="text-center text-3xl font-extrabold text-gray-900 sm:text-4xl">
+      <div className="max-w-3xl mx-auto divide-y divide-slate-500">
+        <h2 className="text-center text-3xl font-extrabold text-slate-900 sm:text-4xl">
           FAQs
         </h2>
-        <dl className="mt-6 space-y-6 divide-y divide-gray-200">
+        <dl className="mt-6 space-y-6 divide-y divide-slate-500">
           {faqs.map((faq) => (
             <Disclosure as="div" key={faq.id} className="pt-6">
               {({ open }) => (
                 <>
                   <dt className="text-lg">
-                    <Disclosure.Button className="text-left w-full flex justify-between items-start text-gray-400">
-                      <span className="font-medium text-gray-900">
+                    <Disclosure.Button className="text-left w-full flex justify-between items-start text-slate-700">
+                      <span className="font-medium text-slate-900">
                         {faq.question}
                       </span>
                       <span className="ml-6 h-7 flex items-center">
@@ -85,7 +85,7 @@ export default function FAQSection() {
                     </Disclosure.Button>
                   </dt>
                   <Disclosure.Panel as="dd" className="mt-2 pr-12">
-                    <p className="text-base text-gray-500">{faq.answer}</p>
+                    <p className="text-base text-slate-700">{faq.answer}</p>
                   </Disclosure.Panel>
                 </>
               )}
