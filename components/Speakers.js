@@ -1,4 +1,3 @@
-import { MailIcon, PhoneIcon } from "@heroicons/react/solid";
 import Image from "next/image";
 
 const people = [

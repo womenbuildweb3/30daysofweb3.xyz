@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
 import Head from "next/head";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import Speakers from "../components/Speakers";
 import Sponsors from "../components/Sponsors";
 import FAQSection from "../components/FAQSection";
 import Layout from "../components/Layout";
+import Image from "next/image";
 import Counter from "../components/Countdown";
 
 export default function Home() {
@@ -72,11 +71,13 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
-              <img
-                className="transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
-                src="https://tailwindui.com/img/component-images/full-width-with-sidebar.jpg"
-                alt="App screenshot"
+            <div className="relative -mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
+              <Image
+                src="/images/web3rsvp.png"
+                alt="web3rsvp app preview"
+                layout="fill"
+                objectFit="contain"
+                className="shadow transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
               />
             </div>
           </div>
