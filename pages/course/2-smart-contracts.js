@@ -4,7 +4,7 @@ import CurricSidebar from "../../components/CurricSideBar";
 import CurricLayout from "../../components/CurricLayout";
 import getAllPostIds from "../../utils/getAllPostIds";
 
-export default function SmartContracts({paths}) {
+export default function SmartContracts({ paths }) {
   const [preferedColorScheme, setPreferedColorScheme] = useState("light");
 
   useEffect(() => {
@@ -18,7 +18,7 @@ export default function SmartContracts({paths}) {
 
   return (
     <CurricLayout>
-      <CurricSidebar paths={paths} id="2-smart-contracts"/>
+      <CurricSidebar paths={paths} id="2-smart-contracts" />
       <Head>
         <title>30 Days of Web3 | Curriculum </title>
         <meta
@@ -37,10 +37,10 @@ export default function SmartContracts({paths}) {
 }
 
 export async function getStaticProps() {
-  const paths = getAllPostIds()
-return {
-  props: {
-      paths
-  },
-};
+  const paths = getAllPostIds();
+  return {
+    props: {
+      paths,
+    },
+  };
 }

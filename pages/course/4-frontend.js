@@ -4,7 +4,7 @@ import CurricSidebar from "../../components/CurricSideBar";
 import CurricLayout from "../../components/CurricLayout";
 import getAllPostIds from "../../utils/getAllPostIds";
 
-export default function Frontend({paths}) {
+export default function Frontend({ paths }) {
   const [preferedColorScheme, setPreferedColorScheme] = useState("light");
 
   useEffect(() => {
@@ -18,7 +18,7 @@ export default function Frontend({paths}) {
 
   return (
     <CurricLayout>
-      <CurricSidebar paths={paths} id="4-frontend"/>
+      <CurricSidebar paths={paths} id="4-frontend" />
       <Head>
         <title>30 Days of Web3 | Curriculum </title>
         <meta
@@ -37,10 +37,10 @@ export default function Frontend({paths}) {
 }
 
 export async function getStaticProps() {
-  const paths = getAllPostIds()
-return {
-  props: {
-      paths
-  },
-};
+  const paths = getAllPostIds();
+  return {
+    props: {
+      paths,
+    },
+  };
 }

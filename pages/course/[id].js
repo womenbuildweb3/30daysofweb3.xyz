@@ -8,9 +8,9 @@ import Layout from "../../components/Layout";
 import CurricSidebar from "../../components/CurricSideBar";
 import CurricLayout from "../../components/CurricLayout";
 import getCurricContent from "../../utils/curriculum";
-import getAllPostIds from "../../utils/getAllPostIds"
+import getAllPostIds from "../../utils/getAllPostIds";
 
-export default function Course({curricData, id, paths}) {
+export default function Course({ curricData, id, paths }) {
   const [preferedColorScheme, setPreferedColorScheme] = useState("light");
 
   useEffect(() => {
@@ -22,10 +22,9 @@ export default function Course({curricData, id, paths}) {
     }
   }, []);
 
-
   return (
     <CurricLayout>
-      <CurricSidebar curricData={curricData} id={id} paths={paths}/>
+      <CurricSidebar curricData={curricData} id={id} paths={paths} />
       <Head>
         <title>30 Days of Web3 | Curriculum </title>
         <meta
@@ -44,22 +43,22 @@ export default function Course({curricData, id, paths}) {
 }
 
 export async function getStaticPaths() {
-    const paths = getAllPostIds()
-    return {
-      paths,
-      fallback: false
-    }
-  }
+  const paths = getAllPostIds();
+  return {
+    paths,
+    fallback: false,
+  };
+}
 
-export async function getStaticProps({params}) {
-    const id = params.id
-    const curricData = getCurricContent(id);
-    const paths = getAllPostIds()
+export async function getStaticProps({ params }) {
+  const id = params.id;
+  const curricData = getCurricContent(id);
+  const paths = getAllPostIds();
   return {
     props: {
-        id,
-        curricData,
-        paths
+      id,
+      curricData,
+      paths,
     },
   };
 }
