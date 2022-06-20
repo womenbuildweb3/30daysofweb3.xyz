@@ -6,14 +6,30 @@ import Layout from "../components/Layout";
 import Sponsors from "../components/Sponsors";
 
 export default function About() {
+  const metaTitle = "About us | 30 Days of Web3";
+  const metaDescription =
+    "Women Build Web3 provides education, oppportunities, and funding to a new wave of web3 builders";
+  const metaUrl = "https://www.30daysofweb3.xyz/";
+
   return (
     <Layout>
       <Head>
-        <title>About WBW3 | 30 Days of Web3</title>
+        <title>{metaTitle}</title>
+        <meta name="description" content={metaDescription} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={metaUrl} />
+        <meta property="og:title" content={metaTitle} />
+        <meta property="og:description" content={metaDescription} />
+        <meta property="og:image" content={`${metaUrl}/images/og-image.png`} />
+        <meta property="twitter:url" content={metaUrl} />
+        <meta property="twitter:title" content={metaTitle} />
+        <meta property="twitter:description" content={metaDescription} />
+        <meta property="twitter:card" content="summary_large_image" />
         <meta
-          name="description"
-          content="Women Build Web3 provides education, oppportunities, and funding to a new wave of web3 builders"
+          property="twitter:image"
+          content={`${metaUrl}/images/twitter-image.png`}
         />
+        <meta property="twitter:image:alt" content="30 Days of Web3" />
       </Head>
       <div className="my-16 mx-auto max-w-7xl px-4 sm:my-24 space-y-8 lg:space-y-16">
         <div className="text-center">

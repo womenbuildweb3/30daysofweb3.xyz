@@ -10,7 +10,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center py-6 lg:justify-start lg:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <Link href="/">
-              <a className="text-xl font-bold text-slate-900">
+              <a className="text-xl font-bold font-display text-slate-900">
                 30 Days of Web3
               </a>
             </Link>
@@ -75,7 +75,7 @@ export default function Navbar() {
           <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-slate-50">
             <div className="pt-5 pb-6 px-5">
               <div className="flex items-center justify-between">
-                <span className="text-xl font-bold text-slate-900">
+                <span className="text-xl font-bold font-display text-slate-900">
                   30 Days of Web3
                 </span>
                 <div className="-mr-2">

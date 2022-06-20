@@ -1,20 +1,19 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {
-      fontFamily: {
-        sans: ["DM Sans", ...defaultTheme.fontFamily.sans],
-      },
+    fontFamily: {
+      'display': ['Sora', ...defaultTheme.fontFamily.sans],
+      'body': ['DM Sans', ...defaultTheme.fontFamily.sans],
     },
   },
   plugins: [
-    require("@tailwindcss/typography"),
-    require("@tailwindcss/forms"),
-    require("@tailwindcss/aspect-ratio"),
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/aspect-ratio'),
   ],
 };

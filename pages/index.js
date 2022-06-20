@@ -8,14 +8,30 @@ import Image from "next/image";
 import Counter from "../components/Countdown";
 
 export default function Home() {
+  const metaTitle = "30 Days of Web3";
+  const metaDescription =
+    "Ship a full-stack decentralized app leveraging must-know web3 tools, protocols, and frameworks";
+  const metaUrl = "https://www.30daysofweb3.xyz/";
+
   return (
     <Layout>
       <Head>
-        <title>30 Days of Web3</title>
+        <title>{metaTitle}</title>
+        <meta name="description" content={metaDescription} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={metaUrl} />
+        <meta property="og:title" content={metaTitle} />
+        <meta property="og:description" content={metaDescription} />
+        <meta property="og:image" content={`${metaUrl}/images/og-image.png`} />
+        <meta property="twitter:url" content={metaUrl} />
+        <meta property="twitter:title" content={metaTitle} />
+        <meta property="twitter:description" content={metaDescription} />
+        <meta property="twitter:card" content="summary_large_image" />
         <meta
-          name="description"
-          content="Ship a full-stack decentralized app leveraging must-know web3 tools, protocols, and frameworks"
+          property="twitter:image"
+          content={`${metaUrl}/images/twitter-image.png`}
         />
+        <meta property="twitter:image:alt" content="30 Days of Web3" />
       </Head>
       <div className="my-16 mx-auto max-w-7xl px-4 sm:my-24 space-y-8 lg:space-y-16">
         <div className="text-center">
@@ -76,8 +92,8 @@ export default function Home() {
                 src="/images/web3rsvp.png"
                 alt="web3rsvp app preview"
                 layout="fill"
-                objectFit="contain"
-                className="shadow transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
+                objectFit="cover"
+                className="shadow-lg transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
               />
             </div>
           </div>

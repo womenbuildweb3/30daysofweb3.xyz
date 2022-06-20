@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Sora", sans-serif;
+}
+
 .gradient-bg {
   background-image: url("../public/images/custom.png");
   background-repeat: no-repeat;
