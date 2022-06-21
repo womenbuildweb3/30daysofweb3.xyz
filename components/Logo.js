@@ -8,17 +8,13 @@ const Logo = ({ preferedColorScheme }) => {
       <a className="flex items-center sm:gap-4">
         <Image
           className="cursor-pointer"
-          alt="Women Build Web3 Logo"
-          src={
-            preferedColorScheme === "light"
-              ? `/logos/Logo-Fill.png`
-              : "/logos/logo-white.png"
-          }
+          alt="30 Days of Web3 Logo"
+          src="/images/logo.png"
           height="40px"
           width="40px"
         />
         <span className="hidden text-xl cursor-pointer sm:block font-poppins-bold">
-          Women Build Web3
+          30 Days of Web3
         </span>
       </a>
     </Link>

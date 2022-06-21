@@ -2,7 +2,7 @@ import React from "react";
 import CurricSidebar from "./CurricSideBar";
 import styles from "../styles/Home.module.css";
 
-const CourseLayout = ({ children, navigation }) => {
+const CurricLayout = ({ children, navigation }) => {
   return (
     <div className="relative min-h-screen h-screen max-h-screen overflow-hidden">
       <div className="flex h-full">
@@ -34,4 +34,4 @@ const CourseLayout = ({ children, navigation }) => {
   );
 };
 
-export default CourseLayout;
+export default CurricLayout;

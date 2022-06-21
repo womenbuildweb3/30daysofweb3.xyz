@@ -8,16 +8,16 @@ const postsDirectory = path.join(process.cwd(), "curriculum/");
 export default function getAllPostIds() {
   let navigationTree = dirTree(postsDirectory, { attributes: ["type"] });
 
-  navigationTree.children?.map((category, index) => {
-    let href = "/course"+"/"+category.name + "/";
+  navigationTree?.children?.map((category, index) => {
+    let href = "/course" + "/" + category.name + "/";
     let categoryName = category.name;
-        categoryName = categoryName.split("-");
-        categoryName.shift();
-        categoryName = categoryName.join("-");
-    navigationTree?.children[index] = {
+    categoryName = categoryName.split("-");
+    categoryName.shift();
+    categoryName = categoryName.join("-");
+    navigationTree.children[index] = {
       ...navigationTree.children[index],
       current: false,
-      href: href+"0-overview",
+      href: href + "0-overview",
       title: _.startCase(categoryName),
     };
     if (category?.children) {
@@ -31,7 +31,7 @@ export default function getAllPostIds() {
           ...navigationTree.children[index].children[index1],
           current: false,
           href: href + subCateroryLink,
-          title: _.startCase(subCategoryName)
+          title: _.startCase(subCategoryName),
         };
       });
     }

@@ -60,10 +60,10 @@ export async function getStaticProps({ params }) {
   const paths = getAllPostIds();
   const navigationTree = getCourseNavigationTree();
   return {
-    redirect: {
-      permanent: false,
-      destination: `${category}/0-overview`,
-    },
+    // redirect: {
+    //   permanent: false,
+    //   destination: `${category}/0-overview`,
+    // },
     props: {
       curricData,
       paths,
