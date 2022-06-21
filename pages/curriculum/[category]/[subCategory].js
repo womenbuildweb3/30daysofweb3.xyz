@@ -12,7 +12,7 @@ import getCourseNavigationTree from "../../../utils/getCourseNavigationTree";
 
 export default function Course({ curricData, id, paths, navigationTree }) {
   const [preferedColorScheme, setPreferedColorScheme] = useState("light");
-  console.log(navigationTree, paths);
+  // console.log(navigationTree, paths);
 
   useEffect(() => {
     if (
@@ -58,7 +58,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const category = params.category;
   const subCategory = params.subCategory;
-  console.log(category);
+  // console.log(category);
   const curricData = getCurricContent(category, subCategory);
   const paths = getCoursePaths();
   const navigationTree = getCourseNavigationTree();

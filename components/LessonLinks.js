@@ -21,7 +21,7 @@ export default function LessonLinks({ paths: { paths }, id }) {
             {links.map((link) => {
               return (
                 <div key={link.params.id} className="p-4 rounded-lg min-h-96">
-                  <Link href={"/course/" + link.params.id}>
+                  <Link href={"/curriculum/" + link.params.id}>
                     {upperCase(
                       link.params.id.replace(/\d-/g, "").replace(/-/g, " ")
                     )}

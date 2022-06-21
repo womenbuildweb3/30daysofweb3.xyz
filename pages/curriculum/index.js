@@ -6,7 +6,7 @@ export default function Course() {
 //   return {
 //     redirect: {
 //       permanent: false,
-//       destination: `course/0-getting-started/0-overview`,
+//       destination: `curriculum/0-getting-started/0-overview`,
 //     },
 //   };
 // }

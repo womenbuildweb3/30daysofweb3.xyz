@@ -9,7 +9,7 @@ export default function getAllPostIds() {
   let navigationTree = dirTree(postsDirectory, { attributes: ["type"] });
 
   navigationTree?.children?.map((category, index) => {
-    let href = "/course" + "/" + category.name + "/";
+    let href = "/curriculum" + "/" + category.name + "/";
     let categoryName = category.name;
     categoryName = categoryName.split("-");
     categoryName.shift();
