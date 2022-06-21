@@ -30,7 +30,7 @@ function ActivateCurrentLesson(navigation) {
   return _navigation;
 }
 
-export default function Example({ navigation = [] }) {
+export default function CurricSideBar({ navigation = [] }) {
   const activatedNavigation = ActivateCurrentLesson(navigation);
   const [preferedColorScheme, setPreferedColorScheme] = useState("light");
 
@@ -45,7 +45,7 @@ export default function Example({ navigation = [] }) {
 
   return (
     <div
-      className={`flex flex-col flex-grow pb-4 overflow-y-auto ${styles.sidebarBlur}`}
+      className={`flex flex-col flex-grow pb-4 overflow-y-auto border-r border-gray ${styles.sidebarBlur}`}
     >
       <div className="flex items-center flex-shrink-0 px-4 py-5">
         <Logo preferedColorScheme={preferedColorScheme} />
@@ -59,8 +59,8 @@ export default function Example({ navigation = [] }) {
                   href={item.href}
                   className={classNames(
                     item.current
-                      ? `${styles.sidebarActiveLesson} text-white-900`
-                      : "bg-white text-white-600 hover:bg-gray-50 hover:text-white-900",
+                      ? `${styles.sidebarActiveLesson} text-slate-900`
+                      : "bg-white text-slate-600 hover:bg-gray-50 hover:text-slate-900",
                     "group w-full flex items-center pl-7 pr-2 py-2 text-sm font-medium rounded-md"
                   )}
                 >
@@ -79,15 +79,15 @@ export default function Example({ navigation = [] }) {
                     <Disclosure.Button
                       className={classNames(
                         item.current
-                          ? `text-white-900 bg-gradient-to-l from-gray-300 to-purple-500 font-extrabold`
-                          : "text-white-600 hover:bg-white-50 hover:text-white-900",
-                        "group w-full flex items-center pr-2 py-2 text-left text-sm font-medium rounded-md focus:bg-gradient-to-l from-gray-300 to-purple-500"
+                          ? `text-slate-900 font-extrabold`
+                          : "text-slate-600 font-medium",
+                        "group w-full flex items-center pr-2 py-2 text-left text-sm rounded-md hover:bg-slate-100 hover:text-slate-900"
                       )}
                     >
                       <svg
                         className={classNames(
-                          open ? "text-white-500 rotate-90" : "text-white-300",
-                          "mr-2 flex-shrink-0 h-5 w-5 transform group-hover:text-gray-400 transition-colors ease-in-out duration-150"
+                          open ? "text-slate-500 rotate-90" : "text-slate-300",
+                          "mr-2 flex-shrink-0 h-5 w-5 transform group-hover:text-slate-400 transition-colors ease-in-out duration-150"
                         )}
                         viewBox="0 0 20 20"
                         aria-hidden="true"
@@ -102,12 +102,11 @@ export default function Example({ navigation = [] }) {
                           key={subItem.name}
                           as="a"
                           href={subItem.href}
-                          s
                           className={classNames(
                             subItem.current
-                              ? `${styles.sidebarActiveLesson} text-white-900`
-                              : "text-white-600 hover:bg-white-50 hover:text-white-900",
-                            "group w-full flex items-center pl-10 pr-2 py-2 text-sm font-medium text-white-600 rounded-md hover:text-white-900 hover:bg-white-50"
+                              ? `${styles.sidebarActiveLesson} text-slate-900 bg-gradient-to-l from-sky-100 to-pink-100 font-extrabold`
+                              : "text-slate-600 font-medium",
+                            "group w-full flex items-center pl-10 pr-2 py-2 text-sm rounded-md hover:bg-slate-100 hover:text-slate-900"
                           )}
                         >
                           {subItem.title}

@@ -11,7 +11,7 @@ const CurricLayout = ({ children, navigation }) => {
           className={`flex flex-col h-full sticky overflow-auto ${styles.sidebarWidth}`}
         >
           <CurricSidebar navigation={navigation} />
-          <div
+          {/* <div
             className={`${styles.gradientBG} ${
               styles.sidebarWidth
             } ${"light:hidden hidden sm:block fixed top-0 -z-10 bg-cover bg-no-repeat w-full max-w-full h-screen blur-xl "}`}
@@ -25,9 +25,8 @@ const CurricLayout = ({ children, navigation }) => {
             className={`${styles.gradientBG} ${
               styles.sidebarWidth
             } ${"light:hidden fixed top-0 -z-10 bg-cover bg-no-repeat w-full max-w-full h-screen blur-xl "}`}
-          />
+          /> */}
         </div>
-
         <div className="w-full overflow-auto">{children}</div>
       </div>
     </div>

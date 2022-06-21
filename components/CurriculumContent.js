@@ -8,37 +8,23 @@ import { getNextLesson } from "../utils/lessons";
 
 const CurriculumContent = ({ curricData, id, paths }) => {
   // const next = getNextLesson(id, paths);
-  const next = null;
+
   return (
-    <main>
-      <div className="py-6">
-        <div className="px-4 mx-auto max-w-7xl sm:px-6 md:px-8">
-          {/* <Navbar preferedColorScheme={preferedColorScheme} /> */}
-          <h1 className="text-2xl font-semibold text-white">
-            {curricData.data.title}
-          </h1>
-        </div>
-        <div className="px-4 mx-auto max-w-7xl sm:px-6 md:px-8">
-          {curricData.data.description}
-          <div className="py-4">
-            <div className="border-4 border-gray-200 rounded-lg min-h-96">
-              <div className="px-5 py-5 markdown-body">
-                <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                  {curricData.content}
-                </ReactMarkdown>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          {/* <Link href={next}> */}
+    <div className="bg-white px-4 py-16">
+      <ReactMarkdown
+        remarkPlugins={[remarkGfm]}
+        className="prose prose-blue prose-lg mx-auto"
+      >
+        {curricData.content}
+      </ReactMarkdown>
+      {/* <div>
+        <Link href={next}>
           <button className="flex justify-center bg-indigo-800 w-full rounded-md p-2">
             Next
           </button>
-          {/* </Link> */}
-        </div>
-      </div>
-    </main>
+        </Link>
+      </div> */}
+    </div>
   );
 };
 
