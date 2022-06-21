@@ -12,6 +12,23 @@
   animation: gradient-animation 18s ease infinite;
 }
 
+.sidebarBlur {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+}
+
+.sidebarWidth {
+  width: 300px;
+  min-width: 300px;
+  max-width: 300px;
+}
+
+.sidebarActiveLesson {
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(5px);
+  font-weight: 600;
+}
+
 @keyframes gradient-animation {
   0% {
     background-position: 0% 50%;

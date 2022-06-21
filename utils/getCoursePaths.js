@@ -1,13 +1,10 @@
 import fs from "fs";
 import path from "path";
-import dirTree, { DirectoryTree } from "directory-tree";
+import dirTree from "directory-tree";
 
-console.log("called");
 const postsDirectory = path.join(process.cwd(), "curriculum/");
 
 export default function getAllPostIds() {
-  const fileNames = fs.readdirSync(postsDirectory);
-
   const navigationTree = dirTree(postsDirectory, { attributes: ["type"] });
 
   let returnGeneratedPaths = (tree) => {
@@ -18,7 +15,7 @@ export default function getAllPostIds() {
           paths.push({
             params: {
               category: subTree.name,
-              subCategory: "overview",
+              subCategory: "0-overview",
             },
           });
           if (subTree?.children) {
@@ -46,12 +43,13 @@ export default function getAllPostIds() {
   // [
   //   {
   //     params: {
-  //       id: 'ssg-ssr'
+  //       category: 'ssg-ssr',
+  //       subCategory: 'blah blah'
   //     }
   //   },
   //   {
   //     params: {
-  //       id: 'pre-rendering'
+  //       category: 'pre-rendering'
   //     }
   //   }
   // ]

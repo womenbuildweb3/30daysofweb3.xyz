@@ -77,7 +77,7 @@ export default function Footer() {
           <div className="space-y-8 lg:col-span-1">
             <div className="relative w-16 h-16">
               <Image
-                src="/images/logo.png"
+                src="/images/wbw3-logo.png"
                 alt="Women Build Web3"
                 layout="fill"
                 objectFit="contain"
