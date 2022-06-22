@@ -78,7 +78,7 @@ export default function Home() {
                   Learn by doing
                 </h2>
                 <p className="mt-4 text-lg leading-6 text-slate-700">
-                  You'll leverage must-know web3 tools, protocols, and frameworks 
+                  You`&apos;`ll leverage must-know web3 tools, protocols, and frameworks 
                   to build your stack and create an architectural reference to 
                   build any dapp. Go through our curriculum at your own pace, and join 
                   live workshops led by top developers in web3.
