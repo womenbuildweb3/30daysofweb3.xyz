@@ -39,7 +39,7 @@ const people = [
   },
   {
     name: "Nader Dabit",
-    title: "Edge & Node",
+    title: "Celestia",
     imageUrl: "/images/speakers/Nader.png",
     twitterUrl: "https://twitter.com/dabit3",
   },
