@@ -22,14 +22,14 @@ export default function Home() {
         <meta property="og:url" content={metaUrl} />
         <meta property="og:title" content={metaTitle} />
         <meta property="og:description" content={metaDescription} />
-        <meta property="og:image" content={`${metaUrl}/images/og-image.png`} />
+        <meta property="og:image" content={`${metaUrl}images/og-image.png`} />
         <meta property="twitter:url" content={metaUrl} />
         <meta property="twitter:title" content={metaTitle} />
         <meta property="twitter:description" content={metaDescription} />
         <meta property="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:image"
-          content={`${metaUrl}/images/twitter-image.png`}
+          content={`${metaUrl}images/twitter-image.png`}
         />
         <meta property="twitter:image:alt" content="30 Days of Web3" />
       </Head>
@@ -37,12 +37,12 @@ export default function Home() {
         <div className="text-center">
           <h1 className="text-4xl tracking-tight font-extrabold text-slate-900 sm:text-5xl md:text-6xl">
             The Ultimate Guide{" "}
-            <span className="sm:block text-blue-600">To Building Web3</span>
+            <span className="sm:block text-blue-600">to Building Web3</span>
           </h1>
           <p className="mt-3 max-w-md mx-auto text-base text-slate-700 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
             Whether you&apos;re a curious hacker or an experienced engineer, 30
-            Days of Web3 is project-based curriculum created by developers to teach you how to build full-stack dapps.
-            
+            Days of Web3 is project-based curriculum created by developers to
+            teach you how to build full-stack dapps.
           </p>
           <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
             <div className="rounded-md shadow">
@@ -78,10 +78,11 @@ export default function Home() {
                   Learn by doing
                 </h2>
                 <p className="mt-4 text-lg leading-6 text-slate-700">
-                  You`&apos;`ll leverage must-know web3 tools, protocols, and frameworks 
-                  to build your stack and create an architectural reference to 
-                  build any dapp. Go through our curriculum at your own pace, and join 
-                  live workshops led by top developers in web3.
+                  You&apos;ll leverage must-know web3 tools, protocols, and
+                  frameworks to build your stack and create an architectural
+                  reference to build any dapp. Go through our curriculum at your
+                  own pace, and join live workshops led by top developers in
+                  web3.
                 </p>
               </div>
             </div>
@@ -122,8 +123,8 @@ export default function Home() {
                     </span>{" "}
                     where teams can request funding to work on web3 projects.
                     Get paid while you build out an MVP with a team of talented
-                    peers, and build up your reputation in the space to get the attention of every web3
-                    company hungry for top talent.
+                    peers, and build up your reputation in the space to get the
+                    attention of every web3 company hungry for top talent.
                   </p>
                 </div>
               </div>
