@@ -20,14 +20,14 @@ export default function About() {
         <meta property="og:url" content={metaUrl} />
         <meta property="og:title" content={metaTitle} />
         <meta property="og:description" content={metaDescription} />
-        <meta property="og:image" content={`${metaUrl}/images/og-image.png`} />
+        <meta property="og:image" content={`${metaUrl}images/og-image.png`} />
         <meta property="twitter:url" content={metaUrl} />
         <meta property="twitter:title" content={metaTitle} />
         <meta property="twitter:description" content={metaDescription} />
         <meta property="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:image"
-          content={`${metaUrl}/images/twitter-image.png`}
+          content={`${metaUrl}images/twitter-image.png`}
         />
         <meta property="twitter:image:alt" content="30 Days of Web3" />
       </Head>
