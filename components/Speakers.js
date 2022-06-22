@@ -76,7 +76,7 @@ export default function Speakers() {
               <div className="space-y-2">
                 <div className="text-lg leading-6 font-medium space-y-1">
                   <h3>{person.name}</h3>
-                  <p className="text-blue-600">{person.title}</p>
+                  <p className="text-royal-600">{person.title}</p>
                 </div>
                 <ul role="list" className="flex justify-center space-x-5">
                   <li>

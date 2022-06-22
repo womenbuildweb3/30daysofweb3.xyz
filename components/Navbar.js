@@ -16,7 +16,7 @@ export default function Navbar() {
             </Link>
           </div>
           <div className="-mr-2 -my-2 lg:hidden">
-            <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-slate-900 hover:text-slate-900 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
+            <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-slate-900 hover:text-slate-900 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-royal-500">
               <span className="sr-only">Open menu</span>
               <MenuIcon className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
@@ -43,7 +43,7 @@ export default function Navbar() {
               href="https://forms.gle/XHDy3Yvasqocavas9"
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700"
+              className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-royal-600 hover:bg-royal-700"
             >
               Register
             </a>
@@ -51,7 +51,7 @@ export default function Navbar() {
               href="https://discord.gg/z63rfurXMD"
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-4 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-blue-600 bg-white hover:bg-slate-50"
+              className="ml-4 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-royal-600 bg-white hover:bg-slate-50"
             >
               Join our Discord
             </a>
@@ -79,7 +79,7 @@ export default function Navbar() {
                   30 Days of Web3
                 </span>
                 <div className="-mr-2">
-                  <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-slate-900 hover:text-slate-900 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
+                  <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-slate-900 hover:text-slate-900 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-royal-500">
                     <span className="sr-only">Close menu</span>
                     <XIcon className="h-6 w-6" aria-hidden="true" />
                   </Popover.Button>
@@ -115,12 +115,12 @@ export default function Navbar() {
               <div>
                 <a
                   href="#"
-                  className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700"
+                  className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-royal-600 hover:bg-royal-700"
                 >
                   Register
                 </a>
                 <p className="mt-6 text-center text-base font-medium text-slate-500">
-                  <a href="#" className="text-blue-600 hover:text-blue-500">
+                  <a href="#" className="text-royal-600 hover:text-royal-500">
                     Join our Discord
                   </a>
                 </p>
