@@ -35,7 +35,7 @@ export default function About() {
         <div className="text-center">
           <h1 className="text-4xl tracking-tight font-extrabold text-slate-900 sm:text-5xl md:text-6xl">
             Unlocking the next wave of{" "}
-            <span className="sm:block text-blue-600">web3 builders</span>
+            <span className="sm:block text-royal-600">web3 builders</span>
           </h1>
           <p className="mt-3 max-w-md mx-auto text-base text-slate-700 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
             Women Build Web3 is empowering the next wave of web3 builders
@@ -45,7 +45,7 @@ export default function About() {
             <div className="rounded-md shadow">
               <a
                 href="mailto:info@womenbuildweb3.com"
-                className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10"
+                className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-royal-600 hover:bg-royal-700 md:py-4 md:text-lg md:px-10"
               >
                 Sponsor us
               </a>
@@ -55,7 +55,7 @@ export default function About() {
                 href="https://discord.gg/z63rfurXMD"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-slate-50 md:py-4 md:text-lg md:px-10"
+                className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-royal-600 bg-white hover:bg-slate-50 md:py-4 md:text-lg md:px-10"
               >
                 Join our Discord
               </a>

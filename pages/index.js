@@ -37,7 +37,7 @@ export default function Home() {
         <div className="text-center">
           <h1 className="text-4xl tracking-tight font-extrabold text-slate-900 sm:text-5xl md:text-6xl">
             The Ultimate Guide{" "}
-            <span className="sm:block text-blue-600">to Building Web3</span>
+            <span className="sm:block text-royal-600">to Building Web3</span>
           </h1>
           <p className="mt-3 max-w-md mx-auto text-base text-slate-700 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
             Whether you&apos;re a curious hacker or an experienced engineer, 30
@@ -50,7 +50,7 @@ export default function Home() {
                 href="https://forms.gle/XHDy3Yvasqocavas9"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10"
+                className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-royal-600 hover:bg-royal-700 md:py-4 md:text-lg md:px-10"
               >
                 Register
               </a>
@@ -60,7 +60,7 @@ export default function Home() {
                 href="https://discord.gg/z63rfurXMD"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-slate-50 md:py-4 md:text-lg md:px-10"
+                className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-royal-600 bg-white hover:bg-slate-50 md:py-4 md:text-lg md:px-10"
               >
                 Join our Discord
               </a>
@@ -71,7 +71,7 @@ export default function Home() {
           <div className="bg-white rounded-lg shadow overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4">
             <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 xl:py-20 xl:px-20">
               <div className="lg:self-center">
-                <span className="text-base text-blue-600 font-semibold tracking-wide uppercase">
+                <span className="text-base text-royal-600 font-semibold tracking-wide uppercase">
                   Education
                 </span>
                 <h2 className="mt-2 text-3xl font-extrabold text-slate-900 sm:text-4xl">
@@ -100,7 +100,7 @@ export default function Home() {
             <div className="bg-white rounded-lg shadow overflow-hidden">
               <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 xl:py-20 xl:px-20">
                 <div className="lg:self-center">
-                  <span className="text-base text-blue-600 font-semibold tracking-wide uppercase">
+                  <span className="text-base text-royal-600 font-semibold tracking-wide uppercase">
                     Accelerator
                   </span>
                   <h2 className="mt-2 text-3xl font-extrabold text-slate-900 sm:text-4xl">
@@ -132,7 +132,7 @@ export default function Home() {
             <div className="bg-white rounded-lg shadow overflow-hidden">
               <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 xl:py-20 xl:px-20">
                 <div className="lg:self-center">
-                  <span className="text-base text-blue-600 font-semibold tracking-wide uppercase">
+                  <span className="text-base text-royal-600 font-semibold tracking-wide uppercase">
                     Opportunities
                   </span>
                   <h2 className="mt-2 text-3xl font-extrabold text-slate-900 sm:text-4xl">
