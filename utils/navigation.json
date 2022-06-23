@@ -5,13 +5,11 @@
       {
         "name": "0-overview.md",
         "type": "file",
-        "current": false,
         "href": "/curriculum/0-getting-started/0-overview",
         "title": "Overview"
       }
     ],
     "type": "directory",
-    "current": false,
     "href": "/curriculum/0-getting-started/0-overview",
     "title": "Getting Started"
   },
@@ -21,55 +19,47 @@
       {
         "name": "0-overview.md",
         "type": "file",
-        "current": false,
         "href": "/curriculum/1-introduction/0-overview",
         "title": "Overview"
       },
       {
         "name": "1-introduction-to-web3.md",
         "type": "file",
-        "current": false,
         "href": "/curriculum/1-introduction/1-introduction-to-web3",
         "title": "Introduction To Web 3"
       },
       {
         "name": "2-intro-dev-setup.md",
         "type": "file",
-        "current": false,
         "href": "/curriculum/1-introduction/2-intro-dev-setup",
         "title": "Intro Dev Setup"
       },
       {
         "name": "3-glossary.md",
         "type": "file",
-        "current": false,
         "href": "/curriculum/1-introduction/3-glossary",
         "title": "Glossary"
       },
       {
-        "name": "3-intro-to-blockchain-development.md",
+        "name": "4-intro-to-blockchain-development.md",
         "type": "file",
-        "current": false,
-        "href": "/curriculum/1-introduction/3-intro-to-blockchain-development",
+        "href": "/curriculum/1-introduction/4-intro-to-blockchain-development",
         "title": "Intro To Blockchain Development"
       },
       {
         "name": "4-wallet-setup.md",
         "type": "file",
-        "current": false,
         "href": "/curriculum/1-introduction/4-wallet-setup",
         "title": "Wallet Setup"
       },
       {
         "name": "5-intro-to-building.md",
         "type": "file",
-        "current": false,
         "href": "/curriculum/1-introduction/5-intro-to-building",
         "title": "Intro To Building"
       }
     ],
     "type": "directory",
-    "current": false,
     "href": "/curriculum/1-introduction/0-overview",
     "title": "Introduction"
   },
@@ -79,27 +69,23 @@
       {
         "name": "0-overview.md",
         "type": "file",
-        "current": false,
         "href": "/curriculum/2-smart-contracts/0-overview",
         "title": "Overview"
       },
       {
         "name": "1-hello-world-solidity.md",
         "type": "file",
-        "current": false,
         "href": "/curriculum/2-smart-contracts/1-hello-world-solidity",
         "title": "Hello World Solidity"
       },
       {
         "name": "2-dapp-requirements.md",
         "type": "file",
-        "current": false,
         "href": "/curriculum/2-smart-contracts/2-dapp-requirements",
         "title": "Dapp Requirements"
       }
     ],
     "type": "directory",
-    "current": false,
     "href": "/curriculum/2-smart-contracts/0-overview",
     "title": "Smart Contracts"
   },
@@ -109,20 +95,17 @@
       {
         "name": "0-overview.md",
         "type": "file",
-        "current": false,
         "href": "/curriculum/3-subgraphs/0-overview",
         "title": "Overview"
       },
       {
         "name": "1-placeholder.md",
         "type": "file",
-        "current": false,
         "href": "/curriculum/3-subgraphs/1-placeholder",
         "title": "Placeholder"
       }
     ],
     "type": "directory",
-    "current": false,
     "href": "/curriculum/3-subgraphs/0-overview",
     "title": "Subgraphs"
   },
@@ -132,20 +115,17 @@
       {
         "name": "0-overview.md",
         "type": "file",
-        "current": false,
         "href": "/curriculum/4-frontend/0-overview",
         "title": "Overview"
       },
       {
         "name": "1-placeholder.md",
         "type": "file",
-        "current": false,
         "href": "/curriculum/4-frontend/1-placeholder",
         "title": "Placeholder"
       }
     ],
     "type": "directory",
-    "current": false,
     "href": "/curriculum/4-frontend/0-overview",
     "title": "Frontend"
   },
@@ -155,20 +135,17 @@
       {
         "name": "0-overview.md",
         "type": "file",
-        "current": false,
         "href": "/curriculum/5-finishing-touches/0-overview",
         "title": "Overview"
       },
       {
         "name": "1-placeholder.md",
         "type": "file",
-        "current": false,
         "href": "/curriculum/5-finishing-touches/1-placeholder",
         "title": "Placeholder"
       }
     ],
     "type": "directory",
-    "current": false,
     "href": "/curriculum/5-finishing-touches/0-overview",
     "title": "Finishing Touches"
   }
