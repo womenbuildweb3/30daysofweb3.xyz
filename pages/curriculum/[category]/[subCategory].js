@@ -26,6 +26,12 @@ export async function getStaticProps({ params }) {
   const curricData = getCurricContent(category, subCategory);
   const paths = getCoursePaths();
 
+  if (curricData == null) {
+    return {
+      notFound: true,
+    };
+  }
+
   return {
     props: {
       curricData,
