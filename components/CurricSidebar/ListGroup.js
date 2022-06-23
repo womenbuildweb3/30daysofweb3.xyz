@@ -6,7 +6,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function ({ item }) {
+export default function ListGroup({ item }) {
   const router = useRouter();
   const { category } = router.query;
   const selected = category === item.name;
@@ -20,7 +20,6 @@ export default function ({ item }) {
       >
         {({ open }) => (
           <>
-            {console.log(selected, open)}
             <Disclosure.Button
               className={classNames(
                 selected
@@ -42,8 +41,8 @@ export default function ({ item }) {
               {item.title}
             </Disclosure.Button>
             <Disclosure.Panel className="space-y-1">
-              {item.children.map((subItem) => (
-                <ListItem item={subItem} />
+              {item.children.map((subItem, index) => (
+                <ListItem item={subItem} key={index} />
               ))}
             </Disclosure.Panel>
           </>

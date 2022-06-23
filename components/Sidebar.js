@@ -58,7 +58,6 @@ const _navigation = [
   },
 ];
 export default function Sidebar({ navigation = _navigation }) {
-  // console.log(navigation);
   return (
     <div className="flex flex-col flex-grow border-r border-gray-200 pt-5 pb-4 bg-white overflow-y-auto">
       <div className="flex items-center flex-shrink-0 px-4">

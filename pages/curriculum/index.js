@@ -4,8 +4,6 @@ import CurricLayout from "../../components/CurricLayout";
 
 const Curriculum = () => {
   const [preferedColorScheme, setPreferedColorScheme] = useState("light");
-  // console.log(navigationTree, paths);
-
   useEffect(() => {
     if (
       window.matchMedia &&

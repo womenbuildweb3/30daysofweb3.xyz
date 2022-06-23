@@ -4,7 +4,7 @@ import CurricSidebar from "./CurricSideBar";
 import styles from "../styles/Home.module.css";
 import navigation from "../utils/navigation.json";
 
-export default function ({ children }) {
+export default function CurricLayout({ children }) {
   const [preferedColorScheme, setPreferedColorScheme] = useState("light");
 
   useEffect(() => {

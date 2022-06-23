@@ -26,11 +26,11 @@ export default function CurricSideBar({ navigation }) {
       </div>
       <div className="mt-5 flex-grow flex flex-col">
         <nav className="flex-1 px-2 space-y-1" aria-label="Sidebar">
-          {navigation?.map((item) =>
+          {navigation?.map((item, index) =>
             !item.children ? (
-              <ListItem item={item} />
+              <ListItem item={item} key={index} />
             ) : (
-              <ListGroup item={item} />
+              <ListGroup item={item} key={index} />
             )
           )}
         </nav>
