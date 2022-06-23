@@ -18,6 +18,4 @@ const Curriculum = () => {
 };
 export const CurriculumLayout = (page) => <CurricLayout>{page}</CurricLayout>;
 
-Curriculum.getLayout = CurriculumLayout;
-
 export default Curriculum;
