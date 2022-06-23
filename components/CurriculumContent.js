@@ -7,12 +7,13 @@ import remarkGfm from "remark-gfm";
 import "github-markdown-css";
 import { getNextLesson } from "../utils/lessons";
 import navigation from "../utils/navigation.json";
+import TweetButton from "./TweetButton";
 
 const CurriculumContent = ({ curricData }) => {
   const router = useRouter();
   const { category, subCategory } = router.query;
   const nextPath = getNextLesson(category, subCategory, navigation);
-  console.log(nextPath);
+  console.log("TWEET", typeof curricData.data.tweet);
   return (
     <div className="bg-white px-4 py-16">
       <ReactMarkdown
@@ -22,11 +23,13 @@ const CurriculumContent = ({ curricData }) => {
         {curricData.content}
       </ReactMarkdown>
       <div className="flex justify-center w-full mt-5">
-        <Link href={nextPath}>
+        {nextPath !== "/" && <Link href={nextPath}>
           <button className="flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-royal-600 hover:bg-royal-700 md:py-3 md:text-lg md:px-8">
-            {nextPath == "/" ? "Finish. Let's Tweet!" : "Next"}
+            Next
           </button>
-        </Link>
+        </Link>}
+
+        {curricData.data.tweet && <TweetButton copy={curricData.data.tweet}/>}
       </div>
     </div>
   );
