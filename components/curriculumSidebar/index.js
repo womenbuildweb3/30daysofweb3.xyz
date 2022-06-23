@@ -3,7 +3,6 @@ import Logo from "../Logo";
 import ListItem from "./ListItem";
 import ListGroup from "./ListGroup";
 import styles from "../../styles/Home.module.css";
-
 export default function CurricSideBar({ navigation }) {
   const [preferedColorScheme, setPreferedColorScheme] = useState("light");
 
