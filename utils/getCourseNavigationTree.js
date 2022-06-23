@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import dirTree from "directory-tree";
 import _ from "lodash";
+import getFileNameCapitals from "./getTitlefromFileNames";
 
 const postsDirectory = path.join(process.cwd(), "curriculum/");
 
@@ -10,10 +11,7 @@ export default function getAllPostIds() {
 
   navigationTree?.children?.map((category, index) => {
     let href = "/curriculum" + "/" + category.name + "/";
-    let categoryName = category.name;
-    categoryName = categoryName.split("-");
-    categoryName.shift();
-    categoryName = categoryName.join("-");
+    let categoryName = getFileNameCapitals(category.name);
     navigationTree.children[index] = {
       ...navigationTree.children[index],
       current: false,
@@ -22,10 +20,7 @@ export default function getAllPostIds() {
     };
     if (category?.children) {
       category?.children?.map((subCategory, index1) => {
-        let subCategoryName = subCategory.name.replace(/\.md$/, "");
-        subCategoryName = subCategoryName.split("-");
-        subCategoryName.shift();
-        subCategoryName = subCategoryName.join("-");
+        let subCategoryName = getFileNameCapitals(subCategory.name);
         let subCateroryLink = subCategory.name.replace(/\.md$/, "");
         navigationTree.children[index].children[index1] = {
           ...navigationTree.children[index].children[index1],

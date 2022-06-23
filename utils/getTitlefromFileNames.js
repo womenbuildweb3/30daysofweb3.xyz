@@ -5,6 +5,5 @@ export default function getFileNameCapitals(fileName) {
   name = name.split("-");
   name.shift();
   name = name.join("-");
-  name = _.startCase(name);
   return name;
 }

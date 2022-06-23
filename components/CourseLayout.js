@@ -2,7 +2,7 @@ import React from "react";
 import Sidebar from "./Sidebar";
 import styles from "../styles/Home.module.css";
 
-const CourseLayout = ({ children, navigationTree }) => {
+const CourseLayout = ({ children }) => {
   return (
     <div className="relative">
       <div className="">
