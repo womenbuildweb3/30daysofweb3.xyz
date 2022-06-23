@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
-import CurricSidebar from "./CurricSideBar";
+import CurricSidebar from "./curricSidebar/index";
 import styles from "../styles/Home.module.css";
 import navigation from "../utils/navigation.json";
 
