@@ -47,13 +47,13 @@
         "title": "Intro To Blockchain Development"
       },
       {
-        "name": "4-wallet-setup.md",
+        "name": "5-wallet-setup.md",
         "type": "file",
         "href": "/curriculum/1-introduction/5-wallet-setup",
         "title": "Wallet Setup"
       },
       {
-        "name": "5-intro-to-building.md",
+        "name": "6-intro-to-building.md",
         "type": "file",
         "href": "/curriculum/1-introduction/6-intro-to-building",
         "title": "Intro To Building"
