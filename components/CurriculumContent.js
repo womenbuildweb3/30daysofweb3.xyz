@@ -6,7 +6,7 @@ import remarkGfm from "remark-gfm";
 import { getNextLesson } from "../utils/lessons";
 import navigation from "../utils/navigation.json";
 import TweetButton from "./TweetButton";
-import CodeBlock from "./codeblock";
+import CodeBlock from "./CodeBlock";
 
 const CurriculumContent = ({ curricData }) => {
   const router = useRouter();
