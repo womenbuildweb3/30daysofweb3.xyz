@@ -1,4 +1,3 @@
-import fs from "fs";
 import path from "path";
 import dirTree from "directory-tree";
 
@@ -22,7 +21,6 @@ export default function getAllPostIds() {
             generatePaths(subTree, paths);
           }
         } else {
-          let categoryName = parentTree.name;
           let name = subTree.name.replace(/\.md$/, "");
           paths.push({
             params: {
