@@ -13,7 +13,6 @@ const CurriculumContent = ({ curricData }) => {
   const router = useRouter();
   const { category, subCategory } = router.query;
   const nextPath = getNextLesson(category, subCategory, navigation);
-  console.log("TWEET", typeof curricData.data.tweet);
   return (
     <div className="bg-white px-4 py-16">
       <ReactMarkdown
