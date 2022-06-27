@@ -37,7 +37,7 @@ export default function Home() {
         <div className="text-center">
           <h1 className="text-4xl tracking-tight font-extrabold text-slate-900 sm:text-5xl md:text-6xl">
             The Ultimate Guide{" "}
-            <span className="sm:block text-royal-600">to Building Web3</span>
+            <span className="sm:block text-royal-600">to Building Fullstack Dapps</span>
           </h1>
           <p className="mt-3 max-w-md mx-auto text-base text-slate-700 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
             Whether you&apos;re a curious hacker or an experienced engineer, 30
