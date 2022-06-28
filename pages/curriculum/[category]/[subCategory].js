@@ -60,10 +60,9 @@ export async function getStaticProps({ params, locale }) {
     },
   };
 }
-const CurriculumLayout = (page) => {
-  console.log(page);
-  return <CurricLayout navigation={page.props.navigation}>{page}</CurricLayout>;
-};
+const CurriculumLayout = (page) => (
+  <CurricLayout navigation={page.props.navigation}>{page}</CurricLayout>
+);
 
 Course.getLayout = CurriculumLayout;
 
