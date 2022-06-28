@@ -1,31 +1,51 @@
+import useTranslation from "next-translate/useTranslation";
+import getT from "next-translate/getT";
 import CurriculumContent from "../../../components/CurriculumContent";
 import getCurricContent from "../../../utils/curriculum";
 import getCoursePaths from "../../../utils/getCoursePaths";
-import { CurriculumLayout } from "../index";
+import CurricLayout from "../../../components/CurricLayout";
 
 function Course({ curricData, id, paths }) {
+  const { t } = useTranslation("navigation");
+
   return (
     <>
       {curricData && (
-        <CurriculumContent curricData={curricData} id={id} paths={paths} />
+        <CurriculumContent
+          navigation={t("navigation", {}, { returnObjects: true })}
+          curricData={curricData}
+          id={id}
+          paths={paths}
+        />
       )}
     </>
   );
 }
 
-export async function getStaticPaths() {
-  const paths = getCoursePaths();
+export async function getStaticPaths({ locales }) {
+  const categories = getCoursePaths();
+  const paths = categories.flatMap((category) => {
+    return locales.map((locale) => {
+      return {
+        params: {
+          category: category.category,
+          subCategory: category.subCategory,
+        },
+        locale: locale,
+      };
+    });
+  });
   return {
     paths: paths,
     fallback: true,
   };
 }
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params, locale }) {
   const { category, subCategory } = params;
   const curricData = getCurricContent(category, subCategory);
   const paths = getCoursePaths();
-
+  const t = await getT(locale, "navigation");
   if (curricData == null) {
     return {
       notFound: true,
@@ -36,9 +56,14 @@ export async function getStaticProps({ params }) {
     props: {
       curricData,
       paths,
+      navigation: t("navigation", {}, { returnObjects: true }),
     },
   };
 }
+const CurriculumLayout = (page) => {
+  console.log(page);
+  return <CurricLayout navigation={page.props.navigation}>{page}</CurricLayout>;
+};
 
 Course.getLayout = CurriculumLayout;
 

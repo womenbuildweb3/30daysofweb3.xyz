@@ -4,11 +4,10 @@ import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { getNextLesson } from "../utils/lessons";
-import navigation from "../utils/navigation.json";
 import TweetButton from "./TweetButton";
 import CodeBlock from "./CodeBlock";
 
-const CurriculumContent = ({ curricData }) => {
+const CurriculumContent = ({ curricData, navigation }) => {
   const router = useRouter();
   const { category, subCategory } = router.query;
   const nextPath = getNextLesson(category, subCategory, navigation);
