@@ -38,7 +38,7 @@ export default function Partners() {
     <div className="grid grid-cols-2 gap-8 md:grid-cols-3 md:gap-12">
       {partners.map((partner) => (
         <div key={partner.name} className="col-span-1">
-          <a href={partner.url}>
+          <a target="_blank" rel="noopener noreferrer" href={partner.url}>
             <div className="relative w-full h-32 cursor-pointer">
               <Image
                 src={partner.imageUrl}
