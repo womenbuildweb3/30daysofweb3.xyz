@@ -1,4 +1,6 @@
-module.exports = {
+const nextTranslate = require("next-translate");
+
+module.exports = nextTranslate({
   images: {
     domains: ["cdn.hashnode.com", "images.unsplash.com"],
   },
@@ -10,4 +12,4 @@ module.exports = {
     return config;
   },
   reactStrictMode: true,
-};
+});

@@ -12,10 +12,8 @@ export default function getAllPostIds() {
       parentTree.children.map((subTree, index) => {
         if (subTree.type == "directory") {
           paths.push({
-            params: {
-              category: subTree.name,
-              subCategory: "0-overview",
-            },
+            category: subTree.name,
+            subCategory: "0-overview",
           });
           if (subTree?.children) {
             generatePaths(subTree, paths);
@@ -23,10 +21,8 @@ export default function getAllPostIds() {
         } else {
           let name = subTree.name.replace(/\.md$/, "");
           paths.push({
-            params: {
-              category: parentTree.name,
-              subCategory: name,
-            },
+            category: parentTree.name,
+            subCategory: name,
           });
         }
       });
@@ -40,15 +36,11 @@ export default function getAllPostIds() {
   // Returns an array that looks like this:
   // [
   //   {
-  //     params: {
   //       category: 'ssg-ssr',
   //       subCategory: 'blah blah'
-  //     }
   //   },
   //   {
-  //     params: {
   //       category: 'pre-rendering'
-  //     }
   //   }
   // ]
   return paths;

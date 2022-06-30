@@ -7,7 +7,7 @@ export default function Course() {
 
   useEffect(() => {
     if (category) router.push(`${category}/0-overview`);
-  }, [category]);
+  }, [category, router]);
 
   return <></>;
 }

@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
+import Languages from "../Languages";
 import Logo from "../Logo";
 import ListItem from "./ListItem";
 import ListGroup from "./ListGroup";
 import styles from "../../styles/Home.module.css";
+
 export default function CurricSideBar({ navigation }) {
   const [preferedColorScheme, setPreferedColorScheme] = useState("light");
 
@@ -32,6 +34,7 @@ export default function CurricSideBar({ navigation }) {
             )
           )}
         </nav>
+        <Languages />
       </div>
     </div>
   );
