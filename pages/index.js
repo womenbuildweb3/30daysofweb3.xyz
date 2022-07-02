@@ -2,10 +2,11 @@ import { useEffect, useState } from "react";
 import Head from "next/head";
 import Speakers from "../components/Speakers";
 import Sponsors from "../components/Sponsors";
+import Partners from "../components/Partners";
 import FAQSection from "../components/FAQSection";
 import Layout from "../components/Layout";
 import Image from "next/image";
-import Counter from "../components/Countdown";
+// import Counter from "../components/Countdown";
 
 export default function Home() {
   const metaTitle = "30 Days of Web3";
@@ -153,7 +154,7 @@ export default function Home() {
         </div>
         <Speakers />
         <div
-          id="partners"
+          id="sponsors"
           className="text-center py-12 sm:py-16 sm:px-6 lg:px-8"
         >
           <h2 className="text-3xl font-extrabold sm:text-4xl mb-8 sm:mb-12">
@@ -161,7 +162,17 @@ export default function Home() {
           </h2>
           <Sponsors />
         </div>
+        <div
+          id="partners"
+          className="text-center py-12 sm:py-16 sm:px-6 lg:px-8"
+        >
+          <h2 className="text-3xl font-extrabold sm:text-4xl mb-8 sm:mb-12">
+            Explore partner communities
+          </h2>
+          <Partners />
+        </div>
         <FAQSection />
+        
       </div>
     </Layout>
   );
