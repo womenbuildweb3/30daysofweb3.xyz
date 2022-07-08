@@ -17,6 +17,11 @@ const sponsors = [
     url: "https://filecoin.io/",
   },
   {
+    name: "Game7",
+    imageUrl: "/images/sponsors/game7.svg",
+    url: "https://game7.io/",
+  },
+  {
     name: "The Graph",
     imageUrl: "/images/sponsors/graph.png",
     url: "https://thegraph.com/",

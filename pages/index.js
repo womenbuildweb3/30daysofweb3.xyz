@@ -38,7 +38,9 @@ export default function Home() {
         <div className="text-center">
           <h1 className="text-4xl tracking-tight font-extrabold text-slate-900 sm:text-5xl md:text-6xl">
             The Ultimate Guide{" "}
-            <span className="sm:block text-royal-600">to Building Fullstack Dapps</span>
+            <span className="sm:block text-royal-600">
+              to Building Fullstack Dapps
+            </span>
           </h1>
           <p className="mt-3 max-w-md mx-auto text-base text-slate-700 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
             Whether you&apos;re a curious hacker or an experienced engineer, 30
@@ -167,12 +169,11 @@ export default function Home() {
           className="text-center py-12 sm:py-16 sm:px-6 lg:px-8"
         >
           <h2 className="text-3xl font-extrabold sm:text-4xl mb-8 sm:mb-12">
-            Explore partner communities
+            Backed by partner communities
           </h2>
           <Partners />
         </div>
         <FAQSection />
-        
       </div>
     </Layout>
   );

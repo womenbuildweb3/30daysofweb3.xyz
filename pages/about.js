@@ -4,6 +4,7 @@ import Image from "next/image";
 import Head from "next/head";
 import Layout from "../components/Layout";
 import Sponsors from "../components/Sponsors";
+import Partners from "../components/Partners";
 
 export default function About() {
   const metaTitle = "About us | 30 Days of Web3";
@@ -107,6 +108,9 @@ export default function About() {
             and equitable web3.
           </p>
           <Sponsors />
+          <div className="mt-8 sm:mt-12">
+            <Partners />
+          </div>
           <p className="mt-8 sm:mt-12 text-center mx-auto max-w-2xl text-xl text-slate-700">
             & our 180+ Gitcoin grant backers!
           </p>

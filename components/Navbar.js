@@ -22,9 +22,9 @@ export default function Navbar() {
             </Popover.Button>
           </div>
           <Popover.Group as="nav" className="hidden lg:flex space-x-10">
-            <Link href="/#partners">
+            <Link href="/#sponsors">
               <a className="text-base font-medium text-slate-900 hover:underline hover:decoration-wavy">
-                Partners
+                Sponsors
               </a>
             </Link>
             <Link href="/#faqs">
@@ -87,10 +87,10 @@ export default function Navbar() {
               </div>
               <div className="mt-6">
                 <nav className="grid gap-y-8">
-                  <Link href="/#partners">
+                  <Link href="/#sponsors">
                     <a className="-m-3 p-3 flex items-center rounded-md hover:bg-slate-50">
                       <span className="text-base font-medium text-slate-900">
-                        Partners
+                        Sponsors
                       </span>
                     </a>
                   </Link>
