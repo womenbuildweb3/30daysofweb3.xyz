@@ -21,6 +21,12 @@ const faqs = [
       "Yes! This course is less focused on programming specifics and fundamentals, and more focused on helping developers build a mental model and an architectural reference for building a dapp. We will give you the code for all of the sections, and although it will be helpful, it is not required to have deep programming expereince.",
   },
   {
+    id: 9,
+    question: "What benefit do I get by being part of a partner community?",
+    answer:
+      "Members of partner communities will get access to register for the course before it becomes available to the general public. The first cohort will be capped at 500 students, so this ensures that communities are able to get a seat in the course.",
+  },
+  {
     id: 2,
     question: "How can I get support if I get stuck?",
     answer: "Our team will be available to answer questions via Discord.",
