@@ -169,7 +169,7 @@ export default function Home() {
           className="text-center py-12 sm:py-16 sm:px-6 lg:px-8"
         >
           <h2 className="text-3xl font-extrabold sm:text-4xl mb-8 sm:mb-12">
-            Backed by partner communities
+            Partner Communities
           </h2>
           <Partners />
         </div>
