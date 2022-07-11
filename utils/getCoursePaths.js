@@ -3,7 +3,7 @@ import dirTree from "directory-tree";
 
 const postsDirectory = path.join(process.cwd(), "curriculum/");
 
-export default function getAllPostIds() {
+export default function getCoursePaths() {
   const navigationTree = dirTree(postsDirectory, { attributes: ["type"] });
 
   let returnGeneratedPaths = (tree) => {
