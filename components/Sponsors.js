@@ -2,11 +2,6 @@ import Image from "next/image";
 
 const sponsors = [
   {
-    name: "Brev.dev",
-    imageUrl: "/images/sponsors/brev.svg",
-    url: "https://www.brev.dev/",
-  },
-  {
     name: "The Ethereum Foundation",
     imageUrl: "/images/sponsors/ef.svg",
     url: "https://ethereum.foundation/",
@@ -15,11 +10,6 @@ const sponsors = [
     name: "Filecoin/IPFS",
     imageUrl: "/images/sponsors/filecoin.svg",
     url: "https://filecoin.io/",
-  },
-  {
-    name: "Game7",
-    imageUrl: "/images/sponsors/game7.svg",
-    url: "https://game7.io/",
   },
   {
     name: "The Graph",
