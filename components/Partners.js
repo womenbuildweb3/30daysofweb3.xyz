@@ -2,9 +2,19 @@ import Image from "next/image";
 
 const partners = [
   {
-    name: "Surge",
-    imageUrl: "/images/partners/surge_logo.png",
-    url: "https://www.surgewomen.io/",
+    name: "Cryptoversidad",
+    imageUrl: "/images/partners/Cryptoversidad_logo.png",
+    url: "https://cryptoversidad.com/",
+  },
+  {
+    name: "Developer DAO",
+    imageUrl: "/images/partners/developerdao.svg",
+    url: "https://www.developerdao.com/",
+  },
+  {
+    name: "Gitcoin",
+    imageUrl: "/images/partners/gitcoin.png",
+    url: "https://gitcoin.co/",
   },
   {
     name: "HER DAO",
@@ -22,14 +32,19 @@ const partners = [
     url: "https://platzi.com/",
   },
   {
+    name: "SheFi",
+    imageUrl: "/images/partners/shefi.png",
+    url: "https://www.shefi.org/",
+  },
+  {
+    name: "Surge",
+    imageUrl: "/images/partners/surge_logo.png",
+    url: "https://www.surgewomen.io/",
+  },
+  {
     name: "Women in Web3",
     imageUrl: "/images/partners/Women-In-Web3_logo.png",
     url: "https://womeninweb3.com/",
-  },
-  {
-    name: "Cryptoversidad",
-    imageUrl: "/images/partners/Cryptoversidad_logo.png",
-    url: "https://cryptoversidad.com/",
   },
 ];
 
