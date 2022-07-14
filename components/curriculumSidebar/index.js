@@ -7,6 +7,7 @@ import styles from "../../styles/Home.module.css";
 
 export default function CurricSideBar({ navigation }) {
   const [preferedColorScheme, setPreferedColorScheme] = useState("light");
+  console.log("THISSS NAV", navigation)
 
   useEffect(() => {
     if (

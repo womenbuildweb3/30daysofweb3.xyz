@@ -45,7 +45,7 @@ export async function getStaticProps({ params, locale }) {
   const { category, subCategory } = params;
   // get content based on locale
   const curricData = getCurricContent(category, subCategory, locale);
-  const paths = getCoursePaths();
+  const paths = getCoursePaths(locale);
   const t = await getT(locale, "navigation");
   if (curricData == null) {
     return {
