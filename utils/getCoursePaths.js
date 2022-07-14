@@ -1,9 +1,14 @@
 import path from "path";
 import dirTree from "directory-tree";
 
-const postsDirectory = path.join(process.cwd(), "curriculum/");
 
-export default function getCoursePaths() {
+export default function getCoursePaths(locale) {
+  let postsDirectory;
+  if(locale){
+    postsDirectory = path.join(process.cwd(), `curriculum/${locale}`);
+  } else{
+    postsDirectory = path.join(process.cwd(), "curriculum/en");
+  }
   const navigationTree = dirTree(postsDirectory, { attributes: ["type"] });
 
   let returnGeneratedPaths = (tree) => {
