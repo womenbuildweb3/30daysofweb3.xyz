@@ -1,4 +1,4 @@
-## Subgraph Manifest (subgraph.yaml)
+# Subgraph Manifest (subgraph.yaml)
 
 The subgraph manifest is where you can define settings for the subgraph. Most of this will already be filled out for you, but there are a few changes we need to make.
 

@@ -1,10 +1,10 @@
-## Dev Environment Setup
+# Setup Your Dev Environment
 
-### IDE (Integrated Developer Environment)
+## IDE (Integrated Developer Environment)
 
 Although any IDE will work, we recommend the use of **VSCode**, a free IDE which you can download [here.](https://code.visualstudio.com/download)
 
-### Node.js and NPM
+## Node.js and NPM
 
 You will need Node.js and npm installed on your machine.
 
@@ -43,8 +43,6 @@ Let’s start coding! Today we’ll be writing about ½ of the smart contract.
 - Select a basic project, select `y` for all prompts. `y` simply stands for `yes`.
 - Finally, open this newly created project in your code editor. Do this by opening VS code and hitting `file` > `open` > look for the folder you just created.
 - If you have any issues with this setup, you can also clone or fork this [starter repo](https://github.com/womenbuildweb3/hardhat-sample)
-
----
 
 Under the `contracts` folder, head to your `Greeter.sol` file and rename it to `Web3RSVP.sol`.
 

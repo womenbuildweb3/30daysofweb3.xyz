@@ -1,4 +1,4 @@
-## Using RainbowKit's ConnectButton
+# Using RainbowKit's ConnectButton
 
 Now that we’ve wrapped our app with the `WagmiConfig` and `RainbowKitProvider` components, we can use wagmi hooks and RainbowKit’s `ConnectButton` component to enable users to connect their wallet and to inform the user that their wallet is connected.
 

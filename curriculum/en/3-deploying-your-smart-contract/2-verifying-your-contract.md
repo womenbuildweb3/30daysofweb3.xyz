@@ -1,4 +1,4 @@
-## Verifying your contract
+# Verifying Your Contract
 
 At this point, your contract should be deployed and you should have your contract’s address copied. Paste it in the Polygon Mumbai block explorer: https://mumbai.polygonscan.com/.
 

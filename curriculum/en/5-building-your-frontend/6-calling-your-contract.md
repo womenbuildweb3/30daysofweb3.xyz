@@ -1,4 +1,4 @@
-# Calling your contract
+# Calling Your Contract
 
 Open up `create-event.js` in the `pages` folder. You can see a preview of this page by going to http://localhost:3000/create-event. You should see a form with all of the input fields we need already set up.
 

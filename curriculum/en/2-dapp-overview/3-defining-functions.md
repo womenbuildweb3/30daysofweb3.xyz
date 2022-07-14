@@ -1,6 +1,6 @@
-## Defining Functions
+# Defining Functions
 
-### Create a New Event
+## Create a New Event
 
 Next, we’ll write the function that will get called when a user creates a new event in our frontend. This is one of our setter methods - a function that gets executed and sets the value based on information the user passed in.
 
@@ -132,7 +132,7 @@ idToEvent[eventId] = CreateEvent(
        );
 ```
 
-### RSVP To Event
+## RSVP To Event
 
 Next, we’ll write the function that gets called when a user finds an event and RSVPs to it on the front end.
 
@@ -173,7 +173,7 @@ function createNewRSVP(bytes32 eventId) external payable {
     }
 ```
 
-### Check In Attendees
+## Check In Attendees
 
 Part of our app requires users to pay a deposit which they get back when they arrive to the event. We'll write the function that checks in attendees and returns their deposit.
 
@@ -220,7 +220,7 @@ function confirmAttendee(bytes32 eventId, address attendee) public {
     }
 ```
 
-### Confirm The Whole Group
+## Confirm The Whole Group
 
 As an event organizer, you might want to be able to confirm all of your attendees at once, instead of processing them one at a time.
 
@@ -241,7 +241,7 @@ function confirmAllAttendees(bytes32 eventId) external {
     }
 ```
 
-### Send Unclaimed Deposits to Event Organizer
+## Send Unclaimed Deposits to Event Organizer
 
 Finally, we need to write a function that will withdraw deposits of people who didn’t show up to the event and send them to the event organizer:
 
