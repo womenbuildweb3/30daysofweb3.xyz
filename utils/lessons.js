@@ -1,7 +1,3 @@
-// export function getAllLessons() {
-//   return lessons;
-// }
-
 export function getNextLesson(categoryName, subCategoryName, navigation) {
   let next = "/";
   let categoryIndex = Number(categoryName.split("-")[0]);
@@ -14,11 +10,7 @@ export function getNextLesson(categoryName, subCategoryName, navigation) {
   } else {
     nextFile = navigation[categoryIndex + 1]?.children[0];
     if (nextFile) {
-      next =
-        "/curriculum/" +
-        navigation[categoryIndex + 1].name.replace(/\.md$/, "") +
-        "/";
-      nextFile.name.replace(/\.md$/, "");
+      return nextFile.href
     }
   }
 
