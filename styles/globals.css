@@ -27,3 +27,10 @@ h6 {
   left: 0;
   z-index: -1;
 }
+
+code {
+  color: white !important;
+  background: hsl(220, 13%, 18%);
+  border-radius: 4px;
+  padding: 4px;
+}

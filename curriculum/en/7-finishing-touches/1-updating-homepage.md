@@ -2,7 +2,7 @@
 
 In our `index.js` file, we want to be able to show all of the upcoming events people can RSVP to. At the top of the file we can import `gql` and `useQuery` from apollo client. We will also need to import `useState` and our `EventCard` component.
 
-```
+```javascript
 import { useState } from "react";
 import { gql, useQuery } from "@apollo/client";
 import EventCard from "../components/EventCard";
@@ -10,7 +10,7 @@ import EventCard from "../components/EventCard";
 
 We can define our query above our `Home` function like this:
 
-```
+```javascript
 const UPCOMING_EVENTS = gql`
  query Events($currentTimestamp: String) {
    events(where: { eventTimestamp_gt: $currentTimestamp }) {
@@ -27,7 +27,7 @@ This query will return the id, name, eventTimestamp, and imageURL for every even
 
 Now in our `Home` function, we can fetch the current timestamp and load the query with the apollo client. Once we get the list of events, we can map over them to render a list of event cards.
 
-```
+```javascript
 export default function Home() {
   const [currentTimestamp, setEventTimestamp] = useState(
     new Date().getTime().toString()

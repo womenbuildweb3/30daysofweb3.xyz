@@ -18,7 +18,7 @@ We can configure RainbowKit in our `_app.js` file (located in the `pages` folder
 
 We will start by adding the following imports to the top of our file, below the `import "../styles/globals.css";` line:
 
-```
+```javascript
 import "@rainbow-me/rainbowkit/styles.css";
 import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { chain, configureChains, createClient, WagmiConfig } from "wagmi";
@@ -28,7 +28,7 @@ import { publicProvider } from "wagmi/providers/public";
 
 Next, we will have to configure the chains we want to connect to with our Infura project ID and initialize the `wagmiClient`.
 
-```
+```javascript
 const infuraId = process.env.NEXT_PUBLIC_INFURA_ID;
 
 const { chains, provider } = configureChains(
@@ -52,7 +52,7 @@ By setting `autoConnect` to `true`, we can keep the user logged in automatically
 
 Within our `_app.js` file, we can wrap our application with `RainbowKitProvider` and `WagmiConfig`.
 
-```
+```javascript
 export default function MyApp({ Component, pageProps }) {
  return (
    <WagmiConfig client={wagmiClient}>

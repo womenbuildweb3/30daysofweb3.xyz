@@ -4,7 +4,7 @@ The last page we need to make is the page where users can confirm attendees for 
 
 At the top of the file we can import our helper utilities again.
 
-```
+```javascript
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { gql } from "@apollo/client";
@@ -18,7 +18,7 @@ import Alert from "../../../components/Alert";
 
 And at the top of our `PastEvent` function we can set up our account and state trackers.
 
-```
+```javascript
 const { data: account } = useAccount();
 const [success, setSuccess] = useState(null);
 const [message, setMessage] = useState(null);
@@ -33,7 +33,7 @@ If a user wants to confirm only one attendee, the `confirmAttendee` method will 
 
 We can start with the `confirmAttendee` method. Create this function and set it up just as we did for other contract call functions. For this method we need to pass in the event id and attendee address.
 
-```
+```javascript
 const confirmAttendee = async (attendee) => {
     try {
       const rsvpContract = connectContract();
@@ -65,7 +65,7 @@ const confirmAttendee = async (attendee) => {
 
 We can create a new function called `confirmAllAttendees` to call the corresponding function from our contract and implement it just as we did above. For this method we only need to pass in the event id.
 
-```
+```javascript
 const confirmAllAttendees = async () => {
     console.log("confirmAllAttendees");
     try {
@@ -103,7 +103,7 @@ const confirmAllAttendees = async () => {
 
 Create a `checkIfConfirmed` funtion so we can easily check if attendees have already been confirmed. This method will just loop thorugh all confirmed addresses to see if any of them matches the user's address.
 
-```
+```javascript
 function checkIfConfirmed(event, address) {
 for (let i = 0; i < event.confirmedAttendees.length; i++) {
   let confirmedAddress = event.confirmedAttendees[i].attendee.id;
@@ -117,7 +117,7 @@ return false;
 
 We will put our query in the `getServersideProps` function.
 
-```
+```javascript
 export async function getServerSideProps(context) {
   const { id } = context.params;
 
@@ -162,7 +162,7 @@ export async function getServerSideProps(context) {
 
 Inside our `PastEvent` function we can return a table of users to confirm and a button to confirm them.
 
-```
+```javascript
   useEffect(() => {
     setMounted(true);
   }, []);

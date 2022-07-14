@@ -14,7 +14,7 @@ You can also copy and paste the HTTP url into an API testing app like Postman or
 
 As shown in the example query, we can limit the number of results returned by using the `first` keyword.
 
-```
+```javascript
 {
   events(first: 20) {
         id
@@ -25,7 +25,7 @@ As shown in the example query, we can limit the number of results returned by us
 
 If we want to look for an entry with a specific value for a field, we can do that by setting the value in the query parameters. For example, if we have the id for an event entity, we can look it up like this:
 
-```
+```javascript
 {
   event(id: "1234") {
         id
@@ -38,7 +38,7 @@ To query for multiple entities, we can use the `where` keyword. The `where` keyw
 
 If we want to query for all events with a certain name, we can change event to events, and set the name field to our event name.
 
-```
+```javascript
 {
   events(where: { name: "Holiday Party" }) {
     id
@@ -49,7 +49,7 @@ If we want to query for all events with a certain name, we can change event to e
 
 We can also attach modifiers to the end of the field to add more constraints and filters. For example, if we want to find all events where the name field is not null, we can use the query below:
 
-```
+```javascript
 {
   events(where: { name_not: null }) {
     id
@@ -62,7 +62,7 @@ You can see a full list of modifiers here: https://thegraph.com/docs/en/develope
 
 We can also order our events using the orderBy keyword. To order all events by the `eventTimestamp`, we can use this query:
 
-```
+```javascript
 {
   events(orderBy: eventTimestamp) {
     id

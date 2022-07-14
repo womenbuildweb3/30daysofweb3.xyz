@@ -6,7 +6,7 @@ You can open this page at http://localhost:3000/my-rsvps/upcoming, or you can na
 
 In the `upcoming.js` file, we can import `useState`, `useAccount` and `ConnectButton` so the user can connect their wallet. We can also import `gql` and `useQuery` so we can get details about the event from our subgraph. Finally we can import the `EventCard` component.
 
-```
+```javascript
 import { useState } from "react";
 import { gql, useQuery } from "@apollo/client";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
@@ -16,7 +16,7 @@ import EventCard from "../../components/EventCard";
 
 Before our `MyUpcomingRSVPs` function, we can define our gql query which will fetch all of the rsvps for the user's account.
 
-```
+```javascript
 const MY_UPCOMING_RSVPS = gql`
   query Account($id: String) {
     account(id: $id) {
@@ -43,7 +43,7 @@ We can get the user's wallet address from the `useAccount` hook and pass it into
 
 Once we have our query results, we can pass those into our `EventCard` component.
 
-```
+```javascript
 export default function MyUpcomingRSVPs() {
   const { data: account } = useAccount();
 

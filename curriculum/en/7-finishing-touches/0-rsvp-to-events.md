@@ -4,7 +4,7 @@ We want users to also be able to RSVP to an event on the event details page.
 
 In the same `pages/events/[id].js` file, import our wallet and contract functions at the top:
 
-```
+```javascript
 import { useState } from "react";
 import { ethers } from "ethers";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
@@ -15,7 +15,7 @@ import Alert from "../../components/Alert";
 
 At the top of the Event function, we can add some state variables to keep track of the user account, the status of the contract transaction, and the current time.
 
-```
+```javascript
 const { data: account } = useAccount();
 const [success, setSuccess] = useState(null);
 const [message, setMessage] = useState(null);
@@ -25,7 +25,7 @@ const [currentTimestamp, setEventTimestamp] = useState(new Date().getTime());
 
 Now we’ll check whether the user has already RSVP’d or not by creating a function called `checkIfAlreadyRSVPed`. If they haven't already, then the user will see a button to RSVP. To do find out if they have already RSVPed, we can loop through the rsvps array from the event and see if any of the wallet addresses match.
 
-```
+```javascript
 function checkIfAlreadyRSVPed() {
     if (account) {
       for (let i = 0; i < event.rsvps.length; i++) {
@@ -41,7 +41,7 @@ function checkIfAlreadyRSVPed() {
 
 Next we can create a function called `newRSVP` and call the `createNewRSVP` method from our contract. We can pass in the deposit amount we fetched from our subgraph as the transaction value.
 
-```
+```javascript
 const newRSVP = async () => {
     try {
       const rsvpContract = connectContract();
@@ -72,7 +72,7 @@ const newRSVP = async () => {
 
 Just like in our `create-event` page, we will want to show an alert based on the status of the user's contract transaction. We can add this inside the first section on the page.
 
-```
+```javascript
 <section className="relative py-12">
     {loading && (
       <Alert
@@ -106,7 +106,7 @@ All of this is wrapped in a conditional statement that also checks if the user i
 
 If the event has already passed, we will hide all of this and let the user know that the event has already happened.
 
-```
+```javascript
 <div className="max-w-xs w-full flex flex-col gap-4 mb-6 lg:mb-0">
     {event.eventTimestamp > currentTimestamp ? (
       account ? (

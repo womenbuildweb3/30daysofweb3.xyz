@@ -2,7 +2,7 @@
 
 We can set up the `past.js` file in the `pages/my-rsvps` folder almost the same as we did for the upcoming RSVPs. First we need to import our helper utilities.
 
-```
+```javascript
 import { useState } from "react";
 import { gql, useQuery } from "@apollo/client";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
@@ -12,7 +12,7 @@ import EventCard from "../../components/EventCard";
 
 Next we can define our query to grab all of the user's RSVPs.
 
-```
+```javascript
 const MY_PAST_RSVPS = gql`
   query Account($id: String) {
     account(id: $id) {
@@ -32,7 +32,7 @@ const MY_PAST_RSVPS = gql`
 
 Now we can set up the `MyPastRSVPs` function just as we did for the upcoming RSVPs, but here we will only show past events by checking if the `eventTimestamp` is less than the `currentTimestamp`.
 
-```
+```javascript
 export default function MyPastRSVPs() {
   const { data: account } = useAccount();
 

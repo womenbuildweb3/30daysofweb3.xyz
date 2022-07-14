@@ -4,7 +4,7 @@ Open up the `pages/event/[id].js` file, which uses dynamic routing with Next.js 
 
 First, we will need import `gql` the apollo client at the top of the page.
 
-```
+```javascript
 import { gql } from "@apollo/client";
 import client from "../../apollo-client";
 ```
@@ -13,7 +13,7 @@ We can use the `getServerSideProps` function to fetch data from our subgraph fro
 
 We can get the event ID from the page url, and pass that into our query to fetch the details for that event. Then we can return the data we get back as props to use on the page.
 
-```
+```javascript
 export async function getServerSideProps(context) {
  const { id } = context.params;
 
@@ -57,7 +57,7 @@ export async function getServerSideProps(context) {
 
 Now we can import the event from our props in the Event function.
 
-```
+```javascript
 function Event({event}) {
 ```
 
@@ -65,7 +65,7 @@ Notice that this looks a lot like the query in our playground, but it’s nested
 
 Now we can access the event from the props by using destructuring. To make sure we are receiving the event data we requested, we can try to logging the `event` to the console.
 
-```
+```javascript
 function Event({ event }) {
     console.log("EVENT:", event)
 ```

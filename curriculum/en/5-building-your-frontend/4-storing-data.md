@@ -4,14 +4,14 @@ Create a new folder in the `pages` folder called `api`, and create a new file in
 
 At the top of the file, we will need to import some helpers from `web3.storage` and the `path` module.
 
-```
+```javascript
 import { Web3Storage, File, getFilesFromPath } from "web3.storage";
 const { resolve } = require("path");
 ```
 
 We will need to export a default handler function to handle the incoming requests. Here, we can check if the request is a `POST` request, and return an error if it isn't. Otherwise, we can store the event data.
 
-```
+```javascript
 export default async function handler(req, res) {
   if (req.method === "POST") {
     return await storeEventData(req, res);
@@ -28,7 +28,7 @@ Upon successful storage, we are returning the cid that points to an IPFS directo
 
 Inside this function, there are two functions that will be called. The first is an async function `makeFileObjects`. The purpose of this function is to create a json file that includes metadata passed from the `req.body` object. The next function we call is the `storeFiles` function, which will store that json file to Web3.storage.
 
-```
+```javascript
 async function storeEventData(req, res) {
   const body = req.body;
   try {
@@ -47,7 +47,7 @@ Below our storeEventData function, create a new async function called `makeFileO
 
 This function will also look up the image from `body.image`. We can use a function from `web3.storage` called `getFilesFromPath` to get the image from our images folder. This will return the image in an array, so we can push our data file to this array so we can upload both the image and the event data at the same time. We'll be using this function to create a new `File` from the `buffer` which we can name `"data.json"`, and then push this to the `files` array.
 
-```
+```javascript
 async function makeFileObjects(body) {
   const buffer = Buffer.from(JSON.stringify(body));
 
@@ -61,7 +61,7 @@ async function makeFileObjects(body) {
 
 Now that our files are ready to be uploaded, we want to first create a Web3Storage client object to interact with. We'll write the following function:
 
-```
+```javascript
 function makeStorageClient() {
   return new Web3Storage({ token: process.env.WEB3STORAGE_TOKEN });
 }
@@ -69,7 +69,7 @@ function makeStorageClient() {
 
 Once we have created our Web3Storage client, we can call `put` method on the client to upload our array of files.
 
-```
+```javascript
 async function storeFiles(files) {
   const client = makeStorageClient();
   const cid = await client.put(files);

@@ -4,7 +4,7 @@ In the `pages/my-events/past` folder, open up the `index.js` file.
 
 At the top of the file we can import our helper utilities again.
 
-```
+```javascript
 import { useState } from "react";
 import Link from "next/link";
 import { gql, useQuery } from "@apollo/client";
@@ -15,7 +15,7 @@ import EventCard from "../../../components/EventCard";
 
 We will define our query almost the same as for the upcoming events, but instead of the `_gt` modifier we will use the `_lt` modifier to fetch past events.
 
-```
+```javascript
 const MY_PAST_EVENTS = gql`
   query Events($eventOwner: String, $currentTimestamp: String) {
     events(
@@ -36,7 +36,7 @@ const MY_PAST_EVENTS = gql`
 
 Now we can show all of the past events created by the user and a link where the user can confirm attendees.
 
-```
+```javascript
 export default function MyPastEvents() {
   const { data: account } = useAccount();
 

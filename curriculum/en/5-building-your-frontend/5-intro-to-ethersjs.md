@@ -25,7 +25,7 @@ Inside of `utils`, create the two following files:
 
 At the top of `connectContract.js`, we can import ethers and our ABI.
 
-```
+```javascript
 import abiJSON from "./Web3RSVP.json";
 import { ethers } from "ethers";
 ```
@@ -38,7 +38,7 @@ At the end of the function we want to return the contract so that we can call it
 
 **Note:** If you didn't write down your contract address from previous lessons, you can go back to the [Mumbai Polygonscan](https://mumbai.polygonscan.com/) site and paste your Coinbase Wallet address. There, you should see a transaction that says something like `Create: Web3RSVP` or whatever you named your contract. Click that link to be directed to the page. At the top, you will see your contract address. Copy that and paste it within the correct field of the contractAddress const below:
 
-```
+```javascript
 function connectContract() {
     //Note: Your contractAddress will start with 0x, delete everything between the quotes and paste your contract address.
     const contractAddress = "0x[YOUR_CONTRACT_ADDRESS]";

@@ -10,7 +10,7 @@ We are using state variables to keep track of the form data. We'll organize them
 
 Add this inside of your handleSubmit function, just under `e.preventDefault()`:
 
-```
+```javascript
 const body = {
   name: eventName,
   description: eventDescription,
@@ -26,7 +26,7 @@ For the image, we'll import the following two items at the top of the `create-ev
 
 Your imports will look like this:
 
-```
+```javascript
 import getRandomImage from "../utils/getRandomImage";
 import { ethers } from "ethers";
 ```
@@ -35,7 +35,7 @@ You'll notice we aren't sending all of the event data here. This is because the 
 
 In our `handleSubmit` function, we can use a `try..catch` statement to send the body to our API endpoint /store-event-data. If we get a successful response, meaning we were able to store the data with Web3.Storage and got back a CID, we can pass this into a new function called `createEvent`. Here's what your function should look like:
 
-```
+```javascript
 async function handleSubmit(e) {
     e.preventDefault();
 
@@ -70,7 +70,7 @@ async function handleSubmit(e) {
 
 To connect our contract, we'll import the function we wrote earlier from the `utils` folder like so:
 
-```
+```javascript
 import connectContract from "../utils/connectContract";
 ```
 
@@ -82,7 +82,7 @@ We also need to generate a unix timestamp from the date and time inputs from our
 
 To actually call our contract, we can just call the method like this (**Note:** The below await function is simply an example):
 
-```
+```javascript
 await contract.methodName(parameters, {optionName: optionValue})
 ```
 
@@ -90,7 +90,7 @@ After passing in the function parameters, we can also pass in an object where we
 
 This will return a transaction object with more data about our transaction. To easily access this information like the transaction hash, we can store this into a variable called `txn`.
 
-```
+```javascript
 const createEvent = async (cid) => {
     try {
       const rsvpContract = connectContract();
