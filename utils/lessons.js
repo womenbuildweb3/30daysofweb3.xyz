@@ -5,8 +5,7 @@ export function getNextLesson(categoryName, subCategoryName, navigation) {
   let nextFile = navigation[categoryIndex]?.children[subCategoryIndex + 1];
 
   if (nextFile) {
-    next =
-      "/curriculum/" + categoryName + "/" + nextFile.name.replace(/\.md$/, "");
+    next = nextFile.href
   } else {
     nextFile = navigation[categoryIndex + 1]?.children[0];
     if (nextFile) {
