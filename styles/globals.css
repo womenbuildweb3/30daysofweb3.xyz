@@ -29,8 +29,7 @@ h6 {
 }
 
 code {
-  color: white !important;
-  background: hsl(220, 13%, 18%);
+  background: hsl(210, 3%, 85%);
   border-radius: 4px;
   padding: 4px;
 }
