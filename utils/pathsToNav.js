@@ -38,7 +38,7 @@ export default function pathsToNav(paths, locale) {
 
       navigation[count].children.push({
         href,
-        name: path.category,
+        name: path.subCategory,
         title,
         type: "file",
       });
