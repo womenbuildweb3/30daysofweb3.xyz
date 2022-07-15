@@ -1,4 +1,4 @@
-## Create a deploy script
+## Create a deploy script ESPANOL
 
 In our scripts folder, we can create a file called `deploy.js`, where we can paste a copy of our test script and take out any test transactions. Our `deploy.js` file should look like this:
 

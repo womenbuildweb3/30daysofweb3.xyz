@@ -1,4 +1,4 @@
-# Connect your wallet with RainbowKit
+# Connect your wallet with RainbowKit ESPANOL
 
 ## What is RainbowKit?
 

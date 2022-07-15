@@ -1,4 +1,4 @@
-# Upcoming Events
+# Upcoming Events ESPANOL
 
 You can find the upcoming events page in the `pages/my-events` folder and at http://localhost:3000/my-events/upcoming.
 

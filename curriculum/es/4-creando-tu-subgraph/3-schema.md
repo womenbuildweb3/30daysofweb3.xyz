@@ -1,4 +1,4 @@
-## Schema (schema.graphql)
+## Schema (schema.graphql) ESPANOL
 
 This is where we will define the schema for our GraphQL queries. Ideally we want to model this data to match the data we need for our frontend.
 

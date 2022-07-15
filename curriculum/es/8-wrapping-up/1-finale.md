@@ -1,4 +1,4 @@
-# 🎉 You did it!
+# 🎉 You did it! ESPANOL
 
 The importance of Web3 can not be stressed enough. Securing information, non-fungible tokens, artist royalties, and voting processes are all proven areas that web3 has been able to transform how people can organize in a decentralized world.
 

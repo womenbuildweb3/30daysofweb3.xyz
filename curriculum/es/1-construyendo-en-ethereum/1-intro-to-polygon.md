@@ -1,4 +1,4 @@
-# Introduction to Polygon
+# Introduction to Polygon ESPANOL
 
 ## Ethereum Scaling Solutions
 

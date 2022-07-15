@@ -24,9 +24,10 @@ This course is fully async, online, and created to only take 30-45mins daily to 
 
 
 ## Project Overview
-Checkout the dapp we're going to build in this course: 
+Checkout a video of the dapp we're going to build in this course [here](https://www.loom.com/share/c3fb24a579644feaa7510e98be37181a). 
 
--- add video here -- 
+Below is a diagram of the dapp architecture.
+![Web3RSVP Dapp Architecture Diagram](https://i.imgur.com/2TPbE9J.jpg)
 
 
 ## 🤚 Getting Help

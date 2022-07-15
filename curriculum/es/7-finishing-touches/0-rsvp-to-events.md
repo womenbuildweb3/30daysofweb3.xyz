@@ -1,4 +1,4 @@
-# RSVP To An Event
+# RSVP To An Event ESPANOL
 
 We want users to also be able to RSVP to an event on the event details page.
 

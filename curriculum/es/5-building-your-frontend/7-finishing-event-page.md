@@ -1,4 +1,4 @@
-# Finishing the Create Event Page
+# Finishing the Create Event Page ESPANOL
 
 At the top of the `create-event` page, import the `connectButton` from RainbowKit, `useAccount` from wagmi, and the `Alert` component.
 

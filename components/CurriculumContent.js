@@ -11,8 +11,7 @@ const CurriculumContent = ({ curricData, navigation }) => {
   const router = useRouter();
   const { category, subCategory } = router.query;
   const nextPath = getNextLesson(category, subCategory, navigation);
-  console.log("NAVIGATION", navigation)
-  console.log("NEXT", nextPath)
+
   return (
     <div className="bg-white px-4 py-16">
       <ReactMarkdown

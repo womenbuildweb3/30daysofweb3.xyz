@@ -1,4 +1,4 @@
-# Past Events
+# Past Events ESPANOL
 
 In the `pages/my-events/past` folder, open up the `index.js` file.
 

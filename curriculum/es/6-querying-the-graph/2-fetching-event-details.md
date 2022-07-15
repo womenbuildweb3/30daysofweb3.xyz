@@ -1,4 +1,4 @@
-# Fetching the Event Details
+# Fetching the Event Details ESPANOL
 
 Open up the `pages/event/[id].js` file, which uses dynamic routing with Next.js to create a new page for each event minted based on the eventID. This is where we can show the details for a single event and users can RSVP.
 

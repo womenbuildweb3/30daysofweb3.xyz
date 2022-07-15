@@ -1,4 +1,4 @@
-# Past RSVPs
+# Past RSVPs ESPANOL
 
 We can set up the `past.js` file in the `pages/my-rsvps` folder almost the same as we did for the upcoming RSVPs. First we need to import our helper utilities.
 

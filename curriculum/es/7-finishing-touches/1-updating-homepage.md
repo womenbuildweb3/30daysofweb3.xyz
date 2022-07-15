@@ -1,4 +1,4 @@
-# Updating the Homepage
+# Updating the Homepage ESPANOL
 
 In our `index.js` file, we want to be able to show all of the upcoming events people can RSVP to. At the top of the file we can import `gql` and `useQuery` from apollo client. We will also need to import `useState` and our `EventCard` component.
 

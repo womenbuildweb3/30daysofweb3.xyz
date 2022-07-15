@@ -1,4 +1,4 @@
-# Querying your subgraph
+# Querying your subgraph ESPANOL
 
 ## Using The Graph playground
 

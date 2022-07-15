@@ -1,4 +1,4 @@
-# Confirm Attendees
+# Confirm Attendees ESPANOL
 
 The last page we need to make is the page where users can confirm attendees for their events. This file is called `[id].js` and is in the`pages/my-events/past` folder.
 

@@ -1,4 +1,4 @@
-## Defining Our Data Strucutre
+## Defining Our Data Strucutre ESPANOL
 
 ### Define An 'Event'
 

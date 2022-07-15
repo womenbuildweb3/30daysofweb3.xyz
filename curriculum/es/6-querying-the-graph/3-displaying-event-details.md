@@ -1,4 +1,4 @@
-# Displaying Event Details
+# Displaying Event Details ESPANOL
 
 In the `Head` section, we can change "name" in the `<title>` tag and in the `meta` content to `{event.name}`
 

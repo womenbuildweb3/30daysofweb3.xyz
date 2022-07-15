@@ -1,4 +1,4 @@
-# Storing data with Web3.Storage
+# Storing data with Web3.Storage ESPANOL
 
 ## What is Web3.Storage?
 

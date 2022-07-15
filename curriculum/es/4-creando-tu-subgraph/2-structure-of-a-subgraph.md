@@ -1,4 +1,4 @@
-## Structure of a Subgraph
+## Structure of a Subgraph ESPANOL
 
 You should now have a new folder with this structure:
 

@@ -1,4 +1,4 @@
-# Querying your subgraph
+# Querying your subgraph ESPANOL
 
 To easily query our subgraph from our frontend application, we will use the Apollo GraphQL client.
 

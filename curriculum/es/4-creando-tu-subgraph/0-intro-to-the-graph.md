@@ -1,4 +1,4 @@
-## Introduction to The Graph
+## Introduction to The Graph ESPANOL
 
 The Graph is a web3 protocol that allows developers to create GraphQL APIs to query data from any smart contract. This makes it fast and easy to create dashboards and websites that show live data about how users are interacting with your contract.
 

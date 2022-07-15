@@ -1,4 +1,4 @@
-## Uploading your event data
+## Uploading your event data ESPANOL
 
 Create a new folder in the `pages` folder called `api`, and create a new file inside that folder called `store-event-data.js`.
 

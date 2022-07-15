@@ -14,7 +14,7 @@ date: 01 May 2022
 
 Welcome to the beginning of your decentralized adventure! Allow me to guide you through the new and exciting iteration of the internet known as Web3. By the end of this article, you will have the answers to the questions you're currently thinking, like: _What the heck is web3? What does decentralization mean?_ And: _Are these all just buzzwords?_
 
-## The Internet Over The Years...
+## The Internet Over The Years... ESPANOL
 
 ![Fun fact: Although the Internet was invented in 1970, the official birthday for the internet is January 1st, 1983. This is due to networks not having a standard way to communicate with each other prior to this date!](https://cdn.hashnode.com/res/hashnode/image/upload/v1651452115724/ckNDBDMr_.png)
 

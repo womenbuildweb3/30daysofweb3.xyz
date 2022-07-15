@@ -1,4 +1,4 @@
-## Deploying to the Hosted Service
+## Deploying to the Hosted Service ESPANOL
 
 Open up the subgraph you created on The Graph's Hosted Service, and select the “Show commands” button under Deploy.
 

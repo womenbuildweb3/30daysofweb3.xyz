@@ -1,4 +1,4 @@
-# Writing a Test Script
+# Writing a Test Script ESPANOL
 
 We can test our smart contract locally before we deploy to a testnet so we can make sure it works as intended.
 

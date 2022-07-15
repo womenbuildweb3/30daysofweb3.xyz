@@ -1,4 +1,4 @@
-# Connecting to our contract with Ethers.js
+# Connecting to our contract with Ethers.js ESPANOL
 
 ## What is Ethers.js?
 

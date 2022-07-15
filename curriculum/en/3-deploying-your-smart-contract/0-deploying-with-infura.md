@@ -8,6 +8,8 @@
 
 Once we deploy our smart contract, we need it to be able to communicate with the blockchain to execute transactions (create a new event, rsvp to an existing event, etc). Because we don’t want to run our own node, we’ll use Infura’s node infrastructure to give us the functionality of interacting with the blockchain.
 
+![Deploy With Infura Diagram](https://i.imgur.com/VlpZ6pr.png)
+
 ## Update hardhat config & install dotenv
 
 We also need to update our `hardhat.config.js` file with information about what network we will deploy to, a provider URL from Infura, and our wallet’s private key. Because this includes sensitive information ( Reminder: _NEVER SHARE YOUR PRIVATE KEY WITH ANYONE!_ ), we will store our provider URL and private key in a new .env file in the root directory of our folder.

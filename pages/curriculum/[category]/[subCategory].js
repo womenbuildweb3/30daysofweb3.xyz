@@ -1,18 +1,19 @@
-import useTranslation from "next-translate/useTranslation";
-import getT from "next-translate/getT";
+// import useTranslation from "next-translate/useTranslation";
+// import getT from "next-translate/getT";
 import CurriculumContent from "../../../components/CurriculumContent";
 import getCurricContent from "../../../utils/curriculum";
 import getCoursePaths from "../../../utils/getCoursePaths";
+import pathsToNav from "../../../utils/pathsToNav"
 import CurricLayout from "../../../components/CurricLayout";
 
-function Course({ curricData, id, paths }) {
-  const { t } = useTranslation("navigation");
+function Course({ curricData, id, paths, navigation }) {
+  // const { t } = useTranslation("navigation");
 
   return (
     <>
       {curricData && (
         <CurriculumContent
-          navigation={t("navigation", {}, { returnObjects: true })}
+          navigation={navigation}
           curricData={curricData}
           id={id}
           paths={paths}
@@ -46,7 +47,8 @@ export async function getStaticProps({ params, locale }) {
   // get content based on locale
   const curricData = getCurricContent(category, subCategory, locale);
   const paths = getCoursePaths(locale);
-  const t = await getT(locale, "navigation");
+  // const t = await getT(locale, "navigation");
+  const navigation = pathsToNav(paths, locale)
   if (curricData == null) {
     return {
       notFound: true,
@@ -57,7 +59,8 @@ export async function getStaticProps({ params, locale }) {
     props: {
       curricData,
       paths,
-      navigation: t("navigation", {}, { returnObjects: true }),
+      navigation
+      // navigation: t("navigation", {}, { returnObjects: true }),
     },
   };
 }

@@ -1,4 +1,4 @@
-# Upcoming RSVPs
+# Upcoming RSVPs ESPANOL
 
 In the `pages/my-rsvps` folder, we have two pages where we want to show the user's upcoming and past events that they RSVPed to.
 

@@ -16,10 +16,6 @@ export default function getCoursePaths(locale) {
     let generatePaths = (parentTree) => {
       parentTree.children.map((subTree, index) => {
         if (subTree.type == "directory") {
-          // paths.push({
-          //   category: subTree.name,
-          //   subCategory: "0-overview",
-          // });
           if (subTree?.children) {
             generatePaths(subTree, paths);
           }
