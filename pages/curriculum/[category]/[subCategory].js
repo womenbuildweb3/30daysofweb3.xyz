@@ -8,9 +8,9 @@ import CurricLayout from "../../../components/CurricLayout";
 
 function Course({ curricData, navigation, paths }) {
   // const { t } = useTranslation("navigation");
-  console.log("NAV:", navigation)
+  // console.log("NAV:", navigation)
   if(paths){
-    console.log("PAATHS", paths)
+    // console.log("PAATHS", paths)
   }
   return (
     <>

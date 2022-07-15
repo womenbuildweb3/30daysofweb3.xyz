@@ -45,13 +45,13 @@ export default function pathsToNav(paths, locale) {
     } else {
       navigation[count].children.push({
         href,
-        name: path.category,
+        name: path.subCategory,
         title,
         type: "file",
       });
     }
   });
-  console.log("BRAND NEW NAVTIGATION", navigation);
+  // console.log("BRAND NEW NAVTIGATION", navigation);
 
   return navigation
 }

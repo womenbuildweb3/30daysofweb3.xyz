@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-const Logo = ({ preferedColorScheme }) => {
+const Logo = () => {
   return (
     <Link href="/">
       <a className="flex items-center sm:gap-4">
