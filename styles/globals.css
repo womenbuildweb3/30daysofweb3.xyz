@@ -33,3 +33,9 @@ code {
   border-radius: 4px;
   padding: 4px;
 }
+
+p img {
+  max-width: 800px !important;
+  max-height: 600px !important;
+  margin: auto;
+}
