@@ -7,7 +7,7 @@ function classNames(...classes) {
 
 export default function ListItem({ item }) {
   const router = useRouter();
-  const selected = router.asPath === item.href.replace(/\.md$/, "");
+  const selected = item.href.indexOf(router.asPath) > -1;
 
   return (
     <>
