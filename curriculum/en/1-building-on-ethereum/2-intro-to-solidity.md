@@ -1,4 +1,4 @@
-# Gm world - Solidity Intro
+# Intro to Solidity
 
 ## Writing a Smart Contract
 

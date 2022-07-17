@@ -1,6 +1,6 @@
 # Intro to Blockchain
 
-### Blockchain Transactions
+## Blockchain Transactions
 
 The first step in a blockchain transaction usually starts with a user requesting a transaction. Any 'write' operation to the blockchain is a transaction. This includes everything from deploying a smart contract onto the chain, purchasing an NFT, purchasing an ENS name, etc.
 

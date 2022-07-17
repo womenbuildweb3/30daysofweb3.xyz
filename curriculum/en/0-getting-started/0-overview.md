@@ -20,7 +20,7 @@ Join the Discord by clicking [here](https://discord.com/invite/z63rfurXMD) - her
 
 Mark your calendars to attend the live workshops. These workshops will supplement the curriculum and give ya'll opportunities to ask questions live and get live, structured education. If you can't attend, all of the videos will be posted in the discord under #workshop-recordings.
 
-This course is fully async, online, and created to only take 30-45mins daily to ship in 30 days. This acts as a prerequisite for women and nb devs applying to our BUIDL Accelerator. In order to meet the deadline application for BUIDL, you'll have to finish this project within the next **40 days**. If you're not planning to apply for the accelerator, you can feel free to go through this project at your own pace. 
+This course is fully async, online, and created to only take 30-45 mins daily to ship in 30 days. This acts as a prerequisite for women and nb devs applying to our BUIDL Accelerator. In order to meet the deadline application for BUIDL, you'll have to finish this project within the next **40 days**. If you're not planning to apply for the accelerator, you can feel free to go through this project at your own pace. 
 
 
 ## Project Overview

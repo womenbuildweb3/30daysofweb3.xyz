@@ -1,6 +1,6 @@
-## Custom Solidity Events
+# Custom Solidity Events
 
-### Define Events
+## Define Events
 
 Recall that Solidity events are a way for our subgraph to _listen_ for specific actions to enable us to make queries about the data from our smart contract. We have functions written to create a new event on our paltform, RSVP to an event, confirm individual attendees, confirm the group of attendees, and send unclaimed funds back to the event owner. In order for our subgraph to be able to access the information from these functions, we need to expose them via events. We'll write the following events and _emit_ them inside of their corresponding function:
 
@@ -30,7 +30,7 @@ event NewEventCreated(
     event DepositsPaidOut(bytes32 eventID);
 ```
 
-### Emit Events
+## Emit Events
 
 Now that we've defined them, we actually have to _emit_ them somewhere. Defining events is adding them as a tool on your toolbelt, but emitting them is actually pulling that tool out and using it. Each event should be emitted where it makes sense, after a specific action has been taken.
 
