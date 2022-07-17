@@ -51,48 +51,65 @@ Every function must begin with the keyword `function`, followed by its name `fun
 
 ## Try It Yourself
 
-Using [Remix](https://remix.ethereum.org/#optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.7+commit.e28d00a7.js), an online IDE, create a simple smart contract which adds two numbers together and then returns the value. You should define two functions inside your smart contract: one to do the computation based on two numbers passed in by the user, and one to return the value of that computation. Write one getter and one setter.
+Using [Remix](https://remix.ethereum.org/#optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.7+commit.e28d00a7.js), an online IDE, create a simple smart contract which adds two numbers together and then returns the value. 
 
-Input: 4, 7
-Output: 11
+You should define two functions inside your smart contract: one to do the computation based on two numbers passed in by the user, and one to return the value of that computation. We'll write one getter to retreieve the current value of the variable and one setter to add the two numbers and update the value of the variable.
 
-Begin with creating a new file on Remix, it is recommended to create in the contracts folder.
+In Remix, create a new file inside the contracts folder, `add.sol`.
+![create a file inside the contracts folder](https://user-images.githubusercontent.com/15346823/179375354-bac53920-028d-4463-8998-675d8a8f57b5.png)
 
-![](https://i.imgur.com/oC3frJT.png)
+Start by adding a license identifier, followed by the version pragma:
 
-**Hint:**
+```
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity >=0.7.0 <0.9.0;
+```
+Next, define your contract and inside, define a variable of type uint (unsigned integer) and set it to zero.
 
-- Don't forget to include the license, solidity version (pragma) and start with the keyword contract.
-
-```solidity
+```
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.7.0 <0.9.0;
 
-contract contractName{
+contract AddNumbers{
 
+uint public sum = 0;
 }
 ```
 
-- Define your computation variable (uint256) outside of the functions so that both functions have access to it.
+Next, write the function to add two numbers passed in by the user and a function to return the current value of the sum variable. Here's what your contract should look like:
 
-```solidity
-  uint256 sum;
 ```
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity >=0.7.0 <0.9.0;
 
-- Remember to write your setter function so the user can pass in two numbers.
+contract AddNums {
+uint public sum = 0;
 
-```solidity
-function setNumbers(uint256 x, uint256 y) public {
-      sum = x+y;
+function addNums(uint x, uint y) public {
+    sum = x + y;
 }
-```
 
-- Remember your getter function as well that returns the computation of the two numbers.
-
-```solidity
-function getSum() public view returns (uint256){
+function getSum() public view returns (uint) {
     return sum;
 }
+
+}
 ```
 
-Compile, deploy and test out your contract!
+Now we'll compile, deploy, and test our contract. Head over to the 3rd icon from the top and hit `Compile add.sol` 
+![Compile contract](https://user-images.githubusercontent.com/15346823/179375260-7b7fc34d-19e5-44f1-b549-c78c828c8085.png)
+
+
+Move to the 4th icon from the top and select the Javascript VM from the dropdown in the `environment` selection. This will give you some fake ether to be able to deploy and test your contract. 
+![JavascriptVM](https://user-images.githubusercontent.com/15346823/179375210-bc843162-dcf0-4337-a9ed-2ca85a3fde7a.png)
+
+Finally, hit the `Deploy` button to create an instance of your contract that we'll interact with and test that the sum function is working as expected. Afer a few seconds, you'll see a `Deployed Contracts` panel on the bottom left. 
+![Deploy contract](https://user-images.githubusercontent.com/15346823/179375283-76b327d1-185a-4060-a10b-5cef87545095.png)
+
+Pass in two integers, then hit the addNums button. You'll see a new log indicating the new transaction you just initiated. 
+![integers](https://user-images.githubusercontent.com/15346823/179375306-905213b2-2b60-4f9d-832d-3cb1a7dd1f43.png)
+
+The addNums function adds the two numbers, but doesn't actually return the new value. In order for us to verify that the function worked, we need to call our getter function. Hit the `getSum` button. You'll notice a new log appears. Expand that log using the down arrow and scroll to the bottom to find a value called `decoded output.`
+
+You'll see we get the right answer - 8! You just wrote your first smart contract :-) 
+![result](https://user-images.githubusercontent.com/15346823/179375323-dd99fa72-84a3-460f-bcf3-d7d1a977f94d.png)

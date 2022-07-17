@@ -10,7 +10,8 @@ You will need Node.js and npm installed on your machine.
 
 **Node.js** is a runtime environment that executes JavaScript outside the browser, enabling developers to build full-stack JavaScript apps. **NPM** stands for *node package manager* and is the command-line interface to a vibrant ecosystem of open-source Node.js packages. If you want to learn more about NPM, check out [this article](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/).
 
-To check if you have Node.js and npm installed, you can run `node -v` and `npm -v`.
+To check if you have Node.js and npm installed, you can run  `node -v`  and  `npm -v`. If you get back a number that looks like 8.0.6, that means you do have these installed. 
+![node version](https://user-images.githubusercontent.com/15346823/179375406-e00e704f-0dfe-40a4-82a3-82463766fe4c.png)
 
 To download Node.js and npm, we recommend using **nvm**, a node version manager that helps you manage various Node.js and npm versions. Follow the installation guide [here.](https://github.com/nvm-sh/nvm#installing-and-updating)
 
@@ -42,7 +43,7 @@ Let’s start coding! Today we’ll be writing about ½ of the smart contract.
 - After this, run `npx hardhat`.
 - Select a basic project, select `y` for all prompts. `y` simply stands for `yes`.
 - Finally, open this newly created project in your code editor. Do this by opening VS code and hitting `file` > `open` > look for the folder you just created.
-- If you have any issues with this setup, you can also clone or fork this [starter repo](https://github.com/womenbuildweb3/hardhat-sample)
+- If you have any issues with this setup, you can fork and then clone this [starter repo](https://github.com/womenbuildweb3/hardhat-sample).
 
 Under the `contracts` folder, head to your `Greeter.sol` file and rename it to `Web3RSVP.sol`.
 
