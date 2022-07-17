@@ -6,12 +6,9 @@ import getCoursePaths from "../../../utils/getCoursePaths";
 import pathsToNav from "../../../utils/pathsToNav"
 import CurricLayout from "../../../components/CurricLayout";
 
-function Course({ curricData, navigation, paths }) {
+function Course({ curricData, navigation }) {
   // const { t } = useTranslation("navigation");
-  // console.log("NAV:", navigation)
-  if(paths){
-    // console.log("PAATHS", paths)
-  }
+
   return (
     <>
       {curricData && (
@@ -25,7 +22,9 @@ function Course({ curricData, navigation, paths }) {
 }
 
 export async function getStaticPaths({ locales }) {
-  const categories = getCoursePaths();
+  const ENCategories = getCoursePaths();
+  const ESCategories = getCoursePaths("es");
+  const categories = [...ENCategories, ...ESCategories]
   const paths = categories.flatMap((category) => {
     return locales.map((locale) => {
       return {
@@ -60,7 +59,6 @@ export async function getStaticProps({ params, locale }) {
     props: {
       curricData,
       navigation,
-      paths
       // navigation: t("navigation", {}, { returnObjects: true }),
     },
   };
