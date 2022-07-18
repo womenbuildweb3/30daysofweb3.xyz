@@ -34,7 +34,7 @@ code {
   padding: 4px;
 }
 
-p img {
+.prose :where(img):not(:where([class~="not-prose"] *)) {
   max-width: 100%;
   margin: auto;
 }
