@@ -6,7 +6,7 @@ import getCoursePaths from "../../../utils/getCoursePaths";
 import pathsToNav from "../../../utils/pathsToNav"
 import CurricLayout from "../../../components/CurricLayout";
 
-function Course({ curricData, navigation }) {
+function Course({ curricData, navigation, locale }) {
   // const { t } = useTranslation("navigation");
 
   return (
@@ -59,12 +59,13 @@ export async function getStaticProps({ params, locale }) {
     props: {
       curricData,
       navigation,
+      locale
       // navigation: t("navigation", {}, { returnObjects: true }),
     },
   };
 }
 const CurriculumLayout = (page) => (
-  <CurricLayout navigation={page.props.navigation}>{page}</CurricLayout>
+  <CurricLayout navigation={page.props.navigation} locale={page.props.locale}>{page}</CurricLayout>
 );
 
 Course.getLayout = CurriculumLayout;

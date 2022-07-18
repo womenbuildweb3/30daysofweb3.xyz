@@ -3,7 +3,7 @@ import Head from "next/head";
 import CurricSidebar from "./curriculumSidebar/index";
 import styles from "../styles/Home.module.css";
 
-export default function CurricLayout({ children, navigation }) {
+export default function CurricLayout({ children, navigation, locale }) {
   // const [preferedColorScheme, setPreferedColorScheme] = useState("light");
 
   // useEffect(() => {
@@ -35,7 +35,7 @@ export default function CurricLayout({ children, navigation }) {
             style={{ backdropFilter: "blur(1px)" }}
             className={`flex flex-col h-full sticky overflow-auto ${styles.sidebarWidth}`}
           >
-            <CurricSidebar navigation={navigation} />
+            <CurricSidebar navigation={navigation} locale={locale} />
           </div>
           <div className="w-full overflow-auto">{children}</div>
         </div>

@@ -1,10 +1,10 @@
-import Languages from "../Languages";
+// import Languages from "../Languages";
 import Logo from "../Logo";
 import ListItem from "./ListItem";
 import ListGroup from "./ListGroup";
 import styles from "../../styles/Home.module.css";
 
-export default function CurricSideBar({ navigation }) {
+export default function CurricSideBar({ navigation, locale }) {
 
   return (
     <div
@@ -23,7 +23,19 @@ export default function CurricSideBar({ navigation }) {
             )
           )}
         </nav>
-        <Languages navigation={navigation}/>
+        {/* <Languages navigation={navigation}/> */}
+        {locale && locale === "en" && (
+          <div className="flex justify-center border border-blue-600">
+          <a href="/es/curriculum/0-empezando/0-overview">Espanol</a>
+          </div>
+        )}
+
+        {locale && locale === "es" && (
+          <div className="flex justify-center border border-blue-600">
+          <a href="/curriculum/0-getting-started/0-overview">English</a>
+          </div>
+        )}
+        
       </div>
     </div>
   );
