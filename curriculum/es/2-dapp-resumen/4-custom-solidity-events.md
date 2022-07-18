@@ -2,7 +2,7 @@
 
 ### Define Events
 
-Recall that Solidity events are a way for our subgraph to _listen_ for specific actions to enable us to make queries about the data from our smart contract. We have functions written to create a new event on our paltform, RSVP to an event, confirm individual attendees, confirm the group of attendees, and send unclaimed funds back to the event owner. In order for our subgraph to be able to access the information from these functions, we need to expose them via events. We'll write the following events and _emit_ them inside of their corresponding function:
+Recall that Solidity events are a way for our subgraph to _listen_ for specific actions to enable us to make queries about the data from our smart contract. We have functions written to create a new event on our platform, RSVP to an event, confirm individual attendees, confirm the group of attendees, and send unclaimed funds back to the event owner. In order for our subgraph to be able to access the information from these functions, we need to expose them via events. We'll write the following events and _emit_ them inside of their corresponding function:
 
 - **NewEventCreated**: exposes data about the new event like the owner, max capacity, event owner, deposit amount, etc.
 - **NewRSVP**: exposes data about the user who RSVP'd and the event they RSVP'd to

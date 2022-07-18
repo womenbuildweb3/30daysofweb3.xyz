@@ -6,7 +6,7 @@ Let’s start by defining our smart contract and the information that we want to
 
 ```solidity
 contract Web3RSVP {
-struct CreateEvent {
+    struct CreateEvent {
        bytes32 eventId;
        string eventDataCID;
        address eventOwner;
@@ -48,7 +48,7 @@ contract Web3RSVP {
        bool paidOut;
    }
 
-mapping(bytes32 => CreateEvent) public idToEvent;
+    mapping(bytes32 => CreateEvent) public idToEvent;
 
 }
 ```

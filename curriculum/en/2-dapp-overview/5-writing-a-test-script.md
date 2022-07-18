@@ -1,6 +1,6 @@
 # Writing a Test Script
 
-We can test our smart contract locally before we deploy to a testnet so we can make sure it works as intended.
+We can test our smart contract locally before we deploy to a testnet so we can make sure it works as intended. A testnet (test network) is an alternative blockchain network used to run and test programs before releasing updates to the mainnet (main network).
 
 Create a file in the `scripts` folder called `run.js`. We will start by importing hardhat at the top of file so we can use it later.
 

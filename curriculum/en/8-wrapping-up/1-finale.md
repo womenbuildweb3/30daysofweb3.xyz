@@ -13,3 +13,7 @@ Finally you can host your code on Radicle, which allows storing git repositories
 Don’t forget to tweet and share your progress. You really just built a full stack web3 dApp!
 
 Now it’s time to get out there and keep building! 💪
+
+## Submit your project
+
+Submit your completed project and earn kudos to prove **on-chain** that you completed #30DaysofWeb3 by filling out this form: https://forms.gle/RbpJ8tN1wPbHLBU29
