@@ -6,7 +6,7 @@ import getCoursePaths from "../../../utils/getCoursePaths";
 import pathsToNav from "../../../utils/pathsToNav"
 import CurricLayout from "../../../components/CurricLayout";
 
-function Course({ curricData, navigation, locale }) {
+function Course({ curricData, navigation }) {
   // const { t } = useTranslation("navigation");
 
   return (

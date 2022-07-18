@@ -3,6 +3,7 @@ import Logo from "../Logo";
 import ListItem from "./ListItem";
 import ListGroup from "./ListGroup";
 import styles from "../../styles/Home.module.css";
+import Link from "next/link"
 
 export default function CurricSideBar({ navigation, locale }) {
 
@@ -26,13 +27,13 @@ export default function CurricSideBar({ navigation, locale }) {
         {/* <Languages navigation={navigation}/> */}
         {locale && locale === "en" && (
           <div className="flex justify-center border border-blue-600">
-          <a href="/es/curriculum/0-empezando/0-overview">Espanol</a>
+          <Link locale="es" href="/es/curriculum/0-empezando/0-overview">Espanol</Link>
           </div>
         )}
 
         {locale && locale === "es" && (
           <div className="flex justify-center border border-blue-600">
-          <a href="/curriculum/0-getting-started/0-overview">English</a>
+          <Link locale="en" href="/curriculum/0-getting-started/0-overview">English</Link>
           </div>
         )}
         
