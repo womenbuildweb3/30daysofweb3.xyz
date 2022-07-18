@@ -38,6 +38,12 @@
           "type": "file",
           "href": "/curriculum/0-getting-started/5-setup-your-wallet",
           "title": "Setup Your Wallet"
+        },
+        {
+          "name": "6-checkpoint.md",
+          "type": "file",
+          "href": "/curriculum/0-getting-started/6-checkpoint",
+          "title": "Checkpoint"
         }
       ],
       "type": "directory",
@@ -64,6 +70,12 @@
           "type": "file",
           "href": "/curriculum/1-building-on-ethereum/2-intro-to-solidity",
           "title": "Intro to Solidity"
+        },
+        {
+          "name": "3-checkpoint.md",
+          "type": "file",
+          "href": "/curriculum/1-building-on-ethereum/3-checkpoint",
+          "title": "Checkpoint"
         }
       ],
       "type": "directory",
@@ -108,6 +120,12 @@
           "type": "file",
           "href": "/curriculum/2-dapp-overview/5-writing-a-test-script",
           "title": "Writing a Test Script"
+        },
+        {
+          "name": "6-checkpoint.md",
+          "type": "file",
+          "href": "/curriculum/2-dapp-overview/6-checkpoint",
+          "title": "Checkpoint"
         }
       ],
       "type": "directory",
@@ -134,6 +152,12 @@
           "type": "file",
           "href": "/curriculum/3-deploying-your-smart-contract/2-verifying-your-contract",
           "title": "Verifying Your Contract"
+        },
+        {
+          "name": "3-checkpoint.md",
+          "type": "file",
+          "href": "/curriculum/3-deploying-your-smart-contract/3-checkpoint",
+          "title": "Checkpoint"
         }
       ],
       "type": "directory",
@@ -184,6 +208,12 @@
           "type": "file",
           "href": "/curriculum/4-creating-your-subgraph/6-deploying-your-subgraph",
           "title": "Deploying Your Subgraph"
+        },
+        {
+          "name": "7-checkpoint.md",
+          "type": "file",
+          "href": "/curriculum/4-creating-your-subgraph/7-checkpoint",
+          "title": "Checkpoint"
         }
       ],
       "type": "directory",
@@ -240,6 +270,12 @@
           "type": "file",
           "href": "/curriculum/5-building-your-frontend/7-finishing-event-page",
           "title": "Finishing Your Event Page"
+        },
+        {
+          "name": "8-checkpoint.md",
+          "type": "file",
+          "href": "/curriculum/5-building-your-frontend/8-checkpoint",
+          "title": "Checkpoint"
         }
       ],
       "type": "directory",
@@ -272,6 +308,12 @@
           "type": "file",
           "href": "/curriculum/6-querying-the-graph/3-displaying-event-details",
           "title": "Displaying Event Details"
+        },
+        {
+          "name": "4-checkpoint.md",
+          "type": "file",
+          "href": "/curriculum/6-querying-the-graph/4-checkpoint",
+          "title": "Checkpoint"
         }
       ],
       "type": "directory",
@@ -318,10 +360,16 @@
           "title": "Past Events"
         },
         {
-          "name": "06-confirm-attendees.md",
+          "name": "6-confirm-attendees.md",
           "type": "file",
           "href": "/curriculum/7-finishing-touches/6-confirm-attendees",
           "title": "Confirm Attendees"
+        },
+        {
+          "name": "7-checkpoint.md",
+          "type": "file",
+          "href": "/curriculum/7-finishing-touches/7-checkpoint",
+          "title": "Checkpoint"
         }
       ],
       "type": "directory",
