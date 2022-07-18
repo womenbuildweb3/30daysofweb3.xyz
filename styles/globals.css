@@ -35,7 +35,6 @@ code {
 }
 
 p img {
-  max-width: 800px !important;
-  max-height: 600px !important;
+  max-width: 100%;
   margin: auto;
 }
