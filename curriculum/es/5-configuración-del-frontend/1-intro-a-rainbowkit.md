@@ -1,11 +1,12 @@
 # Connect your wallet with RainbowKit ESPANOL
 
-## What is RainbowKit?
+RainbowKit es una biblioteca React que le facilita a los desarrolladores conectar su dApp a una billetera. Es fácil de usar, responsiva, personalizable y adaptable. Desde la conexión básica y la desconexión de la billetera hasta la visualización de saldos, RainbowKit puede funcionar con varias billeteras, intercambiar cadenas de conexión y convertir direcciones a ENS (*Ethereum Name Service*).
 
-**RainbowKit** is _a React library that makes it simple for developers to connect their dApp to a wallet_. It's simple to use, responsive, customizable, and adaptable. From basic features like connecting and disconnecting a wallet, to the displaying of balances, RainbowKit is able to work with various wallets, swap connection chains, and convert addresses to ENS (Ethereum Name Service).
+Puede personalizar completamente su tema RainbowKit e incluir solo las funciones necesarias para sus dApps. RainbowKit utiliza las bibliotecas más utilizadas en el ecosistema web3: ethers y wagmi.
 
-You can fully customize your RainbowKit theme and include only the necessary features for your dApps. RainbowKit utilizes the most commonly used libraries in the web3 ecosystem: ethers and wagmi.
 
+
+## Importación y Configuración de Cadenas
 ## Loading Environment Variables
 
 At the root of your project, create a new file called `.env.local`. In the web3rsvp-frontend-starter, there is a file called **.env.example** that shows an example of how to set up your .env.local file. This file is where we will keep secrets like our API keys so they aren't exposed on the frontend.

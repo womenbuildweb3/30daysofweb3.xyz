@@ -1,19 +1,18 @@
-## Custom Solidity Events ESPANOL
+## Eventos de *solidity* personalizados
 
-### Define Events
+### Definir eventos
 
-Recall that Solidity events are a way for our subgraph to _listen_ for specific actions to enable us to make queries about the data from our smart contract. We have functions written to create a new event on our platform, RSVP to an event, confirm individual attendees, confirm the group of attendees, and send unclaimed funds back to the event owner. In order for our subgraph to be able to access the information from these functions, we need to expose them via events. We'll write the following events and _emit_ them inside of their corresponding function:
+Recuerde que los eventos de *solidity* son una forma en que nuestro subgrafo *escucha* acciones específicas para permitirnos realizar consultas sobre los datos de nuestro *smart contract*. Tenemos funciones escritas para crear un nuevo evento en nuestra plataforma, confirmar asistencia a un evento, confirmar asistentes individuales, confirmar el grupo de asistentes y enviar fondos no reclamados al propietario del evento. Para que nuestro subgrafo pueda acceder a la información de estas funciones, debemos exponerlas a través de eventos. Escribiremos los siguientes eventos y los *emitiremos* dentro de su función correspondiente:
 
-- **NewEventCreated**: exposes data about the new event like the owner, max capacity, event owner, deposit amount, etc.
-- **NewRSVP**: exposes data about the user who RSVP'd and the event they RSVP'd to
-- **ConfirmedAttendee**: exposes data about the user who was confirmed and the event that they were confirmed for
-- **DepositsPaid**: exposes data about unclaimed deposits being sent to the event organizer
+- *NewEventCreated*: expone datos sobre el nuevo evento, como el propietario, la capacidad máxima, el propietario del evento, el monto del depósito, etc.
+- *NewRSVP*: expone datos sobre el usuario que respondió y el evento al que respondió
+- *ConfirmedAttendee*: expone datos sobre el usuario que fue confirmado y el evento para el que fueron confirmados
+- *DepositsPaid*: expone datos sobre depósitos no reclamados que se envían al organizador del evento
 
-All of our events are denoted by using the keyword _event_, followed by the custom name for our event.
+Todos nuestros eventos se indican con la palabra clave *evento*, seguida del nombre personalizado de nuestro evento.
 
-Define your events at the very top of your file, inside the curly braces (right after `contract Web3RSVP {`):
-
-```solidity
+Defina sus eventos en la parte superior de su archivo, dentro de las llaves:
+```
 event NewEventCreated(
         bytes32 eventID,
         address creatorAddress,
@@ -29,54 +28,40 @@ event NewEventCreated(
 
     event DepositsPaidOut(bytes32 eventID);
 ```
+ 
+ ### Emitir eventos
+ 
+Ahora que los hemos definido, en realidad tenemos que *emitirlos* en alguna parte. Definir eventos es agregarlos como una herramienta en su cinturón de herramientas, pero emitirlos es real. Aliado sacando esa herramienta y usándola. Cada evento debe emitirse donde tenga sentido, después de que se haya llevado a cabo una acción específica.
+ 
+Para nuestro primer evento, *`newEventCreated`*, deberíamos emitirlo al final de nuestra función *`createNewEvent`*.
+ 
+Para emitir un evento, usamos la palabra clave *emit* y luego pasamos los argumentos, también conocidos como los valores reales que queremos, según los parámetros que definimos.
 
-### Emit Events
+Emita NewEventCreated en la parte inferior de su función `createNewEvent` de esta manera:
+ 
+ ```
+ emit NewEventCreated(
+            eventId,
+            msg.sender,
+            eventTimestamp,
+            maxCapacity,
+            deposit,
+            eventDataCID
+        );
+ ```
+ 
+`NewRSVP` debería emitirse al final de nuestra función `confirmAttendee` así: `emit NewRSVP(eventId, msg.sender);`
+ 
+`ConfirmedAttendees` debe emitirse al final de nuestra función `confirmAttendee` de esta manera: `emit ConfirmedAttendee(eventId, attendee);`
+ 
+`DepositPaidOut` debería emitirse al final de nuestra función `withdrawUnclaimedDeposits` así: `emit DepositsPaidOut(eventId);``
+ 
+ 
+ ## ¡Lo hiciste!
 
-Now that we've defined them, we actually have to _emit_ them somewhere. Defining events is adding them as a tool on your toolbelt, but emitting them is actually pulling that tool out and using it. Each event should be emitted where it makes sense, after a specific action has been taken.
-
-For our first event, `newEventCreated`, we should emit this at the very end of our function `createNewEvent`.
-
-To emit an event, we use the keyword _emit_ and then pass in the arguments, AKA the actual values we want, based on the parameters we defined.
-
-Emit NewEventCreated at the bottom of your `createNewEvent` function like this:
-
-```solidity
-emit NewEventCreated(
-           eventId,
-           msg.sender,
-           eventTimestamp,
-           maxCapacity,
-           deposit,
-           eventDataCID
-       );
-```
-
-`NewRSVP` should be emitted at the very end of our function `confirmAttendee` like this:
-
-```solidity
-emit NewRSVP(eventId, msg.sender);
-
-```
-
-`ConfirmedAttendees` should be emitted at the very end of our function `confirmAttendee` like this:
-
-```solidity
-emit ConfirmedAttendee(eventId, attendee);
-
-```
-
-`DepositPaidOut` should be emitted at the very end of our function `withdrawUnclaimedDeposits` like this:
-
-```solidity
-emit DepositsPaidOut(eventId);
+¡Ha escrito sus funciones, definido sus estructuras y definido eventos personalizados! Así es como debería verse su código final:
 
 ```
-
-## You Did It!
-
-You've written your functions, defined your structs, and defined custom events! This is what your final code should look like:
-
-```solidity
 // SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.4;
@@ -129,9 +114,9 @@ contract Web3RSVP {
             )
         );
 
-        address[] memory confirmedRSVPs;
+        address[] memory confirmedRSVPs; 
         address[] memory claimedRSVPs;
-
+        
 
         //this creates a new CreateEvent struct and adds it to the idToEvent mapping
         idToEvent[eventId] = CreateEvent(
@@ -177,12 +162,12 @@ contract Web3RSVP {
             require(myEvent.confirmedRSVPs[i] != msg.sender, "ALREADY CONFIRMED");
         }
 
-        myEvent.confirmedRSVPs.push(payable(msg.sender));
+        myEvent.confirmedRSVPs.push(payable(msg.sender)); 
 
         emit NewRSVP(eventId, msg.sender);
     }
 
-    function confirmAllAttendees(bytes32 eventId) external {
+    function confirmGroup(bytes32 eventId, address[] calldata attendees) external {
         // look up event
         CreateEvent memory myEvent = idToEvent[eventId];
 
@@ -190,8 +175,8 @@ contract Web3RSVP {
         require(msg.sender == myEvent.eventOwner, "NOT AUTHORIZED");
 
         //confirm each attendee
-        for (uint8 i = 0; i < myEvent.confirmedRSVPs.length; i++) {
-            confirmAttendee(eventId, myEvent.confirmedRSVPs[i]);
+        for (uint8 i = 0; i < attendees.length; i++) {
+            confirmAttendee(eventId, attendees[i]);
         }
     }
 
@@ -225,9 +210,9 @@ contract Web3RSVP {
         // add them to the claimedRSVPs list
         myEvent.claimedRSVPs.push(attendee);
 
-        // sending eth back to the staker https://solidity-by-example.org/sending-ether
+        // sending eth back to the staker `https://solidity-by-example.org/sending-ether`
         (bool sent,) = attendee.call{value: myEvent.deposit}("");
-
+     
         //if this fails
         if(!sent){
             myEvent.claimedRSVPs.pop();
@@ -264,7 +249,7 @@ contract Web3RSVP {
 
         // send the payout to the owner
         (bool sent, ) = msg.sender.call{value: payout}("");
-
+        
         // if this fails
         if(!sent){
             myEvent.paidOut == false;
