@@ -45,6 +45,14 @@ Let’s start coding! Today we’ll be writing about ½ of the smart contract.
 - Finally, open this newly created project in your code editor. Do this by opening VS code and hitting `file` > `open` > look for the folder you just created.
 - If you have any issues with this setup, you can fork and then clone this [starter repo](https://github.com/womenbuildweb3/hardhat-sample).
 
+First, fork the project:
+![fork the project](https://user-images.githubusercontent.com/15346823/179375505-7b311148-c5cf-4448-bdea-fc2077053281.png)
+
+Then, clone the repo onto your machine by copying the link that is given to you when you press `code.` Note that the username should be your username. If you still see `womenbuildweb3` as the user name, you haven't forked the repo. After copying the link, run this command in your terminal:
+`git clone <insert link here>`
+
+![code](https://user-images.githubusercontent.com/15346823/179375540-3f1060ed-7a2a-48d2-ad20-165822656041.png)
+
 Under the `contracts` folder, head to your `Greeter.sol` file and rename it to `Web3RSVP.sol`.
 
 Delete everything in this file except for the first two lines, plus the comment at the very top.
