@@ -99,6 +99,13 @@ export default function Navbar() {
                       </span>
                     </a>
                   </Link>
+                  <Link href="/#partners">
+                    <a className="-m-3 p-3 flex items-center rounded-md hover:bg-slate-50">
+                      <span className="text-base font-medium text-slate-900">
+                        Partners
+                      </span>
+                    </a>
+                  </Link>
                   <Link href="/#faqs">
                     <a className="-m-3 p-3 flex items-center rounded-md hover:bg-slate-50">
                       <span className=" text-base font-medium text-slate-900">
