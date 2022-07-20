@@ -27,6 +27,11 @@ export default function Navbar() {
                 Sponsors
               </a>
             </Link>
+            <Link href="/#partners">
+              <a className="text-base font-medium text-slate-900 hover:underline hover:decoration-wavy">
+                Partners
+              </a>
+            </Link>
             <Link href="/#faqs">
               <a className="text-base font-medium text-slate-900 hover:underline hover:decoration-wavy">
                 FAQ
@@ -47,14 +52,14 @@ export default function Navbar() {
             >
               Register
             </a>
-            <a
+            {/* <a
               href="https://discord.gg/z63rfurXMD"
               target="_blank"
               rel="noopener noreferrer"
               className="ml-4 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-royal-600 bg-white hover:bg-slate-50"
             >
               Join our Discord
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
@@ -119,11 +124,16 @@ export default function Navbar() {
                 >
                   Register
                 </a>
-                <p className="mt-6 text-center text-base font-medium text-slate-500">
-                  <a href="#" className="text-royal-600 hover:text-royal-500">
+                {/* <p className="mt-6 text-center text-base font-medium text-slate-500">
+                  <a
+                    href="https://discord.gg/z63rfurXMD"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-royal-600 hover:text-royal-500"
+                  >
                     Join our Discord
                   </a>
-                </p>
+                </p> */}
               </div>
             </div>
           </div>

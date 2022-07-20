@@ -58,7 +58,7 @@ export default function Home() {
                 Register
               </a>
             </div>
-            <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+            {/* <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
               <a
                 href="https://discord.gg/z63rfurXMD"
                 target="_blank"
@@ -67,7 +67,7 @@ export default function Home() {
               >
                 Join our Discord
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="space-y-10 py-12 sm:py-16 sm:px-6 lg:px-8">
