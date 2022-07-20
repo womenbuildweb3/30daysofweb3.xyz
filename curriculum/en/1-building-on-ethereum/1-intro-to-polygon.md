@@ -1,4 +1,8 @@
-# Introduction to Polygon
+---
+title: Intro to Polygon
+description: Intro to Polygon
+optional: false
+---
 
 ## Ethereum Scaling Solutions
 

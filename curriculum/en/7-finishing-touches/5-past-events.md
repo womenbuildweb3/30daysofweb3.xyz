@@ -1,4 +1,8 @@
-# Past Events
+---
+title: Past Events
+description: Past Events
+optional: false
+---
 
 In the `pages/my-events/past` folder, open up the `index.js` file.
 

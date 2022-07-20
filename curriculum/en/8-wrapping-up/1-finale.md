@@ -1,4 +1,8 @@
-# 🎉 You did it!
+---
+title: 🎉 You did it!
+description: 🎉 You did it!
+optional: false
+---
 
 The importance of Web3 can not be stressed enough. Securing information, non-fungible tokens, artist royalties, and voting processes are all proven areas that web3 has been able to transform how people can organize in a decentralized world.
 

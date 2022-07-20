@@ -1,4 +1,8 @@
-# Fetching the Event Details
+---
+title: Fetching the Event Details
+description: Fetching the Event Details
+optional: false
+---
 
 Open up the `pages/event/[id].js` file, which uses dynamic routing with Next.js to create a new page for each event minted based on the eventID. This is where we can show the details for a single event and users can RSVP.
 
@@ -15,43 +19,43 @@ We can get the event ID from the page url, and pass that into our query to fetch
 
 ```javascript
 export async function getServerSideProps(context) {
- const { id } = context.params;
+  const { id } = context.params;
 
- const { data } = await client.query({
-   query: gql`
-     query Event($id: String!) {
-       event(id: $id) {
-         id
-         eventID
-         name
-         description
-         link
-         eventOwner
-         eventTimestamp
-         maxCapacity
-         deposit
-         totalRSVPs
-         totalConfirmedAttendees
-         imageURL
-         rsvps {
-           id
-           attendee {
-             id
-           }
-         }
-       }
-     }
-   `,
-   variables: {
-     id: id,
-   },
- });
+  const { data } = await client.query({
+    query: gql`
+      query Event($id: String!) {
+        event(id: $id) {
+          id
+          eventID
+          name
+          description
+          link
+          eventOwner
+          eventTimestamp
+          maxCapacity
+          deposit
+          totalRSVPs
+          totalConfirmedAttendees
+          imageURL
+          rsvps {
+            id
+            attendee {
+              id
+            }
+          }
+        }
+      }
+    `,
+    variables: {
+      id: id,
+    },
+  });
 
- return {
-   props: {
-     event: data.event,
-   },
- };
+  return {
+    props: {
+      event: data.event,
+    },
+  };
 }
 ```
 

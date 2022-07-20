@@ -1,12 +1,16 @@
-# Displaying Event Details
+---
+title: Displaying Event Details
+description: Displaying Event Details
+optional: false
+---
 
 In the `Head` section, we can change "name" in the `<title>` tag and in the `meta` content to `{event.name}`
 
 ```javascript
 <Head>
-<title> {event.name} | web3rsvp</title>
-<meta name="description" content={event.name} />
-<link rel="icon" href="/favicon.ico" />
+  <title> {event.name} | web3rsvp</title>
+  <meta name="description" content={event.name} />
+  <link rel="icon" href="/favicon.ico" />
 </Head>
 ```
 
@@ -49,15 +53,15 @@ After `Hosted by{" "}`, inside the `<a>` tag we can add the event owner's addres
 
 ```javascript
 <span className="truncate">
-    Hosted by{" "}
-    <a
-      className="text-indigo-800 truncate hover:underline"
-      href={`${process.env.NEXT_PUBLIC_TESTNET_EXPLORER_URL}address/${event.eventOwner}`}
-      target="_blank"
-      rel="noreferrer"
-    >
-      {event.eventOwner}
-    </a>
+  Hosted by{" "}
+  <a
+    className="text-indigo-800 truncate hover:underline"
+    href={`${process.env.NEXT_PUBLIC_TESTNET_EXPLORER_URL}address/${event.eventOwner}`}
+    target="_blank"
+    rel="noreferrer"
+  >
+    {event.eventOwner}
+  </a>
 </span>
 ```
 

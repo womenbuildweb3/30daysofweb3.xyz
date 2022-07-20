@@ -1,4 +1,8 @@
-# Storing data with Web3.Storage
+---
+title: Storing data with Web3.Storage
+description: Storing data with Web3.Storage
+optional: false
+---
 
 ## What is Web3.Storage?
 

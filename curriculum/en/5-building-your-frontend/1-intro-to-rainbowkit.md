@@ -1,4 +1,8 @@
-# Connect your wallet with RainbowKit
+---
+title: Connect your wallet with RainbowKit
+description: Connect your wallet with RainbowKit
+optional: false
+---
 
 ## What is RainbowKit?
 
@@ -54,14 +58,14 @@ Within our `_app.js` file, we can wrap our application with `RainbowKitProvider`
 
 ```javascript
 export default function MyApp({ Component, pageProps }) {
- return (
-   <WagmiConfig client={wagmiClient}>
-     <RainbowKitProvider chains={chains}>
-         <Layout>
-           <Component {...pageProps} />
-         </Layout>
-     </RainbowKitProvider>
-   </WagmiConfig>
- );
+  return (
+    <WagmiConfig client={wagmiClient}>
+      <RainbowKitProvider chains={chains}>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </RainbowKitProvider>
+    </WagmiConfig>
+  );
 }
 ```

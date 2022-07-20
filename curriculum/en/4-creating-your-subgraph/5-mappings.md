@@ -1,6 +1,10 @@
-# Mappings (src/{Name}.ts)
+---
+title: Mappings
+description: Mappings
+optional: false
+---
 
-You can find the mappings file in the `src` folder. Mappings use AssemblyScript, a strongly-typed language based on Typescript, and act like the resolvers in your typical GraphQL API. They are responsible for the logic that happens in-between an event firing from our smart contract and that data being organized into our schema.
+You can find the mappings file (src/{Name}.ts) in the `src` folder. Mappings use AssemblyScript, a strongly-typed language based on Typescript, and act like the resolvers in your typical GraphQL API. They are responsible for the logic that happens in-between an event firing from our smart contract and that data being organized into our schema.
 
 This file will already have a basic layout generated for you. You should see a function for each event handler defined in our subgraph manifest. Each function in our mapping must be exported, and takes in the event it will handle as an argument.
 

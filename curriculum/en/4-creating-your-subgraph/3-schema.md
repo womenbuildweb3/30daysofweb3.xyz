@@ -1,6 +1,10 @@
-# Schema (schema.graphql)
+---
+title: Schema
+description: Schema
+optional: false
+---
 
-This is where we will define the schema for our GraphQL queries. Ideally we want to model this data to match the data we need for our frontend.
+This is where we will define the schema (schema.graphql) for our GraphQL queries. Ideally we want to model this data to match the data we need for our frontend.
 
 **Based on our website mockups, we can see that we need to be able to:**
 
