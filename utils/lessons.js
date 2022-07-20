@@ -1,6 +1,6 @@
 export function getNextLesson(categoryName, subCategoryName, navigation) {
   let next = "/";
-  let categoryIndex = Number(categoryName.split("-")[0]);
+  let categoryIndex = Number(categoryName.split("-")[0])-1;
   let subCategoryIndex = Number(subCategoryName.split("-")[0]);
   let nextFile = navigation[categoryIndex]?.children[subCategoryIndex + 1];
 

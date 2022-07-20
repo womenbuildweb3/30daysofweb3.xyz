@@ -27,13 +27,13 @@ export default function CurricSideBar({ navigation, locale }) {
         {/* <Languages navigation={navigation}/> */}
         {locale && locale === "en" && (
           <div className="flex justify-center border border-blue-600">
-          <Link locale="es" href="/es/curriculum/0-introducción/0-bienvenida">Espanol</Link>
+          <Link locale="es" href="/es/curriculum/1-introducción/0-bienvenida">Espanol</Link>
           </div>
         )}
 
         {locale && locale === "es" && (
           <div className="flex justify-center border border-blue-600">
-          <Link locale="en" href="/curriculum/0-getting-started/0-overview">English</Link>
+          <Link locale="en" href="/curriculum/1-getting-started/0-overview">English</Link>
           </div>
         )}
         
