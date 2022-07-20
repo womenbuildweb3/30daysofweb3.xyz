@@ -51,7 +51,7 @@ export default function About() {
                 Sponsor us
               </a>
             </div>
-            <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+            {/* <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
               <a
                 href="https://discord.gg/z63rfurXMD"
                 target="_blank"
@@ -60,7 +60,7 @@ export default function About() {
               >
                 Join our Discord
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="py-12 sm:py-16 mx-auto max-w-2xl text-xl text-slate-700">
