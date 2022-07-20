@@ -1,14 +1,9 @@
 ---
 title: Intro to Web3
 description: Intro to Web3
-author: "cuddleofdeath"
-img: https://cuddleofdeath.hashnode.dev/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1651450696678%2FcnXy8_fi6.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=3840&q=75
-date: 01 May 2022
 optional: true
----
-
-![Beginner's Guide to Web3](https://cuddleofdeath.hashnode.dev/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1651450696678%2FcnXy8_fi6.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=3840&q=75)
-
+optionalMsg: If you're familiar with web3 fundamentals and already have your own crypto wallet, feel free to jump ahead to the next section!
+optionalNextPath: /en/curriculum/1-building-on-ethereum/0-client-server-architecture
 ---
 
 Welcome to the beginning of your decentralized adventure! Allow me to guide you through the new and exciting iteration of the internet known as Web3. By the end of this article, you will have the answers to the questions you're currently thinking, like: _What the heck is web3? What does decentralization mean?_ And: _Are these all just buzzwords?_

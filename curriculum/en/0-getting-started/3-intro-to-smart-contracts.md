@@ -2,6 +2,8 @@
 title: Intro to Smart Contracts
 description: Intro to Smart Contracts
 optional: true
+optionalMsg: If you're familiar with web3 fundamentals and already have your own crypto wallet, feel free to jump ahead to the next section!
+optionalNextPath: /en/curriculum/1-building-on-ethereum/0-client-server-architecture
 ---
 
 A **smart contract** is _a computer program compiled from code that can control events and actions according to the terms set within the contract’s code_.

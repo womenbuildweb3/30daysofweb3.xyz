@@ -2,6 +2,8 @@
 title: Intro to Blockchain
 description: Intro to Blockchain
 optional: true
+optionalMsg: If you're familiar with web3 fundamentals and already have your own crypto wallet, feel free to jump ahead to the next section!
+optionalNextPath: /en/curriculum/1-building-on-ethereum/0-client-server-architecture
 ---
 
 ## Blockchain Transactions

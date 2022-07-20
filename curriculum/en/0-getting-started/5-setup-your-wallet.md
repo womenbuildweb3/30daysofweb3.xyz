@@ -2,6 +2,8 @@
 title: Setup Your Wallet
 description: Setup Your Wallet
 optional: true
+optionalMsg: If you're familiar with web3 fundamentals and already have your own crypto wallet, feel free to jump ahead to the next section!
+optionalNextPath: /en/curriculum/1-building-on-ethereum/0-client-server-architecture
 ---
 
 1. **Download the Coinbase Wallet chrome extension.** You can find the link [here](https://chrome.google.com/webstore/detail/coinbase-wallet-extension/hnfanknocfeofbddgcijnmhnfnkdnaad?hl=en).
