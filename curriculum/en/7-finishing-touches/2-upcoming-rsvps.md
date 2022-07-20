@@ -1,4 +1,8 @@
-# Upcoming RSVPs
+---
+title: Upcoming RSVPs
+description: Upcoming RSVPs
+optional: false
+---
 
 In the `pages/my-rsvps` folder, we have two pages where we want to show the user's upcoming and past events that they RSVPed to.
 
@@ -32,7 +36,6 @@ const MY_UPCOMING_RSVPS = gql`
     }
   }
 `;
-
 ```
 
 To only show the rsvps for upcoming events, we can filter the events returned from the query by the `eventTimestamp`.

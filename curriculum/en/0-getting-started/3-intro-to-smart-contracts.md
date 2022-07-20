@@ -1,4 +1,8 @@
-# Intro to Smart Contracts
+---
+title: Intro to Smart Contracts
+description: Intro to Smart Contracts
+optional: true
+---
 
 A **smart contract** is _a computer program compiled from code that can control events and actions according to the terms set within the contract’s code_.
 

@@ -1,4 +1,8 @@
-# Setup Your Dev Environment
+---
+title: Setup Your Dev Environment
+description: Setup Your Dev Environment
+optional: false
+---
 
 ## IDE (Integrated Developer Environment)
 
@@ -10,7 +14,7 @@ You will need Node.js and npm installed on your machine.
 
 **Node.js** is a runtime environment that executes JavaScript outside the browser, enabling developers to build full-stack JavaScript apps. **NPM** stands for *node package manager* and is the command-line interface to a vibrant ecosystem of open-source Node.js packages. If you want to learn more about NPM, check out [this article](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/).
 
-To check if you have Node.js and npm installed, you can run  `node -v`  and  `npm -v`. If you get back a number that looks like 8.0.6, that means you do have these installed. 
+To check if you have Node.js and npm installed, you can run `node -v` and `npm -v`. If you get back a number that looks like 8.0.6, that means you do have these installed.
 ![node version](https://user-images.githubusercontent.com/15346823/179375406-e00e704f-0dfe-40a4-82a3-82463766fe4c.png)
 
 To download Node.js and npm, we recommend using **nvm**, a node version manager that helps you manage various Node.js and npm versions. Follow the installation guide [here.](https://github.com/nvm-sh/nvm#installing-and-updating)

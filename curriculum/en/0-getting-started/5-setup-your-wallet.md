@@ -1,4 +1,8 @@
-# Setup Your Wallet
+---
+title: Setup Your Wallet
+description: Setup Your Wallet
+optional: true
+---
 
 1. **Download the Coinbase Wallet chrome extension.** You can find the link [here](https://chrome.google.com/webstore/detail/coinbase-wallet-extension/hnfanknocfeofbddgcijnmhnfnkdnaad?hl=en).
 

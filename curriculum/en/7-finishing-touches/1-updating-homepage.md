@@ -1,4 +1,8 @@
-# Updating the Homepage
+---
+title: Updating the Homepage
+description: Updating the Homepage
+optional: false
+---
 
 In our `index.js` file, we want to be able to show all of the upcoming events people can RSVP to. At the top of the file we can import `gql` and `useQuery` from apollo client. We will also need to import `useState` and our `EventCard` component.
 
@@ -12,14 +16,14 @@ We can define our query above our `Home` function like this:
 
 ```javascript
 const UPCOMING_EVENTS = gql`
- query Events($currentTimestamp: String) {
-   events(where: { eventTimestamp_gt: $currentTimestamp }) {
-     id
-     name
-     eventTimestamp
-     imageURL
-   }
- }
+  query Events($currentTimestamp: String) {
+    events(where: { eventTimestamp_gt: $currentTimestamp }) {
+      id
+      name
+      eventTimestamp
+      imageURL
+    }
+  }
 `;
 ```
 

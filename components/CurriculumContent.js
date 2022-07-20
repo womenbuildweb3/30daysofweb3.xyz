@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useRouter } from "next/router";
 // import Navbar from "./Navbar";
 // import Link from "next/link";
@@ -11,16 +12,19 @@ const CurriculumContent = ({ curricData, navigation }) => {
   const router = useRouter();
   const { category, subCategory } = router.query;
   const nextPath = getNextLesson(category, subCategory, navigation);
+  // console.log("curricData.data", curricData.data);
 
   return (
     <div className="bg-white px-4 py-16">
-      <ReactMarkdown
-        remarkPlugins={[remarkGfm]}
-        className="prose prose-blue prose-lg mx-auto"
-        components={CodeBlock}
-      >
-        {curricData.content}
-      </ReactMarkdown>
+      <Head>
+        <title>{curricData.data.title} | 30 Days of Web3</title>
+      </Head>
+      <div className="prose prose-blue prose-lg mx-auto">
+        <h1>{curricData.data.title}</h1>
+        <ReactMarkdown remarkPlugins={[remarkGfm]} components={CodeBlock}>
+          {curricData.content}
+        </ReactMarkdown>
+      </div>
 
       <div className="flex justify-center w-full mt-5">
         {nextPath !== "/" && (

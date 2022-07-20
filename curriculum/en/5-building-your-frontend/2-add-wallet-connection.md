@@ -1,4 +1,8 @@
-# Using RainbowKit's ConnectButton
+---
+title: Add Wallet Connection
+description: Add wallet connection to your dapp with RainbowKit and wagmi.sh
+optional: false
+---
 
 Now that we’ve wrapped our app with the `WagmiConfig` and `RainbowKitProvider` components, we can use wagmi hooks and RainbowKit’s `ConnectButton` component to enable users to connect their wallet and to inform the user that their wallet is connected.
 
@@ -78,7 +82,6 @@ export default function Navbar() {
     )
   );
 }
-
 ```
 
 We pass the account object and disconnect function to our Navmenu component. The following two steps **are already done for you.**
@@ -93,13 +96,13 @@ We also enable users to disconnect their wallets:
 
 ```javascript
 <a
- onClick={disconnect}
- className={joinClassNames(
-   account ? "bg-gray-100 text-gray-900" : "text-gray-700",
-   "block px-4 py-2 text-sm cursor-pointer"
- )}
+  onClick={disconnect}
+  className={joinClassNames(
+    account ? "bg-gray-100 text-gray-900" : "text-gray-700",
+    "block px-4 py-2 text-sm cursor-pointer"
+  )}
 >
- Log Out
+  Log Out
 </a>
 ```
 

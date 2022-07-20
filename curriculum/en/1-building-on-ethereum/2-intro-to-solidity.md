@@ -1,4 +1,8 @@
-# Intro to Solidity
+---
+title: Intro to Solidity
+description: Intro to Solidity
+optional: false
+---
 
 ## Writing a Smart Contract
 
@@ -51,7 +55,7 @@ Every function must begin with the keyword `function`, followed by its name `fun
 
 ## Try It Yourself
 
-Using [Remix](https://remix.ethereum.org/#optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.7+commit.e28d00a7.js), an online IDE, create a simple smart contract which adds two numbers together and then returns the value. 
+Using [Remix](https://remix.ethereum.org/#optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.7+commit.e28d00a7.js), an online IDE, create a simple smart contract which adds two numbers together and then returns the value.
 
 You should define two functions inside your smart contract: one to do the computation based on two numbers passed in by the user, and one to return the value of that computation. We'll write one getter to retreieve the current value of the variable and one setter to add the two numbers and update the value of the variable.
 
@@ -64,6 +68,7 @@ Start by adding a license identifier, followed by the version pragma:
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.7.0 <0.9.0;
 ```
+
 Next, define your contract and inside, define a variable of type uint (unsigned integer) and set it to zero.
 
 ```
@@ -96,20 +101,19 @@ function getSum() public view returns (uint) {
 }
 ```
 
-Now we'll compile, deploy, and test our contract. Head over to the 3rd icon from the top and hit `Compile add.sol` 
+Now we'll compile, deploy, and test our contract. Head over to the 3rd icon from the top and hit `Compile add.sol`
 ![Compile contract](https://user-images.githubusercontent.com/15346823/179375260-7b7fc34d-19e5-44f1-b549-c78c828c8085.png)
 
-
-Move to the 4th icon from the top and select the Javascript VM from the dropdown in the `environment` selection. This will give you some fake ether to be able to deploy and test your contract. 
+Move to the 4th icon from the top and select the Javascript VM from the dropdown in the `environment` selection. This will give you some fake ether to be able to deploy and test your contract.
 ![JavascriptVM](https://user-images.githubusercontent.com/15346823/179375210-bc843162-dcf0-4337-a9ed-2ca85a3fde7a.png)
 
-Finally, hit the `Deploy` button to create an instance of your contract that we'll interact with and test that the sum function is working as expected. Afer a few seconds, you'll see a `Deployed Contracts` panel on the bottom left. 
+Finally, hit the `Deploy` button to create an instance of your contract that we'll interact with and test that the sum function is working as expected. Afer a few seconds, you'll see a `Deployed Contracts` panel on the bottom left.
 ![Deploy contract](https://user-images.githubusercontent.com/15346823/179375283-76b327d1-185a-4060-a10b-5cef87545095.png)
 
-Pass in two integers, then hit the addNums button. You'll see a new log indicating the new transaction you just initiated. 
+Pass in two integers, then hit the addNums button. You'll see a new log indicating the new transaction you just initiated.
 ![integers](https://user-images.githubusercontent.com/15346823/179375306-905213b2-2b60-4f9d-832d-3cb1a7dd1f43.png)
 
 The addNums function adds the two numbers, but doesn't actually return the new value. In order for us to verify that the function worked, we need to call our getter function. Hit the `getSum` button. You'll notice a new log appears. Expand that log using the down arrow and scroll to the bottom to find a value called `decoded output.`
 
-You'll see we get the right answer - 8! You just wrote your first smart contract :-) 
+You'll see we get the right answer - 8! You just wrote your first smart contract :-)
 ![result](https://user-images.githubusercontent.com/15346823/179375323-dd99fa72-84a3-460f-bcf3-d7d1a977f94d.png)

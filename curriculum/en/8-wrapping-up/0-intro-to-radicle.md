@@ -1,4 +1,8 @@
-# Hosting Your Code With Radicle
+---
+title: Hosting Your Code With Radicle
+description: Hosting Your Code With Radicle
+optional: true
+---
 
 Now that we are done with our app, we can upload our code to Radicle to keep it safe. **Radicle** is a _peer-to-peer network for storing git repositories designed to be free from censorship._ You can use Radicle for free similarly to how you would use GitHub or any other git based repository hosting site.
 

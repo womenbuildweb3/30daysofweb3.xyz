@@ -1,4 +1,8 @@
-# RSVP to an Event
+---
+title: RSVP to an Event
+description: RSVP to an Event
+optional: false
+---
 
 We want users to also be able to RSVP to an event on the event details page.
 
@@ -27,15 +31,15 @@ Now we’ll check whether the user has already RSVP’d or not by creating a fun
 
 ```javascript
 function checkIfAlreadyRSVPed() {
-    if (account) {
-      for (let i = 0; i < event.rsvps.length; i++) {
-        const thisAccount = account.address.toLowerCase();
-        if (event.rsvps[i].attendee.id.toLowerCase() == thisAccount) {
-          return true;
-        }
+  if (account) {
+    for (let i = 0; i < event.rsvps.length; i++) {
+      const thisAccount = account.address.toLowerCase();
+      if (event.rsvps[i].attendee.id.toLowerCase() == thisAccount) {
+        return true;
       }
     }
-    return false;
+  }
+  return false;
 }
 ```
 
@@ -43,30 +47,30 @@ Next we can create a function called `newRSVP` and call the `createNewRSVP` meth
 
 ```javascript
 const newRSVP = async () => {
-    try {
-      const rsvpContract = connectContract();
-      if (rsvpContract) {
-        const txn = await rsvpContract.createNewRSVP(event.id, {
-          value: event.deposit,
-          gasLimit: 300000,
-        });
-        setLoading(true);
-        console.log("Minting...", txn.hash);
+  try {
+    const rsvpContract = connectContract();
+    if (rsvpContract) {
+      const txn = await rsvpContract.createNewRSVP(event.id, {
+        value: event.deposit,
+        gasLimit: 300000,
+      });
+      setLoading(true);
+      console.log("Minting...", txn.hash);
 
-        await txn.wait();
-        console.log("Minted -- ", txn.hash);
-        setSuccess(true);
-        setLoading(false);
-        setMessage("Your RSVP has been created successfully.");
-      } else {
-        console.log("Error getting contract.");
-      }
-    } catch (error) {
-      setSuccess(false);
-      setMessage("Error!");
+      await txn.wait();
+      console.log("Minted -- ", txn.hash);
+      setSuccess(true);
       setLoading(false);
-      console.log(error);
+      setMessage("Your RSVP has been created successfully.");
+    } else {
+      console.log("Error getting contract.");
     }
+  } catch (error) {
+    setSuccess(false);
+    setMessage("Error!");
+    setLoading(false);
+    console.log(error);
+  }
 };
 ```
 

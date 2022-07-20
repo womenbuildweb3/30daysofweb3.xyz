@@ -1,4 +1,8 @@
-# Deploying to the Hosted Service
+---
+title: Deploying to the Hosted Service
+description: Deploying to the Hosted Service
+optional: false
+---
 
 Open up the subgraph you created on The Graph's Hosted Service, and select the “Show commands” button under Deploy.
 

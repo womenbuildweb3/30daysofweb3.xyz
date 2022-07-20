@@ -1,4 +1,8 @@
-# Dapp requirements & overview
+---
+title: Dapp Overview
+description: Dapp Overview
+optional: false
+---
 
 ## Define Goal & Requirements
 
