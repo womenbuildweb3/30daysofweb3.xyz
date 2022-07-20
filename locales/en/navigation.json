@@ -7,148 +7,394 @@
           "name": "0-overview.md",
           "type": "file",
           "href": "/curriculum/0-getting-started/0-overview",
-          "title": "English Overview"
+          "title": "Overview"
+        },
+        {
+          "name": "1-intro-to-web3.md",
+          "type": "file",
+          "href": "/curriculum/0-getting-started/1-intro-to-web3",
+          "title": "Intro to Web3"
+        },
+        {
+          "name": "2-intro-to-blockchain.md",
+          "type": "file",
+          "href": "/curriculum/0-getting-started/2-intro-to-blockchain",
+          "title": "Intro to Blockchain"
+        },
+        {
+          "name": "3-intro-to-smart-contracts.md",
+          "type": "file",
+          "href": "/curriculum/0-getting-started/3-intro-to-smart-contracts",
+          "title": "Intro to Smart Contracts"
+        },
+        {
+          "name": "4-intro-to-wallets.md",
+          "type": "file",
+          "href": "/curriculum/0-getting-started/4-intro-to-wallets",
+          "title": "Intro to Wallets"
+        },
+        {
+          "name": "5-setup-your-wallet.md",
+          "type": "file",
+          "href": "/curriculum/0-getting-started/5-setup-your-wallet",
+          "title": "Setup Your Wallet"
+        },
+        {
+          "name": "6-checkpoint.md",
+          "type": "file",
+          "href": "/curriculum/0-getting-started/6-checkpoint",
+          "title": "Checkpoint"
         }
       ],
       "type": "directory",
       "href": "/curriculum/0-getting-started/0-overview",
-      "title": "English Getting Started"
+      "title": "Getting Started"
     },
     {
-      "name": "1-introduction",
+      "name": "1-building-on-ethereum",
       "children": [
         {
-          "name": "0-overview.md",
+          "name": "0-client-server-architecture.md",
           "type": "file",
-          "href": "/curriculum/1-introduction/0-overview",
-          "title": "Overview"
+          "href": "/curriculum/1-building-on-ethereum/0-client-server-architecture",
+          "title": "Client Server Architecture"
         },
         {
-          "name": "1-introduction-to-web3.md",
+          "name": "1-intro-to-polygon.md",
           "type": "file",
-          "href": "/curriculum/1-introduction/1-introduction-to-web3",
-          "title": "Introduction To Web 3"
+          "href": "/curriculum/1-building-on-ethereum/1-intro-to-polygon",
+          "title": "Intro to Polygon"
         },
         {
-          "name": "2-intro-dev-setup.md",
+          "name": "2-intro-to-solidity.md",
           "type": "file",
-          "href": "/curriculum/1-introduction/2-intro-dev-setup",
-          "title": "Intro Dev Setup"
+          "href": "/curriculum/1-building-on-ethereum/2-intro-to-solidity",
+          "title": "Intro to Solidity"
         },
         {
-          "name": "3-glossary.md",
+          "name": "3-checkpoint.md",
           "type": "file",
-          "href": "/curriculum/1-introduction/3-glossary",
-          "title": "Glossary"
-        },
-        {
-          "name": "4-intro-to-blockchain-development.md",
-          "type": "file",
-          "href": "/curriculum/1-introduction/4-intro-to-blockchain-development",
-          "title": "Intro To Blockchain Development"
-        },
-        {
-          "name": "5-wallet-setup.md",
-          "type": "file",
-          "href": "/curriculum/1-introduction/5-wallet-setup",
-          "title": "Wallet Setup"
-        },
-        {
-          "name": "6-intro-to-building.md",
-          "type": "file",
-          "href": "/curriculum/1-introduction/6-intro-to-building",
-          "title": "Intro To Building"
+          "href": "/curriculum/1-building-on-ethereum/3-checkpoint",
+          "title": "Checkpoint"
         }
       ],
       "type": "directory",
-      "href": "/curriculum/1-introduction/0-overview",
-      "title": "Introduction"
+      "href": "/curriculum/1-building-on-ethereum/0-client-server-architecture",
+      "title": "Building on Ethereum"
     },
     {
-      "name": "2-smart-contracts",
+      "name": "2-dapp-overview",
       "children": [
         {
-          "name": "0-overview.md",
+          "name": "0-requirements.md",
           "type": "file",
-          "href": "/curriculum/2-smart-contracts/0-overview",
-          "title": "Overview"
+          "href": "/curriculum/2-dapp-overview/0-requirements",
+          "title": "Requirements"
         },
         {
-          "name": "1-hello-world-solidity.md",
+          "name": "1-dev-setup.md",
           "type": "file",
-          "href": "/curriculum/2-smart-contracts/1-hello-world-solidity",
-          "title": "Hello World Solidity"
+          "href": "/curriculum/2-dapp-overview/1-dev-setup",
+          "title": "Dev Setup"
         },
         {
-          "name": "2-dapp-requirements.md",
+          "name": "2-defining-our-data-structure.md",
           "type": "file",
-          "href": "/curriculum/2-smart-contracts/2-dapp-requirements",
-          "title": "Dapp Requirements"
+          "href": "/curriculum/2-dapp-overview/2-defining-our-data-structure",
+          "title": "Defining Our Data Structure"
+        },
+        {
+          "name": "3-defining-functions.md",
+          "type": "file",
+          "href": "/curriculum/2-dapp-overview/3-defining-functions",
+          "title": "Defining Functions"
+        },
+        {
+          "name": "4-custom-solidity-events.md",
+          "type": "file",
+          "href": "/curriculum/2-dapp-overview/4-custom-solidity-events",
+          "title": "Custom Solidity Events"
+        },
+        {
+          "name": "5-writing-a-test-script.md",
+          "type": "file",
+          "href": "/curriculum/2-dapp-overview/5-writing-a-test-script",
+          "title": "Writing a Test Script"
+        },
+        {
+          "name": "6-checkpoint.md",
+          "type": "file",
+          "href": "/curriculum/2-dapp-overview/6-checkpoint",
+          "title": "Checkpoint"
         }
       ],
       "type": "directory",
-      "href": "/curriculum/2-smart-contracts/0-overview",
-      "title": "Smart Contracts"
+      "href": "/curriculum/2-dapp-overview/0-requirements",
+      "title": "dApp Overview"
     },
     {
-      "name": "3-subgraphs",
+      "name": "3-deploying-your-smart-contract",
       "children": [
         {
-          "name": "0-overview.md",
+          "name": "0-deploying-with-infura.md",
           "type": "file",
-          "href": "/curriculum/3-subgraphs/0-overview",
-          "title": "Overview"
+          "href": "/curriculum/3-deploying-your-smart-contract/0-deploying-with-infura",
+          "title": "Deploying with Infura"
         },
         {
-          "name": "1-placeholder.md",
+          "name": "1-creating-a-deploy-script.md",
           "type": "file",
-          "href": "/curriculum/3-subgraphs/1-placeholder",
-          "title": "Placeholder"
+          "href": "/curriculum/3-deploying-your-smart-contract/1-creating-a-deploy-script",
+          "title": "Create a Deploy Script"
+        },
+        {
+          "name": "2-verifying-your-contract.md",
+          "type": "file",
+          "href": "/curriculum/3-deploying-your-smart-contract/2-verifying-your-contract",
+          "title": "Verifying Your Contract"
+        },
+        {
+          "name": "3-checkpoint.md",
+          "type": "file",
+          "href": "/curriculum/3-deploying-your-smart-contract/3-checkpoint",
+          "title": "Checkpoint"
         }
       ],
       "type": "directory",
-      "href": "/curriculum/3-subgraphs/0-overview",
-      "title": "Subgraphs"
+      "href": "/curriculum/3-deploying-your-smart-contract/0-deploying-with-infura",
+      "title": "Deploying Your Smart Contract"
     },
     {
-      "name": "4-frontend",
+      "name": "4-creating-your-subgraph",
       "children": [
         {
-          "name": "0-overview.md",
+          "name": "0-intro-to-the-graph.md",
           "type": "file",
-          "href": "/curriculum/4-frontend/0-overview",
-          "title": "Overview"
+          "href": "/curriculum/4-creating-your-subgraph/0-intro-to-the-graph",
+          "title": "Intro to The Graph"
         },
         {
-          "name": "1-placeholder.md",
+          "name": "1-setup.md",
           "type": "file",
-          "href": "/curriculum/4-frontend/1-placeholder",
-          "title": "Placeholder"
+          "href": "/curriculum/4-creating-your-subgraph/1-setup",
+          "title": "The Graph Setup"
+        },
+        {
+          "name": "2-structure-of-a-subgraph.md",
+          "type": "file",
+          "href": "/curriculum/4-creating-your-subgraph/2-structure-of-a-subgraph",
+          "title": "Structure of a Subgraph"
+        },
+        {
+          "name": "3-schema.md",
+          "type": "file",
+          "href": "/curriculum/4-creating-your-subgraph/3-schema",
+          "title": "Schema"
+        },
+        {
+          "name": "4-manifest.md",
+          "type": "file",
+          "href": "/curriculum/4-creating-your-subgraph/4-manifest",
+          "title": "Subgraph Manifest"
+        },
+        {
+          "name": "5-mappings.md",
+          "type": "file",
+          "href": "/curriculum/4-creating-your-subgraph/5-mappings",
+          "title": "Mappings"
+        },
+        {
+          "name": "6-deploying-your-subgraph.md",
+          "type": "file",
+          "href": "/curriculum/4-creating-your-subgraph/6-deploying-your-subgraph",
+          "title": "Deploying Your Subgraph"
+        },
+        {
+          "name": "7-checkpoint.md",
+          "type": "file",
+          "href": "/curriculum/4-creating-your-subgraph/7-checkpoint",
+          "title": "Checkpoint"
         }
       ],
       "type": "directory",
-      "href": "/curriculum/4-frontend/0-overview",
-      "title": "Frontend"
+      "href": "/curriculum/4-creating-your-subgraph/0-intro-to-the-graph",
+      "title": "Creating Your Subgraph"
     },
     {
-      "name": "5-finishing-touches",
+      "name": "5-building-your-frontend",
       "children": [
         {
-          "name": "0-overview.md",
+          "name": "0-setup.md",
           "type": "file",
-          "href": "/curriculum/5-finishing-touches/0-overview",
-          "title": "Overview"
+          "href": "/curriculum/5-building-your-frontend/0-setup",
+          "title": "Frontend Setup"
         },
         {
-          "name": "1-placeholder.md",
+          "name": "1-intro-to-rainbowkit.md",
           "type": "file",
-          "href": "/curriculum/5-finishing-touches/1-placeholder",
-          "title": "Placeholder"
+          "href": "/curriculum/5-building-your-frontend/1-intro-to-rainbowkit",
+          "title": "Intro to RainbowKit"
+        },
+        {
+          "name": "2-add-wallet-connection.md",
+          "type": "file",
+          "href": "/curriculum/5-building-your-frontend/2-add-wallet-connection",
+          "title": "Add Wallet Connection"
+        },
+        {
+          "name": "3-intro-to-web3storage.md",
+          "type": "file",
+          "href": "/curriculum/5-building-your-frontend/3-intro-to-web3storage",
+          "title": "Intro to Web3.Storage"
+        },
+        {
+          "name": "4-storing-data.md",
+          "type": "file",
+          "href": "/curriculum/5-building-your-frontend/4-storing-data",
+          "title": "Storing Data"
+        },
+        {
+          "name": "5-intro-to-ethersjs.md",
+          "type": "file",
+          "href": "/curriculum/5-building-your-frontend/5-intro-to-ethersjs",
+          "title": "Intro to Ethers.js"
+        },
+        {
+          "name": "6-calling-your-contract.md",
+          "type": "file",
+          "href": "/curriculum/5-building-your-frontend/6-calling-your-contract",
+          "title": "Calling Your Contract"
+        },
+        {
+          "name": "7-finishing-event-page.md",
+          "type": "file",
+          "href": "/curriculum/5-building-your-frontend/7-finishing-event-page",
+          "title": "Finishing Your Event Page"
+        },
+        {
+          "name": "8-checkpoint.md",
+          "type": "file",
+          "href": "/curriculum/5-building-your-frontend/8-checkpoint",
+          "title": "Checkpoint"
         }
       ],
       "type": "directory",
-      "href": "/curriculum/5-finishing-touches/0-overview",
+      "href": "/curriculum/5-building-your-frontend/0-setup",
+      "title": "Building Your Frontend"
+    },
+    {
+      "name": "6-querying-the-graph",
+      "children": [
+        {
+          "name": "0-the-graph-playground.md",
+          "type": "file",
+          "href": "/curriculum/6-querying-the-graph/0-the-graph-playground",
+          "title": "The Graph Playground"
+        },
+        {
+          "name": "1-querying-your-subgraph.md",
+          "type": "file",
+          "href": "/curriculum/6-querying-the-graph/1-querying-your-subgraph",
+          "title": "Querying Your Subgraph"
+        },
+        {
+          "name": "2-fetching-event-details.md",
+          "type": "file",
+          "href": "/curriculum/6-querying-the-graph/2-fetching-event-details",
+          "title": "Fetching Event Deatils"
+        },
+        {
+          "name": "3-displaying-event-details.md",
+          "type": "file",
+          "href": "/curriculum/6-querying-the-graph/3-displaying-event-details",
+          "title": "Displaying Event Details"
+        },
+        {
+          "name": "4-checkpoint.md",
+          "type": "file",
+          "href": "/curriculum/6-querying-the-graph/4-checkpoint",
+          "title": "Checkpoint"
+        }
+      ],
+      "type": "directory",
+      "href": "/curriculum/6-querying-the-graph/0-the-graph-playground",
+      "title": "Querying The Graph"
+    },
+    {
+      "name": "7-finishing-touches",
+      "children": [
+        {
+          "name": "0-rsvp-to-events.md",
+          "type": "file",
+          "href": "/curriculum/7-finishing-touches/0-rsvp-to-events",
+          "title": "RSVP To An Event"
+        },
+        {
+          "name": "1-updating-homepage.md",
+          "type": "file",
+          "href": "/curriculum/7-finishing-touches/1-updating-homepage",
+          "title": "Updating the Homepage"
+        },
+        {
+          "name": "2-upcoming-rsvps.md",
+          "type": "file",
+          "href": "/curriculum/7-finishing-touches/2-upcoming-rsvps",
+          "title": "Upcoming RSVPs"
+        },
+        {
+          "name": "3-past-rsvps.md",
+          "type": "file",
+          "href": "/curriculum/7-finishing-touches/3-past-rsvps",
+          "title": "Past RSVPs"
+        },
+        {
+          "name": "4-upcoming-events.md",
+          "type": "file",
+          "href": "/curriculum/7-finishing-touches/4-upcoming-events",
+          "title": "Upcoming Events"
+        },
+        {
+          "name": "5-past-events.md",
+          "type": "file",
+          "href": "/curriculum/7-finishing-touches/5-past-events",
+          "title": "Past Events"
+        },
+        {
+          "name": "6-confirm-attendees.md",
+          "type": "file",
+          "href": "/curriculum/7-finishing-touches/6-confirm-attendees",
+          "title": "Confirm Attendees"
+        },
+        {
+          "name": "7-checkpoint.md",
+          "type": "file",
+          "href": "/curriculum/7-finishing-touches/7-checkpoint",
+          "title": "Checkpoint"
+        }
+      ],
+      "type": "directory",
+      "href": "/curriculum/7-finishing-touches/0-rsvp-to-events",
       "title": "Finishing Touches"
+    },
+    {
+      "name": "8-wrapping-up",
+      "children": [
+        {
+          "name": "0-intro-to-radicle.md",
+          "type": "file",
+          "href": "/curriculum/8-wrapping-up/0-intro-to-radicle",
+          "title": "Intro to Radicle"
+        },
+        {
+          "name": "1-finale.md",
+          "type": "file",
+          "href": "/curriculum/8-wrapping-up/1-finale",
+          "title": "Finale"
+        }
+      ],
+      "type": "directory",
+      "href": "/curriculum/8-wrapping-up/0-intro-to-radicle",
+      "title": "Wrapping Up"
     }
   ]
 }

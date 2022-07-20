@@ -27,3 +27,14 @@ h6 {
   left: 0;
   z-index: -1;
 }
+
+code {
+  background: hsl(210, 3%, 85%);
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.prose :where(img):not(:where([class~="not-prose"] *)) {
+  max-width: 100%;
+  margin: auto;
+}

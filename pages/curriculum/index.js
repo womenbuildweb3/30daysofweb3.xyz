@@ -1,12 +1,22 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Router from "next/router";
+import getCoursePaths from "../../utils/getCoursePaths";
 
-const Curriculum = () => {
+const Curriculum = ({paths}) => {
   useEffect(() => {
-    Router.push("curriculum/0-getting-started/0-overview");
-  }, []);
+      Router.push(`curriculum/${paths[0].category}/${paths[0].subCategory}`);
+  }, [paths]);
 
   return <></>;
 };
 
 export default Curriculum;
+
+export async function getServerSideProps({ locale }) {
+  const paths = getCoursePaths(locale);
+  return {
+    props: {
+      paths,
+    },
+  };
+}

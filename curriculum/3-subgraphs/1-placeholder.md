@@ -1,3 +1,0 @@
-# Placeholder title
-
-Placeholder text

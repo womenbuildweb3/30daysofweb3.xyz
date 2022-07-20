@@ -2,9 +2,10 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
-export default function getCurricContent(folderName = null, fileName) {
+export default function getCurricContent(folderName = null, fileName, locale) {
   try {
-    const postsDirectory = path.join(process.cwd(), "curriculum", folderName);
+    let folder = `curriculum/${locale}`;
+    const postsDirectory = path.join(process.cwd(), folder, folderName);
 
     // Read markdown file as string
     const fullPath = path.join(postsDirectory, `${fileName}.md`);

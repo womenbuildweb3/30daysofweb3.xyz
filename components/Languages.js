@@ -8,18 +8,46 @@ import joinClassNames from "../utils/joinClassNames";
 
 const languages = [
   { title: "English", value: "en" },
-  { title: "Spanish", value: "es" },
+  { title: "Espanol", value: "es" },
 ];
 
-export default function Languages() {
-  const { locale } = useRouter();
+export default function Languages({navigation}) {
+  const { locale, query } = useRouter();
+  // const { category, subCategory } = query
+  // console.log("LANGUAGE NAV", navigation)
+
+  // console.log("LANG CAT", category)
+  // console.log("LANG SUBCAT", subCategory)
+  // let catIndex
+  // let subCatIndex
+  // if(navigation){
+  //   for(let i = 0; i < navigation.length; i++){
+  //     if(navigation[i].name == category){
+  //       console.log("THIS", navigation[i].name)
+  //       catIndex = i;
+  //       for(let a = 0; a < navigation[i].children.length; a++){
+  //         console.log("SUB CAT", navigation[i].children[a].name)
+  //         if(navigation[i].children[a].name == subCategory){
+  //           console.log("MATCHES!", navigation[i].children[a].name)
+  //           subCatIndex = a
+  //           break
+  //         }
+  //       }
+  //       break
+  //     }
+  //   }
+  //   console.log("CAT INDEX", catIndex)
+  //   console.log("SUBCAT INDEX", subCatIndex)
+  // }
+
   let activeLanguage = languages.find((lang) => lang.value == locale);
+
 
   return (
     <>
       <Menu as="div" className="relative inline-block z-12 text-left">
         <div className="flex justify-center">
-          <Menu.Button className="inline-flex items-center  justify-center px-2.5 py-2 rounded-md text-sm font-medium w-32 cursor-pointer text-indigo-800 bg-gradient-to-l from-sky-100 to-pink-100 font-extrabold hover:bg-slate-100 hover:text-indigo-900">
+          <Menu.Button className="inline-flex items-center  justify-center px-2.5 py-2 rounded-md text-sm w-32 cursor-pointer text-indigo-800 bg-gradient-to-l from-sky-100 to-pink-100 font-extrabold hover:bg-slate-100 hover:text-indigo-900">
             <TranslateIcon className="h-6 w-6" aria-hidden="true" />
             <p className="text-ellipsis overflow-hidden">
               {activeLanguage.title}

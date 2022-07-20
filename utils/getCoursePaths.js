@@ -1,9 +1,14 @@
 import path from "path";
 import dirTree from "directory-tree";
 
-const postsDirectory = path.join(process.cwd(), "curriculum/");
 
-export default function getAllPostIds() {
+export default function getCoursePaths(locale) {
+  let postsDirectory;
+  if(locale){
+    postsDirectory = path.join(process.cwd(), `curriculum/${locale}`);
+  } else{
+    postsDirectory = path.join(process.cwd(), "curriculum/en");
+  }
   const navigationTree = dirTree(postsDirectory, { attributes: ["type"] });
 
   let returnGeneratedPaths = (tree) => {
@@ -11,10 +16,6 @@ export default function getAllPostIds() {
     let generatePaths = (parentTree) => {
       parentTree.children.map((subTree, index) => {
         if (subTree.type == "directory") {
-          paths.push({
-            category: subTree.name,
-            subCategory: "0-overview",
-          });
           if (subTree?.children) {
             generatePaths(subTree, paths);
           }
