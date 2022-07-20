@@ -1,4 +1,8 @@
-# Calling Your Contract
+---
+title: Calling Your Contract
+description: Calling Your Contract
+optional: false
+---
 
 Open up `create-event.js` in the `pages` folder. You can see a preview of this page by going to http://localhost:3000/create-event. You should see a form with all of the input fields we need already set up.
 
@@ -37,35 +41,35 @@ In our `handleSubmit` function, we can use a `try..catch` statement to send the 
 
 ```javascript
 async function handleSubmit(e) {
-    e.preventDefault();
+  e.preventDefault();
 
-    const body = {
-      name: eventName,
-      description: eventDescription,
-      link: eventLink,
-      image: getRandomImage(),
-    };
+  const body = {
+    name: eventName,
+    description: eventDescription,
+    link: eventLink,
+    image: getRandomImage(),
+  };
 
-    try {
-      const response = await fetch("/api/store-event-data", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(body),
-      });
-      if (response.status !== 200) {
-        alert("Oops! Something went wrong. Please refresh and try again.");
-      } else {
-        console.log("Form successfully submitted!");
-        let responseJSON = await response.json();
-        await createEvent(responseJSON.cid);
-      }
-      // check response, if success is false, dont take them to success page
-    } catch (error) {
-      alert(
-        `Oops! Something went wrong. Please refresh and try again. Error ${error}`
-      );
+  try {
+    const response = await fetch("/api/store-event-data", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(body),
+    });
+    if (response.status !== 200) {
+      alert("Oops! Something went wrong. Please refresh and try again.");
+    } else {
+      console.log("Form successfully submitted!");
+      let responseJSON = await response.json();
+      await createEvent(responseJSON.cid);
     }
+    // check response, if success is false, dont take them to success page
+  } catch (error) {
+    alert(
+      `Oops! Something went wrong. Please refresh and try again. Error ${error}`
+    );
   }
+}
 ```
 
 To connect our contract, we'll import the function we wrote earlier from the `utils` folder like so:
@@ -83,7 +87,7 @@ We also need to generate a unix timestamp from the date and time inputs from our
 To actually call our contract, we can just call the method like this (**Note:** The below await function is simply an example):
 
 ```javascript
-await contract.methodName(parameters, {optionName: optionValue})
+await contract.methodName(parameters, { optionName: optionValue });
 ```
 
 After passing in the function parameters, we can also pass in an object where we can set the gas limit for the transaction.
@@ -92,29 +96,29 @@ This will return a transaction object with more data about our transaction. To e
 
 ```javascript
 const createEvent = async (cid) => {
-    try {
-      const rsvpContract = connectContract();
+  try {
+    const rsvpContract = connectContract();
 
-      if (rsvpContract) {
-        let deposit = ethers.utils.parseEther(refund);
-        let eventDateAndTime = new Date(`${eventDate} ${eventTime}`);
-        let eventTimestamp = eventDateAndTime.getTime();
-        let eventDataCID = cid;
+    if (rsvpContract) {
+      let deposit = ethers.utils.parseEther(refund);
+      let eventDateAndTime = new Date(`${eventDate} ${eventTime}`);
+      let eventTimestamp = eventDateAndTime.getTime();
+      let eventDataCID = cid;
 
-        const txn = await rsvpContract.createNewEvent(
-          eventTimestamp,
-          deposit,
-          maxCapacity,
-          eventDataCID,
-          { gasLimit: 900000 }
-        );
-        console.log("Minting...", txn.hash);
-        console.log("Minted -- ", txn.hash);
-      } else {
-        console.log("Error getting contract.");
-      }
-    } catch (error) {
-        console.log(error)
+      const txn = await rsvpContract.createNewEvent(
+        eventTimestamp,
+        deposit,
+        maxCapacity,
+        eventDataCID,
+        { gasLimit: 900000 }
+      );
+      console.log("Minting...", txn.hash);
+      console.log("Minted -- ", txn.hash);
+    } else {
+      console.log("Error getting contract.");
     }
-  };
+  } catch (error) {
+    console.log(error);
+  }
+};
 ```

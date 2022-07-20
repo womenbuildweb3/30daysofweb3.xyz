@@ -1,4 +1,8 @@
-# Defining Our Data Strucutre
+---
+title: Defining Our Data Structure
+description: Defining Our Data Structure
+optional: false
+---
 
 ## Define An 'Event'
 

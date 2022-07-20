@@ -1,4 +1,8 @@
-# The Graph Setup
+---
+title: The Graph Setup
+description: The Graph Setup
+optional: false
+---
 
 Next we are going to create a subgraph on the hosted service where we can deploy our code. Go to thegraph.com and select the Hosted Service in the Products menu dropdown. You will need to sign in with your Github account.
 

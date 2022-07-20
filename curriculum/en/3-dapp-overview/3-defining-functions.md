@@ -1,4 +1,8 @@
-# Defining Functions
+---
+title: Defining Functions
+description: Defining Functions
+optional: false
+---
 
 ## Create a New Event
 

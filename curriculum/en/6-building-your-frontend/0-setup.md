@@ -1,4 +1,8 @@
-# Building your frontend
+---
+title: Building Your Frontend
+description: Building Your Frontend
+optional: false
+---
 
 ## Introduction
 

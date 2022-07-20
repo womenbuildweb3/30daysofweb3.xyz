@@ -1,4 +1,8 @@
-# Custom Solidity Events
+---
+title: Custom Solidity Events
+description: Custom Solidity Events
+optional: false
+---
 
 ## Define Events
 

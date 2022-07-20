@@ -1,4 +1,8 @@
-# Querying your subgraph
+---
+title: Querying your subgraph
+description: Querying your subgraph
+optional: false
+---
 
 To easily query our subgraph from our frontend application, we will use the Apollo GraphQL client.
 
@@ -8,8 +12,8 @@ In the root directory of our frontend app, we can add a file called `apollo-clie
 import { ApolloClient, InMemoryCache } from "@apollo/client";
 
 const client = new ApolloClient({
- uri: "https://api.thegraph.com/subgraphs/name/[YOUR_GITHUB]/[YOUR_SUBGRAPH]",
- cache: new InMemoryCache(),
+  uri: "https://api.thegraph.com/subgraphs/name/[YOUR_GITHUB]/[YOUR_SUBGRAPH]",
+  cache: new InMemoryCache(),
 });
 
 export default client;
@@ -24,11 +28,10 @@ import client from "../apollo-client";
 
 ```javascript
 <ApolloProvider client={client}>
-    <Layout>
-        <Component {...pageProps} />
-    </Layout>
+  <Layout>
+    <Component {...pageProps} />
+  </Layout>
 </ApolloProvider>
-
 ```
 
 If you run into any errors while wrapping the Layout component with the ApolloProvider, here's the full `MyApp` function for reference:

@@ -1,4 +1,8 @@
-# Finishing the Create Event Page
+---
+title: Finishing the Create Event Page
+description: Finishing the Create Event Page
+optional: false
+---
 
 At the top of the `create-event` page, import the `connectButton` from RainbowKit, `useAccount` from wagmi, and the `Alert` component.
 
@@ -49,116 +53,125 @@ Here's what your `createEvent` function should look like now:
 
 ```javascript
 const createEvent = async (cid) => {
-    try {
-      const rsvpContract = connectContract();
+  try {
+    const rsvpContract = connectContract();
 
-      if (rsvpContract) {
-        let deposit = ethers.utils.parseEther(refund);
-        let eventDateAndTime = new Date(`${eventDate} ${eventTime}`);
-        let eventTimestamp = eventDateAndTime.getTime();
-        let eventDataCID = cid;
+    if (rsvpContract) {
+      let deposit = ethers.utils.parseEther(refund);
+      let eventDateAndTime = new Date(`${eventDate} ${eventTime}`);
+      let eventTimestamp = eventDateAndTime.getTime();
+      let eventDataCID = cid;
 
-        const txn = await rsvpContract.createNewEvent(
-          eventTimestamp,
-          deposit,
-          maxCapacity,
-          eventDataCID,
-          { gasLimit: 900000 }
-        );
-        setLoading(true);
-        console.log("Minting...", txn.hash);
-        let wait = await txn.wait();
-        console.log("Minted -- ", txn.hash);
+      const txn = await rsvpContract.createNewEvent(
+        eventTimestamp,
+        deposit,
+        maxCapacity,
+        eventDataCID,
+        { gasLimit: 900000 }
+      );
+      setLoading(true);
+      console.log("Minting...", txn.hash);
+      let wait = await txn.wait();
+      console.log("Minted -- ", txn.hash);
 
-        setEventID(wait.events[0].args[0]);
+      setEventID(wait.events[0].args[0]);
 
-        setSuccess(true);
-        setLoading(false);
-        setMessage("Your event has been created successfully.");
-      } else {
-        console.log("Error getting contract.");
-      }
-    } catch (error) {
-      setSuccess(false);
-      setMessage(`There was an error creating your event: ${error.message}`);
+      setSuccess(true);
       setLoading(false);
-      console.log(error);
+      setMessage("Your event has been created successfully.");
+    } else {
+      console.log("Error getting contract.");
     }
-  };
-
+  } catch (error) {
+    setSuccess(false);
+    setMessage(`There was an error creating your event: ${error.message}`);
+    setLoading(false);
+    console.log(error);
+  }
+};
 ```
 
 Now we can set up the alert component to show based on the success and loading status. We can add this inside the `section`.
 
 ```javascript
-{loading && (
-  <Alert
-    alertType={"loading"}
-    alertBody={"Please wait"}
-    triggerAlert={true}
-    color={"white"}
-  />
-)}
-{success && (
-  <Alert
-    alertType={"success"}
-    alertBody={message}
-    triggerAlert={true}
-    color={"palegreen"}
-  />
-)}
-{success === false && (
-  <Alert
-    alertType={"failed"}
-    alertBody={message}
-    triggerAlert={true}
-    color={"palevioletred"}
-  />
-)}
+{
+  loading && (
+    <Alert
+      alertType={"loading"}
+      alertBody={"Please wait"}
+      triggerAlert={true}
+      color={"white"}
+    />
+  );
+}
+{
+  success && (
+    <Alert
+      alertType={"success"}
+      alertBody={message}
+      triggerAlert={true}
+      color={"palegreen"}
+    />
+  );
+}
+{
+  success === false && (
+    <Alert
+      alertType={"failed"}
+      alertBody={message}
+      triggerAlert={true}
+      color={"palevioletred"}
+    />
+  );
+}
 ```
 
 We can also wrap our form and header in a conditional statement so they don't show if the user successfully creates an event.
 
 ```javascript
-{!success && (
-  <h1 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl md:text-5xl mb-4">
-    Create your virtual event
-  </h1>
-)}
+{
+  !success && (
+    <h1 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl md:text-5xl mb-4">
+      Create your virtual event
+    </h1>
+  );
+}
 ```
 
 We can also hide the form if a user hasn't connected their wallet.
 
 ```javascript
-{account && !success && (
-  <form>
-      ...
-  </form>
-)}
+{
+  account && !success && <form>...</form>;
+}
 ```
 
 We can uncomment the section asking the user to connect their wallet, and only show this if the user hasn't already connected their wallet.
 
 ```javascript
-{!account && (
-  <section className="flex flex-col items-start py-8">
-    <p className="mb-4">Please connect your wallet to create events.</p>
-    <ConnectButton />
-  </section>
-)}
+{
+  !account && (
+    <section className="flex flex-col items-start py-8">
+      <p className="mb-4">Please connect your wallet to create events.</p>
+      <ConnectButton />
+    </section>
+  );
+}
 ```
 
 If the event is successfully created, we can show the user a success message and a link to their event page. We can add this at the bottom of the `section`.
 
 ```javascript
-{success && eventID && (
-  <div>
-    Success! Please wait a few minutes, then check out your event page{" "}
-    <span className="font-bold">
-      <Link href={`/event/${eventID}`}>here</Link>
-    </span>
-  </div>
-)}
+{
+  success && eventID && (
+    <div>
+      Success! Please wait a few minutes, then check out your event page{" "}
+      <span className="font-bold">
+        <Link href={`/event/${eventID}`}>here</Link>
+      </span>
+    </div>
+  );
+}
 ```
 
 And that's it! Test out the page to see if you are able to successfully create a new event.

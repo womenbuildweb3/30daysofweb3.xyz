@@ -1,4 +1,8 @@
-# Deploying with Infura
+---
+title: Deploying with Infura
+description: Deploying with Infura
+optional: false
+---
 
 ## What is Infura?
 

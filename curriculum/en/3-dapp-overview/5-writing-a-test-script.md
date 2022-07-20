@@ -1,4 +1,8 @@
-# Writing a Test Script
+---
+title: Writing a Test Script
+description: Writing a Test Script
+optional: false
+---
 
 We can test our smart contract locally before we deploy to a testnet so we can make sure it works as intended. A testnet (test network) is an alternative blockchain network used to run and test programs before releasing updates to the mainnet (main network).
 

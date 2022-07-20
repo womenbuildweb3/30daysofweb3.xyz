@@ -236,10 +236,10 @@
           "title": "Intro to RainbowKit"
         },
         {
-          "name": "2-using-rainbowkit.md",
+          "name": "2-add-wallet-connection.md",
           "type": "file",
-          "href": "/curriculum/5-building-your-frontend/2-using-rainbowkit",
-          "title": "Using RainbowKit"
+          "href": "/curriculum/5-building-your-frontend/2-add-wallet-connection",
+          "title": "Add Wallet Connection"
         },
         {
           "name": "3-intro-to-web3storage.md",

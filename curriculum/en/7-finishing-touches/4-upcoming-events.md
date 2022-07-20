@@ -1,4 +1,8 @@
-# Upcoming Events
+---
+title: Upcoming Events
+description: Upcoming Events
+optional: false
+---
 
 You can find the upcoming events page in the `pages/my-events` folder and at http://localhost:3000/my-events/upcoming.
 
@@ -33,7 +37,6 @@ const MY_UPCOMING_EVENTS = gql`
     }
   }
 `;
-
 ```
 
 Next we can set up our query result and connect wallet button just as we have done on other pages and map our results to show event cards.

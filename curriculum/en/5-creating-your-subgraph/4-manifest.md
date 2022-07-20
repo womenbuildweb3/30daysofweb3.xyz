@@ -1,6 +1,10 @@
-# Subgraph Manifest (subgraph.yaml)
+---
+title: Subgraph Manifest
+description: Subgraph Manifest
+optional: false
+---
 
-The subgraph manifest is where you can define settings for the subgraph. Most of this will already be filled out for you, but there are a few changes we need to make.
+The subgraph manifest (subgraph.yaml) is where you can define settings for the subgraph. Most of this will already be filled out for you, but there are a few changes we need to make.
 
 Just above the `dataSources`, we will need to add a `features` section where we can add `ipfsOnEthereumContracts`.
 

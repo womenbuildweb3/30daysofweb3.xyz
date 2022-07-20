@@ -1,4 +1,8 @@
-# Structure of a Subgraph
+---
+title: Structure of a Subgraph
+description: Structure of a Subgraph
+optional: false
+---
 
 You should now have a new folder with this structure:
 
