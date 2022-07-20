@@ -15,7 +15,7 @@ This course will focus on big-picture architecture and will help you define your
 Prerequisites:
 
 - Basic understanding of how to navigate your terminal
-- Basic Javscript
+- Basic Javascript
 - Basic React
 
 It's helpful to be familiar with the aforementioned, but you'll pick up everything along the way.

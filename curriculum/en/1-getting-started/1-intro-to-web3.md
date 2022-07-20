@@ -3,7 +3,7 @@ title: Intro to Web3
 description: Intro to Web3
 optional: true
 optionalMsg: If you're familiar with web3 fundamentals and already have your own crypto wallet, feel free to jump ahead to the next section!
-optionalNextPath: /en/curriculum/1-building-on-ethereum/0-client-server-architecture
+optionalNextPath: /en/curriculum/2-building-on-ethereum/0-client-server-architecture
 ---
 
 Welcome to the beginning of your decentralized adventure! Allow me to guide you through the new and exciting iteration of the internet known as Web3. By the end of this article, you will have the answers to the questions you're currently thinking, like: _What the heck is web3? What does decentralization mean?_ And: _Are these all just buzzwords?_
