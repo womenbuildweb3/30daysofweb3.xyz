@@ -1,7 +1,7 @@
 import { Disclosure } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/outline";
 
-const faqs = [
+const faqsEN = [
   {
     id: 1,
     question: "What is the time commitment for this curriculum?",
@@ -58,16 +58,74 @@ const faqs = [
   // More items...
 ];
 
+const faqsES = [
+  {
+    id: 1,
+    question: "¿Cuál es el compromiso de tiempo para desarrollar este plan de estudios?",
+    answer:
+      "Este curso es completamente en línea y asíncrono. Usted podrá participar a cualquier ritmo y con cualquier dedicación horaria, pero fue diseñado para no tomar más de 45 minutos por día.",
+  },
+  {
+    id: 4,
+    question: "¿Qué aprenderé con este plan de estudios?",
+    answer:
+      "Aprenderá cómo crear una dApp, de principio a fin. Usted redactará el smart contract (contrato inteligente), el front-end/la interfaz gráfica, y todo lo demás. Revise la página principal para una descripción más detallada del contenido.",
+  },
+  {
+    id: 5,
+    question: "¿Puedo participar si soy principiante?",
+    answer:
+      "¡Si! Este curso no está tan enfocado en fundamentos y elementos específicos de programación, sino en ayudar a los desarrolladores a crear un modelo mental y una referencia estructural de cómo crear una dApp. Proveeremos todo el código para cada una de las secciones, y aunque será útil, no es necesario tener mayor experiencia en programación.",
+  },
+  {
+    id: 9,
+    question: "¿Qué beneficio recibo al ser parte de comunidades aliadas?",
+    answer:
+      "Los miembros de las comunidades aliadas tendrán acceso para registrarse al curso antes de que esté disponible al público en general. La primera cohorte tendrá un máximo de 500 estudiantes, para asegurar que las comunidades puedan asegurar un lugar en el curso.",
+  },
+  {
+    id: 2,
+    question: "¿Cómo puedo obtener ayuda si me estanco?",
+    answer: "Nuestro equipo estará disponible para responder preguntas a través de Discord.",
+  },
+  {
+    id: 3,
+    question: "¿Los talleres serán grabados?",
+    answer:
+      "Si. Los talleres serán grabados y publicados en nuestro canal de YouTube y su enlace estará disponible en esta página.",
+  },
+  {
+    id: 6,
+    question: "¿Qué sigue después?",
+    answer:
+      "Las mujeres y personas no binarias que completen el plan de estudios exitosamente y cumplan con un estándar de finalización serán invitadxs a unirse al DAO y participar en la segunda fase de este programa. En esa fase, los creadores podrán solicitar fondos de nuestra tesorería para crear * cualquier cosa de Web3 *.",
+  },
+  {
+    id: 7,
+    question: "¿Puedo participar si soy hombre?",
+    answer:
+      "¡Si! 30 días de Web3 es un bien público que está disponible para todos, en todo momento. El contenido será de código abierto, lo que permitirá que otros grupos lo ramifiquen y personalicen su plan de estudios.",
+  },
+  {
+    id: 8,
+    question: "¿Por qué debo compartir mi correo electrónico y la dirección de mi billetera?",
+    answer:
+      "Vamos a dar tokens de proof of knowledge sobre la cadena y necesitaremos su correo y dirección de billetera para notificarle al respecto y enviarle sus tokens.",
+  },
+];
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function FAQSection() {
+export default function FAQSection({locale}) {
+  const faqs = locale === "en" ? faqsEN : faqsES
+
   return (
     <div id="faqs" className="py-12 sm:py-16 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto divide-y divide-slate-500">
         <h2 className="text-center text-3xl font-extrabold text-slate-900 sm:text-4xl">
-          FAQs
+          {locale === "en" ? "FAQs" : "Preguntas frecuentes"}
         </h2>
         <dl className="mt-6 space-y-6 divide-y divide-slate-500">
           {faqs.map((faq) => (
