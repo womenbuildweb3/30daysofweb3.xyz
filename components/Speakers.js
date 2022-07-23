@@ -51,11 +51,11 @@ const people = [
   },
 ];
 
-export default function Speakers() {
+export default function Speakers({locale}) {
   return (
     <div id="workshops" className="text-center py-12 sm:py-16 sm:px-6 lg:px-8">
       <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl mb-16">
-        Join workshops led by
+      {locale === "en" ? "Join workshops led by" : "Participa en nuestros workshops dirigidos por"}
       </h2>
       <ul
         role="list"

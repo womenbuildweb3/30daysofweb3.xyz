@@ -1,12 +1,12 @@
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, locale }) => {
   return (
     <div className="relative">
-      <Navbar />
+      <Navbar locale={locale}/>
       <div>{children}</div>
-      <Footer />
+      <Footer locale={locale}/>
       <div className="gradient-bg"></div>
     </div>
   );
