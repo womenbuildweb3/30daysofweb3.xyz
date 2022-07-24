@@ -17,11 +17,14 @@
   backdrop-filter: blur(5px);
 }
 
-.sidebarWidth {
-  width: 300px;
-  min-width: 300px;
-  max-width: 300px;
+@media only screen and (min-width: 1050px) {
+  .sidebarWidth {
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+  }
 }
+
 
 .sidebarActiveLesson {
   /* background: rgba(255, 255, 255, 0); */

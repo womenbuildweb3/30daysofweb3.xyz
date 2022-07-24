@@ -8,13 +8,12 @@ import { getNextLesson } from "../utils/lessons";
 import TweetButton from "./TweetButton";
 import CodeBlock from "./CodeBlock";
 import { InformationCircleIcon } from "@heroicons/react/solid";
+import Logo from "./Logo";
 
-const CurriculumContent = ({ curricData, navigation }) => {
+const CurriculumContent = ({ curricData, navigation, locale }) => {
   const router = useRouter();
   const { category, subCategory } = router.query;
   const nextPath = getNextLesson(category, subCategory, navigation);
-
-  // console.log("curricData.data", curricData.data);
 
   const metaTitle = `${curricData.data.title} | 30 Days of Web3`;
   const metaDescription = curricData.data.description;
@@ -22,7 +21,7 @@ const CurriculumContent = ({ curricData, navigation }) => {
   const currentUrl = `${baseUrl}/${router.locale}${router.asPath}`;
 
   return (
-    <div className="bg-white px-4 py-16">
+    <div className="bg-white px-4 py-4 sm:py-16">
       <Head>
         <title>{curricData.data.title}</title>
         <meta name="description" content={metaDescription} />
@@ -43,6 +42,10 @@ const CurriculumContent = ({ curricData, navigation }) => {
         <meta property="twitter:image:alt" content="30 Days of Web3" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <div className="py-4 sm:hidden">
+        <Logo/>
+      </div>
 
       <div className="prose prose-blue prose-lg mx-auto">
         <h1>{curricData.data.title}</h1>
@@ -65,7 +68,7 @@ const CurriculumContent = ({ curricData, navigation }) => {
                     href={curricData.data.optionalNextPath}
                     className="whitespace-nowrap font-medium text-blue-700 hover:text-blue-600"
                   >
-                    Jump Ahead <span aria-hidden="true">&rarr;</span>
+                    {locale === "en" ? "Jump Ahead" : "Saltar Adelante"} <span aria-hidden="true">&rarr;</span>
                   </a>
                 </p>
               </div>
@@ -79,12 +82,12 @@ const CurriculumContent = ({ curricData, navigation }) => {
 
         <div className="not-prose flex items-start justify-between gap-4 mt-10">
           {curricData.data.tweet && (
-            <TweetButton copy={curricData.data.tweet} url={currentUrl} />
+            <TweetButton copy={curricData.data.tweet} url={currentUrl} locale={locale}/>
           )}
           {nextPath !== "/" && (
             <a href={nextPath}>
               <button className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-slate-900 bg-gradient-to-l from-sky-100 to-pink-100 hover:bg-gradient-to-r focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-200">
-                Next &#8594;
+                {locale === "en" ? "Next" : "Siguiente" } &#8594;
               </button>
             </a>
           )}

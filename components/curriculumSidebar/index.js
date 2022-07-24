@@ -9,7 +9,7 @@ export default function CurricSideBar({ navigation, locale }) {
 
   return (
     <div
-      className={`flex flex-col flex-grow pb-4 overflow-y-auto border-r border-gray ${styles.sidebarBlur}`}
+      className={`hidden sm:flex flex-col flex-grow pb-4 overflow-y-auto border-r border-gray ${styles.sidebarBlur}`}
     >
       <div className="flex items-center flex-shrink-0 px-4 py-5">
         <Logo />
@@ -27,7 +27,7 @@ export default function CurricSideBar({ navigation, locale }) {
         {/* <Languages navigation={navigation}/> */}
         {locale && locale === "en" && (
           <div className="flex justify-center border border-blue-600">
-          <Link locale="es" href="/es/curriculum/1-introducción/0-bienvenida">Espanol</Link>
+          <Link locale="es" href="/es/curriculum/1-introducción/0-bienvenida">Español</Link>
           </div>
         )}
 
