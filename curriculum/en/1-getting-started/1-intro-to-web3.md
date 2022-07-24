@@ -1,6 +1,6 @@
 ---
 title: Intro to Web3
-description: Intro to Web3
+description: Learn about the new and exciting iteration of the internet known as Web3.
 optional: true
 optionalMsg: If you're familiar with web3 fundamentals and already have your own crypto wallet, feel free to jump ahead to the next section!
 optionalNextPath: /en/curriculum/2-building-on-ethereum/0-client-server-architecture

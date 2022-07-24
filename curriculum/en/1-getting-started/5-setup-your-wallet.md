@@ -1,6 +1,6 @@
 ---
 title: Setup Your Wallet
-description: Setup Your Wallet
+description: Setup your Coinbase Wallet using this step-by-step guide. Read crypto wallet safety tips to keep your wallet secure.
 optional: true
 optionalMsg: If you're familiar with web3 fundamentals and already have your own crypto wallet, feel free to jump ahead to the next section!
 optionalNextPath: /en/curriculum/2-building-on-ethereum/0-client-server-architecture

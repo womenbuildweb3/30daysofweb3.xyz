@@ -1,6 +1,6 @@
 ---
 title: Dapp Overview
-description: Dapp Overview
+description: With 30 Days of Web3, you will develop a full-stack decentralized event platform using must-know web3 tools, protocols, and frameworks including Solidity, The Graph, IPFS, Polygon, Ethers.js, and RainbowKit.
 optional: false
 ---
 

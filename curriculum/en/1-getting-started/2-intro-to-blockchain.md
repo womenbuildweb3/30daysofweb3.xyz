@@ -1,12 +1,20 @@
 ---
 title: Intro to Blockchain
-description: Intro to Blockchain
+description: Learn about what blockchain technology is and how transactions are executed on the blockchain.
 optional: true
 optionalMsg: If you're familiar with web3 fundamentals and already have your own crypto wallet, feel free to jump ahead to the next section!
 optionalNextPath: /en/curriculum/2-building-on-ethereum/0-client-server-architecture
 ---
 
-## Blockchain Transactions
+## What is blockchain?
+
+The **blockchain** is an expanding system that records information in a manner that makes it hard or almost impossible to hack the system. Information gets recorded in blocks, which are like little lists of records.
+
+There are currently at least 1000 blockchains with at least four types of blockchain networks. Each block contains a hash (a long string of characters representing a specific piece of data) of the previous block as well as other useful information such as a timestamp and transaction data. This process forms a chain of data, otherwise known as the blockchain.
+
+Blockchain technology is very versatile and can be used in a variety of ways. It is used for securing personal information, artist royalties, Non-fungible tokens, real estate, and more. It can also aid in voting processes, ensuring that no one is able to vote more than once or tamper with the votes in any way.
+
+## How do blockchain transactions work?
 
 The first step in a blockchain transaction usually starts with a user requesting a transaction. Any 'write' operation to the blockchain is a transaction. This includes everything from deploying a smart contract onto the chain, purchasing an NFT, purchasing an ENS name, etc.
 

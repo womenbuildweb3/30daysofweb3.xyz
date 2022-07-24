@@ -16,7 +16,7 @@ const CurriculumContent = ({ curricData, navigation }) => {
 
   // console.log("curricData.data", curricData.data);
 
-  const metaTitle = curricData.data.title;
+  const metaTitle = `${curricData.data.title} | 30 Days of Web3`;
   const metaDescription = curricData.data.description;
   const baseUrl = "https://www.30daysofweb3.xyz";
 

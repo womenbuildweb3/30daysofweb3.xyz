@@ -1,12 +1,12 @@
 ---
 title: Writing a Test Script
-description: Writing a Test Script
+description: Test your Solidity smart contract using the Hardhat.
 optional: false
 ---
 
 We can test our smart contract locally before we deploy to a testnet so we can make sure it works as intended. A testnet (test network) is an alternative blockchain network used to run and test programs before releasing updates to the mainnet (main network).
 
-Create a file in the `scripts` folder called `run.js`. We will start by importing hardhat at the top of file so we can use it later.
+Create a file in the `scripts` folder called `run.js`. We will start by importing Hardhat at the top of file so we can use it later.
 
 Create an async function called `main` and another async function called `runMain`, which will use a `try...catch` statement to run the `main` function. At the bottom of the file, we can execute`runMain()`.
 

@@ -1,6 +1,6 @@
 ---
 title: Setup Your Dev Environment
-description: Setup Your Dev Environment
+description: Setup your developer environment for building full-stack dapps.
 optional: false
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-description: Start building on Ethereum, one of the biggest blockchains in the world.
+description: 30 Days of Web3 is the ultimate guide to building full-stack dapps on Ethereum. Get started with our free online curriculum here.
 optional: false
 ---
 
@@ -15,7 +15,7 @@ This course will focus on big-picture architecture and will help you define your
 Prerequisites:
 
 - Basic understanding of how to navigate your terminal
-- Basic Javascript
+- Basic JavaScript
 - Basic React
 
 It's helpful to be familiar with the aforementioned, but you'll pick up everything along the way.
@@ -26,7 +26,7 @@ Join the Discord by clicking [here](https://discord.com/invite/z63rfurXMD) - her
 
 Mark your calendars to attend the live workshops. These workshops will supplement the curriculum and give ya'll opportunities to ask questions live and get live, structured education. If you can't attend, all of the videos will be posted in the discord under #workshop-recordings.
 
-This course is fully async, online, and created to only take 30-45 mins daily to ship in 30 days. This acts as a prerequisite for women and nb devs applying to our BUIDL Accelerator. In order to meet the deadline application for BUIDL, you'll have to finish this project within the next **40 days**. If you're not planning to apply for the accelerator, you can feel free to go through this project at your own pace.
+This course is fully async, online, and created to only take 30-45 mins daily to ship in 30 days. This acts as a prerequisite for women and non-binary devs applying to our BUIDL Accelerator. In order to meet the deadline application for BUIDL, you'll have to finish this project within the next **40 days**. If you're not planning to apply for the accelerator, you can feel free to go through this project at your own pace.
 
 ## 👀 Project Overview
 
@@ -37,7 +37,7 @@ Below is a diagram of the dapp architecture.
 
 ## 🤚 Getting Help
 
-When you have a question, drop a message in the discord server in the channel that corresponds to the section you're in.
+When you have a question, drop a message in the Discord server in the channel that corresponds to the section you're in.
 
 This project is broken up into 6 sections and you'll see a help channel for each section where a member of the WBW3 team will help you out.
 
@@ -45,4 +45,4 @@ This project is broken up into 6 sections and you'll see a help channel for each
 
 Keep us updated on your progress and motivate your peers!
 
-Drop into the #progress channel in discord and post a GIF, photo, or written update to let us know how you're doing. Have fun with it - we may or may not be giving out prizes to those who keep up with progress reports :-)
+Drop into the #progress channel in Discord and post a GIF, photo, or written update to let us know how you're doing. Have fun with it - we may or may not be giving out prizes to those who keep up with progress reports :-)
