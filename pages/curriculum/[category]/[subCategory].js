@@ -6,7 +6,7 @@ import getCoursePaths from "../../../utils/getCoursePaths";
 import pathsToNav from "../../../utils/pathsToNav"
 import CurricLayout from "../../../components/CurricLayout";
 
-function Course({ curricData, navigation }) {
+function Course({ curricData, navigation, locale }) {
   // const { t } = useTranslation("navigation");
 
   return (
@@ -15,6 +15,7 @@ function Course({ curricData, navigation }) {
         <CurriculumContent
           navigation={navigation}
           curricData={curricData}
+          locale={locale}
         />
       )}
     </>
