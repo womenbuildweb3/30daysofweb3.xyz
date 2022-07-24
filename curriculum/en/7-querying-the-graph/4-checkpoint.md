@@ -1,5 +1,5 @@
 ---
-title: Checkpoint ESPANOL
+title: "Checkpoint #7"
 description: You've reached a checkpoint for 30 Days of Web3, the ultimate online curriculum on full-stsack blockchain development.
 optional: false
 ---

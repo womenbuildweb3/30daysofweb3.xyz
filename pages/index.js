@@ -41,11 +41,13 @@ export default function Home({ locale }) {
       <div className="my-16 mx-auto max-w-7xl px-4 sm:my-24 space-y-8 lg:space-y-16">
         <div className="text-center">
           <h1 className="text-4xl tracking-tight font-extrabold text-slate-900 sm:text-5xl md:text-6xl">
-            {locale === "en" ? "The Ultimate Guide" : "La guía fundamental"}{" "}
+            {locale === "en"
+              ? "The Ultimate Guide to"
+              : "La guía fundamental para"}{" "}
             <span className="sm:block text-royal-600">
               {locale === "en"
-                ? "to Building Fullstack Dapps"
-                : "para construir Fullstack Dapps"}
+                ? "Building Fullstack Dapps"
+                : "construir Fullstack Dapps"}
             </span>
           </h1>
           <p className="mt-3 max-w-md mx-auto text-base text-slate-700 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
@@ -67,16 +69,6 @@ export default function Home({ locale }) {
                 {locale === "en" ? " Register" : "Registrarse"}
               </a>
             </div>
-            {/* <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-              <a
-                href="https://discord.gg/z63rfurXMD"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-royal-600 bg-white hover:bg-slate-50 md:py-4 md:text-lg md:px-10"
-              >
-                Join our Discord
-              </a>
-            </div> */}
           </div>
         </div>
         <div className="space-y-10 py-12 sm:py-16 sm:px-6 lg:px-8">

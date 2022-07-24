@@ -3,7 +3,7 @@ import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Link from "next/link";
 
-export default function Navbar({locale}) {
+export default function Navbar({ locale }) {
   return (
     <Popover className="relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -52,14 +52,6 @@ export default function Navbar({locale}) {
             >
               {locale === "en" ? "Register" : "Registrarse"}
             </a>
-            {/* <a
-              href="https://discord.gg/z63rfurXMD"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ml-4 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-royal-600 bg-white hover:bg-slate-50"
-            >
-              Join our Discord
-            </a> */}
           </div>
         </div>
       </div>
@@ -131,16 +123,6 @@ export default function Navbar({locale}) {
                 >
                   Register
                 </a>
-                {/* <p className="mt-6 text-center text-base font-medium text-slate-500">
-                  <a
-                    href="https://discord.gg/z63rfurXMD"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-royal-600 hover:text-royal-500"
-                  >
-                    Join our Discord
-                  </a>
-                </p> */}
               </div>
             </div>
           </div>
