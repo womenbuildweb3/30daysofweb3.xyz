@@ -1,6 +1,6 @@
 ---
 title: Past RSVPs
-description: Past RSVPs
+description: Let users view past events they RSVP'ed to on your full-stack decentralized event platform.
 optional: false
 ---
 

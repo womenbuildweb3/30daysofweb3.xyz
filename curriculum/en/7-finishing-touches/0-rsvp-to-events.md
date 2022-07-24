@@ -1,6 +1,6 @@
 ---
 title: RSVP to an Event
-description: RSVP to an Event
+description: Let users RSVP to an event on your full-stack decentralized event platform.
 optional: false
 ---
 
@@ -78,30 +78,30 @@ Just like in our `create-event` page, we will want to show an alert based on the
 
 ```javascript
 <section className="relative py-12">
-    {loading && (
-      <Alert
-        alertType={"loading"}
-        alertBody={"Please wait"}
-        triggerAlert={true}
-        color={"white"}
-      />
-    )}
-    {success && (
-      <Alert
-        alertType={"success"}
-        alertBody={message}
-        triggerAlert={true}
-        color={"palegreen"}
-      />
-    )}
-    {success === false && (
-      <Alert
-        alertType={"failed"}
-        alertBody={message}
-        triggerAlert={true}
-        color={"palevioletred"}
-      />
-    )}
+  {loading && (
+    <Alert
+      alertType={"loading"}
+      alertBody={"Please wait"}
+      triggerAlert={true}
+      color={"white"}
+    />
+  )}
+  {success && (
+    <Alert
+      alertType={"success"}
+      alertBody={message}
+      triggerAlert={true}
+      color={"palegreen"}
+    />
+  )}
+  {success === false && (
+    <Alert
+      alertType={"failed"}
+      alertBody={message}
+      triggerAlert={true}
+      color={"palevioletred"}
+    />
+  )}
 ```
 
 Above the section that shows the number of RSVPs and max capacity for the event, we can add a button to RSVP which we will only show if the user has not already RSVPed. If they have already RSVPed, we can show them a link to the event.
@@ -112,41 +112,41 @@ If the event has already passed, we will hide all of this and let the user know 
 
 ```javascript
 <div className="max-w-xs w-full flex flex-col gap-4 mb-6 lg:mb-0">
-    {event.eventTimestamp > currentTimestamp ? (
-      account ? (
-        checkIfAlreadyRSVPed() ? (
-          <>
-            <span className="w-full text-center px-6 py-3 text-base font-medium rounded-full text-teal-800 bg-teal-100">
-              You have RSVPed! 🙌
-            </span>
-            <div className="flex item-center">
-              <LinkIcon className="w-6 mr-2 text-indigo-800" />
-              <a
-                className="text-indigo-800 truncate hover:underline"
-                href={event.link}
-              >
-                {event.link}
-              </a>
-            </div>
-          </>
-        ) : (
-          <button
-            type="button"
-            className="w-full items-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-            onClick={newRSVP}
-          >
-            RSVP for {ethers.utils.formatEther(event.deposit)} MATIC
-          </button>
-        )
+  {event.eventTimestamp > currentTimestamp ? (
+    account ? (
+      checkIfAlreadyRSVPed() ? (
+        <>
+          <span className="w-full text-center px-6 py-3 text-base font-medium rounded-full text-teal-800 bg-teal-100">
+            You have RSVPed! 🙌
+          </span>
+          <div className="flex item-center">
+            <LinkIcon className="w-6 mr-2 text-indigo-800" />
+            <a
+              className="text-indigo-800 truncate hover:underline"
+              href={event.link}
+            >
+              {event.link}
+            </a>
+          </div>
+        </>
       ) : (
-        <ConnectButton />
+        <button
+          type="button"
+          className="w-full items-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          onClick={newRSVP}
+        >
+          RSVP for {ethers.utils.formatEther(event.deposit)} MATIC
+        </button>
       )
     ) : (
-      <span className="w-full text-center px-6 py-3 text-base font-medium rounded-full border-2 border-gray-200">
-        Event has ended
-      </span>
-    )}
-    <div className="flex item-center">
+      <ConnectButton />
+    )
+  ) : (
+    <span className="w-full text-center px-6 py-3 text-base font-medium rounded-full border-2 border-gray-200">
+      Event has ended
+    </span>
+  )}
+  <div className="flex item-center">
 ```
 
 And yay! RSVP creation done! 🎉

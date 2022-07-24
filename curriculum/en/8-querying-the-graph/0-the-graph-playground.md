@@ -1,6 +1,6 @@
 ---
 title: Using The Graph playground
-description: Using The Graph playground
+description: Test your subgraph using The Graph playground.
 optional: false
 ---
 

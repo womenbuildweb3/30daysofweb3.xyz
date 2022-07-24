@@ -1,6 +1,6 @@
 ---
 title: Fetching the Event Details
-description: Fetching the Event Details
+description: Fetch event details from your subgraph.
 optional: false
 ---
 

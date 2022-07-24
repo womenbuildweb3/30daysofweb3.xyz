@@ -1,6 +1,6 @@
 ---
 title: Past Events
-description: Past Events
+description: Let users view past events they created on your full-stack decentralized event platform.
 optional: false
 ---
 

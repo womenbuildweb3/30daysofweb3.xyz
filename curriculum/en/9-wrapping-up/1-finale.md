@@ -1,6 +1,6 @@
 ---
 title: 🎉 You did it!
-description: 🎉 You did it!
+description: You've completed our 30 Days of Web3 curriculum and shipped a full-stack decentralized event platform!
 optional: false
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Finishing the Create Event Page
-description: Finishing the Create Event Page
+description: Let users create events on your full-stack decentralized event platform.
 optional: false
 ---
 

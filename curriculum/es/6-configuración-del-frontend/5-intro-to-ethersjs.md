@@ -36,7 +36,7 @@ We have access to the global Ethereum API, which can be accessed via the `window
 
 At the end of the function we want to return the contract so that we can call it from another component. Make sure to replace "[YOUR_CONTRACT_ADDRESS]" with the contract address for your deployed contract.
 
-**Note:** If you didn't write down your contract address from previous lessons, you can go back to the [Mumbai Polygonscan](https://mumbai.polygonscan.com/) site and paste your Coinbase Wallet address. There, you should see a transaction that says something like `Create: Web3RSVP` or whatever you named your contract. Click that link to be directed to the page. At the top, you will see your contract address. Copy that and paste it within the correct field of the contractAddress const below:
+**Note:** If you didn't write down your contract address from previous lessons, you can go back to the [Mumbai PolygonScan](https://mumbai.polygonscan.com/) site and paste your Coinbase Wallet address. There, you should see a transaction that says something like `Create: Web3RSVP` or whatever you named your contract. Click that link to be directed to the page. At the top, you will see your contract address. Copy that and paste it within the correct field of the contractAddress const below:
 
 ```
 function connectContract() {

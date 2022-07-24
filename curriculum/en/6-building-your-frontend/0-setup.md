@@ -1,6 +1,6 @@
 ---
 title: Building Your Frontend
-description: Building Your Frontend
+description: Setup the frontend for your full-stack decentralized event platform.
 optional: false
 ---
 

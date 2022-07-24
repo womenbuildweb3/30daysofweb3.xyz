@@ -1,6 +1,6 @@
 ---
 title: Structure of a Subgraph
-description: Structure of a Subgraph
+description: Check out the scaffold subgraph that you will use to create your subgraph.
 optional: false
 ---
 

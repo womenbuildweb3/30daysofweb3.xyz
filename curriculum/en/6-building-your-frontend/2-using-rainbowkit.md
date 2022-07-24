@@ -1,6 +1,6 @@
 ---
 title: Add Wallet Connection
-description: Add wallet connection to your dapp with RainbowKit and wagmi.sh
+description: Let users connect their wallet to your dapp by adding RainbowKit's Connect Wallet button.
 optional: false
 ---
 

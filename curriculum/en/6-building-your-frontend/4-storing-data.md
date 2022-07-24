@@ -1,6 +1,6 @@
 ---
 title: Uploading your event data
-description: Uploading your event data
+description: Learn how to upload data to decentralized storage network using Web3.Storage.
 optional: false
 ---
 

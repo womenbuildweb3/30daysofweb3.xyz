@@ -1,6 +1,6 @@
 ---
 title: Upcoming Events
-description: Upcoming Events
+description: Let users view upcoming events they created on your full-stack decentralized event platform.
 optional: false
 ---
 

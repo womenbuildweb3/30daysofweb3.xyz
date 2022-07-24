@@ -1,6 +1,6 @@
 ---
 title: Querying your subgraph
-description: Querying your subgraph
+description: Setup Apollo GraphQL client to query your subgraph.
 optional: false
 ---
 

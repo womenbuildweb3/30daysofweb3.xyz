@@ -1,6 +1,6 @@
 ---
 title: Upcoming RSVPs
-description: Upcoming RSVPs
+description: Let users view upcoming events they RSVP'ed to on your full-stack decentralized event platform.
 optional: false
 ---
 

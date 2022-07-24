@@ -1,10 +1,10 @@
 ---
 title: The Graph Setup
-description: The Graph Setup
+description: Setup your subgraph on the hosted service.
 optional: false
 ---
 
-Next we are going to create a subgraph on the hosted service where we can deploy our code. Go to thegraph.com and select the Hosted Service in the Products menu dropdown. You will need to sign in with your Github account.
+Next we are going to create a subgraph on the hosted service where we can deploy our code. Go to [thegraph.com](https://thegraph.com/) and select the Hosted Service in the Products menu dropdown. You will need to sign in with your Github account.
 
 Navigate to the “My Dashboard” tab, and click the “Add a Subgraph” button.
 
@@ -19,7 +19,7 @@ graph init --product hosted-service <GITHUB_USER>/<SUBGRAPH NAME>
 
 You will now be prompted with several options for your subgraph.
 
-For the protocol, we will choose ethereum. You can change the subgraph and directory names if you want, or you can just hit enter.
+For the protocol, we will choose Ethereum. You can change the subgraph and directory names if you want, or you can just hit enter.
 
 For the network, _we will choose Mumbai_.
 

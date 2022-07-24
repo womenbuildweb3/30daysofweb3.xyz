@@ -1,6 +1,6 @@
 ---
 title: Calling Your Contract
-description: Calling Your Contract
+description: Call your smart contract methods using Ethers.js.
 optional: false
 ---
 

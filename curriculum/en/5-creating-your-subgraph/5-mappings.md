@@ -1,6 +1,6 @@
 ---
 title: Mappings
-description: Mappings
+description: Write the code that translates data from your datasources to the entities defined in your schema.
 optional: false
 ---
 

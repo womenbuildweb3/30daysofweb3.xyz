@@ -1,6 +1,6 @@
 ---
 title: Deploying to the Hosted Service
-description: Deploying to the Hosted Service
+description: Deploy your subgraph to The Graph's Hosted Service.
 optional: false
 ---
 

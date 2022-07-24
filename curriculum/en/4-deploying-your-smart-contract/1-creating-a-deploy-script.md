@@ -1,6 +1,6 @@
 ---
 title: Creating Your Deploy Script
-description: Creating Your Deploy Script
+description: Deploy your smart contract to Polygon Mumbai test network using Hardhat.
 optional: false
 ---
 

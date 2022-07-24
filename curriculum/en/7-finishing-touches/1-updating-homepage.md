@@ -1,6 +1,6 @@
 ---
 title: Updating the Homepage
-description: Updating the Homepage
+description: Let users discover events on the homepage of your full-stack decentralized event platform.
 optional: false
 ---
 

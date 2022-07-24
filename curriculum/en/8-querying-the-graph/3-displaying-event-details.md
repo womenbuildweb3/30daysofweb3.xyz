@@ -1,6 +1,6 @@
 ---
 title: Displaying Event Details
-description: Displaying Event Details
+description: Display the event details you fetched from your subgraph.
 optional: false
 ---
 

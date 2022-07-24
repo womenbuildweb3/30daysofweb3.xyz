@@ -1,12 +1,12 @@
 ---
 title: Connect your wallet with RainbowKit
-description: Connect your wallet with RainbowKit
+description: Easily support intuitive wallet connection experiences in your dapp by using RainbowKit, a React library.
 optional: false
 ---
 
 ## What is RainbowKit?
 
-**RainbowKit** is _a React library that makes it simple for developers to connect their dApp to a wallet_. It's simple to use, responsive, customizable, and adaptable. From basic features like connecting and disconnecting a wallet, to the displaying of balances, RainbowKit is able to work with various wallets, swap connection chains, and convert addresses to ENS (Ethereum Name Service).
+**RainbowKit** is _a React library that makes it simple for developers to add wallet connection to their dapp_. It's simple to use, responsive, customizable, and adaptable. From basic features like connecting and disconnecting a wallet, to the displaying of balances, RainbowKit is able to work with various wallets, swap connection chains, and convert addresses to ENS (Ethereum Name Service).
 
 You can fully customize your RainbowKit theme and include only the necessary features for your dApps. RainbowKit utilizes the most commonly used libraries in the web3 ecosystem: ethers and wagmi.
 

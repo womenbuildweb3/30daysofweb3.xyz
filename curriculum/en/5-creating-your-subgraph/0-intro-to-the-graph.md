@@ -1,6 +1,6 @@
 ---
 title: Intro to The Graph
-description: Intro to The Graph
+description: Learn about The Graph, a web3 protocol that enables developers to create APIs to query data from the blockchain.
 optional: false
 ---
 

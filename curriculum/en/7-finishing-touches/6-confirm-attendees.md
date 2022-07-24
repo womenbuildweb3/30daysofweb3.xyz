@@ -1,6 +1,6 @@
 ---
 title: Confirm Attendees
-description: Confirm Attendees
+description: Let users confirm attendees for past events they created on your full-stack decentralized event platform.
 optional: false
 ---
 

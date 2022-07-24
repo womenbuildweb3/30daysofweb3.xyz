@@ -1,6 +1,6 @@
 ---
 title: Subgraph Manifest
-description: Subgraph Manifest
+description: Define the datasources that your subgraph will index.
 optional: false
 ---
 
