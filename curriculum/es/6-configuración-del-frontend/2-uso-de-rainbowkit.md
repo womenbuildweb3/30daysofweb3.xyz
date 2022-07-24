@@ -1,17 +1,22 @@
-## Using RainbowKit's ConnectButton ESPANOL
+---
+title: Add Wallet Connection ESPANOL
+description: Let users connect their wallet to your dapp by adding RainbowKit's Connect Wallet button.
+optional: false
+tweet: "Add wallet connection to a full-stack dapp with #30DaysofWeb3 @womenbuildweb3 🌈"
+---
 
 Now that we’ve wrapped our app with the `WagmiConfig` and `RainbowKitProvider` components, we can use wagmi hooks and RainbowKit’s `ConnectButton` component to enable users to connect their wallet and to inform the user that their wallet is connected.
 
 In `/components/Navbar.js`, we can import RainbowKit’s `ConnectButton` component and wagmi’s `useAccount` and `useDisconnect` hooks. Add the following imports below the `import Navmenu from "./Navmenu";` line:
 
-```
+```javascript
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { useAccount, useDisconnect } from "wagmi";
 ```
 
 We’ll use the `useAccount` hook to access the connected wallet if it exists, and the `useDisconnect` hook to disconnect the currently connected wallet. You can add these constants directly below the beginning of our Navbar function, like so:
 
-```
+```javascript
 export default function Navbar() {
     const { data: account } = useAccount();
     const { disconnect } = useDisconnect();
@@ -19,7 +24,7 @@ export default function Navbar() {
 
 In our `Navbar`, we can check the user's wallet connection status. If the user's wallet is connected, we will render a button that displays the user's wallet address and toggles a dropdown menu. Otherwise, if the user's wallet is not connected, we will render RainbowKit’s “Connect Wallet” button. We can add this button after the Create Event button.
 
-```
+```javascript
     </Link>
     {account ? (
         <Navmenu account={account} disconnect={() => disconnect()} />
@@ -31,7 +36,7 @@ In our `Navbar`, we can check the user's wallet connection status. If the user's
 
 Here's what your Navbar.js file should look like:
 
-```
+```javascript
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Navmenu from "./Navmenu";
@@ -78,28 +83,27 @@ export default function Navbar() {
     )
   );
 }
-
 ```
 
 We pass the account object and disconnect function to our Navmenu component. The following two steps **are already done for you.**
 
 In `/components/Navmenu.js`, you'll notice that we display the connect wallet address with this line:
 
-```
+```javascript
 <p className="text-ellipsis overflow-hidden">{account.address}</p>
 ```
 
 We also enable users to disconnect their wallets:
 
-```
+```javascript
 <a
- onClick={disconnect}
- className={joinClassNames(
-   account ? "bg-gray-100 text-gray-900" : "text-gray-700",
-   "block px-4 py-2 text-sm cursor-pointer"
- )}
+  onClick={disconnect}
+  className={joinClassNames(
+    account ? "bg-gray-100 text-gray-900" : "text-gray-700",
+    "block px-4 py-2 text-sm cursor-pointer"
+  )}
 >
- Log Out
+  Log Out
 </a>
 ```
 

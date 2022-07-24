@@ -1,7 +1,8 @@
 ---
 title: Schema
-description: Schema
+description: Define the GraphQL schema that models the data you will query from your subgraph.
 optional: false
+tweet: "Create and deploy a subgraph on @graphprotocol with #30DaysofWeb3 @womenbuildweb3 👾"
 ---
 
 This is where we will define the schema (schema.graphql) for our GraphQL queries. Ideally we want to model this data to match the data we need for our frontend.
@@ -77,9 +78,9 @@ One way to think about what is happening here is that whenever someone creates a
 
 ```json
 RSVP {
-    id: 20
-    attendee: 300
-    event: 5000
+  id: 20
+  attendee: 300
+  event: 5000
 }
 ```
 
@@ -87,8 +88,8 @@ This RSVP is for an event with the id 5000. The Event with the matching id will 
 
 ```json
 Event {
-    id: 5000
-    rsvps: [ {id: 20, attendee: 300, event: 5000} ]
+  id: 5000
+  rsvps: [ {id: 20, attendee: 300, event: 5000} ]
 }
 ```
 

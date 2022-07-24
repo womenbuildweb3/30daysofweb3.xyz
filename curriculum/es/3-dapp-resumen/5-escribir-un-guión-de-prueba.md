@@ -1,6 +1,11 @@
-# Escribir un guión de prueba
+---
+title: Escribir un guión de prueba
+description: Test your Solidity smart contract using the Hardhat.
+optional: false
+tweet: "Learn to test smart contracts with #30DaysofWeb3 @womenbuildweb3 ✍️"
+---
 
-Podemos probar nuestro *smart contract* localmente antes de implementarlo en una red de prueba para asegurarnos de que funciona según lo previsto.
+Podemos probar nuestro _smart contract_ localmente antes de implementarlo en una red de prueba para asegurarnos de que funciona según lo previsto.
 
 Cree un archivo en la carpeta `scripts` llamado `run.js`. Comenzaremos importando el casco en la parte superior del archivo para poder usarlo más tarde.
 
@@ -24,7 +29,7 @@ const runMain = async () => {
 runMain();
 ```
 
-Dentro de nuestra función *`main`*, podemos usar hardhat para implementar el contrato localmente agregando el siguiente código:
+Dentro de nuestra función _`main`_, podemos usar hardhat para implementar el contrato localmente agregando el siguiente código:
 
 ```
 const rsvpContractFactory = await hre.ethers.getContractFactory('Web3RSVP');
@@ -33,7 +38,7 @@ await rsvpContract.deployed();
 console.log("Contract deployed to:", rsvpContract.address);
 ```
 
-Hardhat nos permite acceder a diferentes *wallets* de prueba dentro de nuestro script para que podamos simular diferentes *wallets* interactuando con nuestro contrato. Para obtener la dirección de nuestro *wallet* del implementador y un par de otras para probar, usamos el método `getSigners`.
+Hardhat nos permite acceder a diferentes _wallets_ de prueba dentro de nuestro script para que podamos simular diferentes _wallets_ interactuando con nuestro contrato. Para obtener la dirección de nuestro _wallet_ del implementador y un par de otras para probar, usamos el método `getSigners`.
 
 ```
 const [deployer, address1, address2] = await hre.ethers.getSigners();
@@ -47,9 +52,10 @@ let maxCapacity = 3
 let timestamp = 1718926200
 let eventDataCID = "bafybeibhwfzx6oo5rymsxmkdxpmkfwyvbjrrwcl7cekmbzlupmp5ypkyfi"
 ```
+
 A continuación, podemos crear un nuevo evento con nuestros datos simulados. Una vez que se realiza la transacción, `txn.wait` devolverá datos sobre la transacción, incluida una matriz de los eventos emitidos que podemos registrar en nuestra consola. Podemos guardar el ID de evento creado para poder usarlo para confirmar su asistencia.
 
-Puede registrar todo el objeto *`wait`* si desea ver todo lo que se devuelve.
+Puede registrar todo el objeto _`wait`_ si desea ver todo lo que se devuelve.
 
 ```
 let txn = await rsvpContract.createNewEvent(timestamp, deposit, maxCapacity, eventDataCID)
@@ -60,7 +66,7 @@ let eventID = wait.events[0].args.eventID
 console.log("EVENT ID:", eventID)
 ```
 
-Podemos tener cada cuenta que sacamos de `getSigners` RSVP al evento. Por defecto, hardhat llamará a nuestras funciones de contrato desde la dirección de el *wallet* del implementador. Para llamar a una función de contrato desde otro *wallet*, podemos usar el modificador `.connect(address)`.
+Podemos tener cada cuenta que sacamos de `getSigners` RSVP al evento. Por defecto, hardhat llamará a nuestras funciones de contrato desde la dirección de el _wallet_ del implementador. Para llamar a una función de contrato desde otro _wallet_, podemos usar el modificador `.connect(address)`.
 
 Para enviar nuestro depósito, podemos pasar un objeto como último parámetro con el valor establecido en el monto del depósito.
 
@@ -88,7 +94,7 @@ wait.events.forEach(event => console.log("CONFIRMED:", event.args.attendeeAddres
 
 Debido a que requerimos que el propietario del evento espere 7 días antes de retirar los depósitos no reclamados, si intentamos llamar a esta función ahora, fallará.
 
-Para evitar esto, *hardhat* nos permite simular el paso del tiempo. Podemos esperar 10 años para asegurarnos de que ha sido suficiente tiempo.
+Para evitar esto, _hardhat_ nos permite simular el paso del tiempo. Podemos esperar 10 años para asegurarnos de que ha sido suficiente tiempo.
 
 ```
 // wait 10 years

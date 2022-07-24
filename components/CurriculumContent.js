@@ -16,9 +16,10 @@ const CurriculumContent = ({ curricData, navigation }) => {
 
   // console.log("curricData.data", curricData.data);
 
-  const metaTitle = curricData.data.title;
+  const metaTitle = `${curricData.data.title} | 30 Days of Web3`;
   const metaDescription = curricData.data.description;
   const baseUrl = "https://www.30daysofweb3.xyz";
+  const currentUrl = `${baseUrl}/${router.locale}${router.asPath}`;
 
   return (
     <div className="bg-white px-4 py-16">
@@ -26,13 +27,13 @@ const CurriculumContent = ({ curricData, navigation }) => {
         <title>{curricData.data.title}</title>
         <meta name="description" content={metaDescription} />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={`${baseUrl}${router.asPath}`} />
+        <meta property="og:url" content={currentUrl} />
         <meta property="og:title" content={metaTitle} />
         <meta property="og:description" content={metaDescription} />
         <meta property="og:image" content={`${baseUrl}/images/og-image.png`} />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:site" content="@womenbuildweb3" />
-        <meta property="twitter:url" content={`${baseUrl}${router.asPath}`} />
+        <meta property="twitter:url" content={currentUrl} />
         <meta property="twitter:title" content={metaTitle} />
         <meta property="twitter:description" content={metaDescription} />
         <meta
@@ -76,17 +77,16 @@ const CurriculumContent = ({ curricData, navigation }) => {
           {curricData.content}
         </ReactMarkdown>
 
-        <div className="not-prose flex justify-end mt-10">
+        <div className="not-prose flex items-start justify-between gap-4 mt-10">
+          {curricData.data.tweet && (
+            <TweetButton copy={curricData.data.tweet} url={currentUrl} />
+          )}
           {nextPath !== "/" && (
             <a href={nextPath}>
-              <button className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-royal-600 hover:bg-royal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-royal-500">
-                Next
+              <button className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-slate-900 bg-gradient-to-l from-sky-100 to-pink-100 hover:bg-gradient-to-r focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-200">
+                Next &#8594;
               </button>
             </a>
-          )}
-
-          {curricData.data.tweet && (
-            <TweetButton copy={curricData.data.tweet} />
           )}
         </div>
       </div>

@@ -1,7 +1,8 @@
 ---
 title: Querying your subgraph
-description: Querying your subgraph
+description: Setup Apollo GraphQL client to query your subgraph.
 optional: false
+tweet: "Query a subgraph for a full-stack dapp with #30DaysofWeb3 @womenbuildweb3 ⛓"
 ---
 
 To easily query our subgraph from our frontend application, we will use the Apollo GraphQL client.

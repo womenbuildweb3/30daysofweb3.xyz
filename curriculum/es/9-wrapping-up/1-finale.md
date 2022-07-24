@@ -1,4 +1,9 @@
-# 🎉 You did it! ESPANOL
+---
+title: 🎉 You did it! ESPANOL
+description: You've completed our 30 Days of Web3 curriculum and shipped a full-stack decentralized event platform!
+optional: false
+tweet: "Shipped a full-stack event platform dapp with #30DaysofWeb3 @womenbuildweb3! 🎉"
+---
 
 The importance of Web3 can not be stressed enough. Securing information, non-fungible tokens, artist royalties, and voting processes are all proven areas that web3 has been able to transform how people can organize in a decentralized world.
 
@@ -13,3 +18,7 @@ Finally you can host your code on Radicle, which allows storing git repositories
 Don’t forget to tweet and share your progress. You really just built a full stack web3 dApp!
 
 Now it’s time to get out there and keep building! 💪
+
+## Submit your project
+
+Submit your completed project and earn kudos to prove **on-chain** that you completed #30DaysofWeb3 by filling out this form: https://forms.gle/RbpJ8tN1wPbHLBU29

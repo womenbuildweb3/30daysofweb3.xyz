@@ -1,7 +1,8 @@
 ---
 title: Uploading your event data
-description: Uploading your event data
+description: Learn how to upload data to decentralized storage network using Web3.Storage.
 optional: false
+tweet: "Use @Web3Storage in a full-stack dapp with #30DaysofWeb3 @womenbuildweb3 🗂"
 ---
 
 Create a new folder in the `pages` folder called `api`, and create a new file inside that folder called `store-event-data.js`.

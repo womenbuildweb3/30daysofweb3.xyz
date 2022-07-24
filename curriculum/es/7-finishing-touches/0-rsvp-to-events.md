@@ -1,5 +1,5 @@
 ---
-title: RSVP to an Event
+title: RSVP to an Event ESPANOL
 description: Let users RSVP to an event on your full-stack decentralized event platform.
 optional: false
 tweet: "Build a full-stack event platform dapp with #30DaysofWeb3 @womenbuildweb3 🎫"

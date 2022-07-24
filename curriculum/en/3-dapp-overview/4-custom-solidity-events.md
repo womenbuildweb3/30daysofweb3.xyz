@@ -1,7 +1,8 @@
 ---
 title: Custom Solidity Events
-description: Custom Solidity Events
+description: Define Solidity events to listen for certain actions on the blockchain.
 optional: false
+tweet: "Write a smart contract in Solidity for a full-stack dapp with #30DaysofWeb3 @womenbuildweb3 ✍️"
 ---
 
 ## Define Events
@@ -19,19 +20,19 @@ Define your events at the very top of your file, inside the curly braces (right 
 
 ```solidity
 event NewEventCreated(
-        bytes32 eventID,
-        address creatorAddress,
-        uint256 eventTimestamp,
-        uint256 maxCapacity,
-        uint256 deposit,
-        string eventDataCID
-    );
+    bytes32 eventID,
+    address creatorAddress,
+    uint256 eventTimestamp,
+    uint256 maxCapacity,
+    uint256 deposit,
+    string eventDataCID
+);
 
-    event NewRSVP(bytes32 eventID, address attendeeAddress);
+event NewRSVP(bytes32 eventID, address attendeeAddress);
 
-    event ConfirmedAttendee(bytes32 eventID, address attendeeAddress);
+event ConfirmedAttendee(bytes32 eventID, address attendeeAddress);
 
-    event DepositsPaidOut(bytes32 eventID);
+event DepositsPaidOut(bytes32 eventID);
 ```
 
 ## Emit Events
@@ -46,13 +47,13 @@ Emit NewEventCreated at the bottom of your `createNewEvent` function like this:
 
 ```solidity
 emit NewEventCreated(
-           eventId,
-           msg.sender,
-           eventTimestamp,
-           maxCapacity,
-           deposit,
-           eventDataCID
-       );
+    eventId,
+    msg.sender,
+    eventTimestamp,
+    maxCapacity,
+    deposit,
+    eventDataCID
+);
 ```
 
 `NewRSVP` should be emitted at the very end of our function `confirmAttendee` like this:
@@ -167,16 +168,16 @@ contract Web3RSVP {
         // transfer deposit to our contract / require that they sent in enough ETH
         require(msg.value == myEvent.deposit, "NOT ENOUGH");
 
-        //require that the event hasn't already happened (<eventTimestamp)
+        // require that the event hasn't already happened (<eventTimestamp)
         require(block.timestamp <= myEvent.eventTimestamp, "ALREADY HAPPENED");
 
-        //make sure event is under max capacity
+        // make sure event is under max capacity
         require(
             myEvent.confirmedRSVPs.length < myEvent.maxCapacity,
             "This event has reached capacity"
         );
 
-        //require that msg.sender isn't already in myEvent.confirmedRSVPs
+        // require that msg.sender isn't already in myEvent.confirmedRSVPs
         for (uint8 i = 0; i < myEvent.confirmedRSVPs.length; i++) {
             require(myEvent.confirmedRSVPs[i] != msg.sender, "ALREADY CONFIRMED");
         }
@@ -193,7 +194,7 @@ contract Web3RSVP {
         // make sure you require that msg.sender is the owner of the event
         require(msg.sender == myEvent.eventOwner, "NOT AUTHORIZED");
 
-        //confirm each attendee
+        // confirm each attendee
         for (uint8 i = 0; i < myEvent.confirmedRSVPs.length; i++) {
             confirmAttendee(eventId, myEvent.confirmedRSVPs[i]);
         }
@@ -232,8 +233,8 @@ contract Web3RSVP {
         // sending eth back to the staker https://solidity-by-example.org/sending-ether
         (bool sent,) = attendee.call{value: myEvent.deposit}("");
 
-        //if this fails
-        if(!sent){
+        // if this fails
+        if (!sent) {
             myEvent.claimedRSVPs.pop();
         }
 
@@ -270,7 +271,7 @@ contract Web3RSVP {
         (bool sent, ) = msg.sender.call{value: payout}("");
 
         // if this fails
-        if(!sent){
+        if (!sent) {
             myEvent.paidOut == false;
         }
 

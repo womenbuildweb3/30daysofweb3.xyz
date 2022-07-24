@@ -11,7 +11,7 @@ import Image from "next/image";
 export default function Home({locale}) {
   const metaTitle = "30 Days of Web3";
   const metaDescription =
-    "Ship a full-stack decentralized app leveraging must-know web3 tools, protocols, and frameworks";
+    "30 Days of Web3 is the ultimate guide to building on Ethereum. Ship a full-stack dapp leveraging must-know web3 tools, protocols, and frameworks.";
   const metaUrl = "https://www.30daysofweb3.xyz";
 
   console.log("LOCALE", locale)

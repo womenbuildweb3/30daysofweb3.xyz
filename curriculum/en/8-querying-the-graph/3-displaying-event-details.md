@@ -1,7 +1,8 @@
 ---
 title: Displaying Event Details
-description: Displaying Event Details
+description: Display the event details you fetched from your subgraph.
 optional: false
+tweet: "Query a subgraph for a full-stack dapp with #30DaysofWeb3 @womenbuildweb3 ⛓"
 ---
 
 In the `Head` section, we can change "name" in the `<title>` tag and in the `meta` content to `{event.name}`

@@ -1,7 +1,8 @@
 ---
 title: Storing data with Web3.Storage
-description: Storing data with Web3.Storage
+description: Get started with Web3.Storage, an easy-to-use API that lets developers use decentralized storage.
 optional: false
+tweet: "Learn about @Web3Storage with #30DaysofWeb3 @womenbuildweb3 🗂"
 ---
 
 ## What is Web3.Storage?

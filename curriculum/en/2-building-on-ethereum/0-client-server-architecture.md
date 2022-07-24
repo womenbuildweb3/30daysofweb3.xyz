@@ -1,7 +1,8 @@
 ---
 title: Building on Ethereum
-description: Client Server Architecture
+description: Learn about client server architecture in web2 and open, composable backends in web3.
 optional: false
+tweet: "Understand composability in web3 with #30DaysofWeb3 @womenbuildweb3 🔗"
 ---
 
 ## Client Server Architecture
@@ -30,4 +31,4 @@ Your client application communicated with a server application running somewhere
 
 Instead of having a server application, blockchain developers have this idea of open and composable backends, AKA smart contracts. You'll create a smart contract which handles the logic for the creation of a new event, RSVP'ing to a new event, etc. Your client application will be in charge of aggregating and displaying all of the events that were created, show a dashboard to your user indicating past and upcoming events, etc.
 
-Read the full post on client-server architecture, APIs, and HTTP request methods [in this free code camp article](https://www.freecodecamp.org/news/http-request-methods-explained/).
+Read the full post on client-server architecture, APIs, and HTTP request methods in [this article](https://www.freecodecamp.org/news/http-request-methods-explained/).

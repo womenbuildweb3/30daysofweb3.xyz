@@ -1,7 +1,8 @@
 ---
 title: Creating Your Deploy Script
-description: Creating Your Deploy Script
+description: Deploy your smart contract to Polygon Mumbai test network using Hardhat.
 optional: false
+tweet: "Deploy a smart contract to @0xPolygon Mumbai testnet with #30DaysofWeb3 @womenbuildweb3 💪"
 ---
 
 In our scripts folder, we can create a file called `deploy.js`, where we can paste a copy of our test script and take out any test transactions. Our `deploy.js` file should look like this:

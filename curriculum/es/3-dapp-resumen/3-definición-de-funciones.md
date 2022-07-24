@@ -1,10 +1,16 @@
-## Definición de funciones
+---
+title: Definición de funciones
+description: Define functions in Solidity to handle events in your full-stack decentralized event platform.
+optional: false
+tweet: "Write a smart contract in Solidity for a full-stack dapp with #30DaysofWeb3 @womenbuildweb3 ✍️"
+---
 
-### Crear un nuevo evento
+## Crear un nuevo evento
 
 A continuación, escribiremos la función que se llamará cuando un usuario cree un nuevo evento en nuestra interfaz. Este es uno de nuestros métodos de establecimiento: una función que se ejecuta y establece el valor en función de la información que el usuario pasó.
 
 **Un recordatorio de lo que esta función debería poder manejar:**
+
 - Una identificación única
 - Una referencia a quién creó el evento (una dirección de billetera del creador)
 - La hora del evento, para que sepamos cuándo deberían estar disponibles los reembolsos.
@@ -13,7 +19,7 @@ A continuación, escribiremos la función que se llamará cuando un usuario cree
 - Mantenga un registro de aquellos que confirmaron su asistencia
 - Realizar un seguimiento de los usuarios que se registran en el evento
 
-Después de agregar esa función en nuestro mapeo, así es como debería verse su *smart contract* hasta ahora:
+Después de agregar esa función en nuestro mapeo, así es como debería verse su _smart contract_ hasta ahora:
 
 ```
 struct CreateEvent {
@@ -47,9 +53,9 @@ struct CreateEvent {
             )
         );
 
-        address[] memory confirmedRSVPs; 
+        address[] memory confirmedRSVPs;
         address[] memory claimedRSVPs;
-        
+
 
         //this creates a new CreateEvent struct and adds it to the idToEvent mapping
         idToEvent[eventId] = CreateEvent(
@@ -69,8 +75,7 @@ struct CreateEvent {
 
 Explicación línea por línea de lo que acabamos de hacer:
 
-
-Definimos la función `createNewEvent` y definimos los parámetros que la función debe aceptar. Estas son las configuraciones específicas para un evento que obtendremos de la persona que realmente crea el evento en la interfaz. Estas cosas son el *eventTimestamp* AKA cuando comenzará el evento, el depósito requerido para confirmar su asistencia a este evento, la capacidad máxima de este evento y una referencia al hash ipfs que contiene información como el nombre y la descripción del evento.
+Definimos la función `createNewEvent` y definimos los parámetros que la función debe aceptar. Estas son las configuraciones específicas para un evento que obtendremos de la persona que realmente crea el evento en la interfaz. Estas cosas son el _eventTimestamp_ AKA cuando comenzará el evento, el depósito requerido para confirmar su asistencia a este evento, la capacidad máxima de este evento y una referencia al hash ipfs que contiene información como el nombre y la descripción del evento.
 
 ```
 function createNewEvent(
@@ -78,14 +83,13 @@ function createNewEvent(
        uint256 deposit,
        uint256 maxCapacity,
        string calldata eventDataCID
- 
+
    )
-   ```
-   
-Configuramos la visibilidad de la función como externa, ya que tiene un alto rendimiento y ahorra *gas*.
+```
+
+Configuramos la visibilidad de la función como externa, ya que tiene un alto rendimiento y ahorra _gas_.
 
 `external {`
-
 
 En el cuerpo de la función, creamos una ID única para el evento al **combinar** algunos valores.
 
@@ -108,7 +112,6 @@ Para combatir esto, generamos un ID único creando un hash pasando todos los arg
        );
 ```
 
-
 Inicializamos las dos matrices que usaremos para rastrear RSVP y asistentes. Sabemos que necesitamos definir estas dos matrices porque en nuestra estructura, CreateEvent, definimos que habrá dos matrices que se usarán para rastrear las direcciones de los usuarios que confirmaron su asistencia y la dirección de los usuarios que realmente llegan y se registran en el evento AKA están confirmados.
 
 ```
@@ -116,9 +119,9 @@ address[] memory confirmedRSVPs;
 address[] memory claimedRSVPs;
 ```
 
-Ahora que tenemos una ID único, podemos crear una nueva entrada en nuestro mapeo. Puede pensar en esto como agregar un nuevo evento a nuestro directorio de eventos administrados por este *smart contract*.
+Ahora que tenemos una ID único, podemos crear una nueva entrada en nuestro mapeo. Puede pensar en esto como agregar un nuevo evento a nuestro directorio de eventos administrados por este _smart contract_.
 
-El *`key`* es el ID del evento y el *`value`* es una estructura o objeto con las siguientes propiedades que tomamos de los argumentos de la función pasados por el usuario en el front-end (eventName, eventTimestamp, deposit, maxCapacity), algunos generamos nosotros mismos o recopilamos del lado del *smart contract* (eventID, eventOwner, confirmRSVPS, ClaimRSVPs). Finalmente, configuramos el *boolean paidOut* en falso porque en el momento de la creación del evento, no ha habido pagos a los rsvp'ers (todavía no hay ninguno) o al propietario del evento todavía.
+El _`key`_ es el ID del evento y el _`value`_ es una estructura o objeto con las siguientes propiedades que tomamos de los argumentos de la función pasados por el usuario en el front-end (eventName, eventTimestamp, deposit, maxCapacity), algunos generamos nosotros mismos o recopilamos del lado del _smart contract_ (eventID, eventOwner, confirmRSVPS, ClaimRSVPs). Finalmente, configuramos el _boolean paidOut_ en falso porque en el momento de la creación del evento, no ha habido pagos a los rsvp'ers (todavía no hay ninguno) o al propietario del evento todavía.
 
 ```
 idToEvent[eventId] = CreateEvent(
@@ -133,11 +136,13 @@ idToEvent[eventId] = CreateEvent(
            false
        );
 ```
+
 ### Confirmar asistencia al evento
 
 A continuación, escribiremos la función que se llama cuando un usuario encuentra un evento y confirma su asistencia en el front-end.
 
 **Recordatorio de los requisitos para que una función permita a los usuarios confirmar su asistencia a un evento:**
+
 - Pase una identificación de evento única a la que el usuario desea confirmar su asistencia
 - Asegurarse de que el valor de su depósito sea suficiente para el requisito de depósito de ese evento
 - Asegúrese de que el evento aún no haya comenzado según la marca de tiempo del evento: las personas no deberían poder confirmar su asistencia después de que el evento haya comenzado
@@ -168,7 +173,7 @@ function createNewRSVP(bytes32 eventId) external payable {
             require(myEvent.confirmedRSVPs[i] != msg.sender, "ALREADY CONFIRMED");
         }
 
-        myEvent.confirmedRSVPs.push(payable(msg.sender)); 
+        myEvent.confirmedRSVPs.push(payable(msg.sender));
 
     }
 ```
@@ -182,10 +187,10 @@ function confirmAttendee(bytes32 eventId, address attendee) public {
         // look up event from our struct using the eventId
         CreateEvent storage myEvent = idToEvent[eventId];
 
-        // require that msg.sender is the owner of the event - only the host should be able to check people in 
+        // require that msg.sender is the owner of the event - only the host should be able to check people in
         require(msg.sender == myEvent.eventOwner, "NOT AUTHORIZED");
 
-        // require that attendee trying to check in actually RSVP'd 
+        // require that attendee trying to check in actually RSVP'd
         address rsvpConfirm;
 
         for (uint8 i = 0; i < myEvent.confirmedRSVPs.length; i++) {
@@ -197,7 +202,7 @@ function confirmAttendee(bytes32 eventId, address attendee) public {
         require(rsvpConfirm == attendee, "NO RSVP TO CONFIRM");
 
 
-        // require that attendee is NOT already in the claimedRSVPs list AKA make sure they haven't already checked in 
+        // require that attendee is NOT already in the claimedRSVPs list AKA make sure they haven't already checked in
         for (uint8 i = 0; i < myEvent.claimedRSVPs.length; i++) {
             require(myEvent.claimedRSVPs[i] != attendee, "ALREADY CLAIMED");
         }
@@ -210,7 +215,7 @@ function confirmAttendee(bytes32 eventId, address attendee) public {
 
         // sending eth back to the staker `https://solidity-by-example.org/sending-ether`
         (bool sent,) = attendee.call{value: myEvent.deposit}("");
-     
+
         //if this fails, remove the user from the array of claimed RSVP's
         if(!sent){
             myEvent.claimedRSVPs.pop();
@@ -272,7 +277,7 @@ function withdrawUnclaimedDeposits(bytes32 eventId) external {
 
         // send the payout to the owner
         (bool sent, ) = msg.sender.call{value: payout}("");
-        
+
         // if this fails
         if(!sent){
             myEvent.paidOut == false;

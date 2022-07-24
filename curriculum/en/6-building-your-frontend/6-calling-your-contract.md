@@ -1,7 +1,8 @@
 ---
 title: Calling Your Contract
-description: Calling Your Contract
+description: Call your smart contract methods using Ethers.js.
 optional: false
+tweet: "Call smart contract methods using Ethers.js with #30DaysofWeb3 @womenbuildweb3 💥"
 ---
 
 Open up `create-event.js` in the `pages` folder. You can see a preview of this page by going to http://localhost:3000/create-event. You should see a form with all of the input fields we need already set up.

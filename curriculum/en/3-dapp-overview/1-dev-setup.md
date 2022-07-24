@@ -1,7 +1,8 @@
 ---
 title: Setup Your Dev Environment
-description: Setup Your Dev Environment
+description: Setup your developer environment for building full-stack dapps.
 optional: false
+tweet: "Ship a full-stack event platform dapp with #30DaysofWeb3 @womenbuildweb3 🎫"
 ---
 
 ## IDE (Integrated Developer Environment)

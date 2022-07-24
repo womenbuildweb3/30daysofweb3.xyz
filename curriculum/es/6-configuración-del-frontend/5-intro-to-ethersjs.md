@@ -1,4 +1,9 @@
-# Connecting to our contract with Ethers.js ESPANOL
+---
+title: Connecting to our contract with Ethers.js ESPANOL
+description: Get started with Ethers.js, a JavaScript library that enables you to interact with Ethereum.
+optional: false
+tweet: "Connect to a smart contract using Ethers.js with #30DaysofWeb3 @womenbuildweb3 💥"
+---
 
 ## What is Ethers.js?
 
@@ -25,7 +30,7 @@ Inside of `utils`, create the two following files:
 
 At the top of `connectContract.js`, we can import ethers and our ABI.
 
-```
+```javascript
 import abiJSON from "./Web3RSVP.json";
 import { ethers } from "ethers";
 ```
@@ -36,36 +41,32 @@ We have access to the global Ethereum API, which can be accessed via the `window
 
 At the end of the function we want to return the contract so that we can call it from another component. Make sure to replace "[YOUR_CONTRACT_ADDRESS]" with the contract address for your deployed contract.
 
-**Note:** If you didn't write down your contract address from previous lessons, you can go back to the [Mumbai Polygonscan](https://mumbai.polygonscan.com/) site and paste your Coinbase Wallet address. There, you should see a transaction that says something like `Create: Web3RSVP` or whatever you named your contract. Click that link to be directed to the page. At the top, you will see your contract address. Copy that and paste it within the correct field of the contractAddress const below:
+**Note:** If you didn't write down your contract address from previous lessons, you can go back to the [Mumbai PolygonScan](https://mumbai.polygonscan.com/) site and paste your Coinbase Wallet address. There, you should see a transaction that says something like `Create: Web3RSVP` or whatever you named your contract. Click that link to be directed to the page. At the top, you will see your contract address. Copy that and paste it within the correct field of the contractAddress const below:
 
-```
+```javascript
 function connectContract() {
-    //Note: Your contractAddress will start with 0x, delete everything between the quotes and paste your contract address.
-    const contractAddress = "0x[YOUR_CONTRACT_ADDRESS]";
-    const contractABI = abiJSON.abi;
-    let rsvpContract;
-    try {
-        const { ethereum } = window;
+  //Note: Your contractAddress will start with 0x, delete everything between the quotes and paste your contract address.
+  const contractAddress = "0x[YOUR_CONTRACT_ADDRESS]";
+  const contractABI = abiJSON.abi;
+  let rsvpContract;
+  try {
+    const { ethereum } = window;
 
-        if (ethereum.chainId === "0x13881") {
-          //checking for eth object in the window, see if they have wallet connected to Polygon Mumbai network
-          const provider = new ethers.providers.Web3Provider(ethereum);
-          const signer = provider.getSigner();
-          rsvpContract = new ethers.Contract(
-            contractAddress,
-            contractABI,
-            signer
-          ); // instantiating new connection to the contract
-        } else {
-          console.log("Ethereum object doesn't exist!");
-        }
-      } catch (error) {
-        console.log("ERROR:", error);
-      }
-      return rsvpContract;
+    if (ethereum.chainId === "0x13881") {
+      //checking for eth object in the window, see if they have wallet connected to Polygon Mumbai network
+      const provider = new ethers.providers.Web3Provider(ethereum);
+      const signer = provider.getSigner();
+      rsvpContract = new ethers.Contract(contractAddress, contractABI, signer); // instantiating new connection to the contract
+    } else {
+      console.log("Ethereum object doesn't exist!");
+    }
+  } catch (error) {
+    console.log("ERROR:", error);
   }
+  return rsvpContract;
+}
 
-  export default connectContract;
+export default connectContract;
 ```
 
 Now that we can connect to our contract, we can call a function to create a new event in the next section.

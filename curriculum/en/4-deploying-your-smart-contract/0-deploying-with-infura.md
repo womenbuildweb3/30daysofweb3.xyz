@@ -1,7 +1,8 @@
 ---
 title: Deploying with Infura
-description: Deploying with Infura
+description: Learn about Infura, a web3 infrastructure provider that helps developers to build apps on Ethereum without having to manage their own blockchain nodes.
 optional: false
+tweet: "Learn how @infura_io supports dapps built on Ethereum with #30DaysofWeb3 @womenbuildweb3 💪"
 ---
 
 ## What is Infura?

@@ -1,9 +1,10 @@
 ---
 title: Intro to Crypto Wallets
-description: Intro to Crypto Wallets
+description: Learn about how crypto wallets work and the different types of crypto wallets.
 optional: true
 optionalMsg: If you're familiar with web3 fundamentals and already have your own crypto wallet, feel free to jump ahead to the next section!
 optionalNextPath: /en/curriculum/2-building-on-ethereum/0-client-server-architecture
+tweet: "Learn about crypto wallets with #30DaysofWeb3 @womenbuildweb3 🔐"
 ---
 
 A **crypto wallet** is _a storage system for your digital assets like cryptocurrencies, NFTs, and more_. The contents of each crypto wallet can be accessed by a unique key made of a combination of letters and numbers explicitly assigned to the wallet’s creator (called a **private key**).

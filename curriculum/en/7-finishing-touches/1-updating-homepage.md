@@ -1,7 +1,8 @@
 ---
 title: Updating the Homepage
-description: Updating the Homepage
+description: Let users discover events on the homepage of your full-stack decentralized event platform.
 optional: false
+tweet: "Build a full-stack event platform dapp with #30DaysofWeb3 @womenbuildweb3 🎫"
 ---
 
 In our `index.js` file, we want to be able to show all of the upcoming events people can RSVP to. At the top of the file we can import `gql` and `useQuery` from apollo client. We will also need to import `useState` and our `EventCard` component.

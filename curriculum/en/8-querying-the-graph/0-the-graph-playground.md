@@ -1,7 +1,8 @@
 ---
 title: Using The Graph playground
-description: Using The Graph playground
+description: Test your subgraph using The Graph playground.
 optional: false
+tweet: "Query a subgraph for a full-stack dapp with #30DaysofWeb3 @womenbuildweb3 ⛓"
 ---
 
 Now that we have created an event, we need to be able to fetch the event information to show on the event details page. We also need to know the deposit amount for the event before we can create an RSVP.
