@@ -2,6 +2,7 @@
 title: Defining Functions
 description: Define functions in Solidity to handle events in your full-stack decentralized event platform.
 optional: false
+tweet: "Write a smart contract in Solidity for a full-stack dapp with #30DaysofWeb3 @womenbuildweb3 ✍️"
 ---
 
 ## Create a New Event

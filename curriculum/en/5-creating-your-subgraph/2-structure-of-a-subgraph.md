@@ -2,6 +2,7 @@
 title: Structure of a Subgraph
 description: Check out the scaffold subgraph that you will use to create your subgraph.
 optional: false
+tweet: "Create and deploy a subgraph on @graphprotocol with #30DaysofWeb3 @womenbuildweb3 👾"
 ---
 
 You should now have a new folder with this structure:

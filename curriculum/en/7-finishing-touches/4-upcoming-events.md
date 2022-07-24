@@ -2,6 +2,7 @@
 title: Upcoming Events
 description: Let users view upcoming events they created on your full-stack decentralized event platform.
 optional: false
+tweet: "Build a full-stack event platform dapp with #30DaysofWeb3 @womenbuildweb3 🎫"
 ---
 
 You can find the upcoming events page in the `pages/my-events` folder and at http://localhost:3000/my-events/upcoming.

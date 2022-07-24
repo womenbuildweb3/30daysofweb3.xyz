@@ -2,6 +2,7 @@
 title: Verifying Your Contract
 description: Verify and publish your smart contract source code on PolygonScan.
 optional: false
+tweet: "Verify a smart contract on PolygonScan with #30DaysofWeb3 @womenbuildweb3 💪"
 ---
 
 At this point, your contract should be deployed and you should have your contract’s address copied. Paste it in the Polygon Mumbai block explorer: https://mumbai.polygonscan.com/.

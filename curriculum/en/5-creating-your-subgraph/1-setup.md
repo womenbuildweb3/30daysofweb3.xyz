@@ -2,6 +2,7 @@
 title: The Graph Setup
 description: Setup your subgraph on the hosted service.
 optional: false
+tweet: "Create and deploy a subgraph on @graphprotocol with #30DaysofWeb3 @womenbuildweb3 👾"
 ---
 
 Next we are going to create a subgraph on the hosted service where we can deploy our code. Go to [thegraph.com](https://thegraph.com/) and select the Hosted Service in the Products menu dropdown. You will need to sign in with your Github account.

@@ -2,6 +2,7 @@
 title: Intro to Solidity
 description: Learn Solidity hands-on by writing, deploying, and testing your own simple smart contract in Remix.
 optional: false
+tweet: "Write a simple smart contract in Solidity on @EthereumRemix with #30DaysofWeb3 @womenbuildweb3 🔗"
 ---
 
 ## Writing a Smart Contract

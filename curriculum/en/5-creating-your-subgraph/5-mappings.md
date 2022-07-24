@@ -2,6 +2,7 @@
 title: Mappings
 description: Write the code that translates data from your datasources to the entities defined in your schema.
 optional: false
+tweet: "Create and deploy a subgraph on @graphprotocol with #30DaysofWeb3 @womenbuildweb3 👾"
 ---
 
 You can find the mappings file (src/{Name}.ts) in the `src` folder. Mappings use AssemblyScript, a strongly-typed language based on Typescript, and act like the resolvers in your typical GraphQL API. They are responsible for the logic that happens in-between an event firing from our smart contract and that data being organized into our schema.

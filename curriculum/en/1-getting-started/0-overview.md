@@ -2,6 +2,7 @@
 title: Getting Started
 description: 30 Days of Web3 is the ultimate guide to building full-stack dapps on Ethereum. Get started with our free online curriculum here.
 optional: false
+tweet: Get started with 30 Days of Web3, the ultimate guide to building full-stack dapps from @womenbuildweb3
 ---
 
 ## 👋 Welcome to 30 Days of Web3!

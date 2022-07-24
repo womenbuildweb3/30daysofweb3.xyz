@@ -2,6 +2,7 @@
 title: Upcoming RSVPs
 description: Let users view upcoming events they RSVP'ed to on your full-stack decentralized event platform.
 optional: false
+tweet: "Build a full-stack event platform dapp with #30DaysofWeb3 @womenbuildweb3 🎫"
 ---
 
 In the `pages/my-rsvps` folder, we have two pages where we want to show the user's upcoming and past events that they RSVPed to.

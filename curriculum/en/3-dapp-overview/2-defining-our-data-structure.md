@@ -2,6 +2,7 @@
 title: Defining Our Data Structure
 description: Define structs in Solidity to represent events in your full-stack decentralized event platform.
 optional: false
+tweet: "Write a smart contract in Solidity for a full-stack dapp with #30DaysofWeb3 @womenbuildweb3 ✍️"
 ---
 
 ## Define An 'Event'

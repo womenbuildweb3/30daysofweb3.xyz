@@ -2,6 +2,7 @@
 title: Deploying to the Hosted Service
 description: Deploy your subgraph to The Graph's Hosted Service.
 optional: false
+tweet: "Create and deploy a subgraph on @graphprotocol with #30DaysofWeb3 @womenbuildweb3 👾"
 ---
 
 Open up the subgraph you created on The Graph's Hosted Service, and select the “Show commands” button under Deploy.

@@ -2,6 +2,7 @@
 title: Intro to Polygon
 description: Learn about Ethereum scaling solutions, particularly Polygon, and reasons developers choose to use Polygon.
 optional: false
+tweet: "Learn about @ethereum and layer-1 vs layer-2 scaling solutions with #30DaysofWeb3 @womenbuildweb3 🔗"
 ---
 
 ## Ethereum Scaling Solutions

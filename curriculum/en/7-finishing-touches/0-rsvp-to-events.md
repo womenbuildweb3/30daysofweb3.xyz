@@ -2,6 +2,7 @@
 title: RSVP to an Event
 description: Let users RSVP to an event on your full-stack decentralized event platform.
 optional: false
+tweet: "Build a full-stack event platform dapp with #30DaysofWeb3 @womenbuildweb3"
 ---
 
 We want users to also be able to RSVP to an event on the event details page.

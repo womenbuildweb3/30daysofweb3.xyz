@@ -2,6 +2,7 @@
 title: Subgraph Manifest
 description: Define the datasources that your subgraph will index.
 optional: false
+tweet: "Create and deploy a subgraph on @graphprotocol with #30DaysofWeb3 @womenbuildweb3 👾"
 ---
 
 The subgraph manifest (subgraph.yaml) is where you can define settings for the subgraph. Most of this will already be filled out for you, but there are a few changes we need to make.

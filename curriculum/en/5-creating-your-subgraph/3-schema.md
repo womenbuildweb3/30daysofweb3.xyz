@@ -2,6 +2,7 @@
 title: Schema
 description: Define the GraphQL schema that models the data you will query from your subgraph.
 optional: false
+tweet: "Create and deploy a subgraph on @graphprotocol with #30DaysofWeb3 @womenbuildweb3 👾"
 ---
 
 This is where we will define the schema (schema.graphql) for our GraphQL queries. Ideally we want to model this data to match the data we need for our frontend.

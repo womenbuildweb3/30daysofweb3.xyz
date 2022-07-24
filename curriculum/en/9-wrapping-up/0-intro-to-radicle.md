@@ -4,6 +4,7 @@ description: Learn how to host your code on Radicle, a decentralized code collab
 optional: true
 optionalMsg: If you've dabbled with Radicle or want to bookmark for this later, feel free to jump ahead!
 optionalNextPath: /en/curriculum/9-wrapping-up/1-finale
+tweet: "Host code for a full-stack dapp on @radicle with #30DaysofWeb3 @womenbuildweb3 💻"
 ---
 
 Now that we are done with our app, we can upload our code to Radicle to keep it safe. **Radicle** is a _peer-to-peer network for storing git repositories designed to be free from censorship._ You can use Radicle for free similarly to how you would use GitHub or any other git based repository hosting site.

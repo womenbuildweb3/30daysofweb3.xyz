@@ -2,6 +2,7 @@
 title: Connect your wallet with RainbowKit
 description: Easily support intuitive wallet connection experiences in your dapp by using RainbowKit, a React library.
 optional: false
+tweet: "Learn to use @rainbowdotme's RainbowKit with #30DaysofWeb3 @womenbuildweb3 🌈"
 ---
 
 ## What is RainbowKit?

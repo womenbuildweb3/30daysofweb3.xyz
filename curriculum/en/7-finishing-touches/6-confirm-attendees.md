@@ -2,6 +2,7 @@
 title: Confirm Attendees
 description: Let users confirm attendees for past events they created on your full-stack decentralized event platform.
 optional: false
+tweet: "Build a full-stack event platform dapp with #30DaysofWeb3 @womenbuildweb3 🎫"
 ---
 
 The last page we need to make is the page where users can confirm attendees for their events. This file is called `[id].js` and is in the`pages/my-events/past` folder.

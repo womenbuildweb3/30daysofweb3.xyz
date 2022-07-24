@@ -2,6 +2,7 @@
 title: Intro to The Graph
 description: Learn about The Graph, a web3 protocol that enables developers to create APIs to query data from the blockchain.
 optional: false
+tweet: "Learn about @graphprotocol with #30DaysofWeb3 @womenbuildweb3 👾"
 ---
 
 The Graph is a web3 protocol that allows developers to create GraphQL APIs to query data from any smart contract. This makes it fast and easy to create dashboards and websites that show live data about how users are interacting with your contract.

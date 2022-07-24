@@ -2,6 +2,7 @@
 title: Connecting to our contract with Ethers.js
 description: Get started with Ethers.js, a JavaScript library that enables you to interact with Ethereum.
 optional: false
+tweet: "Connect to a smart contract using Ethers.js with #30DaysofWeb3 @womenbuildweb3 💥"
 ---
 
 ## What is Ethers.js?

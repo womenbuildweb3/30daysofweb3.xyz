@@ -2,6 +2,7 @@
 title: Past Events
 description: Let users view past events they created on your full-stack decentralized event platform.
 optional: false
+tweet: "Build a full-stack event platform dapp with #30DaysofWeb3 @womenbuildweb3 🎫"
 ---
 
 In the `pages/my-events/past` folder, open up the `index.js` file.

@@ -2,6 +2,7 @@
 title: Writing a Test Script
 description: Test your Solidity smart contract using the Hardhat.
 optional: false
+tweet: "Learn to test smart contracts with #30DaysofWeb3 @womenbuildweb3 ✍️"
 ---
 
 We can test our smart contract locally before we deploy to a testnet so we can make sure it works as intended. A testnet (test network) is an alternative blockchain network used to run and test programs before releasing updates to the mainnet (main network).

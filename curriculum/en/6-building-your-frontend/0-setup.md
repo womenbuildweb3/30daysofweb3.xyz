@@ -2,6 +2,7 @@
 title: Building Your Frontend
 description: Setup the frontend for your full-stack decentralized event platform.
 optional: false
+tweet: "Build a frontend for a full-stack dapp with #30DaysofWeb3 @womenbuildweb3 🖼"
 ---
 
 ## Introduction

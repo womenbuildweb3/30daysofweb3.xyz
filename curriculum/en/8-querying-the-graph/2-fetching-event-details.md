@@ -2,6 +2,7 @@
 title: Fetching the Event Details
 description: Fetch event details from your subgraph.
 optional: false
+tweet: "Query a subgraph for a full-stack dapp with #30DaysofWeb3 @womenbuildweb3 ⛓"
 ---
 
 Open up the `pages/event/[id].js` file, which uses dynamic routing with Next.js to create a new page for each event minted based on the eventID. This is where we can show the details for a single event and users can RSVP.

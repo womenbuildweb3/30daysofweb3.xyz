@@ -2,6 +2,7 @@
 title: Custom Solidity Events
 description: Define Solidity events to listen for certain actions on the blockchain.
 optional: false
+tweet: "Write a smart contract in Solidity for a full-stack dapp with #30DaysofWeb3 @womenbuildweb3 ✍️"
 ---
 
 ## Define Events
