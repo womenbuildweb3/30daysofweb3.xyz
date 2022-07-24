@@ -5,6 +5,8 @@ optional: false
 tweet: "Learn about @graphprotocol with #30DaysofWeb3 @womenbuildweb3 👾"
 ---
 
+![Intro to The Graph](https://user-images.githubusercontent.com/15064710/180662082-82426a3c-4a63-40d4-a30b-ce23bae7a38f.png)
+
 The Graph is a web3 protocol that allows developers to create GraphQL APIs to query data from any smart contract. This makes it fast and easy to create dashboards and websites that show live data about how users are interacting with your contract.
 
 Anyone can deploy their own API, also called a subgraph. Our subgraph will allow us to connect our frontend website to our contract so we can easily fetch the data we need.

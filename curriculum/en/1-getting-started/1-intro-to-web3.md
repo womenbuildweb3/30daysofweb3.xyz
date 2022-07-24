@@ -57,22 +57,3 @@ Imagine you're accessing a site that you want to become a member of:
 - In Web 3.0, you simply just connect your wallet to login. You don't have to deal with annoying captchas, and your data is protected!
 
 Unlike instances of misfortune that happen on the centralized web like the AWS outage, web3 servers cannot go down. A data breach like the 2017 Equifax breach could never happen in web3. This is thanks to the decentralized network of nodes connected to the blockchain that are responsible for encrypting data.
-
-## Too Long, Didn't Read (Recap)
-
-![Recap time!](https://cdn.hashnode.com/res/hashnode/image/upload/v1651456991770/OugajW9AO.png)
-
-- The internet was invented by the United States in the 1970s. It was originally **decentralized**, which meant that the network consisted of many computers across the country.
-- Tim Berners-Lee invented the World Wide Web in 1989. This version of the web would later come to be known as Web 1.0. There was little to no user interaction on most websites during this time, which is why **Web 1.0 is also sometimes referred to as the _"read-only" web._ **
-- Around 2005 was when Web 2.0 arrived. The internet had begun to undergo a rapid adoption rate. Interaction with other users was now possible through instant messaging and online status updates. This is why **Web 2.0 is also called the _"read-write"_ web.** Web 2.0 is centralized, meaning that existing sites are likely to be tethered to a cloud storage management service like Amazon Web Services. If anything happens to these cloud services such as an outage, hack, or takedown, millions of websites would go down as a result (as seen in the AWS outage and Equifax breach).
-- In Web 3.0, decentralization has returned. Data is encrypted and securely stored across multiple nodes. Authentication is as simple as connecting your wallet to login. Web3 enhances security and puts the power of the internet back in the hands of its users! **Web 3.0 is also sometimes referred to as the "read-write-own" web.**
-
-## Source links
-
-- Article - [From Web 1.0 to Web3: How the Internet Grew Over The Years](https://hackernoon.com/from-web-10-to-web3-how-the-internet-grew-over-the-years-zac032g1)
-- Article - [Equifax Data Breach](https://archive.epic.org/privacy/data-breach/equifax/)
-- Article - [Amazon Web Services 2017 Disruption Summary](https://aws.amazon.com/message/41926/)
-- Article - [Web2 vs Web3](https://ethereum.org/en/developers/docs/web2-vs-web3/#:~:text=Web3%2C%20in%20the%20context%20of,without%20monetising%20their%20personal%20data.)
-- Article - [Introduction to Web3](https://ethereum.org/en/web3/)
-- Biography - [Tim Berners-Lee](https://www.w3.org/People/Berners-Lee/)
-- Article - [A Brief History of The Internet](https://www.usg.edu/galileo/skills/unit07/internet07_02.phtml)

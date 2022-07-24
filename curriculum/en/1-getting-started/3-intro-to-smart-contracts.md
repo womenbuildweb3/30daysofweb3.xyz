@@ -7,6 +7,8 @@ optionalNextPath: /en/curriculum/2-building-on-ethereum/0-client-server-architec
 tweet: "Learn about smart contracts with #30DaysofWeb3 @womenbuildweb3 🌐"
 ---
 
+![Intro to Smart Contracts](https://user-images.githubusercontent.com/15064710/180661915-e5225c08-7428-4a71-b521-c633023f747e.png)
+
 A **smart contract** is _a computer program compiled from code that can control events and actions according to the terms set within the contract’s code_.
 
 Much like vending machines, we can program smart contracts with various functions. Vending machines allow consumers to insert a currency and then press a button to execute that transaction. A refreshing soda or a candybar is dispensed, and any leftover change that the consumer is owed is dispensed as well.

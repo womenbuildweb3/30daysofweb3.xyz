@@ -5,6 +5,8 @@ optional: false
 tweet: "Learn about @ethereum and layer-1 vs layer-2 scaling solutions with #30DaysofWeb3 @womenbuildweb3 🔗"
 ---
 
+![Intro to Polygon](https://user-images.githubusercontent.com/15064710/180661945-d3975ecb-1562-45af-9a4b-b178cd596145.png)
+
 ## Ethereum Scaling Solutions
 
 Ethereum has become one of the most popular blockchains for a while due to its ability to employ Turing complete smart-contracts. Though, after it gained popularity there has been a significant network congestion as a result high gas fees.

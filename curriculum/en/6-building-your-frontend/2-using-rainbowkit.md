@@ -111,6 +111,4 @@ Throughout our dApp, we check the user's wallet connection to conditionally rend
 
 After successful configuration and importing, when you click the connect button, you should expect a UI (user interface, basically the look and feel of an app or page.) like this:
 
-![RainbowKit Ui](https://i.imgur.com/QgE9oIj.jpg)
-
 **Note:** RainbowKit recently announced a new command line script to create a Next.js app with RainbowKit and wagmi set up for you. Learn more about it here: https://www.rainbowkit.com/docs/installation#quick-start
