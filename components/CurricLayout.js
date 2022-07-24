@@ -3,16 +3,6 @@ import CurricSidebar from "./curriculumSidebar/index";
 import styles from "../styles/Home.module.css";
 
 export default function CurricLayout({ children, navigation, locale }) {
-  // const [preferedColorScheme, setPreferedColorScheme] = useState("light");
-
-  // useEffect(() => {
-  //   if (
-  //     window.matchMedia &&
-  //     window.matchMedia("(prefers-color-scheme: dark)").matches
-  //   ) {
-  //     setPreferedColorScheme("dark");
-  //   }
-  // }, []);
 
   return (
     <div className="relative min-h-screen h-screen max-h-screen overflow-hidden">

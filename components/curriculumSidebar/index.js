@@ -9,7 +9,7 @@ export default function CurricSideBar({ navigation, locale }) {
 
   return (
     <div
-      className={`flex flex-col flex-grow pb-4 overflow-y-auto border-r border-gray ${styles.sidebarBlur}`}
+      className={`hidden sm:flex flex-col flex-grow pb-4 overflow-y-auto border-r border-gray ${styles.sidebarBlur}`}
     >
       <div className="flex items-center flex-shrink-0 px-4 py-5">
         <Logo />

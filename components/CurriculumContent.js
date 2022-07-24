@@ -8,6 +8,7 @@ import { getNextLesson } from "../utils/lessons";
 import TweetButton from "./TweetButton";
 import CodeBlock from "./CodeBlock";
 import { InformationCircleIcon } from "@heroicons/react/solid";
+import Logo from "./Logo";
 
 const CurriculumContent = ({ curricData, navigation, locale }) => {
   const router = useRouter();
@@ -20,7 +21,7 @@ const CurriculumContent = ({ curricData, navigation, locale }) => {
   const currentUrl = `${baseUrl}/${router.locale}${router.asPath}`;
 
   return (
-    <div className="bg-white px-4 py-16">
+    <div className="bg-white px-4 py-4 sm:py-16">
       <Head>
         <title>{curricData.data.title}</title>
         <meta name="description" content={metaDescription} />
@@ -41,6 +42,10 @@ const CurriculumContent = ({ curricData, navigation, locale }) => {
         <meta property="twitter:image:alt" content="30 Days of Web3" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <div className="py-4 sm:hidden">
+        <Logo/>
+      </div>
 
       <div className="prose prose-blue prose-lg mx-auto">
         <h1>{curricData.data.title}</h1>
