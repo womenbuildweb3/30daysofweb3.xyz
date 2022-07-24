@@ -1,4 +1,9 @@
-## Verificando tu contrato
+---
+title: Verificando tu contrato
+description: Verify and publish your smart contract source code on PolygonScan.
+optional: false
+tweet: "Verify a smart contract on PolygonScan with #30DaysofWeb3 @womenbuildweb3 💪"
+---
 
 Una vez que se haya implementado su contrato, verá la dirección de su contrato. Copie esa dirección y péguela en el _Polygon Mumbai block explorer_: https://mumbai.polygonscan.com/
 

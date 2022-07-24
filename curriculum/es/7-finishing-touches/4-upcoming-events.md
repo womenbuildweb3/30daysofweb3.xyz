@@ -1,10 +1,15 @@
-# Upcoming Events ESPANOL
+---
+title: Upcoming Events ESPANOL
+description: Let users view upcoming events they created on your full-stack decentralized event platform.
+optional: false
+tweet: "Build a full-stack event platform dapp with #30DaysofWeb3 @womenbuildweb3 🎫"
+---
 
 You can find the upcoming events page in the `pages/my-events` folder and at http://localhost:3000/my-events/upcoming.
 
 At the top of the file we can import our helper utilities again.
 
-```
+```javascript
 import { useState } from "react";
 import { gql, useQuery } from "@apollo/client";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
@@ -16,7 +21,7 @@ For the upcoming events created by the user, we want to make sure we are only fe
 
 We can do this by combining these two conditions with the `where` keyword and the `_gt` modifier.
 
-```
+```javascript
 const MY_UPCOMING_EVENTS = gql`
   query Events($eventOwner: String, $currentTimestamp: String) {
     events(
@@ -33,12 +38,11 @@ const MY_UPCOMING_EVENTS = gql`
     }
   }
 `;
-
 ```
 
 Next we can set up our query result and connect wallet button just as we have done on other pages and map our results to show event cards.
 
-```
+```javascript
 export default function MyUpcomingEvents() {
   const { data: account } = useAccount();
 

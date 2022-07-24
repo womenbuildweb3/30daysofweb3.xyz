@@ -2,7 +2,7 @@
 title: Building on Ethereum
 description: Learn about client server architecture in web2 and open, composable backends in web3.
 optional: false
-tweet: "Understand composability in web3 with #30DaysofWeb3 @womenbuildweb3"
+tweet: "Understand composability in web3 with #30DaysofWeb3 @womenbuildweb3 🔗"
 ---
 
 ## Client Server Architecture

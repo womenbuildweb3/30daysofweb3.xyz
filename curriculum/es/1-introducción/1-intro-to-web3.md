@@ -1,20 +1,15 @@
 ---
-slug: introduction-to-web3
-title: Beginner's Guide to Web3
-type: "Lesson 1: "
-description: "Introduction to Web3"
-author: "cuddleofdeath"
-img: https://cuddleofdeath.hashnode.dev/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1651450696678%2FcnXy8_fi6.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=3840&q=75
-date: 01 May 2022
----
-
-![Beginner's Guide to Web3](https://cuddleofdeath.hashnode.dev/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1651450696678%2FcnXy8_fi6.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=3840&q=75)
-
+title: Intro to Web3
+description: Learn about the new and exciting iteration of the internet known as Web3.
+optional: true
+optionalMsg: If you're familiar with web3 fundamentals and already have your own crypto wallet, feel free to jump ahead to the next section!
+optionalNextPath: /es/curriculum/2-building-on-ethereum/0-client-server-architecture
+tweet: "Learn about web1, web2, and web3 with #30DaysofWeb3 @womenbuildweb3 🌐"
 ---
 
 Welcome to the beginning of your decentralized adventure! Allow me to guide you through the new and exciting iteration of the internet known as Web3. By the end of this article, you will have the answers to the questions you're currently thinking, like: _What the heck is web3? What does decentralization mean?_ And: _Are these all just buzzwords?_
 
-## The Internet Over The Years... ESPANOL
+## The Internet Over The Years...
 
 ![Fun fact: Although the Internet was invented in 1970, the official birthday for the internet is January 1st, 1983. This is due to networks not having a standard way to communicate with each other prior to this date!](https://cdn.hashnode.com/res/hashnode/image/upload/v1651452115724/ckNDBDMr_.png)
 

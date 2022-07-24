@@ -1,4 +1,9 @@
-# Calling your contract ESPANOL
+---
+title: Calling Your Contract ESPANOL
+description: Call your smart contract methods using Ethers.js.
+optional: false
+tweet: "Call smart contract methods using Ethers.js with #30DaysofWeb3 @womenbuildweb3 💥"
+---
 
 Open up `create-event.js` in the `pages` folder. You can see a preview of this page by going to http://localhost:3000/create-event. You should see a form with all of the input fields we need already set up.
 
@@ -10,7 +15,7 @@ We are using state variables to keep track of the form data. We'll organize them
 
 Add this inside of your handleSubmit function, just under `e.preventDefault()`:
 
-```
+```javascript
 const body = {
   name: eventName,
   description: eventDescription,
@@ -26,7 +31,7 @@ For the image, we'll import the following two items at the top of the `create-ev
 
 Your imports will look like this:
 
-```
+```javascript
 import getRandomImage from "../utils/getRandomImage";
 import { ethers } from "ethers";
 ```
@@ -35,42 +40,42 @@ You'll notice we aren't sending all of the event data here. This is because the 
 
 In our `handleSubmit` function, we can use a `try..catch` statement to send the body to our API endpoint /store-event-data. If we get a successful response, meaning we were able to store the data with Web3.Storage and got back a CID, we can pass this into a new function called `createEvent`. Here's what your function should look like:
 
-```
+```javascript
 async function handleSubmit(e) {
-    e.preventDefault();
+  e.preventDefault();
 
-    const body = {
-      name: eventName,
-      description: eventDescription,
-      link: eventLink,
-      image: getRandomImage(),
-    };
+  const body = {
+    name: eventName,
+    description: eventDescription,
+    link: eventLink,
+    image: getRandomImage(),
+  };
 
-    try {
-      const response = await fetch("/api/store-event-data", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(body),
-      });
-      if (response.status !== 200) {
-        alert("Oops! Something went wrong. Please refresh and try again.");
-      } else {
-        console.log("Form successfully submitted!");
-        let responseJSON = await response.json();
-        await createEvent(responseJSON.cid);
-      }
-      // check response, if success is false, dont take them to success page
-    } catch (error) {
-      alert(
-        `Oops! Something went wrong. Please refresh and try again. Error ${error}`
-      );
+  try {
+    const response = await fetch("/api/store-event-data", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(body),
+    });
+    if (response.status !== 200) {
+      alert("Oops! Something went wrong. Please refresh and try again.");
+    } else {
+      console.log("Form successfully submitted!");
+      let responseJSON = await response.json();
+      await createEvent(responseJSON.cid);
     }
+    // check response, if success is false, dont take them to success page
+  } catch (error) {
+    alert(
+      `Oops! Something went wrong. Please refresh and try again. Error ${error}`
+    );
   }
+}
 ```
 
 To connect our contract, we'll import the function we wrote earlier from the `utils` folder like so:
 
-```
+```javascript
 import connectContract from "../utils/connectContract";
 ```
 
@@ -82,39 +87,39 @@ We also need to generate a unix timestamp from the date and time inputs from our
 
 To actually call our contract, we can just call the method like this (**Note:** The below await function is simply an example):
 
-```
-await contract.methodName(parameters, {optionName: optionValue})
+```javascript
+await contract.methodName(parameters, { optionName: optionValue });
 ```
 
 After passing in the function parameters, we can also pass in an object where we can set the gas limit for the transaction.
 
 This will return a transaction object with more data about our transaction. To easily access this information like the transaction hash, we can store this into a variable called `txn`.
 
-```
+```javascript
 const createEvent = async (cid) => {
-    try {
-      const rsvpContract = connectContract();
+  try {
+    const rsvpContract = connectContract();
 
-      if (rsvpContract) {
-        let deposit = ethers.utils.parseEther(refund);
-        let eventDateAndTime = new Date(`${eventDate} ${eventTime}`);
-        let eventTimestamp = eventDateAndTime.getTime();
-        let eventDataCID = cid;
+    if (rsvpContract) {
+      let deposit = ethers.utils.parseEther(refund);
+      let eventDateAndTime = new Date(`${eventDate} ${eventTime}`);
+      let eventTimestamp = eventDateAndTime.getTime();
+      let eventDataCID = cid;
 
-        const txn = await rsvpContract.createNewEvent(
-          eventTimestamp,
-          deposit,
-          maxCapacity,
-          eventDataCID,
-          { gasLimit: 900000 }
-        );
-        console.log("Minting...", txn.hash);
-        console.log("Minted -- ", txn.hash);
-      } else {
-        console.log("Error getting contract.");
-      }
-    } catch (error) {
-        console.log(error)
+      const txn = await rsvpContract.createNewEvent(
+        eventTimestamp,
+        deposit,
+        maxCapacity,
+        eventDataCID,
+        { gasLimit: 900000 }
+      );
+      console.log("Minting...", txn.hash);
+      console.log("Minted -- ", txn.hash);
+    } else {
+      console.log("Error getting contract.");
     }
-  };
+  } catch (error) {
+    console.log(error);
+  }
+};
 ```

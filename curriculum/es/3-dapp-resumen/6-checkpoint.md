@@ -1,5 +1,5 @@
 ---
-title: "Checkpoint #3"
+title: "Checkpoint #3 ES"
 description: You've reached a checkpoint for 30 Days of Web3, the ultimate online curriculum on full-stsack blockchain development.
 optional: false
 ---

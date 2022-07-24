@@ -1,14 +1,19 @@
-# Asignaciones ({contract}.ts)
+---
+title: Asignaciones
+description: Write the code that translates data from your datasources to the entities defined in your schema.
+optional: false
+tweet: "Create and deploy a subgraph on @graphprotocol with #30DaysofWeb3 @womenbuildweb3 👾"
+---
 
-Puede encontrar el archivo de asignaciones en la carpeta `src`. Las asignaciones usan AssemblyScript, un lenguaje fuertemente tipado basado en Typescript, y actúan como los resolutores en su típico API de GraphQL. Son responsables de la lógica que ocurre entre un evento que se activa desde nuestro *smart contract* y la organización de esos datos en nuestro *schema*.
+Puede encontrar el archivo de asignaciones (src/{Name}.ts) en la carpeta `src`. Las asignaciones usan AssemblyScript, un lenguaje fuertemente tipado basado en Typescript, y actúan como los resolutores en su típico API de GraphQL. Son responsables de la lógica que ocurre entre un evento que se activa desde nuestro _smart contract_ y la organización de esos datos en nuestro _schema_.
 
 Este archivo ya tendrá un diseño básico generado para usted. Debería ver una función para cada controlador de eventos definido en nuestro manifiesto de subgraph. Cada función en nuestro mapeo debe exportarse y toma el evento que manejará como un argumento.
 
 Podemos ejecutar `graph codegen` en la terminal para generar tipos de AssemblyScript para nuestras entidades y eventos, y importarlos en la parte superior de nuestro archivo de asignaciones (asegúrese de estar en el directorio raíz de la carpeta de su proyecto y de haber guardado los cambios antes de ejecutar este comando). Con esto, también debería poder ver fácilmente todas las propiedades del objeto de evento en su editor de código.
 
-Si realiza otros cambios en el manifiesto de *schema* o *subgraph*, siempre puede ejecutar `graph codegen` nuevamente para generar nuevos tipos.
+Si realiza otros cambios en el manifiesto de _schema_ o _subgraph_, siempre puede ejecutar `graph codegen` nuevamente para generar nuevos tipos.
 
-Eliminaremos todo en la primera función y reemplazaremos el objeto 'Example Entity' importado en la parte superior con los tipos de entidad que acabamos de generar. Tampoco necesitaremos importar el tipo de contrato Web3RSVP en la segunda línea ya que no necesitaremos hacer ninguna llamada de contrato. También podemos eliminar el tipo BigInt importado en la primera línea y reemplazarlo con los tipos *Address*, *ipfs* y *json*.
+Eliminaremos todo en la primera función y reemplazaremos el objeto 'Example Entity' importado en la parte superior con los tipos de entidad que acabamos de generar. Tampoco necesitaremos importar el tipo de contrato Web3RSVP en la segunda línea ya que no necesitaremos hacer ninguna llamada de contrato. También podemos eliminar el tipo BigInt importado en la primera línea y reemplazarlo con los tipos _Address_, _ipfs_ y _json_.
 
 El archivo de asignaciones ahora debería verse así:
 
@@ -65,9 +70,9 @@ if (newEvent == null) {
 }
 ```
 
-Este es un patrón estándar que seguiremos para cada una de nuestras funciones de mapeo. Primero verificaremos si podemos cargar nuestra entidad con una identificación única y crear una nueva instancia solo si ese resultado es *null*.
+Este es un patrón estándar que seguiremos para cada una de nuestras funciones de mapeo. Primero verificaremos si podemos cargar nuestra entidad con una identificación única y crear una nueva instancia solo si ese resultado es _null_.
 
-Lo último que debemos hacer aquí es establecer los valores para cada campo de nuestro *schema*. Podemos acceder a la mayoría de estos datos en el objeto event.params. Para el campo `paidOut`, podemos configurarlo como falso.
+Lo último que debemos hacer aquí es establecer los valores para cada campo de nuestro _schema_. Podemos acceder a la mayoría de estos datos en el objeto event.params. Para el campo `paidOut`, podemos configurarlo como falso.
 
 ```
 let newEvent = Event.load(event.params.eventID.toHex());
@@ -80,12 +85,14 @@ newEvent.maxCapacity = event.params.maxCapacity;
 newEvent.deposit = event.params.deposit;
 newEvent.paidOut = false;
 ```
-Para los campos `totalRSVPs` y `totalConfirmedAttendees`, usaremos el protofire *subgraph* toolkit que agregamos anteriormente. En nuestra función `handleNewEventCreated`, queremos establecer los totales en 0 para comenzar, por lo que podemos usar `integer.ZERO` para establecer estos campos en 0.
+
+Para los campos `totalRSVPs` y `totalConfirmedAttendees`, usaremos el protofire _subgraph_ toolkit que agregamos anteriormente. En nuestra función `handleNewEventCreated`, queremos establecer los totales en 0 para comenzar, por lo que podemos usar `integer.ZERO` para establecer estos campos en 0.
 
 ```
 newEvent.totalRSVPs = integer.ZERO;
 newEvent.totalConfirmedAttendees = integer.ZERO;
 ```
+
 Para los campos `name`, `description`, `link` e `imagePath`, utilizaremos `eventCID` para acceder a los datos almacenados con ipfs (web3.storage). Podemos usar el CID y el nombre del archivo de detalles del evento, `data.json`, para extraer estos datos.
 
 ```
@@ -158,12 +165,12 @@ export function handleNewEventCreated(event: NewEventCreated): void {
         if(description){
           newEvent.description = description.toString()
          }
-        
+
         if(link){
           newEvent.link = link.toString()
          }
       }
-      
+
     }
 
     newEvent.save();
@@ -199,6 +206,7 @@ export function handleNewRSVP(event: NewRSVP): void {
   }
 }
 ```
+
 Nuestra función `handleConfirmedAttendee` seguirá el mismo patrón:
 
 ```
