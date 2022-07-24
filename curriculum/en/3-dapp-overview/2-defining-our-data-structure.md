@@ -1,6 +1,6 @@
 ---
 title: Defining Our Data Structure
-description: Defining Our Data Structure
+description: Define structs in Solidity to represent events in your full-stack decentralized event platform.
 optional: false
 ---
 
@@ -11,15 +11,15 @@ Let’s start by defining our smart contract and the information that we want to
 ```solidity
 contract Web3RSVP {
     struct CreateEvent {
-       bytes32 eventId;
-       string eventDataCID;
-       address eventOwner;
-       uint256 eventTimestamp;
-       uint256 deposit;
-       uint256 maxCapacity;
-       address[] confirmedRSVPs;
-       address[] claimedRSVPs;
-       bool paidOut;
+        bytes32 eventId;
+        string eventDataCID;
+        address eventOwner;
+        uint256 eventTimestamp;
+        uint256 deposit;
+        uint256 maxCapacity;
+        address[] confirmedRSVPs;
+        address[] claimedRSVPs;
+        bool paidOut;
    }
 }
 ```
