@@ -55,13 +55,21 @@ const faqsEN = [
     answer:
       "We'll be awarding on-chain, proof of knowledge tokens and will need your email and wallet address to notify you of and send you tokens.",
   },
+  {
+    id: 10,
+    question:
+      "After registering through your form, how do I know I'll be part of the learning cohort?",
+    answer:
+      "We'll send out an email confirming your access to our first ever learning cohort in our Discord server.",
+  },
   // More items...
 ];
 
 const faqsES = [
   {
     id: 1,
-    question: "¿Cuál es el compromiso de tiempo para desarrollar este plan de estudios?",
+    question:
+      "¿Cuál es el compromiso de tiempo para desarrollar este plan de estudios?",
     answer:
       "Este curso es completamente en línea y asíncrono. Usted podrá participar a cualquier ritmo y con cualquier dedicación horaria, pero fue diseñado para no tomar más de 45 minutos por día.",
   },
@@ -86,7 +94,8 @@ const faqsES = [
   {
     id: 2,
     question: "¿Cómo puedo obtener ayuda si me estanco?",
-    answer: "Nuestro equipo estará disponible para responder preguntas a través de Discord.",
+    answer:
+      "Nuestro equipo estará disponible para responder preguntas a través de Discord.",
   },
   {
     id: 3,
@@ -108,7 +117,8 @@ const faqsES = [
   },
   {
     id: 8,
-    question: "¿Por qué debo compartir mi correo electrónico y la dirección de mi billetera?",
+    question:
+      "¿Por qué debo compartir mi correo electrónico y la dirección de mi billetera?",
     answer:
       "Vamos a dar tokens de proof of knowledge sobre la cadena y necesitaremos su correo y dirección de billetera para notificarle al respecto y enviarle sus tokens.",
   },
@@ -118,8 +128,8 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function FAQSection({locale}) {
-  const faqs = locale === "en" ? faqsEN : faqsES
+export default function FAQSection({ locale }) {
+  const faqs = locale === "en" ? faqsEN : faqsES;
 
   return (
     <div id="faqs" className="py-12 sm:py-16 sm:px-6 lg:px-8">

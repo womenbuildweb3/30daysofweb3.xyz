@@ -31,6 +31,11 @@ const sponsors = [
     imageUrl: "/images/sponsors/radicle.svg",
     url: "https://radicle.xyz/",
   },
+  {
+    name: "Vercel",
+    imageUrl: "/images/sponsors/vercel.svg",
+    url: "https://vercel.com/",
+  },
 ];
 
 export default function Sponsors() {
