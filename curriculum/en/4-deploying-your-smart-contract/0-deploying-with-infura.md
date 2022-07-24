@@ -5,6 +5,8 @@ optional: false
 tweet: "Learn how @infura_io supports dapps built on Ethereum with #30DaysofWeb3 @womenbuildweb3 💪"
 ---
 
+![Deploying With Infura](https://user-images.githubusercontent.com/15064710/180662065-a61d5bcb-a3fb-4b31-9b9a-37d1754095cf.png)
+
 ## What is Infura?
 
 [**Infura**](https://infura.io/) is a company that provides web3 infrastructure tools that allow developers to develop on a blockchain. Infura provides the nodes that are the entry point to the blockchain and allow you to execute transactions. Without a node provider like Infura, a developer would have to run their own node to communicate with the blockchain, which can be expensive, difficult, and time consuming.
