@@ -5,6 +5,8 @@ optional: false
 tweet: "Write a simple smart contract in Solidity on @EthereumRemix with #30DaysofWeb3 @womenbuildweb3 🔗"
 ---
 
+![Intro to Solidity](https://user-images.githubusercontent.com/15064710/180662387-02cf75b9-daf4-4a2d-ab07-0cf781453ce2.png)
+
 ## Writing a Smart Contract
 
 To get started with smart contract development, you have to be well-versed with what makes up an object oriented programming language (OOP). The language used in this tutorial is **Solidity** (_the language used to build Ethereum smart contracts_) and deploy on multiple chains such as Binance Smart chain, Polygon or Avalanche.
