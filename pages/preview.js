@@ -68,7 +68,7 @@ export default function Preview() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="space-y-4">
-                <span className="font-bold">Dapp Overview</span>
+                <span className="font-bold">Writing Your Smart Contract</span>
                 <ul className="list-disc space-y-4 pl-8">
                   <li>Defining Our Data Structure</li>
                   <li>Defining Functions</li>
