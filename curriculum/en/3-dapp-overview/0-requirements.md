@@ -5,6 +5,8 @@ optional: false
 tweet: "Ship a full-stack event platform dapp with #30DaysofWeb3 @womenbuildweb3 🎫"
 ---
 
+![Dapp Overview](https://user-images.githubusercontent.com/15064710/180662009-26c933fc-6e3d-4f79-8fe2-c6346ced8e3c.png)
+
 ## Define Goal & Requirements
 
 During these 30 days, we’ll be working to create a full-stack RSVP dapp. Think of it as a web3-native eventbrite, except attendees need to deposit ETH to RSVP and will get it back upon them checking in at the event.
