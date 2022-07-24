@@ -7,6 +7,8 @@ optionalNextPath: /en/curriculum/2-building-on-ethereum/0-client-server-architec
 tweet: "Learn about blockchains and transactions with #30DaysofWeb3 @womenbuildweb3 🌐"
 ---
 
+![Intro to Blockchain](https://user-images.githubusercontent.com/15064710/180661895-aa374dae-299a-46f0-a3d6-de8f7796936c.png)
+
 ## What is blockchain?
 
 The **blockchain** is an expanding system that records information in a manner that makes it hard or almost impossible to hack the system. Information gets recorded in blocks, which are like little lists of records.
