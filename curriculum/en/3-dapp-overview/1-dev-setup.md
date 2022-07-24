@@ -5,6 +5,8 @@ optional: false
 tweet: "Ship a full-stack event platform dapp with #30DaysofWeb3 @womenbuildweb3 🎫"
 ---
 
+![Dev Setup](https://user-images.githubusercontent.com/15064710/180662024-6fa3c838-c8c4-4586-8d84-33ad0aa4a9f1.png)
+
 ## IDE (Integrated Developer Environment)
 
 Although any IDE will work, we recommend the use of **VSCode**, a free IDE which you can download [here.](https://code.visualstudio.com/download)
