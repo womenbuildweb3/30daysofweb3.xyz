@@ -55,7 +55,7 @@ Elimine todo en este archivo excepto las dos primeras líneas, más el comentari
 
 Este es el aspecto que debería tener su archivo:
 
-```
+```javascript
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.4;
 ```

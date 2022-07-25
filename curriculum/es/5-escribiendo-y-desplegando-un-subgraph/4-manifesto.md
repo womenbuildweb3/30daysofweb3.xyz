@@ -9,7 +9,7 @@ El manifiesto del _subgraph_ (subgraph.yaml) es donde puede definir la configura
 
 Justo encima de `dataSources`, necesitaremos agregar una sección de `features` donde podamos agregar `ipfsOnEthereumContracts`.
 
-```
+```javascript
 features:
   - ipfsOnEthereumContracts
 ```
@@ -20,7 +20,7 @@ Puede encontrar el bloque de inicio en etherscan. Copie el número de bloque par
 
 La parte superior de nuestras `dataSources` ahora debería verse así:
 
-```
+```javascript
 dataSources:
   - kind: ethereum
     name: Web3RSVP
@@ -33,7 +33,7 @@ dataSources:
 
 También queremos actualizar nuestros nombres de `Entity`. Puede eliminar el generador entidades aquí y reemplácelas con las de abajo. Crearemos cuatro entidades: `Event`, `Account`, `RSVP`, and `Confirmation`.
 
-```
+```javascript
     entities:
         - Event
         - Account

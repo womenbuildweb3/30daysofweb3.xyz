@@ -17,7 +17,7 @@ Eliminaremos todo en la primera función y reemplazaremos el objeto 'Example Ent
 
 El archivo de asignaciones ahora debería verse así:
 
-```
+```javascript
 import { Address, ipfs, json } from "@graphprotocol/graph-ts";
 import {
   ConfirmedAttendee,
@@ -41,7 +41,7 @@ Podemos comenzar con la función `handleNewEventCreated`. Podemos crear una nuev
 
 Así es como se ven nuestros eventos en nuestro contrato:
 
-```
+```javascript
 event NewEventCreated(
 bytes32 eventID,
       address creatorAddress,
@@ -62,7 +62,7 @@ Debido a que ya tenemos un `eventID` del evento `NewEventCreated`, podemos usarl
 
 Debido a que el `eventID` emitido por nuestro contrato es del tipo `Bytes32`, podemos usar el método integrado `toHex()` para convertir el id en una cadena hexadecimal que representa los bytes en la matriz.
 
-```
+```javascript
 let newEvent = Event.load(event.params.eventID.toHex());
 if (newEvent == null) {
   newEvent = new Event(event.params.eventID.toHex());
@@ -74,7 +74,7 @@ Este es un patrón estándar que seguiremos para cada una de nuestras funciones 
 
 Lo último que debemos hacer aquí es establecer los valores para cada campo de nuestro _schema_. Podemos acceder a la mayoría de estos datos en el objeto event.params. Para el campo `paidOut`, podemos configurarlo como falso.
 
-```
+```javascript
 let newEvent = Event.load(event.params.eventID.toHex());
 if (newEvent == null) {
 newEvent = new Event(event.params.eventID.toHex());
@@ -88,14 +88,14 @@ newEvent.paidOut = false;
 
 Para los campos `totalRSVPs` y `totalConfirmedAttendees`, usaremos el protofire _subgraph_ toolkit que agregamos anteriormente. En nuestra función `handleNewEventCreated`, queremos establecer los totales en 0 para comenzar, por lo que podemos usar `integer.ZERO` para establecer estos campos en 0.
 
-```
+```javascript
 newEvent.totalRSVPs = integer.ZERO;
 newEvent.totalConfirmedAttendees = integer.ZERO;
 ```
 
 Para los campos `name`, `description`, `link` e `imagePath`, utilizaremos `eventCID` para acceder a los datos almacenados con ipfs (web3.storage). Podemos usar el CID y el nombre del archivo de detalles del evento, `data.json`, para extraer estos datos.
 
-```
+```javascript
 let metadata = ipfs.cat(event.params.eventDataCID + "/data.json");
 
 if (metadata) {
@@ -135,7 +135,7 @@ if (metadata) {
 
 Nuestra función `handleNewEventCreated` ahora debería verse así:
 
-```
+```javascript
 export function handleNewEventCreated(event: NewEventCreated): void {
   let newEvent = Event.load(event.params.eventID.toHex());
   if (newEvent == null) {
@@ -180,7 +180,7 @@ export function handleNewEventCreated(event: NewEventCreated): void {
 
 Para nuestra función `handleNewRSVP`, crearemos una nueva entidad RSVP y una nueva entidad de cuenta (asumiendo que es un nuevo usuario). Para mantener nuestras funciones simples, podemos dividir esto en dos funciones.
 
-```
+```javascript
 function getOrCreateAccount(address: Address): Account {
   let account = Account.load(address.toHex());
   if (account == null) {
@@ -209,7 +209,7 @@ export function handleNewRSVP(event: NewRSVP): void {
 
 Nuestra función `handleConfirmedAttendee` seguirá el mismo patrón:
 
-```
+```javascript
 export function handleConfirmedAttendee(event: ConfirmedAttendee): void {
   let id = event.params.eventID.toHex() + event.params.attendeeAddress.toHex();
   let newConfirmation = Confirmation.load(id);
@@ -232,7 +232,7 @@ export function handleConfirmedAttendee(event: ConfirmedAttendee): void {
 
 Para nuestra función `handleDepositsPaidOut`, todo lo que tenemos que hacer es cambiar el campo de pago del evento coincidente de falso a verdadero:
 
-```
+```javascript
 export function handleDepositsPaidOut(event: DepositsPaidOut): void {
   let thisEvent = Event.load(event.params.eventID.toHex());
   if (thisEvent) {

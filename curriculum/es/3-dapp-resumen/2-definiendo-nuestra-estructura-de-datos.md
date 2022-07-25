@@ -9,7 +9,7 @@ tweet: "Write a smart contract in Solidity for a full-stack dapp with #30DaysofW
 
 Comencemos definiendo nuestro _smart contract_ y la información que queremos almacenar _on-chain_: la creación de un nuevo evento por parte de un organizador de eventos y los detalles asociados con ese evento. Guardaremos esto en una estructura. Como un repaso, una estructura es similar a un objeto JS en el sentido de que almacena información relacionada sobre una entidad. En nuestro caso, estamos almacenando información relacionada con la creación de un nuevo evento en nuestro contrato RSVP.
 
-```
+```solidity
 contract Web3RSVP {
 struct CreateEvent {
        bytes32 eventId;

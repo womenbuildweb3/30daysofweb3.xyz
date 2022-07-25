@@ -2,8 +2,8 @@
 title: Introducción a Blockchain
 description: Learn about what blockchain technology is and how transactions are executed on the blockchain.
 optional: true
-optionalMsg: If you're familiar with web3 fundamentals and already have your own crypto wallet, feel free to jump ahead to the next section!
-optionalNextPath: /es/curriculum/2-building-on-ethereum/0-client-server-architecture
+optionalMsg: Opcional
+optionalNextPath: /es/curriculum/2-construyendo-sobre-ethereum/0-arquitectura-cliente-servidor
 tweet: "Learn about blockchains and transactions with #30DaysofWeb3 @womenbuildweb3 🌐"
 ---
 

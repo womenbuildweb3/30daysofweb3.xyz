@@ -1,11 +1,13 @@
 ---
-title: Updating the Homepage ESPANOL
+title: Actualización de la página de inicio
 description: Let users discover events on the homepage of your full-stack decentralized event platform.
 optional: false
-tweet: "Build a full-stack event platform dapp with #30DaysofWeb3 @womenbuildweb3 🎫"
+tweet: "#30DaysofWeb3 @womenbuildweb3 🎫"
 ---
 
-In our `index.js` file, we want to be able to show all of the upcoming events people can RSVP to. At the top of the file we can import `gql` and `useQuery` from apollo client. We will also need to import `useState` and our `EventCard` component.
+# Actualización de la página de inicio
+
+En nuestro archivo `index.js`, queremos poder mostrar todos los próximos eventos en los que la gente puede confirmar su asistencia. En la parte superior del archivo podemos importar `gql` y `useQuery` desde el cliente apollo. También necesitaremos importar `useState` y nuestro componente `EventCard`.
 
 ```javascript
 import { useState } from "react";
@@ -13,24 +15,24 @@ import { gql, useQuery } from "@apollo/client";
 import EventCard from "../components/EventCard";
 ```
 
-We can define our query above our `Home` function like this:
+Podemos definir nuestra consulta sobre la función `Inicio` de la siguiente manera:
 
 ```javascript
 const UPCOMING_EVENTS = gql`
-  query Events($currentTimestamp: String) {
-    events(where: { eventTimestamp_gt: $currentTimestamp }) {
-      id
-      name
-      eventTimestamp
-      imageURL
-    }
-  }
-`;
+ query Events($currentTimestamp: String) {
+   events(where: { eventTimestamp_gt: $currentTimestamp }) {
+     id
+     name
+     eventTimestamp
+     imageURL
+   }
+ }
+`; 
 ```
 
-This query will return the id, name, eventTimestamp, and imageURL for every event that hasn't already happened yet.
+Esta consulta retornará el ID, el nombre, la marca de tiempo del evento y la URL de la imagen para cada evento que aún no ha ocurrido.
 
-Now in our `Home` function, we can fetch the current timestamp and load the query with the apollo client. Once we get the list of events, we can map over them to render a list of event cards.
+Ahora, en nuestra función `Inicio`, podemos obtener la marca de tiempo actual y cargar la consulta con el cliente apollo. Una vez obtengamos la lista de eventos, podemos mapearlos para generar una lista de tarjetas de eventos.
 
 ```javascript
 export default function Home() {
@@ -77,4 +79,4 @@ export default function Home() {
 }
 ```
 
-Now on the homepage we should be able to see a list of the events we created!
+¡Ahora en la página de inicio debemos poder ver una lista de los eventos que hemos creado!

@@ -1,11 +1,13 @@
 ---
-title: Past RSVPs ESPANOL
+title: Confirmaciones de asistencia previos
 description: Let users view past events they RSVP'ed to on your full-stack decentralized event platform.
 optional: false
-tweet: "Build a full-stack event platform dapp with #30DaysofWeb3 @womenbuildweb3 🎫"
+tweet: "#30DaysofWeb3 @womenbuildweb3 🎫"
 ---
 
-We can set up the `past.js` file in the `pages/my-rsvps` folder almost the same as we did for the upcoming RSVPs. First we need to import our helper utilities.
+# Confirmaciones de asistencia previos
+
+Podemos configurar el archivo `past.js` en la carpeta `pages/my-rsvps` casi igual a como lo hicimos para las confirmaciones de asistencia futuras. Primero, necesitaremos importar las utilidades de ayuda.
 
 ```javascript
 import { useState } from "react";
@@ -15,7 +17,7 @@ import { useAccount } from "wagmi";
 import EventCard from "../../components/EventCard";
 ```
 
-Next we can define our query to grab all of the user's RSVPs.
+A continuación, podemos definir nuestra consulta para obtener todas las confirmaciones de asistencia del usuario.
 
 ```javascript
 const MY_PAST_RSVPS = gql`
@@ -35,7 +37,7 @@ const MY_PAST_RSVPS = gql`
 `;
 ```
 
-Now we can set up the `MyPastRSVPs` function just as we did for the upcoming RSVPs, but here we will only show past events by checking if the `eventTimestamp` is less than the `currentTimestamp`.
+Ahora podemos configurar la función `MyPastRSVPs` tal como lo hicimos para las confirmaciones futuras, pero aquí solo mostraremos eventos pasados verificando si `eventTimestamp` es menor que `currentTimestamp`.
 
 ```javascript
 export default function MyPastRSVPs() {

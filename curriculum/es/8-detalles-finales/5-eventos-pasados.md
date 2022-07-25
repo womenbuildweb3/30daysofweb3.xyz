@@ -1,31 +1,32 @@
 ---
-title: Upcoming Events ESPANOL
-description: Let users view upcoming events they created on your full-stack decentralized event platform.
+title: Eventos pasados
+description: Let users view past events they created on your full-stack decentralized event platform.
 optional: false
-tweet: "Build a full-stack event platform dapp with #30DaysofWeb3 @womenbuildweb3 🎫"
+tweet: "#30DaysofWeb3 @womenbuildweb3 🎫"
 ---
 
-You can find the upcoming events page in the `pages/my-events` folder and at http://localhost:3000/my-events/upcoming.
+# Eventos pasados
 
-At the top of the file we can import our helper utilities again.
+En la carpeta `pages/my-events/past`, abre el archivo `index.js`.
+
+En la parte superior del archivo, podemos importar nuevamente las utilidades de ayuda.
 
 ```javascript
 import { useState } from "react";
+import Link from "next/link";
 import { gql, useQuery } from "@apollo/client";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { useAccount } from "wagmi";
-import EventCard from "../../components/EventCard";
+import EventCard from "../../../components/EventCard";
 ```
 
-For the upcoming events created by the user, we want to make sure we are only fetching future events where the `eventOwner` is equal to the wallet address of the user.
-
-We can do this by combining these two conditions with the `where` keyword and the `_gt` modifier.
+Definiremos nuestra consulta casi igual que como para los eventos futuros, pero en lugar del modificador `_gt` usaremos el modificador `_lt` para recuperar eventos anteriores.
 
 ```javascript
-const MY_UPCOMING_EVENTS = gql`
+const MY_PAST_EVENTS = gql`
   query Events($eventOwner: String, $currentTimestamp: String) {
     events(
-      where: { eventOwner: $eventOwner, eventTimestamp_gt: $currentTimestamp }
+      where: { eventOwner: $eventOwner, eventTimestamp_lt: $currentTimestamp }
     ) {
       id
       eventID
@@ -40,38 +41,38 @@ const MY_UPCOMING_EVENTS = gql`
 `;
 ```
 
-Next we can set up our query result and connect wallet button just as we have done on other pages and map our results to show event cards.
+Ahora podemos mostrar todos los eventos pasados ​​creados por el usuario y un enlace con el que el usuario puede confirmar los asistentes.
 
 ```javascript
-export default function MyUpcomingEvents() {
+export default function MyPastEvents() {
   const { data: account } = useAccount();
 
   const eventOwner = account ? account.address.toLowerCase() : "";
   const [currentTimestamp, setEventTimestamp] = useState(
     new Date().getTime().toString()
   );
-  const { loading, error, data } = useQuery(MY_UPCOMING_EVENTS, {
+  const { loading, error, data } = useQuery(MY_PAST_EVENTS, {
     variables: { eventOwner, currentTimestamp },
   });
 
   if (loading)
     return (
-      <Dashboard page="events" isUpcoming={true}>
+      <Dashboard page="events" isUpcoming={false}>
         <p>Loading...</p>
       </Dashboard>
     );
   if (error)
     return (
-      <Dashboard page="events" isUpcoming={true}>
+      <Dashboard page="events" isUpcoming={false}>
         <p>`Error! ${error.message}`</p>
       </Dashboard>
     );
 
   return (
-    <Dashboard page="events" isUpcoming={true}>
+    <Dashboard page="events" isUpcoming={false}>
       {account ? (
         <div>
-          {data && data.events.length == 0 && <p>No upcoming events found</p>}
+          {data && data.events.length == 0 && <p>No past events found</p>}
           {data && data.events.length > 0 && (
             <ul
               role="list"
@@ -85,6 +86,11 @@ export default function MyUpcomingEvents() {
                     eventTimestamp={event.eventTimestamp}
                     imageURL={event.imageURL}
                   />
+                  <Link href={`/my-events/past/${event.id}`}>
+                    <a className="text-indigo-800 text-sm truncate hover:underline">
+                      Confirm attendees
+                    </a>
+                  </Link>
                 </li>
               ))}
             </ul>
