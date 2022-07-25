@@ -5,7 +5,7 @@ optional: false
 tweet: "Build a full-stack event platform dapp with #30DaysofWeb3 @womenbuildweb3 🎫"
 ---
 
-![homepage](https://user-images.githubusercontent.com/15064710/180718113-4b7aa7f3-038e-433a-a236-be5dd92bc032.png)
+![homepage](https://user-images.githubusercontent.com/15064710/180721153-b0fadae7-f0ad-4d65-abac-385064ac1079.png)
 
 In our `index.js` file, we want to be able to show all of the upcoming events people can RSVP to. At the top of the file we can import `gql` and `useQuery` from apollo client. We will also need to import `useState` and our `EventCard` component.
 
