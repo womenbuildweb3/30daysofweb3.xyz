@@ -5,7 +5,6 @@ optional: false
 tweet: "#30DaysofWeb3 @womenbuildweb3 🌈"
 ---
 
-# Introducción a Ethers.js
 
 **Ethers.js** *es una librería de JavaScript que permite a los developers interactuar fácilmente con el blockchain de Ethereum y su ecosistema*.
 

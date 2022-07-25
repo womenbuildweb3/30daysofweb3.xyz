@@ -5,8 +5,6 @@ optional: false
 tweet: "#30DaysofWeb3 @womenbuildweb3 🎫"
 ---
 
-# Próximos Eventos
-
 Puede encontrar la página de próximos eventos en la carpeta `pages/my-events` y en http://localhost:3000/my-events/upcoming
 
 En la parte superior del archivo, podemos importar nuevamente nuestras utilidades de ayuda.

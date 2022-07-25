@@ -5,7 +5,6 @@ optional: false
 tweet: "#30DaysofWeb3 @womenbuildweb3 🗂"
 ---
 
-# Creando un Evento
 
 En esta sección, crearemos un formulario que permitirá a nuestros usuarios crear un nuevo evento con nuestro *contract*.
 

@@ -5,7 +5,6 @@ optional: false
 tweet: "Query a subgraph for a full-stack dapp with #30DaysofWeb3 @womenbuildweb3 ⛓"
 ---
 
-# Consultando un subgraph desde nuestra aplicación
 
 Para consultar fácilmente nuestro subgraph desde nuestra aplicación frontend, usaremos el cliente Apollo GraphQL.
 

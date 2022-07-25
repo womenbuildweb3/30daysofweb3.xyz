@@ -5,7 +5,6 @@ optional: false
 tweet: "#30DaysofWeb3 @womenbuildweb3 ⛓"
 ---
 
-# Introducción a la consulta con el Graph
 
 Ahora que hemos creado un evento, debemos poder recuperar la información del evento para mostrarla en la página de detalles del mismo. También necesitamos saber el monto del depósito del evento antes de poder crear un RSVP.
 

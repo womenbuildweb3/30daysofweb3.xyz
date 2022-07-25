@@ -5,7 +5,6 @@ optional: false
 tweet: "#30DaysofWeb3 @womenbuildweb3 🎫"
 ---
 
-# Confirmar asistentes
 
 La última página que necsitamos hacer es aquella en la que los usuarios pueden confirmar los asistentes a sus eventos. Este archivo se llama `[id].js` y se encuentra en la carpeta `pages/my-events/past` 
 

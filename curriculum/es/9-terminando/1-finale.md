@@ -5,8 +5,6 @@ optional: false
 tweet: "Shipped a full-stack event platform dapp with #30DaysofWeb3 @womenbuildweb3! 🎉"
 ---
 
-# 🎉¡Lo lograste! 
-
 La importancia de Web3 no se alcanza a enfatizar lo suficiente. Garantizar la seguridad de la información, de los tokens no fungibles (NFTs), las regalías de los artistas, de los bienes raíces y procesos de votación son áreas comprobadas en las que Web3 ha sido capaz de transformar cómo la gente se puede organizar en un mundo descentralizado.
 
 En este curso aprendiste sobre algunos de los protocolos de Web3 más innovadores que te darán las herramientas como desarrollador para crear el próximo protocolo transformacional. 

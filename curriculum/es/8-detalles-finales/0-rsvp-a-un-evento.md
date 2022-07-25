@@ -5,8 +5,6 @@ optional: false
 tweet: "#30DaysofWeb3 @womenbuildweb3 🎫"
 ---
 
-# Confirmar asistencia/RSVP a un evento
-
 Queremos que los usuarios también puedan confirmar su asistencia a un evento en la página de detalles del evento.
 
 En el mismo archivo `pages/events/[id].js`, importe nuestras funciones de contrato y billetera en la parte superior:

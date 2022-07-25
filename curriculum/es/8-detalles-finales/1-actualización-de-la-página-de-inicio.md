@@ -5,8 +5,6 @@ optional: false
 tweet: "#30DaysofWeb3 @womenbuildweb3 🎫"
 ---
 
-# Actualización de la página de inicio
-
 En nuestro archivo `index.js`, queremos poder mostrar todos los próximos eventos en los que la gente puede confirmar su asistencia. En la parte superior del archivo podemos importar `gql` y `useQuery` desde el cliente apollo. También necesitaremos importar `useState` y nuestro componente `EventCard`.
 
 ```javascript

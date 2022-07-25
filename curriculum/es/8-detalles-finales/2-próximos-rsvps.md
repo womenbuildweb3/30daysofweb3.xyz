@@ -5,8 +5,6 @@ optional: false
 tweet: "#30DaysofWeb3 @womenbuildweb3 🎫"
 ---
 
-# Próximos RSVP
-
 En la carpeta `pages/my-rsvps`, tenemos dos páginas en las que queremos mostrar los eventos pasados y próximos del usuario a los que confirmaron su asistencia.
 
 Puede abrir esta página en http://localhost:3000/my-rsvps/upcoming, o puede navegar allí desde la página de inicio conectando su billetera y haciendo clic en la dirección de su billetera en la esquina superior derecha para abrir un menú desplegable.

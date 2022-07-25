@@ -5,8 +5,6 @@ optional: false
 tweet: "Query a subgraph for a full-stack dapp with #30DaysofWeb3 @womenbuildweb3 ⛓"
 ---
 
-# Mostrando los detalles del evento
-
 En la sección `Head`, podemos cambiar "name" en la etiqueta `<title>` y en el contenido `meta` a `{event.name}`
 
 ```javascript

@@ -5,7 +5,6 @@ optional: false
 tweet: "#30DaysofWeb3 @womenbuildweb3 🎫"
 ---
 
-# Eventos pasados
 
 En la carpeta `pages/my-events/past`, abre el archivo `index.js`.
 

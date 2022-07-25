@@ -5,7 +5,6 @@ optional: false
 tweet: "#30DaysofWeb3 @womenbuildweb3 🎫"
 ---
 
-# Confirmaciones de asistencia previos
 
 Podemos configurar el archivo `past.js` en la carpeta `pages/my-rsvps` casi igual a como lo hicimos para las confirmaciones de asistencia futuras. Primero, necesitaremos importar las utilidades de ayuda.
 

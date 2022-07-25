@@ -7,8 +7,6 @@ optionalNextPath: /es/curriculum/9-terminando/1-finale
 tweet: "Host code for a full-stack dapp on @radicle with #30DaysofWeb3 @womenbuildweb3 💻"
 ---
 
-# Alojando su código con Radicle
-
 Ahora que hemos terminado nuestra aplicación, podemos cargar nuestro código en Radicle para mantenerlo seguro. Radicle es una red peer-to-peer para almacenar repositorios git diseñados para estar libres de censura. Puede usar Radicle de manera gratuita de manera similar a como usaría GitHub o cualquier otro sitio de alojamiento de repositorio basado en git.
 
 El principal beneficio de usar Radicle es que es un protocolo descentralizado en lugar de una plataforma centralizada. Esto significa que no puede haber un único punto de falla que resulte en la pérdida o censura de su contenido.

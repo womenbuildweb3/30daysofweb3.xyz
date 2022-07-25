@@ -5,7 +5,6 @@ optional: false
 tweet: "Use @Web3Storage in a full-stack dapp with #30DaysofWeb3 @womenbuildweb3 🗂"
 ---
 
-# Web3.storage
 
 ## ¿Qué es Web3.storage?
 

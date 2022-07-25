@@ -5,7 +5,6 @@ optional: false
 tweet: "#30DaysofWeb3 @womenbuildweb3 🌈"
 ---
 
-# Conexión a Nuestro Contrato
 
 Ya que queremos conectarnos a nuestro contrato en varias páginas diferentes, agregaremos el código para que el frontend de nuestra aplicación se comunique con nuestro *smart contract* en el folder llamado `utils`.
 

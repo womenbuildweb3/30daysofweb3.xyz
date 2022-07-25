@@ -5,8 +5,6 @@ optional: false
 tweet: "Query a subgraph for a full-stack dapp with #30DaysofWeb3 @womenbuildweb3 ⛓"
 ---
 
-# Obtener los detalles del evento
-
 Abra el archivo `pages/events/[id].js`, que utiliza el enrutamiento dinámico con Next.js para crear una nueva página para cada evento minteado/acuñado en función del eventID. Aquí es donde podemos mostrar los detalles de un evento particular y los usuarios pueden completar su RSVP.
 
 Primero, necesitaremos importar `gql` al cliente apollo en la parte superior de la página.

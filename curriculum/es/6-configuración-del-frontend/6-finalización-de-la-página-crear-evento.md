@@ -5,7 +5,6 @@ optional: false
 tweet: "#30DaysofWeb3 @womenbuildweb3 💥"
 ---
 
-# Finalización de la página Crear evento
 En la parte superior de la página `create-event`, importe el `connectButton` de rainbowkit, `useAccount` de wagmi y el componente `Alert`.
 
 ```javascript
