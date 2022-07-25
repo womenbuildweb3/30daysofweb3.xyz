@@ -97,8 +97,16 @@ export default function About() {
             of individuals. Together, we are building a more diverse, inclusive,
             and equitable web3.
           </p>
-          <Sponsors />
+          <div>
+            <h3 className="text-center text-2xl leading-8 font-extrabold tracking-tight text-slate-900 sm:text-3xl mb-8 sm:mb-12">
+              Our Sponsors
+            </h3>
+            <Sponsors />
+          </div>
           <div className="mt-8 sm:mt-12">
+            <h3 className="text-center text-2xl leading-8 font-extrabold tracking-tight text-slate-900 sm:text-3xl mb-8 sm:mb-12">
+              Partner Communities
+            </h3>
             <Partners />
           </div>
           <p className="mt-8 sm:mt-12 text-center mx-auto max-w-2xl text-xl text-slate-700">

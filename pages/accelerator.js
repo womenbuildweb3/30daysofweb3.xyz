@@ -6,8 +6,8 @@ import Layout from "../components/Layout";
 import Sponsors from "../components/Sponsors";
 import Partners from "../components/Partners";
 
-export default function About() {
-  const metaTitle = "About us | 30 Days of Web3";
+export default function Accelerator() {
+  const metaTitle = "Accelerator | 30 Days of Web3";
   const metaDescription =
     "Women Build Web3 provides education, oppportunities, and funding to a new wave of web3 builders";
   const metaUrl = "https://www.30daysofweb3.xyz/";
@@ -39,7 +39,8 @@ export default function About() {
             <span className="sm:block text-royal-600">BUIDL Accelerator</span>
           </h1>
           <p className="mt-3 max-w-md mx-auto text-base text-slate-700 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-            Deploying $130K to indie projects led by women/nb engineering teams.
+            Deploying $130K to indie projects led by women and non-binary
+            engineering teams.
           </p>
           <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
             <div className="rounded-md shadow">
@@ -54,12 +55,18 @@ export default function About() {
         </div>
         <div className="mx-auto max-w-2xl text-xl text-slate-700">
           <p>
-            The Buidl Accelerator aims to support projects where 51% or more of the technical team are women/nb people. 
-            This no-strings-attached accelerator will provide funding starting at $5K, and up to $30K per team, distributed as 
-            they meet self-defined milestones. Our goal is to help teams get off the ground, and put money in their pockets for life&apos;s 
-            expenses, so they can focus on shipping. This 3-month accelerator is open to teams and projects that have not raised
-            significant VC funding. Projects can be new or existing. There are two ways to apply: 
-            <p className="py-4">1. Complete 30 Days of Web3 - Building Fullstack Dapps </p> 
+            The Buidl Accelerator aims to support projects where 51% or more of
+            the technical team are women and non-binary people. This
+            no-strings-attached accelerator will provide funding starting at
+            $5K, and up to $30K per team, distributed as they meet self-defined
+            milestones. Our goal is to help teams get off the ground, and put
+            money in their pockets for life&apos;s expenses, so they can focus
+            on shipping. This 3-month accelerator is open to teams and projects
+            that have not raised significant VC funding. Projects can be new or
+            existing. There are two ways to apply:
+            <p className="py-4">
+              1. Complete 30 Days of Web3 - Building Fullstack Dapps{" "}
+            </p>
             <p>2. Show us an open-source project your team has worked on.</p>
           </p>
         </div>
@@ -67,8 +74,11 @@ export default function About() {
           <h2 className="text-center text-3xl leading-8 font-extrabold tracking-tight text-slate-900 sm:text-4xl">
             Big thank you to our sponsors
           </h2>
-          <p className="mt-4 text-center mx-auto max-w-2xl text-xl text-slate-700 mb-8 sm:mb-12"> Our treasury is funded by work done by the DAO over the last few months. Staying true to our mission of supporting the most talented women and nb engineers in the space, 
-            deploying this capital to talented teams is one of the core pillars of our org. 
+          <p className="mt-4 text-center mx-auto max-w-2xl text-xl text-slate-700 mb-8 sm:mb-12">
+            Our treasury is funded by work done by the DAO over the last few
+            months. Staying true to our mission of supporting the most talented
+            women and non-binary engineers in the space, deploying this capital
+            to talented teams is one of the core pillars of our org.
           </p>
           <Sponsors />
         </div>
