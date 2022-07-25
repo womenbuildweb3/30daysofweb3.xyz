@@ -22,14 +22,19 @@ export default function Navbar({ locale }) {
             </Popover.Button>
           </div>
           <Popover.Group as="nav" className="hidden lg:flex space-x-10">
+            <Link href="/preview">
+              <a className="text-base font-medium text-slate-900 hover:underline hover:decoration-wavy">
+                Curriculum
+              </a>
+            </Link>
+            <Link href="/accelerator">
+              <a className="text-base font-medium text-slate-900 hover:underline hover:decoration-wavy">
+                Accelerator
+              </a>
+            </Link>
             <Link href="/#sponsors">
               <a className="text-base font-medium text-slate-900 hover:underline hover:decoration-wavy">
                 Sponsors
-              </a>
-            </Link>
-            <Link href="/#partners">
-              <a className="text-base font-medium text-slate-900 hover:underline hover:decoration-wavy">
-                Partners
               </a>
             </Link>
             <Link href="/#faqs">
@@ -42,11 +47,6 @@ export default function Navbar({ locale }) {
                 About Us
               </a>
             </Link>
-            <Link href="/accelerator">
-              <a className="text-base font-medium text-slate-900 hover:underline hover:decoration-wavy">
-                Accelerator
-              </a>
-            </Link>
           </Popover.Group>
           <div className="hidden lg:flex items-center justify-end lg:flex-1 lg:w-0">
             <a
@@ -55,7 +55,7 @@ export default function Navbar({ locale }) {
               rel="noopener noreferrer"
               className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-royal-600 hover:bg-royal-700"
             >
-              {locale === "en" ? "Register" : "Registrarse"}
+              {locale === "es" ? "Registrarse" : "Register"}
             </a>
           </div>
         </div>
@@ -89,17 +89,24 @@ export default function Navbar({ locale }) {
               </div>
               <div className="mt-6">
                 <nav className="grid gap-y-8">
+                  <Link href="/preview">
+                    <a className="-m-3 p-3 flex items-center rounded-md hover:bg-slate-50">
+                      <span className="text-base font-medium text-slate-900">
+                        Curriculum
+                      </span>
+                    </a>
+                  </Link>
+                  <Link href="/accelerator">
+                    <a className="-m-3 p-3 flex items-center rounded-md hover:bg-slate-50">
+                      <span className="text-base font-medium text-slate-900">
+                        Accelerator
+                      </span>
+                    </a>
+                  </Link>
                   <Link href="/#sponsors">
                     <a className="-m-3 p-3 flex items-center rounded-md hover:bg-slate-50">
                       <span className="text-base font-medium text-slate-900">
                         Sponsors
-                      </span>
-                    </a>
-                  </Link>
-                  <Link href="/#partners">
-                    <a className="-m-3 p-3 flex items-center rounded-md hover:bg-slate-50">
-                      <span className="text-base font-medium text-slate-900">
-                        Partners
                       </span>
                     </a>
                   </Link>
@@ -117,23 +124,18 @@ export default function Navbar({ locale }) {
                       </span>
                     </a>
                   </Link>
-                  <Link href="/accelerator">
-                    <a className="-m-3 p-3 flex items-center rounded-md hover:bg-slate-50">
-                      <span className=" text-base font-medium text-slate-900">
-                        Accelerator
-                      </span>
-                    </a>
-                  </Link>
                 </nav>
               </div>
             </div>
             <div className="py-6 px-5 space-y-6">
               <div>
                 <a
-                  href="#"
+                  href="https://forms.gle/XHDy3Yvasqocavas9"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-royal-600 hover:bg-royal-700"
                 >
-                  Register
+                  {locale === "es" ? "Registrarse" : "Register"}
                 </a>
               </div>
             </div>
