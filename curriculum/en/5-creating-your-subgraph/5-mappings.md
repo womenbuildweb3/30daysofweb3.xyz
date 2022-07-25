@@ -43,7 +43,7 @@ We can start with the `handleNewEventCreated` function. We can create a new inst
 
 Here is how our events look in our contract:
 
-```javascript
+```solidity
 event NewEventCreated(
 bytes32 eventID,
       address creatorAddress,
