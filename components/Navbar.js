@@ -42,6 +42,11 @@ export default function Navbar({ locale }) {
                 About Us
               </a>
             </Link>
+            <Link href="/accelerator">
+              <a className="text-base font-medium text-slate-900 hover:underline hover:decoration-wavy">
+                Accelerator
+              </a>
+            </Link>
           </Popover.Group>
           <div className="hidden lg:flex items-center justify-end lg:flex-1 lg:w-0">
             <a
@@ -109,6 +114,13 @@ export default function Navbar({ locale }) {
                     <a className="-m-3 p-3 flex items-center rounded-md hover:bg-slate-50">
                       <span className=" text-base font-medium text-slate-900">
                         About Us
+                      </span>
+                    </a>
+                  </Link>
+                  <Link href="/accelerator">
+                    <a className="-m-3 p-3 flex items-center rounded-md hover:bg-slate-50">
+                      <span className=" text-base font-medium text-slate-900">
+                        Accelerator
                       </span>
                     </a>
                   </Link>
