@@ -56,7 +56,7 @@ export default function About() {
           <p>
             The Buidl Accelerator aims to support projects where 51% or more of the technical team are women/nb people. 
             This no-strings-attached accelerator will provide funding starting at $5K, and up to $30K per team, distributed as 
-            they meet self-defined milestones. Our goal is to help teams get off the ground, and put money in their pockets for life's 
+            they meet self-defined milestones. Our goal is to help teams get off the ground, and put money in their pockets for life&apos;s 
             expenses, so they can focus on shipping. This 3-month accelerator is open to teams and projects that have not raised
             significant VC funding. Projects can be new or existing. There are two ways to apply: 
             <p className="py-4">1. Complete 30 Days of Web3 - Building Fullstack Dapps </p> 
