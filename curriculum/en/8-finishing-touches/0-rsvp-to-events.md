@@ -5,6 +5,8 @@ optional: false
 tweet: "Build a full-stack event platform dapp with #30DaysofWeb3 @womenbuildweb3 🎫"
 ---
 
+![rsvp-to-event](https://user-images.githubusercontent.com/15064710/180721341-747bc40c-a642-46df-afde-8b2cb38f45e5.png)
+
 We want users to also be able to RSVP to an event on the event details page.
 
 In the same `pages/events/[id].js` file, import our wallet and contract functions at the top:
