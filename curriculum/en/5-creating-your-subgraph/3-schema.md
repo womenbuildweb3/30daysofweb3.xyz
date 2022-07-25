@@ -21,7 +21,7 @@ This is where we will define the schema (schema.graphql) for our GraphQL queries
 
 We can delete the example entity in the schema file. Here is how our schema file should look:
 
-```json
+```graphql
 type Event @entity {
   id: ID!
   eventID: Bytes!
@@ -70,13 +70,13 @@ Each entity also has an ID field for a unique id, and some fields for informatio
 
 In the `Event` and `Account` entities for the rsvps and confirmedAttendees fields we are using a special keyword `@derivedFrom`, also called a reverse lookup, which allows us to reference data from another entity. Let’s look at the rsvps as an example:
 
-```json
+```graphql
 rsvps: [RSVP!] @derivedFrom(field: "event")
 ```
 
 One way to think about what is happening here is that whenever someone creates a new RSVP, that RSVP instance gets added to this array if the event id from the “event” field in the RSVP entity matches the id for this Event. For example, a new RSVP gets created:
 
-```json
+```graphql
 RSVP {
   id: 20
   attendee: 300
@@ -86,7 +86,7 @@ RSVP {
 
 This RSVP is for an event with the id 5000. The Event with the matching id will have this RSVP added to the rsvps array.
 
-```json
+```graphql
 Event {
   id: 5000
   rsvps: [ {id: 20, attendee: 300, event: 5000} ]

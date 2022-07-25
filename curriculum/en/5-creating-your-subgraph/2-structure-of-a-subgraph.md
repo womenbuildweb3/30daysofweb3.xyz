@@ -7,7 +7,7 @@ tweet: "Create and deploy a subgraph on @graphprotocol with #30DaysofWeb3 @women
 
 You should now have a new folder with this structure:
 
-```json
+```
 subgraph-name
 └───abis
 │   │  {Name}.json
