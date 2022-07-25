@@ -12,6 +12,9 @@ Para comprender completamente la diferencia fundamental entre web2 y web3, debe 
 Lea la publicación [aquí](https://www.freecodecamp.org/news/http-request-methods-explained/).
 
 **Las dos cosas que debes aprender de esta publicación:**
-
 - La relación y diferencia entre una aplicación cliente y una aplicación servidor
 - Qué es una solicitud de API y comprensión del protocolo http
+
+Escritoras: [Cami](https://twitter.com/camiinthisthang)
+Editoras: [Deborah Emeni](https://twitter.com/_emeni_deborah), [Christina Mills](https://twitter.com/bombayonchain)
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses

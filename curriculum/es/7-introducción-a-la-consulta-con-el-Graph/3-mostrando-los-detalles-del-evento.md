@@ -67,3 +67,7 @@ Después de `Hosted by{" "}`, dentro de la etiqueta `<a>` podemos agregar la dir
 ```
 
 ¡Ahora debe poder ver todos los detalles del evento!
+
+Escritoras: [Sarah Schwartz](https://twitter.com/schwartzswartz),
+Editoras: [Sarah Z](https://twitter.com/haegeez),
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses

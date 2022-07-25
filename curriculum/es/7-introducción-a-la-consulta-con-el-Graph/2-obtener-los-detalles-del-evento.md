@@ -80,3 +80,6 @@ Cree un nuevo evento en la página de creación de eventos y haga clic en el enl
 Una vez que pueda abrir la página de detalles del evento, debería poder ver los detalles de su evento en la consola.
 
 Ahora podremos usar estos datos para reemplazar los valores estáticos en la página.
+
+Escritoras: [Sarah Schwartz](https://twitter.com/schwartzswartz),
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses

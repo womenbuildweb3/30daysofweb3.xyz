@@ -153,3 +153,7 @@ Si el evento ya ha pasado, ocultaremos todo lo anterior y le informaremos al usu
 Y ¡sí! Creación de RSVP realizada! 🎉
 
 Pruebe el botón de confirmación de asistencia/RSVP para asegurarse de que todo funciona. La página del evento puede tardar unos minutos en mostrar que ya ha confirmado su asistencia.
+
+Escritoras: [Sarah Schwartz](https://twitter.com/schwartzswartz),
+Editoras: [Kristen](https://twitter.com/CuddleofDeath),
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses

@@ -79,3 +79,6 @@ Si quiere compartir su código con otras personas que también tienen instalada 
 ```
 rad clone rad:git:hnrkknc6ntqasrnej6ous5krdw464etyo3i7y --seed pine.radicle.garden
 ```
+
+Escritoras: [Sarah Schwartz](https://twitter.com/schwartzswartz),
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses
