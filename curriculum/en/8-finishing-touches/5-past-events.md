@@ -4,6 +4,7 @@ description: Let users view past events they created on your full-stack decentra
 optional: false
 tweet: "Build a full-stack event platform dapp with #30DaysofWeb3 @womenbuildweb3 🎫"
 ---
+![my-past-event](https://user-images.githubusercontent.com/15064710/180721609-c97f45dc-a6a4-409d-8091-06de0d6f296a.png)
 
 In the `pages/my-events/past` folder, open up the `index.js` file.
 
