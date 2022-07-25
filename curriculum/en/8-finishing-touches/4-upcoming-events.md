@@ -5,6 +5,8 @@ optional: false
 tweet: "Build a full-stack event platform dapp with #30DaysofWeb3 @womenbuildweb3 🎫"
 ---
 
+![my-upcoming-event](https://user-images.githubusercontent.com/15064710/180721479-52bc12fa-4cc6-46e3-8c5e-071012e76b2a.png)
+
 You can find the upcoming events page in the `pages/my-events` folder and at http://localhost:3000/my-events/upcoming.
 
 At the top of the file we can import our helper utilities again.
