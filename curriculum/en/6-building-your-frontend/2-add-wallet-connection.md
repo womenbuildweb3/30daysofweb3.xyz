@@ -5,6 +5,8 @@ optional: false
 tweet: "Add wallet connection to a full-stack dapp with #30DaysofWeb3 @womenbuildweb3 🌈"
 ---
 
+https://user-images.githubusercontent.com/15064710/180708486-bcd710ff-fba7-47d7-88e4-5b74f428f340.mov
+
 Now that we’ve wrapped our app with the `WagmiConfig` and `RainbowKitProvider` components, we can use wagmi hooks and RainbowKit’s `ConnectButton` component to enable users to connect their wallet and to inform the user that their wallet is connected.
 
 In `/components/Navbar.js`, we can import RainbowKit’s `ConnectButton` component and wagmi’s `useAccount` and `useDisconnect` hooks. Add the following imports below the `import Navmenu from "./Navmenu";` line:
@@ -108,9 +110,5 @@ We also enable users to disconnect their wallets:
 ```
 
 Throughout our dApp, we check the user's wallet connection to conditionally render the UI by using the `useAccount` hook from wagmi.
-
-After successful configuration and importing, when you click the connect button, you should expect a UI (user interface, basically the look and feel of an app or page.) like this:
-
-![RainbowKit Ui](https://i.imgur.com/QgE9oIj.jpg)
 
 **Note:** RainbowKit recently announced a new command line script to create a Next.js app with RainbowKit and wagmi set up for you. Learn more about it here: https://www.rainbowkit.com/docs/installation#quick-start
