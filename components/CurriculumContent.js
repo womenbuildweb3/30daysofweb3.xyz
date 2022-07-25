@@ -68,7 +68,7 @@ const CurriculumContent = ({ curricData, navigation, locale }) => {
                     href={curricData.data.optionalNextPath}
                     className="whitespace-nowrap font-medium text-blue-700 hover:text-blue-600"
                   >
-                    {locale === "en" ? "Jump Ahead" : "Saltar Adelante"} <span aria-hidden="true">&rarr;</span>
+                    {locale !== "es" ? "Jump Ahead" : "Saltar Adelante"} <span aria-hidden="true">&rarr;</span>
                   </a>
                 </p>
               </div>
@@ -87,7 +87,7 @@ const CurriculumContent = ({ curricData, navigation, locale }) => {
           {nextPath !== "/" && (
             <a href={nextPath}>
               <button className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-slate-900 bg-gradient-to-l from-sky-100 to-pink-100 hover:bg-gradient-to-r focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-200">
-                {locale === "en" ? "Next" : "Siguiente" } &#8594;
+                {locale !== "es" ? "Next" : "Siguiente" } &#8594;
               </button>
             </a>
           )}
