@@ -67,14 +67,14 @@ In Remix, create a new file inside the contracts folder, `add.sol`.
 
 Start by adding a license identifier, followed by the version pragma:
 
-```
+```solidity
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.7.0 <0.9.0;
 ```
 
 Next, define your contract and inside, define a variable of type uint (unsigned integer) and set it to zero.
 
-```
+```solidity
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.7.0 <0.9.0;
 
@@ -86,7 +86,7 @@ uint public sum = 0;
 
 Next, write the function to add two numbers passed in by the user and a function to return the current value of the sum variable. Here's what your contract should look like:
 
-```
+```solidity
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.7.0 <0.9.0;
 
