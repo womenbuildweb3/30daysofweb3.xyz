@@ -66,7 +66,7 @@ const navigation = {
   ],
 };
 
-export default function Footer({locale}) {
+export default function Footer({ locale }) {
   return (
     <footer aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
@@ -84,8 +84,10 @@ export default function Footer({locale}) {
               />
             </div>
             <p className="text-slate-900 text-base sm:w-80">
-              {locale === "en" ? `Unlocking the next wave of web3 builders through education,
-              opportunities, and funding` : `Desbloqueando la siguiente ola de desarrolladores web3 a través de la educación, oportunidades y financiamiento`}
+              {locale === "en"
+                ? `Unlocking the next wave of web3 builders through education,
+              opportunities, and funding`
+                : `Desbloqueando la siguiente ola de desarrolladores web3 a través de la educación, oportunidades y financiamiento`}
             </p>
             <div className="flex space-x-6">
               {navigation.social.map((item) => (
@@ -112,7 +114,7 @@ export default function Footer({locale}) {
                   <li key={item.name}>
                     <a
                       href={item.href}
-                      className="text-base text-slate-900 hover:underline hover:decoration-wavy"
+                      className="text-base text-slate-900  hover:decoration-wavy"
                       {...(item.newTab && {
                         target: "_blank",
                         rel: "noopener noreferrer",
@@ -133,7 +135,7 @@ export default function Footer({locale}) {
                   <li key={item.name}>
                     <a
                       href={item.href}
-                      className="text-base text-slate-900 hover:underline hover:decoration-wavy"
+                      className="text-base text-slate-900  hover:decoration-wavy"
                       {...(item.newTab && {
                         target: "_blank",
                         rel: "noopener noreferrer",

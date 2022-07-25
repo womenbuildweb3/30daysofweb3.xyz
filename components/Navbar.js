@@ -23,27 +23,27 @@ export default function Navbar({ locale }) {
           </div>
           <Popover.Group as="nav" className="hidden lg:flex space-x-10">
             <Link href="/preview">
-              <a className="text-base font-medium text-slate-900 hover:underline hover:decoration-wavy">
+              <a className="text-base font-medium text-slate-900  hover:decoration-wavy">
                 Curriculum
               </a>
             </Link>
             <Link href="/accelerator">
-              <a className="text-base font-medium text-slate-900 hover:underline hover:decoration-wavy">
+              <a className="text-base font-medium text-slate-900  hover:decoration-wavy">
                 Accelerator
               </a>
             </Link>
             <Link href="/#sponsors">
-              <a className="text-base font-medium text-slate-900 hover:underline hover:decoration-wavy">
+              <a className="text-base font-medium text-slate-900  hover:decoration-wavy">
                 Sponsors
               </a>
             </Link>
             <Link href="/#faqs">
-              <a className="text-base font-medium text-slate-900 hover:underline hover:decoration-wavy">
+              <a className="text-base font-medium text-slate-900  hover:decoration-wavy">
                 FAQ
               </a>
             </Link>
             <Link href="/about">
-              <a className="text-base font-medium text-slate-900 hover:underline hover:decoration-wavy">
+              <a className="text-base font-medium text-slate-900  hover:decoration-wavy">
                 About Us
               </a>
             </Link>
