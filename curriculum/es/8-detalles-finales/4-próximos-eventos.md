@@ -1,30 +1,31 @@
 ---
-title: Past Events ESPANOL
-description: Let users view past events they created on your full-stack decentralized event platform.
+title: Próximos Eventos
+description: Let users view upcoming events they created on your full-stack decentralized event platform.
 optional: false
-tweet: "Build a full-stack event platform dapp with #30DaysofWeb3 @womenbuildweb3 🎫"
+tweet: "#30DaysofWeb3 @womenbuildweb3 🎫"
 ---
 
-In the `pages/my-events/past` folder, open up the `index.js` file.
+Puede encontrar la página de próximos eventos en la carpeta `pages/my-events` y en http://localhost:3000/my-events/upcoming
 
-At the top of the file we can import our helper utilities again.
+En la parte superior del archivo, podemos importar nuevamente nuestras utilidades de ayuda.
 
 ```javascript
 import { useState } from "react";
-import Link from "next/link";
 import { gql, useQuery } from "@apollo/client";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { useAccount } from "wagmi";
-import EventCard from "../../../components/EventCard";
+import EventCard from "../../components/EventCard";
 ```
 
-We will define our query almost the same as for the upcoming events, but instead of the `_gt` modifier we will use the `_lt` modifier to fetch past events.
+Para los próximos eventos creados por el usuario, queremos asegurarnos de que solo estamos recuperando los eventos futuros en donde `eventOwner` es igual a la dirección de la billetera del usuario.
+
+Podemos hacerlo combinando estas dos condiciones con la palabra clave `where` y el modificador `_gt`.
 
 ```javascript
-const MY_PAST_EVENTS = gql`
+const MY_UPCOMING_EVENTS = gql`
   query Events($eventOwner: String, $currentTimestamp: String) {
     events(
-      where: { eventOwner: $eventOwner, eventTimestamp_lt: $currentTimestamp }
+      where: { eventOwner: $eventOwner, eventTimestamp_gt: $currentTimestamp }
     ) {
       id
       eventID
@@ -37,40 +38,41 @@ const MY_PAST_EVENTS = gql`
     }
   }
 `;
+
 ```
 
-Now we can show all of the past events created by the user and a link where the user can confirm attendees.
+A continuación, podemos configurar el resultado de nuestra consulta y conectar el botón de la billetera tal como lo hemos hecho en otras páginas y mapear nuestros resultados para mostrar las tarjetas de eventos.
 
 ```javascript
-export default function MyPastEvents() {
+export default function MyUpcomingEvents() {
   const { data: account } = useAccount();
 
   const eventOwner = account ? account.address.toLowerCase() : "";
   const [currentTimestamp, setEventTimestamp] = useState(
     new Date().getTime().toString()
   );
-  const { loading, error, data } = useQuery(MY_PAST_EVENTS, {
+  const { loading, error, data } = useQuery(MY_UPCOMING_EVENTS, {
     variables: { eventOwner, currentTimestamp },
   });
 
   if (loading)
     return (
-      <Dashboard page="events" isUpcoming={false}>
+      <Dashboard page="events" isUpcoming={true}>
         <p>Loading...</p>
       </Dashboard>
     );
   if (error)
     return (
-      <Dashboard page="events" isUpcoming={false}>
+      <Dashboard page="events" isUpcoming={true}>
         <p>`Error! ${error.message}`</p>
       </Dashboard>
     );
 
   return (
-    <Dashboard page="events" isUpcoming={false}>
+    <Dashboard page="events" isUpcoming={true}>
       {account ? (
         <div>
-          {data && data.events.length == 0 && <p>No past events found</p>}
+          {data && data.events.length == 0 && <p>No upcoming events found</p>}
           {data && data.events.length > 0 && (
             <ul
               role="list"
@@ -84,11 +86,6 @@ export default function MyPastEvents() {
                     eventTimestamp={event.eventTimestamp}
                     imageURL={event.imageURL}
                   />
-                  <Link href={`/my-events/past/${event.id}`}>
-                    <a className="text-indigo-800 text-sm truncate hover:underline">
-                      Confirm attendees
-                    </a>
-                  </Link>
                 </li>
               ))}
             </ul>

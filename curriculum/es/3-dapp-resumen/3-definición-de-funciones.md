@@ -21,7 +21,7 @@ A continuación, escribiremos la función que se llamará cuando un usuario cree
 
 Después de agregar esa función en nuestro mapeo, así es como debería verse su _smart contract_ hasta ahora:
 
-```
+```solidity
 struct CreateEvent {
         bytes32 eventId;
         string eventDataCID;
@@ -77,7 +77,7 @@ Explicación línea por línea de lo que acabamos de hacer:
 
 Definimos la función `createNewEvent` y definimos los parámetros que la función debe aceptar. Estas son las configuraciones específicas para un evento que obtendremos de la persona que realmente crea el evento en la interfaz. Estas cosas son el _eventTimestamp_ AKA cuando comenzará el evento, el depósito requerido para confirmar su asistencia a este evento, la capacidad máxima de este evento y una referencia al hash ipfs que contiene información como el nombre y la descripción del evento.
 
-```
+```solidity
 function createNewEvent(
        uint256 eventTimestamp,
        uint256 deposit,
@@ -99,7 +99,7 @@ Por ejemplo, si dos usuarios crearon un evento al mismo tiempo, es posible que a
 
 Para combatir esto, generamos un ID único creando un hash pasando todos los argumentos pasados a la llamada de función. La combinación de todos los argumentos y la función hash disminuiría enormemente la probabilidad de una colisión.
 
-```
+```solidity
 // generate an eventID based on other things passed in to generate a hash
        bytes32 eventId = keccak256(
            abi.encodePacked(
@@ -114,7 +114,7 @@ Para combatir esto, generamos un ID único creando un hash pasando todos los arg
 
 Inicializamos las dos matrices que usaremos para rastrear RSVP y asistentes. Sabemos que necesitamos definir estas dos matrices porque en nuestra estructura, CreateEvent, definimos que habrá dos matrices que se usarán para rastrear las direcciones de los usuarios que confirmaron su asistencia y la dirección de los usuarios que realmente llegan y se registran en el evento AKA están confirmados.
 
-```
+```solidity
 address[] memory confirmedRSVPs;
 address[] memory claimedRSVPs;
 ```
@@ -123,7 +123,7 @@ Ahora que tenemos una ID único, podemos crear una nueva entrada en nuestro mape
 
 El _`key`_ es el ID del evento y el _`value`_ es una estructura o objeto con las siguientes propiedades que tomamos de los argumentos de la función pasados por el usuario en el front-end (eventName, eventTimestamp, deposit, maxCapacity), algunos generamos nosotros mismos o recopilamos del lado del _smart contract_ (eventID, eventOwner, confirmRSVPS, ClaimRSVPs). Finalmente, configuramos el _boolean paidOut_ en falso porque en el momento de la creación del evento, no ha habido pagos a los rsvp'ers (todavía no hay ninguno) o al propietario del evento todavía.
 
-```
+```solidity
 idToEvent[eventId] = CreateEvent(
            eventId,
            eventName,
@@ -151,7 +151,7 @@ A continuación, escribiremos la función que se llama cuando un usuario encuent
 
 Así es como se verá su función createNewRSVP:
 
-```
+```solidity
 function createNewRSVP(bytes32 eventId) external payable {
         // look up event from our mapping
         CreateEvent storage myEvent = idToEvent[eventId];
@@ -182,7 +182,7 @@ function createNewRSVP(bytes32 eventId) external payable {
 
 Parte de nuestra aplicación requiere que los usuarios paguen un depósito que recuperan cuando llegan al evento. Escribiremos la función que registra a los asistentes y devuelve su depósito.
 
-```
+```solidity
 function confirmAttendee(bytes32 eventId, address attendee) public {
         // look up event from our struct using the eventId
         CreateEvent storage myEvent = idToEvent[eventId];
@@ -231,7 +231,7 @@ Como organizador de eventos, es posible que desee poder confirmar a todos los as
 
 Escribamos una función para confirmar cada persona que tiene RSVP para un evento específico:
 
-```
+```solidity
 function confirmGroup(bytes32 eventId, address[] calldata attendees) external {
         // look up event from our struct with the eventId
         CreateEvent memory myEvent = idToEvent[eventId];
@@ -250,7 +250,7 @@ function confirmGroup(bytes32 eventId, address[] calldata attendees) external {
 
 Finalmente, necesitamos escribir una función que retire los depósitos de las personas que no se presentaron al evento y los envíe al organizador del evento:
 
-```
+```solidity
 function withdrawUnclaimedDeposits(bytes32 eventId) external {
         // look up event
         CreateEvent memory myEvent = idToEvent[eventId];

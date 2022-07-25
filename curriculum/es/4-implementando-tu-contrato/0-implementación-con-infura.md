@@ -23,7 +23,7 @@ Luego, instale `dotenv` ejecutando `npm install dotenv`. Dotenv es un módulo qu
 
 Actualice su archivo `hardhat.config.js` así:
 
-```
+```javascript
 require("@nomiclabs/hardhat-waffle");
 require("dotenv").config();
 
@@ -58,7 +58,7 @@ module.exports = {
 
 - Regrese a su archivo .env y cree una variable llamada `STAGING_PRIVATE_KEY` y establezca el valor para que sea su clave privada que acaba de copiar. Así es como debería verse ahora su archivo `.env`
 
-```
+```javascript
 STAGING_INFURA_URL=https://polygon-mumbai.infura.io/v3/12345678
 STAGING_PRIVATE_KEY=1234_YOUR_PRIVATE_KEY_5678
 ```

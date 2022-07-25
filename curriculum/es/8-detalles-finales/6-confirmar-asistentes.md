@@ -1,13 +1,14 @@
 ---
-title: Confirm Attendees ESPANOL
+title: Confirmar asistentes
 description: Let users confirm attendees for past events they created on your full-stack decentralized event platform.
 optional: false
-tweet: "Build a full-stack event platform dapp with #30DaysofWeb3 @womenbuildweb3 🎫"
+tweet: "#30DaysofWeb3 @womenbuildweb3 🎫"
 ---
 
-The last page we need to make is the page where users can confirm attendees for their events. This file is called `[id].js` and is in the`pages/my-events/past` folder.
 
-At the top of the file we can import our helper utilities again.
+La última página que necsitamos hacer es aquella en la que los usuarios pueden confirmar los asistentes a sus eventos. Este archivo se llama `[id].js` y se encuentra en la carpeta `pages/my-events/past` 
+
+En la parte superior del archivo podemos importar nuestras utilidades de ayuda de nuevo. 
 
 ```javascript
 import { useState, useEffect } from "react";
@@ -20,8 +21,7 @@ import connectContract from "../../../utils/connectContract";
 import formatTimestamp from "../../../utils/formatTimestamp";
 import Alert from "../../../components/Alert";
 ```
-
-And at the top of our `PastEvent` function we can set up our account and state trackers.
+Y, en la parte superior de nuestra función `PastEvent` podemos configurar nuestra cuenta y declarar los rastreadores.
 
 ```javascript
 const { data: account } = useAccount();
@@ -29,97 +29,98 @@ const [success, setSuccess] = useState(null);
 const [message, setMessage] = useState(null);
 const [loading, setLoading] = useState(null);
 const [mounted, setMounted] = useState(false);
-```
+ ```
 
-We’ll check if we’ve any confirmed attendees or not. If not, we can show a button to confirm attendee(s)
-There will be two methods `confirmAttendee` and `confirmAllAttendees`.
 
-If a user wants to confirm only one attendee, the `confirmAttendee` method will be used. If they want to confirm all the attendees at once, the `confirmAllAttendees` method will be used.
+Verificaremos si tenemos asistentes confirmados o no. De lo contrario, habrá un botón para confirmar los asistentes.
+Habrá dos métodos `confirmAttendee` y `confirmAllAttendees`. 
+Si un usuario desea confirmar a un solo asistente, el método `confirmAttendee` será usado. Pero si desea confirmar a todos los asistentes a la vez, se utilizará el método `confirmAllAttendees`.
 
-We can start with the `confirmAttendee` method. Create this function and set it up just as we did for other contract call functions. For this method we need to pass in the event id and attendee address.
+Podemos iniciar con el método `confirmAttendee`. Cree y configure esta función tal como lo hicimos con las otras funciones de llamada del contrato. Para este método, necesitamos pasar el ID del evento y la dirección del asistente.
 
 ```javascript
 const confirmAttendee = async (attendee) => {
-  try {
-    const rsvpContract = connectContract();
+    try {
+      const rsvpContract = connectContract();
 
-    if (rsvpContract) {
-      const txn = await rsvpContract.confirmAttendee(event.id, attendee);
-      setLoading(true);
-      console.log("Minting...", txn.hash);
+      if (rsvpContract) {
+        const txn = await rsvpContract.confirmAttendee(event.id, attendee);
+        setLoading(true);
+        console.log("Minting...", txn.hash);
 
-      await txn.wait();
-      console.log("Minted -- ", txn.hash);
-      setSuccess(true);
+        await txn.wait();
+        console.log("Minted -- ", txn.hash);
+        setSuccess(true);
+        setLoading(false);
+        setMessage("Attendance has been confirmed.");
+      } else {
+        console.log("Ethereum object doesn't exist!");
+      }
+    } catch (error) {
+      setSuccess(false);
+      // setMessage(
+      //   `Error: ${process.env.NEXT_PUBLIC_TESTNET_EXPLORER_URL}tx/${txn.hash}`
+      // );
+      setMessage("Error!");
       setLoading(false);
-      setMessage("Attendance has been confirmed.");
-    } else {
-      console.log("Ethereum object doesn't exist!");
+      console.log(error);
     }
-  } catch (error) {
-    setSuccess(false);
-    // setMessage(
-    //   `Error: ${process.env.NEXT_PUBLIC_TESTNET_EXPLORER_URL}tx/${txn.hash}`
-    // );
-    setMessage("Error!");
-    setLoading(false);
-    console.log(error);
-  }
-};
+  };
 ```
 
-We can create a new function called `confirmAllAttendees` to call the corresponding function from our contract and implement it just as we did above. For this method we only need to pass in the event id.
+Podemos crear una nueva función llamada `confirmAllAttendees` para llamar a la función correspondiente de nuestro contrato, e implementarla tal como lo hicimos arriba. Para este método sólo necesitamos pasar el ID del evento.
 
 ```javascript
 const confirmAllAttendees = async () => {
-  console.log("confirmAllAttendees");
-  try {
-    const rsvpContract = connectContract();
+    console.log("confirmAllAttendees");
+    try {
+      const rsvpContract = connectContract();
 
-    if (rsvpContract) {
-      console.log("contract exists");
-      const txn = await rsvpContract.confirmAllAttendees(event.id, {
-        gasLimit: 300000,
-      });
-      console.log("await txn");
-      setLoading(true);
-      console.log("Mining...", txn.hash);
+      if (rsvpContract) {
+        console.log("contract exists");
+        const txn = await rsvpContract.confirmAllAttendees(event.id, {
+          gasLimit: 300000,
+        });
+        console.log("await txn");
+        setLoading(true);
+        console.log("Mining...", txn.hash);
 
-      await txn.wait();
-      console.log("Mined -- ", txn.hash);
-      setSuccess(true);
+        await txn.wait();
+        console.log("Mined -- ", txn.hash);
+        setSuccess(true);
+        setLoading(false);
+        setMessage("All attendees confirmed successfully.");
+      } else {
+        console.log("Ethereum object doesn't exist!");
+      }
+    } catch (error) {
+      setSuccess(false);
+      // setMessage(
+      //   `Error: ${process.env.NEXT_PUBLIC_TESTNET_EXPLORER_URL}tx/${txn.hash}`
+      // );
+      setMessage("Error!");
       setLoading(false);
-      setMessage("All attendees confirmed successfully.");
-    } else {
-      console.log("Ethereum object doesn't exist!");
+      console.log(error);
     }
-  } catch (error) {
-    setSuccess(false);
-    // setMessage(
-    //   `Error: ${process.env.NEXT_PUBLIC_TESTNET_EXPLORER_URL}tx/${txn.hash}`
-    // );
-    setMessage("Error!");
-    setLoading(false);
-    console.log(error);
-  }
-};
+  };
+
 ```
 
-Create a `checkIfConfirmed` funtion so we can easily check if attendees have already been confirmed. This method will just loop thorugh all confirmed addresses to see if any of them matches the user's address.
+Cree una función `checkIfConfirmed` para verificar fácilmente si los asistentes ya han sido confirmados. Éste método recorrerá todas las direcciones confirmadas para confirmar si alguna de ellas coincide con la dirección del usuario.
 
 ```javascript
 function checkIfConfirmed(event, address) {
-  for (let i = 0; i < event.confirmedAttendees.length; i++) {
-    let confirmedAddress = event.confirmedAttendees[i].attendee.id;
-    if (confirmedAddress.toLowerCase() == address.toLowerCase()) {
-      return true;
-    }
+for (let i = 0; i < event.confirmedAttendees.length; i++) {
+  let confirmedAddress = event.confirmedAttendees[i].attendee.id;
+  if (confirmedAddress.toLowerCase() == address.toLowerCase()) {
+    return true;
   }
-  return false;
+}
+return false;
 }
 ```
 
-We will put our query in the `getServersideProps` function.
+Ubicaremos nuestra consulta en la función `getServersideProps`
 
 ```javascript
 export async function getServerSideProps(context) {
@@ -163,8 +164,7 @@ export async function getServerSideProps(context) {
   };
 }
 ```
-
-Inside our `PastEvent` function we can return a table of users to confirm and a button to confirm them.
+Al interior de nuestra función `PastEvent` podremos retornar una tabla de usuarios a confirmar, y un botón para confirmarlos. 
 
 ```javascript
   useEffect(() => {
@@ -291,4 +291,4 @@ Inside our `PastEvent` function we can return a table of users to confirm and a 
 export default PastEvent;
 ```
 
-And that's it! Congrats, you created a full-stack web3 app! You should be really proud of yourself for getting this far.
+¡Y eso es todo! ¡Felicitaciones, has creado una aplicación web3 full-stack! Debes estar muy orgulloso de ti mismo por haber llegado así de lejos.

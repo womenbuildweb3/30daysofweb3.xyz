@@ -18,7 +18,7 @@ Todos nuestros eventos se indican con la palabra clave _evento_, seguida del nom
 
 Defina sus eventos en la parte superior de su archivo, dentro de las llaves:
 
-```
+```solidity
 event NewEventCreated(
         bytes32 eventID,
         address creatorAddress,
@@ -45,7 +45,7 @@ Para emitir un evento, usamos la palabra clave _emit_ y luego pasamos los argume
 
 Emita NewEventCreated en la parte inferior de su función `createNewEvent` de esta manera:
 
-```
+```solidity
 emit NewEventCreated(
            eventId,
            msg.sender,
@@ -66,7 +66,7 @@ emit NewEventCreated(
 
 ¡Ha escrito sus funciones, definido sus estructuras y definido eventos personalizados! Así es como debería verse su código final:
 
-```
+```solidity
 // SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.4;

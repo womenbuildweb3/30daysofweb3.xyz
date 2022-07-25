@@ -23,7 +23,7 @@ Aquí es donde definiremos el _schema_ (schema.graphql) para nuestras consultas 
 
 Podemos eliminar la entidad de ejemplo en el archivo de el _schema_. Así es como debería verse nuestro archivo de _schema_:
 
-```
+```javascript
 type Event @entity {
   id: ID!
   eventID: Bytes!
@@ -72,13 +72,13 @@ Cada entidad también tiene un campo ID para una identificación única y alguno
 
 En las entidades _`Event`_ y _`Account`_ para los campos rsvps y asistentes confirmados, usamos una palabra clave especial `@derivedFrom`, también llamada búsqueda inversa, que nos permite hacer referencia a datos de otra entidad. Veamos los rsvps como ejemplo:
 
-```
+```javascript
 rsvps: [RSVP!] @derivedFrom(field: "event")
 ```
 
 Una forma de pensar en lo que está sucediendo aquí es que cada vez que alguien crea un nuevo RSVP, esa instancia de RSVP se agrega a esta matriz si la identificación del evento del campo _"event"_ en la entidad de RSVP coincide con la identificación de este evento. Por ejemplo, se crea un nuevo RSVP:
 
-```
+```javascript
 RSVP {
 id: 20
 attendee: 300
@@ -88,7 +88,7 @@ event: 5000
 
 Este RSVP es para un evento con la identificación 5000. El evento con la identificación correspondiente tendrá este RSVP agregado a la matriz rsvps.
 
-```
+```javascript
 Event {
     id: 5000
 	rsvps: [ {id: 20, attendee: 300, event: 5000} ]

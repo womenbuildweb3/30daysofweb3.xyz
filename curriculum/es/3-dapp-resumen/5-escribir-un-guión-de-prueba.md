@@ -11,7 +11,7 @@ Cree un archivo en la carpeta `scripts` llamado `run.js`. Comenzaremos importand
 
 Cree una función asíncrona llamada `main` y otra función asíncrona llamada `runMain`, que utilizará una instrucción `try...catch` para ejecutar la función `main`. En la parte inferior del archivo, podemos ejecutar `runMain()`.
 
-```
+```javascript
 const hre = require("hardhat");
 
 const main = async () => {};
@@ -31,7 +31,7 @@ runMain();
 
 Dentro de nuestra función _`main`_, podemos usar hardhat para implementar el contrato localmente agregando el siguiente código:
 
-```
+```javascript
 const rsvpContractFactory = await hre.ethers.getContractFactory('Web3RSVP');
 const rsvpContract = await rsvpContractFactory.deploy();
 await rsvpContract.deployed();
@@ -40,13 +40,13 @@ console.log("Contract deployed to:", rsvpContract.address);
 
 Hardhat nos permite acceder a diferentes _wallets_ de prueba dentro de nuestro script para que podamos simular diferentes _wallets_ interactuando con nuestro contrato. Para obtener la dirección de nuestro _wallet_ del implementador y un par de otras para probar, usamos el método `getSigners`.
 
-```
+```javascript
 const [deployer, address1, address2] = await hre.ethers.getSigners();
 ```
 
 Lo primero que queremos probar es crear un nuevo evento. Antes de que podamos llamar a este método, necesitamos definir los datos del evento que vamos a usar. Puede usar un CID de IPFS que ya creamos.
 
-```
+```javascript
 let deposit = hre.ethers.utils.parseEther("1")
 let maxCapacity = 3
 let timestamp = 1718926200
@@ -57,7 +57,7 @@ A continuación, podemos crear un nuevo evento con nuestros datos simulados. Una
 
 Puede registrar todo el objeto _`wait`_ si desea ver todo lo que se devuelve.
 
-```
+```javascript
 let txn = await rsvpContract.createNewEvent(timestamp, deposit, maxCapacity, eventDataCID)
 let wait = await txn.wait()
 console.log("NEW EVENT CREATED:", wait.events[0].event, wait.events[0].args)
@@ -70,7 +70,7 @@ Podemos tener cada cuenta que sacamos de `getSigners` RSVP al evento. Por defect
 
 Para enviar nuestro depósito, podemos pasar un objeto como último parámetro con el valor establecido en el monto del depósito.
 
-```
+```javascript
 txn = await rsvpContract.createNewRSVP(eventID, {value: deposit})
 wait = await txn.wait()
 console.log("NEW RSVP:", wait.events[0].event, wait.events[0].args)
@@ -86,7 +86,7 @@ console.log("NEW RSVP:", wait.events[0].event, wait.events[0].args)
 
 Podemos confirmar todas las confirmaciones de asistencia con `confirmAllAttendees`. Dado que creamos el evento desde la dirección del implementador, también debemos llamar a esta función desde la dirección del implementador.
 
-```
+```javascript
 txn = await rsvpContract.confirmAllAttendees(eventID)
 wait = await txn.wait()
 wait.events.forEach(event => console.log("CONFIRMED:", event.args.attendeeAddress))
@@ -96,7 +96,7 @@ Debido a que requerimos que el propietario del evento espere 7 días antes de re
 
 Para evitar esto, _hardhat_ nos permite simular el paso del tiempo. Podemos esperar 10 años para asegurarnos de que ha sido suficiente tiempo.
 
-```
+```javascript
 // wait 10 years
 await hre.network.provider.send("evm_increaseTime", [15778800000000])
 
@@ -107,7 +107,7 @@ console.log("WITHDRAWN:", wait.events[0].event, wait.events[0].args)
 
 Para probar fácilmente este script, podemos agregar un acceso directo en nuestro archivo `package.json`.
 
-```
+```json
 "scripts": {
     "script": "node scripts/run.js"
 ```

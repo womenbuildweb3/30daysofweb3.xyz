@@ -1,15 +1,16 @@
 ---
-title: Upcoming RSVPs ESPANOL
+title: Próximos RSVP
 description: Let users view upcoming events they RSVP'ed to on your full-stack decentralized event platform.
 optional: false
-tweet: "Build a full-stack event platform dapp with #30DaysofWeb3 @womenbuildweb3 🎫"
+tweet: "#30DaysofWeb3 @womenbuildweb3 🎫"
 ---
 
-In the `pages/my-rsvps` folder, we have two pages where we want to show the user's upcoming and past events that they RSVPed to.
+En la carpeta `pages/my-rsvps`, tenemos dos páginas en las que queremos mostrar los eventos pasados y próximos del usuario a los que confirmaron su asistencia.
 
-You can open this page at http://localhost:3000/my-rsvps/upcoming, or you can navigate there from the homepage by connecting your wallet and clicking on your wallet address in the upper right corner to open a dropdown menu.
+Puede abrir esta página en http://localhost:3000/my-rsvps/upcoming, o puede navegar allí desde la página de inicio conectando su billetera y haciendo clic en la dirección de su billetera en la esquina superior derecha para abrir un menú desplegable.
 
-In the `upcoming.js` file, we can import `useState`, `useAccount` and `ConnectButton` so the user can connect their wallet. We can also import `gql` and `useQuery` so we can get details about the event from our subgraph. Finally we can import the `EventCard` component.
+En el archivo `upcoming.js`, podemos importar `useState`, `useAccount` y `ConnectButton` para que el usuario pueda conectar su billetera. También podemos importar `gql` y `useQuery` para poder obtener detalles sobre el evento de nuestro subgraph. Finalmente, podemos importar el componente `EventCard`.
+
 
 ```javascript
 import { useState } from "react";
@@ -19,7 +20,7 @@ import { useAccount } from "wagmi";
 import EventCard from "../../components/EventCard";
 ```
 
-Before our `MyUpcomingRSVPs` function, we can define our gql query which will fetch all of the rsvps for the user's account.
+Antes de nuestra función `MyUpcomingRSVPs`, podemos definir nuestra consulta gql, la cual obtendrá todos los RSVPs de la cuenta del usuario.
 
 ```javascript
 const MY_UPCOMING_RSVPS = gql`
@@ -37,15 +38,15 @@ const MY_UPCOMING_RSVPS = gql`
     }
   }
 `;
+
 ```
+Para mostrar únicamente los RSVPs de los próximos eventos, podemos filtrar los eventos retornados a través de la consulta  `eventTimestamp`.
 
-To only show the rsvps for upcoming events, we can filter the events returned from the query by the `eventTimestamp`.
+También queremos permitir que el usuario conecte su billetera tal como lo hicimos en nuestras otras páginas con el gancho `ConnectButton` y `useAccount`.
 
-We also want to let the user connect their wallet just as we did on our other pages with the `ConnectButton` and `useAccount` hook.
+Podemos obtener la dirección de la billetera del usuario desde el gancho `useAccount` y pasarla a nuestra consulta. Para asegurarnos de que nuestro subgraph pueda coincidir con la dirección correctamente, debemos transformar la dirección a minúsculas.
 
-We can get the user's wallet address from the `useAccount` hook and pass it into our query. To make sure that our subgraph is able to match the address correctly, we need to transform the address to all lower case.
-
-Once we have our query results, we can pass those into our `EventCard` component.
+Una vez que tengamos los resultados de nuestra consulta, podemos pasarlos a nuestro componente `EventCard`.
 
 ```javascript
 export default function MyUpcomingRSVPs() {

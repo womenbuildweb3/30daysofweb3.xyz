@@ -7,7 +7,7 @@ tweet: "Deploy a smart contract to @0xPolygon Mumbai testnet with #30DaysofWeb3 
 
 En nuestra carpeta de scripts, podemos crear un archivo llamado `deploy.js`, donde podemos pegar una copia de nuestro script de prueba y sacar cualquier transacción de prueba. Nuestro archivo `deploy.js` debería verse así:
 
-```
+```javascript
 const hre = require("hardhat");
 
 const main = async () => {
@@ -40,7 +40,7 @@ Antes de implementar nuestro contrato, queremos asegurarnos de haber compilado l
 
 Para implementar, todo lo que tenemos que hacer es ejecutar el script de implementación que acabamos de crear. Podemos agregar un script en nuestro archivo `package.json` para que podamos reutilizar nuestro comando de implementación si alguna vez lo necesitamos nuevamente.
 
-```
+```javascript
 "scripts": {
     "deploy": "npx hardhat run scripts/deploy.js --network mumbai",
 
