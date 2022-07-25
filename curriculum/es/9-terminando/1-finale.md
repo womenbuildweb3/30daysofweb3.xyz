@@ -18,3 +18,7 @@ Por último, puedes alojar tu código en Radicle, que permite almacenar reposito
 No olvides tuitear y compartir tu progreso. ¡Realmente acabas de construir una dApp web3 full-stack!
 
 ¡Ahora es momento de salir a seguir construyendo!  💪
+
+Escritoras: [Deborah Emeni](https://twitter.com/_emeni_deborah),
+Editoras: [Sarah Schwartz](https://twitter.com/schwartzswartz),
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses

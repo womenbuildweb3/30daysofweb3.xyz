@@ -15,3 +15,7 @@ Para operaciones de solo lectura, la aplicación se conecta directamente al bloc
 Para escribir en blockchain, la dApp pasa mensajes y transacciones al contenedor y renuncia al control de la aplicación. Una vez que el usuario ha aprobado (o rechazado) la transacción, se devuelve el control a la dApp e igualmente se devuelve una copia firmada del mensaje o la transacción.
 
 La librería de Ethers App maneja toda esta interacción por usted.
+
+Escritoras: [Avni Agrawal](https://twitter.com/AvniAgrawal1802),
+Editoras: [Sarah Schwartz](https://twitter.com/schwartzswartz),
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses

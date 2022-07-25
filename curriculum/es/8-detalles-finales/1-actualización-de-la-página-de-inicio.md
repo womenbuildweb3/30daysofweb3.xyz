@@ -78,3 +78,6 @@ export default function Home() {
 ```
 
 ¡Ahora en la página de inicio debemos poder ver una lista de los eventos que hemos creado!
+
+Escritoras: [Sarah Schwartz](https://twitter.com/schwartzswartz),
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses

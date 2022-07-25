@@ -109,3 +109,6 @@ En el archivo `.env.local`, asegúrese de que WEB3STORAGE_TOKEN esté configurad
 Con esto, podemos cargar con éxito nuestra data usando Web3.storage. La data está disponible inmediatamente para su uso a través de IPFS después de cargarla y se almacenarán con los proveedores de almacenamiento de Filecoin dentro de las 48 horas.
 
 Lo último que debemos hacer antes de que podamos crear el evento en la parte de nuestro frontend es permitir que nuestros usuarios conecten su *wallet*. Agregaremos esta funcionalidad en la próxima lección con Rainbowkit.
+
+Escritoras: [Busayo](https://twitter.com/amoweo),[Sarah Z](https://twitter.com/haegeez), [Sarah Schwartz](https://twitter.com/schwartzswartz),
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses

@@ -7,7 +7,7 @@ tweet: "Create and deploy a subgraph on @graphprotocol with #30DaysofWeb3 @women
 
 Ahora debería tener una nueva carpeta con esta estructura:
 
-```json
+```
 subgraph-name
 └───abis
 │   │  {Name}.json
@@ -32,3 +32,7 @@ También agregaremos `@protofire/subgraph-toolkit` como una dependencia. Ejecute
 La configuración inicial ya debería haber tomado el contrato ABI para usted. Si no lo ve en la carpeta abis, puede encontrar el abi en su proyecto de _hardhat_ en la carpeta de artefactos. Se llamará `[YourContractName].json`.
 
 Los tres archivos principales en la carpeta del proyecto _subgraph_ que cambiaremos son los archivos `subgraph.yaml`, `schema.graphql` y `[YourContractName].ts`.
+
+Escritoras: [Sarah Schwartz](https://twitter.com/schwartzswartz),
+Editoras: [Kristen](https://twitter.com/cuddleofdeath), [Briseida Montiel](https://twitter.com/brizism),
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses
