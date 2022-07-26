@@ -44,4 +44,4 @@ También queremos actualizar nuestros nombres de `Entity`. Puede eliminar el gen
 La sección `eventHandlers` es donde podemos decirle al *subgraph* cómo conectar cada uno de nuestros mapeos a diferentes disparadores de eventos. Esto ya debería estar completo para usted. Cada vez que un evento que se define aquí se emite desde nuestro contrato, se ejecutará la función de mapeo correspondiente establecida como controlador.
 
 Escritoras: [Sarah Schwartz](https://twitter.com/schwartzswartz),
-Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

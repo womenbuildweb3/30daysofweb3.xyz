@@ -17,4 +17,4 @@ Como otro ejemplo, algunos sitios web permiten intercambiar una criptomoneda por
 
 Escritoras: [Kristen](https://twitter.com/CuddleofDeath)
 Editoras: [Deborah Emeni](https://twitter.com/_emeni_deborah), [Christina Mills](https://twitter.com/bombayonchain), [Briseida Montiel](https://twitter.com/brizism)
-Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

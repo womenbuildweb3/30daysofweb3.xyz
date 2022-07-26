@@ -82,4 +82,4 @@ Una vez que pueda abrir la página de detalles del evento, debería poder ver lo
 Ahora podremos usar estos datos para reemplazar los valores estáticos en la página.
 
 Escritoras: [Sarah Schwartz](https://twitter.com/schwartzswartz),
-Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

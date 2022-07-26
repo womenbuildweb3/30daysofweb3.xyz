@@ -62,4 +62,4 @@ pragma solidity ^0.8.4;
 
 Escritoras: [Cami](https://twitter.com/camiinthisthang),
 Editoras: [Sarah Z](https://twitter.com/haegeez), [Kristen](https://twitter.com/cuddleofdeath),
-Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

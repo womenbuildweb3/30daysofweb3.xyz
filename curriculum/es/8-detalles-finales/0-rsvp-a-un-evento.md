@@ -156,4 +156,4 @@ Pruebe el botón de confirmación de asistencia/RSVP para asegurarse de que todo
 
 Escritoras: [Sarah Schwartz](https://twitter.com/schwartzswartz),
 Editoras: [Kristen](https://twitter.com/CuddleofDeath),
-Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

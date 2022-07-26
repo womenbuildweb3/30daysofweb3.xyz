@@ -289,4 +289,4 @@ function withdrawUnclaimedDeposits(bytes32 eventId) external {
 ```
 
 Escritoras: [Cami](https://twitter.com/camiinthisthang),
-Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

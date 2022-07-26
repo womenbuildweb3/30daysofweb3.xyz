@@ -35,4 +35,4 @@ Los tres archivos principales en la carpeta del proyecto _subgraph_ que cambiare
 
 Escritoras: [Sarah Schwartz](https://twitter.com/schwartzswartz),
 Editoras: [Kristen](https://twitter.com/cuddleofdeath), [Briseida Montiel](https://twitter.com/brizism),
-Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

@@ -25,4 +25,4 @@ Ahora que hemos aprendido un poco sobre cómo funcionan las transacciones en blo
 
 Escritoras: [Kristen](https://twitter.com/CuddleofDeath)
 Editoras: [Deborah Emeni](https://twitter.com/_emeni_deborah)
-Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

@@ -41,4 +41,4 @@ Ahora podemos acceder fácilmente al cliente apollo en cada una de nuestras pág
 
 Escritoras: [Sarah Schwartz](https://twitter.com/schwartzswartz),
 Editoras: [Sarah Z](https://twitter.com/haegeez),
-Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

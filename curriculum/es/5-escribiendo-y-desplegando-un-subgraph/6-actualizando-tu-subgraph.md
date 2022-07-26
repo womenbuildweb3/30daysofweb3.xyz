@@ -34,4 +34,4 @@ Puede actualizar la dirección del contrato en el manifiesto (subgraph.yaml) y c
 Cuando esté listo para volver a implementar, puede ejecutar el mismo comando de implementación anterior. Puede ver la versión pendiente alternando la versión en la esquina superior derecha.
 
 Escritoras: [Sarah Schwartz](https://twitter.com/schwartzswartz),
-Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

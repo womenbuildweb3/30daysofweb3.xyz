@@ -166,4 +166,4 @@ Si el evento es creado exitosamente, podemos mostrarle al usuario un mensaje de 
 Si encuentra algún error, puede ver una copia completa de esta página aquí: https://github.com/womenbuildweb3/Web3RSVP-frontend/blob/main/pages/create-event.js
 
 Escritoras: [Sarah Schwartz](https://twitter.com/schwartzswartz),
-Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

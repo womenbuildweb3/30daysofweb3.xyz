@@ -59,4 +59,4 @@ mapping(bytes32 => CreateEvent) public idToEvent;
 ```
 
 Escritoras: [Cami](https://twitter.com/camiinthisthang),
-Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)
