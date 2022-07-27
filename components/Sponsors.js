@@ -22,6 +22,11 @@ const sponsors = [
     url: "https://infura.io/",
   },
   {
+    name: "Lens",
+    imageUrl: "/images/sponsors/lens.svg",
+    url: "https://lens.xyz/",
+  },
+  {
     name: "Polygon",
     imageUrl: "/images/sponsors/polygon.svg",
     url: "https://polygon.technology/",
