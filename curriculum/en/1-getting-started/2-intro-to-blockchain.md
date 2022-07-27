@@ -32,3 +32,6 @@ Once the transaction has been requested, it gets authenticated and added to a **
 After, nodes validate the transaction and then receive a reward (usually, the reward will be that blockchain’s main cryptocurrency) for participating in the validation process. Then, the block gets officially added to the existing blockchain. Afterward, the blockchain receives an update across the entire network and officially reflects that transaction. The transaction is now complete. If you’d like to read more in-depth about how transactions work, we recommend checking out this helpful article from [Euromoney Learning](https://www.euromoney.com/learning/blockchain-explained/how-transactions-get-into-the-blockchain).
 
 Now that we have learned a bit about how blockchain transactions work, we will be taking a look at smart contracts next!
+
+Writers: [Kristen](https://twitter.com/CuddleofDeath),
+Editors: [Deborah Emeni](https://twitter.com/_emeni_deborah)

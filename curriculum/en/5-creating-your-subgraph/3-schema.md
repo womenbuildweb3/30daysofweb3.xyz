@@ -94,3 +94,5 @@ Event {
 ```
 
 Each new RSVP for this event will also get added here. Using reverse lookups like this, we are easily able to query all of the RSVPs and Confirmations for any Event or Account.
+
+Writers: [Sarah Schwartz](https://twitter.com/schwartzswartz)

@@ -32,3 +32,5 @@ If you make changes to your smart contract and re-deploy to a new address, you c
 You can update the contract address in the manifest (subgraph.yaml), and copy and paste the new abi in the abis folder. If you made any changes to the schema or emitted events from your contract, make sure to run graph codegen to generate new types.
 
 When you’re ready to re-deploy, you can run the same deploy command above. You can view the pending version by toggling the version in the upper right corner.
+
+Writers: [Sarah Schwartz](https://twitter.com/schwartzswartz)

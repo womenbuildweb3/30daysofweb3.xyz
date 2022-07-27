@@ -78,3 +78,5 @@ export default function Home() {
 ```
 
 Now on the homepage we should be able to see a list of the events we created!
+
+Writers: [Sarah Schwartz](https://twitter.com/schwartzswartz)
