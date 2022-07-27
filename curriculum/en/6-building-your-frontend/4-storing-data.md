@@ -83,3 +83,6 @@ async function storeFiles(files) {
 ```
 
 When our files have been uploaded, `client.put` returns a content identifier (CID). This CID is the unique hash that we will store on-chain and use to retrieve our files.
+
+Writers: [Busayo](https://twitter.com/amoweo),[Sarah Z](https://twitter.com/haegeez),
+Editors: [Sarah Schwartz](https://twitter.com/schwartzswartz)

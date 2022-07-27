@@ -19,4 +19,4 @@ Para mejores prácticas de seguridad, se recomienda utilizar un *cold wallet* o 
 
 Escritoras: [Kristen](https://twitter.com/CuddleofDeath)
 Editoras: [Deborah Emeni](https://twitter.com/_emeni_deborah), [Christina Mills](https://twitter.com/bombayonchain)
-Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

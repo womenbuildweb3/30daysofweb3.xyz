@@ -174,4 +174,4 @@ Después de una configuración e importación exitosas, al hacer clic en el bot�
 En el futuro de las aplicaciones Next.js, RainbowKit también tiene una nueva CLI para las aplicaciones RainbowKit de andamiaje sobre las que puede obtener más información aquí: https://github.com/rainbow-me/rainbowkit (disponible sólo en inglés)
 
 Escritoras: [Sarah Z](https://twitter.com/haegeez), [Busayo](https://twitter.com/AmoweO)
-Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

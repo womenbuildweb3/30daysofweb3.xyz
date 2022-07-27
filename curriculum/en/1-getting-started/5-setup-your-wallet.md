@@ -36,3 +36,6 @@ tweet: "Setup @coinbase wallet with #30DaysofWeb3 @womenbuildweb3 🔐"
 
 - **For many interactions, use a burner wallet.**
   Using a burner wallet to mint NFTs is safer than connecting your main wallet to a website and interacting with it. There have been instances of scams happening where people have reported their entire wallets getting drained due to connecting it to a website. While this only happens occasionally, it is best to be prepared and to keep your other precious assets safe from potential scammers.
+
+Writers:  [Cami](https://twitter.com/camiinthisthang), [Kristen](https://twitter.com/CuddleofDeath),
+Editors: [Deborah Emeni](https://twitter.com/_emeni_deborah), [Christina Mills](https://twitter.com/bombayonchain)

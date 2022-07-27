@@ -58,4 +58,4 @@ Entra al canal #progress en Discord y publica un GIF, una foto o una actualizaci
 
 Escritoras: [Cami](https://twitter.com/camiinthisthang),
 Editoras: [Deborah Emeni](https://twitter.com/_emeni_deborah), [Kristen](https://twitter.com/CuddleofDeath),
-Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

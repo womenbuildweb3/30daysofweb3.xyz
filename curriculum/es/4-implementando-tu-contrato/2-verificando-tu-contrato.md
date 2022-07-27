@@ -19,4 +19,4 @@ Finalmente, copie todo en su archivo *smart contract* y péguelo en el cuadro de
 
 Escritoras: [Cami](https://twitter.com/camiinthisthang), [Sarah Schwartz](https://twitter.com/schwartzswartz),
 Editoras: [Kristen](https://twitter.com/cuddleofdeath),
-Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

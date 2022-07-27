@@ -30,4 +30,4 @@ Las tarifas de transacción son más baratas en Polygon, lo que hace que Ethereu
 
 Escritoras: [Fatma](https://twitter.com/fatima39_fatima)
 Editoras: [Deborah Emeni](https://twitter.com/_emeni_deborah)
-Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

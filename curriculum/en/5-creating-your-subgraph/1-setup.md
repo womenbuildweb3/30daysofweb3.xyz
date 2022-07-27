@@ -31,3 +31,6 @@ For the contract name, we will use Web3RSVP.
 **Note**: you can’t have any spaces or dashes here, or the setup will fail.
 
 After this, it will ask you if you'd like to add another contract. Make sure that this is set to **false** and press enter.
+
+Writers: [Sarah Schwartz](https://twitter.com/schwartzswartz),
+Editors: [Kristen](https://twitter.com/cuddleofdeath)

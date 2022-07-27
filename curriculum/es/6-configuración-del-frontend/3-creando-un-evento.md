@@ -124,4 +124,4 @@ const createEvent = async (cid) => {
 ```
 
 Escritoras: [Sarah Schwartz](https://twitter.com/schwartzswartz),
-Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

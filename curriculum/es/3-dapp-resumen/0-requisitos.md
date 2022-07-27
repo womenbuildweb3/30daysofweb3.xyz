@@ -60,4 +60,4 @@ Nos sumergiremos en los detalles de la construcción de nuestro subgráfico desp
 El **subgráfico** le permite *hacer preguntas sofisticadas* sobre sus datos. El subgrafo solo tiene acceso a los datos que exponemos a través de *eventos de solidity*. Por esta razón, vamos a crear eventos personalizados que expongan datos. Haremos preguntas sobre nuestros datos para obtener información sobre los eventos para los que nuestros usuarios están reservados, eventos que están en el futuro frente a eventos que ya han pasado.
 
 Escritoras: [Cami](https://twitter.com/camiinthisthang),
-Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

@@ -281,3 +281,5 @@ contract Web3RSVP {
     }
 }
 ```
+
+Writers: [Cami](https://twitter.com/camiinthisthang)

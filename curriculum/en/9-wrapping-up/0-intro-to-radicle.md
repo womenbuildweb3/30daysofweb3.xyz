@@ -81,3 +81,5 @@ If you want to share your code with others who also have the Radicle CLI install
 ```
 rad clone rad:git:hnrkknc6ntqasrnej6ous5krdw464etyo3i7y --seed pine.radicle.garden
 ```
+
+Writers: [Sarah Schwartz](https://twitter.com/schwartzswartz)

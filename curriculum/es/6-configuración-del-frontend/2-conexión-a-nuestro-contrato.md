@@ -65,4 +65,4 @@ function connectContract() {
 Ahora que podemos conectarnos a nuestro *contract*,en la siguiente sección podemos llamar una función para crear un nuevo evento.
 
 Escritoras: [Avni Agrawal](https://twitter.com/AvniAgrawal1802), [Sarah Schwartz](https://twitter.com/schwartzswartz),
-Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

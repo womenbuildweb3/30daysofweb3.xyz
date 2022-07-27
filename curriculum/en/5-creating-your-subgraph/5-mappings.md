@@ -253,3 +253,5 @@ export function handleDepositsPaidOut(event: DepositsPaidOut): void {
 You can see a final version of the mappings file [here](https://github.com/womenbuildweb3/web3RSVP-subgraph/blob/main/src/mapping.ts).
 
 Finally we can run `graph build` in the terminal to build our subgraph and make sure we don't get any errors.
+
+Writers: [Sarah Schwartz](https://twitter.com/schwartzswartz)

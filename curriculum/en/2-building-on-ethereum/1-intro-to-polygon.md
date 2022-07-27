@@ -32,3 +32,6 @@ Polygon strives to solve the scalability and usability issues while not compromi
 The main blockchain (Layer 1) is usually slow. Sidechains such as Polygon were created as a solution to speed up the blockchain without having to compromise its security and decentralization thus an improved user experience and reduce network congestion.
 
 Transaction fees are cheaper on Polygon, making Ethereum more inclusive and accessible by everyone. This is made possible through the application of rollups which work by rolling a number of transactions into batches.
+
+Writers: [Fatma](https://twitter.com/fatima39_fatima),
+Editors: [Deborah Emeni](https://twitter.com/_emeni_deborah)

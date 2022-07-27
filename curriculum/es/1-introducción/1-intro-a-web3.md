@@ -88,4 +88,4 @@ A diferencia de los casos que ocurren en la web centralizada, como la interrupci
 
 Escritoras: [Kristen](https://twitter.com/CuddleofDeath)
 Editoras: [Sarah Z](https://twitter.com/haegeez)
-Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

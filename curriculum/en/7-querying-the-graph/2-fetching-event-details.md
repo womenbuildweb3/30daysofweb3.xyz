@@ -80,3 +80,6 @@ Create a new event on the create-event page, and click on the link to your event
 Once you can open up the event details page, you should be able to see your event details in the console.
 
 Now we can use this data to replace the static values on the page.
+
+Writers: [Sarah Schwartz](https://twitter.com/schwartzswartz),
+Editors: [Sarah Z](https://twitter.com/haegeez)

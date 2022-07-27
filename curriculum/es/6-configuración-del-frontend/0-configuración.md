@@ -27,4 +27,4 @@ Si desea cambiar alguno de los diseños o imágenes utilizados, ¡adelante! Este
 
 Escritoras: [Avni Agrawal](https://twitter.com/AvniAgrawal1802),
 Editoras: [Sarah Schwartz](https://twitter.com/schwartzswartz),
-Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

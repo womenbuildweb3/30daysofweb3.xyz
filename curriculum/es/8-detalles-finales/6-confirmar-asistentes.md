@@ -294,4 +294,4 @@ export default PastEvent;
 ¡Y eso es todo! ¡Felicitaciones, has creado una aplicación web3 full-stack! Debes estar muy orgulloso de ti mismo por haber llegado así de lejos.
 
 Escritoras: [Sarah Schwartz](https://twitter.com/schwartzswartz),
-Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

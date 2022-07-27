@@ -47,3 +47,6 @@ This project is broken up into 6 sections and you'll see a help channel for each
 Keep us updated on your progress and motivate your peers!
 
 Drop into the #progress channel in Discord and post a GIF, photo, or written update to let us know how you're doing. Have fun with it - we may or may not be giving out prizes to those who keep up with progress reports :-)
+
+Writers: [Cami](https://twitter.com/camiinthisthang),
+Editors: [Deborah Emeni](https://twitter.com/_emeni_deborah), [Kristen](https://twitter.com/CuddleofDeath)

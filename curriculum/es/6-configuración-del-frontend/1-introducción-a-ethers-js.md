@@ -18,4 +18,4 @@ La librería de Ethers App maneja toda esta interacción por usted.
 
 Escritoras: [Avni Agrawal](https://twitter.com/AvniAgrawal1802),
 Editoras: [Sarah Schwartz](https://twitter.com/schwartzswartz),
-Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

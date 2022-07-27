@@ -96,4 +96,4 @@ Event {
 Cada nuevo RSVP para este evento también se agregará aquí. Al usar búsquedas inversas como esta, podemos consultar fácilmente todas las confirmaciones de asistencia y confirmaciones para cualquier evento o cuenta.
 
 Escritoras: [Sarah Schwartz](https://twitter.com/schwartzswartz),
-Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

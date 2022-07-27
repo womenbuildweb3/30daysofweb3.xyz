@@ -14,3 +14,6 @@ Since storing data on the blockchain can be both expensive and slow, we'll use [
 ## Getting started with Web3.Storage
 
 Visit https://web3.storage/login/ to create an account and then follow this short guide https://web3.storage/docs/how-tos/generate-api-token/ to create your API token. Once you have generated your API token, go to your `.env.local` file and update `WEB3STORAGE_TOKEN` with your Web3.Storage API token.
+
+Writers: [Busayo](https://twitter.com/AmoweO),
+Editors: [Sarah Z](https://twitter.com/haegeez), [Sarah Schwartz](https://twitter.com/schwartzswartz)

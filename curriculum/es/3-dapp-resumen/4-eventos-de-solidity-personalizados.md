@@ -268,4 +268,4 @@ contract Web3RSVP {
 ```
 
 Escritoras: [Cami](https://twitter.com/camiinthisthang),
-Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

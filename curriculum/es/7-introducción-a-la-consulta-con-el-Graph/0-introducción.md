@@ -77,4 +77,4 @@ También podemos ordenar nuestros eventos usando la palabra clave orderBy. Para 
 Puede encontrar una referencia completa para realizar consultas en los documentos de The Graph aquí: https://thegraph.com/docs/en/developer/graphql-api/ (página disponible sólo en inglés).
 
 Escritoras: [Sarah Schwartz](https://twitter.com/schwartzswartz),
-Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

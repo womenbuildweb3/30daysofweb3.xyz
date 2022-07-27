@@ -32,3 +32,6 @@ We will also add `@protofire/subgraph-toolkit` as a dependency. Run `yarn add @p
 The initial setup should have already grabbed the contract ABI for you. If you don’t see it in the abis folder, you can find the abi in your hardhat project in the artifacts folder. It will be called `[YourContractName].json`.
 
 The three main files in the subgraph project folder we will be changing are the `subgraph.yaml`, `schema.graphql`, and `src/{Name}.ts` files.
+
+Writers: [Sarah Schwartz](https://twitter.com/schwartzswartz),
+Editors: [Kristen](https://twitter.com/cuddleofdeath), [Briseida Montiel](https://twitter.com/brizism)

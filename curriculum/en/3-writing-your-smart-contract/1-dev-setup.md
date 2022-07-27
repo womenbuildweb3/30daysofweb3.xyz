@@ -74,3 +74,6 @@ pragma solidity ^0.8.0;
 The SPDX-License-Identifier helps define the license of our file. In this project, we are choosing the [MIT license](https://spdx.org/licenses/MIT.html). This is because our project is completely open source.
 
 The `pragma solidity ^0.8.4;` line tells the compiler which version of Solidity it will use when compiled. **Important Note:** It's a requirement that the pragma solidity line matches the version of Solidity defined in the module exports of your hardhat.config.js file.
+
+Writers: [Cami](https://twitter.com/camiinthisthang),
+Editors: [Sarah Z](https://twitter.com/haegeez), [Kristen](https://twitter.com/cuddleofdeath)

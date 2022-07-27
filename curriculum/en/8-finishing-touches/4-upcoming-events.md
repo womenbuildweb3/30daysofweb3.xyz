@@ -100,3 +100,5 @@ export default function MyUpcomingEvents() {
   );
 }
 ```
+
+Writers: [Sarah Schwartz](https://twitter.com/schwartzswartz)

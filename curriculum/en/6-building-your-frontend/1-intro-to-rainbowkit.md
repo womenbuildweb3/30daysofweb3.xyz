@@ -72,3 +72,6 @@ export default function MyApp({ Component, pageProps }) {
   );
 }
 ```
+
+Writers: [Busayo](https://twitter.com/AmoweO),
+Editors: [Sarah Z](https://twitter.com/haegeez)
