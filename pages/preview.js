@@ -69,7 +69,7 @@ export default function Preview( { locale } ) {
                     {locale !== "es" ? "Intro to Wallets" : "Introducción a Billeteras Virtuales"}
                   </li>
                   <li>
-                    {locale !== "es" ? "Intro to Wallets" : "Introducción a Billeteras Virtuales"}
+                    {locale !== "es" ? "Setup Your Wallet" : "Configura Tu Billetera"}
                   </li>
                 </ul>
               </div>
@@ -104,7 +104,7 @@ export default function Preview( { locale } ) {
                     {locale !== "es" ? "Defining Our Data Structure" : "Definición de Nuestra Estructura de Datos"}
                   </li>
                   <li>
-                    {locale !== "es" ? "Defining Functions" : "Definición de funciones"}
+                    {locale !== "es" ? "Defining Functions" : "Definición de las Funciones"}
                   </li>
                   <li>
                     {locale !== "es" ? "Custom Solidity Events" : "Eventos de Solidity Personalizados"}
@@ -164,8 +164,7 @@ export default function Preview( { locale } ) {
                     {locale !== "es" ? "Add Wallet Connection" : "Agregar conexión de Wallet"}
                   </li>
                   <li>
-                    {locale !== "es" ? "Intro to Web3.Storage" : "Introducción a Web3.Storage"}
-                     
+                    {locale !== "es" ? "Intro to Web3.Storage" : "Introducción a Web3.Storage"} 
                   </li>
                   <li>
                     {locale !== "es" ? "Using Decentralized Storage" : "Uso de Almacenamiento Descentralizado"}
