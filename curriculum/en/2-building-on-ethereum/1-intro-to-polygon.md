@@ -33,5 +33,7 @@ The main blockchain (Layer 1) is usually slow. Sidechains such as Polygon were c
 
 Transaction fees are cheaper on Polygon, making Ethereum more inclusive and accessible by everyone. This is made possible through the application of rollups which work by rolling a number of transactions into batches.
 
+---
+
 Writers: [Fatma](https://twitter.com/fatima39_fatima),
 Editors: [Deborah Emeni](https://twitter.com/_emeni_deborah)

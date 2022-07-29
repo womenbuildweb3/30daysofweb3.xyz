@@ -105,4 +105,6 @@ export default function MyPastEvents() {
 }
 ```
 
+---
+
 Writers: [Sarah Schwartz](https://twitter.com/schwartzswartz)

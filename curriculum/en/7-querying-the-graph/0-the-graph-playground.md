@@ -77,5 +77,7 @@ We can also order our events using the orderBy keyword. To order all events by t
 
 You can find a full reference for querying in The Graph’s docs here: https://thegraph.com/docs/en/developer/graphql-api/
 
+---
+
 Writers: [Sarah Schwartz](https://twitter.com/schwartzswartz),
 Editors: [Sarah Z](https://twitter.com/haegeez)

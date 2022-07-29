@@ -66,5 +66,7 @@ STAGING_INFURA_URL=https://polygon-mumbai.infura.io/v3/12345678
 STAGING_PRIVATE_KEY=1234_YOUR_PRIVATE_KEY_5678
 ```
 
+---
+
 Writers: [Sarah Schwartz](https://twitter.com/schwartzswartz),
 Editors: [Kristen](https://twitter.com/cuddleofdeath)

@@ -7,21 +7,28 @@ optionalNextPath: /en/curriculum/2-building-on-ethereum/0-client-server-architec
 tweet: "Setup @coinbase wallet with #30DaysofWeb3 @womenbuildweb3 🔐"
 ---
 
-1. **Download the Coinbase Wallet chrome extension.** You can find the link [here](https://chrome.google.com/webstore/detail/coinbase-wallet-extension/hnfanknocfeofbddgcijnmhnfnkdnaad?hl=en).
+## Download Coinbase Wallet
 
-2. Click on the puzzle piece icon at the top right of your chrome browser search bar. **Pin the extension to your toolbar by clicking on the pin icon.**
+Note: You will need Chrome browser for this setup. Download the browser [here](https://www.google.com/chrome/downloads/).
 
-3. **Open the extension and select "Create a new wallet" and follow the prompts.**
+1. **Download the Coinbase Wallet Chrome extension.** You can find the link [here](https://chrome.google.com/webstore/detail/coinbase-wallet-extension/hnfanknocfeofbddgcijnmhnfnkdnaad?hl=en).
 
-> _(Note: This wallet will be used specifically for developing your dapp. This wallet should not be used to recieve payments or send real $ to!!)_
+2. Upon downloading the extension, a new tab should open where you'll be guided through the wallet creation process. Be sure to select **Create a new wallet** and then follow the prompts.
 
-4. You should **write down your recovery phrase** and keep it safe as best practice, but if you lose this wallet, nothing will happen because this is strictly a development wallet.
+> IMPORTANT: This wallet will be used specifically for developing your dapp. This wallet should NOT be used to recieve payments or send real $ to!
 
-5. **In the settings tab, scroll down to "Developer Mode" and switch it on.**
+3. You should **write down your recovery phrase** and keep it safe as best practice, but if you lose this wallet, nothing will happen because this is strictly a _development_ wallet.
 
-6. **Change your network to Polygon Mumbai**, the network we will be using to deploy our smart contract.
+4. Once you've created your wallet, click on the puzzle piece icon at the top right of your Chrome browser search bar. Pin the extension to your toolbar by clicking on the pin icon.
+5. After you pin the extension, click on the vertical three-dot icon and then click "Manage Extension".
 
-## Blockchain Safety Tips
+6. This should lead you to a new tab where you can manage extensions. In the top right corner, toggle **Developer mode** to be **ON**.
+
+7. Click on the Coinbase Wallet extension icon to interact with your wallet. Click the Settings icon and scroll down the menu to navigate to **Advanced Settings**.
+
+8. In Advanced Settings, toggle **Enable testnets** to be **ON**. This will enable you to interact with test networks like **Polygon Mumbai**, which we'll be using for this course.
+
+## Wallet Safety Tips
 
 - **Never share your PRIVATE KEY or SECRET RECOVERY PHRASE with anyone.**
   Anyone who has your private key can access your account (or, in some cases: multiple accounts, depending on the wallet.)
@@ -37,5 +44,7 @@ tweet: "Setup @coinbase wallet with #30DaysofWeb3 @womenbuildweb3 🔐"
 - **For many interactions, use a burner wallet.**
   Using a burner wallet to mint NFTs is safer than connecting your main wallet to a website and interacting with it. There have been instances of scams happening where people have reported their entire wallets getting drained due to connecting it to a website. While this only happens occasionally, it is best to be prepared and to keep your other precious assets safe from potential scammers.
 
-Writers:  [Cami](https://twitter.com/camiinthisthang), [Kristen](https://twitter.com/CuddleofDeath),
-Editors: [Deborah Emeni](https://twitter.com/_emeni_deborah), [Christina Mills](https://twitter.com/bombayonchain)
+---
+
+Writers: [Cami](https://twitter.com/camiinthisthang), [Kristen](https://twitter.com/CuddleofDeath),
+Editors: [Deborah Emeni](https://twitter.com/_emeni_deborah), [Christina Mills](https://twitter.com/bombayonchain), [Sarah Z](https://twitter.com/haegeez)

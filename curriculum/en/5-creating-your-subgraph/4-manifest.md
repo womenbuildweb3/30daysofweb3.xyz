@@ -34,13 +34,15 @@ dataSources:
 We also want to update our `Entity` names. You can delete the generated entities here and replace them with the ones below. We will be creating four entities: `Event`, `Account`, `RSVP`, and `Confirmation`.
 
 ```yaml
-    entities:
-        - Event
-        - Account
-        - RSVP
-        - Confirmation
+entities:
+  - Event
+  - Account
+  - RSVP
+  - Confirmation
 ```
 
 The `eventHandlers` section is where we can tell the subgraph how to connect each of our mappings to different event triggers. This should already be filled out for you. Each time an event that is defined here is emitted from our contract, the corresponding mapping function set as the handler will run.
+
+---
 
 Writers: [Sarah Schwartz](https://twitter.com/schwartzswartz)

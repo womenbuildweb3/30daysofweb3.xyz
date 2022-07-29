@@ -254,4 +254,6 @@ You can see a final version of the mappings file [here](https://github.com/women
 
 Finally we can run `graph build` in the terminal to build our subgraph and make sure we don't get any errors.
 
+---
+
 Writers: [Sarah Schwartz](https://twitter.com/schwartzswartz)
