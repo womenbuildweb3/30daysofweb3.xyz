@@ -20,13 +20,24 @@ Note: You will need Chrome browser for this setup. Download the browser [here](h
 3. You should **write down your recovery phrase** and keep it safe as best practice, but if you lose this wallet, nothing will happen because this is strictly a _development_ wallet.
 
 4. Once you've created your wallet, click on the puzzle piece icon at the top right of your Chrome browser search bar. Pin the extension to your toolbar by clicking on the pin icon.
+
+![Pin Coinbase Extension](https://user-images.githubusercontent.com/15064710/181860354-51b3eebc-71ad-4b42-8b6e-5be6aa547299.png)
+
 5. After you pin the extension, click on the vertical three-dot icon and then click "Manage Extension".
+
+![Manage Coinbase Extension](https://user-images.githubusercontent.com/15064710/181860399-d58cc66c-6f97-4485-badb-3b471e2c9c75.png)
 
 6. This should lead you to a new tab where you can manage extensions. In the top right corner, toggle **Developer mode** to be **ON**.
 
-7. Click on the Coinbase Wallet extension icon to interact with your wallet. Click the Settings icon and scroll down the menu to navigate to **Advanced Settings**.
+![Toggle Developer Mode](https://user-images.githubusercontent.com/15064710/181860469-9dec877a-448d-4d0c-bdf4-3e178bf9ac28.png)
 
-8. In Advanced Settings, toggle **Enable testnets** to be **ON**. This will enable you to interact with test networks like **Polygon Mumbai**, which we'll be using for this course.
+7. Click on the Coinbase Wallet extension icon to interact with your wallet. Click the Settings icon and then click on "Default network".
+
+8. Scroll down list of networks until you see the option to **Enable testnets**. Toggle **Enable testnets** to be **ON**.
+
+![Enable testnets](https://user-images.githubusercontent.com/15064710/181860825-2d21f994-49d1-42b8-b5c2-9447e827b773.png)
+
+9. Enabling testnets should have expanded the list of networks. Scroll down the list of _Testnets_ to find **Polygon Mumbai**. Select **Polygon Mumbai** as your default network.
 
 ## Wallet Safety Tips
 
