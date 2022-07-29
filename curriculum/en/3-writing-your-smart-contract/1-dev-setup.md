@@ -33,6 +33,12 @@ Confirm your Node.js version by calling `nvm current`. You should be using Node 
 
 Now you’re good to go! We’ll be installing dependencies in our app as we build, but this will set you up to be able to download smoothly.
 
+## Git and Github
+
+If want to apply for the acceletor program or receive kudos for completing 30DaysofWeb3, you will have to submit a link to a git repository as proof of work.
+
+If you're new to using git or GitHub, you can get started with this [tutorial here](https://www.youtube.com/watch?v=8Dd7KRpKeaE). 
+
 ## Project Setup
 
 ### Create a Smart Contract
@@ -75,5 +81,5 @@ The SPDX-License-Identifier helps define the license of our file. In this projec
 
 The `pragma solidity ^0.8.4;` line tells the compiler which version of Solidity it will use when compiled. **Important Note:** It's a requirement that the pragma solidity line matches the version of Solidity defined in the module exports of your hardhat.config.js file.
 
-Writers: [Cami](https://twitter.com/camiinthisthang),
-Editors: [Sarah Z](https://twitter.com/haegeez), [Kristen](https://twitter.com/cuddleofdeath)
+Writers: [Cami](https://twitter.com/camiinthisthang)
+Editors: [Sarah Z](https://twitter.com/haegeez), [Kristen](https://twitter.com/cuddleofdeath), [Sarah Schwartz](https://twitter.com/schwartzswartz)
