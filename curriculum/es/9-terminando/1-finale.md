@@ -19,6 +19,10 @@ No olvides tuitear y compartir tu progreso. ¡Realmente acabas de construir una 
 
 ¡Ahora es momento de salir a seguir construyendo! 💪
 
+## Submit your project
+
+Submit your completed project and earn kudos to prove **on-chain** that you completed #30DaysofWeb3 by filling out this form: https://forms.gle/RbpJ8tN1wPbHLBU29
+
 ---
 
 Escritoras: [Deborah Emeni](https://twitter.com/_emeni_deborah),

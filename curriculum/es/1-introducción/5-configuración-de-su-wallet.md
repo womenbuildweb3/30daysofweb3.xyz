@@ -7,6 +7,10 @@ optionalNextPath: /es/curriculum/2-construyendo-sobre-ethereum/0-arquitectura-cl
 tweet: "Setup @coinbase wallet with #30DaysofWeb3 @womenbuildweb3 🔐"
 ---
 
+## Download Coinbase Wallet
+
+Note: You will need Chrome browser for this setup. Download the browser [here](https://www.google.com/chrome/downloads/).
+
 1. Descargue la extensión de Chrome de Coinbase Wallet. [Puede encontrar el enlace aquí](https://chrome.google.com/webstore/detail/coinbase-wallet-extension/hnfanknocfeofbddgcijnmhnfnkdnaad?hl=en)
 
 2. Haga clic en el ícono que luce como una pieza de rompecabezas en la parte superior derecha de la barra de búsqueda de su navegador Chrome. Fije la extensión a su barra de herramientas haciendo clic en el icono de Coinbase Wallet.
@@ -21,7 +25,7 @@ tweet: "Setup @coinbase wallet with #30DaysofWeb3 @womenbuildweb3 🔐"
 
 6. Cambie su red de Ethereum a Polygon Mumbai. Esta es la red en la que implementaremos nuestro _smart contract_.
 
-## Tips de Seguridad en Blockchain
+## Wallet Safety Tips
 
 - **Nunca comparta su _PRIVATE KEY_, _SEED PHRASE_ o _SECRET RECOVERY PHRASE_ con nadie.**
   Cualquiera que tenga su _private key_ o clave privada, puede acceder a su cuenta (o, en algunos casos, a varias cuentas, según el tipo de _wallet_ con la que cuente).
@@ -42,6 +46,6 @@ Si bien esto sucede ocasionalmente, es mejor estar preparados y mantener nuestro
 
 ---
 
-Escritoras: [Cami](https://twitter.com/camiinthisthang), [Kristen](https://twitter.com/CuddleofDeath)
-Editoras: [Deborah Emeni](https://twitter.com/_emeni_deborah), [Christina Mills](https://twitter.com/bombayonchain)
+Escritoras: [Cami](https://twitter.com/camiinthisthang), [Kristen](https://twitter.com/CuddleofDeath),
+Editoras: [Deborah Emeni](https://twitter.com/_emeni_deborah), [Christina Mills](https://twitter.com/bombayonchain),
 Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

@@ -7,6 +7,8 @@ optionalNextPath: /es/curriculum/2-construyendo-sobre-ethereum/0-arquitectura-cl
 tweet: "Learn about smart contracts with #30DaysofWeb3 @womenbuildweb3 🌐"
 ---
 
+![Intro to Smart Contracts](https://user-images.githubusercontent.com/15064710/180661915-e5225c08-7428-4a71-b521-c633023f747e.png)
+
 Un _smart contract_ es un programa informático compilado a partir de un código que puede controlar eventos y acciones de acuerdo con los términos establecidos en el código del _smart contract_. Para simplificar aún más, un [_smart contract_](https://en.wikipedia.org/wiki/Smart_contract) puede considerarse como una máquina expendedora virtual programada con código para seguir un conjunto específico de reglas.
 
 Al igual que las máquinas expendedoras, podemos programar _smart contracts_ con varias funciones. Las máquinas expendedoras permiten a los consumidores insertar una moneda y luego presionar un botón para ejecutar esa transacción. De esta manera, se dispensa una gaseosa refrescante o una barra de chocolate, y también se dispensa el cambio sobrante que se le debe al consumidor.
@@ -17,6 +19,6 @@ Como otro ejemplo, algunos sitios web permiten intercambiar una criptomoneda por
 
 ---
 
-Escritoras: [Kristen](https://twitter.com/CuddleofDeath)
-Editoras: [Deborah Emeni](https://twitter.com/_emeni_deborah), [Christina Mills](https://twitter.com/bombayonchain), [Briseida Montiel](https://twitter.com/brizism)
+Escritoras: [Kristen](https://twitter.com/CuddleofDeath),
+Editoras: [Deborah Emeni](https://twitter.com/_emeni_deborah), [Christina Mills](https://twitter.com/bombayonchain), [Briseida Montiel](https://twitter.com/brizism),
 Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

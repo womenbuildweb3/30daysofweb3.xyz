@@ -112,5 +112,5 @@ Lo último que debemos hacer antes de que podamos crear el evento en la parte de
 
 ---
 
-Escritoras: [Busayo](https://twitter.com/amoweo),[Sarah Z](https://twitter.com/haegeez), [Sarah Schwartz](https://twitter.com/schwartzswartz),
+Escritoras: [Busayo](https://twitter.com/amoweo), [Sarah Z](https://twitter.com/haegeez), [Sarah Schwartz](https://twitter.com/schwartzswartz),
 Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

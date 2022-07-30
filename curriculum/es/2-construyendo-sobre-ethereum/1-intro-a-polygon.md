@@ -5,6 +5,8 @@ optional: false
 tweet: "Learn about @ethereum and layer-1 vs layer-2 scaling solutions with #30DaysofWeb3 @womenbuildweb3 🔗"
 ---
 
+![Intro to Polygon](https://user-images.githubusercontent.com/15064710/180661945-d3975ecb-1562-45af-9a4b-b178cd596145.png)
+
 ## Soluciones de escalado de Ethereum
 
 Ethereum se ha convertido en una de las cadenas de _blockchains_ más populares durante un tiempo, debido a su capacidad para emplear _smart contracts_ completos de Turing. Sin embargo, después de que ganó popularidad, ha habido una congestión significativa en la red como resultado de las altas tarifas de gas.
@@ -33,6 +35,6 @@ Las tarifas de transacción son más baratas en Polygon, lo que hace que Ethereu
 
 ---
 
-Escritoras: [Fatma](https://twitter.com/fatima39_fatima)
-Editoras: [Deborah Emeni](https://twitter.com/_emeni_deborah)
+Escritoras: [Fatma](https://twitter.com/fatima39_fatima),
+Editoras: [Deborah Emeni](https://twitter.com/_emeni_deborah),
 Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

@@ -5,6 +5,8 @@ optional: false
 tweet: "Ship a full-stack event platform dapp with #30DaysofWeb3 @womenbuildweb3 🎫"
 ---
 
+![Dev Setup](https://user-images.githubusercontent.com/15064710/180662024-6fa3c838-c8c4-4586-8d84-33ad0aa4a9f1.png)
+
 ## IDE (Entorno de Desarrollo Integrado)
 
 Aunque cualquier IDE puede funcionar, recomendamos el uso de **VSCode**, un IDE gratuito que puede descargar desde [aquí](https://code.visualstudio.com/download)
@@ -15,7 +17,9 @@ Necesitará tener instalado Node.js y NPM en su computador.
 
 **Node.js** es un entorno de tiempo de ejecución de JavaScript (de ahí su terminación en .js haciendo alusión al lenguaje JavaScript), lo que permite a los desarrolladores crear aplicaciones de JavaScript de pila completa. **NPM** significa _administrador de paquetes de nodos_ y es la interfaz de línea de comandos para un ecosistema vibrante de paquetes Node.js de open-source. Si desea obtener mayor información sobre NPM, consulte [este artículo.](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/)
 
-Para verificar si tiene instalado Node.js y npm, puede ejecutar `node -v` y npm `npm -v`.
+Para verificar si tiene instalado Node.js y npm, puede ejecutar `node -v` y npm `npm -v`. If you get back a number that looks like 8.0.6, that means you do have these installed.
+
+![node version](https://user-images.githubusercontent.com/15346823/179375406-e00e704f-0dfe-40a4-82a3-82463766fe4c.png)
 
 Para instalar Node.js y npm, recomendamos usar **nvm**, un administrador de versiones de nodos que lo ayuda a administrar varias versiones de Node.js y de npm. Siga la guía de instalación [aquí.](https://github.com/nvm-sh/nvm#installing-and-updating)
 
@@ -29,6 +33,12 @@ nvm use --lts
 Confirme su versión de Node.js llamando `nvm current`. Debe estar utilizando Node v16.
 
 Ahora estamos listos para continuar! Estaremos instalando dependencias en nuestra dApp a medida que vayamos contruyéndola, pero con esto ya estamos listos para ir descargando lo demás progresivamente.
+
+## Git and Github
+
+If you want to receive kudos for completing checkpoints and submitting your project and/or you will be applying for our BUIDL Accelerator, you will have to submit a link to a git repository as proof of work.
+
+If you're new to using git or GitHub, you can get started with this [tutorial here](https://www.youtube.com/watch?v=8Dd7KRpKeaE).
 
 ## Configuración del proyecto
 

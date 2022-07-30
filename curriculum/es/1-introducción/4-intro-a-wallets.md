@@ -7,6 +7,8 @@ optionalNextPath: /es/curriculum/2-construyendo-sobre-ethereum/0-arquitectura-cl
 tweet: "Learn about crypto wallets with #30DaysofWeb3 @womenbuildweb3 🔐"
 ---
 
+![Intro to Wallets](https://user-images.githubusercontent.com/15064710/180661921-06c66526-23a9-4e30-8728-e5f2a85239d4.png)
+
 Un _crypto wallet_ es un sistema de almacenamiento para activos digitales como criptomonedas, NFTs y más. Se puede acceder al contenido de cada _crypto wallet_ mediante una clave única creada con una combinación de letras y números asignados explícitamente para el creador de el _wallet_ (llamada _private key_).
 
 El **public key** de un _crypto wallet_ es el la llave publica de el _wallet_ pertinente al usario. Piense en esto como una dirección de trabajo disponible públicamente en la web. Cualquier persona puede usar el _public key_ de un _wallet_ para buscar y verificar la información de la transacción; sin embargo, la información personal/privada no se publica en el blockchain.
@@ -19,6 +21,6 @@ Para mejores prácticas de seguridad, se recomienda utilizar un _cold wallet_ o 
 
 ---
 
-Escritoras: [Kristen](https://twitter.com/CuddleofDeath)
-Editoras: [Deborah Emeni](https://twitter.com/_emeni_deborah), [Christina Mills](https://twitter.com/bombayonchain)
+Escritoras: [Kristen](https://twitter.com/CuddleofDeath),
+Editoras: [Deborah Emeni](https://twitter.com/_emeni_deborah), [Christina Mills](https://twitter.com/bombayonchain),
 Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

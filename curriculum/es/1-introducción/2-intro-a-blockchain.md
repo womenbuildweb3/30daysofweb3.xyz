@@ -7,6 +7,18 @@ optionalNextPath: /es/curriculum/2-construyendo-sobre-ethereum/0-arquitectura-cl
 tweet: "Learn about blockchains and transactions with #30DaysofWeb3 @womenbuildweb3 🌐"
 ---
 
+![Intro to Blockchain](https://user-images.githubusercontent.com/15064710/180661895-aa374dae-299a-46f0-a3d6-de8f7796936c.png)
+
+## What is blockchain?
+
+The **blockchain** is an _expanding system that records information in a manner that makes it hard or almost impossible to hack the system_. Information gets recorded in **blocks**, which are like _little lists of records_.
+
+There are currently at least [1000 blockchains with at least four types of blockchain networks](https://earthweb.com/how-many-blockchains-are-there/#:~:text=Currently%2C%20there%20are%20at%20least,platforms%20provided%20in%20this%20industry.). Each block contains a **hash** (a long string of characters representing a specific piece of data) of the previous block as well as other useful information such as a timestamp and transaction data. This process forms a chain of data, otherwise known as **blockchain**.
+
+Blockchain technology is very versatile and can be used in a variety of ways. It is used for securing personal information, artist royalties, Non-fungible tokens, real estate, and [more](https://www.fool.com/investing/stock-market/market-sectors/financials/blockchain-stocks/blockchain-applications/). It can also aid in voting processes, ensuring that no one is able to vote more than once or tamper with the votes in any way.
+
+## How do blockchain transactions work?
+
 El primer paso en una transacción en el blockchain comienza generalmente cuando un usuario solicita una transacción. Cualquier operación de 'escritura' en el blockchain es una transacción. Esto incluye: implementar un smart contract en el blockchain, comprar un NFT, comprar un nombre ENS, etc.
 
 Las transacciones son solicitudes para que su acción sea validada y agregada al blockchain. Para ejecutar con éxito una transacción en el Blockchain, generalmente se requiere de un _gas fee_ (una comisión de transacción en el blockchain).
@@ -23,6 +35,6 @@ Ahora que hemos aprendido un poco sobre cómo funcionan las transacciones en blo
 
 ---
 
-Escritoras: [Kristen](https://twitter.com/CuddleofDeath)
-Editoras: [Deborah Emeni](https://twitter.com/_emeni_deborah)
+Escritoras: [Kristen](https://twitter.com/CuddleofDeath),
+Editoras: [Deborah Emeni](https://twitter.com/_emeni_deborah),
 Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

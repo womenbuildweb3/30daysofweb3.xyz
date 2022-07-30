@@ -5,6 +5,8 @@ optional: false
 tweet: "Build a frontend for a full-stack dapp with #30DaysofWeb3 @womenbuildweb3 🖼"
 ---
 
+![Building Your Frontend](https://user-images.githubusercontent.com/15064710/180662656-aa2264ea-961c-4bac-9c9c-8955a4296d36.png)
+
 ## Introducción
 
 En esta lección, crearemos la parte del frontend para nuestra dApp utilizando React, Next.js, ethers.js, Rainbowkit, Web3.Storage y The Graph. Nuestra aplicación funcionará con Coinbase Wallet u otras billeteras como MetaMask, Rainbow y WalletConnect. Los usuarios podrán conectar su billetera e interactuar con nuestro _smart contract_ para que puedan crear nuevos eventos, confirmar su asistencia a eventos y confirmar el número de asistentes.
