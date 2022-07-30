@@ -12,6 +12,39 @@ export default function Accelerator({ locale }) {
     "Women Build Web3 provides education, oppportunities, and funding to a new wave of web3 builders";
   const metaUrl = "https://www.30daysofweb3.xyz/";
 
+  const sponsors = [
+    {
+      name: "Filecoin/IPFS",
+      imageUrl: "/images/sponsors/filecoin.svg",
+      url: "https://filecoin.io/",
+    },
+    {
+      name: "The Graph",
+      imageUrl: "/images/sponsors/graph.png",
+      url: "https://thegraph.com/",
+    },
+    {
+      name: "Infura",
+      imageUrl: "/images/sponsors/infura.png",
+      url: "https://infura.io/",
+    },
+    {
+      name: "Lens",
+      imageUrl: "/images/sponsors/lens.svg",
+      url: "https://lens.xyz/",
+    },
+    {
+      name: "Polygon",
+      imageUrl: "/images/sponsors/polygon.svg",
+      url: "https://polygon.technology/",
+    },
+    {
+      name: "Radicle",
+      imageUrl: "/images/sponsors/radicle.svg",
+      url: "https://radicle.xyz/",
+    },
+  ];
+
   return (
     <Layout locale={locale}>
       <Head>
@@ -82,7 +115,7 @@ export default function Accelerator({ locale }) {
               ? "Our treasury is funded by work done by the DAO over the last few months. Staying true to our mission of supporting the most talented women and non-binary engineers in the space, deploying this capital to talented teams is one of the core pillars of our org."
               : "Nuestra tesorería está financiada por el trabajo realizado por nuestra DAO durante los últimos meses. Mantenernos fieles a nuestra misión de apoyar a las mujeres e ingenieras no binarias más talentosas del espacio, desplegar este capital en equipos talentosos es uno de los pilares principales de nuestra organización."}
           </p>
-          <Sponsors />
+          <Sponsors sponsors={sponsors} />
         </div>
       </div>
     </Layout>
