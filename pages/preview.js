@@ -119,7 +119,8 @@ export default function Preview() {
               <div className="space-y-4">
                 <span className="font-bold">Wrapping Up</span>
                 <ul className="list-disc space-y-4 pl-8">
-                  <li>Intro to Radicle</li>
+                <li>Social Graphs with Lens</li>
+                  <li>Host Your Code With Radicle</li>
                 </ul>
               </div>
             </div>
