@@ -55,5 +55,7 @@ export default function MyApp({ Component, pageProps }) {
 
 Now we can easily access the apollo client in each of our pages where we want to query our subgraph!
 
+---
+
 Writers: [Sarah Schwartz](https://twitter.com/schwartzswartz),
 Editors: [Sarah Z](https://twitter.com/haegeez)

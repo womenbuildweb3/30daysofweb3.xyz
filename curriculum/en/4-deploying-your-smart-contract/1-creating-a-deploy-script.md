@@ -48,5 +48,7 @@ To deploy, all we need to do is run the deploy script we just created. We can ad
 
 If we ever need to change something in our contract and redeploy, all we have to do is run `npx hardhat compile` and then `npm run deploy`. If this was successful, you will see something similar to this message in your terminal: `Contract deployed to: 0x80B72dcab8FA1d220E9e8bc93acC75EA36535623`.
 
+---
+
 Writers: [Sarah Schwartz](https://twitter.com/schwartzswartz),
 Editors: [Kristen](https://twitter.com/cuddleofdeath)

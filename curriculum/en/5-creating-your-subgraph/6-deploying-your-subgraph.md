@@ -33,4 +33,6 @@ You can update the contract address in the manifest (subgraph.yaml), and copy an
 
 When you’re ready to re-deploy, you can run the same deploy command above. You can view the pending version by toggling the version in the upper right corner.
 
+---
+
 Writers: [Sarah Schwartz](https://twitter.com/schwartzswartz)

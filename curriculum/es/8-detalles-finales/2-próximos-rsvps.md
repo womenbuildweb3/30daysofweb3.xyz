@@ -11,7 +11,6 @@ Puede abrir esta página en http://localhost:3000/my-rsvps/upcoming, o puede nav
 
 En el archivo `upcoming.js`, podemos importar `useState`, `useAccount` y `ConnectButton` para que el usuario pueda conectar su billetera. También podemos importar `gql` y `useQuery` para poder obtener detalles sobre el evento de nuestro subgraph. Finalmente, podemos importar el componente `EventCard`.
 
-
 ```javascript
 import { useState } from "react";
 import { gql, useQuery } from "@apollo/client";
@@ -38,9 +37,9 @@ const MY_UPCOMING_RSVPS = gql`
     }
   }
 `;
-
 ```
-Para mostrar únicamente los RSVPs de los próximos eventos, podemos filtrar los eventos retornados a través de la consulta  `eventTimestamp`.
+
+Para mostrar únicamente los RSVPs de los próximos eventos, podemos filtrar los eventos retornados a través de la consulta `eventTimestamp`.
 
 También queremos permitir que el usuario conecte su billetera tal como lo hicimos en nuestras otras páginas con el gancho `ConnectButton` y `useAccount`.
 
@@ -108,6 +107,8 @@ export default function MyUpcomingRSVPs() {
   );
 }
 ```
+
+---
 
 Escritoras: [Sarah Schwartz](https://twitter.com/schwartzswartz),
 Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

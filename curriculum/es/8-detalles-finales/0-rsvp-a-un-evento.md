@@ -1,6 +1,6 @@
 ---
 title: Confirmar asistencia/RSVP a un evento
-description: 
+description:
 optional: false
 tweet: "#30DaysofWeb3 @womenbuildweb3 🎫"
 ---
@@ -32,15 +32,15 @@ Ahora comprobaremos si el usuario ya ha confirmado su asistencia o no creando un
 
 ```javascript
 function checkIfAlreadyRSVPed() {
-    if (account) {
-      for (let i = 0; i < event.rsvps.length; i++) {
-        const thisAccount = account.address.toLowerCase();
-        if (event.rsvps[i].attendee.id.toLowerCase() == thisAccount) {
-          return true;
-        }
+  if (account) {
+    for (let i = 0; i < event.rsvps.length; i++) {
+      const thisAccount = account.address.toLowerCase();
+      if (event.rsvps[i].attendee.id.toLowerCase() == thisAccount) {
+        return true;
       }
     }
-    return false;
+  }
+  return false;
 }
 ```
 
@@ -48,30 +48,30 @@ A continuación, podemos crear una función llamada `newRSVP` y llamar al métod
 
 ```javascript
 const newRSVP = async () => {
-    try {
-      const rsvpContract = connectContract();
-      if (rsvpContract) {
-        const txn = await rsvpContract.createNewRSVP(event.id, {
-          value: event.deposit,
-          gasLimit: 300000,
-        });
-        setLoading(true);
-        console.log("Minting...", txn.hash);
-        
-        await txn.wait();
-        console.log("Minted -- ", txn.hash);
-        setSuccess(true);
-        setLoading(false);
-        setMessage("Your RSVP has been created successfully.");
-      } else {
-        console.log("Error getting contract.");
-      }
-    } catch (error) {
-      setSuccess(false);
-      setMessage("Error!");
+  try {
+    const rsvpContract = connectContract();
+    if (rsvpContract) {
+      const txn = await rsvpContract.createNewRSVP(event.id, {
+        value: event.deposit,
+        gasLimit: 300000,
+      });
+      setLoading(true);
+      console.log("Minting...", txn.hash);
+
+      await txn.wait();
+      console.log("Minted -- ", txn.hash);
+      setSuccess(true);
       setLoading(false);
-      console.log(error);
+      setMessage("Your RSVP has been created successfully.");
+    } else {
+      console.log("Error getting contract.");
     }
+  } catch (error) {
+    setSuccess(false);
+    setMessage("Error!");
+    setLoading(false);
+    console.log(error);
+  }
 };
 ```
 
@@ -153,6 +153,8 @@ Si el evento ya ha pasado, ocultaremos todo lo anterior y le informaremos al usu
 Y ¡sí! Creación de RSVP realizada! 🎉
 
 Pruebe el botón de confirmación de asistencia/RSVP para asegurarse de que todo funciona. La página del evento puede tardar unos minutos en mostrar que ya ha confirmado su asistencia.
+
+---
 
 Escritoras: [Sarah Schwartz](https://twitter.com/schwartzswartz),
 Editoras: [Kristen](https://twitter.com/CuddleofDeath),

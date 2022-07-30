@@ -5,7 +5,7 @@ optional: false
 tweet: "Build a frontend for a full-stack dapp with #30DaysofWeb3 @womenbuildweb3 🖼"
 ---
 
-
+![Building Your Frontend](https://user-images.githubusercontent.com/15064710/180662656-aa2264ea-961c-4bac-9c9c-8955a4296d36.png)
 
 ## Introducción
 
@@ -24,6 +24,8 @@ Asegúrese de que todas las dependencias estén instaladas ejecutando `npm insta
 Ahora el código ya se encuentra en su computador! Abra el folder en VS Code.
 
 Si desea cambiar alguno de los diseños o imágenes utilizados, ¡adelante! Este proyecto es 100% suyo para personalizarlo como desee.
+
+---
 
 Escritoras: [Avni Agrawal](https://twitter.com/AvniAgrawal1802),
 Editoras: [Sarah Schwartz](https://twitter.com/schwartzswartz),

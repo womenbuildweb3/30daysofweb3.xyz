@@ -28,5 +28,7 @@ Now you have this code on your computer! Open this folder in VS code either manu
 
 If you want to change any of the the designs or images used along the way, go for it! This project is 100% yours to customize however you like.
 
+---
+
 Writers: [Avni Agrawal](https://twitter.com/AvniAgrawal1802),
 Editors: [Sarah Schwartz](https://twitter.com/schwartzswartz)

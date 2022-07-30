@@ -18,6 +18,7 @@ You will need Node.js and npm installed on your machine.
 **Node.js** is a runtime environment that executes JavaScript outside the browser, enabling developers to build full-stack JavaScript apps. **NPM** stands for *node package manager* and is the command-line interface to a vibrant ecosystem of open-source Node.js packages. If you want to learn more about NPM, check out [this article](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/).
 
 To check if you have Node.js and npm installed, you can run `node -v` and `npm -v`. If you get back a number that looks like 8.0.6, that means you do have these installed.
+
 ![node version](https://user-images.githubusercontent.com/15346823/179375406-e00e704f-0dfe-40a4-82a3-82463766fe4c.png)
 
 To download Node.js and npm, we recommend using **nvm**, a node version manager that helps you manage various Node.js and npm versions. Follow the installation guide [here.](https://github.com/nvm-sh/nvm#installing-and-updating)
@@ -35,9 +36,9 @@ Now you’re good to go! We’ll be installing dependencies in our app as we bui
 
 ## Git and Github
 
-If want to apply for the acceletor program or receive kudos for completing 30DaysofWeb3, you will have to submit a link to a git repository as proof of work.
+If you want to receive kudos for completing checkpoints and submitting your project and/or you will be applying for our BUIDL Accelerator, you will have to submit a link to a git repository as proof of work.
 
-If you're new to using git or GitHub, you can get started with this [tutorial here](https://www.youtube.com/watch?v=8Dd7KRpKeaE). 
+If you're new to using git or GitHub, you can get started with this [tutorial here](https://www.youtube.com/watch?v=8Dd7KRpKeaE).
 
 ## Project Setup
 
@@ -80,6 +81,8 @@ pragma solidity ^0.8.0;
 The SPDX-License-Identifier helps define the license of our file. In this project, we are choosing the [MIT license](https://spdx.org/licenses/MIT.html). This is because our project is completely open source.
 
 The `pragma solidity ^0.8.4;` line tells the compiler which version of Solidity it will use when compiled. **Important Note:** It's a requirement that the pragma solidity line matches the version of Solidity defined in the module exports of your hardhat.config.js file.
+
+---
 
 Writers: [Cami](https://twitter.com/camiinthisthang)
 Editors: [Sarah Z](https://twitter.com/haegeez), [Kristen](https://twitter.com/cuddleofdeath), [Sarah Schwartz](https://twitter.com/schwartzswartz)

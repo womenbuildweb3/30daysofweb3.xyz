@@ -5,15 +5,15 @@ optional: false
 tweet: "Create and deploy a subgraph on @graphprotocol with #30DaysofWeb3 @womenbuildweb3 👾"
 ---
 
-Puede encontrar el archivo de asignaciones en la carpeta `src`. Las asignaciones usan AssemblyScript, un lenguaje fuertemente tipado basado en Typescript, y actúan como los resolutores en su típico API de GraphQL. Son responsables de la lógica que ocurre entre un evento que se activa desde nuestro *smart contract* y la organización de esos datos en nuestro *schema*.
+Puede encontrar el archivo de asignaciones en la carpeta `src`. Las asignaciones usan AssemblyScript, un lenguaje fuertemente tipado basado en Typescript, y actúan como los resolutores en su típico API de GraphQL. Son responsables de la lógica que ocurre entre un evento que se activa desde nuestro _smart contract_ y la organización de esos datos en nuestro _schema_.
 
 Este archivo ya tendrá un diseño básico generado para usted. Debería ver una función para cada controlador de eventos definido en nuestro manifiesto de subgraph. Cada función en nuestro mapeo debe exportarse y toma el evento que manejará como un argumento.
 
 Podemos ejecutar `graph codegen` en la terminal para generar tipos de AssemblyScript para nuestras entidades y eventos, y importarlos en la parte superior de nuestro archivo de asignaciones (asegúrese de estar en el directorio raíz de la carpeta de su proyecto y de haber guardado los cambios antes de ejecutar este comando). Con esto, también debería poder ver fácilmente todas las propiedades del objeto de evento en su editor de código.
 
-Si realiza otros cambios en el manifiesto de *schema* o *subgraph*, siempre puede ejecutar `graph codegen` nuevamente para generar nuevos tipos.
+Si realiza otros cambios en el manifiesto de _schema_ o _subgraph_, siempre puede ejecutar `graph codegen` nuevamente para generar nuevos tipos.
 
-Eliminaremos todo en la primera función y reemplazaremos el objeto 'Example Entity' importado en la parte superior con los tipos de entidad que acabamos de generar. Tampoco necesitaremos importar el tipo de contrato Web3RSVP en la segunda línea ya que no necesitaremos hacer ninguna llamada de contrato. También podemos eliminar el tipo BigInt importado en la primera línea y reemplazarlo con los tipos *Address*, *ipfs* y *json*.
+Eliminaremos todo en la primera función y reemplazaremos el objeto 'Example Entity' importado en la parte superior con los tipos de entidad que acabamos de generar. Tampoco necesitaremos importar el tipo de contrato Web3RSVP en la segunda línea ya que no necesitaremos hacer ninguna llamada de contrato. También podemos eliminar el tipo BigInt importado en la primera línea y reemplazarlo con los tipos _Address_, _ipfs_ y _json_.
 
 El archivo de asignaciones ahora debería verse así:
 
@@ -26,7 +26,7 @@ import {
   DepositsPaidOut,
 } from "../generated/Web3RSVP/Web3RSVP";
 import { Account, RSVP, Confirmation, Event } from "../generated/schema";
-import { integer } from '@protofire/subgraph-toolkit';
+import { integer } from "@protofire/subgraph-toolkit";
 
 export function handleNewEventCreated(event: NewEventCreated): void {}
 
@@ -70,9 +70,9 @@ if (newEvent == null) {
 }
 ```
 
-Este es un patrón estándar que seguiremos para cada una de nuestras funciones de mapeo. Primero verificaremos si podemos cargar nuestra entidad con una identificación única y crear una nueva instancia solo si ese resultado es *null*.
+Este es un patrón estándar que seguiremos para cada una de nuestras funciones de mapeo. Primero verificaremos si podemos cargar nuestra entidad con una identificación única y crear una nueva instancia solo si ese resultado es _null_.
 
-Lo último que debemos hacer aquí es establecer los valores para cada campo de nuestro *schema*. Podemos acceder a la mayoría de estos datos en el objeto event.params. Para el campo `paidOut`, podemos configurarlo como falso.
+Lo último que debemos hacer aquí es establecer los valores para cada campo de nuestro _schema_. Podemos acceder a la mayoría de estos datos en el objeto event.params. Para el campo `paidOut`, podemos configurarlo como falso.
 
 ```javascript
 let newEvent = Event.load(event.params.eventID.toHex());
@@ -86,7 +86,7 @@ newEvent.deposit = event.params.deposit;
 newEvent.paidOut = false;
 ```
 
-Para los campos `totalRSVPs` y `totalConfirmedAttendees`, usaremos el protofire *subgraph* toolkit que agregamos anteriormente. En nuestra función `handleNewEventCreated`, queremos establecer los totales en 0 para comenzar, por lo que podemos usar `integer.ZERO` para establecer estos campos en 0.
+Para los campos `totalRSVPs` y `totalConfirmedAttendees`, usaremos el protofire _subgraph_ toolkit que agregamos anteriormente. En nuestra función `handleNewEventCreated`, queremos establecer los totales en 0 para comenzar, por lo que podemos usar `integer.ZERO` para establecer estos campos en 0.
 
 ```javascript
 newEvent.totalRSVPs = integer.ZERO;
@@ -99,38 +99,41 @@ Para los campos `name`, `description`, `link` e `imagePath`, utilizaremos `event
 let metadata = ipfs.cat(event.params.eventDataCID + "/data.json");
 
 if (metadata) {
-      const value = json.fromBytes(metadata).toObject();
-      if (value) {
-        const name = value.get("name");
-        const description = value.get("description");
-        const link = value.get("link");
-        const imagePath = value.get("image");
+  const value = json.fromBytes(metadata).toObject();
+  if (value) {
+    const name = value.get("name");
+    const description = value.get("description");
+    const link = value.get("link");
+    const imagePath = value.get("image");
 
-        if (name) {
-          newEvent.name = name.toString();
-        }
-
-        if (description) {
-          newEvent.description = description.toString();
-        }
-
-        if (link) {
-          newEvent.link = link.toString();
-        }
-
-        if(imagePath){
-          const imageURL =
-      "https://ipfs.io/ipfs/" + event.params.eventDataCID + imagePath.toString();
-          newEvent.imageURL = imageURL;
-        } else {
-        // return fallback image if no imagePath
-          const fallbackURL = "https://ipfs.io/ipfs/bafybeibssbrlptcefbqfh4vpw2wlmqfj2kgxt3nil4yujxbmdznau3t5wi/event.png";
-          newEvent.imageURL = fallbackURL;
-        }
-      }
+    if (name) {
+      newEvent.name = name.toString();
     }
 
-    newEvent.save();
+    if (description) {
+      newEvent.description = description.toString();
+    }
+
+    if (link) {
+      newEvent.link = link.toString();
+    }
+
+    if (imagePath) {
+      const imageURL =
+        "https://ipfs.io/ipfs/" +
+        event.params.eventDataCID +
+        imagePath.toString();
+      newEvent.imageURL = imageURL;
+    } else {
+      // return fallback image if no imagePath
+      const fallbackURL =
+        "https://ipfs.io/ipfs/bafybeibssbrlptcefbqfh4vpw2wlmqfj2kgxt3nil4yujxbmdznau3t5wi/event.png";
+      newEvent.imageURL = fallbackURL;
+    }
+  }
+}
+
+newEvent.save();
 ```
 
 Nuestra función `handleNewEventCreated` ahora debería verse así:
@@ -152,25 +155,24 @@ export function handleNewEventCreated(event: NewEventCreated): void {
     let metadata = ipfs.cat(event.params.eventDataCID + "/data.json");
 
     if (metadata) {
-      const value = json.fromBytes(metadata).toObject()
+      const value = json.fromBytes(metadata).toObject();
       if (value) {
-        const name = value.get('name')
-        const description = value.get('description')
-        const link = value.get('link')
+        const name = value.get("name");
+        const description = value.get("description");
+        const link = value.get("link");
 
-        if(name){
-          newEvent.name = name.toString()
-         }
+        if (name) {
+          newEvent.name = name.toString();
+        }
 
-        if(description){
-          newEvent.description = description.toString()
-         }
+        if (description) {
+          newEvent.description = description.toString();
+        }
 
-        if(link){
-          newEvent.link = link.toString()
-         }
+        if (link) {
+          newEvent.link = link.toString();
+        }
       }
-
     }
 
     newEvent.save();
@@ -221,10 +223,14 @@ export function handleConfirmedAttendee(event: ConfirmedAttendee): void {
     newConfirmation.event = thisEvent.id;
     newConfirmation.save();
 
-    thisEvent.totalConfirmedAttendees = integer.increment(thisEvent.totalConfirmedAttendees);
+    thisEvent.totalConfirmedAttendees = integer.increment(
+      thisEvent.totalConfirmedAttendees
+    );
     thisEvent.save();
 
-    account.totalAttendedEvents = integer.increment(account.totalAttendedEvents);
+    account.totalAttendedEvents = integer.increment(
+      account.totalAttendedEvents
+    );
     account.save();
   }
 }
@@ -245,6 +251,8 @@ export function handleDepositsPaidOut(event: DepositsPaidOut): void {
 Puede ver una versión final del archivo de asignaciones [aquí.](https://github.com/womenbuildweb3/web3RSVP-subgraph/blob/main/src/mapping.ts)
 
 Finalmente, podemos ejecutar `graph build` en la terminal para construir nuestro subgrafo y asegurarnos de que no tengamos ningún error.
+
+---
 
 Escritoras: [Sarah Schwartz](https://twitter.com/schwartzswartz),
 Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

@@ -179,5 +179,7 @@ And that's it! Test out the page to see if you are able to successfully create a
 
 If you run into any errors, you can see a full copy of this page here: https://github.com/womenbuildweb3/Web3RSVP-frontend/blob/main/pages/create-event.js
 
+---
+
 Writers: [Sarah Schwartz](https://twitter.com/schwartzswartz),
 Editors: [Sarah Z](https://twitter.com/haegeez)

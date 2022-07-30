@@ -33,5 +33,7 @@ The initial setup should have already grabbed the contract ABI for you. If you d
 
 The three main files in the subgraph project folder we will be changing are the `subgraph.yaml`, `schema.graphql`, and `src/{Name}.ts` files.
 
+---
+
 Writers: [Sarah Schwartz](https://twitter.com/schwartzswartz),
 Editors: [Kristen](https://twitter.com/cuddleofdeath), [Briseida Montiel](https://twitter.com/brizism)

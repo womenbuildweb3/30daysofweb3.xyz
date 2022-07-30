@@ -17,5 +17,7 @@ Smart contracts can be programmed to accept payment and can return an item in pl
 
 In another example, some websites allow you to swap one cryptocurrency into a different one. Popular sites like Uniswap have options to swap between many different cryptocurrencies. Each time a user goes to execute a swap, a function tied to a smart contract is triggered. Like the vending machine, the swapping smart contract accepts the user’s payment then sends the user the currency they requested in return.
 
+---
+
 Writers: [Kristen](https://twitter.com/CuddleofDeath),
 Editors: [Deborah Emeni](https://twitter.com/_emeni_deborah), [Christina Mills](https://twitter.com/bombayonchain), [Briseida Montiel](https://twitter.com/brizism)
