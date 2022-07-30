@@ -70,3 +70,8 @@ export default connectContract;
 ```
 
 Now that we can connect to our contract, we can call a function to create a new event in the next section.
+
+---
+
+Writers: [Avni Agrawal](https://twitter.com/AvniAgrawal1802),
+Editors: [Sarah Schwartz](https://twitter.com/schwartzswartz)

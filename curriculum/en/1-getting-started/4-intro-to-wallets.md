@@ -18,3 +18,8 @@ There are many forms of crypto wallets, with many options being available digita
 A **hot wallet** is one of the most common ways to store crypto assets. It’s a very convenient option because it’s typically accessed via web, mobile, or desktop. However, _because hot wallets are always online, they are more vulnerable to attacks_.
 
 **For best safety practices, a cold wallet is recommended.** Unlike hot wallets, **cold wallets** are _hardware devices that require physical input to unlock_. While cold wallets aren’t as convenient and are less accessible due to costing a fee to purchase, they provide the best security, as no one can access their contents without interacting in person with the hardware wallet. Some popular cold storage options include Ledger and Trezor.
+
+---
+
+Writers: [Kristen](https://twitter.com/CuddleofDeath),
+Editors: [Deborah Emeni](https://twitter.com/_emeni_deborah), [Christina Mills](https://twitter.com/bombayonchain)

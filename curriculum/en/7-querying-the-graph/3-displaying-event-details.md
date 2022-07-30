@@ -67,3 +67,8 @@ After `Hosted by{" "}`, inside the `<a>` tag we can add the event owner's addres
 ```
 
 You should now be able to see all of the event details!
+
+---
+
+Writers: [Sarah Schwartz](https://twitter.com/schwartzswartz),
+Editors: [Sarah Z](https://twitter.com/haegeez)

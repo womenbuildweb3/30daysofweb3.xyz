@@ -9,7 +9,7 @@ The subgraph manifest (subgraph.yaml) is where you can define settings for the s
 
 Just above the `dataSources`, we will need to add a `features` section where we can add `ipfsOnEthereumContracts`.
 
-```json
+```yaml
 features:
   - ipfsOnEthereumContracts
 ```
@@ -20,7 +20,7 @@ You can find the start block on etherscan. Copy the block number for the first t
 
 The top of our `dataSources` should now look like this:
 
-```json
+```yaml
 dataSources:
   - kind: ethereum
     name: Web3RSVP
@@ -33,12 +33,16 @@ dataSources:
 
 We also want to update our `Entity` names. You can delete the generated entities here and replace them with the ones below. We will be creating four entities: `Event`, `Account`, `RSVP`, and `Confirmation`.
 
-```json
-    entities:
-        - Event
-        - Account
-        - RSVP
-        - Confirmation
+```yaml
+entities:
+  - Event
+  - Account
+  - RSVP
+  - Confirmation
 ```
 
 The `eventHandlers` section is where we can tell the subgraph how to connect each of our mappings to different event triggers. This should already be filled out for you. Each time an event that is defined here is emitted from our contract, the corresponding mapping function set as the handler will run.
+
+---
+
+Writers: [Sarah Schwartz](https://twitter.com/schwartzswartz)

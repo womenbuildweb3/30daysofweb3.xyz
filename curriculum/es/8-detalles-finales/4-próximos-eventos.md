@@ -38,7 +38,6 @@ const MY_UPCOMING_EVENTS = gql`
     }
   }
 `;
-
 ```
 
 A continuación, podemos configurar el resultado de nuestra consulta y conectar el botón de la billetera tal como lo hemos hecho en otras páginas y mapear nuestros resultados para mostrar las tarjetas de eventos.
@@ -102,5 +101,7 @@ export default function MyUpcomingEvents() {
 }
 ```
 
+---
+
 Escritoras: [Sarah Schwartz](https://twitter.com/schwartzswartz),
-Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

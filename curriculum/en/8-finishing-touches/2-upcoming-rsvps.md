@@ -107,3 +107,7 @@ export default function MyUpcomingRSVPs() {
   );
 }
 ```
+
+---
+
+Writers: [Sarah Schwartz](https://twitter.com/schwartzswartz)

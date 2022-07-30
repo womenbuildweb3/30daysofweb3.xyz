@@ -5,7 +5,7 @@ optional: false
 tweet: "Learn to use @rainbowdotme's RainbowKit with #30DaysofWeb3 @womenbuildweb3 🌈"
 ---
 
-![RainbowKit Ui](https://i.imgur.com/QgE9oIj.jpg)
+![RainbowKit UI](https://i.imgur.com/QgE9oIj.jpg)
 
 ## What is RainbowKit?
 
@@ -72,3 +72,8 @@ export default function MyApp({ Component, pageProps }) {
   );
 }
 ```
+
+---
+
+Writers: [Busayo](https://twitter.com/AmoweO),
+Editors: [Sarah Z](https://twitter.com/haegeez)

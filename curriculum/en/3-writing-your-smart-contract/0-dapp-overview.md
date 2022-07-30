@@ -63,3 +63,7 @@ The subgraph is what will allow us to create the ability to add a dashboard func
 We'll be diving into the specifics of building our subgraph after the smart contract section, but you should understand the role of a subgraph in your dapp as you're writing the smart contract to make sure that you're optimizing your contract for the on-chain information you want to show on your front end
 
 The **subgraph** allows you to _ask sophisticated questions_ about your data. The subgraph only has access to data we expose via _Solidity events_. For this reason, we're going to create custom events that expose data we'll ask questions about our data to get insights about the events our users are RSVP'd for, events that are in the future vs events that have already passed.
+
+---
+
+Writers: [Cami](https://twitter.com/camiinthisthang)

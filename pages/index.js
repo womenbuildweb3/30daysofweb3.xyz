@@ -14,7 +14,48 @@ export default function Home({ locale }) {
     "30 Days of Web3 is the ultimate guide to building on Ethereum. Ship a full-stack dapp leveraging must-know web3 tools, protocols, and frameworks.";
   const metaUrl = "https://www.30daysofweb3.xyz";
 
-  // console.log("LOCALE", locale)
+  const sponsors = [
+    {
+      name: "The Ethereum Foundation",
+      imageUrl: "/images/sponsors/ef.svg",
+      url: "https://ethereum.foundation/",
+    },
+    {
+      name: "Filecoin/IPFS",
+      imageUrl: "/images/sponsors/filecoin.svg",
+      url: "https://filecoin.io/",
+    },
+    {
+      name: "The Graph",
+      imageUrl: "/images/sponsors/graph.png",
+      url: "https://thegraph.com/",
+    },
+    {
+      name: "Infura",
+      imageUrl: "/images/sponsors/infura.png",
+      url: "https://infura.io/",
+    },
+    {
+      name: "Lens",
+      imageUrl: "/images/sponsors/lens.svg",
+      url: "https://lens.xyz/",
+    },
+    {
+      name: "Polygon",
+      imageUrl: "/images/sponsors/polygon.svg",
+      url: "https://polygon.technology/",
+    },
+    {
+      name: "Radicle",
+      imageUrl: "/images/sponsors/radicle.svg",
+      url: "https://radicle.xyz/",
+    },
+    {
+      name: "Vercel",
+      imageUrl: "/images/sponsors/vercel.svg",
+      url: "https://vercel.com/",
+    },
+  ];
 
   return (
     <Layout locale={locale}>
@@ -41,17 +82,17 @@ export default function Home({ locale }) {
       <div className="my-16 mx-auto max-w-7xl px-4 sm:my-24 space-y-8 lg:space-y-16">
         <div className="text-center">
           <h1 className="text-4xl tracking-tight font-extrabold text-slate-900 sm:text-5xl md:text-6xl">
-            {locale === "en"
+            {locale !== "es"
               ? "The Ultimate Guide to"
               : "La guía fundamental para"}{" "}
             <span className="sm:block text-royal-600">
-              {locale === "en"
+              {locale !== "es"
                 ? "Building Fullstack Dapps"
                 : "construir Fullstack Dapps"}
             </span>
           </h1>
           <p className="mt-3 max-w-md mx-auto text-base text-slate-700 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-            {locale === "en"
+            {locale !== "es"
               ? `Whether you're a curious hacker or an experienced engineer, 30
             Days of Web3 is project-based curriculum created by developers to
             teach you how to build full-stack dapps.`
@@ -66,7 +107,7 @@ export default function Home({ locale }) {
                 rel="noopener noreferrer"
                 className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-royal-600 hover:bg-royal-700 md:py-4 md:text-lg md:px-10"
               >
-                {locale === "en" ? " Register" : "Registrarse"}
+                {locale !== "es" ? " Register" : "Registrarse"}
               </a>
             </div>
           </div>
@@ -76,13 +117,13 @@ export default function Home({ locale }) {
             <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 xl:py-20 xl:px-20">
               <div className="lg:self-center">
                 <span className="text-base text-royal-600 font-semibold tracking-wide uppercase">
-                  {locale === "en" ? "Education" : "Educaión"}
+                  {locale !== "es" ? "Education" : "Educaión"}
                 </span>
                 <h2 className="mt-2 text-3xl font-extrabold text-slate-900 sm:text-4xl">
-                  {locale === "en" ? "Learn by doing" : "Aprende haciendo"}
+                  {locale !== "es" ? "Learn by doing" : "Aprende haciendo"}
                 </h2>
                 <p className="mt-4 text-lg leading-6 text-slate-700">
-                  {locale === "en"
+                  {locale !== "es"
                     ? `You'll leverage must-know web3 tools, protocols, and
                   frameworks to build your stack and create an architectural
                   reference to build any dapp. Go through our curriculum at your
@@ -107,13 +148,13 @@ export default function Home({ locale }) {
               <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 xl:py-20 xl:px-20">
                 <div className="lg:self-center">
                   <span className="text-base text-royal-600 font-semibold tracking-wide uppercase">
-                    {locale === "en" ? "Accelerator" : "Acelerador"}
+                    {locale !== "es" ? "Accelerator" : "Acelerador"}
                   </span>
                   <h2 className="mt-2 text-3xl font-extrabold text-slate-900 sm:text-4xl">
-                    {locale === "en" ? "Build Accelerator" : "Build Acelerador"}
+                    {locale !== "es" ? "Build Accelerator" : "Build Acelerador"}
                   </h2>
                   <p className="mt-4 text-lg leading-6 text-slate-700">
-                    {locale === "en"
+                    {locale !== "es"
                       ? `Women and non-binary devs who complete our curriculum will
                     be invited to join`
                       : `Mujeres y personas no binarias que completen nuestro curriculum serán invitadas a unirse a`}{" "}
@@ -123,17 +164,17 @@ export default function Home({ locale }) {
                       rel="noopener noreferrer"
                       className="underline"
                     >
-                      {locale === "en" ? "our DAO" : "nuestra DAO"}
+                      {locale !== "es" ? "our DAO" : "nuestra DAO"}
                     </a>{" "}
-                    {locale === "en"
+                    {locale !== "es"
                       ? "and take part in a 3-month"
                       : "y ser parte 3 meses de nuestro"}{" "}
                     <span className="font-medium text-slate-900">
-                      {locale === "en"
+                      {locale !== "es"
                         ? "BUIDL Accelerator"
                         : "BUIDL Accelerator"}
                     </span>{" "}
-                    {locale === "en"
+                    {locale !== "es"
                       ? `where teams can request funding to work on web3 projects.
                     Get paid while you build out an MVP with a team of talented
                     peers, and build up your reputation in the space to get the
@@ -147,15 +188,15 @@ export default function Home({ locale }) {
               <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 xl:py-20 xl:px-20">
                 <div className="lg:self-center">
                   <span className="text-base text-royal-600 font-semibold tracking-wide uppercase">
-                    {locale === "en" ? "Opportunities" : "Oportunidades"}
+                    {locale !== "es" ? "Opportunities" : "Oportunidades"}
                   </span>
                   <h2 className="mt-2 text-3xl font-extrabold text-slate-900 sm:text-4xl">
-                    {locale === "en"
+                    {locale !== "es"
                       ? "Expand your network"
                       : "Expande tu red de contactos"}
                   </h2>
                   <p className="mt-4 text-lg leading-6 text-slate-700">
-                    {locale === "en"
+                    {locale !== "es"
                       ? `Connect with our sponsors and partner organizations looking
                     to hire engineers, dev rels, and more. We're
                     collaborating with web3 ecosystem leaders like The Ethereum
@@ -175,16 +216,16 @@ export default function Home({ locale }) {
           className="text-center py-12 sm:py-16 sm:px-6 lg:px-8"
         >
           <h2 className="text-3xl font-extrabold sm:text-4xl mb-8 sm:mb-12">
-            {locale === "en" ? "Our Sponsors" : "Creado con el apoyo de"}
+            {locale !== "es" ? "Our Sponsors" : "Creado con el apoyo de"}
           </h2>
-          <Sponsors />
+          <Sponsors sponsors={sponsors} />
         </div>
         <div
           id="partners"
           className="text-center py-12 sm:py-16 sm:px-6 lg:px-8"
         >
           <h2 className="text-3xl font-extrabold sm:text-4xl mb-8 sm:mb-12">
-            {locale === "en"
+            {locale !== "es"
               ? "Partner Communities"
               : "Explora las comunidades asociadas"}
           </h2>

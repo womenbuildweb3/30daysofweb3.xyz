@@ -40,7 +40,7 @@ A continuación, se muestra un diagrama de la arquitectura del proyecto.
 
 ![Web3RSVP Dapp Architecture Diagram](https://i.imgur.com/2TPbE9J.jpg)
 
-> Nota: las secciones marcadas con `opcional` se pueden omitir si está familiarizado con los conceptos básicos, como qué son las *wallets*, blockchain, transacciones, etc.
+> Nota: las secciones marcadas con `opcional` se pueden omitir si está familiarizado con los conceptos básicos, como qué son las _wallets_, blockchain, transacciones, etc.
 
 ## Puntos de Verificación
 
@@ -56,6 +56,8 @@ Este proyecto se divide en 6 secciones y verás un canal de ayuda para cada secc
 
 Entra al canal #progress en Discord y publica un GIF, una foto o una actualización escrita para decirnos cómo te va. Diviértete! Puede ser o puede ser que no demos premios a los que se mantienen al día con los informes de progreso :-)
 
+---
+
 Escritoras: [Cami](https://twitter.com/camiinthisthang),
 Editoras: [Deborah Emeni](https://twitter.com/_emeni_deborah), [Kristen](https://twitter.com/CuddleofDeath),
-Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

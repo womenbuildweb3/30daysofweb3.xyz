@@ -84,7 +84,7 @@ export default function Footer({locale}) {
               />
             </div>
             <p className="text-slate-900 text-base sm:w-80">
-              {locale === "en" ? `Unlocking the next wave of web3 builders through education,
+              {locale !== "es" ? `Unlocking the next wave of web3 builders through education,
               opportunities, and funding` : `Desbloqueando la siguiente ola de desarrolladores web3 a través de la educación, oportunidades y financiamiento`}
             </p>
             <div className="flex space-x-6">

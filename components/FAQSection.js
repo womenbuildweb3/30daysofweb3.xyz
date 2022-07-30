@@ -129,13 +129,13 @@ function classNames(...classes) {
 }
 
 export default function FAQSection({ locale }) {
-  const faqs = locale === "en" ? faqsEN : faqsES;
+  const faqs = locale !== "es" ? faqsEN : faqsES;
 
   return (
     <div id="faqs" className="py-12 sm:py-16 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto divide-y divide-slate-500">
         <h2 className="text-center text-3xl font-extrabold text-slate-900 sm:text-4xl">
-          {locale === "en" ? "FAQs" : "Preguntas frecuentes"}
+          {locale !== "es" ? "FAQs" : "Preguntas frecuentes"}
         </h2>
         <dl className="mt-6 space-y-6 divide-y divide-slate-500">
           {faqs.map((faq) => (

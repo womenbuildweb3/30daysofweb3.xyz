@@ -131,3 +131,8 @@ Before we can test the script, we will need to run `npx hardhat compile` in the 
 Once that is done, go ahead and test out the script with `npm run script` to make sure your contract is working as expected.
 
 Now we can run `npm run script` in our terminal whenever we want to test our contract.
+
+---
+
+Writers: [Sarah Schwartz](https://twitter.com/schwartzswartz),
+Editors: [Sarah Z](https://twitter.com/haegeez)

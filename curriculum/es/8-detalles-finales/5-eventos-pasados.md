@@ -5,7 +5,6 @@ optional: false
 tweet: "#30DaysofWeb3 @womenbuildweb3 🎫"
 ---
 
-
 En la carpeta `pages/my-events/past`, abre el archivo `index.js`.
 
 En la parte superior del archivo, podemos importar nuevamente las utilidades de ayuda.
@@ -106,5 +105,7 @@ export default function MyPastEvents() {
 }
 ```
 
+---
+
 Escritoras: [Sarah Schwartz](https://twitter.com/schwartzswartz),
-Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

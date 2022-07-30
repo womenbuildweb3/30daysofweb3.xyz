@@ -9,9 +9,9 @@ En la sección `Head`, podemos cambiar "name" en la etiqueta `<title>` y en el c
 
 ```javascript
 <Head>
-<title> {event.name} | web3rsvp</title>
-<meta name="description" content={event.name} />
-<link rel="icon" href="/favicon.ico" />
+  <title> {event.name} | web3rsvp</title>
+  <meta name="description" content={event.name} />
+  <link rel="icon" href="/favicon.ico" />
 </Head>
 ```
 
@@ -20,7 +20,6 @@ Podemos usar una función de la carpeta utils para dar formato a la marca de tie
 ```javascript
 import formatTimestamp from "../../utils/formatTimestamp";
 ```
-
 
 Y reemplazar el texto que dice "hora" con la hora formateada.
 
@@ -51,23 +50,24 @@ Ahora podemos agregar la imagen por encima de la descripción del evento. Solo m
 
 Después de `Hosted by{" "}`, dentro de la etiqueta `<a>` podemos agregar la dirección del propietario del evento con `{event.eventOwner}`. Luego, podremos vincular la dirección al explorador de testnet usando nuestra variable `NEXT_PUBLIC_TESTNET_EXPLORER_URL`.
 
-
 ```javascript
 <span className="truncate">
-    Hosted by{" "}
-    <a
-      className="text-indigo-800 truncate hover:underline"
-      href={`${process.env.NEXT_PUBLIC_TESTNET_EXPLORER_URL}address/${event.eventOwner}`}
-      target="_blank"
-      rel="noreferrer"
-    >
-      {event.eventOwner}
-    </a>
+  Hosted by{" "}
+  <a
+    className="text-indigo-800 truncate hover:underline"
+    href={`${process.env.NEXT_PUBLIC_TESTNET_EXPLORER_URL}address/${event.eventOwner}`}
+    target="_blank"
+    rel="noreferrer"
+  >
+    {event.eventOwner}
+  </a>
 </span>
 ```
 
 ¡Ahora debe poder ver todos los detalles del evento!
 
+---
+
 Escritoras: [Sarah Schwartz](https://twitter.com/schwartzswartz),
 Editoras: [Sarah Z](https://twitter.com/haegeez),
-Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

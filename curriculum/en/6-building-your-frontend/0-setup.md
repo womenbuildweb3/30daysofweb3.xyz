@@ -27,3 +27,8 @@ Install all dependencies needed for this project by running `npm install` or `ya
 Now you have this code on your computer! Open this folder in VS code either manually or by entering the `code .` command into the terminal (Note: On some Linux systems, the `code .` command may require additional installation if your VSCode was not previously installed via the terminal.)
 
 If you want to change any of the the designs or images used along the way, go for it! This project is 100% yours to customize however you like.
+
+---
+
+Writers: [Avni Agrawal](https://twitter.com/AvniAgrawal1802),
+Editors: [Sarah Schwartz](https://twitter.com/schwartzswartz)

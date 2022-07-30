@@ -67,14 +67,14 @@ In Remix, create a new file inside the contracts folder, `add.sol`.
 
 Start by adding a license identifier, followed by the version pragma:
 
-```
+```solidity
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.7.0 <0.9.0;
 ```
 
 Next, define your contract and inside, define a variable of type uint (unsigned integer) and set it to zero.
 
-```
+```solidity
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.7.0 <0.9.0;
 
@@ -86,7 +86,7 @@ uint public sum = 0;
 
 Next, write the function to add two numbers passed in by the user and a function to return the current value of the sum variable. Here's what your contract should look like:
 
-```
+```solidity
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.7.0 <0.9.0;
 
@@ -120,3 +120,8 @@ The addNums function adds the two numbers, but doesn't actually return the new v
 
 You'll see we get the right answer - 8! You just wrote your first smart contract :-)
 ![result](https://user-images.githubusercontent.com/15346823/179375323-dd99fa72-84a3-460f-bcf3-d7d1a977f94d.png)
+
+---
+
+Writers: [Cami](https://twitter.com/camiinthisthang), [Fatma](https://twitter.com/fatima39_fatima),
+Editors: [Busayo](https://twitter.com/AmoweO), [Sarah Schwartz](https://twitter.com/schwartzswartz), [Deborah Emeni](https://twitter.com/_emeni_deborah)

@@ -5,7 +5,7 @@ optional: false
 tweet: "Create and deploy a subgraph on @graphprotocol with #30DaysofWeb3 @womenbuildweb3 👾"
 ---
 
-Aquí es donde definiremos el *schema* para nuestras consultas GraphQL. Idealmente, queremos modelar estos datos para que coincidan con los datos que necesitamos para nuestra interfaz. 
+Aquí es donde definiremos el _schema_ para nuestras consultas GraphQL. Idealmente, queremos modelar estos datos para que coincidan con los datos que necesitamos para nuestra interfaz.
 
 **Según las maquetas de nuestro sitio web, podemos ver que necesitamos poder:**
 
@@ -19,7 +19,7 @@ Aquí es donde definiremos el *schema* para nuestras consultas GraphQL. Idealmen
 - comprobar si el usuario actual ha asistido al evento
 - obtener detalles del evento
 
-Podemos eliminar la entidad de ejemplo en el archivo de el *schema*. Así es como debería verse nuestro archivo de *schema*:
+Podemos eliminar la entidad de ejemplo en el archivo de el _schema_. Así es como debería verse nuestro archivo de _schema_:
 
 ```graphql
 type Event @entity {
@@ -59,22 +59,21 @@ type Confirmation @entity {
   attendee: Account!
   event: Event!
 }
-
 ```
 
 Analicemos lo que está sucediendo aquí.
 
-Tenemos 4 entidades: `Event`, `Account`, `RSVP` y `Confirmation`. Cada entidad debe definirse con la etiqueta `@entity`. Puedes pensar en una entidad como un objeto. Es una "cosa" que tiene claves y valores, y cada clave es un campo de *schema* que se puede consultar por su valor.
+Tenemos 4 entidades: `Event`, `Account`, `RSVP` y `Confirmation`. Cada entidad debe definirse con la etiqueta `@entity`. Puedes pensar en una entidad como un objeto. Es una "cosa" que tiene claves y valores, y cada clave es un campo de _schema_ que se puede consultar por su valor.
 
-Cada entidad también tiene un campo ID para una identificación única y algunos campos para información sobre esa entidad que queremos poder consultar. Cada campo tiene un tipo, y si es requerido tiene un “!” (el valor no puede ser nulo). Los campos de *event name*, *description*, *link*, y, *imageURL* no son obligatorios, lo que significa que pueden devolver un valor *`null`*.
+Cada entidad también tiene un campo ID para una identificación única y algunos campos para información sobre esa entidad que queremos poder consultar. Cada campo tiene un tipo, y si es requerido tiene un “!” (el valor no puede ser nulo). Los campos de _event name_, _description_, _link_, y, _imageURL_ no son obligatorios, lo que significa que pueden devolver un valor _`null`_.
 
-En las entidades *`Event`* y *`Account`* para los campos rsvps y asistentes confirmados, usamos una palabra clave especial `@derivedFrom`, también llamada búsqueda inversa, que nos permite hacer referencia a datos de otra entidad. Veamos los rsvps como ejemplo:
+En las entidades _`Event`_ y _`Account`_ para los campos rsvps y asistentes confirmados, usamos una palabra clave especial `@derivedFrom`, también llamada búsqueda inversa, que nos permite hacer referencia a datos de otra entidad. Veamos los rsvps como ejemplo:
 
 ```graphql
 rsvps: [RSVP!] @derivedFrom(field: "event")
 ```
 
-Una forma de pensar en lo que está sucediendo aquí es que cada vez que alguien crea un nuevo RSVP, esa instancia de RSVP se agrega a esta matriz si la identificación del evento del campo *"event"* en la entidad de RSVP coincide con la identificación de este evento. Por ejemplo, se crea un nuevo RSVP:
+Una forma de pensar en lo que está sucediendo aquí es que cada vez que alguien crea un nuevo RSVP, esa instancia de RSVP se agrega a esta matriz si la identificación del evento del campo _"event"_ en la entidad de RSVP coincide con la identificación de este evento. Por ejemplo, se crea un nuevo RSVP:
 
 ```graphql
 RSVP {
@@ -95,5 +94,7 @@ Event {
 
 Cada nuevo RSVP para este evento también se agregará aquí. Al usar búsquedas inversas como esta, podemos consultar fácilmente todas las confirmaciones de asistencia y confirmaciones para cualquier evento o cuenta.
 
+---
+
 Escritoras: [Sarah Schwartz](https://twitter.com/schwartzswartz),
-Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

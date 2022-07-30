@@ -17,15 +17,15 @@ Podemos definir nuestra consulta sobre la función `Inicio` de la siguiente mane
 
 ```javascript
 const UPCOMING_EVENTS = gql`
- query Events($currentTimestamp: String) {
-   events(where: { eventTimestamp_gt: $currentTimestamp }) {
-     id
-     name
-     eventTimestamp
-     imageURL
-   }
- }
-`; 
+  query Events($currentTimestamp: String) {
+    events(where: { eventTimestamp_gt: $currentTimestamp }) {
+      id
+      name
+      eventTimestamp
+      imageURL
+    }
+  }
+`;
 ```
 
 Esta consulta retornará el ID, el nombre, la marca de tiempo del evento y la URL de la imagen para cada evento que aún no ha ocurrido.
@@ -79,5 +79,7 @@ export default function Home() {
 
 ¡Ahora en la página de inicio debemos poder ver una lista de los eventos que hemos creado!
 
+---
+
 Escritoras: [Sarah Schwartz](https://twitter.com/schwartzswartz),
-Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

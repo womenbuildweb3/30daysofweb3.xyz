@@ -5,7 +5,7 @@ optional: false
 tweet: "Create and deploy a subgraph on @graphprotocol with #30DaysofWeb3 @womenbuildweb3 👾"
 ---
 
-El manifiesto del *subgraph* es donde puede definir la configuración del *subgraph*. La mayor parte de esto ya estará completo para usted, pero hay algunos cambios que debemos hacer.
+El manifiesto del _subgraph_ es donde puede definir la configuración del _subgraph_. La mayor parte de esto ya estará completo para usted, pero hay algunos cambios que debemos hacer.
 
 Justo encima de `dataSources`, necesitaremos agregar una sección de `features` donde podamos agregar `ipfsOnEthereumContracts`.
 
@@ -31,17 +31,19 @@ dataSources:
       startBlock: 26(...YOUR_START_BLOCK)
 ```
 
-
 También queremos actualizar nuestros nombres de `Entity`. Puede eliminar el generador entidades aquí y reemplácelas con las de abajo. Crearemos cuatro entidades: `Event`, `Account`, `RSVP`, and `Confirmation`.
+
 ```yaml
-    entities:
-        - Event
-        - Account
-        - RSVP
-        - Confirmation
+entities:
+  - Event
+  - Account
+  - RSVP
+  - Confirmation
 ```
 
-La sección `eventHandlers` es donde podemos decirle al *subgraph* cómo conectar cada uno de nuestros mapeos a diferentes disparadores de eventos. Esto ya debería estar completo para usted. Cada vez que un evento que se define aquí se emite desde nuestro contrato, se ejecutará la función de mapeo correspondiente establecida como controlador.
+La sección `eventHandlers` es donde podemos decirle al _subgraph_ cómo conectar cada uno de nuestros mapeos a diferentes disparadores de eventos. Esto ya debería estar completo para usted. Cada vez que un evento que se define aquí se emite desde nuestro contrato, se ejecutará la función de mapeo correspondiente establecida como controlador.
+
+---
 
 Escritoras: [Sarah Schwartz](https://twitter.com/schwartzswartz),
-Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), Caro Meneses
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)
