@@ -1,10 +1,11 @@
 ---
-title: Introducción a Ethers.js
+title: Conexión a nuestro contrato con Ethers.js
 description: Ethers.js es una librería de JavaScript que permite a los developers interactuar fácilmente con el blockchain de Ethereum y su ecosistema.
 optional: false
 tweet: "#30DaysofWeb3 @womenbuildweb3 🌈"
 ---
 
+## Que es Ethers.js?
 
 **Ethers.js** *es una librería de JavaScript que permite a los developers interactuar fácilmente con el blockchain de Ethereum y su ecosistema*.
 
