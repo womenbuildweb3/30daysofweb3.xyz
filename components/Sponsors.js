@@ -1,11 +1,11 @@
 import Image from "next/image";
 
 const sponsors = [
-  {
-    name: "The Ethereum Foundation",
-    imageUrl: "/images/sponsors/ef.svg",
-    url: "https://ethereum.foundation/",
-  },
+  // {
+  //   name: "The Ethereum Foundation",
+  //   imageUrl: "/images/sponsors/ef.svg",
+  //   url: "https://ethereum.foundation/",
+  // },
   {
     name: "Filecoin/IPFS",
     imageUrl: "/images/sponsors/filecoin.svg",
