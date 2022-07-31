@@ -4,7 +4,7 @@ description: Learn how to host your code on Radicle, a decentralized code collab
 optional: true
 optionalMsg: If you've dabbled with Radicle or want to bookmark for this later, feel free to jump ahead!
 optionalNextPath: /en/curriculum/9-wrapping-up/1-finale
-tweet: "Host code for a full-stack dapp on @radicle with #30DaysofWeb3 @womenbuildweb3 💻"
+tweet: "I just learned how to host my code on @radicle with #30DaysofWeb3 @womenbuildweb3 💻"
 ---
 
 Now that we are done with our app, we can upload our code to Radicle to keep it safe. **Radicle** is a _peer-to-peer network for storing git repositories designed to be free from censorship._ You can use Radicle for free similarly to how you would use GitHub or any other git based repository hosting site.
@@ -81,6 +81,9 @@ If you want to share your code with others who also have the Radicle CLI install
 ```
 rad clone rad:git:hnrkknc6ntqasrnej6ous5krdw464etyo3i7y --seed pine.radicle.garden
 ```
+
+## Break Time
+If you made it this far- give yourself some claps. You made it through all of the Web3RSVP curriculum and learned about hosting your code in a decentralized, P2P way with Raidcle. Shoot out a tweet, paste the link in **#builders-hype**, and hype your cohort mates up! **End of Day 17**
 
 ---
 

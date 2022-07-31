@@ -4,6 +4,8 @@ description: Define functions in Solidity to handle events in your full-stack de
 optional: false
 tweet: "Write a smart contract in Solidity for a full-stack dapp with #30DaysofWeb3 @womenbuildweb3 ✍️"
 ---
+## Need Help?
+If you need help, check to see if your question has already been asked in **#section-3-help**. If you don't see it in there, post a question with any details that would make it easy for a team member to help you. We'll answer most frequently asked questions in live office hours, so keep an eye out in #announcements for those!
 
 ## Create a New Event
 

@@ -71,6 +71,12 @@ export default connectContract;
 
 Now that we can connect to our contract, we can call a function to create a new event in the next section.
 
+## Need Help? 
+If you need help, check to see if your question has already been asked in **#section-6-help**. If you don't see it in there, post a question with any details that would make it easy for a team member to help you. We'll answer most frequently asked questions in live office hours, so keep an eye out in #announcements for those!
+
+## Break Time 
+This is a good time to take a break. Update the Twitterverse by hitting the Share button below, paste your tweet in **#builders-hype** and hype up other builders 🔥 **End of Day 10**
+
 ---
 
 Writers: [Avni Agrawal](https://twitter.com/AvniAgrawal1802),

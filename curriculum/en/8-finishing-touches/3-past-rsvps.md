@@ -4,6 +4,9 @@ description: Let users view past events they RSVP'ed to on your full-stack decen
 optional: false
 tweet: "Build a full-stack event platform dapp with #30DaysofWeb3 @womenbuildweb3 🎫"
 ---
+## Need Help?
+If you need help, check to see if your question has already been asked in **#section-8-help**. If you don't see it in there, post a question with any details that would make it easy for a team member to help you. We'll answer most frequently asked questions in live office hours, so keep an eye out in #announcements for those!
+
 
 We can set up the `past.js` file in the `pages/my-rsvps` folder almost the same as we did for the upcoming RSVPs. First we need to import our helper utilities.
 

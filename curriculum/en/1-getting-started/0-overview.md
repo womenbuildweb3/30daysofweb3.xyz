@@ -34,6 +34,10 @@ Checkout a video of the dapp we're going to build in this course [here](https://
 Below is a diagram of the dapp architecture.
 ![Web3RSVP Dapp Architecture Diagram](https://i.imgur.com/2TPbE9J.jpg)
 
+## Share Your Progress
+
+We built this with a lot of love **for you.** Let us know how its going by following the prompts to tweet as you go through the course. These tweets will allow us to guage participation and reward those who are active. We are raffling off fun prizes like Surge Women NFTs, ENS names, and more. By tweeting about the course using #30DaysOfWeb3 and tagging @womenbuildweb3, you'll automatically be entered into the raffle. 1 tweet = 1 entry --> if you make many tweets, you'll get many entries. Happy tweeting 🐥
+
 ## 🏁 Checkpoints
 
 Throughout the course, there'll be checkpoints for you to test what you've learned and earn [kudos](https://mintkudos.xyz/), which are unique, peer-verified non-transferrable tokens.

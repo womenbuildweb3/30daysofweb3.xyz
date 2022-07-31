@@ -2,7 +2,7 @@
 title: Schema
 description: Define the GraphQL schema that models the data you will query from your subgraph.
 optional: false
-tweet: "Create and deploy a subgraph on @graphprotocol with #30DaysofWeb3 @womenbuildweb3 👾"
+tweet: "I just defined my subgraph schema on @graphprotocol with #30DaysofWeb3 @womenbuildweb3 👾"
 ---
 
 This is where we will define the schema (schema.graphql) for our GraphQL queries. Ideally we want to model this data to match the data we need for our frontend.
@@ -94,6 +94,15 @@ Event {
 
 Each new RSVP for this event will also get added here. Using reverse lookups like this, we are easily able to query all of the RSVPs and Confirmations for any Event or Account.
 
+## Need Help? 
+If you need help, check to see if your question has already been asked in **#section-5-help**. If you don't see it in there, post a question with any details that would make it easy for a team member to help you. We'll answer most frequently asked questions in live office hours, so keep an eye out in #announcements for those!
+
+## Break Time
+You've created the scaffold for your subgraph and defined your schema. You know the drill- document your journey by hitting the button below to tweet about it, paste your tweet in **#builders-hype** and hype up other tweets you see posted. 
+
+**End of Day 7**
+
 ---
 
 Writers: [Sarah Schwartz](https://twitter.com/schwartzswartz)
+Editors: [Cami](https://twitter.com/camiinthisthang)

@@ -7,6 +7,10 @@ tweet: "Ship a full-stack event platform dapp with #30DaysofWeb3 @womenbuildweb3
 
 ![Dev Setup](https://user-images.githubusercontent.com/15064710/180662024-6fa3c838-c8c4-4586-8d84-33ad0aa4a9f1.png)
 
+## Getting Help
+
+Now that we're in section 3 of the curriculum, first check to see if your question has already been answered in **#section-3-help**. If you don't see it there, drop your question along with any details that could help us help you :) 
+
 ## IDE (Integrated Developer Environment)
 
 Although any IDE will work, we recommend the use of **VSCode**, a free IDE which you can download [here.](https://code.visualstudio.com/download)

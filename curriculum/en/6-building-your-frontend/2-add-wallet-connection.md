@@ -2,7 +2,7 @@
 title: Add Wallet Connection
 description: Configure RainbowKit, wagmi, and ethers to add wallet connection to your dapp.
 optional: false
-tweet: "Add wallet connection to a full-stack dapp with #30DaysofWeb3 @womenbuildweb3 🌈"
+tweet: "Add wallet connection to my dapp with @rainbowdotme 🌈 #30DaysofWeb3 @womenbuildweb3 🌈"
 ---
 
 Now that we’ve wrapped our app with the `WagmiConfig` and `RainbowKitProvider` components, we can use wagmi hooks and RainbowKit’s `ConnectButton` component to enable users to connect their wallet and to inform the user that their wallet is connected.
@@ -114,6 +114,12 @@ After successful configuration and importing, when you click the connect button,
 ![RainbowKit UI](https://i.imgur.com/QgE9oIj.jpg)
 
 **Note:** RainbowKit recently announced a new command line script to create a Next.js app with RainbowKit and wagmi set up for you. Learn more about it here: https://www.rainbowkit.com/docs/installation#quick-start
+
+## Need Help? 
+If you need help, check to see if your question has already been asked in **#section-6-help**. If you don't see it in there, post a question with any details that would make it easy for a team member to help you. We'll answer most frequently asked questions in live office hours, so keep an eye out in #announcements for those!
+
+## Break Time 
+You just set up the boilerplate for your client application and crearted a wallet connection using Rainbowkit 🌈 This is a good time to take a break. Update the Twitterverse by hitting the Share button below, paste your tweet in **#builders-hype** and hype up other builders 🔥 **End of Day 9**
 
 ---
 

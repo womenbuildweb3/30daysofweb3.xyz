@@ -28,6 +28,9 @@ Now you have this code on your computer! Open this folder in VS code either manu
 
 If you want to change any of the the designs or images used along the way, go for it! This project is 100% yours to customize however you like.
 
+## Need Help? 
+If you need help, check to see if your question has already been asked in **#section-6-help**. If you don't see it in there, post a question with any details that would make it easy for a team member to help you. We'll answer most frequently asked questions in live office hours, so keep an eye out in #announcements for those!
+
 ---
 
 Writers: [Avni Agrawal](https://twitter.com/AvniAgrawal1802),

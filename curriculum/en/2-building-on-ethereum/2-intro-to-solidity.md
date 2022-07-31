@@ -8,14 +8,14 @@ tweet: "Write a simple smart contract in Solidity on @EthereumRemix with #30Days
 ![Intro to Solidity](https://user-images.githubusercontent.com/15064710/180662387-02cf75b9-daf4-4a2d-ab07-0cf781453ce2.png)
 
 ## Writing a Smart Contract
+The language used in this tutorial is **Solidity** (_the language used to build Ethereum smart contracts_) and this same laguage can be used to deploy smart contracts on multiple chains such as Binance Smart chain, Polygon or Avalanche.
 
-To get started with smart contract development, you have to be well-versed with what makes up an object oriented programming language (OOP). The language used in this tutorial is **Solidity** (_the language used to build Ethereum smart contracts_) and deploy on multiple chains such as Binance Smart chain, Polygon or Avalanche.
+In this section, you will learn smart contract development with Solidity programming language by working on a sample project. You will also learn how to connect the various components of Solidity (variables, types, and functions) to build a complete DApp. 
 
-In this section, you will learn smart contract development with Solidity programming language by working on a sample project. You will also learn how to connect the various components of Solidity (variables, types, and functions) to build a complete DApp.
+## Need Help? 
+If you need help, check to see if your question has already been asked in **#section-2-help**. If you don't see it in there, post a question with any details that would make it easy for a team member to help you. We'll answer most frequently asked questions in live office hours, so keep an eye out in #announcements for those!
 
-## What we are building from
-
-The prerequisite for this type of tutorial _usually_ requires that you already have a grasp on the building blocks of the Solidity language. However, you don't need to worry about that, because I will break every piece of the code for your ease of understanding.
+## Gm World
 
 We will start with basic code snippets to more advanced projects in this program. For this tutorial, we will start with one beginner project. Our first project is a DApp for storing and retrieving data from the blockchain.
 
@@ -120,6 +120,8 @@ The addNums function adds the two numbers, but doesn't actually return the new v
 
 You'll see we get the right answer - 8! You just wrote your first smart contract :-)
 ![result](https://user-images.githubusercontent.com/15346823/179375323-dd99fa72-84a3-460f-bcf3-d7d1a977f94d.png)
+
+🎉 Let Twitter know you just wrote your first Solidity smart contract - hit the Share button below and paste the link to your tweet in **#builders-hype** so everyone can clap for you!
 
 ---
 
