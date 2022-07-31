@@ -222,7 +222,10 @@ export default function Preview( { locale } ) {
                 </span>
                 <ul className="list-disc space-y-4 pl-8">
                   <li>
-                    {locale !== "es" ? "Host Your Code with Radicle" : "Control De Versiones Con Radicle"} 
+                    {locale !== "es" ? "Social Graphs with Lens" : "Social Graphs with Lens"} 
+                  </li>
+                  <li>
+                    {locale !== "es" ? "Host Your Code With Radicle" : "Control De Versiones Con Radicle"} 
                   </li>
                 </ul>
               </div>
