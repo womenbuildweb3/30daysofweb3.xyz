@@ -88,7 +88,7 @@ export default function Home({ locale }) {
             <span className="sm:block text-royal-600">
               {locale !== "es"
                 ? "Building Fullstack Dapps"
-                : "construir Fullstack Dapps"}
+                : "construir Dapps Fullstack"}
             </span>
           </h1>
           <p className="mt-3 max-w-md mx-auto text-base text-slate-700 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
@@ -96,7 +96,7 @@ export default function Home({ locale }) {
               ? `Whether you're a curious hacker or an experienced engineer, 30
             Days of Web3 is project-based curriculum created by developers to
             teach you how to build full-stack dapps.`
-              : `No importa si eres un hacker curioso o un ingeniero experimentado, 30 Days of Web3 es un curriculum basado en proyectos creado por desarrolladores para enseñarte cómo crear full-stack dapps.
+              : `No importa si eres un hacker con curiosidad o un ingeniero con experiencia, 30 Días de Web3 es un currículum basado en proyectos creado por desarrolladores para enseñarte cómo crear dapps full-stack.
             `}
           </p>
           <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
@@ -117,7 +117,7 @@ export default function Home({ locale }) {
             <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 xl:py-20 xl:px-20">
               <div className="lg:self-center">
                 <span className="text-base text-royal-600 font-semibold tracking-wide uppercase">
-                  {locale !== "es" ? "Education" : "Educaión"}
+                  {locale !== "es" ? "Education" : "Educación"}
                 </span>
                 <h2 className="mt-2 text-3xl font-extrabold text-slate-900 sm:text-4xl">
                   {locale !== "es" ? "Learn by doing" : "Aprende haciendo"}
@@ -129,7 +129,7 @@ export default function Home({ locale }) {
                   reference to build any dapp. Go through our curriculum at your
                   own pace, and join live workshops led by top developers in
                   web3.`
-                    : `Potencia tus habilidades con las más conocidas herramientas, protocolos y frameworks en web3 para construir tu stack y crear una arquitectura referencial para cualquier dapp. Sigue nuestro currículum a tu propio ritmo y únete a nuestros workshops en vivo dirigidos por los mejores desarrolladores en web3.`}
+                    : `Potencia tus habilidades con las más conocidas herramientas, protocolos y frameworks en web3 para construir tu stack y crear una arquitectura que te sirva de referencia para cualquier dapp. Sigue nuestro currículum a tu propio ritmo y únete a nuestros workshops en vivo dirigidos por los mejores desarrolladores de la web3.`}
                 </p>
               </div>
             </div>
@@ -151,7 +151,7 @@ export default function Home({ locale }) {
                     {locale !== "es" ? "Accelerator" : "Acelerador"}
                   </span>
                   <h2 className="mt-2 text-3xl font-extrabold text-slate-900 sm:text-4xl">
-                    {locale !== "es" ? "Build Accelerator" : "Build Acelerador"}
+                    {locale !== "es" ? "Build Accelerator" : "Build Accelerator"}
                   </h2>
                   <p className="mt-4 text-lg leading-6 text-slate-700">
                     {locale !== "es"
@@ -203,7 +203,7 @@ export default function Home({ locale }) {
                     Foundation, Filecoin/IPFS, The Graph, Infura, Polygon,
                     Radicle, and more to connect you to awesome poeple and
                     opportunities.`
-                      : `Conecte con nuestros sponsors y organizadores asociados que buscan contratar ingenieros, dev rels y más. Estamos colaborando con líderes en el ecosistema web3 como The Ethereum Foundation, Filecoin/IPFS, The Graph, Infura, Polygon, Radicle y más. Para conectarte con personas y oportunidades increíbles.`}
+                      : `Conecta con nuestros patrocinadores y organizadores asociados que buscan contratar ingenieros, dev rels y más. Estamos colaborando con líderes en el ecosistema web3 como The Ethereum Foundation, Filecoin/IPFS, The Graph, Infura, Polygon, Radicle y más. Para conectarte con personas y oportunidades increíbles.`}
                   </p>
                 </div>
               </div>
