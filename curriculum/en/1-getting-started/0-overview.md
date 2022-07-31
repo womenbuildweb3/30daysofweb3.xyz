@@ -7,13 +7,26 @@ tweet: "Get started with #30DaysofWeb3, the ultimate guide to building full-stac
 
 ## 👋 Welcome to 30 Days of Web3!
 
-If you're reading this, you're here to build dope dapps — Welcome!
+If you're reading this, you're here to build dope dapps — Welcome! A quick intro on ourselves- we're a global collective of top emerging talent. From over 10 countries, we developed this
+curriculum as we tried different solutions to build, and we're sharing what we found to be a good starting point for any dapp. 
 
-This course is for devs that want to start building on Ethereum, one of the biggest blockchains in the world.
+As you start going through the curriculum, you may notice some differences that the team has not caught or updated. This technology is very nascant, and things are changing almost daily. 
 
-This course will focus on big-picture architecture and will help you define your web3 tech stack that you'll be able to use to build any idea you have.
+If you see anything that should be updated, we ask that you do your part to open PRs for errors you can correct, or report issues. The repo is [here](https://github.com/womenbuildweb3/30daysofweb3.xyz).
 
-Prerequisites:
+## BUIDL Accelerator
+
+After 30DaysOfWeb3, we'll be supporting 3-8 projects with grants of $3-$30K. These could be ideas that come as you go through 30DaysOfWeb3, and you can build a team others to bring an idea to life.
+
+Those who did not participate in 30DaysOfWeb3 can still apply for the accelerator by submiting a past project to be considered. The page to register, and more details will be available in about a week. Keep an eye on the #announcements channel the Launch Pad server.
+
+## Tech Check
+
+This course is for people who want to start building on Ethereum. If you don't know how to code, *don't worry.* Rather than focus on teaching the implementation, we'll walk you through the code and help you understand how the different protocols communicate with each other.
+
+This course will focus on big-picture architecture and will help you define your web3 tech stack you'll be able to use to build any idea you have- and apply with that idea to BUIDL Accelerator.
+
+Nice to have:
 
 - Basic understanding of how to navigate your terminal
 - Basic JavaScript
@@ -25,11 +38,19 @@ It's helpful to be familiar with the aforementioned, but you'll pick up everythi
 
 This course is fully async, online, and created to only take 30-45 mins daily to ship in 30 days. If you're not planning to apply for the BUIDL Accelerator, you can feel free to go through this project at your own pace.
 
-For women and non-binary devs applying to our BUIDL Accelerator, you must finish this course within the next **40 days** in order to meet the application deadline. More details on the BUIDL Accelerator will be released soon.
+To be eligible to apply to the BUIDL Accelerator, you must finish this course within the next **40 days** in order to meet the application deadline. More details on the BUIDL Accelerator will be released soon.
 
 ## 👀 Project Overview
 
-Checkout a video of the dapp we're going to build in this course [here](https://www.loom.com/share/c3fb24a579644feaa7510e98be37181a).
+You'll be building an event management and creation dapp from beginning to end. You'll learn how to build with this stack on Ethereum: 
+- Filecoin & IPFS
+- The Graph
+- Radicle
+- Infura
+- Polygon
+- Lens
+
+Checkout a video of the dapp we're going to build [here](https://www.loom.com/share/c3fb24a579644feaa7510e98be37181a).
 
 Below is a diagram of the dapp architecture.
 ![Web3RSVP Dapp Architecture Diagram](https://i.imgur.com/2TPbE9J.jpg)
@@ -38,7 +59,7 @@ Below is a diagram of the dapp architecture.
 
 Throughout the course, there'll be checkpoints for you to test what you've learned and earn [kudos](https://mintkudos.xyz/), which are unique, peer-verified non-transferrable tokens.
 
-These checkpoints are **optional** but highly recommended, especially for those looking to apply to our BUIDL Accelerator.
+These checkpoints are **optional**, but they are required to apply to the BUIDL Accelerator.
 
 ## 🗓 Workshops
 
