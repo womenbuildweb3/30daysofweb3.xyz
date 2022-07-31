@@ -1,14 +1,13 @@
 ---
-title: Creando un Evento
-description: 
+title: Llamando a su contrato
+description: Llame a sus métodos de contrato inteligente usando Ethers.js.
 optional: false
-tweet: "#30DaysofWeb3 @womenbuildweb3 🗂"
+tweet: "Llame a su smart contract usando Ethers.js con#30DaysofWeb3 @womenbuildweb3 🗂"
 ---
 
+Abra `create-event.js` en la carpeta `pages`. Podrá observar una vista previa de esta página en http://localhost:3000/create-event. Deberá ver un formulario ya confirgurado con todos los inputs que necesitamos. 
 
-En esta sección, crearemos un formulario que permitirá a nuestros usuarios crear un nuevo evento con nuestro *contract*.
-
-Abra `create-event.js` en la carpeta `pages`. Podrá observar una vista previa de esta página en http://localhost:3000/create-event. Deberá ver un formulario ya confirgurado con todos los inputs que necesitamos. Si no lo puede visualizar, asegúrese de ejecutar `npm run dev` en la terminal dentro de la carpeta de su proyecto o en la terminal desde VS Code.
+**Nota:** Si no lo puede visualizar, asegúrese de ejecutar `npm run dev` en la terminal dentro de la carpeta de su proyecto o en la terminal desde VS Code.
 
 Al hacer click en el botón "Crear", se activará la llamada a la función`handleSubmit`. En este momento, solo registrará en la consola *"Form Submitted"* o "Formulario enviado" en español. Ahora veremos y configuraremos la lógica que debe ocurrir cuando el envío del formulario suceda.
 
@@ -25,12 +24,18 @@ const body = {
     };
 ```
 
-Para la imagen, podemos importar la función `getRandomImage` en la parte superior de nuestro *file* desde la carpeta utils. También podemos importar `ethers` para poderla usar y llamar a nuestro *contract*.
+Para la imagen, importaremos los siguientes dos elementos en la parte superior del archivo `create-event.js`:
+
+- Nuestra primera importación extraerá la función `getRandomImage` de nuestro archivo `getRandomImage.js`.
+- En segundo lugar, también importaremos `ethers` para que podamos usarlo para llamar a nuestro contrato.
+
+Tus importaciones se verán así:
 
 ```javascript
 import getRandomImage from "../utils/getRandomImage";
 import { ethers } from "ethers";
 ```
+
 Notará que no estamos enviando toda la data del evento aquí - el depósito del evento, la capacidad máxima, la fecha, etc. se almacenará en una *on-chain* o en una cadena en español, con nuestro *smart contract*. Antes de llamar a nuestro *contract*, debemos obtener nuestra IPFS CID(más detalles después).
 
 En nuestra función `handleSubmit`, podemos usar una declaración `try..catch` para enviar el cuerpo al *endpoint* de nuestra API /store-event-data (no se preocupe, crearemos este *file* en la siguiente sección).
