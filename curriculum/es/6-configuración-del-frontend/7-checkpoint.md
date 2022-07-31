@@ -1,7 +1,7 @@
 ---
 title: "Checkpoint #6 ESPANOL"
-description: You've reached a checkpoint for 30 Days of Web3, the ultimate online curriculum on full-stsack blockchain development.
+description: Ha llegado a un punto de control para 30 días de Web3, el plan de estudios en línea definitivo sobre el desarrollo completo de cadenas de bloques.
 optional: false
 ---
 
-Solidify everything you learned in this **Building Your Frontend** section and earn kudos by taking this quiz: https://forms.gle/ow3eHF4BuZTHForj7
+Consolide todo lo que aprendió en esta sección **Construyendo su interfaz** y gane elogios respondiendo este cuestionario: https://forms.gle/ow3eHF4BuZTHForj7
