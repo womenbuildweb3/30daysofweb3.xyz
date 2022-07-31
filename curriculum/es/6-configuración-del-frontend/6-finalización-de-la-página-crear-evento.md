@@ -1,8 +1,8 @@
 ---
 title: Finalización de la página Crear evento
-description: 
+description: Permita que los usuarios creen eventos en su plataforma de eventos descentralizada de pila completa.
 optional: false
-tweet: "#30DaysofWeb3 @womenbuildweb3 💥"
+tweet: "Cree una dapp de plataforma de eventos de pila completa con #30DaysofWeb3 @womenbuildweb3 💥"
 ---
 
 En la parte superior de la página `create-event`, importe el `connectButton` de rainbowkit, `useAccount` de wagmi y el componente `Alert`.
@@ -130,11 +130,9 @@ También podemos empaquetar nuestro formulario y encabezado en una declaración 
 También podemos ocultar el formulario si el usuario no ha conectado su billetera.
 
 ```javascript
-{account && !success && (
-  <form>
-      ...
-  </form>
-)}
+{
+  account && !success && <form>...</form>;
+}
 ```
 
 Podemos descomentar la sección que le pide al usuario que conecte su billetera, y solo mostrar esto si el usuario aún no ha conectado su billetera.
