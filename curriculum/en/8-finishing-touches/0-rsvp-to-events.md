@@ -4,7 +4,9 @@ description: Let users RSVP to an event on your full-stack decentralized event p
 optional: false
 tweet: "I've coded in 3 languages so far while building my fullstack dapp- Solidity, Assemblyscript, and Javascript 💻 #30DaysofWeb3 @womenbuildweb3 🎫"
 ---
-## Need Help? 
+
+## Need Help?
+
 If you need help, check to see if your question has already been asked in **#section-8-help**. If you don't see it in there, post a question with any details that would make it easy for a team member to help you. We'll answer most frequently asked questions in live office hours, so keep an eye out in #announcements for those!
 
 ## RSVP'ing to Events
@@ -159,6 +161,7 @@ And yay! RSVP creation done! 🎉
 Test out the RSVP button to make sure that everything is working. It might take a few minutes for the event page to show that you have already RSVPed.
 
 ## Builders Hype
+
 Take a second to pause and soak it all in- you're almost done with building a fullstack dapp. You've created your smart contract, subgraph, and now your front end. You've written code in 3 languages and that's no small feat. Shoot out a tweet and let the world know what you've accomplished 🔥
 
 ---

@@ -43,7 +43,8 @@ entities:
 
 The `eventHandlers` section is where we can tell the subgraph how to connect each of our mappings to different event triggers. This should already be filled out for you. Each time an event that is defined here is emitted from our contract, the corresponding mapping function set as the handler will run.
 
-## Need Help? 
+## Need Help?
+
 If you need help, check to see if your question has already been asked in **#section-5-help**. If you don't see it in there, post a question with any details that would make it easy for a team member to help you. We'll answer most frequently asked questions in live office hours, so keep an eye out in #announcements for those!
 
 ---

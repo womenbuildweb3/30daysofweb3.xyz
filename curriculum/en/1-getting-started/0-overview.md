@@ -8,21 +8,21 @@ tweet: "Get started with #30DaysofWeb3, the ultimate guide to building full-stac
 ## 👋 Welcome to 30 Days of Web3!
 
 If you're reading this, you're here to build dope dapps — Welcome! A quick intro on ourselves- we're a global collective of top emerging talent. From over 10 countries, we developed this
-curriculum as we tried different solutions to build, and we're sharing what we found to be a good starting point for any dapp. 
+curriculum as we tried different solutions to build, and we're sharing what we found to be a good starting point for any dapp.
 
-As you start going through the curriculum, you may notice some differences that the team has not caught or updated. This technology is very nascant, and things are changing almost daily. 
+As you start going through the curriculum, you may notice some differences that the team has not caught or updated. This technology is very nascant, and things are changing almost daily.
 
 If you see anything that should be updated, we ask that you do your part to open PRs for errors you can correct, or report issues. The repo is [here](https://github.com/womenbuildweb3/30daysofweb3.xyz).
 
-## BUIDL Accelerator
+## 🌐 BUIDL Accelerator
 
 After 30DaysOfWeb3, we'll be supporting 3-8 projects with grants of $3-$30K. These could be ideas that come as you go through 30DaysOfWeb3, and you can build a team others to bring an idea to life.
 
-Those who did not participate in 30DaysOfWeb3 can still apply for the accelerator by submiting a past project to be considered. The page to register, and more details will be available in about a week. Keep an eye on the #announcements channel the Launch Pad server.
+Those who did not participate in 30DaysOfWeb3 can still apply for the accelerator by submiting a past project to be considered. The page to register, and more details will be available in about a week. Keep an eye on the #announcements channel in our Launchpad server.
 
-## Tech Check
+## 💻 Tech Check
 
-This course is for people who want to start building on Ethereum. If you don't know how to code, *don't worry.* Rather than focus on teaching the implementation, we'll walk you through the code and help you understand how the different protocols communicate with each other.
+This course is for people who want to start building on Ethereum. If you don't know how to code, _don't worry._ Rather than focus on teaching the implementation, we'll walk you through the code and help you understand how the different protocols communicate with each other.
 
 This course will focus on big-picture architecture and will help you define your web3 tech stack you'll be able to use to build any idea you have- and apply with that idea to BUIDL Accelerator.
 
@@ -42,7 +42,8 @@ To be eligible to apply to the BUIDL Accelerator, you must finish this course wi
 
 ## 👀 Project Overview
 
-You'll be building an event management and creation dapp from beginning to end. You'll learn how to build with this stack on Ethereum: 
+You'll be building an event management and creation dapp from beginning to end. You'll learn how to build with this stack on Ethereum:
+
 - Filecoin & IPFS
 - The Graph
 - Radicle
@@ -55,9 +56,9 @@ Checkout a video of the dapp we're going to build [here](https://www.loom.com/sh
 Below is a diagram of the dapp architecture.
 ![Web3RSVP Dapp Architecture Diagram](https://i.imgur.com/2TPbE9J.jpg)
 
-## Share Your Progress
+## 🐥 Share Your Progress
 
-We built this with a lot of love **for you.** Let us know how its going by following the prompts to tweet as you go through the course. These tweets will allow us to guage participation and reward those who are active. We are raffling off fun prizes like Surge Women NFTs, ENS names, and more. By tweeting about the course using #30DaysOfWeb3 and tagging @womenbuildweb3, you'll automatically be entered into the raffle. 1 tweet = 1 entry --> if you make many tweets, you'll get many entries. Happy tweeting 🐥
+We built this with a lot of love **for you.** Let us know how its going by following the prompts to tweet as you go through the course. These tweets will allow us to gauge participation and reward those who are active. We are raffling off fun prizes like Surge Women NFTs, ENS names, and more. By tweeting about the course using #30DaysOfWeb3 and tagging @womenbuildweb3, you'll automatically be entered into the raffle. 1 tweet = 1 entry --> if you make many tweets, you'll get many entries. Happy tweeting 🐥
 
 ## 🏁 Checkpoints
 

@@ -4,7 +4,9 @@ description: Define structs in Solidity to represent events in your full-stack d
 optional: false
 tweet: "Write a smart contract in Solidity for a full-stack dapp with #30DaysofWeb3 @womenbuildweb3 ✍️"
 ---
+
 ## Need Help?
+
 If you need help, check to see if your question has already been asked in **#section-3-help**. If you don't see it in there, post a question with any details that would make it easy for a team member to help you. We'll answer most frequently asked questions in live office hours, so keep an eye out in #announcements for those!
 
 ## Define An 'Event'
@@ -60,9 +62,8 @@ contract Web3RSVP {
 }
 ```
 
-
-
 You've set up the data structure you'll use to hold all of the information related to an event created on your platform as well as setting up a mapping to help you track events via a unique eventID. This is a good place to take a break!
+
 **End of Day 3**
 
 ---

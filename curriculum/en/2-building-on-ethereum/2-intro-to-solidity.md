@@ -8,11 +8,13 @@ tweet: "Write a simple smart contract in Solidity on @EthereumRemix with #30Days
 ![Intro to Solidity](https://user-images.githubusercontent.com/15064710/180662387-02cf75b9-daf4-4a2d-ab07-0cf781453ce2.png)
 
 ## Writing a Smart Contract
+
 The language used in this tutorial is **Solidity** (_the language used to build Ethereum smart contracts_) and this same laguage can be used to deploy smart contracts on multiple chains such as Binance Smart chain, Polygon or Avalanche.
 
-In this section, you will learn smart contract development with Solidity programming language by working on a sample project. You will also learn how to connect the various components of Solidity (variables, types, and functions) to build a complete DApp. 
+In this section, you will learn smart contract development with Solidity programming language by working on a sample project. You will also learn how to connect the various components of Solidity (variables, types, and functions) to build a complete DApp.
 
-## Need Help? 
+## Need Help?
+
 If you need help, check to see if your question has already been asked in **#section-2-help**. If you don't see it in there, post a question with any details that would make it easy for a team member to help you. We'll answer most frequently asked questions in live office hours, so keep an eye out in #announcements for those!
 
 ## Gm World

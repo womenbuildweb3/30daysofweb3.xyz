@@ -9,7 +9,7 @@ tweet: "Ship a full-stack event platform dapp with #30DaysofWeb3 @womenbuildweb3
 
 ## Getting Help
 
-Now that we're in section 3 of the curriculum, first check to see if your question has already been answered in **#section-3-help**. If you don't see it there, drop your question along with any details that could help us help you :) 
+Now that we're in section 3 of the curriculum, first check to see if your question has already been answered in **#section-3-help**. If you don't see it there, drop your question along with any details that could help us help you :)
 
 ## IDE (Integrated Developer Environment)
 

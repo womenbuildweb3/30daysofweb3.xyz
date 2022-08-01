@@ -5,10 +5,12 @@ optional: false
 tweet: "Build a full-stack event platform dapp with #30DaysofWeb3 @womenbuildweb3 🎫"
 ---
 
-## Need Help? 
+## Need Help?
+
 If you need help, check to see if your question has already been asked in **#section-8-help**. If you don't see it in there, post a question with any details that would make it easy for a team member to help you. We'll answer most frequently asked questions in live office hours, so keep an eye out in #announcements for those!
 
 ## Show Upcoming Events
+
 In our `index.js` file, we want to be able to show all of the upcoming events people can RSVP to. At the top of the file we can import `gql` and `useQuery` from apollo client. We will also need to import `useState` and our `EventCard` component.
 
 ```javascript
@@ -84,6 +86,7 @@ export default function Home() {
 Now on the homepage we should be able to see a list of the events we created!
 
 ## Break Time
+
 You've updated your homepage to show the list of upcoming events - create a few events and test it out! **End of Day 14**
 
 ---
