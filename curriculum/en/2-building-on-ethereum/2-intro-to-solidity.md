@@ -113,6 +113,8 @@ Now we'll compile, deploy, and test our contract. Head over to the 3rd icon from
 
 Move to the 4th icon from the top and select the Javascript VM from the dropdown in the `environment` selection. This will give you some fake ether to be able to deploy and test your contract.
 
+>Note: [Remix has renamed this to be Remix VM](https://remix-ide.readthedocs.io/en/latest/run.html) - you will no longer see the Javascript VM as an option. Select the Remix VM! 
+
 ![JavascriptVM](https://user-images.githubusercontent.com/15346823/179375210-bc843162-dcf0-4337-a9ed-2ca85a3fde7a.png)
 
 Finally, hit the `Deploy` button to create an instance of your contract that we'll interact with and test that the sum function is working as expected. Afer a few seconds, you'll see a `Deployed Contracts` panel on the bottom left.
