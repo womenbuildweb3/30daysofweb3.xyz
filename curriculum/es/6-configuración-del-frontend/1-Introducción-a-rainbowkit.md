@@ -1,13 +1,15 @@
 ---
-title: RainbowKit
+title: Introducción a RainbowKit
 description: Admita fácilmente experiencias de conexión de billetera intuitivas en su dapp usando RainbowKit, una biblioteca de React.
 optional: false
 tweet: "Aprende a usar @rainbowdotme's RainbowKit con #30DaysofWeb3 @womenbuildweb3 💥"
 ---
 
+![RainbowKit UI](https://i.imgur.com/QgE9oIj.jpg)
+
 ## Que es RainbowKit?
 
-**RainbowKit** es una biblioteca React que le facilita a los desarrolladores conectar su dApp a una billetera. Es fácil de usar, responsiva, personalizable y adaptable. Desde la conexión básica y la desconexión de la billetera hasta la visualización de saldos, RainbowKit puede funcionar con varias billeteras, intercambiar cadenas de conexión y convertir direcciones a ENS (*Ethereum Name Service*).
+**RainbowKit** es una biblioteca React que le facilita a los desarrolladores conectar su dApp a una billetera. Es fácil de usar, responsiva, personalizable y adaptable. Desde la conexión básica y la desconexión de la billetera hasta la visualización de saldos, RainbowKit puede funcionar con varias billeteras, intercambiar cadenas de conexión y convertir direcciones a ENS (_Ethereum Name Service_).
 
 Puede personalizar completamente su tema RainbowKit e incluir solo las funciones necesarias para sus dApps. RainbowKit utiliza las bibliotecas más utilizadas en el ecosistema web3: ethers y wagmi.
 
@@ -18,6 +20,7 @@ En la raíz de su proyecto, cree un nuevo archivo llamado `.env.local`. En web3r
 Mientras esté en este archivo, también puede reemplazar `<Your Infura project id>` con su ID de proyecto Infura. Puede encontrarlo yendo a su panel de Infura y seleccionando la configuración de su proyecto.
 
 ## Importación y Configuración de Cadenas
+
 Podemos configurar Rainbowkit en nuestro archivo `_app.js`. Para configurar las cadenas, así como los conectores que se requieran, se debe configurar un cliente wagmi. Puede usar tantas cadenas como desee, pero en nuestra dApp, hemos usado la cadena Polygon desde que implementamos en la red de prueba Polygon (Mumbai).
 
 ```javascript
@@ -56,15 +59,15 @@ Dentro de nuestro archivo `_app.js`, podemos empaquetar nuestra aplicación con 
 
 ```javascript
 export default function MyApp({ Component, pageProps }) {
- return (
-   <WagmiConfig client={wagmiClient}>
-     <RainbowKitProvider chains={chains}>
-         <Layout>
-           <Component {...pageProps} />
-         </Layout>
-     </RainbowKitProvider>
-   </WagmiConfig>
- );
+  return (
+    <WagmiConfig client={wagmiClient}>
+      <RainbowKitProvider chains={chains}>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </RainbowKitProvider>
+    </WagmiConfig>
+  );
 }
 ```
 
