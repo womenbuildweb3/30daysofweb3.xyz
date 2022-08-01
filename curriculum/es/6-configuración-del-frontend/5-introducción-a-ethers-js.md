@@ -51,8 +51,8 @@ function connectContract() {
   try {
     const { ethereum } = window;
 
-    if (ethereum.chainId === "0x13881") {
-      //checking for eth object in the window, see if they have wallet connected to Polygon Mumbai network
+    if (ethereum) {
+      //checking for eth object in the window
       const provider = new ethers.providers.Web3Provider(ethereum);
       const signer = provider.getSigner();
       rsvpContract = new ethers.Contract(contractAddress, contractABI, signer); // instantiating new connection to the contract
