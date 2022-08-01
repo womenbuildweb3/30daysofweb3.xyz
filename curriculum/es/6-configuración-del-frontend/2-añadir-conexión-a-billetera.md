@@ -1,65 +1,9 @@
 ---
-title: RainbowKit
-description:
+title: Añadir-conexión-a-billetera
+description: Configure RainbowKit, wagmi y ethers para agregar una conexión de billetera a su dapp.
 optional: false
-tweet: "#30DaysofWeb3 @womenbuildweb3 💥"
+tweet: "Agregue una conexión de billetera a un dapp de pila completa con #30DaysofWeb3 @womenbuildweb3 🌈"
 ---
-
-RainbowKit es una biblioteca React que le facilita a los desarrolladores conectar su dApp a una billetera. Es fácil de usar, responsiva, personalizable y adaptable. Desde la conexión básica y la desconexión de la billetera hasta la visualización de saldos, RainbowKit puede funcionar con varias billeteras, intercambiar cadenas de conexión y convertir direcciones a ENS (_Ethereum Name Service_).
-
-Puede personalizar completamente su tema RainbowKit e incluir solo las funciones necesarias para sus dApps. RainbowKit utiliza las bibliotecas más utilizadas en el ecosistema web3: ethers y wagmi.
-
-## Importación y Configuración de Cadenas
-
-Podemos configurar Rainbowkit en nuestro archivo `_app.js`. Para configurar las cadenas, así como los conectores que se requieran, se debe configurar un cliente wagmi. Puede usar tantas cadenas como desee, pero en nuestra dApp, hemos usado la cadena Polygon desde que implementamos en la red de prueba Polygon (Mumbai).
-
-```javascript
-import "@rainbow-me/rainbowkit/styles.css";
-import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
-import { chain, configureChains, createClient, WagmiConfig } from "wagmi";
-import { infuraProvider } from "wagmi/providers/infura";
-import { publicProvider } from "wagmi/providers/public";
-```
-
-A continuación, tendremos que configurar las cadenas a las que nos queremos conectar con nuestro ID de proyecto Infura e inicializar el `wagmiClient`.
-
-```javascript
-const infuraId = process.env.NEXT_PUBLIC_INFURA_ID;
-
-const { chains, provider } = configureChains(
-  [chain.polygon],
-  [infuraProvider({ infuraId }), publicProvider()]
-);
-
-const { connectors } = getDefaultWallets({
-  appName: "web3rsvp",
-  chains,
-});
-
-const wagmiClient = createClient({
-  autoConnect: true,
-  connectors,
-  provider,
-});
-```
-
-Al establecer `autoConnect` en `true`, podemos mantener al usuario conectado automáticamente para que solo tenga que conectar su billetera una vez.
-
-Dentro de nuestro archivo `_app.js`, podemos empaquetar nuestra aplicación con `RainbowKitProvider` y `WagmiConfig`.
-
-```javascript
-export default function MyApp({ Component, pageProps }) {
-  return (
-    <WagmiConfig client={wagmiClient}>
-      <RainbowKitProvider chains={chains}>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-      </RainbowKitProvider>
-    </WagmiConfig>
-  );
-}
-```
 
 ## Uso del botón Conectar
 

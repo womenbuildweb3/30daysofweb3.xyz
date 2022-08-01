@@ -1,8 +1,8 @@
 ---
 title: Finalización de la página Crear evento
-description:
+description: Permita que los usuarios creen eventos en su plataforma de eventos descentralizada de pila completa.
 optional: false
-tweet: "#30DaysofWeb3 @womenbuildweb3 💥"
+tweet: "Cree una dapp de plataforma de eventos de pila completa con #30DaysofWeb3 @womenbuildweb3 💥"
 ---
 
 En la parte superior de la página `create-event`, importe el `connectButton` de rainbowkit, `useAccount` de wagmi y el componente `Alert`.

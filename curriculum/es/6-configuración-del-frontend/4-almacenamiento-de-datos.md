@@ -1,33 +1,9 @@
 ---
-title: Web3 Storage
-description: Learn how to upload data to decentralized storage network using Web3.Storage.
+title: Subiendo los datos de tu evento
+description: Aprenda a cargar datos en una red de almacenamiento descentralizado usando Web3.Storage.
 optional: false
-tweet: "Use @Web3Storage in a full-stack dapp with #30DaysofWeb3 @womenbuildweb3 🗂"
+tweet: "Use @Web3Storage en un dapp de pila completa con #30DaysofWeb3 @womenbuildweb3 🗂"
 ---
-
-## ¿Qué es Web3.storage?
-
-Si está buscando almacenar datos para sus dApps, debe considerar la librería para clientes de Web3.storage que le ofrece Filecoin.
-
-## Filecoin
-
-[Filecoin](https://filecoin.io/) es una solución que aprovecha IPFS para permitir a los usuarios rentar los espacios vacantes que se encuentran en el disco duro.
-
-## IPFS
-
-Entonces, ¿qué es IPFS? El InterPlanetary File System (IPFS) o Sistema de archivos interplanetarios en español, _es un protocolo y una red de persona-a-persona que le permite almacenar y compartir datos en un sistema de archivos distribuido._ Para identificar de forma única cada archivo, IPFS utiliza lo que se denomina _content-addressing_ o almacenamiento-direccionado-de-contenido en español. La librería Web3.storage en pocas palabras permite que su data sea accesible desde IPFS.
-
-Web3.storage está disponible en JavaScript y Go. En esta guía, nos centraremos en la librería de JavaScript. También le mostraremos una implementación de muestra que tenemos en nuestra dApp RSVP para una mejor comprensión de cómo funciona.
-
-Necesitamos una cuenta en Web3.Storage para cargar los datos en la librería porque requiere el uso de una API token. Es gratis y muy fácil de conseguir una. Visite https://web3.storage/login/ para crear una cuenta y luego siga esta breve guía https://web3.storage/docs/how-tos/generate-api-token/ para crear su API token.
-
-En nuestro proyecto, cree un nuevo archivo o _file_ llamado `.env.example` que muestra un ejemplo de cómo configurar su _file_ .env.local. En este _file_ es donde podremos guardar todo lo que sea secreto, como nuestras API _keys_ para que no estén expuestas en la parte del frontend.
-
-Copie y pegue todo de .env.example en su nuevo _file_ .env.local, y reemplace `<Api_Token>` con la API _token_ que obtuvo desde Web3.Storage.
-
-Mientras nos encontramos en este _file_, también podremos reemplazar `<Your Infura project id>` con nuestro ID de proyecto de Infura. Puede encontrarlo yendo al panel de Infura y seleccionando la configuración de su proyecto.
-
-## Cargando los datos de nuestro Evento
 
 Cree una nueva carpeta en la carpeta `pages` llamada `api` y cree un nuevo archivo o _file_ dentro llamado `store-event-data.js`.
 
@@ -96,7 +72,11 @@ En `makeStorageClient` podemos acceder a nuestra _API key_ para Web3.Storage y c
 function makeStorageClient() {
   return new Web3Storage({ token: process.env.WEB3STORAGE_TOKEN });
 }
+```
 
+Una vez que hayamos creado nuestro cliente Web3Storage, podemos llamar al método `put` en el cliente para cargar nuestra matriz de archivos.
+
+```javascript
 async function storeFiles(files) {
   const client = makeStorageClient();
   const cid = await client.put(files);
@@ -104,11 +84,7 @@ async function storeFiles(files) {
 }
 ```
 
-En el archivo `.env.local`, asegúrese de que WEB3STORAGE_TOKEN esté configurado en su propio token de almacenamiento.
-
-Con esto, podemos cargar con éxito nuestra data usando Web3.storage. La data está disponible inmediatamente para su uso a través de IPFS después de cargarla y se almacenarán con los proveedores de almacenamiento de Filecoin dentro de las 48 horas.
-
-Lo último que debemos hacer antes de que podamos crear el evento en la parte de nuestro frontend es permitir que nuestros usuarios conecten su _wallet_. Agregaremos esta funcionalidad en la próxima lección con Rainbowkit.
+Cuando nuestros archivos han sido cargados, `client.put` devuelve un identificador de contenido (CID). Este CID es el hash único que almacenaremos en el blockchain y usaremos para recuperar nuestros archivos.
 
 ---
 
