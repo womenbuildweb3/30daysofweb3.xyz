@@ -2,7 +2,7 @@
 title: Mappings
 description: Write the code that translates data from your datasources to the entities defined in your schema.
 optional: false
-tweet: "Create and deploy a subgraph on @graphprotocol with #30DaysofWeb3 @womenbuildweb3 👾"
+tweet: "I just wrote mappings for my subgraph @graphprotocol with #30DaysofWeb3 @womenbuildweb3 👾"
 ---
 
 You can find the mappings file (src/{Name}.ts) in the `src` folder. Mappings use AssemblyScript, a strongly-typed language based on Typescript, and act like the resolvers in your typical GraphQL API. They are responsible for the logic that happens in-between an event firing from our smart contract and that data being organized into our schema.
@@ -254,6 +254,15 @@ You can see a final version of the mappings file [here](https://github.com/women
 
 Finally we can run `graph build` in the terminal to build our subgraph and make sure we don't get any errors.
 
+## Need Help?
+
+If you need help, check to see if your question has already been asked in #section-5-help. If you don't see it in there, post a question with any details that would make it easy for a team member to help you. We'll answer most frequently asked questions in live office hours, so keep an eye out in #announcements for those!
+
+## You Did It 🎉
+
+You just wrote the mappings for your subgraph- the toughest part is done! Shoot out a tweet and update the community on your progress by hitting the Share button below. Paste the link to your tweet in **#builders-hype** and hype up any other tweets you see in there 🔥
+
 ---
 
 Writers: [Sarah Schwartz](https://twitter.com/schwartzswartz)
+Editors: [Cami](https://twitter.com/camiinthisthang)

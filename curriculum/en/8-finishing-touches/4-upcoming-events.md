@@ -2,8 +2,12 @@
 title: Upcoming Events
 description: Let users view upcoming events they created on your full-stack decentralized event platform.
 optional: false
-tweet: "Build a full-stack event platform dapp with #30DaysofWeb3 @womenbuildweb3 🎫"
+tweet: "About half way through the @womenbuildweb3 #30DaysOfWeb3 🎫"
 ---
+
+## Need Help?
+
+If you need help, check to see if your question has already been asked in **#section-8-help**. If you don't see it in there, post a question with any details that would make it easy for a team member to help you. We'll answer most frequently asked questions in live office hours, so keep an eye out in #announcements for those!
 
 You can find the upcoming events page in the `pages/my-events` folder and at http://localhost:3000/my-events/upcoming.
 
@@ -100,6 +104,10 @@ export default function MyUpcomingEvents() {
   );
 }
 ```
+
+## Break Time
+
+**End of Day 15**
 
 ---
 

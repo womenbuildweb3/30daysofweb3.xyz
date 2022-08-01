@@ -64,6 +64,10 @@ We'll be diving into the specifics of building our subgraph after the smart cont
 
 The **subgraph** allows you to _ask sophisticated questions_ about your data. The subgraph only has access to data we expose via _Solidity events_. For this reason, we're going to create custom events that expose data we'll ask questions about our data to get insights about the events our users are RSVP'd for, events that are in the future vs events that have already passed.
 
+## Getting Help
+
+Now that we're in section 3 of the curriculum, first check to see if your question has already been answered in **#section-3-help**. If you don't see it there, drop your question along with any details that could help us help you :)
+
 ---
 
 Writers: [Cami](https://twitter.com/camiinthisthang)

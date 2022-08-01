@@ -35,4 +35,4 @@ After this, it will ask you if you'd like to add another contract. Make sure tha
 ---
 
 Writers: [Sarah Schwartz](https://twitter.com/schwartzswartz),
-Editors: [Kristen](https://twitter.com/cuddleofdeath)
+Editors: [Kristen](https://twitter.com/cuddleofdeath), [Cami](https://twitter.com/camiinthisthang)

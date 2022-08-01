@@ -5,3 +5,5 @@ optional: false
 ---
 
 No quiz for this **Finishing Touches** section. Head over to the final section **Wrapping Up**!
+
+**End of Day 16**

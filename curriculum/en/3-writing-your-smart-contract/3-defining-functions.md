@@ -5,6 +5,10 @@ optional: false
 tweet: "Write a smart contract in Solidity for a full-stack dapp with #30DaysofWeb3 @womenbuildweb3 ✍️"
 ---
 
+## Need Help?
+
+If you need help, check to see if your question has already been asked in **#section-3-help**. If you don't see it in there, post a question with any details that would make it easy for a team member to help you. We'll answer most frequently asked questions in live office hours, so keep an eye out in #announcements for those!
+
 ## Create a New Event
 
 Next, we’ll write the function that will get called when a user creates a new event in our frontend. This is one of our setter methods - a function that gets executed and sets the value based on information the user passed in.
