@@ -9,7 +9,6 @@ tweet: "#30DaysofWeb3 @womenbuildweb3 🌐"
 
 ¡Bienvenido al comienzo de tu aventura descentralizada! Permíteme guiarte a través de la nueva y emocionante iteración de Internet conocida como Web3. Al final de este artículo, tendrás las respuestas a las preguntas que estás pensando actualmente, como por ejemplo: _¿Qué diablos es web3? ¿Qué significa descentralización?_ Y: _¿todo esto es solo una moda?_
 
-
 ## Internet a lo largo de los años
 
 ![Dato curioso: aunque la Internet se inventó en 1970, el cumpleaños oficial de la Internet es el 1 de enero de 1983. Esto se debe a que las redes no tenían una forma estándar de comunicarse entre sí antes de esta fecha!](https://cdn.hashnode.com/res/hashnode/image/upload/v1651452115724/ckNDBDMr_.png)
@@ -56,7 +55,8 @@ Parece que 2017 fue un año difícil para la web centralizada en general. Ademá
 ## Web 3.0 - Internet de las Personas
 
 ![Dato curioso: la autenticación en Web3 es muy sencilla. Si bien el proceso en Web2 es un poco largo, ¡Web3 simplemente permite que los usuarios inicien sesión conectando su billetera criptográfica!](https://cdn.hashnode.com/res/hashnode/image/upload/v1651456040136/XwMMF7_p5.png)
-> Dato curioso: la autenticación en Web3 es muy sencilla. Si bien el proceso en Web2 es un poco largo, ¡Web3 simplemente permite que los usuarios inicien sesión conectando su *crypto wallet*!
+
+> Dato curioso: la autenticación en Web3 es muy sencilla. Si bien el proceso en Web2 es un poco largo, ¡Web3 simplemente permite que los usuarios inicien sesión conectando su _crypto wallet_!
 
 ¡En **Web3**, la descentralización ha regresado! Los datos se cifran y almacenan de forma segura en múltiples nodos (computadoras conectadas a una red de blockchain). Estos nodos están a cargo de personas de todo el mundo que comparten su espacio en disco a cambio de una tarifa. Debido a que los datos se almacenan en varios nodos en lugar de un servidor central como AWS, están descentralizados. Esto mejora la seguridad de los datos para los sitios web y para sus usuarios.
 
@@ -67,25 +67,8 @@ Imagine que está accediendo a un sitio del que desea convertirse en miembro:
 
 A diferencia de los casos que ocurren en la web centralizada, como la interrupción de AWS, los servidores web3 no pueden dejar de funcionar. Una violación de datos como la de Equifax en 2017 nunca podría ocurrir en web3. Esto es gracias a la red descentralizada de nodos conectados a la blockchain que se encargan de cifrar los datos.
 
-## Demasiado largo, no lo he leído (Recapitulación)
+---
 
-![¡Tiempo de resumen!](https://cdn.hashnode.com/res/hashnode/image/upload/v1651456991770/OugajW9AO.png)
-
-- La Internet fue inventada por los Estados Unidos en la década de 1970. Originalmente estaba **descentralizada**, lo que significaba que la red constaba de muchas computadoras en todo el país.
-- Tim Berners-Lee inventó la World Wide Web en 1989. Esta versión de la web más tarde se conocería como Web 1.0. Hubo poca o ninguna interacción del usuario en la mayoría de los sitios web durante este tiempo, razón por la cual **Web 1.0 también se conoce a veces como la web de _"solo lectura"._**
-- Como en 2005 fue cuando llegó la Web 2.0. La Internet había comenzado a experimentar una rápida tasa de adopción. La interacción con otros usuarios ahora era posible a través de mensajes instantáneos y actualizaciones de estado en línea. Esta es la razón por la cual **Web 2.0 también se denomina web de _"lectura-escritura"_.** Web 2.0 está centralizada, lo que significa que es probable que los sitios existentes estén conectados a un servicio de administración de almacenamiento en la nube como Amazon Web Services. Si algo le sucede a estos servicios en la nube, como una interrupción, un hackeo o corte, como resultado, millones de sitios web dejarían de funcionar (como se vio en la interrupción de AWS y la violación de Equifax).
-- En la Web 3.0 ha vuelto la descentralización. Los datos se cifran y almacenan de forma segura en varios nodos. La autenticación es tan simple como conectar tu *wallet* para iniciar sesión. ¡Web3 mejora la seguridad y vuelve a poner el poder de Internet en manos de sus usuarios! **La Web 3.0 a veces también se conoce como la web de "lectura-escritura-propia".**
-
-## Enlaces
-
-- Artículo - [From Web 1.0 to Web3: How the Internet Grew Over The Years](https://hackernoon.com/from-web-10-to-web3-how-the-internet-grew-over-the-years-zac032g1)
-- Artículo - [Equifax Data Breach](https://archive.epic.org/privacy/data-breach/equifax/)
-- Artículo - [Amazon Web Services 2017 Disruption Summary](https://aws.amazon.com/message/41926/)
-- Artículo - [Web2 vs Web3](https://ethereum.org/en/developers/docs/web2-vs-web3/#:~:text=Web3%2C%20in%20the%20context%20of,without%20monetising%20their%20personal%20data.)
-- Artículo - [Introduction to Web3](https://ethereum.org/en/web3/)
-- Biografía - [Tim Berners-Lee](https://www.w3.org/People/Berners-Lee/)
-- Artículo - [A Brief History of The Internet](https://www.usg.edu/galileo/skills/unit07/internet07_02.phtml)
-
-Escritoras: [Kristen](https://twitter.com/CuddleofDeath)
-Editoras: [Sarah Z](https://twitter.com/haegeez)
+Escritoras: [Kristen](https://twitter.com/CuddleofDeath),
+Editoras: [Sarah Z](https://twitter.com/haegeez),
 Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

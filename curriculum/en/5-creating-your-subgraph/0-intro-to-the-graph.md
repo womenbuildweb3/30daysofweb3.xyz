@@ -35,4 +35,6 @@ graph —v
 
 For this example we are using version 0.30.3.
 
+---
+
 Writers: [Sarah Schwartz](https://twitter.com/schwartzswartz)

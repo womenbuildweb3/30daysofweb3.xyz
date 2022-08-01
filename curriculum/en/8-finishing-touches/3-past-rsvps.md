@@ -99,4 +99,6 @@ export default function MyPastRSVPs() {
 }
 ```
 
+---
+
 Writers: [Sarah Schwartz](https://twitter.com/schwartzswartz)

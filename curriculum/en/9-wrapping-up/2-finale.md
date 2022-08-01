@@ -23,5 +23,7 @@ Now it’s time to get out there and keep building! 💪
 
 Submit your completed project and earn kudos to prove **on-chain** that you completed #30DaysofWeb3 by filling out this form: https://forms.gle/RbpJ8tN1wPbHLBU29
 
+---
+
 Writers: [Debbie](https://twitter.com/_emeni_deborah),
 Editors: [Sarah Schwartz](https://twitter.com/schwartzswartz)

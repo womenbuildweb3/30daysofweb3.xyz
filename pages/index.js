@@ -14,7 +14,48 @@ export default function Home({ locale }) {
     "30 Days of Web3 is the ultimate guide to building on Ethereum. Ship a full-stack dapp leveraging must-know web3 tools, protocols, and frameworks.";
   const metaUrl = "https://www.30daysofweb3.xyz";
 
-  // console.log("LOCALE", locale)
+  const sponsors = [
+    {
+      name: "The Ethereum Foundation",
+      imageUrl: "/images/sponsors/ef.svg",
+      url: "https://ethereum.foundation/",
+    },
+    {
+      name: "Filecoin/IPFS",
+      imageUrl: "/images/sponsors/filecoin.svg",
+      url: "https://filecoin.io/",
+    },
+    {
+      name: "The Graph",
+      imageUrl: "/images/sponsors/graph.png",
+      url: "https://thegraph.com/",
+    },
+    {
+      name: "Infura",
+      imageUrl: "/images/sponsors/infura.png",
+      url: "https://infura.io/",
+    },
+    {
+      name: "Lens",
+      imageUrl: "/images/sponsors/lens.svg",
+      url: "https://lens.xyz/",
+    },
+    {
+      name: "Polygon",
+      imageUrl: "/images/sponsors/polygon.svg",
+      url: "https://polygon.technology/",
+    },
+    {
+      name: "Radicle",
+      imageUrl: "/images/sponsors/radicle.svg",
+      url: "https://radicle.xyz/",
+    },
+    {
+      name: "Vercel",
+      imageUrl: "/images/sponsors/vercel.svg",
+      url: "https://vercel.com/",
+    },
+  ];
 
   return (
     <Layout locale={locale}>
@@ -177,7 +218,7 @@ export default function Home({ locale }) {
           <h2 className="text-3xl font-extrabold sm:text-4xl mb-8 sm:mb-12">
             {locale !== "es" ? "Our Sponsors" : "Creado con el apoyo de"}
           </h2>
-          <Sponsors />
+          <Sponsors sponsors={sponsors} />
         </div>
         <div
           id="partners"

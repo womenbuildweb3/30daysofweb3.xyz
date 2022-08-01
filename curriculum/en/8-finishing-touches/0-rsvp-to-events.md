@@ -154,5 +154,7 @@ And yay! RSVP creation done! 🎉
 
 Test out the RSVP button to make sure that everything is working. It might take a few minutes for the event page to show that you have already RSVPed.
 
+---
+
 Writers: [Sarah Schwartz](https://twitter.com/schwartzswartz),
 Editors: [Kristen](https://twitter.com/CuddleofDeath)

@@ -124,5 +124,7 @@ const createEvent = async (cid) => {
 };
 ```
 
+---
+
 Writers: [Sarah Schwartz](https://twitter.com/schwartzswartz),
 Editors: [Sarah Z](https://twitter.com/haegeez)

@@ -32,5 +32,7 @@ For the contract name, we will use Web3RSVP.
 
 After this, it will ask you if you'd like to add another contract. Make sure that this is set to **false** and press enter.
 
+---
+
 Writers: [Sarah Schwartz](https://twitter.com/schwartzswartz),
 Editors: [Kristen](https://twitter.com/cuddleofdeath)

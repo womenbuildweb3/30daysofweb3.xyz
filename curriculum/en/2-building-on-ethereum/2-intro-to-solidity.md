@@ -121,5 +121,7 @@ The addNums function adds the two numbers, but doesn't actually return the new v
 You'll see we get the right answer - 8! You just wrote your first smart contract :-)
 ![result](https://user-images.githubusercontent.com/15346823/179375323-dd99fa72-84a3-460f-bcf3-d7d1a977f94d.png)
 
+---
+
 Writers: [Cami](https://twitter.com/camiinthisthang), [Fatma](https://twitter.com/fatima39_fatima),
 Editors: [Busayo](https://twitter.com/AmoweO), [Sarah Schwartz](https://twitter.com/schwartzswartz), [Deborah Emeni](https://twitter.com/_emeni_deborah)

@@ -15,16 +15,17 @@ En `/components/Navbar.js`, podemos importar el componente `ConnectButton` de Ra
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { useAccount, useDisconnect } from "wagmi";
 ```
+
 Usaremos el gancho `useAccount` para acceder a la billetera conectada, si existe, y el gancho `useDisconnect` para desconectar la billetera conectada actualmente.
-    
+
 ```javascript
 export default function Navbar() {
     const { data: account } = useAccount();
     const { disconnect } = useDisconnect();
 ```
-    
+
 En nuestra `Navbar`, podemos verificar el estado de conexión de la billetera del usuario. Si la billetera del usuario está conectada, visualizaremos un botón que muestra la dirección de la billetera del usuario y activa un menú desplegable. De lo contrario, si la billetera del usuario no está conectada, visualizaremos el botón "Conectar billetera" de RainbowKit. Podemos agregar este botón después del botón Crear evento.
-    
+
 ```javascript
     </Link>
     {account ? (
@@ -34,7 +35,9 @@ En nuestra `Navbar`, podemos verificar el estado de conexión de la billetera de
     )}
 </div>
 ```
+
 Así es como su archivo Navbar.js se debe observar:
+
 ```javascript
 import { useState, useEffect } from "react";
 import Link from "next/link";
@@ -84,36 +87,36 @@ export default function Navbar() {
 }
 ```
 
-
-
 Pasamos el objeto de cuenta y la función de desconexión a nuestro componente Navmenu. Los próximos dos pasos **ya están hechos para usted.**
 En `/components/Navmenu.js`, notará que mostramos la dirección de la billetera de conexión de la siguiente manera:
 
 ```javascript
 <p className="text-ellipsis overflow-hidden">{account.address}</p>
 ```
+
 También permitimos que los usuarios puedan desconectar sus billeteras:
 
 ```javascript
 <a
- onClick={disconnect}
- className={joinClassNames(
-   account ? "bg-gray-100 text-gray-900" : "text-gray-700",
-   "block px-4 py-2 text-sm cursor-pointer"
- )}
+  onClick={disconnect}
+  className={joinClassNames(
+    account ? "bg-gray-100 text-gray-900" : "text-gray-700",
+    "block px-4 py-2 text-sm cursor-pointer"
+  )}
 >
- Log Out
+  Log Out
 </a>
 ```
-A lo largo de nuestra dApp, verificamos la conexión de la billetera del usuario para renderizar condicionalmente la interfaz de usuario usando el gancho `useAccount` de wagmi.
 
+A lo largo de nuestra dApp, verificamos la conexión de la billetera del usuario para renderizar condicionalmente la interfaz de usuario usando el gancho `useAccount` de wagmi.
 
 Después de una configuración e importación exitosas, al hacer clic en el botón de conexión, debe esperar una interfaz de usuario como esta:
 
 ![RainbowKit Ui](https://i.imgur.com/QgE9oIj.jpg)
 
-
 En el futuro de las aplicaciones Next.js, RainbowKit también tiene una nueva CLI para las aplicaciones RainbowKit de andamiaje sobre las que puede obtener más información aquí: https://github.com/rainbow-me/rainbowkit (disponible sólo en inglés)
 
-Escritoras: [Sarah Z](https://twitter.com/haegeez), [Busayo](https://twitter.com/AmoweO)
+---
+
+Escritoras: [Sarah Z](https://twitter.com/haegeez), [Busayo](https://twitter.com/AmoweO),
 Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

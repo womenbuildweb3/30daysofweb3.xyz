@@ -1,10 +1,9 @@
 ---
 title: Introducción a la consulta con el Graph
-description: 
+description:
 optional: false
 tweet: "#30DaysofWeb3 @womenbuildweb3 ⛓"
 ---
-
 
 Ahora que hemos creado un evento, debemos poder recuperar la información del evento para mostrarla en la página de detalles del mismo. También necesitamos saber el monto del depósito del evento antes de poder crear un RSVP.
 
@@ -37,6 +36,7 @@ Si queremos buscar una entrada con un valor específico para un campo, podemos h
   }
 }
 ```
+
 Para consultar varias entidades, podemos usar la palabra clave `where`. La palabra clave `where` se establece en un objeto con valores de búsqueda definidos para un determinado campo en la entidad.
 
 Si queremos consultar todos los eventos con un nombre específico, podemos cambiar de evento a eventos y establecer el campo de nombre en nuestro nombre de evento.
@@ -60,6 +60,7 @@ También podemos adjuntar modificadores al final del campo para agregar más res
   }
 }
 ```
+
 Puede ver una lista completa de modificadores aquí: https://thegraph.com/docs/en/developer/graphql-api/#all-filters (página disponible sólo en inglés).
 
 También podemos ordenar nuestros eventos usando la palabra clave orderBy. Para ordenar todos los eventos por `eventTimestamp`, podemos usar la siguiente consulta:
@@ -75,6 +76,8 @@ También podemos ordenar nuestros eventos usando la palabra clave orderBy. Para 
 ```
 
 Puede encontrar una referencia completa para realizar consultas en los documentos de The Graph aquí: https://thegraph.com/docs/en/developer/graphql-api/ (página disponible sólo en inglés).
+
+---
 
 Escritoras: [Sarah Schwartz](https://twitter.com/schwartzswartz),
 Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

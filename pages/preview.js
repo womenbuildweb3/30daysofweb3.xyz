@@ -203,12 +203,29 @@ export default function Preview( { locale } ) {
               <div className="space-y-4">
                 <span className="font-bold">
                   {locale !== "es" 
+                  ? "Customize Your Dapp" 
+                  : "Personaliza Tu Dapp"}
+                </span>
+                <ul className="list-disc space-y-4 pl-8">
+                  <li>
+                    {locale !== "es" ? "Customize Your Dapp" : "Personaliza Tu Dapp"} 
+                  </li>
+                  <li>
+                    {locale !== "es" ? "Social Graphs with Lens Protocol" : "Graphs Sociales con Lens Protocol"} 
+                  </li></ul>
+              </div>
+              <div className="space-y-4">
+                <span className="font-bold">
+                  {locale !== "es" 
                   ? "Wrapping Up" 
                   : "Conclusión"}
                 </span>
                 <ul className="list-disc space-y-4 pl-8">
                   <li>
-                    {locale !== "es" ? "Intro to Radicle" : "Introducción a Radicle"} 
+                    {locale !== "es" ? "Social Graphs with Lens" : "Social Graphs with Lens"} 
+                  </li>
+                  <li>
+                    {locale !== "es" ? "Host Your Code With Radicle" : "Control De Versiones Con Radicle"} 
                   </li>
                 </ul>
               </div>

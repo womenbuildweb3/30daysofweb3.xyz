@@ -33,5 +33,7 @@ After, nodes validate the transaction and then receive a reward (usually, the re
 
 Now that we have learned a bit about how blockchain transactions work, we will be taking a look at smart contracts next!
 
+---
+
 Writers: [Kristen](https://twitter.com/CuddleofDeath),
 Editors: [Deborah Emeni](https://twitter.com/_emeni_deborah)

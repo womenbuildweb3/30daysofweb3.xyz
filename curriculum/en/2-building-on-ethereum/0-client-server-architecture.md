@@ -33,5 +33,7 @@ Instead of having a server application, blockchain developers have this idea of 
 
 Read the full post on client-server architecture, APIs, and HTTP request methods in [this article](https://www.freecodecamp.org/news/http-request-methods-explained/).
 
+---
+
 Writers: [Cami](https://twitter.com/camiinthisthang),
 Editors: [Deborah Emeni](https://twitter.com/_emeni_deborah), [Christina Mills](https://twitter.com/bombayonchain)

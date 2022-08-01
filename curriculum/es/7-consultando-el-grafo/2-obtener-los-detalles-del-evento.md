@@ -20,43 +20,43 @@ Podemos obtener el ID del evento desde la URL de la página y pasarla a nuestra 
 
 ```javascript
 export async function getServerSideProps(context) {
- const { id } = context.params;
- 
- const { data } = await client.query({
-   query: gql`
-     query Event($id: String!) {
-       event(id: $id) {
-         id
-         eventID
-         name
-         description
-         link
-         eventOwner
-         eventTimestamp
-         maxCapacity
-         deposit
-         totalRSVPs
-         totalConfirmedAttendees
-         imageURL
-         rsvps {
-           id
-           attendee {
-             id
-           }
-         }
-       }
-     }
-   `,
-   variables: {
-     id: id,
-   },
- });
- 
- return {
-   props: {
-     event: data.event,
-   },
- };
+  const { id } = context.params;
+
+  const { data } = await client.query({
+    query: gql`
+      query Event($id: String!) {
+        event(id: $id) {
+          id
+          eventID
+          name
+          description
+          link
+          eventOwner
+          eventTimestamp
+          maxCapacity
+          deposit
+          totalRSVPs
+          totalConfirmedAttendees
+          imageURL
+          rsvps {
+            id
+            attendee {
+              id
+            }
+          }
+        }
+      }
+    `,
+    variables: {
+      id: id,
+    },
+  });
+
+  return {
+    props: {
+      event: data.event,
+    },
+  };
 }
 ```
 
@@ -80,6 +80,8 @@ Cree un nuevo evento en la página de creación de eventos y haga clic en el enl
 Una vez que pueda abrir la página de detalles del evento, debería poder ver los detalles de su evento en la consola.
 
 Ahora podremos usar estos datos para reemplazar los valores estáticos en la página.
+
+---
 
 Escritoras: [Sarah Schwartz](https://twitter.com/schwartzswartz),
 Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

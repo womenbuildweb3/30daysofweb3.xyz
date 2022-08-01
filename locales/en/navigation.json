@@ -380,10 +380,16 @@
       "name": "8-wrapping-up",
       "children": [
         {
+          "name": "build-with-lens.md",
+          "type": "file",
+          "href": "/curriculum/8-wrapping-up/0-build-with-lens",
+          "title": "Build With Lens"
+        },
+        {
           "name": "0-intro-to-radicle.md",
           "type": "file",
           "href": "/curriculum/8-wrapping-up/0-intro-to-radicle",
-          "title": "Intro to Radicle"
+          "title": "Host Your Code on Radicle"
         },
         {
           "name": "1-finale.md",

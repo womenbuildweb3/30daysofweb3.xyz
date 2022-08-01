@@ -58,5 +58,7 @@ Imagine you're accessing a site that you want to become a member of:
 
 Unlike instances of misfortune that happen on the centralized web like the AWS outage, web3 servers cannot go down. A data breach like the 2017 Equifax breach could never happen in web3. This is thanks to the decentralized network of nodes connected to the blockchain that are responsible for encrypting data.
 
+---
+
 Writers: [Kristen](https://twitter.com/CuddleofDeath),
 Editors: [Sarah Z](https://twitter.com/haegeez)
