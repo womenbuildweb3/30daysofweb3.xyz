@@ -10,9 +10,11 @@ import { InformationCircleIcon } from "@heroicons/react/solid";
 import Logo from "./Logo";
 
 const ExternalLink = (props) => (
-  <a href={props.href} target="_blank" rel="noopener noreferrer">
-    {props.children}
-  </a>
+  <Link href={props.href}>
+    <a target="_blank" rel="noopener noreferrer">
+      {props.children}
+    </a>
+  </Link>
 );
 
 const components = {
