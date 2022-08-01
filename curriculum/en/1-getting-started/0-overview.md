@@ -15,9 +15,9 @@ If you see anything that should be updated, we ask that you do your part to open
 
 ## 🌐 BUIDL Accelerator
 
-After 30DaysOfWeb3, we'll be supporting 3-8 projects with grants of $3-$30K. These could be ideas that come as you go through 30DaysOfWeb3, and you can build a team others to bring an idea to life.
+After 30 Days of Web3, we'll be supporting 3-8 projects with grants of $3-$30K. These could be ideas that come as you go through 30 Days of Web3, and you can build a team others to bring an idea to life.
 
-Those who did not participate in 30DaysOfWeb3 can still apply for the accelerator by submiting a past project to be considered. The page to register, and more details will be available in about a week. Keep an eye on the #announcements channel in our Launchpad server.
+Those who did not participate in 30 Days of Web3 can still apply for the accelerator by submiting a past project to be considered. The page to register, and more details will be available in about a week. Keep an eye on the **#announcements** channel in our Launchpad server.
 
 ## 💻 Tech Check
 
