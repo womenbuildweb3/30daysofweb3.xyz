@@ -11,13 +11,17 @@ If you're reading this, you're here to build dope dapps — Welcome! A quick int
 
 As you start going through the curriculum, you may notice some differences that the team has not caught or updated. This technology is very nascant, and things are changing almost daily.
 
-If you see anything that should be updated, we ask that you do your part to open PRs for errors you can correct, or report issues. The repo is [here](https://github.com/womenbuildweb3/30daysofweb3.xyz).
+If you see anything that should be updated, we kindly ask that you open PRs for errors you can correct, or report issues. The repo is [here](https://github.com/womenbuildweb3/30daysofweb3.xyz).
+
+## 👾 Launchpad Server
+
+We have a dedicated Discord server where we hang out, host office hours, make important announcements, raffle prizes, and more. Join the server to meet other builders, learn from each other, and ship projects together! To access our Launchpad server, kindly register via [this form](https://forms.gle/XHDy3Yvasqocavas9), and we'll send you an email with the server invite.
 
 ## 🌐 BUIDL Accelerator
 
 After 30 Days of Web3, we'll be supporting 3-8 projects with grants of $3-$30K. These could be ideas that come as you go through 30 Days of Web3, and you can build a team others to bring an idea to life.
 
-Those who did not participate in 30 Days of Web3 can still apply for the accelerator by submiting a past project to be considered. The page to register, and more details will be available in about a week. Keep an eye on the **#announcements** channel in our Launchpad server.
+Those who did not participate in 30 Days of Web3 can still apply for the accelerator by submiting a past project to be considered. More details will be available soon. Keep an eye on the **#announcements** channel in our Launchpad server.
 
 ## 💻 Tech Check
 
@@ -64,11 +68,15 @@ We built this with a lot of love **for you.** Let us know how its going by follo
 
 Throughout the course, there'll be checkpoints for you to test what you've learned and earn [kudos](https://mintkudos.xyz/), which are unique, peer-verified non-transferrable tokens.
 
-These checkpoints are **optional**, but they are required to apply to the BUIDL Accelerator.
+These checkpoints are **required** to apply to the BUIDL Accelerator. If you're not planning to apply for the BUIDL Accelerator, feel free to skip the checkpoints.
 
 ## 🗓 Workshops
 
 Mark your calendars to attend live workshops! These workshops will supplement the curriculum and give you opportunities to learn from experienced web3 devs and ask questions live. Stay tuned to the **#events-and-workshops** channel for workshop details.
+
+You can also add the official 30 Days of Web3 events calendar to your Google Calendar by following [this link](https://calendar.google.com/calendar/u/0?cid=Y18xdDVjOTIxZW1qOTViazQyNWhuOHFhYmdkZ0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t).
+
+Head over to the **#workshop-qna** channel to ask questions you want the workshop host to answer - these could be personal, about tech, and anything in between. Throw a 👍🏼 on questions you'd like to see answered, and the top questions will be answered during the workshop.
 
 Recordings of the workshops will be posted in the **#workshop-recordings** channel.
 
