@@ -291,7 +291,7 @@ Inside our `PastEvent` function we can return a table of users to confirm and a 
 export default PastEvent;
 ```
 
-And that's it! Congrats, you created a full-stack web3 app! You should be really proud of yourself for getting this far.
+And that's it! Congrats, you created a full-stack web3 app! You should be really proud of yourself for getting this far. 🎊
 
 ---
 

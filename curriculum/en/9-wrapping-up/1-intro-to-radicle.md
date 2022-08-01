@@ -3,7 +3,7 @@ title: Hosting Your Code With Radicle
 description: Learn how to host your code on Radicle, a decentralized code collaboration network.
 optional: true
 optionalMsg: If you've dabbled with Radicle or want to bookmark for this later, feel free to jump ahead!
-optionalNextPath: /en/curriculum/9-wrapping-up/1-finale
+optionalNextPath: /en/curriculum/9-wrapping-up/2-finale
 tweet: "Host code for a full-stack dapp on @radicle with #30DaysofWeb3 @womenbuildweb3 💻"
 ---
 

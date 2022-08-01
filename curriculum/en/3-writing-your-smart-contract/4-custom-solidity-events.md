@@ -282,13 +282,13 @@ contract Web3RSVP {
 }
 ```
 
-## Need Help?
+## ✋ Need Help?
 
-If you need help, check to see if your question has already been asked in **#section-3-help**. If you don't see it in there, post a question with any details that would make it easy for a team member to help you. We'll answer most frequently asked questions in live office hours, so keep an eye out in #announcements for those!
+If you need help, check to see if your question has already been asked in **#section-3-help**. If you don't see it in there, post a question with any details that would make it easy for a team member to help you. We'll answer most frequently asked questions in live office hours, so keep an eye out in **#announcements** for those!
 
-## Break Time
+## 🏝 Break Time
 
-You just wrote custom events and defined all of the functions needed to operate Web3RSVP! Hit the button below to tweet out and enter the chance to win one of our prizes 👀 Paste your tweet in **#builders-hype** and we'll choose a winner in the next 72 hours.
+You just wrote custom events and defined all of the functions needed to operate Web3RSVP! Hit the Share button below to tweet out and enter the chance to win one of our prizes 👀. Paste your tweet in **#builders-hype**, and we'll choose a winner in the next 72 hours.
 
 **End of Day 4**
 

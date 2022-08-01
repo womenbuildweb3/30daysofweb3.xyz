@@ -13,7 +13,7 @@ The language used in this tutorial is **Solidity** (_the language used to build 
 
 In this section, you will learn smart contract development with Solidity programming language by working on a sample project. You will also learn how to connect the various components of Solidity (variables, types, and functions) to build a complete DApp.
 
-## Need Help?
+## ✋ Need Help?
 
 If you need help, check to see if your question has already been asked in **#section-2-help**. If you don't see it in there, post a question with any details that would make it easy for a team member to help you. We'll answer most frequently asked questions in live office hours, so keep an eye out in #announcements for those!
 
@@ -65,6 +65,7 @@ Using [Remix](https://remix.ethereum.org/#optimize=false&runs=200&evmVersion=nul
 You should define two functions inside your smart contract: one to do the computation based on two numbers passed in by the user, and one to return the value of that computation. We'll write one getter to retreieve the current value of the variable and one setter to add the two numbers and update the value of the variable.
 
 In Remix, create a new file inside the contracts folder, `add.sol`.
+
 ![create a file inside the contracts folder](https://user-images.githubusercontent.com/15346823/179375354-bac53920-028d-4463-8998-675d8a8f57b5.png)
 
 Start by adding a license identifier, followed by the version pragma:
@@ -107,20 +108,25 @@ function getSum() public view returns (uint) {
 ```
 
 Now we'll compile, deploy, and test our contract. Head over to the 3rd icon from the top and hit `Compile add.sol`
+
 ![Compile contract](https://user-images.githubusercontent.com/15346823/179375260-7b7fc34d-19e5-44f1-b549-c78c828c8085.png)
 
 Move to the 4th icon from the top and select the Javascript VM from the dropdown in the `environment` selection. This will give you some fake ether to be able to deploy and test your contract.
+
 ![JavascriptVM](https://user-images.githubusercontent.com/15346823/179375210-bc843162-dcf0-4337-a9ed-2ca85a3fde7a.png)
 
 Finally, hit the `Deploy` button to create an instance of your contract that we'll interact with and test that the sum function is working as expected. Afer a few seconds, you'll see a `Deployed Contracts` panel on the bottom left.
+
 ![Deploy contract](https://user-images.githubusercontent.com/15346823/179375283-76b327d1-185a-4060-a10b-5cef87545095.png)
 
 Pass in two integers, then hit the addNums button. You'll see a new log indicating the new transaction you just initiated.
+
 ![integers](https://user-images.githubusercontent.com/15346823/179375306-905213b2-2b60-4f9d-832d-3cb1a7dd1f43.png)
 
 The addNums function adds the two numbers, but doesn't actually return the new value. In order for us to verify that the function worked, we need to call our getter function. Hit the `getSum` button. You'll notice a new log appears. Expand that log using the down arrow and scroll to the bottom to find a value called `decoded output.`
 
 You'll see we get the right answer - 8! You just wrote your first smart contract :-)
+
 ![result](https://user-images.githubusercontent.com/15346823/179375323-dd99fa72-84a3-460f-bcf3-d7d1a977f94d.png)
 
 🎉 Let Twitter know you just wrote your first Solidity smart contract - hit the Share button below and paste the link to your tweet in **#builders-hype** so everyone can clap for you!

@@ -7,8 +7,7 @@ tweet: "Get started with #30DaysofWeb3, the ultimate guide to building full-stac
 
 ## 👋 Welcome to 30 Days of Web3!
 
-If you're reading this, you're here to build dope dapps — Welcome! A quick intro on ourselves- we're a global collective of top emerging talent. From over 10 countries, we developed this
-curriculum as we tried different solutions to build, and we're sharing what we found to be a good starting point for any dapp.
+If you're reading this, you're here to build dope dapps — Welcome! A quick intro on ourselves — we're a global collective of top emerging talent. From over 10 countries, we developed this curriculum as we tried different solutions to build dapps, and we're sharing what we found to be a good starting point for any dapp.
 
 As you start going through the curriculum, you may notice some differences that the team has not caught or updated. This technology is very nascant, and things are changing almost daily.
 
@@ -16,9 +15,9 @@ If you see anything that should be updated, we ask that you do your part to open
 
 ## 🌐 BUIDL Accelerator
 
-After 30DaysOfWeb3, we'll be supporting 3-8 projects with grants of $3-$30K. These could be ideas that come as you go through 30DaysOfWeb3, and you can build a team others to bring an idea to life.
+After 30 Days of Web3, we'll be supporting 3-8 projects with grants of $3-$30K. These could be ideas that come as you go through 30 Days of Web3, and you can build a team others to bring an idea to life.
 
-Those who did not participate in 30DaysOfWeb3 can still apply for the accelerator by submiting a past project to be considered. The page to register, and more details will be available in about a week. Keep an eye on the #announcements channel in our Launchpad server.
+Those who did not participate in 30 Days of Web3 can still apply for the accelerator by submiting a past project to be considered. The page to register, and more details will be available in about a week. Keep an eye on the **#announcements** channel in our Launchpad server.
 
 ## 💻 Tech Check
 
@@ -54,6 +53,7 @@ You'll be building an event management and creation dapp from beginning to end. 
 Checkout a video of the dapp we're going to build [here](https://www.loom.com/share/c3fb24a579644feaa7510e98be37181a).
 
 Below is a diagram of the dapp architecture.
+
 ![Web3RSVP Dapp Architecture Diagram](https://i.imgur.com/2TPbE9J.jpg)
 
 ## 🐥 Share Your Progress

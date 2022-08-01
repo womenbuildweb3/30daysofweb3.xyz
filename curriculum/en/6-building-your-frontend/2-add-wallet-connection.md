@@ -109,19 +109,17 @@ We also enable users to disconnect their wallets:
 
 Throughout our dApp, we check the user's wallet connection to conditionally render the UI by using the `useAccount` hook from wagmi.
 
-After successful configuration and importing, when you click the connect button, you should expect a UI (user interface, basically the look and feel of an app or page) like this:
-
-![RainbowKit UI](https://i.imgur.com/QgE9oIj.jpg)
-
 **Note:** RainbowKit recently announced a new command line script to create a Next.js app with RainbowKit and wagmi set up for you. Learn more about it here: https://www.rainbowkit.com/docs/installation#quick-start
 
-## Need Help?
+## ✋ Need Help?
 
-If you need help, check to see if your question has already been asked in **#section-6-help**. If you don't see it in there, post a question with any details that would make it easy for a team member to help you. We'll answer most frequently asked questions in live office hours, so keep an eye out in #announcements for those!
+If you need help, check to see if your question has already been asked in **#section-6-help**. If you don't see it in there, post a question with any details that would make it easy for a team member to help you. We'll answer most frequently asked questions in live office hours, so keep an eye out in **#announcements** for those!
 
-## Break Time
+## 🏝 Break Time
 
-You just set up the boilerplate for your client application and crearted a wallet connection using Rainbowkit 🌈 This is a good time to take a break. Update the Twitterverse by hitting the Share button below, paste your tweet in **#builders-hype** and hype up other builders 🔥 **End of Day 9**
+You just set up the boilerplate for your client application and crearted a wallet connection using Rainbowkit 🌈 This is a good time to take a break. Update the Twitterverse by hitting the Share button below, paste your tweet in **#builders-hype** and hype up other builders 🔥
+
+**End of Day 9**
 
 ---
 

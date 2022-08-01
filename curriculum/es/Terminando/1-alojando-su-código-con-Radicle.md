@@ -3,7 +3,7 @@ title: Alojando su código con Radicle
 description: Learn how to host your code on Radicle, a decentralized code collaboration network.
 optional: true
 optionalMsg: Opcional
-optionalNextPath: /es/curriculum/9-terminando/1-finale
+optionalNextPath: /es/curriculum/9-terminando/2-finale
 tweet: "Host code for a full-stack dapp on @radicle with #30DaysofWeb3 @womenbuildweb3 💻"
 ---
 

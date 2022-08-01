@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-// import Navbar from "./Navbar";
-// import Link from "next/link";
+import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { getNextLesson } from "../utils/lessons";
@@ -9,6 +8,19 @@ import TweetButton from "./TweetButton";
 import CodeBlock from "./CodeBlock";
 import { InformationCircleIcon } from "@heroicons/react/solid";
 import Logo from "./Logo";
+
+const ExternalLink = (props) => (
+  <Link href={props.href}>
+    <a target="_blank" rel="noopener noreferrer">
+      {props.children}
+    </a>
+  </Link>
+);
+
+const components = {
+  a: ExternalLink,
+  code: CodeBlock,
+};
 
 const CurriculumContent = ({ curricData, navigation, locale }) => {
   const router = useRouter();
@@ -44,7 +56,7 @@ const CurriculumContent = ({ curricData, navigation, locale }) => {
       </Head>
 
       <div className="py-4 sm:hidden">
-        <Logo/>
+        <Logo />
       </div>
 
       <div className="prose prose-blue prose-lg mx-auto">
@@ -68,7 +80,8 @@ const CurriculumContent = ({ curricData, navigation, locale }) => {
                     href={curricData.data.optionalNextPath}
                     className="whitespace-nowrap font-medium text-blue-700 hover:text-blue-600"
                   >
-                    {locale !== "es" ? "Jump Ahead" : "Saltar Adelante"} <span aria-hidden="true">&rarr;</span>
+                    {locale !== "es" ? "Jump Ahead" : "Saltar Adelante"}{" "}
+                    <span aria-hidden="true">&rarr;</span>
                   </a>
                 </p>
               </div>
@@ -76,18 +89,22 @@ const CurriculumContent = ({ curricData, navigation, locale }) => {
           </div>
         )}
 
-        <ReactMarkdown remarkPlugins={[remarkGfm]} components={CodeBlock}>
+        <ReactMarkdown remarkPlugins={[remarkGfm]} components={components}>
           {curricData.content}
         </ReactMarkdown>
 
         <div className="not-prose flex items-start justify-between gap-4 mt-10">
           {curricData.data.tweet && (
-            <TweetButton copy={curricData.data.tweet} url={currentUrl} locale={locale}/>
+            <TweetButton
+              copy={curricData.data.tweet}
+              url={currentUrl}
+              locale={locale}
+            />
           )}
           {nextPath !== "/" && (
             <a href={nextPath}>
               <button className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-slate-900 bg-gradient-to-l from-sky-100 to-pink-100 hover:bg-gradient-to-r focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-200">
-                {locale !== "es" ? "Next" : "Siguiente" } &#8594;
+                {locale !== "es" ? "Next" : "Siguiente"} &#8594;
               </button>
             </a>
           )}
