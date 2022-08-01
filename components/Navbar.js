@@ -22,7 +22,7 @@ export default function Navbar({ locale }) {
             </Popover.Button>
           </div>
           <Popover.Group as="nav" className="hidden lg:flex space-x-10">
-            <Link href="/preview">
+            <Link href="/curriculum">
               <a className="text-base font-medium text-slate-900 hover:underline hover:decoration-wavy">
                 Curriculum
               </a>
