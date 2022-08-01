@@ -35,5 +35,5 @@ When you’re ready to re-deploy, you can run the same deploy command above. You
 
 ---
 
-Writers: [Sarah Schwartz](https://twitter.com/schwartzswartz)
+Writers: [Sarah Schwartz](https://twitter.com/schwartzswartz),
 Editors: [Cami](camiinthisthang)

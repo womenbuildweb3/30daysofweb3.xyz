@@ -254,9 +254,9 @@ You can see a final version of the mappings file [here](https://github.com/women
 
 Finally we can run `graph build` in the terminal to build our subgraph and make sure we don't get any errors.
 
-## Need Help?
+## ✋ Need Help?
 
-If you need help, check to see if your question has already been asked in #section-5-help. If you don't see it in there, post a question with any details that would make it easy for a team member to help you. We'll answer most frequently asked questions in live office hours, so keep an eye out in #announcements for those!
+If you need help, check to see if your question has already been asked in **#section-5-help**. If you don't see it in there, post a question with any details that would make it easy for a team member to help you. We'll answer most frequently asked questions in live office hours, so keep an eye out in **#announcements** for those!
 
 ## You Did It 🎉
 
@@ -264,5 +264,5 @@ You just wrote the mappings for your subgraph- the toughest part is done! Shoot 
 
 ---
 
-Writers: [Sarah Schwartz](https://twitter.com/schwartzswartz)
+Writers: [Sarah Schwartz](https://twitter.com/schwartzswartz),
 Editors: [Cami](https://twitter.com/camiinthisthang)

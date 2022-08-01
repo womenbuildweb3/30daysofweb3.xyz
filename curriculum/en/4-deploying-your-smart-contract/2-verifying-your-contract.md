@@ -24,7 +24,7 @@ Finally, copy everything from your smart contract file and paste it into the box
 
 ## Tested, Deployed, and Verified 🎉
 
-You did it! This process of creating scripts, deploying, and verifying is something you will use in all of your future projects, and now you know exactly how to do it. Hit the share button below to document your #30DaysOfWeb3 and drop the link to your tweet in **#builders-hype** to enter the raffle for a giveaway.
+You did it! This process of creating scripts, deploying, and verifying is something you will use in all of your future projects, and now you know exactly how to do it. Hit the Share button below to document your #30DaysOfWeb3 and drop the link to your tweet in **#builders-hype** to enter the raffle for a giveaway.
 
 ---
 

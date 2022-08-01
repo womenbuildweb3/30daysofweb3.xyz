@@ -5,10 +5,6 @@ optional: false
 tweet: "Write a smart contract in Solidity for a full-stack dapp with #30DaysofWeb3 @womenbuildweb3 ✍️"
 ---
 
-## Need Help?
-
-If you need help, check to see if your question has already been asked in **#section-3-help**. If you don't see it in there, post a question with any details that would make it easy for a team member to help you. We'll answer most frequently asked questions in live office hours, so keep an eye out in #announcements for those!
-
 ## Define An 'Event'
 
 Let’s start by defining our smart contract and the information that we want to store on-chain: the creation of a new event by an event organizer and the details associated with that event. We’ll save this in a struct. As a refresher, a _struct is similar to a JS object in that it stores related information about an entity_. In our case, we’re storing information related to the creation of a new event on our RSVP contract.

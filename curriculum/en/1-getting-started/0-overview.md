@@ -7,8 +7,7 @@ tweet: "Get started with #30DaysofWeb3, the ultimate guide to building full-stac
 
 ## 👋 Welcome to 30 Days of Web3!
 
-If you're reading this, you're here to build dope dapps — Welcome! A quick intro on ourselves- we're a global collective of top emerging talent. From over 10 countries, we developed this
-curriculum as we tried different solutions to build, and we're sharing what we found to be a good starting point for any dapp.
+If you're reading this, you're here to build dope dapps — Welcome! A quick intro on ourselves — we're a global collective of top emerging talent. From over 10 countries, we developed this curriculum as we tried different solutions to build dapps, and we're sharing what we found to be a good starting point for any dapp.
 
 As you start going through the curriculum, you may notice some differences that the team has not caught or updated. This technology is very nascant, and things are changing almost daily.
 
@@ -54,6 +53,7 @@ You'll be building an event management and creation dapp from beginning to end. 
 Checkout a video of the dapp we're going to build [here](https://www.loom.com/share/c3fb24a579644feaa7510e98be37181a).
 
 Below is a diagram of the dapp architecture.
+
 ![Web3RSVP Dapp Architecture Diagram](https://i.imgur.com/2TPbE9J.jpg)
 
 ## 🐥 Share Your Progress

@@ -5,10 +5,6 @@ optional: false
 tweet: "I just queried my subgraph with #30DaysofWeb3 @womenbuildweb3 ⛓"
 ---
 
-## Need Help?
-
-If you need help, check to see if your question has already been asked in **#section-7-help**. If you don't see it in there, post a question with any details that would make it easy for a team member to help you. We'll answer most frequently asked questions in live office hours, so keep an eye out in #announcements for those!
-
 Open up the `pages/event/[id].js` file, which uses dynamic routing with Next.js to create a new page for each event minted based on the eventID. This is where we can show the details for a single event and users can RSVP.
 
 First, we will need import `gql` the apollo client at the top of the page.
@@ -85,11 +81,16 @@ Once you can open up the event details page, you should be able to see your even
 
 Now we can use this data to replace the static values on the page.
 
-## Break Time
+## ✋ Need Help?
+
+If you need help, check to see if your question has already been asked in **#section-7-help**. If you don't see it in there, post a question with any details that would make it easy for a team member to help you. We'll answer most frequently asked questions in live office hours, so keep an eye out in **#announcements** for those!
+
+## 🏝 Break Time
 
 You've learned how to query your subgraph through your client application using Apollo Client! Tomorrow you'll pick up where you left off and learn how to display the data returned from your query in your dapp.
 
 Shoot out a tweet sharing an update, paste the link in **#builders-hype** and hype up other builders 🔥
+
 **End of Day 14**
 
 ---

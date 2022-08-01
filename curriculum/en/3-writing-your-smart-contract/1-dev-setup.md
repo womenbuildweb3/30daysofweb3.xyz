@@ -7,13 +7,13 @@ tweet: "Ship a full-stack event platform dapp with #30DaysofWeb3 @womenbuildweb3
 
 ![Dev Setup](https://user-images.githubusercontent.com/15064710/180662024-6fa3c838-c8c4-4586-8d84-33ad0aa4a9f1.png)
 
-## Getting Help
+## ✋ Need Help?
 
-Now that we're in section 3 of the curriculum, first check to see if your question has already been answered in **#section-3-help**. If you don't see it there, drop your question along with any details that could help us help you :)
+If you need help, check to see if your question has already been asked in **#section-3-help**. If you don't see it in there, post a question with any details that would make it easy for a team member to help you. We'll answer most frequently asked questions in live office hours, so keep an eye out in **#announcements** for those!
 
-## IDE (Integrated Developer Environment)
+## IDE
 
-Although any IDE will work, we recommend the use of **VSCode**, a free IDE which you can download [here.](https://code.visualstudio.com/download)
+Although any IDE (Integrated Developer Environment) will work, we recommend the use of **VSCode**, a free IDE which you can download [here.](https://code.visualstudio.com/download)
 
 ## Node.js and NPM
 
@@ -64,6 +64,7 @@ Let’s start coding! Today we’ll be writing about ½ of the smart contract.
 - If you have any issues with this setup, you can fork and then clone this [starter repo](https://github.com/womenbuildweb3/hardhat-sample).
 
 First, fork the project:
+
 ![fork the project](https://user-images.githubusercontent.com/15346823/179375505-7b311148-c5cf-4448-bdea-fc2077053281.png)
 
 Then, clone the repo onto your machine by copying the link that is given to you when you press `code.` Note that the username should be your username. If you still see `womenbuildweb3` as the user name, you haven't forked the repo. After copying the link, run this command in your terminal:
@@ -88,5 +89,5 @@ The `pragma solidity ^0.8.4;` line tells the compiler which version of Solidity 
 
 ---
 
-Writers: [Cami](https://twitter.com/camiinthisthang)
+Writers: [Cami](https://twitter.com/camiinthisthang),
 Editors: [Sarah Z](https://twitter.com/haegeez), [Kristen](https://twitter.com/cuddleofdeath), [Sarah Schwartz](https://twitter.com/schwartzswartz)
