@@ -36,7 +36,7 @@ It's helpful to be familiar with the aforementioned, but you'll pick up everythi
 
 ## 🚀 Before Starting
 
-This course is fully async, online, and created to only take 30-45 mins daily to ship in 30 days. If you're not planning to apply for the BUIDL Accelerator, you can feel free to go through this project at your own pace.
+This course is fully async, online, and created to only take 30-45 mins daily to ship in 30 days. The curriculum is paced, and you'll notice notes indicating the end of day 1, 2, 3, etc. These markers are paced with some buffer, so if you're off by a day or two, don't sweat it. If you're not planning to apply for the BUIDL Accelerator, you can feel free to go through this project at your own pace and ignore the pace markers.
 
 To be eligible to apply to the BUIDL Accelerator, you must finish this course within the next **40 days** in order to meet the application deadline. More details on the BUIDL Accelerator will be released soon.
 
