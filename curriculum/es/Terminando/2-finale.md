@@ -21,7 +21,7 @@ No olvides tuitear y compartir tu progreso. ¡Realmente acabas de construir una 
 
 ## Submit your project
 
-Submit your completed project and earn kudos to prove **on-chain** that you completed #30DaysofWeb3 by filling out this form: https://forms.gle/RbpJ8tN1wPbHLBU29
+Sube tu proyecto completo y gana kudos **en cadena** y ten la prueba de que completaste #30DaysofWeb3 completando el siguiente formulario: your completed project and earn kudos to prove **on-chain** that you completed #30DaysofWeb3 by filling out this form: https://forms.gle/RbpJ8tN1wPbHLBU29
 
 ---
 
