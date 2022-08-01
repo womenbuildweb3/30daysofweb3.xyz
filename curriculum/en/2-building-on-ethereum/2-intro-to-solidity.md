@@ -111,7 +111,7 @@ Now we'll compile, deploy, and test our contract. Head over to the 3rd icon from
 
 ![Compile contract](https://user-images.githubusercontent.com/15346823/179375260-7b7fc34d-19e5-44f1-b549-c78c828c8085.png)
 
-Move to the 4th icon from the top and select the Javascript VM from the dropdown in the `environment` selection. This will give you some fake ether to be able to deploy and test your contract.
+Move to the 4th icon from the top and select the Remix VM from the dropdown in the `environment` selection. This will give you some fake ether to be able to deploy and test your contract.
 
 >Note: [Remix has renamed this to be Remix VM](https://remix-ide.readthedocs.io/en/latest/run.html) - you will no longer see the Javascript VM as an option. Select the Remix VM! 
 
