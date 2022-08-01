@@ -38,3 +38,7 @@ code {
   max-width: 100%;
   margin: auto;
 }
+
+.prose :where(pre):not(:where([class~="not-prose"] *)) {
+  background-color: hsl(220, 13%, 18%);
+}
