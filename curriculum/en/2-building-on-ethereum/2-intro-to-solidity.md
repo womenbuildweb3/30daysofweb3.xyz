@@ -113,7 +113,7 @@ Now we'll compile, deploy, and test our contract. Head over to the 3rd icon from
 
 Move to the 4th icon from the top and select the Remix VM from the dropdown in the `environment` selection. This will give you some fake ether to be able to deploy and test your contract.
 
->Note: [Remix has renamed this to be Remix VM](https://remix-ide.readthedocs.io/en/latest/run.html) - you will no longer see the Javascript VM as an option. Select the Remix VM! 
+> Note: [Remix has renamed this to be Remix VM](https://remix-ide.readthedocs.io/en/latest/run.html) - you will no longer see the Javascript VM as an option. Select the Remix VM!
 
 ![JavascriptVM](https://user-images.githubusercontent.com/15346823/179375210-bc843162-dcf0-4337-a9ed-2ca85a3fde7a.png)
 
@@ -121,7 +121,7 @@ Finally, hit the `Deploy` button to create an instance of your contract that we'
 
 ![Deploy contract](https://user-images.githubusercontent.com/15346823/179375283-76b327d1-185a-4060-a10b-5cef87545095.png)
 
-Pass in two integers, then hit the addNums button. You'll see a new log indicating the new transaction you just initiated.
+Pass in two integers, then hit the caret button just beside addNums and the two integers you just passed in. A button 'transact' appears. Click on it and then you'll see a new log indicating the new transaction you just initiated.
 
 ![integers](https://user-images.githubusercontent.com/15346823/179375306-905213b2-2b60-4f9d-832d-3cb1a7dd1f43.png)
 
