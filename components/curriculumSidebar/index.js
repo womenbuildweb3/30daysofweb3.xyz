@@ -6,7 +6,7 @@ import styles from "../../styles/Home.module.css";
 import Link from "next/link"
 
 export default function CurricSideBar({ navigation, locale }) {
-
+console.log("THIS NAVV", navigation)
   return (
     <div
       className={`hidden sm:flex flex-col flex-grow pb-4 overflow-y-auto border-r border-gray ${styles.sidebarBlur}`}
@@ -20,7 +20,7 @@ export default function CurricSideBar({ navigation, locale }) {
             !item.children ? (
               <ListItem item={item} key={index} />
             ) : (
-              <ListGroup item={item} key={index} />
+              <ListGroup item={item} index={index} key={index} />
             )
           )}
         </nav>
