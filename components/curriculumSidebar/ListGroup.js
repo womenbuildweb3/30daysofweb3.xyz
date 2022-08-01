@@ -6,10 +6,11 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function ListGroup({ item }) {
+export default function ListGroup({ item, index }) {
   const router = useRouter();
   const { category } = router.query;
   const selected = category === item.name;
+
   return (
     <>
       <Disclosure
@@ -38,7 +39,7 @@ export default function ListGroup({ item }) {
               >
                 <path d="M6 6L14 10L6 14V6Z" fill="currentColor" />
               </svg>
-              {item.title}
+              {index+1}. {item.title}
             </Disclosure.Button>
             <Disclosure.Panel className="space-y-1">
               {item.children.map((subItem, index) => (
