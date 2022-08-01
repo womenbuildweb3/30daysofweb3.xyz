@@ -5,33 +5,33 @@ optional: false
 tweet: "Learn about @ethereum and layer-1 vs layer-2 scaling solutions with #30DaysofWeb3 @womenbuildweb3 🔗"
 ---
 
-![Intro to Polygon](https://user-images.githubusercontent.com/15064710/180661945-d3975ecb-1562-45af-9a4b-b178cd596145.png)
+![Introducción a Polygon](https://user-images.githubusercontent.com/15064710/180661945-d3975ecb-1562-45af-9a4b-b178cd596145.png)
 
-## Soluciones de escalado de Ethereum
+## Las Soluciones de Escalado en Ethereum
 
-Ethereum se ha convertido en una de las cadenas de _blockchains_ más populares durante un tiempo, debido a su capacidad para emplear _smart contracts_ completos de Turing. Sin embargo, después de que ganó popularidad, ha habido una congestión significativa en la red como resultado de las altas tarifas de gas.
+Ethereum se ha convertido en una de las blockchain más populares debido a su capacidad para emplear por completo contratos inteligentes de Turing. Sin embargo, después de que ganó mucha popularidad, ha habido una congestión significativa en la red y como resultado, altas tarifas de gas.
 
-## Diferencia entre Ethereum L1, L2 y Sidechains.
+## Diferencia entre Ethereum L1, L2 y cadenas paralelas
 
-**L1 Blockchain** *se refiere a la capa principal de *blockchain* como Ethereum*. Las soluciones de escalado de capa 1 se implementan directamente en la cadena de bloques principal, por lo que se deriva el nombre de _on-chain solutions_. Algunos ejemplos de la solución de escalado en cadena incluyen Consensus Protocol Switch y Sharding.
+**L1 Blockchain** _se refiere a la principal capa de blockchain como Ethereum_. Las soluciones de escalado de Layer 1 se implementan directamente en la blockchain principal, por lo que se deriva el nombre de soluciones en cadena. Algunos ejemplos de la solución de escalado en cadena incluyen a Consensus Protocol Switch y Sharding.
 
-**L2 Blockchains** _son soluciones complementarias construidas en la capa base_. Por lo tanto, derivan el nombre de _off-chain scaling solution_, ya que tienen la intención de quitar la carga de trabajo de el _blockchain_ mientras utilizan su seguridad.
+**L2 Blockchains** _son soluciones complementarias construidas en la capa que es base_. Por tanto, tienen el nombre de solución de escalado pero fuera de la cadena, ya que tienen la intención de quitar la carga de trabajo de la blockchain principal y cuenta con su propia seguridad.
 
-**Sidechains** son _blockchains independientes compatibles con Ethereum con su propio modelo de consenso_. _Sidechains_ logran la interoperabilidad con Ethereum mediante el uso del mismo EVM. Dado que son independientes de la cadena principal, _sidechains_ son responsables de su propia seguridad. Si la seguridad de un _sidechain_ se ve comprometida, no tendrá ningún impacto en la cadena principal.
+**Sidechains** son _blockchains independientes con su propio modelo de consenso y compatibles con Ethereum_. Las cadenas paralelas logran la interoperabilidad con Ethereum mediante el uso del mismo EVM. Dado que son independientes de la cadena principal, las cadenas paralelas son responsables de su propia seguridad. Si la seguridad de una cadena paralela se ve comprometida, no tendrá ningún impacto en la cadena principal.
 
-En este programa, nos centraremos en desarrollar aplicaciones principalmente en el _sidechain_ de Polygon.
+En nuestro currículum, nos centraremos en desarrollar aplicaciones principalmente en la cadena paralela o _sidechain_ de Polygon.
 
-## ¿Qué es _Polygon_?
+## ¿Qué es un Polygon?
 
-**Polygon** es *una solución de escalado que logra la escala mediante la utilización de *sidechains* para el cálculo fuera de la cadena y una red descentralizada de validadores de prueba de participación (PoS).*
+**Polygon** es _una solución de escalado que logra la escala mediante la utilización de cadenas paralelas para el cálculo fuera de la cadena y una red descentralizada de validadores de prueba de participación o también llamados, Proof-of-Stake (PoS)._
 
-Polygon se esfuerza a resolver los problemas de escalabilidad y usabilidad sin comprometer la descentralización y aprovechando la comunidad y el ecosistema de desarrolladores existentes. Polygon es una solución de escalado fuera/de el _sidechain_ para las plataformas existentes a fin de brindar escalabilidad y una experiencia de usuario superior a las DApps y las funcionalidades de los usuarios.
+Polygon se esfuerza por resolver los problemas de escalabilidad y usabilidad sin comprometer la descentralización e impulsa la comunidad y el ecosistema de desarrolladores existentes. Polygon es una solución de escalado para las plataformas fuera y paralalelamente de la cadena principal a fin de brindar escalabilidad y una experiencia de usuario superior a las dApps y sus funcionalidades.
 
 ## ¿Por qué un desarrollador elegiría Polygon?
 
-El _blockchain_ principal (capa 1) suele ser lenta. Los _sidechains_ como Polygon se crearon como una solución para acelerar el _blockchain_ sin tener que comprometer su seguridad y descentralización, mejorando así la experiencia del usuario y reduciendo la congestión de la red.
+La blockchain principal (Layer 1) suele ser lenta. Las cadenas paralelas o _sidechains_ como Polygon se crearon como una solución para acelerar la blockchain sin tener que comprometer la seguridad y descentralización de esta, mejorando así la experiencia del usuario y reduciendo el tráfico en la red.
 
-Las tarifas de transacción son más baratas en Polygon, lo que hace que Ethereum sea más inclusivo y accesible para todos. Esto es posible gracias a la aplicación de resúmenes que funcionan acumulando una serie de transacciones en lotes.
+Las tarifas de transacción son más económicas en Polygon, lo que hace que Ethereum sea más inclusivo y accesible para todos. Esto es posible gracias a la aplicación de rollups es decir, que se enrolla un grupo de transacciones y lo convierten en un mismo grupo o en un mismo lote.
 
 ---
 

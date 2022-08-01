@@ -7,32 +7,31 @@ tweet: "Understand composability in web3 with #30DaysofWeb3 @womenbuildweb3 🔗
 
 ## Arquitectura Cliente Servidor
 
-Para comprender completamente la diferencia fundamental entre web2 y web3, debe comprender la arquitectura tradicional del servidor del cliente para comprender el concepto de backends abiertos y componibles.
+Para comprender completamente la diferencia fundamental entre web2 y web3, debemos comprender la arquitectura tradicional del servidor y del cliente para entender el concepto de backends abiertos y componibles.
 
-Lea la publicación [aquí](https://www.freecodecamp.org/news/http-request-methods-explained/).
+Una aplicación de cliente es aquella con la que el usuario realmente interactúa, donde se muestra el contenido. Una aplicación de servidor es la que envía el contenido o recurso a la aplicación del cliente. Una aplicación de servidor es un programa que se ejecuta en algún lugar, esperando una solicitud.
 
-**Las dos cosas que debes aprender de esta publicación:**
+El principal motivo de esta separación es proteger la información confidencial. Toda la aplicación de cliente se descarga en el navegador, y cualquiera que acceda a la página web puede acceder a todos los datos.
 
-- La relación y diferencia entre una aplicación cliente y una aplicación servidor
-- Qué es una solicitud de API y comprensión del protocolo http
+Esta arquitectura ayuda a proteger cosas como sus _API keys_, datos personales y más. Ahora, las herramientas modernas como Next.js y Netlify permiten a los desarrolladores ejecutar el código del servidor en la misma aplicación del cliente, sin necesidad de una aplicación aparte.
 
-### Why We Use A Client-Server Architecture
+### ¿Por qué usamos una arquitectura cliente-servidor?
 
-Let’s say you were building a weather web app, for example. The weather app that your user is going to interact with is the client application – it has buttons, a search bar, and displays data like city name, current temperature, AQI, and so on.
+Digamos, por ejemplo, que estamos creando una aplicación web meteorológica. La aplicación meteorológica con la que el usuario va a interactuar es la aplicación cliente: tiene botones, una barra de búsqueda y muestra datos como el nombre de la ciudad, la temperatura actual, el AQI, etc.
 
-This weather app wouldn’t have every city and its weather information coded directly into it. This would make the app bloated and slow, would take forever to research and manually add to a database, and would be a headache to update every single day.
+Esta aplicación meteorológica no tendría todas las ciudades y su información meteorológica codificada directamente en ella. Esto haría que la aplicación se hinchara y fuera lenta, llevaría una eternidad investigar y agregar manualmente a una base de datos, y sería un dolor de cabeza para actualizar todos los días.
 
-Instead, the app can access weather data by city using the Weather web API. Your app would gather your user’s location and then make a request to the server saying, “Hey, send me the weather information for this specific city.”
+En su lugar, la aplicación puede acceder a los datos meteorológicos por ciudad utilizando la API web de Weather. Su aplicación recopilaría la ubicación de su usuario y luego haría una solicitud al servidor diciendo: "Oye, envíame la información meteorológica para esta ciudad específica".
 
-Depending on what you are trying to achieve, you would use the various request methods that are available. The server sends back a response containing the weather information and a few other things, depending on how the API is written. It may also send back things like a timestamp, the region this city is located in, and more.
+Dependiendo de lo que intentemos obtener, usaríamos los diversos métodos de solicitud disponibles. El servidor devuelve una respuesta que contiene la información meteorológica y algunas otras cosas, dependiendo de cómo esté escrita la API. También puede enviar cosas como una marca de tiempo (timestamp), la región en la que se encuentra esta ciudad y más.
 
-Your client application communicated with a server application running somewhere, whose only job is to listen continuously for a request to that address. When it receives a request, it works to fulfill that request either by reading from a database, another API, local file, or a programmatic calculation based on data you pass in.
+Su aplicación de cliente se comunicó con una aplicación de servidor que se ejecuta en algún lugar, cuyo único trabajo es escuchar continuamente una solicitud para determinada dirección. Cuando el servidor recibe una solicitud, esta se ejecuta por medio de la lectura de una base de datos, otra API, un archivo local o un cálculo programático basado en los datos que le pasaste.
 
-### How This Translates to Blockchain Development
+### ¿Cómo se traduce esto en el desarrollo de Blockchain?
 
-Instead of having a server application, blockchain developers have this idea of open and composable backends, AKA smart contracts. You'll create a smart contract which handles the logic for the creation of a new event, RSVP'ing to a new event, etc. Your client application will be in charge of aggregating and displaying all of the events that were created, show a dashboard to your user indicating past and upcoming events, etc.
+En lugar de tener una aplicación de servidor, los desarrolladores de blockchain tienen esta idea de backends abiertos y componibles, también conocidos como contratos inteligentes o _smart contracts_. Crearemos un contrato inteligente que maneje la lógica para crear un nuevo evento, para confirmar nuestra asistencia a un nuevo evento, etc. Nuestra aplicación cliente estará a cargo de agregar y mostrar todos los eventos que se crearon, un panel de control para que el usuario pueda ver eventos pasados ​​y los próximos eventos que vienen, etc.
 
-Read the full post on client-server architecture, APIs, and HTTP request methods in [this article](https://www.freecodecamp.org/news/http-request-methods-explained/).
+Lea la publicación completa sobre la arquitectura cliente-servidor, las API y los métodos de solicitud HTTP en [este artículo] (https://www.freecodecamp.org/news/http-request-methods-explained/).
 
 ---
 
