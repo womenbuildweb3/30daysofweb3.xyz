@@ -7,17 +7,17 @@ optionalNextPath: /es/curriculum/2-construyendo-sobre-ethereum/0-arquitectura-cl
 tweet: "#30DaysofWeb3 @womenbuildweb3 🌐"
 ---
 
-¡Bienvenido al comienzo de tu aventura descentralizada! Permíteme guiarte a través de la nueva y emocionante iteración de Internet conocida como Web3. Al final de este artículo, tendrás las respuestas a las preguntas que estás pensando actualmente, como por ejemplo: _¿Qué diablos es web3? ¿Qué significa descentralización?_ Y: _¿todo esto es solo una moda?_
+¡Bienvenido/a al comienzo de tu aventura descentralizada! Permíteme guiarte a través de la nueva y emocionante iteración de Internet conocida como Web3. Al final de este artículo, tendrás las respuestas a las preguntas que estás pensando actualmente, como por ejemplo: _¿Qué diablos es web3? ¿Qué significa descentralización?_ Y: _¿todo esto es solo una moda?_
 
 ## Internet a lo largo de los años
 
-![Dato curioso: aunque la Internet se inventó en 1970, el cumpleaños oficial de la Internet es el 1 de enero de 1983. Esto se debe a que las redes no tenían una forma estándar de comunicarse entre sí antes de esta fecha!](https://cdn.hashnode.com/res/hashnode/image/upload/v1651452115724/ckNDBDMr_.png)
+![Dato curioso: aunque la Internet se inventó en 1970, la fecha de creación oficial de la Internet es el 1 de enero de 1983. Esto se debe a que las redes no tenían una forma estándar de comunicarse entre sí antes de esta fecha!](https://cdn.hashnode.com/res/hashnode/image/upload/v1651452115724/ckNDBDMr_.png)
 
 > Dato curioso: aunque la Internet se inventó en 1970, la fecha de creación oficial de la Internet es el 1 de enero de 1983. Esto se debe a que las redes no tenían una forma estándar de comunicarse entre sí antes de esta fecha!
 
 La Internet ha sido un fenómeno global desde hace bastante tiempo. Ha cambiado la forma en la que vivimos nuestras vidas. Antes de Internet, no era tan fácil mostrar una foto de tu lindo gatito a miles de personas.
 
-Ahora, gracias a los avances modernos de Internet, podemos publicar actualizaciones diarias sobre nuestras vidas, comunicarnos con amigos y familiares a través de aplicaciones de mensajería instantánea o incluso pedir artículos cotidianos como alimentos y electrodomésticos por línea.
+Ahora, gracias a los avances modernos de Internet, podemos publicar actualizaciones diarias sobre nuestras vidas, comunicarnos con amigos y familiares a través de aplicaciones de mensajería instantánea o incluso pedir artículos cotidianos como alimentos y electrodomésticos en línea.
 
 ## Web 1.0 - La raíz de la descentralización
 
@@ -52,7 +52,7 @@ Sitios populares como Coursera, Medium, Docker, Slack y más también estuvieron
 
 Parece que 2017 fue un año difícil para la web centralizada en general. Además de la interrupción de AWS antes mencionada, también hubo una [violación de datos de Equifax](https://archive.epic.org/privacy/data-breach/equifax/) masiva que afectó a 148 millones de clientes.
 
-## Web 3.0 - Internet de las Personas
+## Web 3.0 - La Internet de las Personas
 
 ![Dato curioso: la autenticación en Web3 es muy sencilla. Si bien el proceso en Web2 es un poco largo, ¡Web3 simplemente permite que los usuarios inicien sesión conectando su billetera criptográfica!](https://cdn.hashnode.com/res/hashnode/image/upload/v1651456040136/XwMMF7_p5.png)
 
@@ -62,10 +62,10 @@ Parece que 2017 fue un año difícil para la web centralizada en general. Ademá
 
 Imagine que está accediendo a un sitio del que desea convertirse en miembro:
 
-- En Web 2.0, tendría que registrarse, ir a su correo electrónico, hacer clic en un enlace de verificación, luego navegar de regreso al sitio, probablemente resolver un captcha donde tiene que hacer clic en todas las bicicletas de la imagen, y luego iniciar sesión. ¡Esa no es una muy buena experiencia de usuario!
-- En Web 3.0, simplemente conectas tu billetera para iniciar sesión. ¡No tienes que lidiar con molestos captchas y tus datos están protegidos!
+- En Web 2.0, tendría que registrarse, ir a su correo electrónico, hacer clic en un enlace de verificación, luego navegar de regreso al sitio, probablemente resolver un captcha donde tiene que hacer clic en todas las bicicletas de la imagen y luego, iniciar sesión. ¡Esa no es una muy buena experiencia de usuario que digamos!
+- En Web 3.0, simplemente tienes que conectar tu billetera para iniciar sesión. ¡No tienes que lidiar con captchas molestos y tus datos están protegidos!
 
-A diferencia de los casos que ocurren en la web centralizada, como la interrupción de AWS, los servidores web3 no pueden dejar de funcionar. Una violación de datos como la de Equifax en 2017 nunca podría ocurrir en web3. Esto es gracias a la red descentralizada de nodos conectados a la blockchain que se encargan de cifrar los datos.
+A diferencia de lo ocurre en la web centralizada, como la interrupción de AWS, los servidores web3 no pueden dejar de funcionar. Una violación de datos como la de Equifax en 2017 nunca podría ocurrir en web3. Esto es gracias a la red descentralizada de nodos conectados a la blockchain que se encargan de cifrar los datos.
 
 ---
 

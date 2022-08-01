@@ -7,11 +7,11 @@ tweet: "Get started with #30DaysofWeb3, the ultimate guide to building full-stac
 
 ## 👋 Bienvenidos
 
-Si estás leyendo esto, estás aquí para crear dapps geniales -- ¡Bienvenidos!
+Si estás leyendo esto, es porque estás aquí para crear dapps geniales -- ¡Bienvenido/a!
 
 Este curso es para desarrolladores que quieren comenzar a construir en Ethereum, una de las blockchains más grandes del mundo.
 
-Este curso se centrará en la arquitectura general y te ayudará a definir el techstack en web3 que podrás usar para construir cualquier idea que se te ocurra.
+Este curso se centrará en la arquitectura general y te ayudará a definir el tech stack en web3 que podrás usar para construir cualquier idea que se te ocurra.
 
 Requisitos previos:
 
@@ -21,16 +21,13 @@ Requisitos previos:
 
 Es útil estar familiarizado con lo mencionado anteriormente, pero igualmente aprenderás todo en el camino.
 
-## Antes de comenzar:
+## 🚀 Antes de comenzar:
 
 Asegúrate de registrarte a través de este formulario: https://forms.gle/AEDy1sezV9YJJU316. Al registrarte, obtendrás acceso a nuestro Discord, donde podrás hacer preguntas, conectar con nuestros oradores y obtener los premios alfa que estamos regalando.
 
-Agenda tus calendarios para asistir a los workshops en vivo. Estos workshops complementarán el currículum y te brindarán la oportunidad para hacer preguntas en vivo y obtener una educación estructurada en vivo. Si no puedes asistir, todos los videos se publicarán en el canal de Discord en #workshop-recordings.
+Para las desarrolladoras mujeres y no binarios que soliciten nuestro BUIDL Accelerator, deben terminar este curso dentro de los próximos **40 días** para cumplir con la fecha límite de los aplicantes. Próximamente se darán a conocer más detalles sobre nuestro BUIDL Accelerator.
 
-- Este curso es completamente asíncrono, online y creado para que solo tome de 30 a 45 minutos diarios y concluya en 30 días.
-- Esto actúa como un requisito previo para las mujeres y desarrolladores no binarios que soliciten nuestro BUIDL Accelerator. Para cumplir con la fecha límite de solicitud para el BUIDL, deberá finalizar este proyecto dentro de los próximos **40 días**. Si no planea solicitar el acelerador, puede realizar este proyecto a su propio ritmo.
-
-## Descripción del Proyecto
+## 👀 Descripción del Proyecto
 
 En este curso, construiremos Web3RSVP, una plataforma de gestión y creación de eventos. Esto sería algo similar a Eventbrite en el sentido que los usuarios pueden crear eventos, descubrir nuevos eventos y confirmar su asistencia a ellos.
 
@@ -42,22 +39,28 @@ A continuación, se muestra un diagrama de la arquitectura del proyecto.
 
 > Nota: las secciones marcadas con `opcional` se pueden omitir si está familiarizado con los conceptos básicos, como qué son las _wallets_, blockchain, transacciones, etc.
 
-## Puntos de Verificación
+## 🏁 Checkpoints
+
+A lo largo del curso, habrán puntos de control para que puedas ir probando lo que vas aprendiendo y puedas ganar [kudos](https://mintkudos.xyz/), que son unos tokens únicos, verificados por pares e intransferibles.
+
+Estos puntos de control son **opcionales** pero muy recomendados, especialmente para aquellos que buscan aplicar a nuestro BUIDL Accelerator.
+
+## 📆 Workshops
+
+¡Pon los recordatorios en tu calendario para asistir a nuestros workshops en vivo! Estos talleres complementarán el currículum y te brindarán la oportunidad de aprender con  desarrolladores experimentados en la web3 y hacer preguntas en vivo. Estén atentos al canal **#events-and-workshops** para conocer los detalles del taller.
+
+Las grabaciones de los talleres se publicarán en el canal **#workshop-recordings**.
 
 ## 🤚 Obtener Ayuda
 
 Cuando tengas alguna pregunta, deja un mensaje en el servidor de Discord en el canal correspondiente a la sección en la que te encuentras.
 
-Este proyecto se divide en 6 secciones y verás un canal de ayuda para cada sección donde un miembro del equipo de WBW3 te ayudará.
+Este proyecto se divide en 9 secciones y verás en nuestro Discord un canal de ayuda para cada sección donde un miembro del equipo de WBW3 te podrá ayudar.
 
-## 🚨 Reporte de Progreso
-
-¡Manténnos actualizados sobre tu progreso y motiva a tus compañeros!
-
-Entra al canal #progress en Discord y publica un GIF, una foto o una actualización escrita para decirnos cómo te va. Diviértete! Puede ser o puede ser que no demos premios a los que se mantienen al día con los informes de progreso :-)
+También habrán horas de oficina durante las cuales podrás hacer preguntas, pair-programming y trabajar en conjunto con otros. El horario de oficina se agregará al canal **#eventos-y-talleres**, así que mantente atento!
 
 ---
 
-Escritoras: [Cami](https://twitter.com/camiinthisthang),
-Editoras: [Deborah Emeni](https://twitter.com/_emeni_deborah), [Kristen](https://twitter.com/CuddleofDeath),
+Escritora: [Cami](https://twitter.com/camiinthisthang),
+Editoras: [Deborah Emeni](https://twitter.com/_emeni_deborah), [Kristen](https://twitter.com/CuddleofDeath), [Sarah Z](https://twitter.com/haegeez),
 Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)

@@ -4,4 +4,4 @@ description: You've reached a checkpoint for 30 Days of Web3, the ultimate onlin
 optional: false
 ---
 
-Solidify everything you learned in this **Building on Ethereum** section and earn kudos by taking this quiz: https://forms.gle/MNUAu3Da1X9qPwRs5
+Refuerza todo lo que has aprendido en esta sección de **Building on Ethereum** respondiendo este quiz y gana _kudos_: https://forms.gle/r1P6WdaCtRHcxqBt9 
