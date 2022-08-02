@@ -95,14 +95,14 @@ Next, write the function to add two numbers passed in by the user and a function
 pragma solidity >=0.7.0 <0.9.0;
 
 contract AddNums {
-  uint sum;
+      uint sum;
 
-function addNums(uint x, uint y) public {
-    sum = x + y;
+   function addNums(uint x, uint y) public {
+      sum = x + y;
 }
 
-function getSum() public view returns (uint) {
-    return sum;
+   function getSum() public view returns (uint) {
+     return sum;
 }
 
 }
@@ -110,7 +110,7 @@ function getSum() public view returns (uint) {
 
 Now we'll compile, deploy, and test our contract. Head over to the 3rd icon from the top and hit `Compile add.sol`
 
-![Compile contract](https://user-images.githubusercontent.com/15346823/179375260-7b7fc34d-19e5-44f1-b549-c78c828c8085.png)
+![Compile contract](https://user-images.githubusercontent.com/20168921/182480413-347b90c0-8330-48cd-9e76-37298b5c9aea.png)
 
 Move to the 4th icon from the top and select the Remix VM from the dropdown in the `environment` selection. This will give you some fake ether to be able to deploy and test your contract.
 
@@ -120,7 +120,7 @@ Move to the 4th icon from the top and select the Remix VM from the dropdown in t
 
 Finally, hit the `Deploy` button to create an instance of your contract that we'll interact with and test that the sum function is working as expected. After a few seconds, you'll see a `Deployed Contracts` panel on the bottom left.
 
-![Deploy contract](https://user-images.githubusercontent.com/15346823/179375283-76b327d1-185a-4060-a10b-5cef87545095.png)
+![Deploy contract](https://user-images.githubusercontent.com/20168921/182480524-81baf9d3-373a-45ee-9d1e-99f59fe1387e.png)
 
 Pass in two integers, then hit the caret button just beside addNums and the two integers you just passed in. A button 'transact' appears. Click on it and then you'll see a new log indicating the new transaction you just initiated.
 
