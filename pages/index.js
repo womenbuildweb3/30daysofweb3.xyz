@@ -102,7 +102,7 @@ export default function Home({ locale }) {
           <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
             <div className="rounded-md shadow">
               <a
-                href="https://forms.gle/XHDy3Yvasqocavas9"
+                href="https://forms.gle/SdwSP3BzsnVcXtjP9"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-royal-600 hover:bg-royal-700 md:py-4 md:text-lg md:px-10"
@@ -151,7 +151,9 @@ export default function Home({ locale }) {
                     {locale !== "es" ? "Accelerator" : "Acelerador"}
                   </span>
                   <h2 className="mt-2 text-3xl font-extrabold text-slate-900 sm:text-4xl">
-                    {locale !== "es" ? "Build Accelerator" : "Build Accelerator"}
+                    {locale !== "es"
+                      ? "Build Accelerator"
+                      : "Build Accelerator"}
                   </h2>
                   <p className="mt-4 text-lg leading-6 text-slate-700">
                     {locale !== "es"

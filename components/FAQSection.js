@@ -24,7 +24,7 @@ const faqsEN = [
     id: 9,
     question: "What benefit do I get by being part of a partner community?",
     answer:
-      "Members of partner communities will get access to register for the course before it becomes available to the general public. The first cohort will be capped at 500 students, so this ensures that communities are able to get a seat in the course.",
+      "Members of partner communities will get access to register for the course before it becomes available to the general public. The first cohort will be capped, so this ensures that communities are able to get a seat in the course.",
   },
   {
     id: 2,
@@ -89,7 +89,7 @@ const faqsES = [
     id: 9,
     question: "¿Qué beneficio recibo al ser parte de comunidades aliadas?",
     answer:
-      "Los miembros de las comunidades aliadas tendrán acceso para registrarse al curso antes de que esté disponible al público en general. La primera cohorte tendrá un máximo de 500 estudiantes, para asegurar que las comunidades puedan asegurar un lugar en el curso.",
+      "Los miembros de las comunidades aliadas tendrán acceso para registrarse al curso antes de que esté disponible al público en general. La primera cohorte tendrá un máximo, para asegurar que las comunidades puedan asegurar un lugar en el curso.",
   },
   {
     id: 2,
