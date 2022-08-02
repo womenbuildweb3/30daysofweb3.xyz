@@ -9,7 +9,9 @@ tweet: "Set up @coinbase wallet with #30DaysofWeb3 @womenbuildweb3 🔐"
 
 ## Download Coinbase Wallet
 
-Note: You will need Chrome browser for this setup. Download the browser [here](https://www.google.com/chrome/downloads/).
+Note: If you already have a crypto wallet like MetaMask that interacts with the Ethereum blockchain, you may skip setting up Coinbase Wallet.
+
+You will need Chrome browser for this setup. Download the browser [here](https://www.google.com/chrome/downloads/).
 
 1. **Download the Coinbase Wallet Chrome extension.** You can find the link [here](https://chrome.google.com/webstore/detail/coinbase-wallet-extension/hnfanknocfeofbddgcijnmhnfnkdnaad?hl=en).
 
