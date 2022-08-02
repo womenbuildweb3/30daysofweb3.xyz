@@ -23,7 +23,7 @@ The first step in a blockchain transaction usually starts with a user requesting
 
 Transactions are requests for your action to be validated and added to the chain. In order to successfully execute a transaction on the Blockchain, a **gas fee** (_a transaction fee on the blockchain_) is typically required.
 
-When there is a lot of traffic and there is high demand for the network, the gas fees go up because block space is limited, and therefore miners can demand higher fees in order to prioritize which transactions they want to process. This of it like Uber Surge Pricing: if you're at an airport with a bunch of people getting Ubers, the prices go up and the wait times go up.
+When there is a lot of traffic and there is high demand for the network, the gas fees go up because block space is limited, and therefore miners can demand higher fees in order to prioritize which transactions they want to process. Think of it like Uber Surge Pricing: if you're at an airport with a bunch of people getting Ubers, the prices go up and the wait times go up.
 
 **Gas fees** are _something that all users must pay in order to perform a function on the blockchain_. The amount of gas required to pay varies depending on which blockchain you’re using, as well as other factors like high traffic. According to [Gemini](https://www.gemini.com/cryptopedia/what-are-gas-fees-gwei-gas-fees-eth-ether-transaction-fee), the amount of these transaction fees can vary from less than 0.0001 USD to over 100 USD.
 
