@@ -70,7 +70,7 @@ let txn = await rsvpContract.createNewEvent(
 let wait = await txn.wait();
 console.log("NEW EVENT CREATED:", wait.events[0].event, wait.events[0].args);
 
-let eventID = wait.events[0].args.eventID;
+let eventID = wait.events[0].args.eventId;
 console.log("EVENT ID:", eventID);
 ```
 
