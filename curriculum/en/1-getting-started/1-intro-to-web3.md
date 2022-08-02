@@ -7,7 +7,7 @@ optionalNextPath: /en/curriculum/2-building-on-ethereum/0-client-server-architec
 tweet: "Learn about web1, web2, and web3 with #30DaysofWeb3 @womenbuildweb3 🌐"
 ---
 
-Welcome to the beginning of your decentralized adventure! Allow me to guide you through the new and exciting iteration of the internet known as Web3. By the end of this article, you will have the answers to the questions you're currently thinking, like: _What the heck is web3? What does decentralization mean?_ And: _Are these all just buzzwords?_
+Welcome to the beginning of your decentralized adventure! Allow me to guide you through the new and exciting iteration of the internet known as Web3. By the end of this article, you will have the answers to the questions you're currently thinking, like _What the heck is web3? What does decentralization mean?_ And: _Are these all just buzzwords?_
 
 ## The Internet Over The Years...
 
@@ -15,7 +15,7 @@ Welcome to the beginning of your decentralized adventure! Allow me to guide you 
 
 The internet has been a global phenomenon for quite some time now. It has changed the very way in which we live our lives. Before the internet, it wasn't as easy to show a photo of your cute cat to thousands of people.
 
-Now, it's thanks to the modern day advancements of the internet that we can post daily updates about our lives, communicate with friends and family through instant messaging apps, or even order everyday items like food and appliances online.
+Now, it's thanks to the modern-day advancements of the internet that we can post daily updates about our lives, communicate with friends and family through instant messaging apps, or even order everyday items like food and appliances online.
 
 ## Web 1.0 - The Root of Decentralization
 
@@ -31,7 +31,7 @@ In 1989, [Tim Berners-Lee](https://www.w3.org/People/Berners-Lee/) was developin
 
 ![Fun fact: The web that most people are currently familiar with is known as Web 2.0. Web 2.0 is centralized, meaning that most sites visited are tethered to cloud services from big name companies like Amazon and Microsoft.](https://cdn.hashnode.com/res/hashnode/image/upload/v1651454253908/BsQzDoowl.png)
 
-Around 2005, internet speeds had significantly increased compared to the prior decade. More people were connecting to the internet than ever before, with that number increasing each subsequent year.
+Around 2005, internet speed significantly increased compared to the prior decade. More people were connecting to the internet than ever before, with that number increasing each subsequent year.
 
 Needless to say, the web was experiencing growth at a rapid rate. People were now able to communicate instantly by using chat applications like AOL Instant Messenger. Taking 3 minutes to load a webpage had now become a thing of the past for the majority of users. Most websites started to actually have layouts instead of just being colored backgrounds with text on them.
 
@@ -49,7 +49,7 @@ It seems that 2017 was a rough year for the centralized web in general. Aside fr
 
 ![Fun fact: Authentication in Web3 is a breeze. While the process in Web2 is a bit lengthy, Web3 simply allows users to login by connecting their crypto wallet!](https://cdn.hashnode.com/res/hashnode/image/upload/v1651456040136/XwMMF7_p5.png)
 
-In **Web3**, decentralization has returned! Data is encrypted and securely stored across multiple nodes (computers connected to a blockchain network). These nodes are run by individuals worldwide who are sharing their disk space for a fee. Because data is stored on multiple nodes instead of one central server like AWS, it is decentralized. This enhances data security for websites and for its users.
+In **Web3**, decentralization has returned! Data is encrypted and securely stored across multiple nodes (computers connected to a blockchain network). These nodes are run by individuals worldwide who are sharing their disk space for a fee. Because data is stored on multiple nodes instead of one central server like AWS, it is decentralized. This enhances data security for websites and their users.
 
 Imagine you're accessing a site that you want to become a member of:
 

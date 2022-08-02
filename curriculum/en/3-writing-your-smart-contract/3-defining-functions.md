@@ -183,7 +183,7 @@ function createNewRSVP(bytes32 eventId) external payable {
 
 ## Check In Attendees
 
-Part of our app requires users to pay a deposit which they get back when they arrive to the event. We'll write the function that checks in attendees and returns their deposit.
+Part of our app requires users to pay a deposit which they get back when they arrive at the event. We'll write the function that checks in attendees and returns their deposit.
 
 ```solidity
 function confirmAttendee(bytes32 eventId, address attendee) public {
