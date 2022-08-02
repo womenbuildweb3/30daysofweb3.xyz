@@ -56,7 +56,7 @@ function functionName(uint x, uint y) public view returns (uint){
 }
 ```
 
-Every function must begin with the keyword `function`, followed by its name `functionName`. Whatever is placed inside the brackets (parameters) are the inputs, or the values that you will pass to your function. `Public view returns` states the visibility of the function. In this case, it defines that can it be accessible to the other contracts, denoted by the keyword `public`. The function promises not to modify the state of the blockchain, denoted by the word `view`. Finally, `returns` defines that the function will return a value, and also defines the data type of that output.
+Every function must begin with the keyword `function`, followed by its name `functionName`. Whatever is placed inside the brackets (parameters) are the inputs, or the values that you will pass to your function. `Public view returns` states the visibility of the function. In this case, it defines that it can be accessible to the other contracts, denoted by the keyword `public`. The function promises not to modify the state of the blockchain, denoted by the word `view`. Finally, `returns` defines that the function will return a value, and also defines the data type of that output.
 
 ## Try It Yourself
 
