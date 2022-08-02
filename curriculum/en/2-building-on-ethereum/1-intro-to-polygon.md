@@ -29,7 +29,7 @@ Polygon strives to solve the scalability and usability issues while not compromi
 
 ## Why Would A Developer Choose Polygon?
 
-Ethereum can be slow and costly. Sidechains such as Polygon were created as a solution to speed up the blockchain while making minimal sacrifieces on security and decentralization thus an improved user experience and reduced network congestion.
+Ethereum can be slow and costly. Sidechains such as Polygon were created as a solution to speed up the blockchain while making minimal sacrifices on security and decentralization thus an improved user experience and reduced network congestion.
 
 ---
 
