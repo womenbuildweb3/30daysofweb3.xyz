@@ -51,7 +51,7 @@ We defined two functions, sometimes called 'getters' and 'setters' in programmin
 ### Anatomy of A Function
 
 ```solidity
-function functionName(unit x, uint y) public view returns (uint){
+function functionName(uint x, uint y) public view returns (uint){
     // function body here
 }
 ```
