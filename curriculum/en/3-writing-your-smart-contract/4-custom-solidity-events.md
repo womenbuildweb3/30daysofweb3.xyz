@@ -56,7 +56,7 @@ emit NewEventCreated(
 );
 ```
 
-`NewRSVP` should be emitted at the very end of our function `confirmAttendee` like this:
+`NewRSVP` should be emitted at the very end of our function `createNewRSVP` like this:
 
 ```solidity
 emit NewRSVP(eventId, msg.sender);
