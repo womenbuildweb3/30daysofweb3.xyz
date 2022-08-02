@@ -83,7 +83,8 @@ pragma solidity >=0.7.0 <0.9.0;
 
 contract AddNumbers{
 
-uint public sum = 0;
+  uint sum;
+
 }
 ```
 
@@ -94,7 +95,7 @@ Next, write the function to add two numbers passed in by the user and a function
 pragma solidity >=0.7.0 <0.9.0;
 
 contract AddNums {
-uint public sum = 0;
+  uint sum;
 
 function addNums(uint x, uint y) public {
     sum = x + y;
