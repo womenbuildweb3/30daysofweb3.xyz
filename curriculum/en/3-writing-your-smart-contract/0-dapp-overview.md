@@ -44,7 +44,7 @@ During these 30 days, we’ll be working to create a full-stack RSVP dapp. Think
 - Pass in a unique event ID for the event the user wishes to withdraw funds from
 - Ensure that at least 7 days has passed since the event
 - Find the difference in the number of guests who rsvp’d and guests who checked in
-- Multiple the deposit amount times the discrepancy of guests between rsvp and check in and send the amount back to the owner
+- Multiply the deposit amount times the discrepancy of guests between rsvp and check in and send the amount back to the owner
 
 ### Events and Subgraphs
 
