@@ -40,7 +40,7 @@ contract Pets {
 
 ```
 
-The first line (with the _SPDX-License-Identifer_) tells you that the source code is licensed under GPL-3.0.
+The first line (with the _SPDX-License-Identifier_) tells you that the source code is licensed under GPL-3.0.
 
 The second line "pragma solidity" is where we specify the version of Solidity that our smart contract is written on. We do this so that we can ensure to use the correct compiler.
 
@@ -56,13 +56,13 @@ function functionName(unit x, uint y) public view returns (uint){
 }
 ```
 
-Every function must begin with the keyword `function`, followed by its name `functionName`. Whatever is placed inside the brackets (parameters) are the inputs, or the values that you will pass to your function. `Public view returns` states the visibility of the function. In this case, it defines that can it be accessible to the other contracts, denoted by the ketword `public`. The function promises not to modify the state of the blockchain, denoted by the word `view`. Finally, `returns` defines that the function will return a value, and also defines the data type of that output.
+Every function must begin with the keyword `function`, followed by its name `functionName`. Whatever is placed inside the brackets (parameters) are the inputs, or the values that you will pass to your function. `Public view returns` states the visibility of the function. In this case, it defines that can it be accessible to the other contracts, denoted by the keyword `public`. The function promises not to modify the state of the blockchain, denoted by the word `view`. Finally, `returns` defines that the function will return a value, and also defines the data type of that output.
 
 ## Try It Yourself
 
 Using [Remix](https://remix.ethereum.org/#optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.7+commit.e28d00a7.js), an online IDE, create a simple smart contract which adds two numbers together and then returns the value.
 
-You should define two functions inside your smart contract: one to do the computation based on two numbers passed in by the user, and one to return the value of that computation. We'll write one getter to retreieve the current value of the variable and one setter to add the two numbers and update the value of the variable.
+You should define two functions inside your smart contract: one to do the computation based on two numbers passed in by the user, and one to return the value of that computation. We'll write one getter to retrieve the current value of the variable and one setter to add the two numbers and update the value of the variable.
 
 In Remix, create a new file inside the contracts folder, `add.sol`.
 
@@ -117,7 +117,7 @@ Move to the 4th icon from the top and select the Remix VM from the dropdown in t
 
 ![JavascriptVM](https://user-images.githubusercontent.com/15346823/179375210-bc843162-dcf0-4337-a9ed-2ca85a3fde7a.png)
 
-Finally, hit the `Deploy` button to create an instance of your contract that we'll interact with and test that the sum function is working as expected. Afer a few seconds, you'll see a `Deployed Contracts` panel on the bottom left.
+Finally, hit the `Deploy` button to create an instance of your contract that we'll interact with and test that the sum function is working as expected. After a few seconds, you'll see a `Deployed Contracts` panel on the bottom left.
 
 ![Deploy contract](https://user-images.githubusercontent.com/15346823/179375283-76b327d1-185a-4060-a10b-5cef87545095.png)
 
