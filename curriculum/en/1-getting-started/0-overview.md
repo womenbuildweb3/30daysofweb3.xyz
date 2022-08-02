@@ -15,7 +15,7 @@ If you see anything that should be updated, we kindly ask that you open PRs for 
 
 ## 👾 Launchpad Server
 
-We have a dedicated Discord server where we hang out, host office hours, make important announcements, raffle prizes, and more. Join the server to meet other builders, learn from each other, and ship projects together! To access our Launchpad server, kindly register via [this form](https://forms.gle/XHDy3Yvasqocavas9), and we'll send you an email with the server invite.
+We have a dedicated Discord server where we hang out, host office hours, make important announcements, raffle prizes, and more. Join the server to meet other builders, learn from each other, and ship projects together! To access our Launchpad server, kindly register via [this form](https://forms.gle/SdwSP3BzsnVcXtjP9).
 
 ## 🌐 BUIDL Accelerator
 
