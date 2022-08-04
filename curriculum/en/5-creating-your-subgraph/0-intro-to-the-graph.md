@@ -15,6 +15,8 @@ Without The Graph, developers had to run their own indexing servers to be able t
 
 You can use The Graph’s hosted service for free with any chain. You can find a full list [here](https://thegraph.com/hosted-service/). You can also use The Graph’s decentralized network for subgraphs that index Ethereum mainnet contracts, which charges a small fee for each query. For this tutorial, we will be using the free hosted service.
 
+> Note: To make it easy for you, please create a new repo/project folder for this section. However, if you feel you are comfortable enough, you can choose to use [mono repos](https://blog.logrocket.com/managing-full-stack-monorepo-pnpm/)
+
 ## CLI Installation
 
 To get started, you will need to install The Graph CLI:
