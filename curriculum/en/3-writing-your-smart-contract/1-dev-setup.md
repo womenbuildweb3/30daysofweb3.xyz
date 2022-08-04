@@ -56,7 +56,7 @@ Let’s start coding! Today we’ll be writing about ½ of the smart contract.
 
 - Navigate to the folder you want to create this project inside. If you want to create this project on your Desktop, navigate to that directory by running `cd Desktop`.
 - Create a new folder for your project to live in `mkdir web3rsvp`
-- Don't forget to navigate to the new project folder directory using `cd web3rsvp` or your files will end up on your desktop and not in the folder. 
+- Don't forget to navigate to the new project folder directory using `cd web3rsvp` or your files will end up on your desktop and not in the folder.
 - Run the following command to initialize an npm project: `npm init` and then follow the instructions (you can press enter and say yes on everything if you'd like!).
 - After the project initialization and a successful creation of a `package.json` file, run the following command to install hardhat (_a development environment to compile, deploy, test, and debug your Ethereum code_): `npm install --save-dev hardhat` or `yarn add --dev hardhat`.
 - After this, run `npx hardhat`.
@@ -74,6 +74,8 @@ Then, clone the repo onto your machine by copying the link that is given to you 
 ![code](https://user-images.githubusercontent.com/15346823/179375540-3f1060ed-7a2a-48d2-ad20-165822656041.png)
 
 Under the `contracts` folder, head to your `Greeter.sol` file and rename it to `Web3RSVP.sol`.
+
+> Note: Greeter.sol has been updated to Lock.sol
 
 Delete everything in this file except for the first two lines, plus the comment at the very top.
 
