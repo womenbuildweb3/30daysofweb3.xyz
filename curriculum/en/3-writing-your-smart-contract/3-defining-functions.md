@@ -300,4 +300,4 @@ function withdrawUnclaimedDeposits(bytes32 eventId) external {
 
 ---
 
-Writers: [Cami](https://twitter.com/camiinthisthang)
+Writers: [Cami](https://twitter.com/camiinthisthang), Editors: [Sarah Schwartz](https://twitter.com/schwartzswartz), [Frego](https://twitter.com/cizeon)
