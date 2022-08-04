@@ -257,7 +257,7 @@ contract Web3RSVP {
 
         // if this fails
         if (!sent) {
-            myEvent.paidOut == false;
+            myEvent.paidOut = false;
         }
 
         require(sent, "Failed to send Ether");

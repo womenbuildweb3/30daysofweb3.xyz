@@ -277,7 +277,7 @@ function withdrawUnclaimedDeposits(bytes32 eventId) external {
 
     // if this fails
     if (!sent) {
-        myEvent.paidOut == false;
+        myEvent.paidOut = false;
     }
 
     require(sent, "Failed to send Ether");
