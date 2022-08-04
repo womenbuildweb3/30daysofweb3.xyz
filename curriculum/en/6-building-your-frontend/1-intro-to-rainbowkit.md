@@ -19,6 +19,15 @@ At the root of your project, create a new file called `.env.local`. In the web3r
 
 While you're in this file, you can also replace `<Your Infura project id>` with your Infura project id. You can find that by going to your Infura dashboard and selecting your project settings.
 
+If you're having a hard time locating your `Infura project id`, you may have not created a `Filecoin` project yet. In that case, head over to the your `Infura dashboard` and follow the below steps:
+- create new key
+- choose Filecoin front Network dropdown
+- name your project
+- create
+- copy project Id
+
+Now in the `.env.local` file, replace '<Your Infura proejct id>' with the Infura project Id you just copied.
+
 ## Importing and Configuration of Chains
 
 We can configure RainbowKit in our `_app.js` file (located in the `pages` folder of the project). To configure chains, as well as the connectors that are required, a wagmi client has to be set up. You are free to use as many chains as you wish but in our dApp, we used Polygon chain since we deployed on the Polygon testnet (Mumbai).
