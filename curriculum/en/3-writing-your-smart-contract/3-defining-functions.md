@@ -111,6 +111,13 @@ bytes32 eventId = keccak256(
 );
 ```
 
+To prevent a collision here, you can add a require statement to make sure that the eventId isn't already in use.
+
+```javascript
+// make sure this id isn't already claimed
+require(idToEvent[eventId].eventTimestamp == 0, "ALREADY REGISTERED");
+```
+
 We initialize the two arrays we’ll use to track RSVPs and attendees. We know we need to define these two arrays because in our struct, CreateEvent, we define that there will be two arrays which will be used to track the addresses of users who RSVP, and the address of users who actually arrive and get checked into the event AKA are confirmed.
 
 ```solidity
