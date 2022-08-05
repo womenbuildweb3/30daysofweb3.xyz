@@ -19,7 +19,7 @@ At the root of your project, create a new file called `.env.local`. In the web3r
 
 While you're in this file, you can also replace `<Your Infura project id>` with your Infura project id. You can find that by going to your Infura dashboard and selecting your project settings.
 
-> Note: [Infura has renamed project id to API Key](https://docs.infura.io/infura/networks/ethereum/how-to/secure-a-project/project-id) - you will no longer see project id in your project settings. Select the API Key found under the endpoints tab of your project settings!
+> Note: Infura has renamed project id to API Key [see more here](https://docs.infura.io/infura/networks/ethereum/how-to/secure-a-project/project-id) - you will no longer see project id in your project settings. Select the API Key found under the endpoints tab of your project settings!
 
 ## Importing and Configuration of Chains
 
