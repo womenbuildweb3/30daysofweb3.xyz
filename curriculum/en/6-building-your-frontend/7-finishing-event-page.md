@@ -177,6 +177,10 @@ If the event is successfully created, we can show the user a success message and
 
 And that's it! Test out the page to see if you are able to successfully create a new event.
 
+> Note: Once you test that you have successfully created a new event and try to visit the 
+created event page you will run into an error. Don't mind this error as it will be resolved by what
+we implement in Section 7 when we set up apollo client!
+
 If you run into any errors, you can see a full copy of this page here: https://github.com/womenbuildweb3/Web3RSVP-frontend/blob/main/pages/create-event.js
 
 ---
