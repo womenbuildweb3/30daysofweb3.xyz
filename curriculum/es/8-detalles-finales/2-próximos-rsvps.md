@@ -66,7 +66,7 @@ export default function MyUpcomingRSVPs() {
   if (error)
     return (
       <Dashboard page="rsvps" isUpcoming={true}>
-        <p>`Error! ${error.message}`</p>
+        <p>Error! {error.message}</p>
       </Dashboard>
     );
 

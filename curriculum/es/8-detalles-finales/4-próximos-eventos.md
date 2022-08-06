@@ -63,7 +63,7 @@ export default function MyUpcomingEvents() {
   if (error)
     return (
       <Dashboard page="events" isUpcoming={true}>
-        <p>`Error! ${error.message}`</p>
+        <p>Error! {error.message}</p>
       </Dashboard>
     );
 

@@ -50,7 +50,7 @@ export default function Home() {
   if (error)
     return (
       <Landing>
-        <p>`Error! ${error.message}`</p>
+        <p>Error! {error.message}</p>
       </Landing>
     );
 

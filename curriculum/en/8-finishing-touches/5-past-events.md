@@ -62,7 +62,7 @@ export default function MyPastEvents() {
   if (error)
     return (
       <Dashboard page="events" isUpcoming={false}>
-        <p>`Error! ${error.message}`</p>
+        <p>Error! {error.message}</p>
       </Dashboard>
     );
 
