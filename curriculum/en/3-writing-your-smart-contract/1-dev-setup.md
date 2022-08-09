@@ -62,16 +62,19 @@ Let’s start coding! Today we’ll be writing about ½ of the smart contract.
 - After this, run `npx hardhat`.
 - Select a basic project, select `y` for all prompts. `y` simply stands for `yes`.
 - Finally, open this newly created project in your code editor. Do this by opening VS code and hitting `file` > `open` > look for the folder you just created.
-- If you have any issues with this setup, you can fork and then clone this [starter repo](https://github.com/womenbuildweb3/hardhat-sample).
 
-First, fork the project:
+> Note: If you have any issues with this setup, follow the steps below to fork and clone the starter repo.
 
-![fork the project](https://user-images.githubusercontent.com/15346823/179375505-7b311148-c5cf-4448-bdea-fc2077053281.png)
+**Fork and clone the starter repo:**
 
-Then, clone the repo onto your machine by copying the link that is given to you when you press `code.` Note that the username should be your username. If you still see `womenbuildweb3` as the user name, you haven't forked the repo. After copying the link, run this command in your terminal:
+First, go to the [starter repo](https://github.com/womenbuildweb3/hardhat-sample) and fork the project:
+
+![fork the project](https://user-images.githubusercontent.com/56278409/183780829-826e0ed4-1e01-4678-8d2e-9fe54bd8913d.png)
+
+Then, clone the repo onto your machine by copying the link that is given to you when you press `code.` Note that the username in the link should be your GitHub username. If you still see `womenbuildweb3` as the username, you haven't forked the repo. After copying the link, run this command in your terminal:
 `git clone <insert link here>`
 
-![code](https://user-images.githubusercontent.com/15346823/179375540-3f1060ed-7a2a-48d2-ad20-165822656041.png)
+![code](https://user-images.githubusercontent.com/56278409/183777859-a5bcbf8f-a641-4ad4-9181-1b347ecd34a3.png)
 
 Under the `contracts` folder, head to your `Greeter.sol` file and rename it to `Web3RSVP.sol`.
 
