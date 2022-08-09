@@ -132,7 +132,7 @@ The `key` is the eventID and the `value` is a struct, or object, with the follow
 ```solidity
 idToEvent[eventId] = CreateEvent(
     eventId,
-    eventName,
+    eventDataCID,
     msg.sender,
     eventTimestamp,
     deposit,
