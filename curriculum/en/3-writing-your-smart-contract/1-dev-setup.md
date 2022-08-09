@@ -83,7 +83,7 @@ This is what your file should look like:
 
 ```solidity
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.4;
 ```
 
 The SPDX-License-Identifier helps define the license of our file. In this project, we are choosing the [MIT license](https://spdx.org/licenses/MIT.html). This is because our project is completely open source.
