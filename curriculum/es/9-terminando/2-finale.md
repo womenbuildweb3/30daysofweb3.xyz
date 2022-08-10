@@ -1,8 +1,8 @@
 ---
 title: 🎉 ¡Lo lograste!
-description: You've completed our 30 Days of Web3 curriculum and shipped a full-stack decentralized event platform!
+description: ¡Ha completado nuestro plan de estudios de 30 días de Web3 y envió una plataforma de eventos descentralizada full-stack!
 optional: false
-tweet: "Shipped a full-stack event platform dapp with #30DaysofWeb3 @womenbuildweb3! 🎉"
+tweet: "Envió un dapp de plataforma de eventos full-stack con #30DaysofWeb3 @womenbuildweb3! 🎉"
 ---
 
 La importancia de Web3 no se alcanza a enfatizar lo suficiente. Garantizar la seguridad de la información, de los tokens no fungibles (NFTs), las regalías de los artistas, de los bienes raíces y procesos de votación son áreas comprobadas en las que Web3 ha sido capaz de transformar cómo la gente se puede organizar en un mundo descentralizado.
