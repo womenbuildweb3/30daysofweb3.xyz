@@ -15,9 +15,24 @@ You can fully customize your RainbowKit theme and include only the necessary fea
 
 ## Loading Environment Variables
 
-At the root of your project, create a new file called `.env.local`. In the web3rsvp-frontend-starter, there is a file called **.env.example** that shows an example of how to set up your .env.local file. This file is where we will keep secrets like our API keys so they aren't exposed on the frontend.
+At the root of your project, create a new file called `.env.local`. You can use the `touch .env.local` command in your terminal to create this file. In the web3rsvp-frontend-starter, there is a file called **.env.example** that shows an example of how to set up your .env.local file. This file is where we will keep secrets like our API keys so they aren't exposed on the frontend. 
 
-While you're in this file, you can also replace `<Your Infura project id>` with your Infura project id. You can find that by going to your Infura dashboard and selecting your project settings.
+> You're going to need the Web3storage API token to complete the `.env.local` file. Skip ahead to the Web3storage section [here](https://www.30daysofweb3.xyz/en/curriculum/6-building-your-frontend/3-intro-to-web3storage) to create an account. Once you generate an API token, come back to this section to finish setup. 
+
+The `.env.local` file should look something like this:
+
+```
+# Create a .env.local file and populate these with corresponding values
+
+// This is where you the Web3storage API token goes.
+WEB3STORAGE_TOKEN=<Api_Token>
+
+// This is where the Alchemy API key or Infura project ID goes
+NEXT_PUBLIC_INFURA_ID=<Your Infura project id>
+NEXT_PUBLIC_TESTNET_EXPLORER_URL=https://mumbai.polygonscan.com/
+```
+
+While you're in this file, you can also replace `<Your Infura project id>` with your Infura project id. You can find that by going to your Infura dashboard and selecting your project settings. If you're using Alchemy, you can find the Alchemy API key in your dashboard as well.
 
 ## Importing and Configuration of Chains
 
