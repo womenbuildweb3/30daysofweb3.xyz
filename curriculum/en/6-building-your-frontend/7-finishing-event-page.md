@@ -103,7 +103,7 @@ Now we can set up the alert component to show based on the success and loading s
       triggerAlert={true}
       color={"white"}
     />
-  );
+  )
 }
 {
   success && (
@@ -113,7 +113,7 @@ Now we can set up the alert component to show based on the success and loading s
       triggerAlert={true}
       color={"palegreen"}
     />
-  );
+  )
 }
 {
   success === false && (
@@ -123,7 +123,7 @@ Now we can set up the alert component to show based on the success and loading s
       triggerAlert={true}
       color={"palevioletred"}
     />
-  );
+  )
 }
 ```
 
