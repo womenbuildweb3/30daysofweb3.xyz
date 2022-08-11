@@ -135,7 +135,7 @@ We can also wrap our form and header in a conditional statement so they don't sh
     <h1 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl md:text-5xl mb-4">
       Create your virtual event
     </h1>
-  );
+  )
 }
 ```
 
@@ -143,7 +143,7 @@ We can also hide the form if a user hasn't connected their wallet.
 
 ```javascript
 {
-  account && !success && <form>...</form>;
+  account && !success && <form>...</form>
 }
 ```
 
@@ -156,7 +156,7 @@ We can uncomment the section asking the user to connect their wallet, and only s
       <p className="mb-4">Please connect your wallet to create events.</p>
       <ConnectButton />
     </section>
-  );
+  )
 }
 ```
 
@@ -171,7 +171,7 @@ If the event is successfully created, we can show the user a success message and
         <Link href={`/event/${eventID}`}>here</Link>
       </span>
     </div>
-  );
+  )
 }
 ```
 
