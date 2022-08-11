@@ -33,9 +33,8 @@ In our `createEvent` function, right before we console log "Minting..." and the 
 ```javascript
 setLoading(true);
 console.log("Minting...", txn.hash);
-await txn.wait();
-console.log("Minted -- ", txn.hash);
 let wait = await txn.wait();
+console.log("Minted -- ", txn.hash);
 setEventID(wait.events[0].args[0]);
 setSuccess(true);
 setLoading(false);
