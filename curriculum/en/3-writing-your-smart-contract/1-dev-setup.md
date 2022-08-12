@@ -96,4 +96,4 @@ The `pragma solidity ^0.8.4;` line tells the compiler which version of Solidity 
 ---
 
 Writers: [Cami](https://twitter.com/camiinthisthang),
-Editors: [Sarah Z](https://twitter.com/haegeez), [Kristen](https://twitter.com/cuddleofdeath), [Sarah Schwartz](https://twitter.com/schwartzswartz)
+Editors: [Sarah Z](https://twitter.com/haegeez), [Kristen](https://twitter.com/cuddleofdeath), [Sarah Schwartz](https://twitter.com/schwartzswartz), [Krystal](https://twitter.com/theekrystallee)

@@ -17,8 +17,6 @@ You can fully customize your RainbowKit theme and include only the necessary fea
 
 At the root of your project, create a new file called `.env.local`. You can use the `touch .env.local` command in your terminal to create this file. In the web3rsvp-frontend-starter, there is a file called **.env.example** that shows an example of how to set up your .env.local file. This file is where we will keep secrets like our API keys so they aren't exposed on the frontend. 
 
-> You're going to need the Web3storage API token to complete the `.env.local` file. Skip ahead to the Web3storage section [here](https://www.30daysofweb3.xyz/en/curriculum/6-building-your-frontend/3-intro-to-web3storage) to create an account. Once you generate an API token, come back to this section to finish setup. 
-
 The `.env.local` file should look something like this:
 
 ```
@@ -27,12 +25,14 @@ The `.env.local` file should look something like this:
 // This is where you the Web3storage API token goes.
 WEB3STORAGE_TOKEN=<Api_Token>
 
-// This is where the Alchemy API key or Infura project ID goes
-NEXT_PUBLIC_INFURA_ID=<Your Infura project id>
+// This is where the Alchemy API or Infura API key goes
+NEXT_PUBLIC_INFURA_ID=<Your Infura API key>
 NEXT_PUBLIC_TESTNET_EXPLORER_URL=https://mumbai.polygonscan.com/
 ```
 
-While you're in this file, you can also replace `<Your Infura project id>` with your Infura project id. You can find that by going to your Infura dashboard and selecting your project settings. If you're using Alchemy, you can find the Alchemy API key in your dashboard as well.
+While you're in this file, you can also replace `<Your Infura API key>` with your Infura API key. You can find that by going to your [Infura dashboard](https://infura.io/dashboard) and selecting `MANAGE KEY`. If you're using Alchemy, you can find the API key in your [Alchemy dashboard](https://dashboard.alchemyapi.io/) and selecting `VIEW KEY`.
+
+> Note: don't worry about the Web3storage API token. We'll be setting up webstorage in a later section.
 
 ## Importing and Configuration of Chains
 
@@ -95,4 +95,4 @@ If you need help, check to see if your question has already been asked in **#sec
 ---
 
 Writers: [Busayo](https://twitter.com/AmoweO),
-Editors: [Sarah Z](https://twitter.com/haegeez)
+Editors: [Sarah Z](https://twitter.com/haegeez), [Krystal](https://twitter.com/theekrystallee)
