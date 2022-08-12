@@ -33,9 +33,8 @@ In our `createEvent` function, right before we console log "Minting..." and the 
 ```javascript
 setLoading(true);
 console.log("Minting...", txn.hash);
-await txn.wait();
-console.log("Minted -- ", txn.hash);
 let wait = await txn.wait();
+console.log("Minted -- ", txn.hash);
 setEventID(wait.events[0].args[0]);
 setSuccess(true);
 setLoading(false);
@@ -92,7 +91,7 @@ const createEvent = async (cid) => {
 };
 ```
 
-Now we can set up the alert component to show based on the success and loading status. We can add this inside the `section`.
+Now we can set up the alert component to show based on the success and loading status. We can add this inside the `section className="relative py-12`.
 
 ```javascript
 {
@@ -147,7 +146,7 @@ We can also hide the form if a user hasn't connected their wallet.
 }
 ```
 
-We can uncomment the section asking the user to connect their wallet, and only show this if the user hasn't already connected their wallet.
+Next move onto the commented out section asking the user to connect their wallet, uncomment it to only show this if the user hasn't already connected their wallet.
 
 ```javascript
 {
