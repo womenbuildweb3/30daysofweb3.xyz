@@ -16,7 +16,7 @@ features:
 
 En `dataSources`, puede ver nuestra dirección de contrato y abi. Podemos agregar aquí otra propiedad llamada startBlock, que estableceremos en el número de bloque cuando este contrato se implementó por primera vez. Agregar un bloque de inicio reduce la cantidad de tiempo que lleva indexar datos para su subgraph.
 
-Puede encontrar el bloque de inicio en etherscan. Copie el número de bloque para la primera transacción cuando se crea el contrato.
+Puede encontrar el bloque de inicio en polygonscan. Copie el número de bloque para la primera transacción cuando se crea el contrato.
 
 La parte superior de nuestras `dataSources` ahora debería verse así:
 
