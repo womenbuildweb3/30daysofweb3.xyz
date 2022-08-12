@@ -28,7 +28,7 @@ Then, install `dotenv` by running `npm install dotenv`. Dotenv is a module that 
 Update your `hardhat.config.js` file like this:
 
 ```javascript
-require("@nomiclabs/hardhat-waffle");
+require("@nomiclabs/hardhat-waffle"); //new update from hardhat requires to import 'hardhat-toolbox'
 require("dotenv").config();
 
 module.exports = {
