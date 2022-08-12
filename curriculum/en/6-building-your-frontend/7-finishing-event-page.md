@@ -177,9 +177,11 @@ If the event is successfully created, we can show the user a success message and
 
 And that's it! Test out the page to see if you are able to successfully create a new event.
 
+> Note: Upon successfully creating an event, you'll see a confirmation message that includes a link to your event page. You'll be working on setting up event pages in Section 7. Onwards!
+
 If you run into any errors, you can see a full copy of this page here: https://github.com/womenbuildweb3/Web3RSVP-frontend/blob/main/pages/create-event.js
 
 ---
 
 Writers: [Sarah Schwartz](https://twitter.com/schwartzswartz),
-Editors: [Sarah Z](https://twitter.com/haegeez)
+Editors: [Sarah Z](https://twitter.com/haegeez), [Jordan Rob](https://twitter.com/Jordan___Rob)
