@@ -15,9 +15,24 @@ You can fully customize your RainbowKit theme and include only the necessary fea
 
 ## Loading Environment Variables
 
-At the root of your project, create a new file called `.env.local`. In the web3rsvp-frontend-starter, there is a file called **.env.example** that shows an example of how to set up your .env.local file. This file is where we will keep secrets like our API keys so they aren't exposed on the frontend.
+At the root of your project, create a new file called `.env.local`. You can use the `touch .env.local` command in your terminal to create this file. In the web3rsvp-frontend-starter, there is a file called **.env.example** that shows an example of how to set up your .env.local file. This file is where we will keep secrets like our API keys so they aren't exposed on the frontend. 
 
-While you're in this file, you can also replace `<Your Infura project id>` with your Infura project id. You can find that by going to your Infura dashboard and selecting your project settings.
+The `.env.local` file should look something like this:
+
+```
+# Create a .env.local file and populate these with corresponding values
+
+// This is where you the Web3storage API token goes.
+WEB3STORAGE_TOKEN=<Api_Token>
+
+// This is where the Alchemy API or Infura API key goes
+NEXT_PUBLIC_INFURA_ID=<Your Infura API key>
+NEXT_PUBLIC_TESTNET_EXPLORER_URL=https://mumbai.polygonscan.com/
+```
+
+While you're in this file, you can also replace `<Your Infura API key>` with your Infura API key. You can find that by going to your [Infura dashboard](https://infura.io/dashboard) and selecting `MANAGE KEY`. If you're using Alchemy, you can find the API key in your [Alchemy dashboard](https://dashboard.alchemyapi.io/) and selecting `VIEW KEY`.
+
+> Note: don't worry about the Web3storage API token. We'll be setting up webstorage in a later section.
 
 > Note: Infura has renamed project id to API Key. [see more here](https://docs.infura.io/infura/networks/ethereum/how-to/secure-a-project/project-id) - you will no longer see project id in your project settings. Select the API Key found under the endpoints tab of your project settings!
 
@@ -82,4 +97,4 @@ If you need help, check to see if your question has already been asked in **#sec
 ---
 
 Writers: [Busayo](https://twitter.com/AmoweO),
-Editors: [Sarah Z](https://twitter.com/haegeez)
+Editors: [Sarah Z](https://twitter.com/haegeez), [Krystal](https://twitter.com/theekrystallee)
