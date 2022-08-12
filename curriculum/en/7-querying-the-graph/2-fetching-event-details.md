@@ -75,7 +75,7 @@ function Event({ event }) {
     console.log("EVENT:", event)
 ```
 
-Create a new event on the create-event page, and click on the link to your event details page once the transaction has gone through. You might have to wait a up to a few minutes for this to go through.
+Create a new event on the create-event page, and click on the link to your event details page once the transaction has gone through. You might have to wait up to a few minutes for this to go through.
 
 Once you can open up the event details page, you should be able to see your event details in the console.
 
