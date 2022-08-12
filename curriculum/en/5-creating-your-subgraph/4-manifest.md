@@ -16,7 +16,7 @@ features:
 
 Under `dataSources`, you can see our contract address and abi. We can add another property here called startBlock, which we will set to the block number when this contract was first deployed. Adding a start block reduces the amount of time it takes to index data for your subgraph.
 
-You can find the start block on etherscan. Copy the block number for the first transaction when the contract is created.
+You can find the start block on polygonscan. Copy the block number for the first transaction when the contract is created.
 
 The top of our `dataSources` should now look like this:
 
