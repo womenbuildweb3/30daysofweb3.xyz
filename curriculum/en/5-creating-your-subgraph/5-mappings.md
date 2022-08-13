@@ -174,6 +174,7 @@ export function handleNewEventCreated(event: NewEventCreated): void {
         if (link) {
           newEvent.link = link.toString();
         }
+
         if (imagePath) {
           const imageURL =
             "https://ipfs.io/ipfs/" +
