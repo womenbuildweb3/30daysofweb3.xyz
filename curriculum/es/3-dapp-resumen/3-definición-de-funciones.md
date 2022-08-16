@@ -124,7 +124,7 @@ El _`key`_ es el ID del evento y el _`value`_ es una estructura o objeto con las
 ```solidity
 idToEvent[eventId] = CreateEvent(
     eventId,
-    eventName,
+    eventDataCID,
     msg.sender,
     eventTimestamp,
     deposit,

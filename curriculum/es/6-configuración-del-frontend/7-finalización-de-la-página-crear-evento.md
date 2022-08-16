@@ -100,7 +100,7 @@ Ahora podemos configurar el componente `Alert` para que se muestre en función d
       triggerAlert={true}
       color={"white"}
     />
-  );
+  )
 }
 {
   success && (
@@ -110,7 +110,7 @@ Ahora podemos configurar el componente `Alert` para que se muestre en función d
       triggerAlert={true}
       color={"palegreen"}
     />
-  );
+  )
 }
 {
   success === false && (
@@ -120,7 +120,7 @@ Ahora podemos configurar el componente `Alert` para que se muestre en función d
       triggerAlert={true}
       color={"palevioletred"}
     />
-  );
+  )
 }
 ```
 
@@ -132,7 +132,7 @@ También podemos empaquetar nuestro formulario y encabezado en una declaración 
     <h1 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl md:text-5xl mb-4">
       Create your virtual event
     </h1>
-  );
+  )
 }
 ```
 
@@ -140,7 +140,7 @@ También podemos ocultar el formulario si el usuario no ha conectado su billeter
 
 ```javascript
 {
-  account && !success && <form>...</form>;
+  account && !success && <form>...</form>
 }
 ```
 
@@ -153,7 +153,7 @@ Podemos descomentar la sección que le pide al usuario que conecte su billetera,
       <p className="mb-4">Please connect your wallet to create events.</p>
       <ConnectButton />
     </section>
-  );
+  )
 }
 ```
 
@@ -168,7 +168,7 @@ Si el evento es creado exitosamente, podemos mostrarle al usuario un mensaje de 
         <Link href={`/event/${eventID}`}>here</Link>
       </span>
     </div>
-  );
+  )
 }
 ```
 
