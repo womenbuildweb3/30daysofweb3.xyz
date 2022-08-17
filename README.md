@@ -1,4 +1,4 @@
-## WomenBuildWeb3 Official Website
+## WomenBuildWeb3 30days of web3 curriculum
 
 ### Fork and clone the repo from Github to work with it locally
 
@@ -6,9 +6,9 @@
 
 2. In your account's forked github repo, click the "Code" button and copy the repo link.
 
-3. Open your terminal. `git clone https://github.com/YourGithubUsername/official-website.git`
+3. Open your terminal. `git clone https://github.com/YourGithubUsername/30daysofweb3.xyz.git`
 
-4. CD into the repo `cd official-website`
+4. CD into the repo `cd 30daysofweb3.xyz`
 
 5. Install dependencies `npm i`
 
@@ -27,8 +27,6 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 [API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-
 
 ### Contributing to the website
 
