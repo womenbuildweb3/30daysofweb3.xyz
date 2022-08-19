@@ -13,7 +13,7 @@ Escriba la dirección en la que se implementó su contrato desde su terminal en 
 
 Presione la pestaña _'Contract'_ en Polygonscan y presione _'Verify and publish'_.
 
-Seleccione _'single thread'_ y el compilador correcto que coincida con su contrato. En nuestro caso, es 0.8.4 y _'no license'_.
+Seleccione _'single thread'_ y el compilador correcto que coincida con su contrato. En nuestro caso, es 0.8.4 y _'no license'_. Chequear doble para verificar la versión de solidity y tipo de licencia para su propio caso.
 
 Finalmente, copie todo en su archivo _smart contract_ y péguelo en el cuadro de Polyscan, y presione _'verify and publish'_.
 
@@ -21,4 +21,4 @@ Finalmente, copie todo en su archivo _smart contract_ y péguelo en el cuadro de
 
 Escritoras: [Cami](https://twitter.com/camiinthisthang), [Sarah Schwartz](https://twitter.com/schwartzswartz),
 Editoras: [Kristen](https://twitter.com/cuddleofdeath),
-Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat), [Gabi] (https://twitter.com/gsabate)

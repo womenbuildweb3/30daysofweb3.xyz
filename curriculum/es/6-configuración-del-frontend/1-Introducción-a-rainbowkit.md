@@ -7,7 +7,7 @@ tweet: "Aprende a usar @rainbowdotme's RainbowKit con #30DaysofWeb3 @womenbuildw
 
 ![RainbowKit UI](https://i.imgur.com/QgE9oIj.jpg)
 
-## Que es RainbowKit?
+## Qué es RainbowKit?
 
 **RainbowKit** es una biblioteca React que le facilita a los desarrolladores conectar su dApp a una billetera. Es fácil de usar, responsiva, personalizable y adaptable. Desde la conexión básica y la desconexión de la billetera hasta la visualización de saldos, RainbowKit puede funcionar con varias billeteras, intercambiar cadenas de conexión y convertir direcciones a ENS (_Ethereum Name Service_).
 
@@ -15,9 +15,22 @@ Puede personalizar completamente su tema RainbowKit e incluir solo las funciones
 
 ## Cargando variables de entorno
 
-En la raíz de su proyecto, cree un nuevo archivo llamado `.env.local`. En web3rsvp-frontend-starter, hay un archivo llamado **.env.example** que muestra un ejemplo de cómo configurar su archivo .env.local. Este archivo es donde guardaremos secretos como nuestras claves API para que no estén expuestos en la interfaz.
+En la raíz de su proyecto, cree un nuevo archivo llamado `.env.local`. Puede usar el comando `touch .env.local` en su terminal para crear este archivo. En web3rsvp-frontend-starter, hay un archivo llamado **.env.example** que muestra un ejemplo de cómo configurar su archivo .env.local. Este archivo es donde guardaremos secretos como nuestras claves API para que no estén expuestos en la interfaz.
 
-Mientras esté en este archivo, también puede reemplazar `<Your Infura project id>` con su ID de proyecto Infura. Puede encontrarlo yendo a su panel de Infura y seleccionando la configuración de su proyecto.
+El archivo `.env.local` debería verse similar a lo siguiente:
+
+```
+# Cree un documento .env.local y rellénelo con los valores correspondientes
+// Acá es donde el token de la API Web3storage va.
+WEB3STORAGE_TOKEN=<Api_Token>
+// Acá es dónde las llaves (keys) API de Alchemy o Infura van.
+NEXT_PUBLIC_INFURA_ID=<Your Infura API key>
+NEXT_PUBLIC_TESTNET_EXPLORER_URL=https://mumbai.polygonscan.com/
+```
+
+Mientras está en este documento, también puede reemplazar `<Your Infura API key>` con su llave (key) de la API de Infura. La puede encontrar yendo a su [Infura dashboard](https://infura.io/dashboard) y seleccionando `MANAGE KEY`. Si está usando Alchemy, la puede encontrar a la llave/key de la API en su [Alchemy dashboard](https://dashboard.alchemyapi.io/) y seleccionar `VIEW KEY`.
+
+> Nota: no se preocupe por el token de la API Web3storage. Vamos a setear webstorage en una sección más adelante.
 
 ## Importación y Configuración de Cadenas
 
@@ -72,4 +85,4 @@ export default function MyApp({ Component, pageProps }) {
 ```
 
 Escritoras: [Sarah Z](https://twitter.com/haegeez), [Busayo](https://twitter.com/AmoweO)
-Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat), [Gabi] (https://twitter.com/gsabate), [Krystal](https://twitter.com/theekrystallee)
