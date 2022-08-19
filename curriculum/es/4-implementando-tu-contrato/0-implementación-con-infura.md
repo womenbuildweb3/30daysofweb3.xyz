@@ -26,7 +26,7 @@ Luego, instale `dotenv` ejecutando `npm install dotenv`. Dotenv es un módulo qu
 Actualice su archivo `hardhat.config.js` así:
 
 ```javascript
-require("@nomiclabs/hardhat-waffle");
+require("@nomiclabs/hardhat-waffle");  //un nuevo update de hardhat requiere importar 'hardhat-toolbox'
 require("dotenv").config();
 
 module.exports = {
@@ -68,4 +68,4 @@ STAGING_PRIVATE_KEY=1234_YOUR_PRIVATE_KEY_5678
 
 Escritoras: [Sarah Schwartz](https://twitter.com/schwartzswartz),
 Editoras: [Kristen](https://twitter.com/cuddleofdeath),
-Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat)
+Traductoras: [Dami](https://twitter.com/dakitidami), [Brenda](https://twitter.com/engineerbrenda), [Caro Meneses](https://twitter.com/carmedinat), [Gabi] (https://twitter.com/gsabate)
