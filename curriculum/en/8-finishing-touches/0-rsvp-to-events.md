@@ -34,7 +34,7 @@ const [loading, setLoading] = useState(null);
 const [currentTimestamp, setEventTimestamp] = useState(new Date().getTime());
 ```
 
-Now we’ll check whether the user has already RSVP’d or not by creating a function called `checkIfAlreadyRSVPed`. If they haven't already, then the user will see a button to RSVP. To do find out if they have already RSVPed, we can loop through the rsvps array from the event and see if any of the wallet addresses match.
+Now we’ll check whether the user has already RSVP’d or not by creating a function called `checkIfAlreadyRSVPed`. If they haven't already, then the user will see a button to RSVP. To find out if they have already RSVPed, we can loop through the rsvps array from the event and see if any of the wallet addresses match.
 
 ```javascript
 function checkIfAlreadyRSVPed() {
