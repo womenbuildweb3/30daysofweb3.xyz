@@ -41,6 +41,8 @@ You will need Chrome browser for this setup. Download the browser [here](https:/
 
 9. Enabling testnets should have expanded the list of networks. Scroll down the list of _Testnets_ to find **Polygon Mumbai**. Select **Polygon Mumbai** as your default network.
 
+Note: if you have MetaMask already setup, follow this [official Polygon guide](https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/) to add the **Polygon Mumbai** testnet network to your MetaMask wallet.
+
 ## Wallet Safety Tips
 
 - **Never share your PRIVATE KEY or SECRET RECOVERY PHRASE with anyone.**
