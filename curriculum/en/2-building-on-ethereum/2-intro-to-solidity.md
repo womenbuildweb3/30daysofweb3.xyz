@@ -42,11 +42,11 @@ contract Pets {
 
 The first line (with the _SPDX-License-Identifier_) tells you that the source code is licensed under GPL-3.0.
 
-The second line "pragma solidity" is where we specify the version of Solidity that our smart contract is written on. We do this so that we can ensure to use the correct compiler.
+The second line, "pragma solidity" is where we specify the version of Solidity that our smart contract is written on. We do this so that we can ensure to use the correct compiler.
 
 A contract in Solidity is similar to class in object oriented programming languages. It is a collection of code made up of a constructor, variables, and functions. In this example, 'Pets' is the contract name. In our contract we have a state variable of type string which is public and gave it a name of 'myPet'.
 
-We defined two functions, sometimes called 'getters' and 'setters' in programming. The first function, setPetName, sets the state, or value, of the variable myPet. The second function, 'getPetName' retrieves the value saved at the variable myPet. The vast majority of the functions you'll ever write will either be a setter or a getter.
+We defined two functions, sometimes called 'getters' and 'setters' in programming. The first function, setPetName, sets the state, or value, of the variable myPet. The second function, 'getPetName' retrieves the value saved as the variable myPet. The vast majority of the functions you'll ever write will either be a setter or a getter.
 
 ### Anatomy of A Function
 

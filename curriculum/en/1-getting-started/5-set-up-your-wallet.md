@@ -17,7 +17,7 @@ You will need Chrome browser for this setup. Download the browser [here](https:/
 
 2. Upon downloading the extension, a new tab should open where you'll be guided through the wallet creation process. Be sure to select **Create a new wallet** and then follow the prompts.
 
-> IMPORTANT: This wallet will be used specifically for developing your dapp. This wallet should NOT be used to recieve payments or send real $ to!
+> IMPORTANT: This wallet will be used specifically for developing your dapp. This wallet should NOT be used to receive payments or send real $ to!
 
 3. You should **write down your recovery phrase** and keep it safe as best practice, but if you lose this wallet, nothing will happen because this is strictly a _development_ wallet.
 
@@ -35,7 +35,7 @@ You will need Chrome browser for this setup. Download the browser [here](https:/
 
 7. Click on the Coinbase Wallet extension icon to interact with your wallet. Click the Settings icon and then click on "Default network".
 
-8. Scroll down list of networks until you see the option to **Enable testnets**. Toggle **Enable testnets** to be **ON**.
+8. Scroll down the list of networks until you see the option to **Enable testnets**. Toggle **Enable testnets** to be **ON**.
 
 ![Enable testnets](https://user-images.githubusercontent.com/15064710/181860825-2d21f994-49d1-42b8-b5c2-9447e827b773.png)
 
