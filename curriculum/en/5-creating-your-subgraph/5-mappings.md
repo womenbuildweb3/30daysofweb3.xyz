@@ -162,6 +162,7 @@ export function handleNewEventCreated(event: NewEventCreated): void {
         const name = value.get("name");
         const description = value.get("description");
         const link = value.get("link");
+        const imagePath = value.get("image");
 
         if (name) {
           newEvent.name = name.toString();
