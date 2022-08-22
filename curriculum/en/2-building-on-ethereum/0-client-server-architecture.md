@@ -25,7 +25,7 @@ Instead, the app can access weather data by city using the Weather web API. Your
 
 Depending on what you are trying to achieve, you would use the various request methods that are available. The server sends back a response containing the weather information and a few other things, depending on how the API is written. It may also send back things like a timestamp, the region this city is located in, and more.
 
-Your client application communicated with a server application running somewhere, whose only job is to listen continuously for a request to that address. When it receives a request, it works to fulfill that request either by reading from a database, another API, local file, or a programmatic calculation based on data you pass in.
+Your client application communicates with a server application running somewhere, whose only job is to listen continuously for a request to that address. When it receives a request, it works to fulfill that request either by reading from a database, another API, a local file, or a programmatic calculation based on data you pass in.
 
 ### How This Translates to Blockchain Development
 

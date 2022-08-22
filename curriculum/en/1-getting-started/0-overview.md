@@ -27,7 +27,7 @@ Those who did not participate in 30 Days of Web3 can still apply for the acceler
 
 This course is for people who want to start building on Ethereum. If you don't know how to code, _don't worry._ Rather than focus on teaching the implementation, we'll walk you through the code and help you understand how the different protocols communicate with each other.
 
-This course will focus on big-picture architecture and will help you define your web3 tech stack you'll be able to use to build any idea you have- and apply with that idea to BUIDL Accelerator.
+This course will focus on big-picture architecture and will help you define the web3 tech stack you'll be able to use to build any idea you have- and apply that idea to BUIDL Accelerator.
 
 Nice to have:
 
@@ -39,7 +39,7 @@ It's helpful to be familiar with the aforementioned, but you'll pick up everythi
 
 ## 🚀 Before Starting
 
-This course is fully async, online, and created to only take 30-45 mins daily to ship in 30 days. The curriculum is paced, and you'll notice notes indicating the end of day 1, 2, 3, etc. These markers are paced with some buffer, so if you're off by a day or two, don't sweat it. If you're not planning to apply for the BUIDL Accelerator, you can feel free to go through this project at your own pace and ignore the pace markers.
+This course is fully async, online, and created to only take 30-45 mins daily to ship in 30 days. The curriculum is paced, and you'll notice notes indicating the end of days 1, 2, 3, etc. These markers are paced with some buffer, so if you're off by a day or two, don't sweat it. If you're not planning to apply for the BUIDL Accelerator, you can feel free to go through this project at your own pace and ignore the pace markers.
 
 To be eligible to apply to the BUIDL Accelerator, you must finish this course within the next **40 days** to meet the application deadline. More details on the BUIDL Accelerator will be released soon.
 
@@ -66,7 +66,7 @@ We built this with a lot of love **for you.** Let us know how it's going by foll
 
 ## 🏁 Checkpoints
 
-Throughout the course, there'll be checkpoints for you to test what you've learned and earn unique [kudos](https://mintkudos.xyz/), peer-verified non-transferrable tokens.
+Throughout the course, there'll be checkpoints for you to test what you've learned and earn unique [kudos](https://mintkudos.xyz/), peer-verified non-transferable tokens.
 
 These checkpoints are **required** to apply to the BUIDL Accelerator. If you're not planning to apply for the BUIDL Accelerator, feel free to skip the checkpoints.
 
