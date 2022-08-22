@@ -11,7 +11,7 @@ tweet: "Build a frontend for a full-stack dapp with #30DaysofWeb3 @womenbuildweb
 
 In this lesson, we will build a frontend for our dapp using React, Next.js, ethers.js, Rainbowkit, Web3.Storage, and The Graph. Our app will work with Coinbase Wallet or other user-controlled wallets like MetaMask, Rainbow, and WalletConnect. Users will be able to connect their wallet and interact with our smart contract so they can create new events, RSVP to events, and confirm attendees.
 
-In the next few sections, we will work on enabling users to create new events. First, we will set up RainbowKit to support an intuitive muli-wallet experience in our app. Next, we will integrate Web3.Storage to store some event data off-chain, or off the blockchain. Then we will import and use ethers.js to interact with our deployed smart contract. Finally, we will brush up our frontend to call our smart contract's `createNewEvent` function and handle successful or failed transactions.
+In the next few sections, we will work on enabling users to create new events. First, we will set up RainbowKit to support an intuitive multi-wallet experience in our app. Next, we will integrate Web3.Storage to store some event data off-chain, or off the blockchain. Then we will import and use ethers.js to interact with our deployed smart contract. Finally, we will brush up our frontend to call our smart contract's `createNewEvent` function and handle successful or failed transactions.
 
 > Note: To make it easy for you, please create a new repo/project folder for this section. However, if you feel you are comfortable enough, you can choose to use [mono repos](https://blog.logrocket.com/managing-full-stack-monorepo-pnpm/)
 
