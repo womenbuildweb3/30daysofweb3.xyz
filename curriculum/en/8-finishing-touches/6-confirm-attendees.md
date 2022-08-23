@@ -31,7 +31,7 @@ const [loading, setLoading] = useState(null);
 const [mounted, setMounted] = useState(false);
 ```
 
-We’ll check if we’ve any confirmed attendees or not. If not, we can show a button to confirm attendee(s)
+We’ll check if we’ve confirmed attendees or not. If not, we can show a button to confirm attendee(s).
 There will be two methods `confirmAttendee` and `confirmAllAttendees`.
 
 If a user wants to confirm only one attendee, the `confirmAttendee` method will be used. If they want to confirm all the attendees at once, the `confirmAllAttendees` method will be used.
@@ -105,7 +105,7 @@ const confirmAllAttendees = async () => {
 };
 ```
 
-Create a `checkIfConfirmed` funtion so we can easily check if attendees have already been confirmed. This method will just loop thorugh all confirmed addresses to see if any of them matches the user's address.
+Create a `checkIfConfirmed` funtion so we can easily check if attendees have already been confirmed. This method will just loop through all confirmed addresses to see if any of them matches the user's address.
 
 ```javascript
 function checkIfConfirmed(event, address) {
