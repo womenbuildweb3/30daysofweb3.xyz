@@ -4,6 +4,8 @@ description: Learn about how Lens Protocol is powering web3 social media.
 tweet: "Learn about how @LensProtocol is powering web3 social media with #30DaysofWeb3 @womenbuildweb3 🌱"
 ---
 
+![Lens Protocol Overview_July '22](https://user-images.githubusercontent.com/15064710/187737631-7cc31427-6ac8-498c-a25d-6ba93ed04abe.png)
+
 ## The State of Social Media
 
 We live in a time where millions of users access centralized social media applications daily. Popular sites like Twitter and Meta help us stay connected to friends, family, news updates, and more.
