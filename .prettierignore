@@ -31,3 +31,6 @@ yarn-error.log*
 
 # config
 tailwind.config.js
+
+# curriculum file
+curriculum/en/9-wrapping-up/1-building-with-lens.md
