@@ -7,7 +7,7 @@ tweet: "Query a subgraph for a full-stack dapp with #30DaysofWeb3 @womenbuildweb
 
 Now that we have created an event, we need to be able to fetch the event information to show on the event details page. We also need to know the deposit amount for the event before we can create an RSVP.
 
-This is where the our subgraph comes in. When we open up our deployed subgraph playground, we can see there is an example default query in the left container.
+This is where our subgraph comes in. When we open up our deployed subgraph playground, we can see there is an example default query in the left container.
 
 If we click the “play” or “execute” button, we can see that this query returns a list of data in JSON format with the same fields as our query. You can see a full list of the fields that can be queried for each entity by clicking on the entity name in the Schema section on the right.
 
