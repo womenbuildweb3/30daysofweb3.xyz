@@ -151,7 +151,7 @@ If you need help, check to see if your question has already been asked in **#sec
 
 Next, we’ll write the function that gets called when a user finds an event and RSVPs to it on the front end.
 
-**Reminder of the requirements for a function to allow users to RSVP to an event:**
+**A reminder of the requirements for a function to allow users to RSVP to an event:**
 
 - Pass in a unique event ID the user wishes to RSVP to
 - Ensure that the value of their deposit is sufficient for that event’s deposit requirement

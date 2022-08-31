@@ -117,7 +117,7 @@ If you need help, check to see if your question has already been asked in **#sec
 
 ## 🏝 Break Time
 
-You just set up the boilerplate for your client application and crearted a wallet connection using Rainbowkit 🌈 This is a good time to take a break. Update the Twitterverse by hitting the Share button below, paste your tweet in **#builders-hype** and hype up other builders 🔥
+You just set up the boilerplate for your client application and created a wallet connection using Rainbowkit 🌈 This is a good time to take a break. Update the Twitterverse by hitting the Share button below, paste your tweet in **#builders-hype** and hype up other builders 🔥
 
 **End of Day 9**
 
