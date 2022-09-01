@@ -10,6 +10,24 @@ For this tutorial, you'll be working with **Lens API**, a GraphQL API that enabl
 
 Fork and clone our starter repo: https://github.com/womenbuildweb3/lens-api-starter
 
+You can find similar instructions on forking and cloning a repo here: https://www.30daysofweb3.xyz/en/curriculum/3-writing-your-smart-contract/1-dev-setup
+
+After you've cloned the repo, open this project in your IDE and then install all dependencies by running this command in your terminal:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+Then start the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
 ## Get recommended profiles
 
 In the root directory of your project, create a file called `api.js`.
