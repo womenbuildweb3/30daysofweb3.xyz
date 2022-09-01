@@ -21,7 +21,9 @@ Now it’s time to get out there and keep building! 💪
 
 ## Submit Your Project 🚀
 
-Submit your completed project and earn kudos to prove **on-chain** that you completed #30DaysofWeb3 by filling out this form: https://forms.gle/RbpJ8tN1wPbHLBU29
+Submit your completed web3rsvp and Lens API project and earn kudos to prove **on-chain** that you completed #30DaysofWeb3 by filling out this form: https://forms.gle/RbpJ8tN1wPbHLBU29. If you have already submitted your web3rsvp project, re-visit the form and update your response to include your Lens API project.
+
+To be eligible for the accelerator, you must submit both web3rsvp and Lens API projects by **September 16th, 2022**.
 
 ---
 

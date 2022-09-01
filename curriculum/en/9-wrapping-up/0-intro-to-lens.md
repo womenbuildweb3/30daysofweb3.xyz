@@ -30,7 +30,7 @@ Since the Lens Protocol is decentralized, users can create profiles and post con
 
 What can developers do with the Lens Protocol? The protocol itself is built with modularity in mind, meaning that it has different modules (bits of code that help perform various functions) to use in the development process, making development even easier. Also, any modules added in the future will allow new features to be implemented seamlessly.
 
-Allow me to break down the current modules and their uses:
+Let's break down the current modules and their uses:
 
 - **Profile**: This module is what allows users to create a Lens profile. When a profile is created, a unique ProfileNFT gets minted. This ProfileNFT contains the history of the user's posts, comments, and any other content that the user has created.
 - **Post**: Implementing this module allows users to post and share content. IPFS and other media types are supported.
@@ -55,7 +55,7 @@ There are other many great dApps waiting to be built by **you**! You can check o
 
 ## Next step: Building with Lens
 
-Now that we've learned a bit about how the Lens Protocol works, we'll learn how to build a Lens-compatible dApp in the next section!
+Now that we've learned a bit about how the Lens Protocol works, we'll learn how to build a Lens-compatible dApp in the next page!
 
 ---
 

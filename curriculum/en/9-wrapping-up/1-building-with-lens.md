@@ -1052,6 +1052,8 @@ Save your updated file, connect your wallet, and then click Follow. Confirm that
 
 Social media is just one application of a social graph, and now with Lens, you have the tools to build applications that reflect the meaningful relationships we have on-chain.
 
+To be eligible to receive a Lens handle and apply for the accelerator, be sure to submit both your web3rsvp and Lens projects in the project submission form that can be found at the [end of the curriculum](https://www.30daysofweb3.xyz/en/curriculum/9-wrapping-up/3-finale). If you have already submitted your web3rsvp project, re-visit the form and update your response.
+
 ## 👀 Alpha
 
 The BUIDL Accelerator is coming up fast. More details will be presented officially in the coming days, but some alpha:
