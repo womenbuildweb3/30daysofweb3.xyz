@@ -55,7 +55,7 @@ There are other many great dApps waiting to be built by **you**! You can check o
 
 ## Next step: Building with Lens
 
-Now that we've learned a bit about how the Lens Protocol works, we'll learn how to build a Lens-compatible dApp in the next page!
+Now that we've learned a bit about how the Lens Protocol works, we'll learn how to build a Lens-compatible dApp in the next page! Tweet by clicking the button on this page and let Stani, the founer, know you're building on Lens!
 
 ---
 

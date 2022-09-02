@@ -4,7 +4,9 @@ description: Create a simple web3-native social dapp using Lens Protocol.
 tweet: "Create a simple web3-native social dapp using @LensProtocol with #30DaysofWeb3 @womenbuildweb3 🌱"
 ---
 
-For this tutorial, you'll be working with **Lens API**, a GraphQL API that enables us to quickly interact with Lens social graph without having to worry about writing extensive Solidity or indexing, querying, and validating data.
+For this tutorial, you'll be working with **Lens API**, a GraphQL API that enables us to quickly interact with Lens social graph without having to worry about writing extensive Solidity or indexing, querying, and validating data. 
+
+This tutorial is based on [Nader Dabit's](https://twitter.com/dabit3) YouTube video, [Fullstack Web3 with Lens Protocol](https://www.youtube.com/watch?v=LcxOdWWL8xs&t=3s).
 
 ## Setup
 
