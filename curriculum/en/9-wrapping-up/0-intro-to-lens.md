@@ -45,7 +45,7 @@ Since the Lens Protocol is open source as well, you can even create your own mod
 
 So, we learned how useful Lens Protocol is for developers and how it also gives the power back to users who want to create and manage their own content. But, what can else Lens do? Using Lens, users can sign into a growing collection of dApps and services that are built on the Lens Protocol.
 
-A great example of a dApp built on Lens Protocol is [Lenster](lenster.xyz) (a Community built, open source social network). Lenster is essentially a decentralized Twitter, allowing users to follow others, post content, and build a community.
+A great example of a dApp built on Lens Protocol is [Lenster](https://lenster.xyz/) (a Community built, open source social network). Lenster is essentially a decentralized Twitter, allowing users to follow others, post content, and build a community.
 
 The Lens team also created [LensFrens](https://www.lensfrens.xyz/), a dApp that recommends users to follow based on your web3 footprint. This can be super useful when trying to find other people to follow.
 
