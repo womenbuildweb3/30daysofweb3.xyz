@@ -173,7 +173,7 @@ In your terminal, run `npm run dev` to run your project locally then visit http:
 
 ![Screenshot of developer console showing a response object with data for lens profiles](https://i.imgur.com/CopLR6x.png)
 
-Don't worry if a lof of these results have blank fields.
+Don't worry if a lot of these results have blank fields.
 
 Now that we’ve confirmed that our query is working, let’s display the profiles. Update your Home component to look like this -
 
