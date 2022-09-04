@@ -30,7 +30,7 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 ### Contributing to the website
 
-Kindly go through [CONTRIBUTING.md](https://github.com/womenbuildweb3/official-website/blob/main/CONTRIBUTING.md)
+Kindly go through [CONTRIBUTING.md](https://github.com/womenbuildweb3/30daysofWeb3.xyz/blob/main/CONTRIBUTING.md)
 
 ### Learn More
 
