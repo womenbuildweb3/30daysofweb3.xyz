@@ -1,30 +1,30 @@
 ---
-title: Intro to Lens Protocol
-description: Learn about how Lens Protocol is powering web3 social media.
-tweet: "Learn about how @LensProtocol is powering web3 social media with #30DaysofWeb3 @womenbuildweb3 🌱"
+title: Intro al Protocolo Lens
+descripción: Aprenda cómo el Protocolo Lens permite la construcción de redes sociales en web3.
+tweet: "Aprenda cómo @LensProtocol permite la construcción de redes sociales en web3 con #30DaysofWeb3 @womenbuildweb3 🌱"
 ---
 
-![Lens Protocol Overview_July '22](https://user-images.githubusercontent.com/15064710/187737631-7cc31427-6ac8-498c-a25d-6ba93ed04abe.png)
+![Resumen del Protocolo Lens_Julio '22](https://user-images.githubusercontent.com/15064710/187737631-7cc31427-6ac8-498c-a25d-6ba93ed04abe.png)
 
-## The State of Social Media
+## El Estado de las Redes Sociales
 
-We live in a time where millions of users access centralized social media applications daily. Popular sites like Twitter and Meta help us stay connected to friends, family, news updates, and more.
+Vivimos en un tiempo en el que millones de usuarios acceden aplicaciones centralizadas de redes sociales cada día. Sitios populares como Twitter y Meta nos permiten estar en contacto con amigos, familia, noticias y más.
 
-In this section, we'll look at the [Lens Protocol](lens.xyz) and how it can be used to build decentralized social media applications on the Polygon blockchain! We'll also explore why the Lens Protocol is a great toolkit for developers and how it can provide a more secure user experience than centralized social media.
+En esta sección, vamos a estudiar el [Protocolo Lens](lens.xyz) y cómo lo podemos usar para construir aplicaciones de redes sociales descentralizadas en la red de Polygon! Vamos también a explorar por qué el Protocolo Lens es una gran herramienta con su toolkit para los desarrolladores y cómo puede brindar una experiencia de usuario más segura que las redes sociales centralizadas.
 
-## What is The Lens Protocol?
+## Qué es el Protocolo Lens?
 
-The **Lens Protocol** is a decentralized social graph that allows developers to build social media platforms and profiles.
+El **Protocolo Lens** es un gráfico social descentralizado que permite a los desarrolladores construir perfiles y plataformas de redes sociales.
 
-What exactly is a social graph, though? A **social graph** is a collection of nodes that represent individual users, organizations, and any connections between those nodes. You can think of it as your friend lists on social media sites, your connections on LinkedIn, and who you're following on Twitter just to list a few examples.
+Qué es un gráfico social, exactamente? Un **gráfico social** es una colección de nodos que representan usuarios individuales, organizaciones y todas las conexiones entre esos nodos. Puede pensarlo como su lista de amigos en las redes sociales, sus conexiones en LinkedIn y a quién sigue en Twitter, para nombrar sólo algunos ejemplos.
 
-## Decentralizing Social Media: Why Lens is Important
+## Descentralizando las Redes Sociales: Por Qué Lens es Importante
 
-Web2 social media platforms like Twitter and Meta can be prone to censorship since they are centralized. A post can be removed by administration for any reason. In some countries, the government may censor the internet and some social media platforms as well.
+Al ser centralizadas, las plataformas de redes sociales de Web2 como Twitter y Meta pueden ser objeto de censuras. Un post puede ser removido por los administradores de las redes sociales por cualquier razón. En algunos países, el gobierno puede censurar Internet y algunas plataformas de redes sociales también.
 
-The Lens Protocol solves this problem by not only giving developers a useful toolkit to build social media dApps, but also by giving users control over their own profiles and content.
+El Protocolo Lens resuelve este problema no solamente brindándoles a los desarrolladores herramientas para construir aplicaciones dApps de redes sociales, sino también brindándoles a los usuarios control sobre sus propios perfiles, conexiones y contenidos.
 
-Since the Lens Protocol is decentralized, users can create profiles and post content without the risk of their content being removed. This means that developers can use Lens to build a social network that is more secure and more connected than traditional social media platforms.
+Como el Protocolo Lens es decentralizo, los usuarios pueden crear perfiles y publicar contenido sin el riesgo de que su propio contenido sea removido. Esto significa This means that developers can use Lens to build a social network that is more secure and more connected than traditional social media platforms.
 
 ## The Lens Toolkit
 
@@ -59,4 +59,4 @@ Now that we've learned a bit about how the Lens Protocol works, we'll learn how 
 
 ---
 
-Writers: [Kristen](https://twitter.com/CuddleofDeath)
+Escritoras: [Kristen](https://twitter.com/CuddleofDeath) Traductoras: [Gabi Sabate](https://twitter.com/gsabate)
