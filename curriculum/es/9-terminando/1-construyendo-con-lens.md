@@ -1,18 +1,18 @@
 ---
-title: Building with Lens
-description: Create a simple web3-native social dapp using Lens Protocol.
-tweet: "Create a simple web3-native social dapp using @LensProtocol with #30DaysofWeb3 @womenbuildweb3 🌱"
+title: Construyendo con Lens
+description: Crear una dapp simple nativa-web3 ustilizando el Protocolo Lens.
+tweet: "Crea una dapp simple nativa-web3 ustilizando @LensProtocol con #30DaysofWeb3 @womenbuildweb3 🌱"
 ---
 
-For this tutorial, you'll be working with **Lens API**, a GraphQL API that enables us to quickly interact with Lens social graph without having to worry about writing extensive Solidity or indexing, querying, and validating data.
+Para este tutorial, vamos a trabajar con la **API Lens**, una API GraphQL que nos permite interactuar rápidamente con el gráfico social Lens sin tener que preocuparnos sobre escribir demasiado código en Solidity o tener que indexar, realizar queries o validaciones de datos.
 
 ## Setup
 
-Fork and clone our starter repo: https://github.com/womenbuildweb3/lens-api-starter
+Antes de comenzar, haga un fork y un clon de nuestro starter repo: https://github.com/womenbuildweb3/lens-api-starter.
 
-You can find similar instructions on forking and cloning a repo here: https://www.30daysofweb3.xyz/en/curriculum/3-writing-your-smart-contract/1-dev-setup
+Podrá encontrar instrucciones sobre cómo hacer un fork y clonar un repo aquí: https://www.30daysofweb3.xyz/en/curriculum/3-writing-your-smart-contract/1-dev-setup.
 
-After you've cloned the repo, open this project in your IDE and then install all dependencies by running this command in your terminal:
+Después de que haya clonado el repo, abra este proyecto en su IDE y luego instale todas las dependencias corriendo este comando en su terminal:
 
 ```bash
 npm install
@@ -20,7 +20,7 @@ npm install
 yarn install
 ```
 
-Then start the development server:
+Luego, arranque el servidor de desarrollo:
 
 ```bash
 npm run dev
@@ -28,11 +28,11 @@ npm run dev
 yarn dev
 ```
 
-## Get recommended profiles
+## Obtenga Perfiles Recomendados
 
-In the root directory of your project, create a file called `api.js`.
+En el directorio raíz de su proyecto, cree un archivo llamado `api.js`.
 
-Copy and paste the following variable.
+Copie y pegue (copy + paste) la siguiente variable:
 
 ```jsx
 export const recommendedProfiles = `
@@ -121,9 +121,9 @@ export const recommendedProfiles = `
 `;
 ```
 
-This query returns several popular profiles.
+Este query va a devolver algunos perfiles populares.
 
-Let’s configure our urql client so we can call our query. At the top of the file, add
+Configuremos nuestro cliente urql así podemos llamar a nuestro query. Al principio del archivo, agregue:
 
 ```jsx
 import { createClient } from 'urql';
@@ -136,7 +136,7 @@ export const client = new createClient({
 
 ```
 
-Next, from your root directory, find the pages folder and go to your `index.js` file. It should look like this:
+Luego, en nuestro directorio raíz, busque la carpeta con las páginas y vaya a su archivo `index.js`. Debería verse así:
 
 
 ```jsx
@@ -167,13 +167,13 @@ export default function Home() {
 
 ```
 
-In your terminal, run `npm run dev` to run your project locally then visit http://localhost:3000 in your browser. Open your browser’s console to see the data we fetched from our recommendedProfiles query. It should look something like this -
+En su terminal, corra `npm run dev` para ejecutar su proyecto localmente y luego visite http://localhost:3000 en su browser. Abra la consola de su browser para ver la data que obtuvimos de nuestro query recommendedProfiles. Debería verse parecido a lo que sigue:
 
 ![Screenshot of developer console showing a response object with data for lens profiles](https://i.imgur.com/CopLR6x.png)
 
-Don't worry if a lof of these results have blank fields.
+No se preocupe si muchos de estos resultados tienen campos en blanco.
 
-Now that we’ve confirmed that our query is working, let’s display the profiles. Update your Home component to look like this -
+Ahora que hemos confirmado que nuestro query funciona, despleguemos los perfiles. Haga update de su componente Home para que se vea así: 
 
 
 ```jsx
@@ -254,11 +254,11 @@ export default function Home() {
 }
 ```
 
-Your homepage should now show a list of popular lens profiles.
+Su página web debería ahora mostrar una lista de perfiles populares Lens.
 
-## View a profile
+## Ver un Perfil
 
-Next, we can create a page that will show the details of any profile we click on. To do this, we can use dynamic routing. Create a new folder inside the pages folder named `profile`. Inside this folder, create a new file called `[id].js` and add the code below.
+Ahora, podemos crear una página que muestre los detalles de cualquier perfil que seleccionemos con un click. Para hacer esto, podemos usar ruteo dinámico. Cree una nueva carpeta dentro de la carpeta de páginas (pages) que se llame `profile`. Dentro de esta carpeta, cree un nuevo archivo llamado `[id].js` y agregue el código que sigue: 
 
 ```jsx
 import { useRouter } from "next/router";
@@ -276,11 +276,11 @@ export default function Profile() {
   );
 }
 ```
-Now if you click on any profile on your homepage, you should see that user's id on the profile page.
+Ahora, si hace click en cualquier perfil en su página, debería ver el id de ese usuario en la página de perfil. 
 
-We will want to show more details about the user here, so we’ll need to set up a query to fetch that data. 
+Queremos mostrar más detalles del usuario aquí, por lo que necesitaremos armar un query que vaya a buscar esos datos. 
 
-In our `api.js` file, we can add a new query called getProfileById. We copied this query from the Lens docs here: https://docs.lens.xyz/docs/get-profile
+En nuestro archivo `api.js`, podemos agregar un nuevo query llamado getProfileById. Hemos copiado este query del Lens docs aquí: https://docs.lens.xyz/docs/get-profile
 
 ```jsx
 export const getProfileById = `
@@ -369,14 +369,14 @@ export const getProfileById = `
 `;
 ```
 
-Back in our `/pages/profile/[id].js` file, we can import our client and query at the top of the file, as well as `useState` and `useEffect`.
+Nuevamnete en nuestro archivo `/pages/profile/[id].js`, podemos importar nuestro cliente y query del principio del archivo, como también `useState` y `useEffect`.
 
 ```jsx
 import { useState, useEffect } from "react";
 import { client, getProfileById } from "../../api";
 ```
 
-Inside your `Profile` function, create an async function called `fetchProfile`, where we can fetch our data. We can use `useEffect` to run this function if the `id` variable isn’t null. Make sure to add the `id` to the dependency array.
+Dentro de su función `Profile`, cree una función asíncrona llamada `fetchProfile`, donde podemos ir a buscar nuestra data. Podemos usar `useEffect` para ejecutar esta función si la variable `id` no es nula (null). Asegúrese de agregar el `id` al vector de dependencia.
 
 ```jsx
 useEffect(() => {
@@ -390,7 +390,7 @@ async function fetchProfile() {
 }
 ```
 
-In the fetchProfile function, we can use a try…catch statement to catch any errors while fetching the profile data.
+En la función fetchProfile, podemos usar una sentencia de try…catch para capturar cualquier error que pudiéramos encontrar al buscar esa data del perfil.
 
 ```jsx
 async function fetchProfile(){
@@ -403,15 +403,15 @@ async function fetchProfile(){
 }
 ```
 
-Now you should be able to see the profile data logged in the console. 
+Ahora, debería poder ver la data del perfil que esté logoneado a la consola. 
 
-Next, instead of just logging this data, you can save it to the state. At the top of the `Profile` function, use the `useState` hook to declare the variables `profile` and `setProfile`:
+Luego, en lugar de solamente hacer log de la data, se la puede salvar al estado. Arriba en la función `Profile`, use el `useState` hook to declare the variables `profile` and `setProfile`:
 
 ```jsx
 const [profile, setProfile] = useState()
 ```
 
-Now you can use `setProfile` to store the profile data from your response. To test it out, you can try rendering the handle of the profile if the profile variable isn’t null.
+Ahora puede usar `setProfile` para guardar la data del perfil de su respuesta. Para testearlo, trate de renderizar la "handle" del perfil (profile handle) si la variable de perfil no es nula.
 
 ```jsx
 async function fetchProfile(){
@@ -431,7 +431,7 @@ return (
 )
 ```
 
-Next, you can update our profile page UI to display more profile information. We added some styling here for you too to make the page look nicer.
+Ahora, puede actualizar la UI de la página de perfil para desplegar más información de perfil. Hemos agregado algo de estilos aquí para que pueda hacer que su página se vea más bonita. 
 
 
 ```jsx
@@ -494,9 +494,9 @@ return (
 )
 ```
 
-Next, we want to be able to show all of the publications this user created. From the Lens docs, “Publications come in three primary types: posts, comments, and mirrors. Posts are the base object, with mirror and comment providing additional functionality.” If you’re familiar with Twitter, think of posts like tweets and mirrors like retweets. Publications would be like the Tweets & Replies section of a someone's Twitter profile. 
+Luego, queremos poder mostrar todas las publicaciones creadas por este usuario. Del documento de Lens, “Publications come in three primary types: posts, comments, and mirrors. Posts are the base object, with mirror and comment providing additional functionality.” Si están familiarizados con Twitter, piensen en posts como tweets y mirrors (espejos) como retweets. Las publicaciones serían como la sección de "Tweets & Replies" del perfil de un usuario de Twitter. 
 
-Back in our `api.js` file, we can add this new query to fetch the publications for a certain user. Here we name it `getPublicationsById`. Note: we copied this query from the lens docs here: https://docs.lens.xyz/docs/get-publications. This is a pretty large query, and you probably won’t want to use all of this data. We recommend removing any fields you don’t end up using.
+Regresando a nuestro archivo `api.js`, podemos agregar este nuevo query para buscar las publicaciones de un cierto usuario. Aquí lo llamamos `getPublicationsById`. Nota: hemos copiado este query del documento Lens de aquí: https://docs.lens.xyz/docs/get-publications. Este es un query bastante largo, y probablemente no quiera usar toda esta data. Recomendamos remover cualquier campo que, finalmente, no utilice. 
 
 ```jsx
 export const getPublicationsById = `
@@ -824,19 +824,19 @@ export const getPublicationsById = `
 `;
 ```
 
-Now in `pages/profile/[id].js` you can update the import at the top to include this function.
+Ahora, en `pages/profile/[id].js`, puede ya actualizar el import del principio para incluir esta función.
 
 ```jsx
 import { client, getProfileById, getPublicationsById } from "../../api"
 ```
 
-You will also add a new variable to keep track of our publications. To keep it short, we’ll call it pubs and set it to an empty array with `useState`.
+También agregará una función para mantener el seguimiento de nuestras publicaciones. En resumen, lo llamaremos pubs y lo apuntaremos a un array vacío con `useState`.
 
 ```jsx
 const [pubs, setPubs] = useState([])
 ```
 
-Now you can fetch the publications in your fetchProfile function:
+Ahora, puede buscar las publicaciones en su función fetchProfile:
 
 ```jsx
 async function fetchProfile() {
@@ -854,7 +854,7 @@ async function fetchProfile() {
 }
 ```
 
-Next, you can map the publications to show a list of each one:
+Siguiendo, puede mapear las publicaciones para mostrar una lista de cada una:
 
 ```jsx
 {/* Add publications here */}
@@ -872,56 +872,56 @@ Next, you can map the publications to show a list of each one:
 
 ```
 
-## Set up your wallet
+## Setear Su Wallet (Billetera)
 
-Before we continue, we want to make sure we have a wallet that can connect to Polygon testnet and has some Matic, so we can interact with Lens smart contracts.
+Antes de continuar, queremos asegurarnos de que tenemos una billetera (wallet) que se puede conectar a la testnet de Polygon y que tiene algo de Matic, para poder interactuar con los contratos inteligentes (smart contracts) de Lens. 
 
-If you haven't set up your wallet yet, visit our tutorial here: https://www.30daysofweb3.xyz/en/curriculum/1-getting-started/5-set-up-your-wallet
+Si aún no ha seteado su wallet, visite nuestro tutorial aquí: https://www.30daysofweb3.xyz/en/curriculum/1-getting-started/5-set-up-your-wallet
 
-You will also need to have test MATIC in your wallet. You can request test MATIC from the polygon mumbai faucet here: https://faucet.polygon.technology/.
+También necesitará tener test MATIC en su wallet. Puede pedir test MATIC en el faucel de polygon mumbai aquí: https://faucet.polygon.technology/.
 
-## ✋ Need Help?
+## ✋ Necesita Ayuda?
 
-If you need help, check to see if your question has already been asked in **#section-9-help**. If you don't see it in there, post a question with any details that would make it easy for a team member to help you. 
+Si necesita ayuda, chequee si encuentra su pregunta respondida en **#section-9-help**. Si no la ve allí, haga una pregunta con los detalles que puedan ser útiles para que alguien de nuestro equipo lo pueda ayudar.  
 
-## Follow user
+## Seguir a Usuarios (Follow)
 
-We want to add a follow button so users can follow a profile they like. To follow a profile with Lens Protocol, a user will need to interact with the Lens contract.
+Queremos agregar un botón de follow para que los usuarios puedan seguir a un perfil que les guste. Para seguir un perfil utilizando el Protocolo Lens, un usuario va a necesitar interactuar con el contrato inteligente de Lens.
 
-You can find all of the deployed contract addresses from Lens Protocol here:
+Puede encontrar todas las direcciones de los contratos Lens desplegados aquí:
 https://docs.lens.xyz/docs/deployed-contract-addresses.
 
-For this tutorial, we will be interacting with LensHub contracts that are deployed on Mumbai Testnet.
+Para este tutorial, vamos a interactuar con los contratos LensHub desplegados en la Testnet de Mumbai.
 
-In the `pages/profile/[id].js` file, add a variable called `CONTRACT_ADDRESS` and set it to the lens contract address.
+En el archivo `pages/profile/[id].js`, agregue una variable llamada `CONTRACT_ADDRESS` y setéela con el valor de la dirección del contrato Lens.
 
 ```jsx
 const CONTRACT_ADDRESS = "0x60Ae865ee4C725cd04353b5AAb364553f56ceF82"
 ```
 
-Then in the root directory of your project, create a file called `abi.json`.
+Luego, en el directorio raíz de su proyecto, cree un archivo llamado `abi.json`.
 
-Open this [link](https://mumbai.polygonscan.com/address/0x8C1f82e8AAD9399f52DcF224b77f33d5c1719241#code), and scroll down to where it says “Contract ABI”.
+Abra este [link](https://mumbai.polygonscan.com/address/0x8C1f82e8AAD9399f52DcF224b77f33d5c1719241#code), y desplácese para abajo adonde diga “Contract ABI”.
 
 ![Contract ABI](https://i.imgur.com/AbxpwRh.png)
 
-Copy and paste the ABI into `abi.json`. 
+Haga copy y paste del ABI al archivo `abi.json`. 
 
-In the `pages/profile/[id].js`, import the ABI.
+En las `pages/profile/[id].js`, importe el ABI.
 
 ```jsx
 import ABI from "../../abi.json";
 ```
 
-Before we can add the follow button, we will need to enable the user to connect their wallet.
+Antes de que agreguemos el botón de follow, necesitaremos que el usuario conecte su wallet.
 
-First, create a new state variable to reference the connected wallet.
+Primero, cree una nueva variable de estado para referenciar la wallet conectada.
 
 ```jsx
 const [accounts, setAccounts] = useState(null);
 ```
 
-Second, add this connectWallet function after `fetchProfile`.
+Segundo, agregue esta función, connectWallet, después de `fetchProfile`:
 
 ```jsx
 async function connectWallet() {
@@ -934,7 +934,7 @@ async function connectWallet() {
 
 ```
 
-Then in your UI, add a Connect Wallet button that calls the `connectWallet` function on click.
+Luego, en su UI, agregue un botón de Connect Wallet que invoque a la función `connectWallet` al cliquear.
 
 ```jsx
 {/* Add connect and follow buttons here */}
@@ -949,19 +949,19 @@ Then in your UI, add a Connect Wallet button that calls the `connectWallet` func
                 
 ```
 
-Save your file then confirm that you can connect your wallet by clicking Connect Wallet button and seeing the accounts array in your console.
+Guarde su archivo y luego confirme que puede conectar su wallet cliqueando el botón de Connect Wallet y viendo el vector de la cuenta (array) en su consola.
 
-Now that the user can connect their wallet, we can support follow functionality.
+Ahora que el usuario puede conectar su wallet, podemos soportar la funcionalidad de follow.
 
-Import ethers at the top of the file.
+Importe Ethers arriba en el archivo.
 
 ```jsx
 import { ethers } from 'ethers'
 ```
 
-If you recall from earlier in the curriculum, ethers.js is a JavaScript library that allows developers to interact with Ethereum.
+Si recuerda de un punto anterior en el currículum, ethers.js es una librería de JavaScript que permite a los desarrolladores interactuar con Ethereum.
 
-Next, add this `followUser` function after `connectWallet`.
+Luego, agregue esta función `followUser` después de `connectWallet`.
 
 ```jsx
 async function followUser() {
@@ -980,47 +980,47 @@ async function followUser() {
 }
 ```
 
-Let’s go through this function line by line.
+Veamos esta función en detalle, línea por línea.
 
-First, we create a provider that allows us to connect to the Ethereum network through the user's wallet.
+Primero, creamos un proveedor que nos permita conectarnos a la red de Ethereum a través de la wallet del usuario.
 
 ```jsx
 const provider = new ethers.providers.Web3Provider(window.ethereum);
 ```
 
-Next, we get the signer from the provider which will be used to sign and send transactions.
+Luego, tomamos a quien firma en el proveedor, que será utilizado para firmar y enviar transacciones.
 
 ```jsx
 const signer = provider.getSigner();
 ```
 
-Then we create a contract object so we can interact with the LensHub smart contract.
+Luego, creamos un contrato objeto para poder interactuar con el contrato inteligente de LensHub.
 
 ```jsx
 const contract = new ethers.Contract(CONTRACT_ADDRESS, ABI, signer);
 ```
 
-Next, we want to call a function that will let us follow users. We can browser the functions defined in the LensHub smart contract at https://docs.lens.xyz/docs/functions.
+Luego, vamos a llamar a una función que nos permite seguir a usuarios. Podemos encontrar vía browser las funciones definidas en el contrato inteligente LensHub en https://docs.lens.xyz/docs/functions.
 
-Let’s jump to follow() at https://docs.lens.xyz/docs/functions#follow.
+Saltemos a follow() en https://docs.lens.xyz/docs/functions#follow.
 
-The follow() function takes in profileIds as a parameter. profileIds is an array of IDs of the profile you want to follow. Given an array of profile IDs, the follow() function will then mint a follow NFT for each profile ID.
+La función follow() toma los profileIds como parámetro. profileIds es un array (vector) de IDs de los perfiles que usted quiera seguir. Dado un array (vector) de profile IDs, la función follow() va a mintear un NFT de "follow" para cada profile ID.
 
-Back to the followUser function, note that we call the contract’s follow() function and pass in the id of the profile page we’re currently on.
+Regresando a la función followUser, noten que llamamos a la función follow() del contrato y lueog pasamos el id de la página del perfil en la que estamos en este momento.
 
 ```jsx
 const tx = await contract.follow([id], [0x0]);
 ```
 
-Then we wait for that transaction to complete.
+Luego esperamos a que se complete la transacción.
 
 ```jsx
 await tx.wait();
 ```
 
-We wrap this in a `try..catch` block in case the transaction fails.
+Hacemos wrap de todo en un bloque `try..catch` por si acaso la transacción fallara. 
 
-Now that we understand how followUser works, add a Follow button that calls followUser on click below the profile information. Update your code like so -
+Ahora que entendemos cómo funciona la función followUser, agregamos un botón de Follow que llama a followUser al hacer click debajo de la información de perfil. Actualice su código como sigue:
 
 ```jsx
 {/* Add connect and follow buttons here */}
@@ -1044,25 +1044,25 @@ Now that we understand how followUser works, add a Follow button that calls foll
 
 ```
 
-Here, we check whether we've connected our wallet. If the wallet is connected, we will show the Follow button.
+Aquí, chequeamos si hemos conectado nuestro wallet. Si está conectada, mostraremos el botón de Follow.
 
-Save your updated file, connect your wallet, and then click Follow. Confirm that you are indeed following this profile by checking your console.
+Salven su archivo actualizado, conecten su wallet, y luego hagan click en Follow. Confirmen que realmente están siguiendo a este perfil, chequeando en la consola.
 
-## Wrapping Up
+## En Resumen
 
-Social media is just one application of a social graph, and now with Lens, you have the tools to build applications that reflect the meaningful relationships we have on-chain.
+Las redes sociales son sólo una aplicación de un gráfico social, y ahora con Lens, tendrán las herramientas para construir aplicaciones que reflejen las relaciones importantes que tenemos en el blockchain.
 
-To be eligible to receive a Lens handle and apply for the accelerator, be sure to submit both your web3rsvp and Lens projects in the project submission form that can be found at the [end of the curriculum](https://www.30daysofweb3.xyz/en/curriculum/9-wrapping-up/3-finale). If you have already submitted your web3rsvp project, re-visit the form and update your response.
+Para recibir un Lens handle y aplicar a la aceleradora, asegúrese de submitir tanto su proyecto web3rsvp y Lens en el formulario de submisión de proyecto, que puede encontrarse en [fin de curriculum](https://www.30daysofweb3.xyz/en/curriculum/9-wrapping-up/3-finale). Si ya submitió su proyecto web3rsvp, re-visite el formulario y actualice su respuesta.
 
 ## 👀 Alpha
 
-The BUIDL Accelerator is coming up fast. More details will be presented officially in the coming days, but some alpha:
+La Aceleradora BUIDL empieza pronto. Presentaremos más detalles en los próximos días oficialmente, pero algo de "alpha" mientras tanto:
 
-START BUILDING SOMETHING. In addition to our no-strings-attached grants, we will also be awarding **$20K** in grants to teams building with Lens. So hop into the server, find a team, and start brainstorming!
+EMPIECE A CONSTRUIR ALGO. En adición a nuestros grants sin condiciones, premiaremos con **$20K** en grants a los equipos que construyan con Lens. Así que súbanse a nuestro servidor, encuentren un equipo, y a empezar a pensar!
 
 ---
 
-Adapted from [Nader Dabit's Lens API tutorial](https://www.youtube.com/watch?v=LcxOdWWL8xs&ab_channel=NaderDabit)
+Adaptado de [Tutorial Lens API de Nader Dabit](https://www.youtube.com/watch?v=LcxOdWWL8xs&ab_channel=NaderDabit)
 
-Writers: [Sarah Schwartz](https://twitter.com/schwartzswartz), [Sarah Z](https://twitter.com/haegeez),
-Editors: [Cami](https://twitter.com/camiinthisthang)
+Escritoras: [Sarah Schwartz](https://twitter.com/schwartzswartz), [Sarah Z](https://twitter.com/haegeez),
+Editoras: [Cami](https://twitter.com/camiinthisthang), Traductoras: [Gabi Sabate](https://twitter.com/gsabate)
