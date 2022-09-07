@@ -47,7 +47,7 @@ sudo "/Applications/CMake.app/Contents/bin/cmake-gui" --install
 Now you can run the command below to finally install the Radicle CLI. This might take a few minutes.
 
 ```
-cargo install --force --locked --git https://seed.alt-clients.radicle.xyz/radicle-cli.git radicle-cli
+cargo install radicle-cli --force --locked --git https://github.com/radicle-dev/radicle-cli.git --tag v0.6.1
 ```
 
 Run `rad` to test if the installation succeeded. You should see the info below:
