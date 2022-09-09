@@ -33,6 +33,8 @@ optional: false
 - **IDE**: 
     - [Remix](https://remix.ethereum.org/)
     - [Documentation](https://remix-ide.readthedocs.io/en/latest/index.html)
+- **Solidity Tutorial**:
+    - [CryptoZombies](https://cryptozombies.io/)
 - **SPDX-license-identifier**
     - [License list](https://spdx.org/licenses/)
 
