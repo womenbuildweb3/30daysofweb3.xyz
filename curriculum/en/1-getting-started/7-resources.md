@@ -2,7 +2,6 @@
 title: Section 1 Resources & Glossary
 description: Developer resources and glossary of frequently used terms from section 1.
 optional: false
-tweet: "Ship a full-stack event platform dapp with #30DaysofWeb3 @womenbuildweb3 🎫"
 ---
 
 ## Glossary
@@ -20,6 +19,9 @@ tweet: "Ship a full-stack event platform dapp with #30DaysofWeb3 @womenbuildweb3
 - **recovery phrase**: aka "seed phrase" is basically a human-readable form of your wallet's private key—the unique, secret passcode used to authenticate and encrypt your wallet access.
 - **smart contract**: a computer program compiled from code that can control events and actions according to the terms set within the contract's code.
 - **testnet**: an instance of a blockchain and only exists as a working prototype used for testing and experimentation without risk to real funds on the mainnet. Some testnet examples include Goerli (Ethereum) and Mumbai (Polygon).
+- **web 1.0**: defined as the version of the web that started as a decentralized network of computers that mainly consisted of static websites owned by individual companies. Commonly referred to as the _"read-only"_ web. 
+- **web 2.0**: this version of the internet is the one that most users are familiar with: the centralized web. The centralized web contains websites that store their content on a cloud storage management service like CloudFlare or AWS. Also known as the _"read-write"_ web (as opposed to web 1.0 being known as the "read-only" web).
+- **web 3.0**: decentralization has returned. data is encrypted and securely stored across multiple nodes (computers connected to a blockchain network). These nodes are run by individuals worldwide who are sharing their disk space for a fee. Because data is stored on multiple nodes instead of one central server like AWS, it is decentralized. This enhances data security for websites and their users. Commonly referred to as the _"read-write-own"_ web.
 
 ## Resources
 
