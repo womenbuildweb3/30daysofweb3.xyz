@@ -38,7 +38,7 @@ Confirm your Node.js version by calling `nvm current`. You should be using Node 
 
 Now you’re good to go! We’ll be installing dependencies in our app as we build, but this will set you up to be able to download smoothly.
 
-## Git and Github
+## Git and GitHub
 
 If you want to receive kudos for completing checkpoints and submitting your project and/or you will be applying for our BUIDL Accelerator, you will have to submit a link to a git repository as proof of work.
 
