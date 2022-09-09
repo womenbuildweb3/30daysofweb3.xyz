@@ -36,4 +36,6 @@ tweet: "Ship a full-stack event platform dapp with #30DaysofWeb3 @womenbuildweb3
 - **Visual Studio Code**:
     - [Download](https://code.visualstudio.com/download)   
 
+---
+
 Writers: [Krystal](https://twitter.com/theekrystallee)

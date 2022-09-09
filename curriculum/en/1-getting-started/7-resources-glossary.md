@@ -13,6 +13,7 @@ tweet: "Ship a full-stack event platform dapp with #30DaysofWeb3 @womenbuildweb3
 - **crypto wallet**: a storage system for your digital assets like cryptocurrencies, NFTs, and more.
 - **gas fee**: a transaction fee that all users must pay in order to perform a function on the blockchain.
 - **hot wallet**: one of the most common ways to store crypto assets and is always connected to the internet. This is a very convenient option because it's typically accessed via web, mobile, or desktop. Since hot wallets are always online, they are more vulnerable to attacks. Some popular hot wallet options include MetaMask, Coinbase, and Phantom. 
+- **mainnet**: the primary public Ethereum production blockchain used to describe when a blockchain protocol is fully developed and deployed, meaning that cryptocurrency transactions are being broadcasted, verified, and recorded on a distributed ledger technology (blockchain).
 - **minting**: the process of taking a digital asset like a photo and publishing that asset to the blockchain.
 - **private key**: unique key made of a combination of letters and numbers explicitly assigned to the wallet’s creator to access the contents of each crypto wallet.
 - **public key**: a crypto wallet's public key is the public address of the user’s wallet. Think of it as a business address available publicly on the web. Anyone can use a wallet’s public key to look up and verify transaction information, however, personal information is not posted to the blockchain.
@@ -24,11 +25,14 @@ tweet: "Ship a full-stack event platform dapp with #30DaysofWeb3 @womenbuildweb3
 
 - **30daysofweb3.xyz**:
     - [GitHub repo](https://github.com/womenbuildweb3/30daysofweb3.xyz)
-- **Mumbai testnet**:
+    - [web3rsvp video](https://www.loom.com/share/c3fb24a579644feaa7510e98be37181a)
+- **Mumbai Testnet**:
     - [Add network](https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/)
     - [Polygonscan explorer](https://mumbai.polygonscan.com/)
 - **Wallet Chrome extensions**:
     - [Coinbase](https://chrome.google.com/webstore/detail/coinbase-wallet-extension/hnfanknocfeofbddgcijnmhnfnkdnaad?hl=en)
     - [MetaMask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en)
+
+---
 
 Writers: [Krystal](https://twitter.com/theekrystallee)

@@ -33,4 +33,6 @@ tweet: "Ship a full-stack event platform dapp with #30DaysofWeb3 @womenbuildweb3
 - **Solidity by Example**:
     - [docs](https://solidity-by-example.org/)
 
+---
+
 Writers: [Krystal](https://twitter.com/theekrystallee)
