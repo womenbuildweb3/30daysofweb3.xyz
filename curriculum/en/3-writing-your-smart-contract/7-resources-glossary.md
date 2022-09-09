@@ -1,11 +1,11 @@
 ---
-title: Developer Resources & Terminology
-description: Resources and frequently used terminology from this section.
+title: Section 3 Developer Resources & Glossary
+description: Developer resources and frequently used terms from section 3.
 optional: true
 tweet: "Ship a full-stack event platform dapp with #30DaysofWeb3 @womenbuildweb3 🎫"
 ---
 
-## Terminology
+## Glossary
 
 - **cd**: `cd` command stands for _"change directory"_ and is used to change the current working directory.
 - **Git**: A free and open source distributed version control system which lets you track changes you make to your files over time.
