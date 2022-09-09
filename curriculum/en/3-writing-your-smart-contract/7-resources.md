@@ -6,7 +6,7 @@ optional: false
 
 ## Glossary
 
-- **change directory (cd)**: `cd` command stands for _"change directory"_ and is used to change the current working directory. **Example**: `cd desktop/30daysofweb3`.
+- **Change directory (cd)**: `cd` command stands for _"change directory"_ and is used to change the current working directory. Example: `cd desktop/30daysofweb3`.
 
 - **Git**: a free and open source distributed [version control system](https://www.atlassian.com/git/tutorials/what-is-git) which lets you track changes you make to your files over time. 
 
@@ -16,11 +16,11 @@ optional: false
 
 - **mkdir**: `mkdir` command stands for _"make directory"_ and is used to create or make new directories. 
 
-- **Node.js**: a runtime environment that executes JavaScript outside the browser, enabling developers to build full-stack JavaScript apps. [Install Node.js](https://nodejs.org/en/download/). [YouTube tutorial](https://youtu.be/AuCuHvgOeBY) for Windows 10 installation.
+- **Node.js**: a runtime environment that executes JavaScript outside the browser, enabling developers to build full-stack JavaScript apps. Installer [downloads](https://nodejs.org/en/download/) for Node JS. [YouTube tutorial](https://youtu.be/AuCuHvgOeBY) for Windows 10 installation.
 
-- **Node Package Manager (npm)**: [`npm`](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/) is the package manager for the Node JavaScript platform. It puts modules in place so that node can find them, and manages dependency conflicts intelligently. 
+- **Node Package Manager (npm)**: [npm](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/) is the package manager for the Node JavaScript platform. It puts modules in place so that node can find them, and manages dependency conflicts intelligently. 
 
-- **Node Version Manager (nvm)**: [`nvm`](https://github.com/nvm-sh/nvm#installing-and-updating) is a tool that allows you to download and install Node.js.
+- **Node Version Manager (nvm)**: [nvm](https://github.com/nvm-sh/nvm#installing-and-updating) is a tool that allows you to download and install Node.js.
 
 ## Resources
 
