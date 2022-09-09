@@ -1,7 +1,7 @@
 ---
 title: Section 3 Resources & Glossary
 description: Developer resources and glossary of frequently used terms from section 3.
-optional: true
+optional: false
 tweet: "Ship a full-stack event platform dapp with #30DaysofWeb3 @womenbuildweb3 🎫"
 ---
 
