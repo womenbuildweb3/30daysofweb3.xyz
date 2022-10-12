@@ -10,7 +10,7 @@ tweet: "Learn about how @LensProtocol is powering web3 social media with #30Days
 
 We live in a time where millions of users access centralized social media applications daily. Popular sites like Twitter and Meta help us stay connected to friends, family, news updates, and more.
 
-In this section, we'll look at the [Lens Protocol](lens.xyz) and how it can be used to build decentralized social media applications on the Polygon blockchain! We'll also explore why the Lens Protocol is a great toolkit for developers and how it can provide a more secure user experience than centralized social media.
+In this section, we'll look at the [Lens Protocol](https://lens.xyz) and how it can be used to build decentralized social media applications on the Polygon blockchain! We'll also explore why the Lens Protocol is a great toolkit for developers and how it can provide a more secure user experience than centralized social media.
 
 ## What is The Lens Protocol?
 
@@ -59,4 +59,5 @@ Now that we've learned a bit about how the Lens Protocol works, we'll learn how 
 
 ---
 
-Writers: [Kristen](https://twitter.com/CuddleofDeath)
+Writers: [Kristen](https://twitter.com/CuddleofDeath),
+Editos: [Krystal](https://twitter.com/theekrystallee)

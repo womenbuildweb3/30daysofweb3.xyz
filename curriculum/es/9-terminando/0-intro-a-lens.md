@@ -10,7 +10,7 @@ tweet: "Aprenda cómo @LensProtocol permite la construcción de redes sociales e
 
 Vivimos en un mundo en el que millones de usuarios acceden a aplicaciones centralizadas de redes sociales cada día. Sitios populares como Twitter y Meta nos permiten estar en contacto con amigos, familia, noticias y más.
 
-En esta sección, vamos a estudiar el [Protocolo Lens](lens.xyz) y cómo lo podemos usar para construir aplicaciones de redes sociales descentralizadas en la red de Polygon! Vamos también a explorar por qué el Protocolo Lens es una gran herramienta con su toolkit para los desarrolladores y cómo puede brindar una experiencia de usuario más segura que las redes sociales centralizadas.
+En esta sección, vamos a estudiar el [Protocolo Lens](https://lens.xyz) y cómo lo podemos usar para construir aplicaciones de redes sociales descentralizadas en la red de Polygon! Vamos también a explorar por qué el Protocolo Lens es una gran herramienta con su toolkit para los desarrolladores y cómo puede brindar una experiencia de usuario más segura que las redes sociales centralizadas.
 
 ## Qué es el Protocolo Lens?
 
@@ -59,4 +59,4 @@ Ahora que hemos aprendido un poco de cómo funciona el Protocolo Lens, vamos a a
 
 ---
 
-Escritoras: [Kristen](https://twitter.com/CuddleofDeath) Traductoras: [Gabi Sabate](https://twitter.com/gsabate)
+Escritoras: [Kristen](https://twitter.com/CuddleofDeath) Traductoras: [Gabi Sabate](https://twitter.com/gsabate), [Krystal](https://twitter.com/theekrystallee)
