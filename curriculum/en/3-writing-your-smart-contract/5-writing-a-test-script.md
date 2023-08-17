@@ -34,7 +34,7 @@ Inside our `main` function, we can use hardhat to deploy the contract locally by
 ```javascript
 const rsvpContractFactory = await hre.ethers.getContractFactory("Web3RSVP");
 const rsvpContract = await rsvpContractFactory.deploy();
-await rsvpContract.deployed();
+await rsvpContract.waitForDeployment();
 console.log("Contract deployed to:", rsvpContract.address);
 ```
 
